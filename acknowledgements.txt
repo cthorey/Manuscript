@@ -1,0 +1,11 @@
+Acknowledgements:
+
+In no particular order, I would like to thank Mark Wieczorek and Doris Breuer for their continuous
+guidance during these 3 years. I also would like to thank both IPGP and DLR's planetary sciences
+teams for the support and many enlightening discussions. I especially would like to thank Ina and
+Nicola for their invaluable help using GAIA. 
+
+Comments by Julien Aubert, Guillaume Morard and Francis Nimmo on this manuscript were also greatly
+appreciated.
+
+This work was funded by... numerical simulations were made on...

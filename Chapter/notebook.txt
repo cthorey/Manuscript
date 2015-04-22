@@ -1,0 +1,126 @@
+%load_ext autoreload
+%autoreload 2
+
+import seaborn as sns
+import sys,os
+import matplotlib.pylab as plt
+import matplotlib as mpl
+%matplotlib inline
+import numpy as np
+import cPickle as pickle
+import pandas as pd
+Root = '/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Routine/PAPER/'
+os.chdir(Root)
+print os.getcwd()
+from IPython.display import Latex
+
+#%qtconsole #Load a connect kernel in a qtconsole
+
+from sympy import *
+init_printing(use_unicode=True)
+
+from EG_Data_Load import *
+
+from Plot import *
+
+Plot.path_save = '/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/'
+The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Routine/PAPER
+
+
+h1:
+ELASTIQUE REGIME
+
+In [156]:
+dir_w = '/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RArrhenius/Workspace_2015-03-13_0/'
+dir_w2 = '/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RBercovici/Workspace_2015-02-25_0/'
+Dict = {'Sigma': ['2D-2'],
+              'Delta0': ['5D-3'],
+              'Grav': ['0D0'],
+              'El': ['1D0'],
+              'Nu': ['1D-3'],
+              'Pe': ['1D0','1D3'],
+              'Psi': ['0D0'],
+              'N1' : ['1D5'],
+              'Dr' : ['1D-2'],
+        'Eps': ['1D-4']}
+d_w_arrh = load_run(Dict,dir_w)
+d_w_berco = load_run(Dict,dir_w2)
+[{'Delta0': '5D-3', 'El': '1D0', 'Psi': '0D0', 'Sigma': '2D-2', 'Eps': '1D-4', 'Grav': '0D0', 'Pe': '1D0', 'N1': '1D5', 'Dr': '1D-2', 'Nu': '1D-3'}, {'Delta0': '5D-3', 'El': '1D0', 'Psi': '0D0', 'Sigma': '2D-2', 'Eps': '1D-4', 'Grav': '0D0', 'Pe': '1D3', 'N1': '1D5', 'Dr': '1D-2', 'Nu': '1D-3'}]
+/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RArrhenius/Workspace_2015-03-13_0/E1.0_G0.0_N0.001_P1.0_D0.005_C0.0_R100000.0_S0.02_Dr0.01_Ep0.0001
+/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RArrhenius/Workspace_2015-03-13_0/E1.0_G0.0_N0.001_P1000.0_D0.005_C0.0_R100000.0_S0.02_Dr0.01_Ep0.0001
+[{'Delta0': '5D-3', 'El': '1D0', 'Psi': '0D0', 'Sigma': '2D-2', 'Eps': '1D-4', 'Grav': '0D0', 'Pe': '1D0', 'N1': '1D5', 'Dr': '1D-2', 'Nu': '1D-3'}, {'Delta0': '5D-3', 'El': '1D0', 'Psi': '0D0', 'Sigma': '2D-2', 'Eps': '1D-4', 'Grav': '0D0', 'Pe': '1D3', 'N1': '1D5', 'Dr': '1D-2', 'Nu': '1D-3'}]
+/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RBercovici/Workspace_2015-02-25_0/E1.0_G0.0_N0.001_P1.0_D0.005_C0.0_R100000.0_S0.02_Dr0.01_Ep0.0001
+/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RBercovici/Workspace_2015-02-25_0/E1.0_G0.0_N0.001_P1000.0_D0.005_C0.0_R100000.0_S0.02_Dr0.01_Ep0.0001
+
+
+In [168]:
+fig = Plot()
+fig.figsize = 8,8
+figure,ax = fig.m_figure()
+fig.font = 25
+
+for key, run in d_w_arrh.iteritems():
+    delta0 = 5e-3
+    Mu_e = (run.H/(0.69*delta0**(-1./11.)*run.tm**(8./22.)))**(11./2.)
+    Mu_ee = [elt for i,elt in enumerate(Mu_e) if i%2 ==0 ]
+    tm_ee = [elt for i,elt in enumerate(run.tm) if i%2 ==0 ]
+    plt.loglog(tm_ee,Mu_ee,label = 'Arrh')
+for key,run in d_w_berco.iteritems():
+    Mu_e = (run.H/(0.69*delta0**(-1./11.)*run.tm**(8./22.)))**(11./2.)
+    Mu_ee = [elt for i,elt in enumerate(Mu_e) if i%2 ==0 ]
+    tm_ee = [elt for i,elt in enumerate(run.tm) if i%2 ==0 ]
+    plt.loglog(tm_ee,Mu_ee,label = 'Berco')
+fig.x_lim = 0, 1e4
+fig.y_lim = 1e0, 1e3
+fig.m_axes(ax)
+(8, 8)
+
+ 
+
+In [119]:
+dir_w = '/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS/MSkin_TSc_Newton_HSc_Newton_RArrhenius/Workspace_2015-03-30_0/'
+Dict = {'Sigma': ['3D-2'],
+        'Delta0': ['5D-3'],
+        'Grav': ['1D0'],
+        'El': ['1D0'],
+        'Nu': ['1D-3'],
+        'Pe': ['1D2'],
+        'Psi': ['0D0'],
+        'Gamma' :['5D-1'],
+        'Interval_Tmps':['1D20'],
+        'N1' : ['1D5'],
+        'Dr' : ['1D-2'],
+        'Eps': ['1D-4'],'M':['4D3'],'Dt':['1D-7']}
+d_w = load_run(Dict,dir_w,1.2)
+
+[{'Delta0': '5D-3', 'El': '1D0', 'Psi': '0D0', 'Interval_Tmps': '1D20', 'Dr': '1D-2', 'M': '4D3', 'Eps': '1D-4', 'Grav': '1D0', 'Pe': '1D2', 'N1': '1D5', 'Dt': '1D-7', 'Sigma': '3D-2', 'Nu': '1D-3', 'Gamma': '5D-1'}]
+el1.0_gr1.0_de0.005_si0.03_nu0.001_Pe100.0_Ps0.0_N1100000.0_ga0.5_In1e+20_M4000.0_Dt1e-07_Dr0.01_ep0.0001
+/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/ELAS_GRAV/MSkin_TSc_Newton_HSc_Newton_RBercovici/Workspace_2015-03-30_0/el1.0_gr1.0_de0.005_si0.03_nu0.001_Pe100.0_Ps0.0_N1100000.0_ga0.5_In1e+20_M4000.0_Dt1e-07_Dr0.01_ep0.0001
+
+
+In [137]:
+fig = Plot()
+fig.figsize = 8,8
+figure,ax = fig.m_figure()
+fig.font = 25
+
+for key, run in d_w.iteritems():
+    plt.loglog(run.tm,run.Rc_001,label = key)
+    plt.loglog(run.tm,run.H,label = key)
+fig.x_lim = 0, 1e4
+fig.y_lim = 0 , 2
+fig.m_axes(ax)
+(8, 8)
+
+ 
+
+In [17]:
+dir_w
+Out [17]:
+'/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/SCAPAD/GRAV/Workspace_2015-04-15_0/'
+
+In [ ]:
+
+

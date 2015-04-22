@@ -1,0 +1,73 @@
+\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{amsmath} 
+\usepackage{natbib}
+\include{formatAndDefs}
+
+
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+
+\include{TitlePage}
+
+\dominitoc
+
+\pagenumbering{roman}
+
+\cleardoublepage
+
+\input{Remerciement}
+
+\cleardoublepage
+
+\tableofcontents
+
+\mainmatter
+
+\setcounter{chapter}{-1}
+\pagestyle{empty}
+\include{traduction}
+
+\part{Intrusive magmatism: definition and objective}
+\pagestyle{fancy}
+
+\input{Chapter/Chapter1}
+\input{Chapter/Chapter2}
+
+\part{Laccolith-sill transitions}
+\input{Chapter/Chapter3}
+\input{Chapter/Chapter4}
+\input{Chapter/Chapter5}
+
+\part{Floor-fractured craters}
+\input{Chapter/Chapter5}
+\input{Chapter/Chapter6}
+\input{Chapter/Chapter7}
+
+% \part{Summary and perspectives}
+% \include{Chapter8}
+
+
+% \part{Appendices and bibliography}
+% \appendix
+
+% \include{Appendix1}
+% \include{Appendix3}
+
+% \include{Notations}
+% \printnomenclature
+
+\bibliographystyle{agufull08}
+\bibliography{/Users/thorey/Dropbox/Library}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
