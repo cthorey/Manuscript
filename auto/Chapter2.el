@@ -4,7 +4,6 @@
    (LaTeX-add-labels
     "chap2"
     "sec:model-1"
-    "sec:formulation-1"
     "C2-Sketch"
     "sec:Velocity field"
     "C2_V1"
