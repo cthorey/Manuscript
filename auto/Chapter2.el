@@ -20,8 +20,7 @@
     "L1"
     "H1"
     "T1"
-    "tab2"
-    "tab3"
+    "sec:need-regularization"
     "sec:regime-propagations"
     "sec:bending-regime"
     "sec:grav-curr-regime"
@@ -33,5 +32,7 @@
     "Scaling-R-Gravi"
     "Scaling-H-Gravi"
     "sec:appl-earth-moon"
-    "sec:discussion")))
+    "sec:discussion"
+    "tab2"
+    "tab3")))
 

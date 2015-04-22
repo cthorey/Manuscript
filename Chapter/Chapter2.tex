@@ -19,7 +19,10 @@ above  a  rigid   layer  \citep{Michaut:2011kg,Bunger:2011cb}  (Figure
 current have  been largely  discussed in  the past  few years  in both
 carthesian \citep{Michaut:2011kg,Bunger:2011cb,Anonymous:QWXp_4JV} and
 axisymmetrical  geometry  \citep{Michaut:2013dr,Lister:2013ia}.   This
-section  details the  results for  an axisymmetrical  flow which  will
+section details  a summary of the  results for an isoviscous  fluid of
+density $\rho_m$ and  viscosity $\eta$, supplied at  a continuous rate
+$Q(t)$ through a cylindrical conduit of  diameter $a$ at the center in
+an axisymmetrical  geometry (Figure \ref{C2-Sketch}). This  model will
 constitute the reference for more elaborate models in the manuscript.
 
 \begin{figure}[htbp]
@@ -42,17 +45,16 @@ equations within the lubrication assumption are
   -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta \frac{\partial u}{\partial z}\right) &=&0\label{C2_V1} \\
   -\frac{\partial P}{\partial z}  - \rho_{m}g&  =&0\label{C2-Npressure}
 \end{eqnarray}
-where  $u(r,z,t)$ the  radial  velocity, $\rho_m$  the fluid  density,
-$\eta$  the fluid  viscosity,  $g$ the  standard  acceleration due  to
-gravity and $P(r,z,t)$ the pressure  within the fluid.  Integration of
-(\ref{C2-Npressure}) thus  gives the total pressure  $P(r,z,t)$ within
-the flow.   When the  vertical deflection  deflection $h(r,t)$  of the
-upper  elastic layer  is small  compared to  its thickness  $d_c$, i.e
-$h<<d_c$,  we can  neglect  stretching  of the  upper  layer and  only
-consider bending stresses. Therefore, the total pressure $P(r,z,t)$ at
-a level  $z$ in the  intrusion is the  sum of four  contributions: the
-weight of the magma and of the upper layer, the bending pressure $P_b$
-and the atmospheric pressure $P_0$
+where $u(r,z,t)$  the radial  velocity, $g$ the  standard acceleration
+due  to  gravity  and  $P(r,z,t)$   the  pressure  within  the  fluid.
+Integration  of (\ref{C2-Npressure})  thus  gives  the total  pressure
+$P(r,z,t)$ within  the flow.  When the  vertical deflection deflection
+$h(r,t)$ of the upper elastic layer is small compared to its thickness
+$d_c$, i.e $h<<d_c$, we can neglect  stretching of the upper layer and
+only  consider   bending  stresses.  Therefore,  the   total  pressure
+$P(r,z,t)$  at  a level  $z$  in  the intrusion  is  the  sum of  four
+contributions: the  weight of the  magma and  of the upper  layer, the
+bending pressure $P_b$ and the atmospheric pressure $P_0$
 \begin{equation}
   P = \rho_m g (h-z)+\rho_rgd_c+P_b+P_0
 \end{equation}
@@ -98,7 +100,7 @@ for the blister and does not consider the initiation of the flow.
 
 Finally,  assuming a  Poiseuille flow  within the  cylindrical feeding
 conduit, the vertical injection velocity $w_i(r,t)$ and injection rate
-$Q_0$ are given by
+$Q(t)$ are given by
 \begin{equation}
   w_i=
   \begin{cases}
@@ -108,10 +110,10 @@ $Q_0$ are given by
   \label{C2-eq12}
 \end{equation}
 \begin{equation}
-  Q_{0}=\frac{\pi \Delta P^* a^{4}}{128 \eta Z_c}.
+  Q = Q_0(1-\frac{\rho_m g h_0}{\Delta P})
   \label{C2-eq11}
 \end{equation}
-
+where $Q_0=\left(\pi \Delta P^* a^{4}\right)/\left(128 \eta Z_c\right)$.
 
 \subsection{Governing equations}
 \label{chap2-sec:governing-equations}
@@ -196,62 +198,11 @@ significantly influence the flow and is set to $0.02$ in the following
 \citep{Michaut:2009jx,Michaut:2011kg}.   $\sigma$  is  the  normalized
 pressure  head,  i.e.,  the  ratio between  the  initial  overpressure
 driving the flow and the weight of the magma at the center.
+	 
+\subsection{Need for regularization}
+\label{sec:need-regularization}
 
 
-\begin{table}
-  \caption{Range of values for the model parameters}
-  \centering
-  \begin{tabular}{c|c|c|c}
-    \hline
-    Parameters& Symbol & Range of values &Unit\\
-    \hline
-              &&\\
-    Depth of intrusion & $d_c$ & $0.1-5$ &km \\
-    Young's Modulus & $E$ & $10-100$ &GPa \\
-    Poisson's ratio & $\nu^*$ & $0.25$ &\\
-    Gravity & $g$ & $9.81$ &m s$^{-2}$ \\
-    Magma density & $\rho_{m}$ & $2800-3200$ &kg m$^{-3}$ \\
-    Magma viscosity & $\eta $ & $1-10^{4}$ &Pa s \\
-    Feeder dyke width & $a$ & $10-100$ &m \\
-    Depth of the melt source & $Z_{c}$ & $ 200-500$& km \\ 
-    Initial overpressure & $\Delta P$ & $1-20$ &MPa \\
-    Injection rate & $Q_{0}$ &$0.1-2.10^8$ &m$^{3}$ s$^{-1}$ \\
-    Crust density & $\rho_{r}$ & $2500$ &kg m$^{-3}$ \\
-              &&\\
-    \hline
-    Characteristic scales & Symbol & Range of values & Unit\\
-    \hline
-              &&\\
-    Height scale & $H$& $1-35$ &m \\
-    Length scale & $C$    & $1-50$ &km \\
-    Time scale & $\tau$ & $10^{-3}-1$ &years \\
-    Flexural wavelength & $\Lambda$ & $1-12$& km 
-                                              \label{tab2}
-  \end{tabular} 
-\end{table}
-	 
-	 
-\begin{table}
-  \caption{Dimensionless numbers}
-  \centering
-  \begin{tabular}{c|c|c|c}
-    &&Complex craters&Simple craters \\
-    \hline
-    Symbol& Description & Range of values & Range of values \\
-    \hline
-    &&\\
-    $\gamma$&Normalized source width& $10^{-4}-10^{-2}$ &$10^{-4}-10^{-2}$ \\
-    $\zeta$& Normalized wall zone width  & $0.05-0.13$&$0.25$\\
-    $\Psi$&Thickening term & $0.3-8$&$0.2-4$\\
-    $\Xi$& Hydrostatic term & $20-400$&$20-200$\\
-    $\Theta$ &Elastic term & $10^{-7}-0.1$&$10^{-3}-10$\\
-    $\Omega$ & Density ratio & $1.2$ &$1.2$\\
-    $\Phi$ & Upper layer aspect ratio & $4500$ &$1200 $\\
-    $\sigma$&Normalized pressure head& $0.6-100$ & $0.6-100$ 
-                                                   \label{tab3}
-  \end{tabular} 
-  % \tablenotetext{a}{Footnote text here.}
-\end{table}
 
 \section{Regime of propagations}
 \label{sec:regime-propagations}
@@ -327,7 +278,57 @@ driving the flow and the weight of the magma at the center.
 \section{Discussion}
 \label{sec:discussion}
 
-
+\begin{table}
+  \caption{Range of values for the model parameters}
+  \centering
+  \begin{tabular}{c|c|c|c}
+    \hline
+    Parameters& Symbol & Range of values &Unit\\
+    \hline
+              &&\\
+    Depth of intrusion & $d_c$ & $0.1-5$ &km \\
+    Young's Modulus & $E$ & $10-100$ &GPa \\
+    Poisson's ratio & $\nu^*$ & $0.25$ &\\
+    Gravity & $g$ & $9.81$ &m s$^{-2}$ \\
+    Magma density & $\rho_{m}$ & $2800-3200$ &kg m$^{-3}$ \\
+    Magma viscosity & $\eta $ & $1-10^{4}$ &Pa s \\
+    Feeder dyke width & $a$ & $1-100$ &m \\
+    Depth of the melt source & $Z_{c}$ & $ 5-500$& km \\ 
+    Initial overpressure & $\Delta P$ & $5-50$ &MPa \\
+    Injection rate & $Q_{0}$ &$10p{-3}-0.1$ &m$^{3}$ s$^{-1}$ \\
+    Crust density & $\rho_{r}$ & $2500$ &kg m$^{-3}$ \\
+              &&\\
+    \hline
+    Characteristic scales & Symbol & Range of values & Unit\\
+    \hline
+              &&\\
+    Height scale & $H$& $0.1-10$ &m \\
+    Length scale & $\Lambda$ & $1-12$& km \\
+    Time scale & $\tau$ & $10^{-1}-10$ &years \\
+                                              \label{tab2}
+  \end{tabular} 
+\end{table}
+\begin{table}
+  \caption{Dimensionless numbers}
+  \centering
+  \begin{tabular}{c|c|c|c}
+    &&Complex craters&Simple craters \\
+    \hline
+    Symbol& Description & Range of values & Range of values \\
+    \hline
+    &&\\
+    $\gamma$&Normalized source width& $10^{-4}-10^{-2}$ &$10^{-4}-10^{-2}$ \\
+    $\zeta$& Normalized wall zone width  & $0.05-0.13$&$0.25$\\
+    $\Psi$&Thickening term & $0.3-8$&$0.2-4$\\
+    $\Xi$& Hydrostatic term & $20-400$&$20-200$\\
+    $\Theta$ &Elastic term & $10^{-7}-0.1$&$10^{-3}-10$\\
+    $\Omega$ & Density ratio & $1.2$ &$1.2$\\
+    $\Phi$ & Upper layer aspect ratio & $4500$ &$1200 $\\
+    $\sigma$&Normalized pressure head& $0.6-100$ & $0.6-100$ 
+                                                   \label{tab3}
+  \end{tabular} 
+  % \tablenotetext{a}{Footnote text here.}
+\end{table}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"

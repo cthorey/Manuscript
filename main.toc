@@ -8,11 +8,12 @@
 \contentsline {subsection}{\numberline {2.1.2}Injection rate}{9}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Governing equations}{9}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Dimensionless equations}{10}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Regime of propagations}{12}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Bending regime}{12}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Gravity current regime}{12}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Application to the Earth, Moon and Mars}{13}{section.2.3}
-\contentsline {section}{\numberline {2.4}Discussion}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.1.5}Need for regularization}{11}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Regime of propagations}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Bending regime}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Gravity current regime}{11}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Application to the Earth, Moon and Mars}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Discussion}{12}{section.2.4}
 \contentsline {part}{II\hspace {1em}Laccolith-sill transitions}{15}{part.2}
 \contentsline {xpart}{Laccolith-sill transitions}{17}{part.2}
 \contentsline {chapter}{\numberline {3}Model for the study of a cooling elastic-plated gravity current}{17}{chapter.3}
