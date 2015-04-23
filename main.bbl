@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -17,10 +17,6 @@ Bunger, A.~P., and A.~R. Cruden (2011), {Modeling the growth of laccoliths and
 \bibitem[{\textit{Carslaw and Jaeger}(1959)}]{Carslaw:1959wf}
 Carslaw, H.~S., and J.~C. Jaeger (1959), {Heat in solids}.
 
-\bibitem[{\textit{Flitton and King}(1999)}]{Flitton:1999iv}
-Flitton, J.~C., and J.~R. King (1999), {Moving-boundary and fixed-domain
-  problems for a sixth-order thin-film equation}, \textit{15}(6), 713--754.
-
 \bibitem[{\textit{Goodman}(1958)}]{Goodman:1958ue}
 Goodman, T.~R. (1958), \textit{{The heat-balance integral and its application
   to problems involving a change of phase}}, Trans. ASME.
@@ -35,14 +31,10 @@ Hort, M. (1997), {Cooling and crystallization in sheet-like magma bodies
   revisited}, \textit{Journal of Volcanology and Geothermal Research},
   \textit{76}(3-4), 297--317.
 
-\bibitem[{\textit{Huppert}(1982{\natexlab{a}})}]{Huppert:1982a}
-Huppert, H.~E. (1982{\natexlab{a}}), {The propagation of two-dimensional and
-  axisymmetric viscous gravity currents over a rigid horizontal surface},
-  \textit{J. Fluid Mech.}, \textit{121}(-1), 43--58.
-
-\bibitem[{\textit{Huppert}(1982{\natexlab{b}})}]{Huppert:1982wr}
-Huppert, H.~E. (1982{\natexlab{b}}), {Flow and instability of a viscous current
-  down a slope}, \textit{Nature}.
+\bibitem[{\textit{Huppert}(1982)}]{Huppert:1982a}
+Huppert, H.~E. (1982), {The propagation of two-dimensional and axisymmetric
+  viscous gravity currents over a rigid horizontal surface}, \textit{J. Fluid
+  Mech.}, \textit{121}(-1), 43--58.
 
 \bibitem[{\textit{Johnson and Pollard}(1973)}]{Johnson:1973ho}
 Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
@@ -71,11 +63,6 @@ Michaut, C., and C.~Jaupart (2006), {Ultra-rapid formation of large volumes of
   evolved magma}, \textit{Earth and Planetary Science Letters},
   \textit{250}(1-2), 38--52.
 
-\bibitem[{\textit{Michaut and Manga}(2014)}]{Michaut:2014eq}
-Michaut, C., and M.~Manga (2014), {Domes, pits, and small chaos on Europa
-  produced by water sills}, \textit{J. Geophys. Res. Planets}, \textit{119}(3),
-  550--573.
-
 \bibitem[{\textit{Michaut et~al.}(2013)\textit{Michaut, Baratoux, and
   Thorey}}]{Michaut:2013dr}
 Michaut, C., D.~Baratoux, and C.~Thorey (2013), {Magmatic intrusions and
@@ -87,11 +74,6 @@ Pollard, D.~D., and A.~M. Johnson (1973), {Mechanics of growth of some
   laccolithic intrusions in the Henry Mountains, Utah, II: bending and failure
   of overburden layers and sill formation}, \textit{Tectonophysics},
   \textit{18}(3-4), 311--354.
-
-\bibitem[{\textit{Thorey and Michaut}(2014)}]{Thorey:2014cv}
-Thorey, C., and C.~Michaut (2014), {A model for the dynamics of crater-centered
-  intrusion: Application to lunar floor-fractured craters}, \textit{J. Geophys.
-  Res. Planets}, \textit{119}(1), 286--312.
 
 \bibitem[{\textit{Turcotte and Schubert}(1982)}]{Turcotte:1982ca}
 Turcotte, D.~L., and G.~Schubert (1982), {Geodynamics: Applications of

@@ -3,37 +3,31 @@
 \label{chap3}
 \minitoc
 
-We present here  a general model for the cooling  of an elastic-plated
-gravity current. 
+We present here  a general model, based on  the elastic-plated gravity
+current  model developed  in  the  last section,  to  account for  the
+cooling of the magmatic intrusion.
 
 \section{Theory}
-\label{sec:theory}
+\label{C3-sec:theory}
 
 \subsection{Formulation}
-\label{sec:formulation}
+\label{C3-sec:formulation}
 
 We model an axisymmetric fluid  blister of thickness $h(r,t)$ below an
 elastic layer  of constant thickness  $d_c$ and above a  semi infinite
-rigid  layer  \citep{Michaut:2011kg}  (Figure  \ref{Figure2-1}).   The
-assumption  that the  thickness  of the  fluid tends  to  zero at  the
-contact  line leads  to  divergent viscous  stresses,  and hence,  the
-theoretical immobility of the blister. To avoid problem at the contact
-line,  we  consider  a  thin   pre-wetting  film  of  thickness  $h_f$
-\citep{Flitton:1999iv,Lister:2013ia} (Figure \ref{Figure2-1}).
+rigid layer \citep{Michaut:2011kg}  (Figure \ref{C3-sketch}) The fluid
+is injected  continuously at the base  and center of the  blister at a
+rate $Q(t)$  through a  conduit of  diameter $a$.  The hot  fluid is
+intruded at temperature $T_i$ and cools through the top and the bottom
+by conduction  in the surrounding  medium, whose temperature  $T_s$ is
+allowed to increase with time.
 
-The  fluid is  injected continuously  at the  base and  center of  the
-blister at a rate $Q_0(t)$ through a conduit of diameter
-$a$. The hot fluid is intruded  at temperature $T_i$ and cools through
-the top and the bottom by  conduction in the surrounding medium, whose
-temperature $T_s$ is allowed to increase with time.
-
-%% FIGURE 2-1
 \begin{figure}[htbp]
   \begin{center}
-    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Paper/Figure/Draft_2/} }
-    \includegraphics[scale=0.40]{Figure_2-1.pdf}
+    \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter3/} }
+    \includegraphics[scale=0.40]{C3-sketch.pdf}
     \caption{Model geometry and parameters.}
-    \label{Figure2-1}
+    \label{C3-sketch}
   \end{center}
 \end{figure}
 
@@ -41,73 +35,18 @@ As  it  cools,  the  viscosity  of the  fluid  increases  following  a
 prescribed  rheology   $\eta(T)$  bounded  between  two   values:  the
 viscosity of the  hottest fluid $\eta_h$ at temperature  $T_i$ and the
 viscosity of the coldest fluid $\eta_c$ at temperature $T_0$.
-
-\subsection{Velocity field}
-\label{sec:Velocity field}
-
-The  intrusion develops  over a  length scale  $\Lambda$ that  is much
-larger than its thickness $H$ ($\Lambda >> H$).  In the laminar regime
-and  in   axisymmetrical  coordinates  ($r$,$z$),   the  Navier-stokes
-equations within the lubrication assumption are
-\begin{eqnarray}
-  -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta(T) \frac{\partial u}{\partial z}\right) &=&0\label{V1} \\
-  -\frac{\partial P}{\partial z}  - \rho_{m}g&  =&0\label{Npressure}
-\end{eqnarray}
-where $u(r,z,t)$ the radial velocity,  $\rho_m$ the fluid density, $g$
-the standard acceleration  due to gravity and  $P(r,z,t)$ the pressure
-within  the fluid.   Integration of  (\ref{Npressure}) thus  gives the
-total  pressure  $P(r,z,t)$  within   the  flow.   When  the  vertical
-deflection deflection  $h(r,t)$ of  the upper  elastic layer  is small
-compared  to  its  thickness  $d_c$,  i.e  $h<<d_c$,  we  can  neglect
-stretching   of   the   upper   layer  and   only   consider   bending
-stresses. Therefore, the  total pressure $P(r,z,t)$ at a  level $z$ in
-the intrusion  is the sum  of three  contributions: the weight  of the
-magma and of the upper layer and the bending pressure
-\begin{equation}
-  P = \rho_m g (h-z)+\rho_rgd_c+D\nabla^4h
-\end{equation}
-where $h(r,t)$ is the intrusion thickness, $\rho_r$ the density of the
-surrounding rocks and $D$ is the flexural rigidity of the thin elastic
-layer,  that  depends on  the  Young's  modulus $E$,  Poisson's  ratio
-$\nu^*$   and    on   the    elastic   layer   thickness    $d_c$   as
-$D   =   Ed_c^3/12(1-\nu^*)$.    Integration   of   (\ref{V1})   using
-$\left.\frac{\partial  u}{\partial  z}\right|_{z=h/2}=0$  by  symmetry
-around $h/2$, gives:
-\begin{equation}
-  u(r,z,t)=\frac{1}{2}\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^{2}_{r}\left( \nabla^{2}_{r}h(r) \right)\right)\right)\int_0^z
-  \frac{1}{\eta(T)}\left( 2 z -h\right)dz
-  \label{V2}
-\end{equation}
-
-\subsection{Injection rate}
-
-Assuming a Poiseuille flow within the cylindrical feeding conduit, the
-vertical  injection velocity  $w(r,t)$  and injection  rate $Q_0$  are
-given by:
-\begin{equation}
-  w(r,t)=
-  \begin{cases}
-    \frac{ \Delta P}{4 \mu Z_{c}} (\frac{a^{2}}{4}-r^{2})& r \le \frac{a}{2}\\
-    0 & r > \frac{a}{2}
-  \end{cases}
-  \label{eq12}
-\end{equation}
-\begin{equation}
-  Q_{0}=\frac{\pi \Delta P a^{4}}{128 \mu Z_c}
-  \label{eq11}
-\end{equation}
-where  $\Delta P$  is  the  initial overpressure  within  the melt  at
-$z=Z_{c}$. The fluid is injected at the liquidus temperature $T_i$.
-
 \subsection{Heat transport equation}
-\subsubsection{Local energy conservation}
+
+\subsubsection{Local energy conservation}\\
 
 In the laminar regime and in axisymmetrical coordinates ($r$,$z$), the
 local energy  conservation equation within the  lubrication assumption
 is written as
 \begin{eqnarray}
   \frac{D}{D t}\left(\rho_m C_{p,m} T+\rho_mL(1-\phi)\right)&=& k_m  \frac{\partial^2
-                                                                T}{\partial               z^2}\label{EnergyCons}
+                                                                T}{\partial
+                                                                z^2}
+\label{C3-EnergyCons}
 \end{eqnarray}
 
 where  $T(r,z,t)$  is  the  fluid temperature,  $\phi(r,z,t)$  is  the
@@ -121,23 +60,23 @@ Following a common approximation, we  assume that the crystal fraction
 is a linear function of temperature over the melting interval
 \begin{equation}
   \phi = \frac{T_L-T}{T_L-T_s}
-  \label{meltfraction}
+  \label{C3-meltfraction}
 \end{equation}
 where $T_S$ and $T_L$ are the solidus and liquidus temperatures of the
-magma  \citep{Hort:1997hk,Michaut:2006di}.  With  this approximation,
-the local energy equation (\ref{EnergyCons}) resumes to
+magma  \citep{Hort:1997hk,Michaut:2006di}.   With this  approximation,
+the local energy equation (\ref{C3-EnergyCons}) resumes to
 \begin{eqnarray}
   \frac{\partial T}{\partial t}+ u\frac{\partial T}{\partial r}
   + w\frac{\partial T}{\partial z}  &=& \frac{ \kappa_m}{1+St^{-1}}  \frac{\partial^2
                                         T}{\partial               z^2}
-                                        \label{EnergyCons2}
+                                        \label{C3-EnergyCons2}
 \end{eqnarray}
 where  $u(r,z,t)$ and  $w(r,z,t)$ are  the radial  and vertical  fluid
 velocities,  $St  =\left(C_{p,m}(T_L-T_S)\right)/L$   is  the  Stephan
 number   and    $\kappa_m$   is   the   fluid    thermal   diffusivity
 $\kappa_m = k_m/\rho_m  C_{p,m}$.  Following \citet{BALMFORTH:2004fm},
 we use an integral balance method to solve the heat transport equation
-(\ref{EnergyCons2}).   This theory  is based  on the  integral-balance
+(\ref{C3-EnergyCons2}).   This theory  is based  on the  integral-balance
 method of heat-transfer theory of \citet{Goodman:1958ue}, in which the
 vertical structure of the temperature  field is represented by a known
 function of depth that approximates the expected solution.
@@ -159,69 +98,69 @@ use for the vertical temperature profile $T(r,z,t)$ is
     T_b & \delta \le z\le h-\delta \\
     T_b - (T_b-T_s)(1-\frac{h-z}{\delta})^2 & h-\delta \le z\le h\\
   \end{cases}
-  \label{Temperature}
+  \label{C3-Temperature}
 \end{equation}
 where $T_b(r,t)$  is the  temperature at  the center  of the  flow and
-$T_s(r,t)$ the temperature at the contact with the surrounding rocks (Figure
-\ref{Figure2-1}).      The     integral    balance     solution     in
-(\ref{Temperature}) assumes  a symmetry around $z=h/2$  and a decrease
+$T_s(r,t)$ the temperature  at the contact with  the surrounding rocks
+(Figure   \ref{Figure2-1}).    The   integral  balance   solution   in
+(\ref{C3-Temperature}) assumes  a symmetry around $z=h/2$  and a decrease
 of the  temperature in  the two  thermal boundary  layers down  to the
 surrounding  rock  temperature   $T_s$  \citep{BALMFORTH:2004fm}.   In
 addition,  it  assumes a  uniform  temperature  $T_b$ in  between  the
 thermal  boundary  layers.   Then,  as  the fluid  is  injected  at  a
 temperature  $T_i$,   we  have  $T_b(r,t)  =T_i$   when  $\delta<h/2$.
 However,   if  the   two   thermal  boundary   layers  connect,   then
-$\delta  =  h/2$ and  $T_b$  decreases  such  that $T_b\le  T_i$. 
+$\delta = h/2$ and $T_b$ decreases such that $T_b\le T_i$.
 
 \subsubsection{Integral balance equation}
-\label{sec:integr-balance-equat}
+\label{C3-sec:integr-balance-equat}
 
 We   begin    by   integrating    the   local    energy   conservation
-(\ref{EnergyCons2})  over  the  two   thermal  boundary  layers.   The
+(\ref{C3-EnergyCons2})  over  the  two   thermal  boundary  layers.   The
 integration over the  bottom thermal layer, i.e. from  the base, $z=0$
 to a level $z = \delta$ gives
 \begin{eqnarray}
   &&\frac{\partial}{\partial t}\left( \delta( \bar{T}-T_b)\right)+\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{uT}-\bar{u}T_b)\right) + \delta\left( \frac{\partial T_b}{\partial t}+ \overline{u}\frac{\partial T_b}{\partial r}\right)\nonumber\\
-  &=&-\frac{\kappa_m}{1+St^{-1}}\left. \frac{\partial T}{\partial z}\right|_{z=0}+w_{inj}(T_{i}-T_b)
-      \label{Local1}
+  &=&-\frac{\kappa_m}{1+St^{-1}}\left. \frac{\partial T}{\partial z}\right|_{z=0}+w_{i}(T_{i}-T_b)
+      \label{C3-Local1}
 \end{eqnarray}
 where the  bar indicate the  vertical average over the  bottom thermal
 boundary layer
 \begin{equation}
   \overline{f} = \frac{1}{\delta}\int_0^{\delta}f dz\nonumber,
 \end{equation}
-$T_b(r,t)$  is  the temperature  at  $z=\delta$,  $w_{inj}(r)$ is  the
+$T_b(r,t)$  is  the temperature  at  $z=\delta$,  $w_{i}(r)$ is  the
 vertical  injection velocity  and  we  have used  the  nullity of  the
 thermal gradient at $z=\delta$ and the local mass conservation
 \begin{equation}
   \frac{1}{r}\frac{\partial ru}{\partial r} +\frac{\partial w}{\partial z}=0.
-  \label{MassConservation}
+  \label{C3-MassConservation}
 \end{equation}
 The  integration over  the top  thermal layer,  i.e., from  the level,
 $z=h-\delta$ to the top $z=h$ gives:
 \begin{eqnarray}
   &&\frac{\partial}{\partial t}\left( \delta( \bar{T}-T_b)\right)+\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{uT}-\bar{u}T_b)\right) + \delta\left(\frac{\partial T_b}{\partial t}+ \overline{u}\frac{\partial T_b}{\partial r}\right)\nonumber\\
   &=&\frac{\kappa_m}{1+St^{-1}}\left. \frac{\partial T}{\partial z}\right|_{z=h}.
-      \label{Local2}
+      \label{C3-Local2}
 \end{eqnarray}
 where,    in    addition    to    the    local    mass    conservation
-(\ref{MassConservation})  and   the  fact  the  thermal   gradient  at
+(\ref{C3-MassConservation})  and   the  fact  the  thermal   gradient  at
 $z=h-\delta$ is  equal to  zero, we have  used the  kinematic boundary
 condition in $z=h(r,t)$
 \begin{equation}
   \frac{\partial h}{\partial t} +u\frac{\partial h}{\partial
     r} = w
 \end{equation}
-The heat balance equation can then be written by adding (\ref{Local1})
-and (\ref{Local2}) and introducing (\ref{Temperature})
+The heat balance equation can then be written by adding (\ref{C3-Local1})
+and (\ref{C3-Local2}) and introducing (\ref{C3-Temperature})
 \begin{eqnarray}
   &&\frac{\partial}{\partial t}\left( \delta( \bar{T}-T_b)\right)+\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{uT}-\bar{u}T_b)\right) + \delta\left( \frac{\partial T_b}{\partial t}+ \overline{u}\frac{\partial T_b}{\partial r}\right)\nonumber\\
-  &=&\frac{\kappa_m}{2(1+St^{-1})}\left(\left. \frac{\partial T}{\partial z}\right|_{z=h}-\left. \frac{\partial T}{\partial z}\right|_{z=0}\right)+\frac{w_{inj}}{2}(T_{i}-T_b)
-      \label{LocalHeat3}
+  &=&\frac{\kappa_m}{2(1+St^{-1})}\left(\left. \frac{\partial T}{\partial z}\right|_{z=h}-\left. \frac{\partial T}{\partial z}\right|_{z=0}\right)+\frac{w_{i}}{2}(T_{i}-T_b)
+      \label{C3-LocalHeat3}
 \end{eqnarray}
 
 \subsubsection{Thermal boundary conditions}
-\label{sec:thermal-boundary-condition}
+\label{C3-sec:thermal-boundary-condition}
 
 At  the  contact with  the  surrounding  rock,  the  heat is  lost  by
 conduction:
@@ -229,20 +168,19 @@ conduction:
   k_m\left.\frac{\partial                                    T}{\partial
       z}\right|_{z=0}=k_r\left.\frac{\partial              T_r}{\partial
       z}\right|_{z=0}
-  \label{Flux1}
+  \label{C3-Flux1}
 \end{equation}
 \begin{equation}
   k_m\left.\frac{\partial                                  T}{\partial
       z}\right|_{z=h}=k_r\left.\frac{\partial            T_r}{\partial
       z}\right|_{z=h}
-  \label{Flux2}
+  \label{C3-Flux2}
 \end{equation}
 
 where  $T_r(r,z)$  is  the  temperature  in  the  surrounding  medium.
 Assuming  a  semi  infinite  layer  for  the  rigid  layer  below  the
 intrusion, \citet{Carslaw:1959wf}  show that the temperature  $T_r$ in
-the surrounding  rocks can  be approximated  to a
-first order by
+the surrounding rocks can be approximated to a first order by
 \begin{equation}
   T_r(r,z,t)-T_0=(T_{s}-T_0)\operatorname{erfc}{\left(\frac{-z}{2\sqrt{\kappa_r t}}\right)}.
   \label{eq22}
@@ -256,41 +194,45 @@ same approximation to derive $T_r$ above the intrusion
   \label{eq11}
 \end{equation}
 
-Therefore,  the  two  thermal boundary  conditions  (\ref{Flux1})  and
-(\ref{Flux2}) become:
+Therefore,  the  two  thermal boundary  conditions  (\ref{C3-Flux1})  and
+(\ref{C3-Flux2}) become:
 
 \begin{equation}
   k_m\left.\frac{\partial                                    T}{\partial
       z}\right|_{z=0}= k_r
   \frac{T_{s}-T_{0}}{\sqrt{\pi \kappa_r t}}
-  \label{Flux_1}
+  \label{C3-Flux_1}
 \end{equation}
 \begin{equation}
   k_m\left.\frac{\partial                                    T}{\partial
       z}\right|_{z=h}= -k_r
   \frac{T_{s}-T_{0}}{\sqrt{\pi \kappa_r t}}
-  \label{Flux_2}
+  \label{C3-Flux_2}
 \end{equation}
 
 
 \subsection{Dimensionless equations}
-\label{sec:dimens-equat}
+\label{C3-sec:dimens-equat}
 
-A global  statement of  mass conservation gives  the evolution  of the
-thickness \citep{Huppert:1982a,Michaut:2011kg}
+The equation for the thickness  evolution have been derived in section
+\ref{C2-sec:model} and reads
 \begin{equation}
-  \frac{\partial         h}{\partial        t}         +\frac{1}{r}
-  \frac{\partial}{\partial r} \left( r\int_0^hudz\right)&=&
-  w_{inj}.
-  \label{Mass}
+  \frac{\partial h}{\partial t} = \frac{1}{r}
+  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I\right)
+  + w_i.
+  \label{C2-EqConservation}
+\end{equation}
+where
+\begin{equation}
+  I = \int_0^h\frac{1}{\eta(T)}\left(z-\frac{h}{2}\right)z dz
+  \label{C2-Integral}
 \end{equation}
 This   equation  is   then  coupled   to  the   heat-balance  equation
-(\ref{LocalHeat3})  through  the  viscosity dependence,  which  itself
-depends on temperature, of the  velocity (\ref{V2}).  We first rewrite
-the  different  temperatures  such  that  $T=T_0+\left(T_i-T_0)\theta$
-  where $\theta(r,z,t)$  is the equivalent  dimensionless temperature.
-  In   term   of   $\theta$,  the   integral   balance   approximation
-  (\ref{Temperature}) rewrites
+(\ref{C3-LocalHeat3})  through  the  viscosity  $\eta(T)$.   We  first
+rewrite      the      different       temperatures      such      that
+$T=T_0+\left(T_i-T_0)\theta$ where  $\theta(r,z,t)$ is  the equivalent
+  dimensionless  temperature.   In  term  of  $\theta$,  the  integral
+  balance approximation (\ref{C3-Temperature}) rewrites
   \begin{equation}
     \theta(z)=
     \begin{cases}
@@ -302,162 +244,188 @@ the  different  temperatures  such  that  $T=T_0+\left(T_i-T_0)\theta$
     \label{Temperature2}
   \end{equation}
   where            $\Theta_b=\frac{T_b-T_0}{T_{i}-T_0}$            and
-  $\Theta_s   =   \frac{T_s-T_0}{T_i-T_0}$.    Equations   (\ref{V2}),
-  (\ref{LocalHeat3}) and  (\ref{Mass}) are nondimensionalized  using a
-  horizontal scale  $\Lambda$, a vertical  scale $H$ and a  time scale
-  $\tau$                            given                           by
-  \citep{Michaut:2011kg,Michaut:2013dr,Michaut:2014eq,Thorey:2014cv}
-  \begin{eqnarray}
-    \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{L1}\\
-    H&=&\left       (\frac{12\eta_h      Q_{0}}{\rho_{m}g       \pi}\right      )
-         ^{\frac{1}{4}} w\label{H1}\\
-    \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{T1}
-  \end{eqnarray}
-  where  $\Lambda$ represents  the  flexural wavelength  of the  upper
-  elastic layer \citep{Michaut:2011kg}, $H$ the thickness of a typical
-  gravity current \citep{Huppert:1982wr} and $\tau$ the characteristic
-  time to fill up a cylindrical flow of radius $\Lambda$ and thickness
-  $H$ at constant rate $Q_0$.  In addition, we can define a horizontal
-  velocity                                                       scale
+  $\Theta_s        =       \frac{T_s-T_0}{T_i-T_0}$.         Equations
+  (\ref{C3-LocalHeat3})  and  (\ref{C3-Mass})  are  nondimensionalized
+  using the same horizontal scale $\Lambda$, vertical height scale $H$
+  and time  scale $\tau$ used is  section \ref{C2-sec:dimens-equat} as
+  well        as       a        horizontal       velocity        scale
   $U=\Lambda/\tau=\left(\rho_m          g          H^3\right)/\left(12
-    \eta_h\Lambda\right)$.
-
-  The dimensionless equations are
+    \eta_h\Lambda\right)$ to give
   \begin{eqnarray}
-    \frac{\partial         h}{\partial        t} &=&- \frac{1}{r}
-                                                     \frac{\partial}{\partial r} \left( r\int_0^hudz\right) +w_{inj}\label{EqFinal1}\\
+  \frac{\partial h}{\partial t}& =& \frac{1}{r}
+  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I\right)
+  + w_i\label{EqFinal1}\\
     \frac{\partial}{\partial
     t}\left( \delta( \bar{\theta}-\Theta_b)\right)&=&-\frac{1}{r}\frac{\partial}{\partial
                                                       r}  \left(   r\delta(\overline{u\theta}-\bar{u}\Theta_b)\right)  -
                                                       \delta\left(      \frac{\partial       \Theta_b}{\partial      t}+
-                                                      \overline{u}\frac{\partial     \Theta_b}{\partial    r}\right)-
-                                                      2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}\nonumber\\
-                                                 &+&\frac{w_{inj}}{2}(1-\Theta_b)\label{HeatDimensionLess}\\
-    u&=&6\left( \frac{\partial h}{\partial      r}+\frac{\partial}{\partial      r}\nabla^2h\right)\int_0^z
-         \frac{1}{\eta^*(\theta,\nu)}\left( 2 z -h\right)dz \label{V3}\\
-    w_{inj}&=&
-               \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\hspace{.2cm}
-               \text{if} \hspace{.2cm} r < \gamma/2
+                                                      \overline{u}\frac{\partial     \Theta_b}{\partial    r}\right)\nonumber\\
+                                 &-&
+                                     2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}+\frac{w_{i}}{2}(1-\Theta_b)\label{HeatDimensionLess}\\
+    u(r,z,t)&   =&   12\left(\rho_m   g   \frac{\partial   h}{\partial
+                 r}+D\frac{\partial}{\partial
+                   r}\left(\nabla^4h\right)\right)            \int_0^z
+                   \frac{1}{\eta(\theta,\nu)}
+                   \left(z-\frac{h}{2}\right)dz\label{C3-Veloc}\\
+    w_{i}&=&
+             \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\left(1-\frac{h_0}{\sigma}\right)\hspace{.2cm}
+             \text{if} \hspace{.2cm} r < \gamma/2
   \end{eqnarray}
-  where $\eta^*(\theta,\nu)$ is the dimensionless rheology   $\eta/\eta_h$
-  and the thermal boundary conditions (\ref{Flux_1}) and (\ref{Flux_2}) resume to
+  where $\eta(\theta,\nu)$ is the dimensionless rheology $\eta/\eta_h$
+  which  depends on  the  dimensionless temperature  $\theta$ and  the
+  dimensionless  number  $\nu$.   In addition,  the  thermal  boundary
+  conditions (\ref{C3-Flux_1}) and (\ref{C3-Flux_2}) resume to
   \begin{equation}
     2\frac{\Theta_b-\Theta_s}{\delta}               =               \Omega
     Pe^{1/2}\frac{\Theta_s}{\sqrt{\pi t}}.
-    \label{Boundary-Condi}
+    \label{C3-Boundary-Condi}
   \end{equation}
-  $\gamma$, $Pe$, $St_m$, $\nu$ and $\Omega$ are the five
+  $\gamma$, $\sigma$,  $Pe$, $St_m$,  $\nu$ and  $\Omega$ are  the six
   dimensionless numbers that control the dynamics of the flow
   \begin{eqnarray}
     \gamma&=&\frac{a}{\Lambda} \label{gamma}\\
+    \sigma &=& \frac{\Delta P}{\rho_m g h_0} \label{sigma}\\
     Pe&=& \frac{H^2}{\kappa_m \tau}\label{Pe}\\
     St_m &=& \frac{C_{p,m}\left(T_L-T_S\right)}{C_{p,m}\left(T_L-T_S\right)+L} \label{St}\\
     \nu&=& \frac{\eta_h}{\eta_c}\label{nu}\\
-   \Omega&=&\frac{k_r}{k_m}\left(\frac{\kappa_m}{\kappa_r}\right)^{1/2}\label{omega}
+    \Omega&=&\frac{k_r}{k_m}\left(\frac{\kappa_m}{\kappa_r}\right)^{1/2}\label{omega}
   \end{eqnarray}
-  $\gamma$ is  the dimensionless  radius of the  conduit, it  does not
-  significantly influence the flow and is  set to $0.02$ in this study
-  \citep{Michaut:2009jx,Michaut:2011kg}, $Pe$ is the Peclet number, it
-  compares the vertical diffusion of  heat to the horizontal advection
-  in the intrusion  interior, $St_m$ is a modified  Stephan number, it
-  is the  ratio of sensible heat  between solidus and liquidus  to the
-  total energy of the fluid at liquidus temperature, $\nu$ is the
-  maximum viscosity contrast, i.e.  the  ratio between the hottest and
-  coldest viscosity and and  $\Omega$ is the  ratio between heat conduction  at the
- contact with the encasing rocks and heat diffusion within the fluid.
+  $\gamma$ is the dimensionless radius  of the conduit and $\sigma$ is
+  the normalized  pressure head which  have been discussed  in section
+  \ref{C2-sec:model}.   $Pe$ is  the  Peclet number,  it compares  the
+  vertical  diffusion  of heat  to  the  horizontal advection  in  the
+  intrusion interior. $St_m$  is a modified Stephan number,  it is the
+  ratio of  sensible heat  between solidus and  liquidus to  the total
+  energy of  the fluid at liquidus  temperature and tends to  one when
+  the  crystallization is  neglected. $\nu$  is the  maximum viscosity
+  contrast, i.e.  the ratio between the hottest and coldest viscosity.
+  $\Omega$ is  the ratio between  heat conduction at the  contact with
+  the encasing rocks and heat diffusion within the fluid.
 
- \subsection{Further simplifications and final equations}
- \label{sec:furth-simpl}
+  \subsection{Further simplifications}
+  \label{C3-sec:furth-simpl}
 
- The heat balance equations (\ref{HeatDimensionLess}) can reduce to
- \begin{eqnarray}
-   \frac{\partial}{\partial
-   t}\left( \delta( \bar{\theta}-1)\right)+\frac{1}{r}\frac{\partial}{\partial
-   r}
-   \left( r\delta(\overline{u\theta}-\bar{u})\right)&=&- 2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta} 
-                                                        \label{HeatD_a}
- \end{eqnarray}
+  \textbf{Heat balance equation} \vspace{.5cm}
 
- Indeed, if the thermal  boundary layers exist, $\Theta_b=1$, $\delta$
- is    the     variable    and     the    heat     balance    equation
- (\ref{HeatDimensionLess})  reduces to  the equation  (\ref{HeatD_a}).
- In contrast, if  the thermal boundary layers  merge, $\delta=h/2$ and
- the variable is $\Theta_b$. In  this case, the heat balance equations
- (\ref{HeatDimensionLess}) reduces to:
- \begin{eqnarray}
-   \frac{\partial h\bar{\theta}}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
-   r} \left( rh\overline{u\theta}\right)-\Theta_b\left(\frac{\partial h}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
-   r} \left( rh\bar{u}\right)\right)&=& - 8St_mPe^{-1}\frac{\left(\Theta_b-\Theta_s\right)}{h}+w_{inj}(1-\Theta_b)\nonumber
- \end{eqnarray}
- which we can rewrite using (\ref{EqFinal1}) as
- \begin{equation}
-   \frac{\partial h\bar{\theta}}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
-     r} \left( rh\overline{u\theta}\right) &=& w_i
-   - 8St_mPe^{-1}\frac{\left(\Theta_b-\Theta_s\right)}{h}\nonumber\\
- \end{equation}
- which  also   corresponds  to  (\ref{HeatD_a})  in   the  case  where
- $\delta=h/2$.
+  The heat balance equations (\ref{HeatDimensionLess}) can reduce to
+  \begin{eqnarray}
+    \frac{\partial}{\partial
+    t}\left( \delta( \bar{\theta}-1)\right)+\frac{1}{r}\frac{\partial}{\partial
+    r}
+    \left( r\delta(\overline{u\theta}-\bar{u})\right)&=&- 2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta} 
+                                                         \label{HeatD_a}
+  \end{eqnarray}
 
- Following \citet{BALMFORTH:2004fm}, we  rewrite (\ref{HeatD_a}) using
- a new variable $\xi = \delta(1-\overline{\theta})$
- \begin{equation}
-   \frac{\partial \xi}{\partial t}+\frac{1}{r}\frac{\partial}{\partial r} \left( r\bar{u}\xi\right)-\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{u\theta}-\bar{u}\bar{\theta})\right)&=&2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}
-   \label{EqFinal2}
- \end{equation}
- This equation contains advection  by the vertically integrated radial
- velocity, with a correction accounting  for the vertical structure of
- the temperature field and conduction  cooling. The system composed by
- (\ref{EqFinal1}) and  (\ref{EqFinal2}), whose  main variable  are $h$
- and $\xi$ is  complete.  Indeed, the temperature at  the contact with
- the  surrounding $\Theta_s$  is built  from the  variable $\xi$  
- \begin{equation}
-   \Theta_s(r,t)=
-   \begin{cases}
-     \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1 & \text{if} \hspace{1cm} \xi\leq \xi_t \\
-     \frac{- 12 \xi + 6 h{\left (r,t \right )}}{\left(\beta h{\left (r,t \right )} + 6\right) h{\left (r,t \right )}} & \text{if} \hspace{1cm} \xi > \xi_t\\
-   \end{cases}
- \end{equation}
- where
- \begin{eqnarray}
-   \xi_t(t)&=&\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
-               + 24}\\
-   \beta(t) &=& \Omega Pe^{1/2}\frac{1}{\sqrt{\pi t}}
- \end{eqnarray}
- which leads to the expression of $\Theta_b$ and $\delta$
- \begin{equation}
-   \Theta_b(r)=
-   \begin{cases}
-     1 &\text{if } \hspace{1cm} \xi\leq \xi_t \\
-     \frac{\Theta_{s}}{4} \left(\beta(t) h{\left (r,t \right )} +
-       4\right) & \text{if} \hspace{1cm} \xi > \xi_t\\
-   \end{cases}
- \end{equation}
- \begin{equation}
-   \delta(r)=
-   \begin{cases}
-     \frac{1}{\Theta_{s} \beta(t)} \left(- 2 \Theta_{s} + 2\right) &\text{if } \hspace{1cm} \xi\leq \xi_t \\
-     h(r,t)/2 & \text{if} \hspace{1cm} \xi > \xi_t\\
-   \end{cases}
- \end{equation}
+  Indeed, if the thermal boundary layers exist, $\Theta_b=1$, $\delta$
+  is    the     variable    and    the    heat     balance    equation
+  (\ref{HeatDimensionLess}) reduces  to the  equation (\ref{HeatD_a}).
+  In contrast, if the thermal  boundary layers merge, $\delta=h/2$ and
+  the variable is $\Theta_b$. In this case, the heat balance equations
+  (\ref{HeatDimensionLess}) reduces to:
+  \begin{eqnarray}
+    \frac{\partial h\bar{\theta}}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
+    r} \left( rh\overline{u\theta}\right)-\Theta_b\left(\frac{\partial h}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
+    r} \left( rh\bar{u}\right)\right)&=& - 8St_mPe^{-1}\frac{\left(\Theta_b-\Theta_s\right)}{h}+w_{i}(1-\Theta_b)\nonumber
+  \end{eqnarray}
+  which we can rewrite using (\ref{EqFinal1}) as
+  \begin{equation}
+    \frac{\partial h\bar{\theta}}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
+      r} \left( rh\overline{u\theta}\right) &=& w_i
+    - 8St_mPe^{-1}\frac{\left(\Theta_b-\Theta_s\right)}{h}\nonumber\\
+  \end{equation}
+  which  also  corresponds  to   (\ref{HeatD_a})  in  the  case  where
+  $\delta=h/2$.
+
+  \vspace{.5cm} \textbf{Average quantity} \vspace{.5cm}
+
+  Instead   of    injecting   the   expression   for    the   velocity
+  (\ref{C3-Veloc}) into the integral appearing in (\ref{EqFinal1}), we
+  first integrate by part to get
+\begin{eqnarray}
+\int_0^h      udz&=&   [    uz   ]_{0}^{\delta}    -\int_0^h
+                                                                           z\frac{\partial
+                     u}{\partial z} dz \\
+&=&-12\frac{\partial      P}{\partial      r}\int_0^h
+                \frac{1}{\eta(\theta)}\left(z-\frac{h}{2}\right)z dz\\
+&=&-12\frac{\partial      P}{\partial      r}\left(I_0+I_1+I_2\right)
+\end{eqnarray}
+with
+\begin{eqnarray}
+I_0&=&\int_0^\delta\frac{1}{\eta(\theta,\nu)}z \left(z-\frac{h}{2}\right)dz\\
+I_1&=&\int_\delta^{h-\delta}\frac{1}{\eta(\theta,\nu)}z \left(z-\frac{h}{2}\right)dz\\
+I_2&=&\int_{h-\delta}^h\frac{1}{\eta(\theta,\nu)}z \left(z-\frac{h}{2}\right)dz
+\end{eqnarray}
+where we used no slip boundary conditions at the top and the bottom
+$u(z=0)=u(z=h)=0$ and (\ref{C2-deriv}).
+
+Using the same trick to calculate $\overline{u}$, we get
+\begin{eqnarray}
+\overline{u}&=& 12\frac{\partial  P}{\partial r}\left(I_3-\frac{I_0}{\delta}\right)
+\end{eqnarray}
+where we use $u(r,\delta,t) = 12 \frac{\partial P}{\partial      r}I_3$.
 
 
- Equations   (\ref{EqFinal1})   and    (\ref{EqFinal2})   are   solved
- numerically  using  the  Newton-Raphson   method  which  leads  to  a
- second-order scheme in time and  space. In all solutions, we computed
- the mass  and energy conservation as  a test for the  accuracy of the
- convergence.
+  \subsection{Final equations}
+
+  Following \citet{BALMFORTH:2004fm}, we rewrite (\ref{HeatD_a}) using
+  a new variable $\xi = \delta(1-\overline{\theta})$
+  \begin{equation}
+    \frac{\partial \xi}{\partial t}+\frac{1}{r}\frac{\partial}{\partial r} \left( r\bar{u}\xi\right)-\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{u\theta}-\bar{u}\bar{\theta})\right)&=&2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}
+    \label{EqFinal2}
+  \end{equation}
+  This equation contains advection by the vertically integrated radial
+  velocity, with a correction accounting for the vertical structure of
+  the temperature field and conduction cooling. The system composed by
+  (\ref{EqFinal1}) and  (\ref{EqFinal2}), whose main variable  are $h$
+  and $\xi$ is complete.  Indeed,  the temperature at the contact with
+  the surrounding $\Theta_s$ is built from the variable $\xi$
+  \begin{equation}
+    \Theta_s(r,t)=
+    \begin{cases}
+      \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1 & \text{if} \hspace{1cm} \xi\leq \xi_t \\
+      \frac{- 12 \xi + 6 h{\left (r,t \right )}}{\left(\beta h{\left (r,t \right )} + 6\right) h{\left (r,t \right )}} & \text{if} \hspace{1cm} \xi > \xi_t\\
+    \end{cases}
+  \end{equation}
+  where
+  \begin{eqnarray}
+    \xi_t(t)&=&\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
+                + 24}\\
+    \beta(t) &=& \Omega Pe^{1/2}\frac{1}{\sqrt{\pi t}}
+  \end{eqnarray}
+  which leads to the expression of $\Theta_b$ and $\delta$
+  \begin{equation}
+    \Theta_b(r)=
+    \begin{cases}
+      1 &\text{if } \hspace{1cm} \xi\leq \xi_t \\
+      \frac{\Theta_{s}}{4} \left(\beta(t) h{\left (r,t \right )} +
+        4\right) & \text{if} \hspace{1cm} \xi > \xi_t\\
+    \end{cases}
+  \end{equation}
+  \begin{equation}
+    \delta(r)=
+    \begin{cases}
+      \frac{1}{\Theta_{s} \beta(t)} \left(- 2 \Theta_{s} + 2\right) &\text{if } \hspace{1cm} \xi\leq \xi_t \\
+      h(r,t)/2 & \text{if} \hspace{1cm} \xi > \xi_t\\
+    \end{cases}
+  \end{equation}
 
   \section{Numerical approach}
-  \label{sec:numerical-approach}
+  \label{C3-sec:numerical-approach}
+
+  Equations   (\ref{EqFinal1})   and   (\ref{EqFinal2})   are   solved
+  numerically  using  the  Newton-Raphson  method  which  leads  to  a
+  second-order scheme in time and space. In all solutions, we computed
+  the mass and  energy conservation as a test for  the accuracy of the
+  convergence.
 
   \subsection{Equation on the thickness}
-  \label{sec:equation-thickness}
+  \label{C3-sec:equation-thickness}
 
   \subsection{Heat transport equation}
-  \label{sec:heat-transp-equat}
+  \label{C3-sec:heat-transp-equat}
 
   \subsection{Convergence}
-  \label{sec:convergence}
+  \label{C3-sec:convergence}
 
 
 

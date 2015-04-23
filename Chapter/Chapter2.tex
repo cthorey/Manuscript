@@ -6,7 +6,7 @@ In this chapter, we  sum up the main tentative that  have been used to
 describe the emplacement of magmatic intrusions in the upper crust.
 
 \section{Theoretical model}
-\label{sec:model-1}
+\label{C2-sec:model}
 
 At shallow  depth in  the upper  crust, roof  lifting is  the dominant
 process     by    which     magma     makes     room    for     itself
@@ -21,7 +21,7 @@ carthesian \citep{Michaut:2011kg,Bunger:2011cb,Anonymous:QWXp_4JV} and
 axisymmetrical  geometry  \citep{Michaut:2013dr,Lister:2013ia}.   This
 section details  a summary of the  results for an isoviscous  fluid of
 density $\rho_m$ and  viscosity $\eta$, supplied at  a continuous rate
-$Q(t)$ through a cylindrical conduit of  diameter $a$ at the center in
+$Q(t)$ through a cylindrical conduit of  diameter $a$ at the center, in
 an axisymmetrical  geometry (Figure \ref{C2-Sketch}). This  model will
 constitute the reference for more elaborate models in the manuscript.
 
@@ -34,8 +34,10 @@ constitute the reference for more elaborate models in the manuscript.
   \end{center}
 \end{figure}
 
-\subsection{Velocity field}
-\label{sec:Velocity field}
+\subsection{Governing equation}
+\label{C2-sec:Governing equation}
+
+\textbf{Driving pressure}\\
 
 The  intrusion develops  over a  length scale  $\Lambda$ that  is much
 larger than its thickness $H$ ($\Lambda >> H$).  In the laminar regime
@@ -45,18 +47,19 @@ equations within the lubrication assumption are
   -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta \frac{\partial u}{\partial z}\right) &=&0\label{C2_V1} \\
   -\frac{\partial P}{\partial z}  - \rho_{m}g&  =&0\label{C2-Npressure}
 \end{eqnarray}
-where $u(r,z,t)$  the radial  velocity, $g$ the  standard acceleration
-due  to  gravity  and  $P(r,z,t)$   the  pressure  within  the  fluid.
-Integration  of (\ref{C2-Npressure})  thus  gives  the total  pressure
-$P(r,z,t)$ within  the flow.  When the  vertical deflection deflection
-$h(r,t)$ of the upper elastic layer is small compared to its thickness
-$d_c$, i.e $h<<d_c$, we can neglect  stretching of the upper layer and
-only  consider   bending  stresses.  Therefore,  the   total  pressure
-$P(r,z,t)$  at  a level  $z$  in  the intrusion  is  the  sum of  four
+where  $u(r,z,t)$  is  the  radial   velocity,  $g$  is  the  standard
+acceleration due to gravity and  $P(r,z,t)$ is the pressure within the
+fluid.   Integration  of  (\ref{C2-Npressure}) thus  gives  the  total
+pressure  $P(r,z,t)$ within  the flow.   When the  vertical deflection
+deflection $h(r,t)$  of the upper  elastic layer is small  compared to
+its thickness  $d_c$, i.e $h<<d_c$,  we can neglect stretching  of the
+upper layer and only consider  bending stresses.  Therefore, the total
+pressure $P(r,z,t)$ at a level $z$ in the intrusion is the sum of four
 contributions: the  weight of the  magma and  of the upper  layer, the
 bending pressure $P_b$ and the atmospheric pressure $P_0$
 \begin{equation}
   P = \rho_m g (h-z)+\rho_rgd_c+P_b+P_0
+  \label{C2-pression}
 \end{equation}
 where $h(r,t)$ is the intrusion  thickness and $\rho_r$ the density of
 the surrounding rocks. The bending pressure  is given by the force per
@@ -68,18 +71,23 @@ thin elastic plate \citep{Turcotte:1982ca}
 where $D$  is the flexural  rigidity of  the thin elastic  layer, that
 depends on the Young's modulus $E$, Poisson's ratio $\nu^*$ and on the
 elastic           layer          thickness           $d_c$          as
-$D =  Ed_c^3/\left(12(1-\nu^*)\right)$.  Integration  of (\ref{C2_V1})
-using   $\left.\frac{\partial   u}{\partial  z}\right|_{z=h/2}=0$   by
-symmetry around $h/2$, gives
+$D = Ed_c^3/\left(12(1-\nu^*)\right)$.
+
+\vspace{.5cm} \textbf{Velocity field} \vspace{.5cm}
+
+Equation (\ref{C2_V1})  can be integrated  twice as a function  of $z$
+using the boundary conditions
+\begin{eqnarray}
+  u(r,0,t) &=& 0 \hspace{.5cm} \text{No-slip boundary condition}\\
+  u(r,h(r,t),t) &=& 0 \hspace{.5cm} \text{No-slip boundary condition}
+\end{eqnarray}
+leading to the expression of the horizontal velocity
 \begin{equation}
-  u(r,z,t)=\frac{1}{2}\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I(z)
-  \label{C2-V2}
+  u(r,z,t) =\frac{1}{2\eta} \frac{\partial P}{\partial r} \left(z^2-hz\right)
+  \label{C2-deriv}
 \end{equation}
-where
-\begin{equation}
-  I(z) = \int_0^z  \frac{1}{\eta}\left( 2 z -h\right)dz
-\end{equation}
-\subsection{Injection rate}
+
+\vspace{.5cm} \textbf{Injection rate} \vspace{.5cm}
 
 The effective overpressure $\Delta P^*$ driving the flow in the feeder
 conduit decreases as the intrusion thickens and is given by
@@ -113,32 +121,51 @@ $Q(t)$ are given by
   Q = Q_0(1-\frac{\rho_m g h_0}{\Delta P})
   \label{C2-eq11}
 \end{equation}
-where $Q_0=\left(\pi \Delta P^* a^{4}\right)/\left(128 \eta Z_c\right)$.
+where
+$Q_0=\left(\pi \Delta P^* a^{4}\right)/\left(128 \eta Z_c\right)$.
 
-\subsection{Governing equations}
-\label{chap2-sec:governing-equations}
+\vspace{.5cm} \textbf{Mass conservation} \vspace{.5cm}
 
-The  fluid  is  assumed  incompressible a  global  statement  of  mass
+The fluid  is assumed  incompressible and a  global statement  of mass
 conservation gives
 \begin{eqnarray}
   \frac{\partial         h}{\partial        t} +\frac{1}{r}
   \frac{\partial}{\partial
-  r} \left( r\int_0^hudz\right) = w_i
+  r} \left( r\int_0^hudz\right) = w_i.
   \label{C2-Mass}
 \end{eqnarray}
-Injecting (\ref{C2-V2})  and (\ref{C2-eq12}) into  (\ref{C2-Mass}), we
-finally get
+which can be rewrite as
+\begin{eqnarray}
+  \frac{\partial         h}{\partial        t} -\frac{1}{r}
+  \frac{\partial}{\partial
+  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) = w_i
+  \label{C2-Mass-2}
+\end{eqnarray}
+where we  used no slip-boundary conditions  at the top and  the bottom
+$u(r,z=h,t)=u(r,z=0,t)=0$.   The integration  of (\ref{C2_V1}),  using
+$\left.\frac{\partial  u}{\partial  z}\right|_{z=h/2}=0$ by  symmetry,
+gives
 \begin{equation}
-  \frac{\partial h}{\partial t} = \frac{1}{2r}
-  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)\int_0^hI(z)dz\right)
+  \frac{\partial     u}{\partial    z}=     \frac{1}{\eta}\frac{\partial
+    P}{\partial r} \left(z-\frac{h}{2}\right).
+  \label{C2-deriv}
+\end{equation}
+and therefore, injecting (\ref{C2-deriv})  and substituting $P$ by its
+expression (\ref{C2-pression}) in (\ref{C2-Mass-2}) finally gives
+\begin{equation}
+  \frac{\partial h}{\partial t} = \frac{1}{r}
+  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I\right)
   + w_i.
   \label{C2-EqConservation}
 \end{equation}
-
-In   the   case    of   an   isoviscous   flow,    the   integral   in
-(\ref{C2-EqConservation})  is  easily  derived for  non-slip  boundary
-condition  at the  top and  the bottom  $u(r,z=h,t)=u(r,z=0,t)=0$. The
-equation becomes
+where
+\begin{equation}
+  I = \int_0^h\frac{1}{\eta}\left(z-\frac{h}{2}\right)z dz
+  \label{C2-Integral}
+\end{equation}
+depends on the considered rheology. In the case of an isoviscous flow,
+the integral in (\ref{C2-Integral}) is easily derived and the equation
+becomes
 \begin{equation}
   \frac{\partial h}{\partial t} =\frac{\rho_mg}{12 \eta r}
   \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
@@ -155,7 +182,7 @@ induces spreading.   The last term  represents fluid injection  and is
 positive.
 
 \subsection{Dimensionless equations}
-\label{sec:dimens-equat-1}
+\label{C2-sec:dimens-equat}
 
 Equations  (\ref{C2-eq12}) and  (\ref{C2-Heq}) are  nondimensionalized
 using a  horizontal scale $\Lambda$, a  vertical scale $H$ and  a time
@@ -185,7 +212,7 @@ The dimensionless equation is
                                     r}\right)+\frac{1}{ r} \left( rh^3 \frac{\partial}{\partial r}\nabla^4h\right)+
                                     \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\left(1-\frac{h_0}{\sigma}\right)
 \end{eqnarray}
-where the last term is replaced by zero for $|r|<\gamma/2$.
+where the last term is replaced by zero for $r<\gamma/2$.
 
 $\gamma$ and $\sigma$  are two dimensionless numbers  that control the
 dynamics of the flow
@@ -200,19 +227,19 @@ pressure  head,  i.e.,  the  ratio between  the  initial  overpressure
 driving the flow and the weight of the magma at the center.
 	 
 \subsection{Need for regularization}
-\label{sec:need-regularization}
-
+\label{C2-sec:need-regularization}
 
 
 \section{Regime of propagations}
-\label{sec:regime-propagations}
+\label{C2-sec:regime-propagations}
 
+The dynamics show three main spreading regime.
 
 \subsection{Bending regime}
-\label{sec:bending-regime}
+\label{C2-sec:bending-regime}
 
 \subsection{Gravity current regime}
-\label{sec:grav-curr-regime}
+\label{C2-sec:grav-curr-regime}
 
 
   For a constant  injection rate, a small  pre-wetting film thickness,
@@ -273,10 +300,10 @@ driving the flow and the weight of the magma at the center.
   $h_f=5\cdot10^{-3}$.
 
 \section{Application to the Earth, Moon and Mars}
-\label{sec:appl-earth-moon}
+\label{C2-sec:appl-earth-moon}
 
 \section{Discussion}
-\label{sec:discussion}
+\label{C2-sec:discussion}
 
 \begin{table}
   \caption{Range of values for the model parameters}

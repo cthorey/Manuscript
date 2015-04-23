@@ -6,47 +6,46 @@ A level-1 auxiliary file: traduction.aux
 The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty journal in Flitton:1999iv
 Warning--empty journal in Anonymous:QWXp_4JV
-You've used 19 entries,
+You've used 15 entries,
             3076 wiz_defined-function locations,
-            1190 strings with 12306 characters,
-and the built_in function-call counts, 14983 in all, are:
-= -- 1684
-> -- 386
-< -- 17
-+ -- 194
-- -- 106
-* -- 902
-:= -- 1434
-add.period$ -- 19
-call.type$ -- 19
-change.case$ -- 86
-chr.to.int$ -- 20
-cite$ -- 21
-duplicate$ -- 1651
-empty$ -- 925
-format.name$ -- 174
-if$ -- 2994
-int.to.chr$ -- 2
+            1169 strings with 11735 characters,
+and the built_in function-call counts, 11506 in all, are:
+= -- 1269
+> -- 307
+< -- 13
++ -- 150
+- -- 85
+* -- 700
+:= -- 1124
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 67
+chr.to.int$ -- 16
+cite$ -- 16
+duplicate$ -- 1260
+empty$ -- 721
+format.name$ -- 137
+if$ -- 2298
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 157
-newline$ -- 64
-num.names$ -- 76
-pop$ -- 577
+missing$ -- 124
+newline$ -- 52
+num.names$ -- 60
+pop$ -- 437
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 53
 quote$ -- 0
-skip$ -- 933
+skip$ -- 711
 stack$ -- 0
-substring$ -- 631
-swap$ -- 1370
+substring$ -- 472
+swap$ -- 1030
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
-warning$ -- 2
-while$ -- 94
+type$ -- 132
+warning$ -- 1
+while$ -- 73
 width$ -- 0
-write$ -- 206
-(There were 2 warnings)
+write$ -- 164
+(There was 1 warning)
