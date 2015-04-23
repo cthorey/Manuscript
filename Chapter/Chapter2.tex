@@ -84,7 +84,7 @@ using the boundary conditions
 leading to the expression of the horizontal velocity
 \begin{equation}
   u(r,z,t) =\frac{1}{2\eta} \frac{\partial P}{\partial r} \left(z^2-hz\right)
-  \label{C2-deriv}
+  \label{C2-vel}
 \end{equation}
 
 \vspace{.5cm} \textbf{Injection rate} \vspace{.5cm}
@@ -131,51 +131,19 @@ conservation gives
 \begin{eqnarray}
   \frac{\partial         h}{\partial        t} +\frac{1}{r}
   \frac{\partial}{\partial
-  r} \left( r\int_0^hudz\right) = w_i.
+  r} \left( r\int_0^hudz\right) = w_i
   \label{C2-Mass}
 \end{eqnarray}
-which can be rewrite as
-\begin{eqnarray}
-  \frac{\partial         h}{\partial        t} -\frac{1}{r}
-  \frac{\partial}{\partial
-  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) = w_i
-  \label{C2-Mass-2}
-\end{eqnarray}
-where we  used no slip-boundary conditions  at the top and  the bottom
-$u(r,z=h,t)=u(r,z=0,t)=0$.   The integration  of (\ref{C2_V1}),  using
-$\left.\frac{\partial  u}{\partial  z}\right|_{z=h/2}=0$ by  symmetry,
-gives
-\begin{equation}
-  \frac{\partial     u}{\partial    z}=     \frac{1}{\eta}\frac{\partial
-    P}{\partial r} \left(z-\frac{h}{2}\right).
-  \label{C2-deriv}
-\end{equation}
-and therefore, injecting (\ref{C2-deriv})  and substituting $P$ by its
-expression (\ref{C2-pression}) in (\ref{C2-Mass-2}) finally gives
-\begin{equation}
-  \frac{\partial h}{\partial t} = \frac{1}{r}
-  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I\right)
-  + w_i.
-  \label{C2-EqConservation}
-\end{equation}
-where
-\begin{equation}
-  I = \int_0^h\frac{1}{\eta}\left(z-\frac{h}{2}\right)z dz
-  \label{C2-Integral}
-\end{equation}
-depends on the considered rheology. In the case of an isoviscous flow,
-the integral in (\ref{C2-Integral}) is easily derived and the equation
-becomes
+and using (\ref{C2-vel}), we find that the equation for the evolution of
+the thickness in time and space reads
 \begin{equation}
   \frac{\partial h}{\partial t} =\frac{\rho_mg}{12 \eta r}
   \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
       r}\right)+\frac{D}{12\eta r} \left( rh^3 \frac{\partial}{\partial r}\nabla^4h\right)+
   w_i .\label{C2-Heq}
 \end{equation}
-
-The evolution equation for  the flow thickness $h(r,t)$ (\ref{C2-Heq})
-is composed of three different terms on the right hand side. The first
-term  represents  gravitational  spreading,  i.e.   spreading  of  the
+It is  composed of three different  terms on the right  hand side. The
+first term represents gravitational  spreading, i.e.  spreading of the
 blister under its own weight. The second term represents the squeezing
 of the  flow by the upper  elastic layer.  Both term  are negative and
 induces spreading.   The last term  represents fluid injection  and is

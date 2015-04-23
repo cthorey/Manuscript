@@ -35,6 +35,69 @@ As  it  cools,  the  viscosity  of the  fluid  increases  following  a
 prescribed  rheology   $\eta(T)$  bounded  between  two   values:  the
 viscosity of the  hottest fluid $\eta_h$ at temperature  $T_i$ and the
 viscosity of the coldest fluid $\eta_c$ at temperature $T_0$.
+
+\subsection{Thickness equation}
+
+For  a cooling  elastic-plated  gravity current,  the velocity  fields
+depends   on   the   viscosity,    which   itself   depends   on   the
+temperature. Without knowledge on the  form of the rheology $\eta(T)$,
+integrating twice  (\ref{C2_V1}) using no-slip boundary  conditions at
+the top and the bottom now gives
+\begin{equation}
+  u(r,z,t) = \frac{\partial P}{\partial r}\left(I(z)-I(h)\frac{z}{h}\right)
+\end{equation}
+with
+\begin{equation}
+  I(z) = \int_0^z\frac{z^*}{\eta(T)}dz^*
+\end{equation}
+where the driving pressure $P(r,z,t)$ is given by (\ref{C2-pression}).
+However, instead of plugging in  this expression in (\ref{C2-Mass}) as
+in  section   \ref{C2-sec:Governing  equation},  we   develop  another
+approach  which ends  in  a  nicer form  for  the thickness  evolution
+equation. We first remark that
+\begin{equation}
+  \int_0^h u dz = -\int_0^h\frac{\partial u}{\partial z}zdz
+\end{equation}
+and therefore, the statement  of mass conservation (\ref{C2-Mass}) can
+be written
+\begin{eqnarray}
+  \frac{\partial         h}{\partial        t} -\frac{1}{r}
+  \frac{\partial}{\partial
+  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) = w_i.
+  \label{C3-Mass}
+\end{eqnarray}
+
+
+
+Integrating  once (\ref{C2_V1})  using  the symmetry  of the  velocity
+$u(r,z,t)$ around $h/2$ gives
+\begin{equation}
+  \frac{\partial u}{\partial z} = \frac{1}{\eta}\frac{\partial P}{\partial r}\left(z-\frac{h}{2}\right)
+\end{equation}
+which we can now plug in into 
+\begin{eqnarray}
+  \frac{\partial         h}{\partial        t} -\frac{1}{r}
+  \frac{\partial}{\partial
+  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) = w_i.
+  \label{C3-Mass}
+\end{eqnarray}
+
+
+The vertical temperature structure described in the following posses a
+symmetry around $h/2$ and so the viscosity and the velocity.
+
+
+
+As  in  section  \ref{C2-sec:Governing  equation},  we  plug  in  this
+expression for  the velocity in  a global  a global statement  of mass
+conservation gives and the equation for the thickness evolution reads
+\begin{eqnarray}
+  \frac{\partial         h}{\partial        t} +\frac{1}{r}
+  \frac{\partial}{\partial
+  r} \left( r\int_0^hudz\right) = w_i
+  \label{C2-Mass}
+\end{eqnarray}
+
 \subsection{Heat transport equation}
 
 \subsubsection{Local energy conservation}\\

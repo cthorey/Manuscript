@@ -6,6 +6,8 @@
     "C3-sec:theory"
     "C3-sec:formulation"
     "C3-sketch"
+    "C3-Mass"
+    "C2-Mass"
     "C3-EnergyCons"
     "C3-meltfraction"
     "C3-EnergyCons2"
