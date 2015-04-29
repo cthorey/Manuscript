@@ -2,7 +2,7 @@
  "main"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("ThesisStyle" "a4paper" "11pt" "twoside")))
+                     '(("ThesisStyle" "a4paper" "12pt" "twoside")))
    (TeX-run-style-hooks
     "latex2e"
     "formatAndDefs"
@@ -17,7 +17,7 @@
     "Chapter/Chapter6"
     "Chapter/Chapter7"
     "ThesisStyle"
-    "ThesisStyle11"
+    "ThesisStyle12"
     "graphicx"
     "array"
     "amsmath"

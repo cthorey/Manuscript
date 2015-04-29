@@ -2,5 +2,9 @@
  "Chapter5"
  (lambda ()
    (LaTeX-add-labels
-    "chap5")))
+    "chap5"
+    "sec:infl-flow-rheol"
+    "sec:heat-surr-layer"
+    "sec:crystallization"
+    "sec:applications")))
 

@@ -1,4 +1,4 @@
-\chapter{Model  for  the study  of  a  cooling elastic-plated  gravity
+\chapter{Model  for a  cooling elastic-plated  gravity
   current}
 \label{chap3}
 \minitoc
@@ -36,7 +36,7 @@ prescribed  rheology   $\eta(T)$  bounded  between  two   values:  the
 viscosity of the  hottest fluid $\eta_h$ at temperature  $T_i$ and the
 viscosity of the coldest fluid $\eta_c$ at temperature $T_0$.
 
-\subsection{Thickness equation}
+\subsection{Equation for the thickness}
 
 For  a cooling  elastic-plated  gravity current,  the velocity  fields
 depends   on   the   viscosity,    which   itself   depends   on   the
@@ -53,50 +53,52 @@ with
 where the driving pressure $P(r,z,t)$ is given by (\ref{C2-pression}).
 However, instead of plugging in  this expression in (\ref{C2-Mass}) as
 in  section   \ref{C2-sec:Governing  equation},  we   develop  another
-approach  which ends  in  a  nicer form  for  the thickness  evolution
-equation. We first remark that
+approach which takes into account  the symmetry of the velocity around
+$h/2$.  Indeed,  as we  will see  in the  next section,  this property
+comes out naturally from the symmetry of the used vertical temperature
+structure  which implies the same  symmetry for
+the viscosity $\eta(T)$.
+
+Integrating once (\ref{C2_V1})  as a function of z  using the symmetry
+around $h/2$ gives
+\begin{equation}
+  \frac{\partial   u}{\partial   z}   =   \frac{1}{\eta}\frac{\partial
+    P}{\partial r}\left(z-\frac{h}{2}\right)
+\label{C3-deriv}
+\end{equation}
+and therefore, the velocity $u(r,z,t)$ reads
+\begin{equation}
+  u(r,z,t) = \frac{\partial P}{\partial r} I_0(z)
+\end{equation}
+with
+\begin{equation}
+  I_0(z) = \int_0^z\frac{1}{\eta(T)}\left(y-\frac{h}{2}\right)dy
+\label{C3-I_0}
+\end{equation}
+Moreover, we have that
 \begin{equation}
   \int_0^h u dz = -\int_0^h\frac{\partial u}{\partial z}zdz
 \end{equation}
 and therefore, the statement  of mass conservation (\ref{C2-Mass}) can
 be written
 \begin{eqnarray}
-  \frac{\partial         h}{\partial        t} -\frac{1}{r}
+  \frac{\partial h}{\partial t} = \frac{1}{r}
   \frac{\partial}{\partial
-  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) = w_i.
+  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) + w_i
   \label{C3-Mass}
 \end{eqnarray}
-
-
-
-Integrating  once (\ref{C2_V1})  using  the symmetry  of the  velocity
-$u(r,z,t)$ around $h/2$ gives
+where we can now plug in (\ref{C3-deriv}) to finally obtain
+\begin{eqnarray}
+  \frac{\partial h}{\partial t} = \frac{1}{r}
+  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I_1(h)\right)
+  + w_i.
+  \label{C3-Mass-2}
+\end{eqnarray}
+with 
 \begin{equation}
-  \frac{\partial u}{\partial z} = \frac{1}{\eta}\frac{\partial P}{\partial r}\left(z-\frac{h}{2}\right)
+  I_1(z) = \int_0^z\frac{1}{\eta(T)}\left(y-\frac{h}{2}\right)ydy
+\label{C3-I_1}
 \end{equation}
-which we can now plug in into 
-\begin{eqnarray}
-  \frac{\partial         h}{\partial        t} -\frac{1}{r}
-  \frac{\partial}{\partial
-  r} \left( r\int_0^h\frac{\partial u}{\partial z}zdz\right) = w_i.
-  \label{C3-Mass}
-\end{eqnarray}
-
-
-The vertical temperature structure described in the following posses a
-symmetry around $h/2$ and so the viscosity and the velocity.
-
-
-
-As  in  section  \ref{C2-sec:Governing  equation},  we  plug  in  this
-expression for  the velocity in  a global  a global statement  of mass
-conservation gives and the equation for the thickness evolution reads
-\begin{eqnarray}
-  \frac{\partial         h}{\partial        t} +\frac{1}{r}
-  \frac{\partial}{\partial
-  r} \left( r\int_0^hudz\right) = w_i
-  \label{C2-Mass}
-\end{eqnarray}
 
 \subsection{Heat transport equation}
 
@@ -256,10 +258,8 @@ same approximation to derive $T_r$ above the intrusion
   T_r(r,z,t)-T_0=(T_{s}-T_0)\operatorname{erfc}{\left(\frac{z-h}{2\sqrt{\kappa_r t}}\right)}.
   \label{eq11}
 \end{equation}
-
 Therefore,  the  two  thermal boundary  conditions  (\ref{C3-Flux1})  and
 (\ref{C3-Flux2}) become:
-
 \begin{equation}
   k_m\left.\frac{\partial                                    T}{\partial
       z}\right|_{z=0}= k_r
@@ -277,22 +277,7 @@ Therefore,  the  two  thermal boundary  conditions  (\ref{C3-Flux1})  and
 \subsection{Dimensionless equations}
 \label{C3-sec:dimens-equat}
 
-The equation for the thickness  evolution have been derived in section
-\ref{C2-sec:model} and reads
-\begin{equation}
-  \frac{\partial h}{\partial t} = \frac{1}{r}
-  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I\right)
-  + w_i.
-  \label{C2-EqConservation}
-\end{equation}
-where
-\begin{equation}
-  I = \int_0^h\frac{1}{\eta(T)}\left(z-\frac{h}{2}\right)z dz
-  \label{C2-Integral}
-\end{equation}
-This   equation  is   then  coupled   to  the   heat-balance  equation
-(\ref{C3-LocalHeat3})  through  the  viscosity  $\eta(T)$.   We  first
-rewrite      the      different       temperatures      such      that
+We   first    rewrite   the    different   temperatures    such   that
 $T=T_0+\left(T_i-T_0)\theta$ where  $\theta(r,z,t)$ is  the equivalent
   dimensionless  temperature.   In  term  of  $\theta$,  the  integral
   balance approximation (\ref{C3-Temperature}) rewrites
@@ -315,9 +300,9 @@ $T=T_0+\left(T_i-T_0)\theta$ where  $\theta(r,z,t)$ is  the equivalent
   $U=\Lambda/\tau=\left(\rho_m          g          H^3\right)/\left(12
     \eta_h\Lambda\right)$ to give
   \begin{eqnarray}
-  \frac{\partial h}{\partial t}& =& \frac{1}{r}
-  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I\right)
-  + w_i\label{EqFinal1}\\
+    \frac{\partial h}{\partial t}& =& \frac{12}{r}
+                                      \frac{\partial}{\partial r} \left( r\left( \frac{\partial h}{\partial      r}+\frac{\partial}{\partial      r}\left(\nabla^4h\right)\right)I_1(h)\right)
+                                      + w_i\label{EqFinal1}\\
     \frac{\partial}{\partial
     t}\left( \delta( \bar{\theta}-\Theta_b)\right)&=&-\frac{1}{r}\frac{\partial}{\partial
                                                       r}  \left(   r\delta(\overline{u\theta}-\bar{u}\Theta_b)\right)  -
@@ -325,14 +310,18 @@ $T=T_0+\left(T_i-T_0)\theta$ where  $\theta(r,z,t)$ is  the equivalent
                                                       \overline{u}\frac{\partial     \Theta_b}{\partial    r}\right)\nonumber\\
                                  &-&
                                      2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}+\frac{w_{i}}{2}(1-\Theta_b)\label{HeatDimensionLess}\\
-    u(r,z,t)&   =&   12\left(\rho_m   g   \frac{\partial   h}{\partial
-                 r}+D\frac{\partial}{\partial
-                   r}\left(\nabla^4h\right)\right)            \int_0^z
-                   \frac{1}{\eta(\theta,\nu)}
-                   \left(z-\frac{h}{2}\right)dz\label{C3-Veloc}\\
+    u(r,z,t)&   =&   12\left(   \frac{\partial   h}{\partial
+                   r}+\frac{\partial}{\partial
+                   r}\left(\nabla^4h\right)\right)I_0(z)\label{C3-Veloc}\\
     w_{i}&=&
              \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\left(1-\frac{h_0}{\sigma}\right)\hspace{.2cm}
-             \text{if} \hspace{.2cm} r < \gamma/2
+             \text{if} \hspace{.2cm} r < \gamma/2 \\
+\end{eqnarray}
+with 
+\begin{eqnarray}
+  I_0(z)&=&\int_0^z\frac{1}{\eta(\theta,\nu)}\left(y-\frac{h}{2}\right)
+    dy \\
+I_1(z) &=& \int_0^z\frac{1}{\eta(\theta,\nu)}\left(y-\frac{h}{2}\right)y dy
   \end{eqnarray}
   where $\eta(\theta,\nu)$ is the dimensionless rheology $\eta/\eta_h$
   which  depends on  the  dimensionless temperature  $\theta$ and  the
@@ -399,63 +388,125 @@ $T=T_0+\left(T_i-T_0)\theta$ where  $\theta(r,z,t)$ is  the equivalent
   which  also  corresponds  to   (\ref{HeatD_a})  in  the  case  where
   $\delta=h/2$.
 
-  \vspace{.5cm} \textbf{Average quantity} \vspace{.5cm}
-
-  Instead   of    injecting   the   expression   for    the   velocity
-  (\ref{C3-Veloc}) into the integral appearing in (\ref{EqFinal1}), we
-  first integrate by part to get
-\begin{eqnarray}
-\int_0^h      udz&=&   [    uz   ]_{0}^{\delta}    -\int_0^h
-                                                                           z\frac{\partial
-                     u}{\partial z} dz \\
-&=&-12\frac{\partial      P}{\partial      r}\int_0^h
-                \frac{1}{\eta(\theta)}\left(z-\frac{h}{2}\right)z dz\\
-&=&-12\frac{\partial      P}{\partial      r}\left(I_0+I_1+I_2\right)
-\end{eqnarray}
-with
-\begin{eqnarray}
-I_0&=&\int_0^\delta\frac{1}{\eta(\theta,\nu)}z \left(z-\frac{h}{2}\right)dz\\
-I_1&=&\int_\delta^{h-\delta}\frac{1}{\eta(\theta,\nu)}z \left(z-\frac{h}{2}\right)dz\\
-I_2&=&\int_{h-\delta}^h\frac{1}{\eta(\theta,\nu)}z \left(z-\frac{h}{2}\right)dz
-\end{eqnarray}
-where we used no slip boundary conditions at the top and the bottom
-$u(z=0)=u(z=h)=0$ and (\ref{C2-deriv}).
-
-Using the same trick to calculate $\overline{u}$, we get
-\begin{eqnarray}
-\overline{u}&=& 12\frac{\partial  P}{\partial r}\left(I_3-\frac{I_0}{\delta}\right)
-\end{eqnarray}
-where we use $u(r,\delta,t) = 12 \frac{\partial P}{\partial      r}I_3$.
-
-
-  \subsection{Final equations}
-
   Following \citet{BALMFORTH:2004fm}, we rewrite (\ref{HeatD_a}) using
   a new variable $\xi = \delta(1-\overline{\theta})$
   \begin{equation}
     \frac{\partial \xi}{\partial t}+\frac{1}{r}\frac{\partial}{\partial r} \left( r\bar{u}\xi\right)-\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{u\theta}-\bar{u}\bar{\theta})\right)&=&2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}
     \label{EqFinal2}
   \end{equation}
-  This equation contains advection by the vertically integrated radial
-  velocity, with a correction accounting for the vertical structure of
-  the temperature field and conduction cooling. The system composed by
-  (\ref{EqFinal1}) and  (\ref{EqFinal2}), whose main variable  are $h$
-  and $\xi$ is complete.  Indeed,  the temperature at the contact with
-  the surrounding $\Theta_s$ is built from the variable $\xi$
+  The second term of the equation contains advection by the vertically
+  integrated  radial   velocity  while  the  third   term  contains  a
+  correction accounting for the  vertical structure of the temperature
+  field. The term  on the right is  the loss of heat  by conduction in
+  the surrounding medium.
+
+  \vspace{.5cm} \textbf{Average quantities} \vspace{.5cm}
+
+  The average  velocity over  a thermal boundary  layer $\overline{u}$
+  reads
+  \begin{eqnarray}
+    \overline{u}        =\frac{1}{\delta}\int_0^{\delta}udz        &=&
+                                                                       u(r,\delta,t) - \frac{1}{\delta}\int_0^{\delta}\frac{\partial
+                                                                       u}{\partial z} zdz\\
+                                                                   &=&\frac{12}{\delta}
+                                                                       \frac{\partial
+                                                                       P}{\partial
+                                                                       r}\left(\delta
+                                                                       I_0(\delta)-I_1(\delta)\right)
+  \end{eqnarray}
+  where $P(r,z,t) = h+\nabla^4h$ is  the dimensionless pressure and we
+  have     used    (\ref{C3-Veloc}).      The    average     advection
+  $\overline{u\theta}$ over a thermal boundary layer reads
+  \begin{eqnarray}
+    \overline{u\theta}=\frac{1}{\delta}\int_0^{\delta}u\theta dz &=& \frac{1}{\delta}\left( [ uG(z) ]_{0}^{\delta} -\int_0^\delta
+                                                                     G(z)\frac{\partial
+                                                                     u}{\partial
+                                                                     z}
+                                                                     dz\right)\nonumber\\
+                                                                 &=&\frac{12}{\delta} \frac{\partial P}{\partial r}\left(G(\delta)I_0(\delta)-I_2(\delta)\right)
+  \end{eqnarray}
+  where
+  \begin{equation}
+    G(z)                  =                 \Theta_b                  z
+    -\frac{\left(\Theta_b-\Theta_s\right)}{3}\delta\left(1-\frac{z}{\delta}\right)^3
+  \end{equation}
+  denotes a primitive of $\theta$ when $z<\delta$ and
+  \begin{equation}
+    I_2(z)=\int_0^y                         \frac{1}{\eta(\theta,\nu)}G(y)
+    \left(y-\frac{h}{2}\right)dy.
+  \end{equation}
+  Therefore, we have
+  \begin{equation}
+    \overline{u\theta}-\overline{u}\overline{\theta}= \frac{12}{\delta} \frac{\partial P}{\partial r}\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right)
+  \end{equation} 
+  where the average temperature over a thermal boundary layer reads
+  \begin{equation}
+    \overline{\theta} = \frac{2}{3}\left( \Theta_{b}+\Theta_{s}\right)
+    \label{C3-tbar}
+  \end{equation}
+
+  \vspace{.5cm} \textbf{Main variables} \vspace{.5cm}
+
+  The variable  $\xi$ is the sufficient  variable to solve for  in the
+  heat transport equation (\ref{EqFinal2}). Indeed,
+  \begin{equation}
+    \xi&=&\frac{\delta}{3} \left(- 2 \Theta_{b} - \Theta_{s} + 3\right)\label{C3-xi}
+  \end{equation}
+  where   we   have   used   (\ref{C3-tbar}).    In   addition,   from
+  (\ref{C3-Boundary-Condi}), we can rewrite
+  \begin{eqnarray}
+    \Theta_s &=& \frac{2 \Theta_{b}}{\beta \delta + 2}\label{C3-Ts},\\
+    \delta  &=&   \frac{1}{\Theta_{s}  \beta}   \left(2  \Theta_{b}   -  2
+                \Theta_{s}\right)\label{C3-D},\\
+    \Theta_b &=& \frac{\Theta_{s}}{2} \left(\beta \delta + 2\right)\label{C3-Tb}
+  \end{eqnarray}
+  where $\beta = \Omega Pe^{1/2}/\sqrt{\pi t}$ for clarity.
+
+  When  the thermal  boundary  layer just  merged, then  $\Theta_b=1$,
+  $\delta = h/2$ and injecting (\ref{C3-Ts})  into (\ref{C3-xi}) gives
+  \begin{equation}
+    \xi_t(t)=\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
+      + 24}\label{C3-xit}
+  \end{equation}
+
+  Therefore,  when $\xi<\xi_t$,  the  thermal boundary  layer are  not
+  merged, $\Theta_b=1$  and injecting (\ref{C3-D})  into (\ref{C3-xi})
+  and solving for $\Theta_s$ gives
+  \begin{equation}
+    \Theta_s = \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1.
+  \end{equation}
+  
+  In  contrast,  when  $\xi>\xi_t$,  the thermal  boundary  layer  are
+  merged, $\delta=h/2$ and  injecting (\ref{C3-Tb}) into (\ref{C3-xi})
+  and solving for $\Theta_s$ gives
+  \begin{equation}
+    \Theta_s = \frac{- 12 \xi + 6 h}{\left(\beta h + 6\right) h}.
+  \end{equation}
+
+  \subsection{Summary of the equations}
+
+  The  equation governing  the  cooling of  an elastic-plated  gravity
+  current with rheology $\eta(\theta,\nu)$ are summarized as follow
+  \begin{eqnarray}
+    \frac{\partial h}{\partial t}-\frac{12}{r}
+    \frac{\partial}{\partial      r}
+    \left(      r      I_1(h)\left(     \frac{\partial      }{\partial
+    r}\left(h+\nabla^4h\right)\right)\right)
+\label{C3-HF}
+    & =& w_i\\
+    \frac{\partial                                       \xi}{\partial
+    t}+\frac{1}{r}\frac{\partial}{\partial                          r}
+    \left( r\left(\bar{u}\xi-\Sigma\right)\right)&=&2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}\label{C3-TF}
+  \end{eqnarray}
+  where
   \begin{equation}
     \Theta_s(r,t)=
     \begin{cases}
       \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1 & \text{if} \hspace{1cm} \xi\leq \xi_t \\
       \frac{- 12 \xi + 6 h{\left (r,t \right )}}{\left(\beta h{\left (r,t \right )} + 6\right) h{\left (r,t \right )}} & \text{if} \hspace{1cm} \xi > \xi_t\\
     \end{cases}
+\label{C3-TS}
   \end{equation}
-  where
-  \begin{eqnarray}
-    \xi_t(t)&=&\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
-                + 24}\\
-    \beta(t) &=& \Omega Pe^{1/2}\frac{1}{\sqrt{\pi t}}
-  \end{eqnarray}
-  which leads to the expression of $\Theta_b$ and $\delta$
   \begin{equation}
     \Theta_b(r)=
     \begin{cases}
@@ -463,6 +514,7 @@ where we use $u(r,\delta,t) = 12 \frac{\partial P}{\partial      r}I_3$.
       \frac{\Theta_{s}}{4} \left(\beta(t) h{\left (r,t \right )} +
         4\right) & \text{if} \hspace{1cm} \xi > \xi_t\\
     \end{cases}
+\label{C3-TB}
   \end{equation}
   \begin{equation}
     \delta(r)=
@@ -470,28 +522,329 @@ where we use $u(r,\delta,t) = 12 \frac{\partial P}{\partial      r}I_3$.
       \frac{1}{\Theta_{s} \beta(t)} \left(- 2 \Theta_{s} + 2\right) &\text{if } \hspace{1cm} \xi\leq \xi_t \\
       h(r,t)/2 & \text{if} \hspace{1cm} \xi > \xi_t\\
     \end{cases}
+\label{C3-DELTA}
   \end{equation}
+  with
+  \begin{eqnarray}
+    \xi_t(t)&=&\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
+                + 24}\\
+    \beta(t) &=& \Omega Pe^{1/2}\frac{1}{\sqrt{\pi t}}\\
+    \overline{u}&=& \frac{12}{\delta}
+                    \left( \frac{\partial }{\partial r}\left(h+\nabla^4h\right)\right)\left(\delta
+                    I_0(\delta)-I_1(\delta)\right)\\
+                    \Sigma     &=&12   \left( \frac{\partial }{\partial r}\left(h+\nabla^4h\right)\right)\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right)\\
+    \overline{\theta}                                              &=&
+                          \frac{2}{3}\left( \Theta_{b}+\Theta_{s}\right)\\
+    G(z)              &    = &                \Theta_b                  z
+    -\frac{\left(\Theta_b-\Theta_s\right)}{3}\delta\left(1-\frac{z}{\delta}\right)^3\\
+w_i&=&\frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\left(1-\frac{h_0}{\sigma}\right)
+  \end{eqnarray}
+and
+\begin{eqnarray}
+  I_0(z)&=&\int_0^z\frac{1}{\eta(\theta,\nu)}\left(y-\frac{h}{2}\right)
+    dy \\
+I_1(z) &=& \int_0^z\frac{1}{\eta(\theta,\nu)}\left(y-\frac{h}{2}\right)y dy\\
+    I_2(z)&=&\int_0^y                         \frac{1}{\eta(\theta,\nu)}
+    \left(y-\frac{h}{2}\right)G(y)dy.\\
+\end{eqnarray}
 
-  \section{Numerical approach}
-  \label{C3-sec:numerical-approach}
 
-  Equations   (\ref{EqFinal1})   and   (\ref{EqFinal2})   are   solved
-  numerically  using  the  Newton-Raphson  method  which  leads  to  a
-  second-order scheme in time and space. In all solutions, we computed
-  the mass and  energy conservation as a test for  the accuracy of the
-  convergence.
+\section{Numerical approach}
+\label{C3-sec:numerical-approach}
 
-  \subsection{Equation on the thickness}
-  \label{C3-sec:equation-thickness}
+\subsection{General procedure}
+\label{sec:general-procedure}
 
-  \subsection{Heat transport equation}
-  \label{C3-sec:heat-transp-equat}
+The coupled nonlinear partial differential equations (\ref{C3-HF}) and
+(\ref{C3-TF}) are solved on a grid of size $M$ defined by the relation
+$r_i = (i-0.5)\Delta r$ for $i=1,..,M$. The grid is shifted at the center to avoid
+problem arising  from the axisymmetrical  geometry. We index  the grid
+point by the indice $i$ and denote the solution on this grid $h_i$ and
+$\xi_i$ and the secondary variables $\Theta_{b,i}$, $\Theta_{s,i}$ and
+$\delta_i$. Both equations can be expressed on the convenient form
+\begin{equation}
+  \frac{\partial u}{\partial t} - f = 0
+\end{equation}
+where $u$  is the function we  want to integrate and  $f$ a non-linear
+function  that depends  on $u$.   We  solve these  equations by  first
+discretizing all the spatial  derivatives using Finite Difference. The
+accuracy of the  scheme is determined by the  higher order derivatives
+since  their numerical  approximation requires  the largest  number of
+sample points. We then get  two systems of $M$ ordinary differential
+equations with the form
+\begin{equation}
+  \frac{\partial u_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M
+\end{equation}
+The time derivatives are first  order and, since explicit schemes tend
+to be  very sensitive and unstable,  we use a fully  implicit backward
+Euler scheme to get
+\begin{equation}
+  \frac{u_i^{n+1}-u_i^n}{\Delta t} - f_i(u_i^{n+1}) = 0 \hspace{1cm} i
+  = 1,...,M
+\label{C3-Num-1}
+\end{equation}
+Since  $f_i(u_i^{n+1})$ is  not a  linear function,  the system  above
+cannot be re-arranged to solve $u_i^{n+1}$ in term of $u_i^{n}$ and an
+iterative method  has to  be employed  instead. Fixed  point iteration
+method have shown  poor results in converging toward  the solution and
+we finally apply  second order Newton's method to  obtain the solution
+at each time step.  In particular, we first linearize $u^{n+1}$ around
+a guess  of the solution  by assuming $u^{n+1}=u^*+\delta  u^n$, where
+$u^*$ is a guess and $\delta u^n$ is the error and we drop the $i$ for
+clarity.   Then, we  expressed the  non-linear part  using a  Taylor's
+expansion
+\begin{equation}
+  f^{n+1}=f(u^{n+1})=f(u^*+\delta
+  u^n)=f(u^*)+J^h_{f}(u^*)\delta u^n\nonumber
+\end{equation}
+where  $J^u_{f}(u^*)$ is  the  jacobian matrix  for  the function  $f$
+evaluated  in $h^*$.   Injecting the  expansion into  (\ref{C3-Num-1})
+finally gives a  system of M linear equations for  the correction term
+$\delta_h^n$ which can be expressed as
+\begin{equation}
+  (I-\Delta tJ^u_{f}(u^*))\delta u^n=u^n-u^*+\Delta t f(u^*)
+\end{equation}
+where $I$ is the identity matrix. Therefore,  each iteration solves  for $\delta u^n$  and we
+use $u_n+\delta u^n$  as a new guess $u^*$ in  each iteration. This is
+repeated  until $\delta  u^n$  becomes  sufficiently small.   Finally,
+since the equations are coupled, we use a fixed-point iteration method
+to  converge  toward  the  solution   $(h,\xi)$  at  each  time  step.
+Therefore, the algorithm is the following at each time step
+\begin{itemize}
+\item Start with a guess for the values of all variables.
+\item Solve the thickness equation (\ref{C3-HF}) for $h^{n+1}$ using Newton-Rhapsod method.
+\item Solve the heat equation (\ref{C3-TF}) for $\xi^{n+1}$ using $h^{n+1}$ as a new guess for $h^*$
+  and Newton-Rhapsod method.
+\item Repeat  step one until  further iterations cease to  produce any
+  significant changes in the values of both $h^{n+1}$ and $\xi^{n+1}$.
+\end{itemize}
+The computational scheme is summarized in the following.
 
-  \subsection{Convergence}
-  \label{C3-sec:convergence}
+\subsection{Thickness equation}
+
+The thickness equation (\ref{C3-HF}) is written as
+\begin{eqnarray}
+  \frac{\partial h}{\partial t}-f(h,\xi)&=&0
+\end{eqnarray}
+with
+\begin{eqnarray}
+  f& =& \frac{1}{r}
+        \frac{\partial}{\partial      r}
+        \left(      r  \phi\left(     \frac{\partial      }{\partial
+        r}\left(h+P\right)\right)\right)+w_i\\
+  \phi &=& 12I_1(h)
+\end{eqnarray}
+and where $P$ is the dimensionless bending pressure $P = \nabla^4h$.
+
+\vspace{.5cm} \textbf{Spatial discretization of f} \vspace{.5cm}
+
+The  spatial discretization  is  obtained using  a central  difference
+scheme  over  a  sub-grid  shifted  by $0.5\Delta  r$  from  the  main
+grid. Therefore, we have
+\begin{eqnarray}
+  f_i&=&\frac{1}{r_i \Delta_r}\left(r_{i+1/2}\phi_{i+1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i+1/2}-r_{i-1/2}\phi_{i-1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i-1/2}\right)\nonumber\\
+     &=&A_i\phi_{i+1/2}\left(h_{i+1}-h_i\right)-B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
+     &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)-B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
+     &+&w_i\label{C3-Num-3}
+\end{eqnarray}
+where                $A_i=r_{i+1/2}/(r_i\Delta_r^2)$               and
+$B_i=r_{i-1/2}/(r_i\Delta_r^2)$.   The bending  pressure  term $P$  is
+very stiff and  needs a careful treatment.  In  particular, the fourth
+order derivative requires a fourth order central difference scheme and
+therefore, $P_i$ is  expressed over a seven point stencil  on the main
+grid such that
+\begin{equation}
+  P_{i}=   \alpha_{i}h_{i-3}  +   \beta_{i}h_{i-2}+\gamma_{i}  h_{i-1}
+  +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3}
+  \label{C3-Num-4}
+\end{equation}
+with
+\begin{eqnarray}
+  &\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4+3p_3\Delta_r \right)\nonumber \\
+  &\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber\\
+  &\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber\\
+  &\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224-60p_2\Delta r^{2}\right) \nonumber\\
+  &\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber\\
+  &\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber\\
+  &\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4-3p_3\Delta_r \right)\nonumber
+\end{eqnarray}
+and where $p_1=1/r_i^3$, $p_2=1/r_i^2$ and $p_3 = 2/r_i$. Finally, the
+term $\phi_{i-1/2}$  and $\phi_{i-1/2}$, which depend  on the variable
+$\Theta_b$, $\delta$ as well as  different power of $h$, are evaluated
+in $i-1/2$ and  $i+1/2$ respectively. Different choices  for the value
+of the variable at the mid-cell grid point do not show any significant
+difference  and a  simple  average  is taken  such  that the  variable
+$u_{i+1/2}$ is taken as $0.5(u_i+u_{i+1})$.
+
+\vspace{.5cm}    \textbf{Expression   of    the   jacobian    $J_f^h$}
+\vspace{.5cm}
+
+The discretized  function $f_i$ can be  break down in three  part, the
+gravitational part $f_i^{g}$  which is expressed in term  of the value
+of $h$ on three  grid points $\left\{{i-1,i,i+1}\right\}$, the bending
+part $f_i^{b}$ which is expressed in term  of the value of $h$ on nine
+grid points  $\left\{{i-4,i-3,...,i+3,i+4}\right\}$ and  the injection
+term which depends only on the grid point $i$ such that
+\begin{equation}
+  f_i = f_i^g+f_i^b+w_i
+\end{equation}
+Therefore, the jacobian is  nona-diagonal and its coefficient $J_{il}$
+are
+\begin{equation}
+  J_{il}=
+  \begin{cases}
+    \frac{\partial f^{b}_i}{\partial h_{l}} &
+    l = \left\{{i-4,i-3,i-2,i+2,i+3,i+4}\right\}\\
+    \frac{\partial       f^{g}_i}{\partial       h_{l}}+\frac{\partial
+      f^{b}_i}{\partial h_{l}} & l =
+    \left\{{i-1,i,i+1}\right\}\\
+    0 & \text{otherwise}
+  \end{cases}
+  \label{C2-eq12}
+\end{equation}
+The different  terms can be  easily derived from  (\ref{C3-Num-3}) and
+(\ref{C3-Num-4}) with just slight  adjustment coming from the boundary
+conditions.
+
+\vspace{.5cm} \textbf{Boundary condition} \vspace{.5cm}
+
+ We begin with
+$h_i=h_f$ for  $i=1,..,M$.  Since the  flow is symmetric in  $r=0$, we
+require that
+\begin{equation}
+  \left.\frac{\partial h}{\partial r}\right|_{r=0} =\left.\frac{\partial P}{\partial r}\right|_{r=0} =0
+\end{equation}
+and therefore for $i=1$, we have
+\begin{eqnarray}
+  f_i     &=&A_1\phi_{i+1/2}\left(h_{i+1}-h_i\right)\nonumber\\
+          &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)\nonumber\\
+          &+&w_i\label{C3-Num-5}
+\end{eqnarray}
+The expression  of the  bending pressure, evaluated  over a  $7$ point
+stencils, is problematic close to the boundary and reflection formulae
+will  be  used  in  order   to  accommodate  the  boundary  conditions
+\citet{Patankar:1980vu}.   In   particular,  we  have  $h_0   =  h_1$,
+$h_{-1}=h_2$ and  $h_{-2}=h_3$.  Similarly, boundary condition  at the
+end of the mesh is accounted by using a grid much larger than the flow
+itself and requiring
+\begin{equation}
+  \left.\frac{\partial h}{\partial r}\right|_{r=r_M} =\left.\frac{\partial P}{\partial r}\right|_{r=r_M} =0
+\end{equation}
+which gives for $i=M$
+\begin{eqnarray}
+  f_i     &=&B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
+          &+&B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
+          &+&w_i\label{C3-Num-5}
+\end{eqnarray}
+with $h_{i>=M}=h_f$.
 
 
+\vspace{.5cm} \textbf{Newton-Rhapsod method} \vspace{.5cm}
 
+The Newton-Rhapsod method reads
+\begin{equation}
+  (I-\Delta tJ^h_{f}(h_k^*))\delta h_k^n=h^n-h_k^*+\Delta t f(h_k^*)
+\end{equation}
+where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
+diagonal  matrix and  $J_f^h(h^*)$  is a  $M  \times M$  nona-diagonal
+matrix.  This  system  of  linear  equations can  be  solved  using  a
+nona-diagonal algorithm. At the first  iteration, we use $h^*_1 = h^n$
+as     a    first     guess    and     then    we     iterate    using
+$h^*_k  = h^n+\delta  h_{k-1}^n$ as  a new  guess for  each iterations
+until $\delta h^n_{k}$ becomes  sufficiently small.  In particular, we
+require that
+\begin{equation}
+  \delta h^n_k/h^*_{k}<\epsilon
+\end{equation}
+with $\epsilon = 10^{-4}$. 
+
+\subsection{Heat equation}
+
+The heat equation (\ref{C3-TF}) is written as
+\begin{eqnarray}
+  \frac{\partial \xi}{\partial t}-g(h,\xi)&=&0
+\end{eqnarray}
+with
+\begin{eqnarray}
+  g& =& \frac{1}{r}\frac{\partial}{\partial                          r}
+        \left( r\Gamma\xi\right) +\frac{1}{r}\frac{\partial}{\partial                          r}
+        \left(r\Sigma\right)+2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}\\
+  \Gamma&=& -\overline{u}
+\end{eqnarray}
+
+\vspace{.5cm} \textbf{Spatial discretization of g} \vspace{.5cm}
+
+As for the thickness equation,  the spatial discretization is obtained
+using  a  central  difference  scheme   over  a  sub-grid  shifted  by
+$0.5\Delta r$ from the main grid. Therefore, we have
+\begin{eqnarray}
+  g_i &=& \left(C_i\Gamma_{i+1/2}\xi_{i+1/2}-D_i\Gamma_{i-1/2}\xi_{i-1/2}\right)\\
+      &+&\left(C_i\Sigma_{i+1/2}-D_i\Sigma_{i-1/2}\right)\\
+      &+&2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}
+\end{eqnarray}
+with         $C_i         =r_{i+1/2}/(r_i\Delta        r)$         and
+$D_i =r_{i-1/2}/(r_i\Delta r)$.   We use the average  between the grid
+point $i$ and $i-1$ (resp. $i+1$) to evaluate the quantity in $\Gamma$
+and  $\Sigma$ at  $i-1/2$ (resp.   $i+1/2$).   In addition,  we use  a
+classical upwind  scheme to handle $\xi$  at the mid grid  point which
+requires
+\begin{eqnarray}
+  \xi_{i+1/2} &=& \xi_i\\
+  \xi_{i-1/2} &=& \xi_{i-1}
+\end{eqnarray}
+
+\vspace{.5cm}  \textbf{Expression   of  the   Jacobian  $J_{g}^{\xi}$}
+\vspace{.5cm}
+
+The expression  of the Jacobian  is much straightforward in  that case
+and its coefficient $J_{il}$ are
+\begin{equation}
+  J_{il}=
+  \begin{cases}
+    -D_i\Gamma_{i-1/2}&
+    l = i-1\\
+    C_i\Gamma_{i+1/2} & l = i \\
+    0 & \text{otherwise}
+  \end{cases}
+  \label{C2-eq12}
+\end{equation}
+with only slight adjustment coming from the boundary conditions.
+
+\vspace{.5cm} \textbf{Boundary conditions} \vspace{.5cm}
+
+We  consider $\Theta_b  =1$  and $\delta  = 10^{-4}$  in  the film  at
+$t=0$. In this way, we ensure  that the average temperature across the
+film at $t=0$ is close to $1$. By construction, $D_1=0$ and therefore,
+for $i=1$ we have
+\begin{eqnarray}
+  g_i &=& C_i\Gamma_{i+1/2}\xi_{i}+ C_i\Sigma_{i+1/2} +2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}
+\end{eqnarray}
+For   $i=M$,   we    consider   that   $\Gamma_{i+1/2}=\Gamma_i$   and
+$\Sigma_{i=1/2}=\Sigma_i$.   However,  the  choice  for  the  boundary
+condition at the border of the grid $i=M$ is not important as we solve
+the problem over a grid much larger than the flow itself.
+
+\vspace{.5cm} \textbf{Newton-Rhapsod method} \vspace{.5cm}
+
+The Newton-Rhapsod method reads
+\begin{equation}
+  (I-\Delta tJ^{\xi}_{g}(\xi_k^*))\delta \xi_k^n=\xi^n-\xi_k^*+\Delta t f(\xi_k^*)
+\end{equation}
+where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
+diagonal  matrix and  $J_f^h(\xi^*)$ is  a $M  \times M$  tri-diagonal
+matrix.   This  system of  linear  equations  can  be solved  using  a
+tri-diagonal algorithm.  As for the  thickness equation, at  the first
+iteration,  we use  $\xi^*_1 =  \xi^n$ as  a first  guess and  then we
+iterate using $\xi^*_k = \xi^n+\delta  \xi_{k-1}^n$ as a new guess for
+each iterations  until $\delta \xi^n_{k}$ becomes  sufficiently small.
+In particular, we require that
+\begin{equation}
+  \delta \xi^n_k/\xi^*_{k}<\epsilon
+\end{equation}
+with $\epsilon = 10^{-4}$. In addition, at each iteration the quantity
+$\Theta^*_{s,k}$, $\Theta^*_{b,k}$ and $\delta^*_k$, that are needed to evaluate $\Gamma$ and
+$\Sigma$,  are  derived from  the value of  $\xi^*_{k}$  using
+(\ref{C3-TS}), (\ref{C3-TB}) and (\ref{C3-DELTA}) respectively.
 
 %%% Local Variables:
 %%% mode: latex

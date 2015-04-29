@@ -1,15 +1,15 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Theory}{\reset@font\mtcSfont 17}{section.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Formulation}{\reset@font\mtcSSfont 17}{subsection.3.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Thickness equation}{\reset@font\mtcSSfont 18}{subsection.3.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.3}Heat transport equation}{\reset@font\mtcSSfont 19}{subsection.3.1.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.1}Local energy conservation}{\reset@font\mtcSSSfont 19}{subsubsection.3.1.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.2}Integral balance solution for the temperature $T(r,z,t)$}{\reset@font\mtcSSSfont 19}{subsubsection.3.1.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.3}Integral balance equation}{\reset@font\mtcSSSfont 20}{subsubsection.3.1.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.4}Thermal boundary conditions}{\reset@font\mtcSSSfont 21}{subsubsection.3.1.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.4}Dimensionless equations}{\reset@font\mtcSSfont 21}{subsection.3.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.5}Further simplifications}{\reset@font\mtcSSfont 23}{subsection.3.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.6}Final equations}{\reset@font\mtcSSfont 24}{subsection.3.1.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Numerical approach}{\reset@font\mtcSfont 25}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Equation on the thickness}{\reset@font\mtcSSfont 25}{subsection.3.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Heat transport equation}{\reset@font\mtcSSfont 25}{subsection.3.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Convergence}{\reset@font\mtcSSfont 25}{subsection.3.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Theory}{\reset@font\mtcSfont 19}{section.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Formulation}{\reset@font\mtcSSfont 19}{subsection.3.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Equation for the thickness}{\reset@font\mtcSSfont 20}{subsection.3.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.3}Heat transport equation}{\reset@font\mtcSSfont 21}{subsection.3.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.1}Local energy conservation}{\reset@font\mtcSSSfont 21}{subsubsection.3.1.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.2}Integral balance solution for the temperature $T(r,z,t)$}{\reset@font\mtcSSSfont 22}{subsubsection.3.1.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.3}Integral balance equation}{\reset@font\mtcSSSfont 22}{subsubsection.3.1.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.4}Thermal boundary conditions}{\reset@font\mtcSSSfont 23}{subsubsection.3.1.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.4}Dimensionless equations}{\reset@font\mtcSSfont 24}{subsection.3.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.5}Further simplifications}{\reset@font\mtcSSfont 26}{subsection.3.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.6}Summary of the equations}{\reset@font\mtcSSfont 28}{subsection.3.1.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Numerical approach}{\reset@font\mtcSfont 29}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}General procedure}{\reset@font\mtcSSfont 29}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Thickness equation}{\reset@font\mtcSSfont 31}{subsection.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Heat equation}{\reset@font\mtcSSfont 33}{subsection.3.2.3}}

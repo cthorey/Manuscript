@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -9,6 +9,10 @@
 Balmforth, N.~J., and R.~V. Craster (2000), {Dynamics of cooling domes of
   viscoplastic fluid}, \textit{J. Fluid Mech.}
 
+\bibitem[{\textit{Bertozzi}(1998)}]{Bertozzi:1998wz}
+Bertozzi, A.~L. (1998), {The mathematics of moving contact lines in thin liquid
+  films}, \textit{Notices AMS}.
+
 \bibitem[{\textit{Bunger and Cruden}(2011)}]{Bunger:2011cb}
 Bunger, A.~P., and A.~R. Cruden (2011), {Modeling the growth of laccoliths and
   large mafic sills: Role of magma body forces}, \textit{J. Geophys. Res.},
@@ -16,6 +20,11 @@ Bunger, A.~P., and A.~R. Cruden (2011), {Modeling the growth of laccoliths and
 
 \bibitem[{\textit{Carslaw and Jaeger}(1959)}]{Carslaw:1959wf}
 Carslaw, H.~S., and J.~C. Jaeger (1959), {Heat in solids}.
+
+\bibitem[{\textit{Flitton and King}(2004)}]{Flitton:1999iv}
+Flitton, J.~C., and J.~R. King (2004), {Moving-boundary and fixed-domain
+  problems for a sixth-order thin-film equation}, \textit{European Journal of
+  Applied Mathematics}, \textit{15}(06), 713--754.
 
 \bibitem[{\textit{Goodman}(1958)}]{Goodman:1958ue}
 Goodman, T.~R. (1958), \textit{{The heat-balance integral and its application
@@ -69,11 +78,19 @@ Michaut, C., D.~Baratoux, and C.~Thorey (2013), {Magmatic intrusions and
   deglaciation at mid-latitude in the northern plains of Mars},
   \textit{Icarus}, \textit{225}(1), 602--613.
 
+\bibitem[{\textit{Patankar}(1980)}]{Patankar:1980vu}
+Patankar, S. (1980), {Numerical heat transfer and fluid flow}.
+
 \bibitem[{\textit{Pollard and Johnson}(1973)}]{Pollard:1973ho}
 Pollard, D.~D., and A.~M. Johnson (1973), {Mechanics of growth of some
   laccolithic intrusions in the Henry Mountains, Utah, II: bending and failure
   of overburden layers and sill formation}, \textit{Tectonophysics},
   \textit{18}(3-4), 311--354.
+
+\bibitem[{\textit{Snoeijer and Andreotti}(2013)}]{Snoeijer:2013cm}
+Snoeijer, J.~H., and B.~Andreotti (2013), {Moving Contact Lines: Scales,
+  Regimes, and Dynamical Transitions}, \textit{Annu. Rev. Fluid Mech.},
+  \textit{45}(1), 269--292.
 
 \bibitem[{\textit{Turcotte and Schubert}(1982)}]{Turcotte:1982ca}
 Turcotte, D.~L., and G.~Schubert (1982), {Geodynamics: Applications of
