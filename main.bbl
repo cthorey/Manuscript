@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -7,7 +7,7 @@
 
 \bibitem[{\textit{Balmforth and Craster}(2000)}]{BALMFORTH:2004fm}
 Balmforth, N.~J., and R.~V. Craster (2000), {Dynamics of cooling domes of
-  viscoplastic fluid}, \textit{J. Fluid Mech.}
+  viscoplastic fluid}, \textit{Journal of Fluid Mechanics}.
 
 \bibitem[{\textit{Bertozzi}(1998)}]{Bertozzi:1998wz}
 Bertozzi, A.~L. (1998), {The mathematics of moving contact lines in thin liquid
@@ -15,8 +15,8 @@ Bertozzi, A.~L. (1998), {The mathematics of moving contact lines in thin liquid
 
 \bibitem[{\textit{Bunger and Cruden}(2011)}]{Bunger:2011cb}
 Bunger, A.~P., and A.~R. Cruden (2011), {Modeling the growth of laccoliths and
-  large mafic sills: Role of magma body forces}, \textit{J. Geophys. Res.},
-  \textit{116}(B2), B02,203.
+  large mafic sills: Role of magma body forces}, \textit{Journal of Geophysical
+  Research}, \textit{116}(B2), B02,203.
 
 \bibitem[{\textit{Carslaw and Jaeger}(1959)}]{Carslaw:1959wf}
 Carslaw, H.~S., and J.~C. Jaeger (1959), {Heat in solids}.
@@ -42,8 +42,8 @@ Hort, M. (1997), {Cooling and crystallization in sheet-like magma bodies
 
 \bibitem[{\textit{Huppert}(1982)}]{Huppert:1982a}
 Huppert, H.~E. (1982), {The propagation of two-dimensional and axisymmetric
-  viscous gravity currents over a rigid horizontal surface}, \textit{J. Fluid
-  Mech.}, \textit{121}(-1), 43--58.
+  viscous gravity currents over a rigid horizontal surface}, \textit{Journal of
+  Fluid Mechanics}, \textit{121}(-1), 43--58.
 
 \bibitem[{\textit{Johnson and Pollard}(1973)}]{Johnson:1973ho}
 Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
@@ -54,17 +54,25 @@ Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
 \bibitem[{\textit{Lister et~al.}(2013)\textit{Lister, Peng, and
   Neufeld}}]{Lister:2013ia}
 Lister, J.~R., G.~G. Peng, and J.~A. Neufeld (2013), {Viscous Control of
-  Peeling an Elastic Sheet by Bending and Pulling}, \textit{Phys. Rev. Lett.},
-  \textit{111}(15), 154,501.
+  Peeling an Elastic Sheet by Bending and Pulling}, \textit{Physical Review
+  Letters}, \textit{111}(15), 154,501.
+
+\bibitem[{\textit{McKenzie}(1984)}]{McKenzy:1984bo}
+McKenzie, D. (1984), {The Generation and Compaction of Partially Molten Rock},
+  \textit{Journal of Petrology}, \textit{25}(3), 713--765.
+
+\bibitem[{\textit{McKenzie}(1985)}]{McKenzie:1985jq}
+McKenzie, D. (1985), {The extraction of magma from the crust and mantle},
+  \textit{Earth and Planetary Science Letters}, \textit{74}(1), 81--91.
 
 \bibitem[{\textit{Michaut}(2011)}]{Michaut:2011kg}
 Michaut, C. (2011), {Dynamics of magmatic intrusions in the upper crust: Theory
-  and applications to laccoliths on Earth and the Moon}, \textit{J. Geophys.
-  Res.}, \textit{116}(B5), B05,205.
+  and applications to laccoliths on Earth and the Moon}, \textit{Journal of
+  Geophysical Research}, \textit{116}(B5), B05,205.
 
 \bibitem[{\textit{Michaut and Bercovici}(2009)}]{Michaut:2009jx}
 Michaut, C., and D.~Bercovici (2009), {A model for the spreading and compaction
-  of two-phase viscous gravity currents}, \textit{J. Fluid Mech.},
+  of two-phase viscous gravity currents}, \textit{Journal of Fluid Mechanics},
   \textit{630}, 299--329.
 
 \bibitem[{\textit{Michaut and Jaupart}(2006)}]{Michaut:2006di}
@@ -78,8 +86,18 @@ Michaut, C., D.~Baratoux, and C.~Thorey (2013), {Magmatic intrusions and
   deglaciation at mid-latitude in the northern plains of Mars},
   \textit{Icarus}, \textit{225}(1), 602--613.
 
+\bibitem[{\textit{Miller and Paterson}(1999)}]{Miller:1999km}
+Miller, R.~B., and S.~R. Paterson (1999), {In defense of magmatic diapirs},
+  \textit{Journal of Structural Geology}, \textit{21}(8-9), 1161--1173.
+
 \bibitem[{\textit{Patankar}(1980)}]{Patankar:1980vu}
 Patankar, S. (1980), {Numerical heat transfer and fluid flow}.
+
+\bibitem[{\textit{Petford et~al.}(2000)\textit{Petford, Cruden, McCaffrey, and
+  Vigneresse}}]{Petford:2000cc}
+Petford, N., A.~R. Cruden, K.~J.~W. McCaffrey, and J.~L. Vigneresse (2000),
+  {Granite magma formation, transport and emplacement in the Earth's crust},
+  \textit{Nature}, \textit{408}(6813), 669--673.
 
 \bibitem[{\textit{Pollard and Johnson}(1973)}]{Pollard:1973ho}
 Pollard, D.~D., and A.~M. Johnson (1973), {Mechanics of growth of some
@@ -89,8 +107,8 @@ Pollard, D.~D., and A.~M. Johnson (1973), {Mechanics of growth of some
 
 \bibitem[{\textit{Snoeijer and Andreotti}(2013)}]{Snoeijer:2013cm}
 Snoeijer, J.~H., and B.~Andreotti (2013), {Moving Contact Lines: Scales,
-  Regimes, and Dynamical Transitions}, \textit{Annu. Rev. Fluid Mech.},
-  \textit{45}(1), 269--292.
+  Regimes, and Dynamical Transitions}, \textit{Annual Review of Fluid
+  Mechanics}, \textit{45}(1), 269--292.
 
 \bibitem[{\textit{Turcotte and Schubert}(1982)}]{Turcotte:1982ca}
 Turcotte, D.~L., and G.~Schubert (1982), {Geodynamics: Applications of

@@ -3,6 +3,7 @@
  (lambda ()
    (LaTeX-add-labels
     "chap2"
+    "sec:orig-theor-fram"
     "C2-sec:model"
     "C2-Sketch"
     "C2-sec:Governing equation"

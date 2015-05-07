@@ -7,45 +7,45 @@ The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Anonymous:QWXp_4JV
-You've used 19 entries,
+You've used 23 entries,
             3076 wiz_defined-function locations,
-            1195 strings with 12293 characters,
-and the built_in function-call counts, 14254 in all, are:
-= -- 1576
-> -- 373
-< -- 17
-+ -- 184
-- -- 103
-* -- 856
-:= -- 1395
-add.period$ -- 19
-call.type$ -- 19
-change.case$ -- 85
-chr.to.int$ -- 20
-cite$ -- 20
-duplicate$ -- 1564
-empty$ -- 897
-format.name$ -- 167
-if$ -- 2847
+            1228 strings with 12925 characters,
+and the built_in function-call counts, 18309 in all, are:
+= -- 2083
+> -- 453
+< -- 20
++ -- 234
+- -- 125
+* -- 1072
+:= -- 1739
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 102
+chr.to.int$ -- 24
+cite$ -- 24
+duplicate$ -- 2037
+empty$ -- 1126
+format.name$ -- 199
+if$ -- 3660
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 154
-newline$ -- 64
-num.names$ -- 76
-pop$ -- 558
+missing$ -- 190
+newline$ -- 76
+num.names$ -- 92
+pop$ -- 722
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 80
 quote$ -- 0
-skip$ -- 869
+skip$ -- 1140
 stack$ -- 0
-substring$ -- 582
-swap$ -- 1273
+substring$ -- 790
+swap$ -- 1702
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
+type$ -- 204
 warning$ -- 1
-while$ -- 91
+while$ -- 115
 width$ -- 0
-write$ -- 205
+write$ -- 249
 (There was 1 warning)

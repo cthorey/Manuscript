@@ -21,6 +21,7 @@
     "graphicx"
     "array"
     "amsmath"
+    "pdfpages"
     "natbib"
     "makeidx")
    (LaTeX-add-bibliographies
