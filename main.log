@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.31)  15 JUN 2015 19:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.31)  15 JUN 2015 19:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1771,7 +1771,7 @@ igure/Chapter1/Moon_Lacc-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=/Users/thorey/Documents/The
 se/Manuscript/Figure/Chapter1/Moon_Lacc-eps-converted-to.pdf /Users/thorey/Docu
 ments/These/Manuscript/Figure/Chapter1/Moon_Lacc.eps>
-(epstopdf)             \includegraphics on input line 322.
+(epstopdf)             \includegraphics on input line 323.
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-convert
@@ -1782,7 +1782,7 @@ nverted-to.pdf Graphic file (type pdf)
 <use /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-con
 verted-to.pdf>
 Package pdftex.def Info: /Users/thorey/Documents/These/Manuscript/Figure/Chapte
-r1/Moon_Lacc-eps-converted-to.pdf used on input line 322.
+r1/Moon_Lacc-eps-converted-to.pdf used on input line 323.
 (pdftex.def)             Requested size: 348.04832pt x 411.93666pt.
 
 
@@ -1803,7 +1803,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.376 
+l.377 
        </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-
 converted-to.pdf>]
 
@@ -1820,12 +1820,12 @@ c file (type pdf)
 
 <use /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf>
 Package pdftex.def Info: /Users/thorey/Documents/These/Manuscript/Figure/Chapte
-r1/Model.pdf used on input line 424.
+r1/Model.pdf used on input line 425.
 (pdftex.def)             Requested size: 390.9584pt x 171.64026pt.
 
 
-LaTeX Warning: Reference `Rocchie_Schema' on page 16 undefined on input line 44
-9.
+LaTeX Warning: Reference `Rocchie_Schema' on page 16 undefined on input line 45
+0.
 
 
 Underfull \vbox (badness 2913) has occurred while \output is active []
@@ -1842,7 +1842,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.472 
+l.473 
        </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf>]
 (./Chapter/Chapter1.bbl (./main.brf)
 \tf@brf=\write8
@@ -4404,7 +4404,7 @@ blic/cm-super/sfrm2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
 ic/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
 /cm-super/sfti1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
 m-super/sftt1200.pfb>
-Output written on main.pdf (124 pages, 9518837 bytes).
+Output written on main.pdf (124 pages, 9518828 bytes).
 PDF statistics:
  4269 PDF objects out of 4296 (max. 8388607)
  2364 compressed objects within 24 object streams
