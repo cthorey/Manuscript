@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.31)  15 JUN 2015 19:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.3.31)  15 JUN 2015 19:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1757,7 +1757,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.305 
+l.309 
        </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Horsmann-eps-c
 onverted-to.pdf>]
 Package epstopdf Info: Source file: </Users/thorey/Documents/These/Manuscript/F
@@ -1771,18 +1771,18 @@ igure/Chapter1/Moon_Lacc-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=/Users/thorey/Documents/The
 se/Manuscript/Figure/Chapter1/Moon_Lacc-eps-converted-to.pdf /Users/thorey/Docu
 ments/These/Manuscript/Figure/Chapter1/Moon_Lacc.eps>
-(epstopdf)             \includegraphics on input line 318.
+(epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-convert
-ed-to.pdf, id=530, 366.36874pt x 433.62pt>
+ed-to.pdf, id=534, 366.36874pt x 433.62pt>
 File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-co
 nverted-to.pdf Graphic file (type pdf)
 
 <use /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-con
 verted-to.pdf>
 Package pdftex.def Info: /Users/thorey/Documents/These/Manuscript/Figure/Chapte
-r1/Moon_Lacc-eps-converted-to.pdf used on input line 318.
+r1/Moon_Lacc-eps-converted-to.pdf used on input line 322.
 (pdftex.def)             Requested size: 348.04832pt x 411.93666pt.
 
 
@@ -1803,19 +1803,9 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.372 
+l.376 
        </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Moon_Lacc-eps-
 converted-to.pdf>]
-</Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf, id=591, 41
-1.5375pt x 180.675pt>
-File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf Graphi
-c file (type pdf)
-
-<use /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf>
-Package pdftex.def Info: /Users/thorey/Documents/These/Manuscript/Figure/Chapte
-r1/Model.pdf used on input line 420.
-(pdftex.def)             Requested size: 390.9584pt x 171.64026pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (13.6pt): 
  Make it at least 27.13135pt.
@@ -1823,7 +1813,22 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-Underfull \vbox (badness 6893) has occurred while \output is active []
+</Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf, id=604, 41
+1.5375pt x 180.675pt>
+File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf Graphi
+c file (type pdf)
+
+<use /Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf>
+Package pdftex.def Info: /Users/thorey/Documents/These/Manuscript/Figure/Chapte
+r1/Model.pdf used on input line 424.
+(pdftex.def)             Requested size: 390.9584pt x 171.64026pt.
+
+
+LaTeX Warning: Reference `Rocchie_Schema' on page 16 undefined on input line 44
+9.
+
+
+Underfull \vbox (badness 2913) has occurred while \output is active []
 
 
 
@@ -1837,7 +1842,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.468 
+l.472 
        </Users/thorey/Documents/These/Manuscript/Figure/Chapter1/Model.pdf>]
 (./Chapter/Chapter1.bbl (./main.brf)
 \tf@brf=\write8
@@ -2040,7 +2045,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
                                                   \fi \fi 
 l.121 S
        uch  system  is  commonly  modeled as  an  isoviscous  elastic-plated]
-</Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_Sketch.pdf, id=927
+</Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_Sketch.pdf, id=929
 , 803.0pt x 371.3875pt>
 File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_Sketch.pdf Gr
 aphic file (type pdf)
@@ -2148,7 +2153,7 @@ horey/Documents/These/Manuscript/Figure/Chapter2/C2_ELAS_GRAV_Profil.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_ELAS_GRAV_Profil-e
-ps-converted-to.pdf, id=1105, 778.91pt x 390.45876pt>
+ps-converted-to.pdf, id=1107, 778.91pt x 390.45876pt>
 File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_ELAS_GRAV_Pro
 fil-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2203,7 +2208,7 @@ orey/Documents/These/Manuscript/Figure/Chapter2/C2_ELAS_GRAV_Sigma.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_ELAS_GRAV_Sigma-ep
-s-converted-to.pdf, id=1185, 975.645pt x 390.45876pt>
+s-converted-to.pdf, id=1187, 975.645pt x 390.45876pt>
 File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_ELAS_GRAV_Sig
 ma-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2245,7 +2250,7 @@ orey/Documents/These/Manuscript/Figure/Chapter2/C2_Geological_Data.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_Geological_Data-ep
-s-converted-to.pdf, id=1244, 1011.78pt x 597.23125pt>
+s-converted-to.pdf, id=1246, 1011.78pt x 597.23125pt>
 File: /Users/thorey/Documents/These/Manuscript/Figure/Chapter2/C2_Geological_Da
 ta-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2388,7 +2393,7 @@ se/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/Sketch-eps-converted-to.pdf
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Sketch-eps-converted-to.pdf, id=1432, 789.95125pt x 376.40625pt>
+/Sketch-eps-converted-to.pdf, id=1434, 789.95125pt x 376.40625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Sketch-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2543,7 +2548,7 @@ Model/Figure/JFM_V13/Scaling_HR_ELASGRAV_Simple.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_ELASGRAV_Simple-eps-converted-to.pdf, id=1589, 847.165pt x 368.3762
+/Scaling_HR_ELASGRAV_Simple-eps-converted-to.pdf, id=1591, 847.165pt x 368.3762
 5pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_ELASGRAV_Simple-eps-converted-to.pdf Graphic file (type pdf)
@@ -2686,7 +2691,7 @@ l/Figure/JFM_V13/Grid_Time_ELAS_Pe1_Nu1.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Grid_Time_ELAS_Pe1_Nu1-eps-converted-to.pdf, id=1736, 1096.095pt x 747.79375pt
+/Grid_Time_ELAS_Pe1_Nu1-eps-converted-to.pdf, id=1738, 1096.095pt x 747.79375pt
 >
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Grid_Time_ELAS_Pe1_Nu1-eps-converted-to.pdf Graphic file (type pdf)
@@ -2714,7 +2719,7 @@ nt/Skin_Model/Figure/JFM_V13/Thickness_Temperature_Profile_ELAS.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Thickness_Temperature_Profile_ELAS-eps-converted-to.pdf, id=1737, 819.06pt x 3
+/Thickness_Temperature_Profile_ELAS-eps-converted-to.pdf, id=1739, 819.06pt x 3
 72.39125pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Thickness_Temperature_Profile_ELAS-eps-converted-to.pdf Graphic file (typ
@@ -2743,7 +2748,7 @@ l/Figure/JFM_V13/Grid_PeNu_ELAS_Final_2.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Grid_PeNu_ELAS_Final_2-eps-converted-to.pdf, id=1738, 800.9925pt x 687.56876pt
+/Grid_PeNu_ELAS_Final_2-eps-converted-to.pdf, id=1740, 800.9925pt x 687.56876pt
 >
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Grid_PeNu_ELAS_Final_2-eps-converted-to.pdf Graphic file (type pdf)
@@ -2821,7 +2826,7 @@ e/JFM_V13/Scaling_HR_ELAS.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_ELAS-eps-converted-to.pdf, id=1911, 847.165pt x 368.37625pt>
+/Scaling_HR_ELAS-eps-converted-to.pdf, id=1913, 847.165pt x 368.37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_ELAS-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2882,7 +2887,7 @@ V13/R_Rc_ELAS.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/R_Rc_ELAS-eps-converted-to.pdf, id=1994, 847.165pt x 368.37625pt>
+/R_Rc_ELAS-eps-converted-to.pdf, id=1996, 847.165pt x 368.37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/R_Rc_ELAS-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2923,7 +2928,7 @@ Figure/JFM_V13/Visco_ELAS_Version_2.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Visco_ELAS_Version_2-eps-converted-to.pdf, id=2010, 833.1125pt x 691.58376pt>
+/Visco_ELAS_Version_2-eps-converted-to.pdf, id=2012, 833.1125pt x 691.58376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Visco_ELAS_Version_2-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2978,7 +2983,7 @@ igure/JFM_V13/Scaling_HR_ELAS_Stm.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_ELAS_Stm-eps-converted-to.pdf, id=2157, 847.165pt x 378.41376pt>
+/Scaling_HR_ELAS_Stm-eps-converted-to.pdf, id=2159, 847.165pt x 378.41376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_ELAS_Stm-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3012,7 +3017,7 @@ JFM_V13/R_Rc_ELAS_Stm.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/R_Rc_ELAS_Stm-eps-converted-to.pdf, id=2171, 897.3525pt x 378.41376pt>
+/R_Rc_ELAS_Stm-eps-converted-to.pdf, id=2173, 897.3525pt x 378.41376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/R_Rc_ELAS_Stm-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3062,7 +3067,7 @@ l/Figure/JFM_V13/Grid_Time_GRAV_Pe1_Nu1.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Grid_Time_GRAV_Pe1_Nu1-eps-converted-to.pdf, id=2246, 1096.095pt x 747.79375pt
+/Grid_Time_GRAV_Pe1_Nu1-eps-converted-to.pdf, id=2248, 1096.095pt x 747.79375pt
 >
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Grid_Time_GRAV_Pe1_Nu1-eps-converted-to.pdf Graphic file (type pdf)
@@ -3090,7 +3095,7 @@ l/Figure/JFM_V13/Grid_PeNu_GRAV_Final_2.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Grid_PeNu_GRAV_Final_2-eps-converted-to.pdf, id=2248, 800.9925pt x 687.56876pt
+/Grid_PeNu_GRAV_Final_2-eps-converted-to.pdf, id=2250, 800.9925pt x 687.56876pt
 >
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Grid_PeNu_GRAV_Final_2-eps-converted-to.pdf Graphic file (type pdf)
@@ -3160,7 +3165,7 @@ e/JFM_V13/Scaling_HR_GRAV.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_GRAV-eps-converted-to.pdf, id=2418, 843.15pt x 378.41376pt>
+/Scaling_HR_GRAV-eps-converted-to.pdf, id=2420, 843.15pt x 378.41376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_GRAV-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3194,7 +3199,7 @@ V13/R_Rc_GRAV.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/R_Rc_GRAV-eps-converted-to.pdf, id=2430, 847.165pt x 368.37625pt>
+/R_Rc_GRAV-eps-converted-to.pdf, id=2432, 847.165pt x 368.37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/R_Rc_GRAV-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3249,7 +3254,7 @@ FM_V13/Visco_GRAV_2.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Visco_GRAV_2-eps-converted-to.pdf, id=2568, 843.15pt x 675.52374pt>
+/Visco_GRAV_2-eps-converted-to.pdf, id=2570, 843.15pt x 675.52374pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Visco_GRAV_2-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3275,7 +3280,7 @@ igure/JFM_V13/Scaling_HR_GRAV_Stm.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_GRAV_Stm-eps-converted-to.pdf, id=2579, 837.1275pt x 374.39874pt>
+/Scaling_HR_GRAV_Stm-eps-converted-to.pdf, id=2581, 837.1275pt x 374.39874pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_GRAV_Stm-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3323,7 +3328,7 @@ JFM_V13/R_Rc_GRAV_Stm.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/R_Rc_GRAV_Stm-eps-converted-to.pdf, id=2662, 847.165pt x 368.37625pt>
+/R_Rc_GRAV_Stm-eps-converted-to.pdf, id=2664, 847.165pt x 368.37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/R_Rc_GRAV_Stm-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3365,7 +3370,7 @@ onverted-to.pdf /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_ELASGRAV_h-eps-converted-to.pdf, id=2723, 847.165pt x 378.41376pt>
+/Scaling_HR_ELASGRAV_h-eps-converted-to.pdf, id=2725, 847.165pt x 378.41376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_ELASGRAV_h-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3407,7 +3412,7 @@ l/Figure/JFM_V13/Scaling_HR_ELASGRAV_h2.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_ELASGRAV_h2-eps-converted-to.pdf, id=2794, 847.165pt x 380.42125pt>
+/Scaling_HR_ELASGRAV_h2-eps-converted-to.pdf, id=2796, 847.165pt x 380.42125pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_ELASGRAV_h2-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3471,7 +3476,7 @@ e/JFM_V13/PhaseDiagramJFM.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/PhaseDiagramJFM-eps-converted-to.pdf, id=2897, 788.9475pt x 378.41376pt>
+/PhaseDiagramJFM-eps-converted-to.pdf, id=2899, 788.9475pt x 378.41376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/PhaseDiagramJFM-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3529,7 +3534,7 @@ ure/JFM_V13/Dimensionlessdata.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Dimensionlessdata-eps-converted-to.pdf, id=3054, 843.15pt x 380.42125pt>
+/Dimensionlessdata-eps-converted-to.pdf, id=3056, 843.15pt x 380.42125pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Dimensionlessdata-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3595,7 +3600,7 @@ odel/Figure/JFM_V13/PhaseDiagramJFM_Appendix2.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/PhaseDiagramJFM_Appendix2-eps-converted-to.pdf, id=3163, 428.60126pt x 474.773
+/PhaseDiagramJFM_Appendix2-eps-converted-to.pdf, id=3165, 428.60126pt x 474.773
 74pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/PhaseDiagramJFM_Appendix2-eps-converted-to.pdf Graphic file (type pdf)
@@ -3628,7 +3633,7 @@ del/Figure/JFM_V13/Scaling_HR_ELAS_APPENDIX.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/Scaling_HR_ELAS_APPENDIX-eps-converted-to.pdf, id=3171, 837.1275pt x 368.37625
+/Scaling_HR_ELAS_APPENDIX-eps-converted-to.pdf, id=3173, 837.1275pt x 368.37625
 pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/Scaling_HR_ELAS_APPENDIX-eps-converted-to.pdf Graphic file (type pdf)
@@ -3655,7 +3660,7 @@ gure/JFM_V13/R_Rc_ELAS_APPENDIX.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/R_Rc_ELAS_APPENDIX-eps-converted-to.pdf, id=3172, 831.105pt x 368.37625pt>
+/R_Rc_ELAS_APPENDIX-eps-converted-to.pdf, id=3174, 831.105pt x 368.37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/R_Rc_ELAS_APPENDIX-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3732,7 +3737,7 @@ del/Figure/JFM_V13/PhaseDiagramJFM_Appendix.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13
-/PhaseDiagramJFM_Appendix-eps-converted-to.pdf, id=3382, 484.81125pt x 432.6162
+/PhaseDiagramJFM_Appendix-eps-converted-to.pdf, id=3384, 484.81125pt x 432.6162
 6pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JF
 M_V13/PhaseDiagramJFM_Appendix-eps-converted-to.pdf Graphic file (type pdf)
@@ -3824,7 +3829,7 @@ e/Figure_Heating/Rheology.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_
-Heating/Rheology-eps-converted-to.pdf, id=3543, 418.56375pt x 290.08376pt>
+Heating/Rheology-eps-converted-to.pdf, id=3545, 418.56375pt x 290.08376pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Fi
 gure_Heating/Rheology-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3873,7 +3878,7 @@ rco_3-eps-converted-to.pdf /Users/thorey/Documents/These/Projet/Refroidissement
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_
-Heating/Grid_PeOmega_ELAS_Berco_3-eps-converted-to.pdf, id=3653, 676.5275pt x 4
+Heating/Grid_PeOmega_ELAS_Berco_3-eps-converted-to.pdf, id=3655, 676.5275pt x 4
 24.58624pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Fi
 gure_Heating/Grid_PeOmega_ELAS_Berco_3-eps-converted-to.pdf Graphic file (type 
@@ -3902,7 +3907,7 @@ n_Model/Figure/Figure_Heating/Scaling_HR_ELAS_Omega.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_
-Heating/Scaling_HR_ELAS_Omega-eps-converted-to.pdf, id=3656, 847.165pt x 368.37
+Heating/Scaling_HR_ELAS_Omega-eps-converted-to.pdf, id=3658, 847.165pt x 368.37
 625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Fi
 gure_Heating/Scaling_HR_ELAS_Omega-eps-converted-to.pdf Graphic file (type pdf)
@@ -3972,7 +3977,7 @@ kin_Model/Figure/Figure_Heating/ELAS_RRc_RBercovici_1-0.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_
-Heating/ELAS_RRc_RBercovici_1-0-eps-converted-to.pdf, id=3773, 847.165pt x 368.
+Heating/ELAS_RRc_RBercovici_1-0-eps-converted-to.pdf, id=3775, 847.165pt x 368.
 37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Fi
 gure_Heating/ELAS_RRc_RBercovici_1-0-eps-converted-to.pdf Graphic file (type pd
@@ -4016,7 +4021,7 @@ Skin_Model/Figure/Figure_Heating/Scaling_HR_ELAS_Rheology.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_
-Heating/Scaling_HR_ELAS_Rheology-eps-converted-to.pdf, id=3837, 847.165pt x 368
+Heating/Scaling_HR_ELAS_Rheology-eps-converted-to.pdf, id=3839, 847.165pt x 368
 .37625pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Fi
 gure_Heating/Scaling_HR_ELAS_Rheology-eps-converted-to.pdf Graphic file (type p
@@ -4189,7 +4194,7 @@ _001.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 </Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_
-Heating/Appendix_Phase2_N11_0_Pe100_0_nu0_001-eps-converted-to.pdf, id=3936, 88
+Heating/Appendix_Phase2_N11_0_Pe100_0_nu0_001-eps-converted-to.pdf, id=3938, 88
 9.3225pt x 789.95125pt>
 File: /Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Fi
 gure_Heating/Appendix_Phase2_N11_0_Pe100_0_nu0_001-eps-converted-to.pdf Graphic
@@ -4350,14 +4355,9 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0C76547DA3A459F6A83C38A6C951B5EE;2811.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: AAD8967714D56D7517A067EFF1790409;12642.
 
-
-Package rerunfilecheck Warning: File `main.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `main.brf':
-(rerunfilecheck)             Before: 37B0EFCBF032CB1BAF0A38DA1ECF881E;12694
-(rerunfilecheck)             After:  AAD8967714D56D7517A067EFF1790409;12642.
 
 LaTeX Warning: There were undefined references.
 
@@ -4366,51 +4366,48 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13704 strings out of 493315
- 215835 string characters out of 6137904
- 433967 words of memory out of 5000000
+ 13703 strings out of 493315
+ 215825 string characters out of 6137904
+ 433560 words of memory out of 5000000
  16044 multiletter control sequences out of 15000+600000
  26949 words of font info for 69 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  39i,19n,52p,1567b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.1.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
-public/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
-m-super/sfti1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-
-super/sftt1200.pfb>
-Output written on main.pdf (124 pages, 9518985 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/cm-super/sfrm1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm2074.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/cm-super/sfti1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/c
+m-super/sftt1200.pfb>
+Output written on main.pdf (124 pages, 9518837 bytes).
 PDF statistics:
- 4267 PDF objects out of 4296 (max. 8388607)
+ 4269 PDF objects out of 4296 (max. 8388607)
  2364 compressed objects within 24 object streams
- 513 named destinations out of 1000 (max. 500000)
+ 512 named destinations out of 1000 (max. 500000)
  499 words of extra memory for PDF output out of 10000 (max. 10000000)
 
