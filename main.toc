@@ -12,13 +12,13 @@
 \contentsline {subsection}{\numberline {1.1.3}Stockage}{7}{subsection.1.1.3}
 \contentsline {section}{\numberline {1.2}Caract\IeC {\'e}risation du magmatisme intrusif \IeC {\`a} faible profondeur: apport des observations}{8}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Intrusion magmatique sur Terre}{8}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Intrusion magmatique sur la Lune}{13}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Intrusions magmatiques sur les autres plan\IeC {\`e}tes telluriques}{15}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Caract\IeC {\'e}risation du magmatisme intrusif \IeC {\`a} faible profondeur: apport de la mod\IeC {\'e}lisation}{15}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Model statique de d\IeC {\'e}formation d'une couche \IeC {\'e}lastique}{15}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Emplacement dynamics des sills et laccoliths: que peut on apprendre de leur g\IeC {\'e}om\IeC {\'e}trie ?}{16}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Discussion}{18}{section.1.4}
-\contentsline {section}{Bibliography}{18}{section*.3}
+\contentsline {subsection}{\numberline {1.2.2}Intrusion magmatique sur la Lune}{12}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Intrusions magmatiques sur les autres plan\IeC {\`e}tes telluriques}{13}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Caract\IeC {\'e}risation du magmatisme intrusif \IeC {\`a} faible profondeur: apport de la mod\IeC {\'e}lisation}{13}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Model statique de d\IeC {\'e}formation d'une couche \IeC {\'e}lastique}{13}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Emplacement dynamics des sills et laccoliths: que peut on apprendre de leur g\IeC {\'e}om\IeC {\'e}trie ?}{15}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Discussion}{17}{section.1.4}
+\contentsline {section}{Bibliography}{17}{section*.3}
 \contentsline {xpart}{Dynamique des magmas \GenericError {(inputenc) }{Package inputenc Error: Unicode char \u 8:àfa not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}ible profondeur}{5}{part.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}

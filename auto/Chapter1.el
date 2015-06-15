@@ -13,7 +13,6 @@
     "sec:definition"
     "Dimension"
     "picture"
-    "Rocchie_Schema"
     "Horsmann"
     "sec:moon"
     "Moon-magma"
