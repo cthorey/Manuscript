@@ -1,54 +1,36 @@
-\BOOKMARK [0][]{chapter.0}{R\351sum\351 de la probl\351matique et r\351sultats principaux}{}% 1
-\BOOKMARK [-1][]{part.1}{I High-level magmatic systems}{}% 2
-\BOOKMARK [0][]{chapter.1}{Shallow intrusive magmatism}{part.1}% 3
-\BOOKMARK [1][]{section.1.1}{Eruption versus intrusion: review of the magma transport processes within the crust}{chapter.1}% 4
-\BOOKMARK [2][]{subsection.1.1.1}{Partial melting and melt ascent}{section.1.1}% 5
-\BOOKMARK [2][]{subsection.1.1.2}{Emplacement}{section.1.1}% 6
-\BOOKMARK [1][]{section.1.2}{Shallow magmatic intrusions on the Earth}{chapter.1}% 7
-\BOOKMARK [2][]{subsection.1.2.1}{Magma budget}{section.1.2}% 8
-\BOOKMARK [2][]{subsection.1.2.2}{Laccolith from Corry et al}{section.1.2}% 9
-\BOOKMARK [2][]{subsection.1.2.3}{Laccolith at Elba island}{section.1.2}% 10
-\BOOKMARK [1][]{section.1.3}{Shallow magmatic intrusion on the Moon}{chapter.1}% 11
-\BOOKMARK [2][]{subsection.1.3.1}{Intrusive magmatism on the Moon}{section.1.3}% 12
-\BOOKMARK [2][]{subsection.1.3.2}{Low-slopes domes}{section.1.3}% 13
-\BOOKMARK [2][]{subsection.1.3.3}{Floor-fractured craters}{section.1.3}% 14
-\BOOKMARK [0][]{chapter.2}{Previous model for shallow magmatic intrusion}{part.1}% 15
-\BOOKMARK [1][]{section.2.1}{Original theoretical framework}{chapter.2}% 16
-\BOOKMARK [1][]{section.2.2}{Elastic plated gravity current}{chapter.2}% 17
-\BOOKMARK [2][]{subsection.2.2.1}{Governing equation}{section.2.2}% 18
-\BOOKMARK [2][]{subsection.2.2.2}{Dimensionless equations}{section.2.2}% 19
-\BOOKMARK [2][]{subsection.2.2.3}{Need for regularization}{section.2.2}% 20
-\BOOKMARK [1][]{section.2.3}{Regime of propagations}{chapter.2}% 21
-\BOOKMARK [2][]{subsection.2.3.1}{Bending regime}{section.2.3}% 22
-\BOOKMARK [2][]{subsection.2.3.2}{Gravity current regime}{section.2.3}% 23
-\BOOKMARK [2][]{subsection.2.3.3}{Lateral propagation}{section.2.3}% 24
-\BOOKMARK [1][]{section.2.4}{Application to the Earth, Moon and Mars}{chapter.2}% 25
-\BOOKMARK [1][]{section.2.5}{Discussion}{chapter.2}% 26
-\BOOKMARK [-1][]{part.2}{II Theoretical model for the cooling of elastic-plated gravity current and applications to laccolith on the Earth and Moon}{}% 27
-\BOOKMARK [0][]{chapter.3}{Model for a cooling elastic-plated gravity current}{part.2}% 28
-\BOOKMARK [1][]{section.3.1}{Theory}{chapter.3}% 29
-\BOOKMARK [2][]{subsection.3.1.1}{Formulation}{section.3.1}% 30
-\BOOKMARK [2][]{subsection.3.1.2}{Equation for the thickness}{section.3.1}% 31
-\BOOKMARK [2][]{subsection.3.1.3}{Heat transport equation}{section.3.1}% 32
-\BOOKMARK [2][]{subsection.3.1.4}{Dimensionless equations}{section.3.1}% 33
-\BOOKMARK [2][]{subsection.3.1.5}{Further simplifications}{section.3.1}% 34
-\BOOKMARK [2][]{subsection.3.1.6}{Summary of the equations}{section.3.1}% 35
-\BOOKMARK [1][]{section.3.2}{Numerical approach}{chapter.3}% 36
-\BOOKMARK [2][]{subsection.3.2.1}{General procedure}{section.3.2}% 37
-\BOOKMARK [2][]{subsection.3.2.2}{Thickness equation}{section.3.2}% 38
-\BOOKMARK [2][]{subsection.3.2.3}{Heat equation}{section.3.2}% 39
-\BOOKMARK [0][]{chapter.4}{First order modelling - Isothermal rocks}{part.2}% 40
-\BOOKMARK [0][]{chapter.5}{Second order modelling}{part.2}% 41
-\BOOKMARK [1][]{section.5.1}{Influence of the flow rheology}{chapter.5}% 42
-\BOOKMARK [1][]{section.5.2}{Heating of the surrounding layer}{chapter.5}% 43
-\BOOKMARK [1][]{section.5.3}{Crystallization}{chapter.5}% 44
-\BOOKMARK [1][]{section.5.4}{Applications}{chapter.5}% 45
-\BOOKMARK [-1][]{part.3}{III Theoretical model for isothermal crater-centered intrusion}{}% 46
-\BOOKMARK [0][]{chapter.6}{Second order modelling}{part.3}% 47
-\BOOKMARK [1][]{section.6.1}{Influence of the flow rheology}{chapter.6}% 48
-\BOOKMARK [1][]{section.6.2}{Heating of the surrounding layer}{chapter.6}% 49
-\BOOKMARK [1][]{section.6.3}{Crystallization}{chapter.6}% 50
-\BOOKMARK [1][]{section.6.4}{Applications}{chapter.6}% 51
-\BOOKMARK [0][]{chapter.7}{Floor-fractured craters}{part.3}% 52
-\BOOKMARK [0][]{chapter.8}{Gravitationnal signature of lunar floor-fractured craters}{part.3}% 53
-\BOOKMARK [0][]{chapter*.3}{Bibliography}{part.3}% 54
+\BOOKMARK [0][]{chapter.0}{Rm la probltique et rltats principaux}{}% 1
+\BOOKMARK [-1][]{part.1}{I Dynamique des magmas ible profondeur}{}% 2
+\BOOKMARK [0][]{chapter.1}{Magmatisme intrusif}{part.1}% 3
+\BOOKMARK [1][]{section.1.1}{Formation, transport et stockage des magmas}{chapter.1}% 4
+\BOOKMARK [1][]{section.1.2}{Caract\351risation du magmatisme intrusif \340 faible profondeur: apport des observations}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.3}{Caract\351risation du magmatisme intrusif \340 faible profondeur: apport de la mod\351lisation}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.4}{Discussion}{chapter.1}% 7
+\BOOKMARK [1][]{section*.3}{Bibliography}{chapter.1}% 8
+\BOOKMARK [0][]{chapter.2}{Isoviscous elastic-plated gravity current model for shallow magmatic intrusion}{part.1}% 9
+\BOOKMARK [1][]{section.2.1}{Original theoretical framework}{chapter.2}% 10
+\BOOKMARK [1][]{section.2.2}{Elastic-plated gravity current}{chapter.2}% 11
+\BOOKMARK [1][]{section.2.3}{Regime of propagations}{chapter.2}% 12
+\BOOKMARK [1][]{section.2.4}{Application to laccoliths}{chapter.2}% 13
+\BOOKMARK [1][]{section.2.5}{Discussion}{chapter.2}% 14
+\BOOKMARK [1][]{section*.4}{Bibliography}{chapter.2}% 15
+\BOOKMARK [-1][]{part.2}{II Evolution thermique des intrusions magmatiques ible profondeur}{}% 16
+\BOOKMARK [0][]{chapter.3}{Elastic-plated gravity current with temperature-dependent viscosity}{part.2}% 17
+\BOOKMARK [1][]{section.3.1}{Introduction}{chapter.3}% 18
+\BOOKMARK [1][]{section.3.2}{Theory}{chapter.3}% 19
+\BOOKMARK [1][]{section.3.3}{Numerical approach}{chapter.3}% 20
+\BOOKMARK [1][]{section.3.4}{Evolution in the bending regime}{chapter.3}% 21
+\BOOKMARK [1][]{section.3.5}{Evolution in the gravity current regime}{chapter.3}% 22
+\BOOKMARK [1][]{section.3.6}{Different evolutions with bending and gravity}{chapter.3}% 23
+\BOOKMARK [1][]{section.3.7}{Application to the arrest of terrestrial laccoliths}{chapter.3}% 24
+\BOOKMARK [1][]{section.3.8}{Summary and conclusion}{chapter.3}% 25
+\BOOKMARK [1][]{section*.8}{Bibliography}{chapter.3}% 26
+\BOOKMARK [0][]{chapter.4}{Toward a more realistic model- Relaxing the thermal boundary condition and changing the rheology}{part.2}% 27
+\BOOKMARK [1][]{section.4.1}{Introduction}{chapter.4}% 28
+\BOOKMARK [1][]{section.4.2}{Theory}{chapter.4}% 29
+\BOOKMARK [1][]{section.4.3}{Evolution in the bending regime}{chapter.4}% 30
+\BOOKMARK [1][]{section.4.4}{Evolution in the gravity regime}{chapter.4}% 31
+\BOOKMARK [1][]{section*.12}{Bibliography}{chapter.4}% 32
+\BOOKMARK [-1][]{part.3}{III Crats l fractur Tins d'un magmatisme intrusif lunaire}{}% 33
+\BOOKMARK [0][]{chapter.5}{Floor-fractured craters}{part.3}% 34
+\BOOKMARK [0][]{chapter.6}{Gravitationnal signature of lunar floor-fractured craters}{part.3}% 35
+\BOOKMARK [0][]{chapter.7}{Conclusion}{part.3}% 36

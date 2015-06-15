@@ -1,30 +1,86 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{\textit{Balmforth and Craster}(2000)}]{BALMFORTH:2004fm}
-Balmforth, N.~J., and R.~V. Craster (2000), {Dynamics of cooling domes of
-  viscoplastic fluid}, \textit{Journal of Fluid Mechanics}.
+\bibitem[{\textit{Balmforth and Craster}(2004)}]{BALMFORTH:1999ey}
+Balmforth, N.~J., and R.~V. Craster (2004), {Dynamics of cooling viscoplastic
+  domes}, \textit{J. Fluid Mech.}
+
+\bibitem[{\textit{Bercovici}(1994)}]{Bercovici:2007vc}
+Bercovici, D. (1994), {A theoretical model of cooling viscous gravity currents
+  with temperature-dependent viscosity}, \textit{Geophys. Res. Lett.}
 
 \bibitem[{\textit{Bertozzi}(1998)}]{Bertozzi:1998wz}
 Bertozzi, A.~L. (1998), {The mathematics of moving contact lines in thin liquid
   films}, \textit{Notices AMS}.
 
+\bibitem[{\textit{Blatt et~al.}(2006)\textit{Blatt, Tracy, and
+  Owens}}]{Blatt:2ViMWPc0}
+Blatt, H., R.~J. Tracy, and B.~Owens (2006), {Petrology: igneous, sedimentary,
+  and metamorphic}.
+
 \bibitem[{\textit{Bunger and Cruden}(2011)}]{Bunger:2011cb}
 Bunger, A.~P., and A.~R. Cruden (2011), {Modeling the growth of laccoliths and
-  large mafic sills: Role of magma body forces}, \textit{Journal of Geophysical
-  Research}, \textit{116}(B2), B02,203.
+  large mafic sills: Role of magma body forces}, \textit{J. Geophys. Res.},
+  \textit{116}(B2), B02,203.
 
 \bibitem[{\textit{Carslaw and Jaeger}(1959)}]{Carslaw:1959wf}
 Carslaw, H.~S., and J.~C. Jaeger (1959), {Heat in solids}.
+
+\bibitem[{\textit{Chevrel et~al.}(2013)\textit{Chevrel, Platz, Hauber,
+  Baratoux, Lavall{\'e}e, and Dingwell}}]{Chevrel:2013jn}
+Chevrel, M.~O., T.~Platz, E.~Hauber, D.~Baratoux, Y.~Lavall{\'e}e, and D.~B.
+  Dingwell (2013), {Lava flow rheology: A comparison of morphological and
+  petrological methods}, \textit{Earth and Planetary Science Letters},
+  \textit{384}(C), 109--120.
+
+\bibitem[{\textit{Das et~al.}(2008)\textit{Das, Joughin, Behn, Howat, King,
+  Lizarralde, and Bhatia}}]{Das:2008in}
+Das, S.~B., I.~Joughin, M.~D. Behn, I.~M. Howat, M.~A. King, D.~Lizarralde, and
+  M.~P. Bhatia (2008), {Fracture Propagation to the Base of the Greenland Ice
+  Sheet During Supraglacial Lake Drainage}, \textit{Science},
+  \textit{320}(5877), 778--781.
+
+\bibitem[{\textit{Diniega et~al.}(2013)\textit{Diniega, Smrekar, Anderson, and
+  Stofan}}]{Diniega:2013eh}
+Diniega, S., S.~E. Smrekar, S.~Anderson, and E.~R. Stofan (2013), {The
+  influence of temperature-dependent viscosity on lava flow dynamics},
+  \textit{J. Geophys. Res. Earth Surf.}, \textit{118}(3), 1516--1532.
+
+\bibitem[{\textit{Dixon and Simpson}(1987)}]{Dixon:1987js}
+Dixon, J.~M., and D.~G. Simpson (1987), {Centrifuge modelling of laccolith
+  intrusion}, \textit{9}(1), 87--103.
+
+\bibitem[{\textit{Everett and Hoisch}(2008)}]{Everett:2008tn}
+Everett, B.~C., and T.~D. Hoisch (2008), {Conditions of metamorphism of the
+  Colorado Yule Marble}, \textit{Rocky Mountain Association of Geologists}.
 
 \bibitem[{\textit{Flitton and King}(2004)}]{Flitton:1999iv}
 Flitton, J.~C., and J.~R. King (2004), {Moving-boundary and fixed-domain
   problems for a sixth-order thin-film equation}, \textit{European Journal of
   Applied Mathematics}, \textit{15}(06), 713--754.
+
+\bibitem[{\textit{Garel et~al.}(2012)\textit{Garel, Kaminski, Tait, and
+  Limare}}]{Garel:2012bh}
+Garel, F., E.~Kaminski, S.~Tait, and A.~Limare (2012), {An experimental study
+  of the surface thermal signature of hot subaerial isoviscous gravity
+  currents: Implications for thermal monitoring of lava flows and domes},
+  \textit{J. Geophys. Res.}, \textit{117}(B2), B02,205.
+
+\bibitem[{\textit{Garel et~al.}(2014)\textit{Garel, Kaminski, Tait, and
+  Limare}}]{Garel:2014era}
+Garel, F., E.~Kaminski, S.~Tait, and A.~Limare (2014), {An analogue study of
+  the influence of solidification on the advance and surface thermal signature
+  of lava flows}, \textit{396}(C), 46--55.
+
+\bibitem[{\textit{Giordano et~al.}(2008)\textit{Giordano, Russell, and
+  Dingwell}}]{Giordano:2008em}
+Giordano, D., J.~K. Russell, and D.~B. Dingwell (2008), {Viscosity of magmatic
+  liquids: A model}, \textit{Earth and Planetary Science Letters},
+  \textit{271}(1-4), 123--134.
 
 \bibitem[{\textit{Goodman}(1958)}]{Goodman:1958ue}
 Goodman, T.~R. (1958), \textit{{The heat-balance integral and its application
@@ -40,10 +96,19 @@ Hort, M. (1997), {Cooling and crystallization in sheet-like magma bodies
   revisited}, \textit{Journal of Volcanology and Geothermal Research},
   \textit{76}(3-4), 297--317.
 
-\bibitem[{\textit{Huppert}(1982)}]{Huppert:1982a}
-Huppert, H.~E. (1982), {The propagation of two-dimensional and axisymmetric
-  viscous gravity currents over a rigid horizontal surface}, \textit{Journal of
-  Fluid Mechanics}, \textit{121}(-1), 43--58.
+\bibitem[{\textit{Hosoi and Mahadevan}(2004)}]{Hosoi:2004dn}
+Hosoi, A., and L.~Mahadevan (2004), {Peeling, Healing, and Bursting in a
+  Lubricated Elastic Sheet}, \textit{Phys. Rev. Lett.}, \textit{93}(13),
+  137,802.
+
+\bibitem[{\textit{Huppert}(1982{\natexlab{a}})}]{Huppert:1982a}
+Huppert, H.~E. (1982{\natexlab{a}}), {The propagation of two-dimensional and
+  axisymmetric viscous gravity currents over a rigid horizontal surface},
+  \textit{J. Fluid Mech.}, \textit{121}(-1), 43--58.
+
+\bibitem[{\textit{Huppert}(1982{\natexlab{b}})}]{Huppert:1982wr}
+Huppert, H.~E. (1982{\natexlab{b}}), {Flow and instability of a viscous current
+  down a slope}, \textit{Nature}.
 
 \bibitem[{\textit{Johnson and Pollard}(1973)}]{Johnson:1973ho}
 Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
@@ -51,11 +116,27 @@ Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
   Gilbert's model, physical properties and flow of the magma},
   \textit{Tectonophysics}.
 
+\bibitem[{\textit{Lejeune and Richet}(1995)}]{Lejeune:1995fc}
+Lejeune, A.~M., and P.~Richet (1995), {Rheology of crystal-bearing silicate
+  melts: An experimental study at high viscosities}, \textit{Journal of
+  Geophysical Research: Planets (1991{\textendash}2012)}, \textit{100}(B3),
+  4215--4229.
+
 \bibitem[{\textit{Lister et~al.}(2013)\textit{Lister, Peng, and
   Neufeld}}]{Lister:2013ia}
 Lister, J.~R., G.~G. Peng, and J.~A. Neufeld (2013), {Viscous Control of
-  Peeling an Elastic Sheet by Bending and Pulling}, \textit{Physical Review
-  Letters}, \textit{111}(15), 154,501.
+  Peeling an Elastic Sheet by Bending and Pulling}, \textit{Phys. Rev. Lett.},
+  \textit{111}(15), 154,501.
+
+\bibitem[{\textit{Marsh}(1981)}]{Marsh:1981dc}
+Marsh, B.~D. (1981), {On the crystallinity, probability of occurrence, and
+  rheology of lava and magma}, \textit{Contr. Mineral. and Petrol.},
+  \textit{78}(1), 85--98.
+
+\bibitem[{\textit{Mart{\'\i}}(2000)}]{Marti:2000fe}
+Mart{\'\i}, J. (2000), {Pressure evolution during explosive caldera-forming
+  eruptions}, \textit{Earth and Planetary Science Letters}, \textit{175}(3-4),
+  275--287.
 
 \bibitem[{\textit{McKenzie}(1984)}]{McKenzy:1984bo}
 McKenzie, D. (1984), {The Generation and Compaction of Partially Molten Rock},
@@ -67,12 +148,12 @@ McKenzie, D. (1985), {The extraction of magma from the crust and mantle},
 
 \bibitem[{\textit{Michaut}(2011)}]{Michaut:2011kg}
 Michaut, C. (2011), {Dynamics of magmatic intrusions in the upper crust: Theory
-  and applications to laccoliths on Earth and the Moon}, \textit{Journal of
-  Geophysical Research}, \textit{116}(B5), B05,205.
+  and applications to laccoliths on Earth and the Moon}, \textit{J. Geophys.
+  Res.}, \textit{116}(B5), B05,205.
 
 \bibitem[{\textit{Michaut and Bercovici}(2009)}]{Michaut:2009jx}
 Michaut, C., and D.~Bercovici (2009), {A model for the spreading and compaction
-  of two-phase viscous gravity currents}, \textit{Journal of Fluid Mechanics},
+  of two-phase viscous gravity currents}, \textit{J. Fluid Mech.},
   \textit{630}, 299--329.
 
 \bibitem[{\textit{Michaut and Jaupart}(2006)}]{Michaut:2006di}
@@ -99,19 +180,58 @@ Petford, N., A.~R. Cruden, K.~J.~W. McCaffrey, and J.~L. Vigneresse (2000),
   {Granite magma formation, transport and emplacement in the Earth's crust},
   \textit{Nature}, \textit{408}(6813), 669--673.
 
+\bibitem[{\textit{Pinkerton and Stevenson}(1992)}]{Pinkerton:1992fw}
+Pinkerton, H., and R.~J. Stevenson (1992), {Methods of determining the
+  rheological properties of magmas at sub-liquidus temperatures},
+  \textit{Journal of Volcanology and Geothermal Research}, \textit{53}(1-4),
+  47--66.
+
 \bibitem[{\textit{Pollard and Johnson}(1973)}]{Pollard:1973ho}
 Pollard, D.~D., and A.~M. Johnson (1973), {Mechanics of growth of some
   laccolithic intrusions in the Henry Mountains, Utah, II: bending and failure
   of overburden layers and sill formation}, \textit{Tectonophysics},
   \textit{18}(3-4), 311--354.
 
+\bibitem[{\textit{Rocchi et~al.}(2002)\textit{Rocchi, Westerman, Dini,
+  Innocenti, and Tonarini}}]{Rocchi:2002jy}
+Rocchi, S., D.~S. Westerman, A.~Dini, F.~Innocenti, and S.~Tonarini (2002),
+  {Two-stage growth of laccoliths at Elba Island, Italy}, \textit{Geology},
+  \textit{30}(11), 983--986.
+
+\bibitem[{\textit{Shaw}(1972)}]{Anonymous:CZVBrBvv}
+Shaw, H.~R. (1972), {Viscosities of magmatic silicate liquids; an empirical
+  method of prediction}, \textit{Am J Sci}, \textit{272}(9), 870--893.
+
 \bibitem[{\textit{Snoeijer and Andreotti}(2013)}]{Snoeijer:2013cm}
 Snoeijer, J.~H., and B.~Andreotti (2013), {Moving Contact Lines: Scales,
-  Regimes, and Dynamical Transitions}, \textit{Annual Review of Fluid
-  Mechanics}, \textit{45}(1), 269--292.
+  Regimes, and Dynamical Transitions}, \textit{Annu. Rev. Fluid Mech.},
+  \textit{45}(1), 269--292.
+
+\bibitem[{\textit{Tait et~al.}(1988)\textit{Tait, Jaupart, and
+  Vergniolle}}]{Tait:1988vn}
+Tait, S., C.~Jaupart, and S.~Vergniolle (1988), {Pressure, gas content and
+  eruption periodicity of a shallow, crystallising magma chamber},
+  \textit{Earth and Planetary Science Letters}, \textit{92}, 107--123.
+
+\bibitem[{\textit{Thorey and Michaut}(2014)}]{Thorey:2014cv}
+Thorey, C., and C.~Michaut (2014), {A model for the dynamics of crater-centered
+  intrusion: Application to lunar floor-fractured craters}, \textit{J. Geophys.
+  Res. Planets}, \textit{119}(1), 286--312.
+
+\bibitem[{\textit{Tsai and Rice}(2010)}]{Tsai:2010ev}
+Tsai, V.~C., and J.~R. Rice (2010), {A model for turbulent hydraulic fracture
+  and application to crack propagation at glacier beds}, \textit{J. Geophys.
+  Res.}, \textit{115}(F3), F03,007.
 
 \bibitem[{\textit{Turcotte and Schubert}(1982)}]{Turcotte:1982ca}
 Turcotte, D.~L., and G.~Schubert (1982), {Geodynamics: Applications of
   continuum physics to geological problems}, John Wiley, New York.
+
+\bibitem[{\textit{Whittington et~al.}(2009)\textit{Whittington, Hellwig,
+  Behrens, Joachim, Stechern, and Vetere}}]{Whittington:2009fv}
+Whittington, A.~G., B.~M. Hellwig, H.~Behrens, B.~Joachim, A.~Stechern, and
+  F.~Vetere (2009), {The viscosity of hydrous dacitic liquids: implications for
+  the rheology of evolving silicic magmas}, \textit{Bull Volcanol},
+  \textit{71}(2), 185--199.
 
 \end{thebibliography}

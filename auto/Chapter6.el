@@ -2,5 +2,5 @@
  "Chapter6"
  (lambda ()
    (LaTeX-add-labels
-    "chap6")))
+    "chap7")))
 

@@ -5,6 +5,22 @@
 \usepackage{amsmath} 
 \usepackage{pdfpages}
 \usepackage{natbib}
+\usepackage[sectionbib]{chapterbib}
+\DeclareMathOperator\erf{erf}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{appendix}
+\usepackage{chngcntr}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+
+\AtBeginEnvironment{subappendices}{%
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendices}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+}
+
 \include{formatAndDefs}
 
 
@@ -16,6 +32,7 @@
 \include{TitlePage}
 
 \dominitoc
+\setcounter{tocdepth}{1}
 
 \pagenumbering{roman}
 
@@ -30,27 +47,29 @@
 \mainmatter
 
 \setcounter{chapter}{-1}
+\addtocontents{minitoc}{\setcounter{tocdepth}{-1}}
 \pagestyle{empty}
 \include{traduction}
 
-\part{High-level magmatic systems}
+
+\part{Dynamique des magmas à faible profondeur}
 \pagestyle{fancy}
 
-\input{Chapter/Chapter1}
-\input{Chapter/Chapter2}
+\include{Chapter/Chapter1}	
+\include{Chapter/Chapter2} 
 
-\part{Theoretical  model for  the  cooling  of elastic-plated  gravity
-  current and applications to laccolith on the Earth and Moon}
+\part{Evolution   thermique  des   intrusions  magmatiques   à  faible
+  profondeur}
 
-\input{Chapter/Chapter3}
-\input{Chapter/Chapter4}
-\input{Chapter/Chapter5}
+\include{Chapter/Chapter3}
+\include{Chapter/Chapter4}
 
-\part{Theoretical model for isothermal crater-centered intrusion}
+\part{Cratères  à  sol  fracturée: Témoins  d'un  magmatisme  intrusif
+  lunaire}
 
-\input{Chapter/Chapter5}
-\input{Chapter/Chapter6}
-\input{Chapter/Chapter7}
+\include{Chapter/Chapter5}
+\include{Chapter/Chapter6}
+\include{Chapter/Chapter7}
 
 % \part{Summary and perspectives}
 % \include{Chapter8}
@@ -65,8 +84,8 @@
 % \include{Notations}
 % \printnomenclature
 
-\bibliographystyle{agufull08}
-\bibliography{/Users/thorey/Dropbox/Library}
+% \bibliographystyle{agufull08}
+% \bibliography{/Users/thorey/Dropbox/Library}
 
 
 \end{document}

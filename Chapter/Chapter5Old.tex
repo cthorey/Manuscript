@@ -1,0 +1,288 @@
+\chapter{Second  order  modelling  -  Relaxing  the  thermal  boundary
+  condition}
+\label{chap5}
+\minitoc
+
+The previous chapter  was first step toward the  understanding how the
+cooling of the  laccolith interacts with its  dynamics.  Hereafter, we
+examine  how the  heating of  the surrounding  layer changes  the flow
+behavior.
+
+\section{Introduction}
+\label{sec:introduction}
+ 
+Contact metamorphism around sill intrusion is a common process
+
+\citep{Everett:2008tn}
+
+\section{Theory}
+
+\subsection{Formulation}
+\label{sec:formulation-1}
+
+
+The assumed  model of magma  intrusion is based on  the elastic-plated
+gravity  current  with  temperature-dependent viscosity  described  in
+Section \ref{sec:theory} where we relax the condition of a fixed
+temperature $T_0$ at the edge of the flow.
+
+
+
+In  particular, we  model  the  axisymmetric flow  of  fluid below  an
+elastic layer  of constant thickness  $d_c$ and above a  semi infinite
+rigid layer. The fluid is injected continuously at the base and center
+of the current at a constant  rate $Q_0$ through a conduit of diameter
+$a$.   Assuming  a  Poiseuille  flow within  the  cylindrical  feeding
+conduit, the vertical injection velocity $w_i(r,t)$ and injection rate
+$Q_0$ are given by
+\begin{equation}
+  w_i(r,t)=
+  \begin{cases}
+    \frac{ \Delta P}{4 \eta_h Z_{c}} (\frac{a^{2}}{4}-r^{2})& r \le \frac{a}{2}\\
+    0 & r > \frac{a}{2}
+  \end{cases}
+  \label{C4-eq12}
+\end{equation}
+\begin{equation}
+  Q_{0}=\frac{\pi \Delta P a^{4}}{128 \eta_h Z_c}
+  \label{C4-eq11}
+\end{equation}
+where  $\Delta P$  is  the  initial overpressure  within  the melt  at
+$z=Z_{c}$.
+
+\vspace{.5cm} \textbf{Flow thickness equation} \vspace{.5cm}
+
+The  equation  for  the  flow  thickness  evolution  follow  a  global
+statement of mass and reads
+\begin{equation}
+  \frac{\partial h}{\partial t} = \frac{1}{r}
+  \frac{\partial}{\partial r} \left( r\frac{\partial P}{\partial      r}\int_0^h\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)ydy\right)\right)
++ w_i\label{C4-Mass-2}
+\end{equation}
+where $P(r,z,t)$  is the pressure within  the flow.  It is  the sum of
+three contributions:  the weight of the  magma and of the  upper layer
+and the bending pressure
+\begin{equation}
+  P = \rho_m g (h-z)+\rho_rgd_c+D\nabla_r^4h
+\end{equation}
+where  $h(r,t)$ is  the flow  thickness, $\rho_r$  the density  of the
+surrounding rocks and $D$ is the flexural rigidity of the thin elastic
+layer, that  depends on Young's  modulus $E$, Poisson's  ratio $\nu^*$
+and     on     the     elastic    layer     thickness     $d_c$     as
+$D = Ed_c^3/\left(12(1-\nu^*)\right)$.
+
+\vspace{.5cm} \textbf{Heat transport within the fluid} \vspace{.5cm}
+
+The hot fluid  is intruded at temperature $T_i$ and  cools through the
+top  and the  bottom by  conduction in  the surrounding  medium, whose
+temperature $T_s$ is allowed to increase  with time and equal to $T_0$
+far from  the intrusion. In  the laminar regime and  in axisymmetrical
+coordinates  (r,z),  the  local energy  conservation  equation,  which
+describes the evolution of the temperature field, reduces to
+\begin{eqnarray}
+  \frac{\partial T}{\partial t}+ u\frac{\partial T}{\partial r}
+  + w\frac{\partial T}{\partial z}  &=& \frac{ \kappa_m}{1+St^{-1}}  \frac{\partial^2
+                                        T}{\partial               z^2}
+                                        \label{C4-EnergyCons2}
+\end{eqnarray}
+where  $u(r,z,t)$ and  $w(r,z,t)$ are  the radial  and vertical  fluid
+velocities,  $St  =\left(C_{p,m}(T_L-T_S)\right)/L$   is  the  Stephan
+number   and    $\kappa_m$   is   the   fluid    thermal   diffusivity
+$\kappa_m  = k_m/\rho_m  C_{p,m}$ \citep{Thorey:2015vs}.   We use  the
+following   approximation  for   the   vertical  temperature   profile
+$T(r,z,t)$
+\begin{equation}
+  T=
+  \begin{cases}
+    T_b - (T_b-T_s)(1-\frac{z}{\delta})^2 & 0 \le z\le \delta \\
+    T_b & \delta \le z\le h-\delta \\
+    T_b - (T_b-T_s)(1-\frac{h-z}{\delta})^2 & h-\delta \le z\le h\\
+  \end{cases}
+  \label{C4-Temperature}
+\end{equation}
+where  $T_b(r,t)$  is the  temperature  at  the  center of  the  flow,
+$T_s(r,t)$ the temperature  at the contact with  the surrounding rocks
+and $\delta(r,t)$ is the thickness of the thermal boundary layer. This
+profile assures  the continuity of  the temperature and the  heat flux
+within the  flow as  well as  an evolving  temperature at  the surface
+$T_s(r,z,t)$.   Integrating   (\ref{C4-EnergyCons2})  over   the  flow
+thickness  and using  the vertical  temperature profile  approximation
+(\ref{C4-Temperature}), the heat transport equation reduces to
+\begin{eqnarray}
+  \frac{\partial}{\partial
+  t}\left( \delta( \bar{T}-T_b)\right)+\frac{1}{r}\frac{\partial}{\partial
+  r} \left( r\delta(\overline{uT}-\bar{u}T_b)\right) = -2\frac{\kappa_m}{(1+St^{-1})}\frac{T_b-T_s}{\delta}
+  \label{C4-LocalHeat3}
+\end{eqnarray}
+where the bars  indicate the vertical average over  a thermal boundary
+layer
+\begin{equation}
+  \bar{f} = \frac{1}{\delta}\int_0^\delta f dz.
+\end{equation}
+
+\vspace{.5cm} \textbf{Rheology} \vspace{.5cm}
+
+Equations (\ref{C4-Mass-2})  and (\ref{C4-LocalHeat3}) are  coupled by
+the  flow  rheology   $\eta(T)$.   \citet{Thorey:2015vs}  considers  a
+rheology  $\eta_1(T)$ where  the  viscosity depends  inversely on  the
+temperature such that
+\begin{equation}
+  \eta_1(T)=\frac{\eta_h
+    \eta_c(T_i-T_0)}{\eta_h(T_i-T_0)+(\eta_c-\eta_h)(T-T_0)}
+  \label{rheology}
+\end{equation}
+where $\eta_h$  and $\eta_c$  are the viscosities  of the  hottest and
+coldest  fluid  at  the   temperature  $T_i$  and  $T_0$  respectively
+\citep{Bercovici:2007vc}.    While    this   model    possesses   some
+simplification properties, it  restricts the change in  viscosity to a
+narrow    range   of    temperature   close    to   $T=T_0$    (Figure
+\ref{C4-Rheology}).     In     contrast,    the     Arrhenius    model
+($\eta  \sim \exp(-k/T)$),  which is  a  more commonly  used model  to
+relates  temperature and  viscosity  of lavas  \citep{Blatt:2ViMWPc0},
+allow the  viscosity to increase  over a larger range  of temperature.
+To get some insights into the effect of a more realistic viscosity, we
+thus also use a first-order approximation  of the Arrhenius model as a
+second rheology $\eta_2(T)$ \citep{Diniega:2013eh}
+\begin{eqnarray}
+  \eta_2(T) = \eta_h \exp\left(-\log\left(\frac{\eta_h}{\eta_c}\right)\left(1-\frac{T-T_0}{T_i-T_0}\right)\right)
+\end{eqnarray}
+
+
+\begin{figure}[htbp]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.8]{Rheology.eps}
+    \caption{Dimensionless viscosity  versus dimensionless temperature
+      for  both rheology  $\eta_1$ and  $\eta_2$ described  in Section
+      \ref{sec:formulation-1}.}
+    \label{C4-Rheology}
+  \end{center}
+\end{figure}
+
+\subsection{Thermal boundary conditions}
+\label{C4-sec:thermal-boundary-condition}
+
+At  the  contact with  the  surrounding  rock,  the  heat is  lost  by
+conduction
+\begin{eqnarray}
+  k_m\left.\frac{\partial                                    T}{\partial
+      z}\right|_{z=0}&=&k_r\left.\frac{\partial              T_r}{\partial
+      z}\right|_{z=0}  \label{C4-Flux1}\\
+  k_m\left.\frac{\partial                                  T}{\partial
+      z}\right|_{z=h}&=&k_r\left.\frac{\partial            T_r}{\partial
+      z}\right|_{z=h}
+  \label{C4-Flux2}
+\end{eqnarray}
+where  $T_r(r,z)$ is  the temperature  in the  surrounding medium  and
+$k_r$ its  thermal conductivity.  Assuming  a semi infinite  layer for
+the rigid layer below  the intrusion, \citet{Carslaw:1959wf} show that
+the temperature $T_r$ in the  surrounding rocks can be approximated to
+a first order by
+\begin{equation}
+  T_r(r,z,t)-T_0=(T_{s}-T_0)\operatorname{erfc}{\left(\frac{-z}{2\sqrt{\kappa_r t}}\right)}.
+  \label{eq22}
+\end{equation}
+The  thickness of  the upper  layer is  equal to  the intrusion  depth
+$d_c$. However,  we assume that the  depth $d_c$ is large  compared to
+the characteristic  length scale for  conduction $L_c$ and we  use the
+same approximation to derive $T_r$ above the intrusion
+\begin{equation}
+  T_r(r,z,t)-T_0=(T_{s}-T_0)\operatorname{erfc}{\left(\frac{z-h}{2\sqrt{\kappa_r t}}\right)}.
+  \label{eq11}
+\end{equation}
+Therefore, the  two thermal  boundary conditions  (\ref{C4-Flux1}) and
+(\ref{C4-Flux2}) become
+\begin{eqnarray}
+  k_m\left.\frac{\partial                                    T}{\partial
+      z}\right|_{z=0}&=& k_r
+  \frac{T_{s}-T_{0}}{\sqrt{\pi \kappa_r t}}  \label{C4-2Flux2}\\
+  k_m\left.\frac{\partial                                    T}{\partial
+      z}\right|_{z=h}&=& -k_r
+  \frac{T_{s}-T_{0}}{\sqrt{\pi \kappa_r t}}
+  \label{C4-2Flux_2}
+\end{eqnarray}
+
+\subsection{Dimensionless equation}
+
+
+We use the characteristic temperature interval $\Delta T = T_i-T_0$ to
+nondimensionalize temperatures.  The dimensionless integral balance
+approximation (\ref{C4-Temperature}) becomes
+\begin{equation}
+  \theta(z)=
+  \begin{cases}
+    \Theta_b\left(1 -(1-\frac{z}{\delta})^2\right)& 0 \le z\le \delta \\
+    \Theta_b & \delta \le z\le h-\delta \\
+    \Theta_b\left(1-(1-\frac{h-z}{\delta})^2\right)  &   h-\delta  \le
+    z\le h
+  \end{cases}
+  \label{Temperature2}
+\end{equation}
+where   $\theta(r,z,t)$   is   the   dimensionless   temperature   and
+$\Theta_b=\frac{T_b-T_0}{T_{i}-T_0}$.        Finally,        equations
+(\ref{LocalHeat3}) and (\ref{C3-Mass-2})  are nondimensionalized using
+a horizontal  scale $\Lambda$, a vertical  scale $H$ and a  time scale
+$\tau$ given by
+\begin{eqnarray}
+  \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{L1}\\
+  H&=&\left       (\frac{12\eta_h      Q_{0}}{\rho_{m}g       \pi}\right      )
+       ^{1/4} \label{H1}\\
+  \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{T1}
+\end{eqnarray}
+where  $\Lambda$  represents  the  flexural wavelength  of  the  upper
+elastic layer \citep{Michaut:2011kg}, $H$ the characteristic thickness
+of an isoviscous constant flux gravity current with viscosity $\eta_h$
+\citep{Huppert:1982wr} and $\tau$ the characteristic time to fill up a
+cylindrical flow of  radius $\Lambda$ and thickness $H$  at a constant
+rate $Q_0$.   In addition, we  can define a horizontal  velocity scale
+$U=\Lambda/\tau=\left(\rho_m           g           H^3\right)/\left(12
+  \eta_h\Lambda\right)$.
+
+The dimensionless equations are
+\begin{eqnarray}
+  \frac{\partial h}{\partial t}& =& \frac{12}{r}
+                                    \frac{\partial}{\partial r} \left( r\left( \frac{\partial h}{\partial      r}+\frac{\partial}{\partial      r}\left(\nabla_r^4h\right)\right)I_1(h)\right)
+                                    + w_i\label{EqFinal1}\\
+  \frac{\partial}{\partial
+  t}\left( \delta( \bar{\theta}-\Theta_b)\right)&=&-\frac{1}{r}\frac{\partial}{\partial
+                                                    r}  \left(   r\delta(\overline{u\theta}-\bar{u}\Theta_b)\right)  -
+                                                    \delta\left(      \frac{\partial       \Theta_b}{\partial      t}+
+                                                    \overline{u}\frac{\partial     \Theta_b}{\partial    r}\right)\nonumber\\
+                               &-&
+                                   2Pe^{-1}St_m\frac{\Theta_b}{\delta}+\frac{w_{i}}{2}(1-\Theta_b)\label{HeatDimensionLess}\\
+  w_{i}&=&
+           \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\hspace{.2cm}
+           \text{if} \hspace{.2cm} r < \gamma/2,\hspace{.2cm} w_i=0 \hspace{.2cm}
+           \text{if} \hspace{.2cm} r \ge \gamma/2\\
+  u(r,z,t)&   =&   12\left(   \frac{\partial   h}{\partial
+                 r}+\frac{\partial}{\partial
+                 r}\left(\nabla_r^4h\right)\right)I_0(z)\label{C3-Veloc}
+\end{eqnarray}
+
+
+\section{Evolution in the bending regime}
+\label{sec:evol-bend-regime-1}
+
+
+\section{Evolution in the gravity regime}
+\label{sec:evol-grav-regime}
+
+
+
+\subsection{Discussion}
+
+\section{Heating of the surrounding layer}
+\label{sec:heat-surr-layer}
+
+
+\section{Applications}
+\label{sec:applications}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
+

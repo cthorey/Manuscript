@@ -4,6 +4,8 @@
    (LaTeX-add-labels
     "chap2"
     "sec:orig-theor-fram"
+    "Hillers"
+    "Horsmann"
     "C2-sec:model"
     "C2-Sketch"
     "C2-sec:Governing equation"
@@ -42,5 +44,7 @@
     "C2_Geological_Data"
     "C2-sec:discussion"
     "tab2"
-    "tab3")))
+    "tab3")
+   (LaTeX-add-bibliographies
+    "/Users/thorey/Dropbox/Library")))
 

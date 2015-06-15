@@ -3,6 +3,8 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ThesisStyle" "a4paper" "12pt" "twoside")))
+   (TeX-add-to-alist 'LaTeX-provided-package-options
+                     '(("chapterbib" "sectionbib") ("inputenc" "utf8") ("fontenc" "T1")))
    (TeX-run-style-hooks
     "latex2e"
     "formatAndDefs"
@@ -23,7 +25,12 @@
     "amsmath"
     "pdfpages"
     "natbib"
-    "makeidx")
-   (LaTeX-add-bibliographies
-    "/Users/thorey/Dropbox/Library")))
+    "chapterbib"
+    "inputenc"
+    "fontenc"
+    "appendix"
+    "chngcntr"
+    "etoolbox"
+    "lipsum"
+    "makeidx")))
 

@@ -3,13 +3,25 @@
  (lambda ()
    (LaTeX-add-labels
     "chap1"
-    "sec:magma-transp-with"
-    "sec:shall-magm-intr"
-    "sec:magma-budget"
-    "sec:laccolith-from-corry"
-    "sec:laccolith-at-elba"
-    "sec:shall-magm-intr-1"
-    "sec:intr-magm-moon"
-    "sec:low-slopes-domes"
-    "sec:floor-fract-crat")))
+    "sec:magm-intr-un"
+    "sec:formation-1"
+    "Geoterme"
+    "sec:transport"
+    "sec:stockage"
+    "Neutral_Zone"
+    "sec:zool-des-intr"
+    "sec:definition"
+    "Dimension"
+    "picture"
+    "Rocchie_Schema"
+    "Horsmann"
+    "sec:moon"
+    "Moon-magma"
+    "sec:orign-theor-fram"
+    "sec:model-statique-de"
+    "sec:empl-dynam-des"
+    "Model"
+    "sec:discussion")
+   (LaTeX-add-bibliographies
+    "/Users/thorey/Dropbox/Library")))
 

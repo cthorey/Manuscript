@@ -1,6 +1,676 @@
-\chapter{First order modelling - Isothermal rocks} 
-\label{chap4} 
+
+\chapter{Toward a more realistic model- Relaxing the thermal boundary
+  condition and changing the rheology}
+\label{Heating}
+
 \minitoc
+The previous Chapter  was first step toward the  understanding how the
+cooling of the  laccolith interacts with its  dynamics.  Hereafter, we
+investigate  the  changes  triggered  by   both  the  heating  of  the
+surrounding layer and a more realistic rheology.
+
+\section{Introduction}
+\label{sec:introduction}
+ 
+Contact metamorphism around sill intrusion is a common process
+
+\citep{Everett:2008tn}
+
+\section{Theory}
+\label{sec:theory-1}
+
+We  consider   the  model  of  elastic-plated   gravity  current  with
+temperature-dependent viscosity described  in Section \ref{sec:theory}
+where we relax the isothermal boundary condition. In the following, we
+specify only the change in the  theory that comes with the new thermal
+boundary condition  and refer  the reader to  Section \ref{sec:theory}
+for more details about the derivation.
+
+\subsection{Thermal boundary condition}
+\label{sec:formulation-1}
+
+We now  consider the heating  of the  surrounding medium by  the magma
+itself at the contact with the surrounding rock, the continuity of the
+temperature imposes to rewrite the vertical temperature profile as
+\begin{equation}
+  T=
+  \begin{cases}
+    T_b - (T_b-T_s)(1-\frac{z}{\delta})^2 & 0 \le z\le \delta \\
+    T_b & \delta \le z\le h-\delta \\
+    T_b - (T_b-T_s)(1-\frac{h-z}{\delta})^2 & h-\delta \le z\le h\\
+  \end{cases}
+  \label{C4-Temperature}
+\end{equation}
+where  $\delta(r,t)$   is  the   thermal  boundary   layer  thickness,
+$T(r,z,t)$ is temperature of the  fluid, $T_b(r,t)$ is the temperature
+at the center of the profile  and $T_s(r,t)$ is the temperature of the
+surface,   i.e.   $T(r,z=0,t)=T(r,z=h,t)=T_s(r,t)$.  As   in   Section
+\ref{sec:theory},  this   profile  assures   the  continuity   of  the
+temperature and heat flux within  the flow. In addition, continuity of
+the heat flux across the boundaries reads
+\begin{eqnarray}
+  k_m\left.\frac{\partial                                    T}{\partial
+  z}\right|_{z=0}&=&k_r\left.\frac{\partial              T_r}{\partial
+                     z}\right|_{z=0}  \label{C4-Flux1}\\
+  k_m\left.\frac{\partial                                  T}{\partial
+  z}\right|_{z=h}&=&k_r\left.\frac{\partial            T_r}{\partial
+                     z}\right|_{z=h}
+                     \label{C4-Flux2}
+\end{eqnarray}
+where  $T_r(r,z)$ is  the temperature  in the  surrounding medium  and
+$k_r$ its  thermal conductivity.  Assuming  a semi infinite  layer for
+the rigid layer below  the intrusion, \citet{Carslaw:1959wf} show that
+the temperature $T_r$ in the  surrounding rocks can be approximated to
+a first order by
+\begin{equation}
+  T_r(r,z,t)-T_0=(T_{s}-T_0)\operatorname{erfc}{\left(\frac{-z}{2\sqrt{\kappa_r t}}\right)}.
+  \label{eq22}
+\end{equation}
+The  thickness of  the upper  layer is  equal to  the intrusion  depth
+$d_c$. However,  we assume that the  depth $d_c$ is large  compared to
+the characteristic  length scale for  conduction $L_c$ and we  use the
+same approximation to derive $T_r$ above the intrusion
+\begin{equation}
+  T_r(r,z,t)-T_0=(T_{s}-T_0)\operatorname{erfc}{\left(\frac{z-h}{2\sqrt{\kappa_r t}}\right)}.
+  \label{eq11}
+\end{equation}
+Therefore, the  two thermal  boundary conditions  (\ref{C4-Flux1}) and
+(\ref{C4-Flux2}) become
+\begin{eqnarray}
+  k_m\left.\frac{\partial                                    T}{\partial
+  z}\right|_{z=0}&=& k_r
+                     \frac{T_{s}-T_{0}}{\sqrt{\pi \kappa_r t}}  \label{C4-2Flux_1}\\
+  k_m\left.\frac{\partial                                    T}{\partial
+  z}\right|_{z=h}&=& -k_r
+                     \frac{T_{s}-T_{0}}{\sqrt{\pi \kappa_r t}}.
+                     \label{C4-2Flux_2}
+\end{eqnarray}
+
+
+
+\subsection{Dimensionless equations}
+\label{sec:dimens-equat-1}
+
+Except  for   the  conduction   term,  which   now  account   for  the
+dimensionless  surface temperature  $\Theta_s$, the  coupled equations
+governing the  cooling the current  are very similar  to (\ref{C3-HF})
+and (\ref{C3-TF}) and reads
+\begin{eqnarray}
+  \frac{\partial h}{\partial t}-\frac{12}{r}
+  \frac{\partial}{\partial      r}
+  \left( r I_1(h) \frac{\partial P}{\partial
+  r}\right)
+  \label{C4-HF}
+  & =& \mathcal{H}(\frac{\gamma}{2}-r)\frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\\
+  \frac{\partial                                       \xi}{\partial
+  t}+\frac{1}{r}\frac{\partial}{\partial                          r}
+  \left( r\left(\bar{u}\xi-\Sigma\right)\right)&=&2Pe^{-1}St_m\frac{\Theta_b-\Theta_s}{\delta}\label{C4-TF}
+\end{eqnarray}
+with
+\begin{eqnarray}
+  \overline{\theta}&=&\frac{1}{3}\left(2\Theta_b+\Theta_s\right)\label{C4-tbar}\\
+  \overline{u}&=&\frac{12}{\delta}
+                  \frac{\partial
+                  P}{\partial
+                  r}\left(\delta
+                  I_0(\delta)-I_1(\delta)\right)\\
+  \Sigma &=& \frac{12}{\delta} \frac{\partial P}{\partial r}\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right).
+\end{eqnarray}
+where $G(z)$ denotes  a primitive of $\theta(z)$  when $z<\delta$. The
+coupling between equations (\ref{C4-HF}) and (\ref{C4-TF}), i.e. the rheology is
+contained in the  three integrals $I_0(z)$, $I_1(z)$  and $I_2(z)$ and
+is discussed  in the  next section.   The thermal  boundary conditions
+(\ref{C4-2Flux_1})  and (\ref{C4-2Flux_2})  reduce in  a dimensionless
+form to
+\begin{equation}
+  2\frac{\Theta_b-\Theta_s}{\delta}               =               \Omega
+  Pe^{1/2}\frac{\Theta_s}{\sqrt{\pi t}}.
+  \label{C4-Boundary-Condi}
+\end{equation}
+where $\Omega$ is a new dimensionless number; it is equal to
+\begin{equation}
+  \Omega=\frac{k_r}{k_m}\left(\frac{\kappa_m}{\kappa_r}\right)^{1/2}\label{omega}
+\end{equation}
+and represents the  ratio between heat conduction at  the contact with
+the encasing rocks and heat diffusion within the fluid.
+
+Finally,      using      this     thermal      boundary      condition
+(\ref{C4-Boundary-Condi}), we  can show  that the  different variables
+can   be   expressed   in   term  of   $\xi$   such   that   (Appendix
+\ref{Heat:AppendixA})
+\begin{equation}
+  \Theta_s(r,t)=
+  \begin{cases}
+    \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1 & \text{if} \hspace{1cm} \xi\leq \xi_t \\
+    \frac{- 12  \xi +  6 h{\left  (r,t \right  )}}{\left(\beta h{\left
+            (r,t  \right  )} +  6\right)  h{\left  (r,t \right  )}}  &
+    \text{if} \hspace{1cm} \xi > \xi_t
+  \end{cases}
+  \label{C4-TS}
+\end{equation}
+and
+\begin{equation}
+  \Theta_b(r)=
+  \begin{cases}
+    1 &\text{if } \hspace{1cm} \xi\leq \xi_t \\
+    \frac{\Theta_{s}}{4}  \left(\beta(t)  h{\left  (r,t  \right  )}  +
+      4\right) & \text{if} \hspace{1cm} \xi > \xi_t
+  \end{cases}
+  \label{C4-TB}
+\end{equation}
+\begin{equation}
+  \delta(r)=
+  \begin{cases}
+    \frac{1}{\Theta_{s} \beta(t)} \left(- 2 \Theta_{s} + 2\right) &\text{if } \hspace{1cm} \xi\leq \xi_t \\
+    h(r,t)/2 & \text{if} \hspace{1cm} \xi > \xi_t
+  \end{cases}
+  \label{C4-DELTA}
+\end{equation}
+with
+\begin{eqnarray}
+  \xi_t(t)&=&\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
+              + 24}\\
+  \beta(t) &=& \Omega Pe^{1/2}\frac{1}{\sqrt{\pi t}}
+\end{eqnarray}
+
+\subsection{Rheology}
+\label{sec:rheology}
+
+The model derived in  Section \ref{sec:dimens-equat-1} does not assume
+a specific relation  between viscosity and temperature  and the choice
+of the  rheology $\eta(T)$, which  appears in the  integrals $I_0(z)$,
+$I_1(z)$   and   $I_2(z)$   remains   to  be   defined.    In   Section
+\ref{sec:theory},  we assume  a viscosity  inversely dependent  on the
+temperature which reads in a dimension form
+\begin{equation}
+  \eta(T)=\frac{\eta_h
+    \eta_c(T_i-T_0)}{\eta_h(T_i-T_0)+(\eta_c-\eta_h)(T-T_0)}.
+\end{equation}
+where $\eta_h$  and $\eta_c$  are the viscosities  of the  hottest and
+coldest  fluid  at  the   temperature  $T_i$  and  $T_0$  respectively
+\citep{Bercovici:2007vc}.   While  this   model  possesses  some  nice
+simplification properties, it  restricts the change in  viscosity to a
+very narrow  range of  temperature close  to $T=T_0$,  i.e. $\theta=0$
+(Figure   \ref{C4-Rheology}).   In   contrast,  the   Arrhenius  model
+($\eta \sim  \exp(-k/T)$), which is  a more realistic model  to relate
+temperature and viscosity of lavas \citep{Blatt:2ViMWPc0}, describes a
+viscosity  that increases  over  a much  larger  range of  temperature
+(Figure \ref{C4-Rheology}).  To get some insights into the effect of a
+more  realistic temperature-dependent  viscosity, we  thus also  use a
+first-order approximation of the Arrhenius  model as a second rheology
+$\eta_2(T)$ \citep{Diniega:2013eh}
+\begin{eqnarray}
+  \eta_2(T)                          =                          \eta_h
+  \exp\left(-\log\left(\frac{\eta_h}{\eta_c}\right)\left(1-\frac{T-T_0}{T_i-T_0}\right)\right)
+\end{eqnarray}
+\begin{figure}[htbp]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.8]{Rheology.eps}
+    \caption{Dimensionless viscosity  versus dimensionless temperature
+      for   both  rheology   $\eta_1$   (\ref{rheo-1})  and   $\eta_2$
+      (\ref{rheo-2}).}
+    \label{C4-Rheology}
+  \end{center}
+\end{figure}
+In a dimensionless form, they read
+\begin{eqnarray}
+  \eta_1(\theta)/\eta_h&=&\frac{1}{\nu+(1-\nu)\theta} \label{rheo-1}\\
+  \eta_2(\theta)/\eta_h&=&\exp\left(-\log(\nu)\left(1-\theta\right)\right)  \label{rheo-2}
+\end{eqnarray}
+where   $\nu$  is   the  viscosity   contrast  described   in  Section
+\ref{sec:theory} and  represents the  ratio between the  hot viscosity
+$\eta_h$  and   the  cold  viscosity  $\eta_c$.    The  expression  of
+$I_0(\delta)$, $I_1(\delta)$, $I_1(h)$ and $I_2(\delta)$, necessary to
+close the model,  are given in Appendix  \ref{Heat:AppendixB} for both
+rheologies.
+
+\subsection{Comparison with the isothermal model}
+\label{sec:some-limits}
+
+We showed that relaxing the isothermal boundary condition introduces a
+new dimensionless number $\Omega$ which  controls how much heat can be
+transferred    to   the    surrounding    rocks.     In   the    limit
+$\Omega \rightarrow \infty$, the model should thus reduce to the model
+described     in    Section     \ref{sec:theory}.     Indeed,     when
+$\Omega\rightarrow \infty$, the  coefficient $\beta\rightarrow \infty$
+and  then  $\xi_t\rightarrow  h/6$ (Section  \ref{sec:theory}).   When
+$\xi<\xi_t$,  injecting  the  corresponding expression  of  $\Theta_s$
+(\ref{C4-TS})   in   the    corresponding   expression   of   $\delta$
+(\ref{C4-DELTA}) gives
+\begin{equation}
+  \delta =\frac{3 \beta \xi +\sqrt{3} \sqrt{\beta \xi (3 \beta \xi +8)}+8}{2 \beta }
+\end{equation}
+which  tends   to  $3\xi$  when  $\beta   \rightarrow  \infty$.   When
+$\xi>\xi_t$,  injecting  the  corresponding expression  of  $\Theta_s$
+(\ref{C4-TS})   in   the   corresponding  expression   of   $\Theta_b$
+(\ref{C4-TB}) gives
+\begin{equation}
+  \Theta_b = \frac{3 (\beta  h+4) (h-2 \xi )}{2 h (\beta  h+6)}
+\end{equation}
+which tends  to $3/2-3\xi/h$ when $\beta  \rightarrow \infty$ (Section
+\ref{sec:theory}). Finally,  taking the  limit of $\Theta_s$  for both
+$\xi>\xi_t$ and $\xi<\xi_t$ show that  $\Theta_s$ indeed tends to zero
+when $\Omega\rightarrow \infty$.
+
+For magmatic  intrusion, the thermal  parameters of the magma  and the
+encasing  rocks are  close and  the dimensionless  number $\Omega$  is
+close to  $1$. In the following,  we study the effect  of relaxing the
+isothermal   boundary  condition   on   the   dynamics  by   comparing
+$\Omega=10^5$ and  $\Omega = 1$  in both regimes separately.   We also
+investigate  the effect  of  a  more realistic  rheology  on the  flow
+dynamics. 
+
+\section{Evolution in the bending regime}
+\label{sec:evol-bend-regime-1}
+
+We  follow the  same approach  as in  the previous  Chapter and  first
+concentrate  on the  case in  which  only bending  contributes to  the
+pressure.   The   governing  equations  are  thus   (\ref{C4-HF})  and
+(\ref{C4-TF}) where  $P =  \nabla_r^4h$. In  the previous  Chapter, we
+show that  the dynamics in the  bending regime depends on  the average
+viscosity of  a small region  at the front of  the current and  can be
+divided in three phases. A first phase where the current behaves as an
+isoviscous flow  with hot  viscosity.  A second  phase where  the flow
+slows down  and thickens.  A last  phase where the flow  returns in an
+isoviscous flow but with cold viscosity.  Hereafter, we first describe
+how the thermal boundary condition influences the timing for the phase
+transition  by looking  at  two values  for  the dimensionless  number
+$\Omega$,  i.e.   $\Omega=1$  and   $\Omega=10^5$  using  the  inverse
+temperature  dependence  for  the  rheology  $\eta_1(\theta)$,  as  in
+Chapter  \ref{JFM}. We  thus investigate  the effect  of changing  the
+rheology.
+
+\begin{figure}
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.55]{Grid_PeOmega_ELAS_Berco_3.eps}
+    \caption{Snapshots of  the flow thermal  structure $\theta(r,z,t)$
+      for  different  sets  ($Pe$,$\Omega$)  with  $Pe=  1.0$  ,$10.0$
+      ,$100.0$   and   $\Omega=10^5$   and   $1.0$   at   $t=10$   for
+      $\nu=0.001$. The thermal structure  in the surrounding medium is
+      given  by  (\ref{eq11})  and   reads  in  a  dimensionless  form
+      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\frac{\kappa_m}{\kappa_r}\frac{(z-h)}{2\sqrt{t}}\right)}$
+      where the ratio $\kappa_m/\kappa_r$ is set to $1$.}
+    \label{Grid_PeOmega_Heating}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.45]{Scaling_HR_ELAS_Omega.eps}
+    \caption{Left: Dimensionless thickness at  the center $h_0$ versus
+      dimensionless time  $t$ for different sets  $(\nu,Pe)$ indicated
+      on      the      plot.      Dotted-lines:      scaling      laws
+      $h_0=  0.7h_f^{-1/11}\nu^{-2/11}t^{8/22}$ for  $\nu  = 1.0$  and
+      $0.001$.  Right:  Dimensionless radius $R$  versus dimensionless
+      time  $t$  for  the  same sets  $(\nu,Pe)$.   Dotted-lines:  the
+      scaling    laws    $R=   2.2h_f^{1/22}\nu^{1/11}t^{7/22}$    for
+      $\nu = 1.0$ and $0.001$.}
+    \label{Scaling_HR_ELAS_Omega}
+  \end{center}
+\end{figure}
+\subsection{Relaxing  the   thermal  boundary  condition,   effect  of
+  $\Omega$}
+\label{sec:infl-therm-bound}
+
+As for the isothermal boundary  condition, the thermal boundary layers
+first connect  at the front  and a region of  cold fluid forms  at the
+current  tip for  $\Omega  =  1$ (Figure  \ref{Grid_PeOmega_Heating}).
+However, in  that case, the  heating of the surrounding  medium limits
+heat loss in the central region of the current and the thermal anomaly
+extends  further into  the flow.   For instance,  for $\nu=0.001$  and
+$Pe=1.0$, while the thermal anomaly extends over $50\%$ of the current
+for $\Omega = 10^5$ at $t=10$, it  extends over $75\%$ of the flow for
+$\Omega=1$ (Figure \ref{Grid_PeOmega_Heating}).
+
+As for $\Omega=10^5$, the current  first behave has an isoviscous flow
+with hot viscosity, it then slows  down and thickens to finally behave
+again  as  an   isoviscous  flow  but  with   cold  viscosity  (Figure
+\ref{Scaling_HR_ELAS_Omega}).  As  the current  tip remains hot  for a
+longueur  period of  time,  the  transition to  the  second and  third
+bending regime are however delayed relative to the case $\Omega= 10^5$
+(Figure \ref{Scaling_HR_ELAS_Omega}).  For instance, for $\nu=10^{-3}$
+and $Pe=1.0$, while the transitions to the second bending phase occurs
+at  $t\sim   10^{-5}$  for  $\Omega=10^{5}$,  it   occurs  only  after
+$t\sim       10^{-4}$       for      $\Omega=       1.0$       (Figure
+\ref{Scaling_HR_ELAS_Omega}).
+
+In addition, the second phase of thickening show two different stages:
+a first stage  where the thickness drastically increases  and a second
+stage  where   it  continues   increasing  but  much   slower  (Figure
+\ref{Scaling_HR_ELAS_Omega}). This transition, enhanced by the smaller
+spatial resolutions of  the simulations in this  chapter, reflects the
+detachment  of  the  thermal  anomaly and  is  discussed  in  Appendix
+\ref{Heat:AppendixC}.
+
+\subsection{Characterization of the thermal anomaly}
+\label{sec:char-therm-anom}
+
+As in Chapter  \ref{JFM}, we quantify the size of  the thermal anomaly
+through a  critical thermal radius  $R_c(t)$ where the  temperature at
+the  center  of  the  flow   $\Theta_b$  is  $1\%$  of  the  injection
+temperature, i.e.  $\Theta_b(r=0)-\Theta_b(r=R_c)=0.99$.  As expected,
+the  thermal anomaly  is larger  when considering  the heating  of the
+surrounding medium relative to the  isothermal boundary condition at a
+same time (Figure \ref{ELAS_RRc_RArrhenius_1-0}).
+
+The size of the thermal anomaly  $R_c(t)$ is given by the radius where
+advection of heat is equal to heat loss (\ref{HeatequationThermal})
+\begin{equation}
+  \frac{d}{d    t}\left(\theta(r=   R_c,t)\right)    \propto   Pe^{-1}
+  \frac{\partial^2}{\partial z^2}\left(\theta(r=R_c,t)\right).
+  \label{C4-HeatequationThermal}
+\end{equation}
+which,  by integration  over the  thickness  of the  flow $h$  becomes
+(\ref{Temperature2})
+\begin{eqnarray}
+  \frac{d}{dt}\left(\int_0^h\theta           dz\right)-\Theta_s\frac{d
+  h}{dt}&\propto& Pe^{-1} \frac{\Theta_b-\Theta_s}{h}\nonumber\\
+  \overline{\theta}\frac{d h}{dt}+h\frac{d \overline{\theta}}{dt}-\Theta_s\frac{d
+  h}{dt}&\propto& Pe^{-1}
+                  \frac{\Theta_b-\Theta_s}{h}\nonumber\\
+  \frac{2}{3}\left(\Theta_b-\Theta_s\right)\frac{d  h}{d   t}&\propto& Pe^{-1}
+                                                                       \frac{\Theta_b-\Theta_s}{h}\nonumber\\
+  \frac{d h}{d t}&\propto& \frac{Pe^{-1}}{h}\label{Calcul2}
+\end{eqnarray}
+where $\overline{\theta}$  is equal  to $(\int_0^h \theta  dz)/h$ here
+and  we   have  assumed   that  $\overline{\theta}$  is   constant  at
+$r=R_c$. Therefore,  relaxing the thermal boundary  condition does not
+modify (\ref{Calcul1}) and the larger size of the thermal anomaly when
+$\Omega=1$ must be  linked to the heat advection rate,  i.e.  the left
+hand side term in the balance (\ref{Calcul2}).
+
+Using the thickness profile (\ref{IntrusionShape}), the left hand side
+term of (\ref{Calcul2}) becomes
+\begin{equation}
+  \frac{d h}{d t} = \alpha^2\left(1+\frac{R_c}{R}\right)^2\frac{\partial h_0}{\partial
+    t}+\frac{4h_0R_c^2}{R^3}\frac{\partial
+    R}{\partial
+    t}\alpha\left(1+\frac{R_c}{R}\right) 
+\end{equation}
+where  $\alpha  (t)$  is  the  normalized  region  beyond  $r=R_c(t)$,
+i.e. $\alpha(t)= \left(R(t)-R_c(t)\right)/R(t)$. While the second term
+of the right hand side is dominant in the isothermal boundary case, it
+becomes  weaker than  the  first term  when  $\Omega=1$. Indeed,  when
+$\Omega=1$,  the heating  of  the surrounding  medium. Therefore,  the
+balance (\ref{Calcul2}) reduces to
+\begin{equation}
+  \alpha^2\left(1+\frac{R_c}{R}\right)^2\frac{\partial h_0}{\partial
+    t}\propto \frac{Pe^{-1}}{\alpha^2\left(1+\frac{R_c}{R}\right)^2h_0}
+\end{equation}
+which, in the limit $\alpha<<1$, becomes
+\begin{equation}
+  \alpha^4\frac{\partial h_0}{\partial
+    t} \propto \frac{Pe^{-1}}{h_0\frac{\partial h_0}{\partial t}}.
+\end{equation}
+\begin{figure}
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.45]{ELAS_RRc_RBercovici_1-0.eps}
+    \caption{Left:  Extent  of  the cold  fluid  region  $R(t)-R_c(t)$
+      versus   dimensionless    time   for    different   combinations
+      ($\nu$,$Pe$) indicated  on the  plot, the first  order Arrhenius
+      rheology $\eta_2(\theta)$ and $\Omega=1$.   Right: Same plot but
+      where  we  rescale  the  extent  of the  cold  fluid  region  by
+      $Pe^{-1/4}\nu^{2/11}$.       Dotted-line:       scaling      law
+      $(R(t)-R_c(t))Pe^{1/4}\nu^{-2/11}= 0.9 h_f^{1/11}t^{17/44}$.}
+    \label{ELAS_RRc_RBercovici_1-0}
+  \end{center}
+\end{figure}
+
+Substituting the  thickness at the  center $h_0(t)$ by  its respective
+scaling  law   (\ref{ScalingH-Visco}),  the   relative  size   of  the
+normalized cold front region $\alpha$ reads
+\begin{equation}
+  \alpha(t) \propto h_f^{1/22}\nu^{1/11}Pe^{-1/4}t^{7/44}
+\end{equation}
+which is equivalent to
+\begin{equation}
+  R(t)-R_c(t) = 0.8h_f^{1/11}\nu^{2/11}Pe^{-1/4}t^{17/44}
+  \label{ScalingRRc-Heating}
+\end{equation}
+where the numerical prefactor, which  depends on the definition of the
+thermal anomaly, has been chosen to fit the simulations.
+
+The predicted scaling law for the  evolution of the extent of the cold
+fluid  region  (\ref{ScalingRRc-Heating})   indeed  closely  fits  the
+numerical  simulations,  even for  the  isoviscous  case $\nu=1$  with
+$Pe=1$.  The  cold fluid  region thus cools  slightly slower  than for
+isothermal  boundary condition,  from $t^{9/22}$  to $t^{17/44}$.   In
+addition, the dependence is weaker in  the Peclet number, from a power
+$1/3$    to   $1/4$    when   relaxing    the   isothermal    boundary
+condition. Indeed, for small $Pe$, the vertical diffusion is efficient
+on  the emplacement  time scale,  the heat  loss in  the interior  are
+smaller and the thermal anomaly  larger. In contrast, for large values
+of $Pe$,  the advection dominates  and the saving  of heat due  to the
+heating  of  the  medium  is less  important  decreasing  the  overall
+difference between small and large  values of $Pe$.  In the following,
+we  consider  the  more   realistic  first  order  Arrhenius  rheology
+$\eta_2(\theta)$  and  we  define  the   final  value  for  the  phase
+transitions within the bending regime.
+
+\subsection{Influence of the rheology, effect of $\eta(\theta)$}
+\label{sec:infl-therm-bound}
+
+The first  order Arrhenius rheology $\eta_2(\theta)$  widens the range
+of  temperature  over  which significant  viscosity  variation  occurs
+(Figure \ref{C4-Rheology}), i.e.  $\sim80\%$  of the temperature range
+against $\sim10\%$ for $\eta_1(\theta)$. Therefore, the effective flow
+viscosity starts to  increase sooner and the  phase transitions within
+the  bending regime  occur  sooner than  for  the rheology  previously
+considered  $\eta_1(\theta)$ (Figure  \ref{Scaling_HR_ELAS_Rheology}).
+For instance, for  $\nu=10^{-3}$ and $Pe=1.0$, while  the second phase
+of  the   flow  starts  around   $t\sim  10^{-4}$  for   the  rheology
+$\eta_1(\theta)$, it  starts around  $t\sim 10^{-5}$ for  the rheology
+$\eta_2(\theta)$ (Figure \ref{Scaling_HR_ELAS_Rheology}).
+
+\begin{figure}
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.45]{Scaling_HR_ELAS_Rheology.eps}
+    \caption{Left: Dimensionless thickness at  the center $h_0$ versus
+      dimensionless time  $t$ for different sets  $(\nu,Pe)$ indicated
+      on      the      plot.      Dotted-lines:      scaling      laws
+      $h_0=  0.7h_f^{-1/11}\nu^{-2/11}t^{8/22}$  for  $\nu  =  0.001$.
+      Right: Dimensionless  radius $R$  versus dimensionless  time $t$
+      for the  same sets  $(\nu,Pe)$.  Dotted-lines: the  scaling laws
+      $R= 2.2h_f^{1/22}\nu^{1/11}t^{7/22}$ for $\nu=0.001$.}
+    \label{Scaling_HR_ELAS_Rheology}
+  \end{center}
+\end{figure}
+
+
+\subsection{Size of the thermal aureole}
+\label{sec:char-therm-anom}
+
+The size  of the  thermal aureole, the  heated region  surrounding the
+current,  scales as  $(\kappa_r  \tau)^{1/2}$,  i.e.  $Pe^{-1/2}$  and
+hence is  much larger  for small  values of  $Pe$.  Indeed,  for large
+values of $Pe$, advection dominates  on the emplacement time scale and
+the thermal aureole  is restricted to a small zone  around the current
+(Figure  \ref{Grid_PeOmega_Heating}). For  instance, the  thickness of
+the thermal aureole at the center  for $Pe=1.0$ is almost equal to the
+current thickness $h_0$ whereas it is  only a few percent of $h_0$ for
+$Pe=100.0$ (Figure \ref{Grid_PeOmega_Heating}).
+
+\section{Evolution in the gravity regime}
+\label{sec:evol-grav-regime}
+
+
+\section*{Appendix A: Main variables}
+ \label{Heat:AppendixA}
+
+The variable $\xi$ is the sufficient variable to solve for in the heat
+transport equation (\ref{EqFinal2}). Indeed,
+\begin{equation}
+  \xi&=&\frac{\delta}{3} \left(- 2 \Theta_{b} - \Theta_{s} + 3\right)\label{C4-xi}
+\end{equation}
+where   we    have   used   (\ref{C4-tbar}).    In    addition,   from
+(\ref{C4-Boundary-Condi}), we can rewrite
+\begin{eqnarray}
+  \Theta_s &=& \frac{2 \Theta_{b}}{\beta \delta + 2}\label{C4-Ts},\\
+  \delta  &=&   \frac{1}{\Theta_{s}  \beta}   \left(2  \Theta_{b}   -  2
+              \Theta_{s}\right)\label{C4-D},\\
+  \Theta_b &=& \frac{\Theta_{s}}{2} \left(\beta \delta + 2\right)\label{C4-Tb}
+\end{eqnarray}
+When  the  thermal  boundary  layer just  merged,  then  $\Theta_b=1$,
+$\delta = h/2$ and injecting (\ref{C4-Ts}) into (\ref{C4-xi}) gives
+\begin{equation}
+  \xi_t(t)=\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
+    + 24}\label{C4-xit}
+\end{equation}
+Therefore,  when  $\xi<\xi_t$,  the  thermal boundary  layer  are  not
+merged, $\Theta_b=1$ and injecting (\ref{C4-D}) into (\ref{C4-xi}) and
+solving for $\Theta_s$ gives
+\begin{equation}
+  \Theta_s = \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1.
+\end{equation}
+In contrast, when $\xi>\xi_t$, the  thermal boundary layer are merged,
+$\delta=h/2$  and  injecting   (\ref{C4-Tb})  into  (\ref{C4-xi})  and
+solving for $\Theta_s$ gives
+\begin{equation}
+  \Theta_s = \frac{- 12 \xi + 6 h}{\left(\beta h + 6\right) h}.
+\end{equation}
+
+\section*{Appendix B: Integral expressions}
+\label{Heat:AppendixB}
+
+The  model  developed in  Section  \ref{sec:theory-1}  depends on  the
+integrals
+\begin{eqnarray}
+  I_0(z)&=&\int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)
+            dy \\
+  I_1(z) &=& \int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)y dy\\
+  I_2(z)&=&\int_0^y                         \frac{1}{\eta(y)}
+            \left(y-\frac{h}{2}\right)G(y)dy
+\end{eqnarray}
+where $G(z)$  is a  primitive of $\theta(z)$  where $z<\delta$  and is
+given by
+\begin{equation}
+  G(z) = \frac{z \left(3 \delta ^2 \Theta_s+3 \delta z (\Theta_b-\Theta_s)+z^2 (\Theta_s-\Theta_b)\right)}{3 \delta ^2}.
+\end{equation}
+In  particular, the  model requires  the expression  of $I_0(\delta)$,
+$I_1(\delta)$, $I_1(h)$ and $I_2(\delta)$. 
+
+\vspace{.5cm} \textbf{Rheology 1: $\eta(\theta)=\eta_1(\theta)$} \vspace{.5cm}
+
+In that case, the four integrals can be easily derived and read
+\begin{eqnarray}
+I_0(\delta)&=&\frac{\delta}{12} \left(6 \delta \nu + (1-\nu) \left(- \alpha_1 \delta + 2 \alpha_1 h + 6 \Theta_{b} \delta - 6 \Theta_{b} h\right) - 6 h \nu\right)\nonumber\\
+I_1(\delta)&=&\frac{\delta^{2}}{120} \left(40 \delta \nu + (1-\nu) \left(- 4 \alpha_1 \delta + 5 \alpha_1 h + 40 \Theta_{b} \delta - 30 \Theta_{b} h\right) - 30 h \nu\right)\nonumber\\
+I_1(h)&=&\frac{1}{60} \left((1-\nu) \left(- 4 \alpha_1 \delta^{3} + 10 \alpha_1 \delta^{2} h - 10 \alpha_1 \delta h^{2} + 5 \Theta_{b} h^{3}\right) + 5 h^{3} \nu\right)\nonumber\\
+I_2(\delta)&=&- \frac{\delta^{2}}{2520} \left(378  \alpha_1 \delta \nu -
+               315  \alpha_1 h  \nu -  840 \Theta_{b}  \delta \nu  + 630
+               \Theta_{b} h \nu \right)\nonumber\\
+&&-\frac{\delta^{2}}{2520}(1-\nu)  \left(- 50  \alpha_1^{2} \delta  + 70
+    \alpha_1^{2}  h  +  462  \alpha_1   \Theta_{b}  \delta  -  420  \alpha_1
+    \Theta_{b}  h -  840  \Theta_{b}^{2} \delta  + 630  \Theta_{b}^{2}
+    h\right)\nonumber
+\end{eqnarray}
+where $\alpha=\Theta_b-\Theta_s$ has been introduced for clarity.
+
+\vspace{.5cm}   \textbf{Rheology   2:   $\eta(\theta)=\eta_2(\theta)$}
+\vspace{.5cm}
+
+For cases where $\nu<1$, we have
+\begin{eqnarray}
+I_0(\delta)&=&-\frac{\delta  \nu ^{1-\Theta_b} \left(\sqrt{\pi } \sqrt{\alpha_1} (2 \delta -h) \sqrt{-\alpha_2}
+   \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right)+2 \delta  \left(\nu ^{\alpha_1}-1\right)\right)}{4 \alpha_1 \alpha_2}\nonumber\\
+I_1(\delta)&=&\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\pi } \erf\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) (\alpha_1 (h-2
+   \delta ) \alpha_2+\delta )\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber\\
+&&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\alpha_1} \sqrt{-\alpha_2} \left(2 \delta  \left(\nu ^{\alpha_1}-2\right)-h \nu
+   ^{\alpha_1}+h\right)\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber\\
+I_1(h)&=&\frac{\nu ^{1-\Theta_b} \left(\sqrt{\alpha_1} \sqrt{-\alpha_2} \left(12 \delta ^2 \left(\delta  \left(\nu
+   ^{\alpha_1}-2\right)-h \nu ^{\alpha_1}+h\right)+\alpha_1  (2 \delta -h)^3
+          \log    (\nu    )\right)\rihgt)}{12   \alpha_1^{3/2}    (-\alpha_2)^{3/2}}\nonumber\\
+&&-\frac{\nu ^{1-\Theta_b} \left(3 \sqrt{\pi } \delta 
+   \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) \left(\alpha_1 (h-2 \delta )^2 \alpha_2-2 \delta
+   ^2\right)\right)}{12 \alpha_1^{3/2} (-\alpha_2)^{3/2}}\nonumber
+\end{eqnarray}
+\begin{eqnarray}
+I_2(\delta)&=&\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\pi } \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) \left(-2
+   \alpha_1 (2  \delta -h)  (\alpha_1-3 \Theta_b)  \alpha_2^2-6 \delta
+               \Theta_b  \alpha_2-3   \delta  \right)\right)}{24
+               \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber\\
+&&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(2
+   \sqrt{\alpha_1} \nu ^{\alpha_1} \sqrt{-\alpha_2} \left(\nu ^{-\alpha_1} (\alpha_2 (-2 \delta  (\alpha_1-6
+   \Theta_b)-3 h \Theta_b)+2 \delta -h)\right)\right)}{24
+               \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber\\
+&&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(2
+   \sqrt{\alpha_1} \nu ^{\alpha_1} \sqrt{-\alpha_2} \left(2 \delta  \alpha_1 \alpha_2-6 \delta  \Theta_b \alpha_2+\delta
+   -\alpha_1 h \alpha_2+3 h \Theta_b \alpha_2+h\right)\right)}{24 \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber
+\end{eqnarray}
+where    in   addition    to    $\alpha_1$,    we   also    introduced
+$\alpha_2=log(\nu)$  for  clarity.  In  the  case  where $\nu=1$,  the
+expression above simplify and read
+\begin{eqnarray}
+I_0(\delta)&=&\frac{1}{2} \delta  (\delta -h)\nonumber\\
+I_1(\delta)&=&\frac{1}{12} \delta ^2 (4 \delta -3 h)\nonumber\\
+I_1(h)&=&\frac{h^3}{12}\nonumber\\
+I_2(\delta)&=&-\frac{1}{120} \delta ^2 (18 \delta  \alpha_1-40 \delta  \Theta_b-15 \alpha_1 h+30 h \Theta_b)\nonumber
+\end{eqnarray}
+
+\section*{Appendix C: Second phase of the bending regime}
+\label{Heat:AppendixC}
+
+For all simulations,  the second phase of important  thickening in the
+bending regime occurs in two stages: a first stage where the thickness
+drastically increases and a second stage where it continues increasing
+but      much     slower      (Figure     \ref{Scaling_HR_ELAS_Omega},
+\ref{Scaling_HR_ELAS_Rheology}                                     and
+\ref{Appendix_Phase2_N11_0_Pe100_0_nu0_001}).    The   transition   is
+sharper  for the  rheology  $\eta_1(\theta)$ and  is  enhanced by  the
+smaller    spatial   resolution    of   the    numerical   simulations
+($\Delta r = 0.005$) in Chapter \ref{Heating} than in previous Chapter
+(Figure \ref{Appendix_Phase2_N11_0_Pe100_0_nu0_001}).
+
+In  all cases,  it reflects  the transition  from the  last moment  of
+prewetting film cooling to the  detachment of the thermal anomaly. For
+instance,  for  $\eta_1(\theta)$,   $\nu=0.001$  and  $Pe=100.0$,  the
+transitions  between  the two  stages  occurs  at $t=1.8~10^{-2}$  and
+coincide    to   the    film    becoming    entirely   cold    (Figure
+\ref{Appendix_Phase2_N11_0_Pe100_0_nu0_001}  a,  b, c).   Before  this
+time, the average  temperature in the film is non  zero and after this
+time,   the   average  temperature   in   the   film  is   effectively
+$\overline{\theta}=0$   and   the   thermal  anomaly   grows   (Figure
+\ref{Appendix_Phase2_N11_0_Pe100_0_nu0_001}  c).    For  the  rheology
+$\eta_2(\theta)$,  the   viscosity  increases  on  a   wide  range  of
+temperature    and     the    transition    is     smoother    (Figure
+\ref{Appendix_Phase2_N11_0_Pe100_0_nu0_001} d, e, f).
+
+
+
+\begin{figure}
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.42]{Appendix_Phase2_N11_0_Pe100_0_nu0_001.eps}
+    \caption{a)  Dimensionless  thickness $h_0$  versus  dimensionless
+      time   $t$  for   $Pe=100.0$,  $\nu=0.001$   and  the   rheology
+      $\eta_1(\theta)$.  Colors  refer to the time  $t$.  Dotted line:
+      Scaling  law $h_0=  0.7h_f^{-1/11}\nu^{-2/11}t^{8/22}$. Vertical
+      dashed-lines:  initial,  intermediate  and final  times  of  the
+      temperature profiles plotted in  c). b) Dimensionless radius $R$
+      versus dimensionless  time $t$  for $Pe=100.0$,  $\nu=0.001$ and
+      the rheology  $\eta_1(\theta)$.  Colors  refer to the  time $t$.
+      Dotted line:  Scaling law  $R= 2.2h_f^{1/22}\nu^{1/11}t^{7/22}$.
+      Vertical dashed-lines: same than in a). d) Dimensionless average
+      temperature over  the flow thickness  $\overline{\theta}$ versus
+      radial   axis  $r$   for  times   between  $t=3.8~10^{-3}$   and
+      $t=7.6~10^{-2}$.   Dashed-line profiles:  profiles at  the three
+      different times  marked in a) and  b). Colors also refer  to the
+      time on  the same  scale than a)  and b).  d),  e) and  f), same
+      plots  than  a),  b)  and  c) but  for  the  Arrhenius  rheology
+      $\eta_2$.}
+    \label{Appendix_Phase2_N11_0_Pe100_0_nu0_001}
+  \end{center}
+\end{figure}
+
+
+\bibliographystyle{agufull08}
+\bibliography{/Users/thorey/Dropbox/Library}
+
 
 
 %%% Local Variables:
