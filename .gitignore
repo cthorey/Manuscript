@@ -21,3 +21,7 @@
 *.mtc1
 *.out
 *.synctex.gz
+/main.mtc2
+/main.log
+/main.fdb_latexmk
+/main.brf
