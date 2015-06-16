@@ -30,14 +30,12 @@ the manuscript.
 \label{C2-sec:model}
 
 The model considers an isoviscous elastic-plated gravity current, i.e.
-an  isoviscous  fluid  spreading  beneath  a  thin  elastic  sheet  of
-thickness   $d_c$   and   above    a   semi   infinite   rigid   layer
-\citep{Michaut:2011kg,Bunger:2011cb}  (Figure  \ref{C2-Sketch}).   The
-fluid is injected continuously at the base and center of the current
-through a cylindrical conduit of diameter $a$. 
-
-
-
+an  isoviscous  fluid  of  viscosity  $\eta_h$  and  density  $\rho_m$
+spreading beneath a thin elastic sheet  of thickness $d_c$ and above a
+semi infinite rigid layer \citep{Michaut:2011kg,Bunger:2011cb} (Figure
+\ref{C2-Sketch}).  The fluid is injected  continuously at the base and
+center of the current at a rate $Q_0$ through a cylindrical conduit of
+diameter $a$.
 
 \begin{figure}[htbp]
   \begin{center}
@@ -228,8 +226,9 @@ driving the flow and the weight of the magma at the center.
 One  of   the  main   mathematical  difficulty  in   solving  equation
 (\ref{C2-mainEq}) arises at the  contact line.  Indeed, the assumption
 that the  thickness of  the fluid  tends to zero  at the  contact line
-leads  to  divergent  viscous  stresses, and  hence,  the  theoretical
-immobility                of                the                blister
+leads       to       divergent      viscous       stresses,       i.e.
+$\eta  \partial   u/\partial  z\rightarrow  \infty$  and   hence,  the
+theoretical         immobility          of         the         blister
 \citep{Flitton:1999iv,Lister:2013ia,Anonymous:QWXp_4JV}. This problem,
 known  a  the  contact-line  paradox,  is  a  well  know  problem  for
 surface-tension driven flow  such as the spreading of  a water droplet
@@ -253,10 +252,10 @@ leading powers of $R-r$ gives
   &=&A^4\alpha(\alpha-1)(\alpha-2)\nonumber\\
   &&(\alpha-3)(\alpha-4)(\alpha-5)(R-r)^{4\alpha-6}\nonumber
 \end{eqnarray}
-The second  term on  the left is  small compared to  the first  as the
-blister  grows  mainly by  spreading  at  the  tip and  therefore,  by
-equating  the exponent  of $R-r$,  we obtain  $\alpha =  5/3$, and  by
-equating the coefficients, we deduce
+The time derivative is locally dominated by its convective part at the
+tip, the second  term on the left  is small compared to  the first and
+therefore,   by   equating   the   exponent  of   $R-r$,   we   obtain
+$\alpha = 5/3$, and by equating the coefficients, we deduce
 \begin{equation}
   \frac{\partial R}{\partial r} =-\frac{280}{243} A^3.
 \end{equation}
@@ -265,9 +264,9 @@ It shows that (\ref{C2-mainEq}) can  only have retreating contact line
 \citep{Lister:2013ia,Flitton:1999iv}.
 
 To  mitigate this  problem,  one  common approach  is  to  add a  thin
-pre-wetting film, with thickness $h_f$ such that $h\rightarrow h_f$ as
+prewetting film, with thickness $h_f$ such that $h\rightarrow h_f$ as
 $r\rightarrow  \infty$.   While  the  solution will  depend  upon  the
-pre-wetted  film thickness  $h_f$ and  will not  show any  convergence
+prewetting  film thickness  $h_f$ and  will not  show any  convergence
 properties when $h_f\rightarrow 0$, we will see that the dependence in
 $h_f$ is  weak and the  difference between different values  for $h_f$
 will  be  relatively  small  \citep{Lister:2013ia,Anonymous:QWXp_4JV}.
@@ -279,7 +278,7 @@ the manuscript.
 \section{Results}
 \label{C2-sec:regime-propagations}
 
-For  a  small  pre-wetting   film  thickness,  i.e.   $h_f/H<<1$,  the
+For  a  small  prewetting   film  thickness,  i.e.   $h_f/H<<1$,  the
 numerical  resolution of  the  equation  (\ref{EqFinal1}) shows  three
 spreading regimes:  a bending  regime where  gravity is  negligible, a
 viscous  gravity current  regime  where bending  is  negligible and  a
