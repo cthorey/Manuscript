@@ -388,10 +388,48 @@ regime, the thickness is constant and the radius evolves as $t^{1/4}$
 \section{Application to laccoliths}
 \label{C2-sec:appl-earth-moon}
 
-In the following, we apply the isoviscous-gravity current.
+\subsection{Range of value for the parameters}
+\label{sec:range-value-param}
+
+In terrestrial settings,  lava density $\rho_m$ depends  mainly on its
+composition and varies between $ 2300$ kg m$^{-3}$ for felsic lavas to
+$3000$ kg m$^{-3}$ for mafic  lavas. Hence, for Young's modulus values
+between $10$ and $100$ GPa and  intrusion depths between $0.1$ and $5$
+km, the characteristic  length scale $\Lambda$ varies  between $1$ and
+$10$  km.   The overpressure  in  magma  reservoirs driving  dykes  is
+typically    between    a    few    to    several    tens    of    MPa
+\citep{Tait:1988vn,Marti:2000fe} and  the conduit length  $Z_c$ varies
+from a few  to several tens of kilometers. Lava  viscosity at eruption
+temperature  $\eta_h$  depends mainly  on  its  composition and  water
+content; close to its liquidus temperature,  it can varies from $1$ Pa
+s  for   ultramafic  lavas   to  $10^{6}$  Pa   s  for   felsic  lavas
+\citep{Anonymous:CZVBrBvv,Giordano:2008em,Whittington:2009fv,Chevrel:2013jn}.
+Hence,  injection  rate  $Q_0$  are in  a  range  $10^{-3}-0.1$  m$^3$
+s$^{-1}$ and  the height scale  $H$ varies  between $0.1$ m  for mafic
+lavas to  $1$ m for  felsic lavas.   Therefore, the time  scale $\tau$
+varies  from a  few months  for mafic  lavas to  few years  for felsic
+lavas.
+
+In  lunar settings,  lavas are  enriched in  heavy element  ($FeO$ and
+$Ti0_2$) and would be larger than mafic lava on Earth $\rho_m=3200$ kg
+m$^{-3}$. The magma probably comes from  much deeper, up to a depth of
+several hundred  of kilometers  \citep{Shearer:2006gg}. For  a gravity
+$g=1.62$  m  s$^{-2}$ and  similar  intrusion  depth than  terrestrial
+laccolith, the  length scale can go  up to $20$ km.  Lunar magmas were
+propably  drier than  terrestrial  ones and  gas  pressure buildup  is
+probably neglegible at several kilometer depth.  Buyoancy is therefore
+the only  source of  overpressure and  should varies  from $1$  to $5$
+MPa. Mare basalt have a lower concentration in alkali than terrestrial
+ones and  their viscosity at  liquidus temperature should be  close to
+$1$ Pa s. 
+
+
+
+
+Inviscosit the following, we apply the isoviscous-gravity current.
 \begin{figure}
   \begin{center}
-    \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter2/} }
+    \graphicspath{ {/Users/teihorey/Documents/These/Manuscript/Figure/Chapter2/} }
     \includegraphics[scale=0.35]{C2_Geological_Data.eps}
     \caption{}
     \label{C2_Geological_Data}
@@ -401,6 +439,36 @@ In the following, we apply the isoviscous-gravity current.
 
 \section{Discussion}
 \label{C2-sec:discussion}
+
+\begin{table}
+  \caption{Range of values for the model parameters}
+  \centering
+  \begin{tabular}{c|c|c|c|c}
+    Parameters& Symbol & Earth & Moon&Unit\\
+    \hline
+    &&&&\\
+    Depth of intrusion & $d_c$ & $0.1-5$ &$0.1-5$ &km \\
+    Young's Modulus & $E$ & $10-100$ &$10-100$ &GPa \\
+    Poisson's ratio & $\nu^*$ & $0.25$ &$0.25$ &\\
+    Gravity & $g$ & $9.81$ &1.62&m s$^{-2}$ \\
+    Crust density & $\rho_{r}$ & $2500$ &$2500$&kg m$^{-3}$ \\
+    Magma density & $\rho_{m}$ & $2500-3000$ &$3000$&kg m$^{-3}$ \\
+    Magma viscosity & $\eta_h $ & $1-10^{4}$ &$1-10^{2}$&Pa s \\
+    Feeder dyke width & $a$ & $1-100$ &$1-10$&m \\
+    Depth of the melt source & $Z_{c}$ & $ 1-10$&$200-500$& km \\ 
+    Initial overpressure & $\Delta P$ & $5-50$ &$1-5$ &MPa \\
+    Injection rate & $Q_{0}$ &$0.01-1$ &$1-10$&m$^{3}$ s$^{-1}$ \\
+              &&&&\\
+    \hline
+    Characteristic scales & Symbol & Range of values & Unit\\
+    \hline
+              &&&&\\
+    Height scale & $H$& $0.1-10$ &$0.1-1$ &m \\
+    Length scale & $\Lambda$ & $1-12$&$1-20$& km \\
+    Time scale & $\tau$ & $10^{-1}-10$&$10^{-2}-1$& years \\
+    \label{tab2}
+  \end{tabular} 
+\end{table}
 
 
 \begin{table}
@@ -433,27 +501,7 @@ In the following, we apply the isoviscous-gravity current.
     \label{tab2}
   \end{tabular} 
 \end{table}
-\begin{table}
-  \caption{Dimensionless numbers}
-  \centering
-  \begin{tabular}{c|c|c|c}
-    &&Complex craters&Simple craters \\
-    \hline
-    Symbol& Description & Range of values & Range of values \\
-    \hline
-    &&\\
-    $\gamma$&Normalized source width& $10^{-4}-10^{-2}$ &$10^{-4}-10^{-2}$ \\
-    $\zeta$& Normalized wall zone width  & $0.05-0.13$&$0.25$\\
-    $\Psi$&Thickening term & $0.3-8$&$0.2-4$\\
-    $\Xi$& Hydrostatic term & $20-400$&$20-200$\\
-    $\Theta$ &Elastic term & $10^{-7}-0.1$&$10^{-3}-10$\\
-    $\Omega$ & Density ratio & $1.2$ &$1.2$\\
-    $\Phi$ & Upper layer aspect ratio & $4500$ &$1200 $\\
-    $\sigma$&Normalized pressure head& $0.6-100$ & $0.6-100$ 
-                                                   \label{tab3}
-  \end{tabular} 
-  % \tablenotetext{a}{Footnote text here.}
-\end{table}
+
 
 \bibliographystyle{agufull08}
 \bibliography{/Users/thorey/Dropbox/Library}
