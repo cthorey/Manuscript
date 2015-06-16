@@ -410,23 +410,6 @@ lavas to  $1$ m for  felsic lavas.   Therefore, the time  scale $\tau$
 varies  from a  few months  for mafic  lavas to  few years  for felsic
 lavas.
 
-In  lunar settings,  lavas are  enriched in  heavy element  ($FeO$ and
-$Ti0_2$) and would be larger than mafic lava on Earth $\rho_m=3200$ kg
-m$^{-3}$. The magma probably comes from  much deeper, up to a depth of
-several hundred  of kilometers  \citep{Shearer:2006gg}. For  a gravity
-$g=1.62$  m  s$^{-2}$ and  similar  intrusion  depth than  terrestrial
-laccolith, the  length scale can go  up to $20$ km.  Lunar magmas were
-propably  drier than  terrestrial  ones and  gas  pressure buildup  is
-probably neglegible at several kilometer depth.  Buyoancy is therefore
-the only  source of  overpressure and  should varies  from $1$  to $5$
-MPa. Mare basalt have a lower concentration in alkali than terrestrial
-ones and  their viscosity at  liquidus temperature should be  close to
-$1$ Pa s. 
-
-
-
-
-Inviscosit the following, we apply the isoviscous-gravity current.
 \begin{figure}
   \begin{center}
     \graphicspath{ {/Users/teihorey/Documents/These/Manuscript/Figure/Chapter2/} }
@@ -436,6 +419,119 @@ Inviscosit the following, we apply the isoviscous-gravity current.
   \end{center}
 \end{figure}
 
+\subsection{Earth : Observation Vs Prediction}
+\label{sec:observ-vs-pred}
+
+\vspace{.5cm} \textbf{Dataset} \vspace{.5cm}
+
+\citet{E:2015tl} have  made an  extensive catalog of  $900$ laccoliths
+across  the  world.   In   particular,  \citet{E:2015tl}  provide  the
+thickness and  the radius  of $168$ laccoliths  among which,  $40$ are
+also  provided  with  an  estimation  of  the  intrusion  depth.   The
+thickness  ranges from  $100$  meters  to $10$  km  and, although  the
+largest one goes up to $100$ km, their radius mostly range form $1$ to
+$10$  km.  While  most of  the data  are located  in the  United State
+($\sim 90\%$), the different laccoliths are widely spread among on the
+territory and variation in the parameters between different laccoliths
+is most  likely to be  important. Therefore,  in addition to  the data
+from  \citet{E:2015tl},  we  also  consider in  this  study  the  data
+provided by \citet{Rocchi:2002jy} on $9$ laccoliths nested in the same
+christmas tree structure. For this  dataset, each laccolith is part of
+a  larger  intrusive  system,  and  hence  variability  of  the  model
+parameters should be  limited, except for the  overlying elastic layer
+thickness, taken  to be the  intrusion depth, whose  variation between
+laccoliths is  given by \citet{Rocchi:2002jy}. Indeed,  the dispersion
+is much smaller  for this dataset, the radius ranges  from $1$ to $10$
+km and the thickness from $40$m to $1$ km. In order to account for the
+intrinsic scale of different settings for each intrusion, the data are
+first   nondimensionalized  using   characteristic   values  for   the
+parameters and the intrusion depth, when known, for the data.
+
+\begin{figure}
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Data/} }
+    \includegraphics[scale=0.42]{Corry_Rocchie.eps}
+    \caption{Left: Thickness $h_0$  (m) versus the radius  $R$ (m) for
+      laccoliths   reported   by    \citet{E:2015tl}   in   blue   and
+      \citet{Rocchi:2002jy} in red.  Right: Dimensionless thickness as
+      a  function of  dimensionless radius,  characteristic thickness,
+      and  length  are  calculated  from  (\ref{H1})  and  (\ref{L1}).
+      Dashed lines: predicted scaling law from the simulations (black)
+      and  best fit  for the  power  law $h_0=aR^b$  for each  dataset
+      obtained from a linear least-square regression in log-log space.
+      I  use  for the  parameters,  $g=9.81$  m s$^{-2}$,  $Q_0=  0.1$
+      m$^{3}$  s$^{-1}$, $\rho_m=2500$  kg  m$^{-3}$,  $E=10$ GPa  and
+      $\eta_h=10^6$ Pa s.  Unless the intrusion depth is  given by the
+      dataset, we use $d_c=1500$ m and $\nu^*=0.25$.}
+    \label{Corry_Rocchie}
+  \end{center}
+\end{figure}
+
+
+
+\vspace{.5cm} \textbf{Range of value for the parameters} \vspace{.5cm}
+
+In terrestrial settings,  lava density $\rho_m$ depends  mainly on its
+composition and varies between $ 2300$ kg m$^{-3}$ for felsic lavas to
+$3000$ kg m$^{-3}$ for mafic  lavas. Hence, for Young's modulus values
+between $10$ and $100$ GPa and  intrusion depths between $0.1$ and $5$
+km, the characteristic  length scale $\Lambda$ varies  between $1$ and
+$10$  km.   The overpressure  in  magma  reservoirs driving  dykes  is
+typically    between    a    few    to    several    tens    of    MPa
+\citep{Tait:1988vn,Marti:2000fe} and  the conduit length  $Z_c$ varies
+from a few  to several tens of kilometers. Lava  viscosity at eruption
+temperature  $\eta_h$  depends mainly  on  its  composition and  water
+content; close to its liquidus temperature,  it can varies from $1$ Pa
+s  for   ultramafic  lavas   to  $10^{5}$  Pa   s  for   felsic  lavas
+\citep{Anonymous:CZVBrBvv,Giordano:2008em,Whittington:2009fv,Chevrel:2013jn}.
+Hence,  injection  rate  $Q_0$  are in  a  range  $10^{-3}-0.1$  m$^3$
+s$^{-1}$ and  the height scale  $H$ varies  between $0.1$ m  for mafic
+lavas to  $1$ m for  felsic lavas.   Therefore, the time  scale $\tau$
+varies  from a  few months  for mafic  lavas to  few years  for felsic
+lavas.
+
+The model  also considers  a thin pre-wetted  film of  thickness $h_f$
+whose  meaning in  the application  to the  spreading of  laccolith is
+unclear.  In  particular, the  model shows  no convergence  when $h_f$
+tends to zero \citep{Lister:2013ia} and therefore, the thickness $h_f$
+might be  linked to some structural  length scale at the  front of the
+laccolith or  to the natural  imperfection of the flow  geometry.  For
+the purpose of the application, we  choose a film thickness of $1$ mm,
+i.e.  the  minimum length  scale with  physical signification  for the
+spreading of laccoliths  which give a dimensionless  $h_f$ that varies
+between $10^{-2}$ and $10^{-4}$.  The limited effect of changing $h_f$
+is detailed in  Appendix \ref{FilmThickness} and in  the following, we
+set $h_f$ to $10^{-3}$.
+
+\vspace{.5cm} \textbf{Comparison with the model} \vspace{.5cm}
+
+Using these depths and characteristic values for various properties of
+the system, the length and thickness  scales can be estimated for each
+laccolith  such   that  the   data  can  be   nondimensionalized.   To
+characterize  the mean  trend in  each population,  we make  use of  a
+linear least-square regression in log-log  space to obtain a power law
+relationship  of the  form $h_0=aR^b$  as predicted  by the  model and
+\citet{McCaffrey:1997ea}.  We found $h_0=170 R^{0.63\pm 0.08}$ for the
+laccolith of Corry and $h_0=135 R^{1.21\pm 0.1}$ for the laccoliths at
+Elba Island.
+
+The model evolution of the radius $R$  of the current as a function of
+its thickness can be easily derived from thickness $h_0$ as a function
+of its radius $R$ for a current  that solidifies in the third phase of
+the   bending  regime   can   be  derived   from   the  scaling   laws
+(\ref{ScalingH}) and (\ref{ScalingR}) and should follow
+\begin{equation}
+  h_0 \sim 0.75 R^{8/7}\label{Hr}
+\end{equation}
+
+For the laccolith  system at Elbas Island, the  best fit dimensionless
+thickness  for  $h_0$ is  proportional  to  $R^{1.21}$, a  little  bit
+smaller than  the model  prediction. \citep{Michaut:2011kg}  founds in
+$2D$ that  $R^{1.25}$, The  geometry of these  laccoliths is  not well
+known  and probably  not  perfectly two‐dimensional  or circular,  the
+value nicely insert between the  two. The dimensionless radius is also
+smaller   than   $4$   supporting   their  arrest   in   the   bending
+regime. However, the model prefactor is not explain b
 
 \section{Discussion}
 \label{C2-sec:discussion}
