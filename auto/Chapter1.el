@@ -15,6 +15,7 @@
     "picture"
     "Horsmann"
     "sec:moon"
+    "MO"
     "Moon-magma"
     "sec:orign-theor-fram"
     "sec:model-statique-de"
