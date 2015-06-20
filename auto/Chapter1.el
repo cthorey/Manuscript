@@ -21,7 +21,7 @@
     "sec:model-statique-de"
     "sec:empl-dynam-des"
     "Model"
-    "sec:discussion")
+    "sec:conclusion")
    (LaTeX-add-bibliographies
     "/Users/thorey/Dropbox/Library")))
 

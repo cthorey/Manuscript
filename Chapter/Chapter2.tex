@@ -5,27 +5,27 @@
 \minitoc
 
 \citet{Michaut:2011kg} proposed  a new  model for  the spreading  of a
-shallow   depth   intermediate-size   intrusions,   where   magma   is
-continuously injected at the center and is accommodated by the bending
-of  the  overlying strata.   In  particular,  the model  differs  from
-previous ones by  considering the dynamics of  the emplacement itself,
-in a  sense that the  radius in self-consistently determined,  and the
-driving  force  associated  with  the magma  weight  which  were  both
-neglected   in   older   models.    In   the   original   paper   from
-\citet{Michaut:2011kg}, the  model was  derived in both  cartesian and
-axisymmetric geometry and the results  were presented in 2D. A similar
-model in $2D$ with an additional  fracture criterion at the tip of the
-intrusion    has   been    derived   by    \citet{Bunger:2011cb}   and
-\citet{Anonymous:QWXp_4JV}  discussed precisely  the  dynamics at  the
-contact  line  and  the  case of  an  elastic-plated  gravity  current
-spreading  over an  inclined plane.   In  this chapter,  we present  a
-summary  of  the  model  and  the results  for  the  spreading  of  an
-isoviscous  elastic-plated gravity  current  over  a rigid  horizontal
-surface in an axisymmetrical geometry.   Results in this geometry have
-been thoroughly  studied by \citet{Lister:2013ia} and  this model will
-constitute the reference for more elaborate models in the manuscript.
+shallow depth intermediate-size intrusion, where magma is continuously
+injected  at the  center and  is accommodated  by the  bending of  the
+overlying strata.  In particular, the model differs from previous ones
+by considering both the dynamics of the emplacement itself, in a sense
+that the radius is self-consistently determined, and the driving force
+associated with the magma weight. Both were neglected in older models.  In
+the original paper from  \citet{Michaut:2011kg}, the model was derived
+in  both cartesian  and  axisymmetric geometry  and  the results  were
+presented  in  $2D$.  A  similar  model  in  $2D$ with  an  additional
+fracture criterion  at the tip  of the  intrusion has been  derived by
+\citet{Bunger:2011cb}    and   \citet{Anonymous:QWXp_4JV}    discussed
+more precisely the dynamics at the contact line and the case of an
+elastic-plated gravity  current spreading over an  inclined plane.  In
+this chapter,  we present a summary  of the model and  the results for
+the spreading of an isoviscous elastic-plated gravity  current over a
+rigid horizontal  surface in  an axisymmetrical geometry.   Results in
+this geometry  have been  thoroughly studied  by \citet{Lister:2013ia}
+and this model will constitute the reference for more elaborate models
+in the manuscript.
 
-\section{Model}
+\section{Theoretical model}
 \label{C2-sec:model}
 
 The model considers an isoviscous elastic-plated gravity current, i.e.
@@ -35,7 +35,7 @@ semi infinite rigid layer \citep{Michaut:2011kg,Bunger:2011cb} (Figure
 \ref{C2-Sketch}).  The fluid is injected  continuously at the base and
 center of the current at a rate $Q_0$ through a cylindrical conduit of
 diameter $a$.
-
+a
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter2/} }
@@ -82,12 +82,12 @@ thin elastic plate \citep{Turcotte:1982ca}
 where $D$  is the flexural  rigidity of  the thin elastic  layer, that
 depends on the Young's modulus $E$, Poisson's ratio $\nu^*$ and on the
 elastic           layer          thickness           $d_c$          as
-$D = Ed_c^3/\left(12(1-\nu^*)\right)$.
+$D = Ed_c^3/\left(12(1-\nu^*^2)\right)$.
 
 \vspace{.5cm} \textbf{Velocity field} \vspace{.5cm}
 
 At the contact with the elastic sheet $z=h(r,t)$, the no-slip boundary
-condition is present  and so, the tangential velocity is  zero and the
+condition  hold and  then, the  tangential  velocity is  zero and  the
 normal velocity  is the change  in height ($\partial h/  \partial t$).
 With $\vec{n}$ the normal to the surface and $\vec{t}$ the tangent, we
 have
@@ -120,13 +120,13 @@ where $h_0(t)$ is the maximum  intrusion thickness at the center $r=0$
 and $\Delta P$ is the initial  driving pressure or the overpressure at
 the base of the dyke ($z = -Z_c$).
 
-In (\ref{C2-Q0}), the bending pressure  at then center, which scale as
-D$h_0(t)/R(t)^4$  where  $R(t)$  is   the  blister  radius,  has  been
+In (\ref{C2-Q0}), the  bending pressure at the center,  which scales as
+D$h_0(t)/R(t)^4$  where  $R(t)$  is   the  current  radius,  has  been
 neglected.  Although  it tends  to infinity at  the initiation  of the
-flow, it rapidly  vanishes as the blister spreads  and the hydrostatic
+flow, it rapidly  vanishes as the current spreads  and the hydrostatic
 pressure $\rho_m g h_0$ becomes  the main contribution to the pressure
 at the  center.  In addition, the  model assumes a large  aspect ratio
-for the blister and does not consider the initiation of the flow.
+for the flow and does not consider the initiation of the flow.
 
 Finally,  assuming a  Poiseuille flow  within the  cylindrical feeding
 conduit, the vertical injection velocity $w_i(r,t)$ and injection rate
@@ -166,7 +166,7 @@ of the thickness in time and space reads
 \end{equation}
 It is  composed of three different  terms on the right  hand side. The
 first term represents gravitational  spreading, i.e.  spreading of the
-blister under its own weight. The second term represents the squeezing
+current under its own weight. The second term represents the squeezing
 of the  flow by the upper  elastic layer.  Both term  are negative and
 induces spreading.   The last term  represents fluid injection  and is
 positive.
@@ -174,9 +174,8 @@ positive.
 \subsection{Dimensionless equations}
 \label{C2-sec:dimens-equat}
 
-Equations  (\ref{C2-eq12}) and  (\ref{C2-Heq}) are  nondimensionalized
-using a  horizontal scale $\Lambda$, a  vertical scale $H$ and  a time
-scale $\tau$ given by
+Equation (\ref{C2-Heq}) is nondimensionalized using a horizontal scale
+$\Lambda$, a vertical scale $H$ and a time scale $\tau$ given by
 \begin{eqnarray}
   \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{L1}\\
   H&=&\left       (\frac{12\eta      Q_{0}}{\rho_{m}g       \pi}\right      )
@@ -253,14 +252,14 @@ leading powers of $R-r$ gives
 \end{eqnarray}
 The time derivative is locally dominated by its convective part at the
 tip, the second  term on the left  is small compared to  the first and
-therefore,   by   equating   the   exponent  of   $R-r$,   we   obtain
-$\alpha = 5/3$, and by equating the coefficients, we deduce
+therefore, by equating the exponent of $R-r$, we obtain $\alpha = 5/3$
+and then
 \begin{equation}
   \frac{\partial R}{\partial r} =-\frac{280}{243} A^3.
 \end{equation}
-It shows that (\ref{C2-mainEq}) can  only have retreating contact line
-($dR/dt<0$)   but  not   with  advancing   contact  line   ($dR/dt>0$)
-\citep{Lister:2013ia,Flitton:1999iv}.
+It  shows   that  (\ref{C2-mainEq})  can  only   have  solutions  with
+retreating  contact line  ($dR/dt<0$) but  not with  advancing contact
+line ($dR/dt>0$) \citep{Lister:2013ia,Flitton:1999iv}.
 
 To  mitigate this  problem,  one  common approach  is  to  add a  thin
 prewetting film, with thickness $h_f$  such that $h\rightarrow h_f$ as
@@ -278,7 +277,7 @@ the manuscript.
 \label{C2-sec:regime-propagations}
 
 For a small prewetting film thickness, i.e.  $h_f/H<<1$, the numerical
-resolution  of the  equation  (\ref{EqFinal1})  shows three  spreading
+resolution  of the  equation  (\ref{C2-mainEq})  shows three  spreading
 regimes:  a bending  regime  where gravity  is  negligible, a  viscous
 gravity current  regime where  bending is negligible  and a  regime of
 lateral                                                    propagation
@@ -361,12 +360,7 @@ bending  terms.  The  pressure is  given by  the hydrostatic  pressure
 $P = h$  and the intrusion enters a classical  viscous gravity current
 regime where bending terms only affect the solution near the intrusion
 edge   \citep{Huppert:1982a,Michaut:2011kg,Lister:2013ia}.   In   this
-second regime, the radius evolves as $t^{1/2}$ and the thickness tends
-to a constant
-\begin{eqnarray}
-  R(t) &=& 0.715 t^{1/2}\label{Scaling-R-Gravi}\\
-  h_0 &=& 1.86\label{Scaling-H-Gravi}
-\end{eqnarray} 
+second regime, while the thickness tends to a constant, the radius evolves as $t^{1/2}$.
 
 \subsection{Lateral propagation}
 \label{sec:lateral-propagation}
@@ -387,7 +381,7 @@ regime, the thickness is constant and the radius evolves as $t^{1/4}$
 \section{Application to the spreading of magmatic intrusions}
 \label{C2-sec:appl-earth-moon}
 
-\subsection{Earth : Observation Vs Prediction}
+\subsection{Observations versus predictions on the Earth}
 \label{sec:observ-vs-pred}
 
 \vspace{.5cm} \textbf{Dataset} \vspace{.5cm}
@@ -477,7 +471,7 @@ depth, when absent from the catalog.
 
 In terrestrial settings, magma density  $\rho_m$ depends mainly on its
 composition and varies between $ 2500$ kg m$^{-3}$ for felsic lavas to
-$3000$ kg m$^{-3}$ for a more mafic lavbas.  Reported intrusion depth,
+$3000$ kg m$^{-3}$ for a  more mafic lavas.  Reported intrusion depth,
 which is set to $1.5$ km otherwise,  varies from $180$ to $2200$ m for
 the laccoliths in \citet{E:2015tl} and from  $1.9$ to $3.7$ km for the
 laccoliths at Elba Island.  Hence, for a Young's modulus value of $10$
@@ -640,7 +634,7 @@ Given the basalt composition of most lunar rocks from the mare brought
 back from  Appolo missions,  the lunar  magmas are  more likely  to be
 mafic in  composition and we use  $\rho_m = 2900$ kg  m$^{-3}$ for the
 lava density. Therefore, on the Moon,  the larger lava density and the
-smaller  gravity  leads  to  length scale  $1.5$  times  smaller  than
+smaller  gravity  leads  to  length  scale  $1.5$  times  larger  than
 terrestrial ones; for  instance, using $E=10$ GPa and $d_c  = 1.5$ km,
 the characteristic  length scale for  lunar intrusions is $\sim  5$ km
 and $3.3$ km for a terrestrial laccolith.
@@ -689,25 +683,28 @@ account for several geological observations, they both lack a physical
 description of the intrusion process and are then not able to link the
 final  morphology nor  to the  crustal and  magma physical  properties
 neither to the injection rate at  the time of intrusion, necessary for
-a   better   understanding   the    process   of   intrusion   itself.
+a better understanding the process of intrusion itself.
+
+\vspace{.5cm}   \textbf{Isoviscous  elastic-plated   gravity  current}
+\vspace{.5cm}
+
 \citet{Michaut:2011kg}  has   developed  a   new  approach   to  model
 intermediate-scale  intrusion such  as sill,  laccolith or  bysmalith.
 \citet{Michaut:2011kg} provides  for a dynamic  elastic-plated gravity
 current model that consider both the bending and the own weight of the
-magma as driving the flow.
-
-This model shows  promising result in predicting the  variety of shape
-of  intermediate scale  magmatic intrusions;  from the  dome shape  of
-laccolith to the disk-like morphology  of large mafic sill.  It allows
-to relate the  laccolith morphology to the crustal  and magma physical
-properties,  and  more  importantly,   to  the  injection  rate.   The
-prediction of the model, especially  the scaling law for the thickness
-versus length in the bending regime,  also fits the variability in the
-laccolith  units  at  Elba  Island, hence  providing  for  a  physical
-explanation for the observed relationship between laccolith length and
-thickness. Finally, the model show  promising result in explaining the
-discrepancy between terrestrial laccolith and low-slope lunar domes on
-the Moon.
+magma  as driving  the flow.   This  model shows  promising result  in
+predicting  the  variety  of  shape  of  intermediate  scale  magmatic
+intrusions;  from  the  dome  shape  of  laccolith  to  the  disk-like
+morphology of  large mafic  sill.  It allows  to relate  the laccolith
+morphology  to the  crustal and  magma physical  properties, and  more
+importantly,  to the  injection rate.   The prediction  of the  model,
+especially  the scaling  law for  the thickness  versus length  in the
+bending regime,  also fits the  variability in the laccolith  units at
+Elba  Island,  hence providing  for  a  physical explanation  for  the
+observed relationship between laccolith length and thickness. Finally,
+the model show promising result  in explaining the discrepancy between
+terrestrial laccolith and low-slope lunar domes on the Moon and can be
+an interesting tool to study intrusive magmatism on other planets.
 
 However, there  are questions that  remain open. First, we  have shown
 that the  model hardly account for  the absolute final value  for both
@@ -720,7 +717,7 @@ predict the final  morphology of a magmatic intrusion  given its input
 parameters.   Fracturation is  generally  considered  as the  limiting
 mechanism to the expansion of magmatic intrusion.
 
-\vspace{.5cm} \textbf{Fracturation} \vspace{.5cm}
+\vspace{.5cm} \textbf{Criterion for fracturation} \vspace{.5cm}
 
 As the flow length increases, the pressure in the intrusion eventually
 decreases to  the critical value  equal to the pressure  necessary for
