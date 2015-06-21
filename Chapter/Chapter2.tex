@@ -35,7 +35,7 @@ semi infinite rigid layer \citep{Michaut:2011kg,Bunger:2011cb} (Figure
 \ref{C2-Sketch}).  The fluid is injected  continuously at the base and
 center of the current at a rate $Q_0$ through a cylindrical conduit of
 diameter $a$.
-a
+
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter2/} }
@@ -55,7 +55,7 @@ larger than its  thickness $H$ ($\epsilon = H/ \Lambda<<  1$).  In the
 laminar  regime  and  in  axisymmetrical  coordinates  ($r$,$z$),  the
 Navier-stokes equations within the lubrication assumption are
 \begin{eqnarray}
-  -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta \frac{\partial u}{\partial z}\right) &=&0\label{C2_V1} \\
+  -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta_h \frac{\partial u}{\partial z}\right) &=&0\label{C2_V1} \\
   -\frac{\partial P}{\partial z}  - \rho_{m}g&  =&0\label{C2-Npressure}
 \end{eqnarray}
 where  $u(r,z,t)$  is  the  radial   velocity,  $g$  is  the  standard
@@ -77,7 +77,7 @@ the surrounding rocks. The bending pressure  is given by the force per
 unit area  that is necessary  for a  vertical displacement $h$  of the
 thin elastic plate \citep{Turcotte:1982ca}
 \begin{equation}
-  P_d = D\nabla^4h
+  P_d = D\nabla_r^4h
 \end{equation}
 where $D$  is the flexural  rigidity of  the thin elastic  layer, that
 depends on the Young's modulus $E$, Poisson's ratio $\nu^*$ and on the
@@ -105,7 +105,7 @@ flow, the same boundary condition hold and $u(r,z=0,t) =0$.
 Equation (\ref{C2_V1}) is integrated twice  as a function of $z$ using
 these boundary conditions and the horizontal velocity is
 \begin{equation}
-  u(r,z,t) =\frac{1}{2\eta} \frac{\partial P}{\partial r} \left(z^2-hz\right)
+  u(r,z,t) =\frac{1}{2\eta_h} \frac{\partial P}{\partial r} \left(z^2-hz\right)
   \label{C2-vel}
 \end{equation}
 
@@ -134,7 +134,7 @@ $Q(t)$ are given by
 \begin{equation}
   w_i=
   \begin{cases}
-    \frac{ \Delta P^*}{4 \mu Z_{c}} (\frac{a^{2}}{4}-r^{2})& r \le \frac{a}{2}\\
+    \frac{ \Delta P^*}{4 \eta_h Z_{c}} (\frac{a^{2}}{4}-r^{2})& r \le \frac{a}{2}\\
     0 & r > \frac{a}{2}
   \end{cases}
   \label{C2-eq12}
@@ -144,7 +144,7 @@ $Q(t)$ are given by
   \label{C2-eq11}
 \end{equation}
 where
-$Q_0=\left(\pi \Delta P^* a^{4}\right)/\left(128 \eta Z_c\right)$.
+$Q_0=\left(\pi \Delta P^* a^{4}\right)/\left(128 \eta_h Z_c\right)$.
 
 \vspace{.5cm} \textbf{Mass conservation} \vspace{.5cm}
 
@@ -159,9 +159,9 @@ conservation gives
 and using (\ref{C2-vel}), we find  that the equation for the evolution
 of the thickness in time and space reads
 \begin{equation}
-  \frac{\partial h}{\partial t} =\frac{\rho_mg}{12 \eta r}
+  \frac{\partial h}{\partial t} =\frac{\rho_mg}{12 \eta_h r}
   \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
-      r}\right)+\frac{D}{12\eta r} \left( rh^3 \frac{\partial}{\partial r}\nabla^4h\right)+
+      r}\right)+\frac{D}{12\eta_h r} \left( rh^3 \frac{\partial}{\partial r}\nabla_r^4h\right)+
   w_i .\label{C2-Heq}
 \end{equation}
 It is  composed of three different  terms on the right  hand side. The
@@ -178,15 +178,14 @@ Equation (\ref{C2-Heq}) is nondimensionalized using a horizontal scale
 $\Lambda$, a vertical scale $H$ and a time scale $\tau$ given by
 \begin{eqnarray}
   \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{L1}\\
-  H&=&\left       (\frac{12\eta      Q_{0}}{\rho_{m}g       \pi}\right      )
+  H&=&\left       (\frac{12\eta_h      Q_{0}}{\rho_{m}g       \pi}\right      )
        ^{\frac{1}{4}} \label{H1}\\
   \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{T1}
 \end{eqnarray}
-
 where scales  are chosen  such that $Q_0  = \pi\Lambda^2  H/\tau$. The
 length scale $\Lamba$ represents the  flexural wavelength of the upper
 elastic layer,  i.e. the  length scale at  which bending  stresses and
-gravity  contributes equally  to flow.   The height  scale $H$  is the
+gravity  contribute equally  to flow.   The height  scale $H$  is the
 thickness of  a typical gravity current  and the time scale  $\tau$ is
 the  characteristic time  to  fill  up a  cylindrical  flow of  radius
 $\Lambda$ and thickness  $H$ at constant rate $Q_0$.   In addition, we
@@ -200,7 +199,7 @@ The dimensionless equation is
                                     \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
                                     r}\right)+\frac{1}{ r} \left( rh^3
                                     \frac{\partial}{\partial
-                                    r}\nabla^4h\right)\nonumber\\
+                                    r}\nabla_r^4h\right)\nonumber\\
                                &+&
                                    \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\left(1-\frac{h_0}{\sigma}\right)
                                    \label{C2-mainEq}
@@ -225,7 +224,7 @@ One  of   the  main   mathematical  difficulty  in   solving  equation
 (\ref{C2-mainEq}) arises at the  contact line.  Indeed, the assumption
 that the  thickness of  the fluid  tends to zero  at the  contact line
 leads       to       divergent      viscous       stresses,       i.e.
-$\eta  \partial   u/\partial  z\rightarrow  \infty$  and   hence,  the
+$\eta_h  \partial   u/\partial  z\rightarrow  \infty$  and   hence,  the
 theoretical         immobility          of         the         blister
 \citep{Flitton:1999iv,Lister:2013ia,Anonymous:QWXp_4JV}. This problem,
 known  a  the  contact-line  paradox,  is  a  well  know  problem  for
@@ -239,7 +238,7 @@ contact line.  As $r \rightarrow R(r)$, the bending term dominates the
 gravitational term and (\ref{C2-mainEq}) reduces to
 \begin{eqnarray}
   \frac{\partial       h}{\partial       t}&      =&\frac{1}{       r}
-                                                     \frac{\partial}{\partial r}\left( rh^3 \frac{\partial}{\partial r}\nabla^4h\right).
+                                                     \frac{\partial}{\partial r}\left( rh^3 \frac{\partial}{\partial r}\nabla_r^4h\right).
                                                      \label{C2-mainEq2}
 \end{eqnarray}
 Injecting the  solution into  (\ref{C2-mainEq2}) and keeping  only the
@@ -312,8 +311,8 @@ driving the flow is much larger than  the weight of the blister at the
 center and the injection rate can be considered constant.
 
 In that case, the spreading is  very slow and the interior has uniform
-pressure $P =\nabla^4h$.  The flow is bell-shaped and its thickness is
-given by
+dimensionless pressure $P =\nabla_r^4h$.   The flow is bell-shaped and
+its thickness is given by
 \begin{equation}
   h(r,t) = h_0(t)\left(1-\frac{r^2}{R^2(t)}\right)^2
   \label{IntrusionShape}
@@ -332,14 +331,14 @@ where  $\kappa  =  \partial^2  h/\partial r^2$  is  the  dimensionless
 curvature  of  the  interior  solution.   Using  the  propagation  law
 (\ref{WaveVelocity})   and  the   form   of   the  interior   solution
 (\ref{IntrusionShape}), they  find that the  radius and the  height of
-the intrusion are given by similarity solutions
+the intrusion evolve following
 \begin{eqnarray}
   R(t) &=& 2.2h_f^{1/22}t^{7/22}\label{ScalingR}\\
-  h_0(t)&=&0.7 h_f^{-1/11}t^{8/22}\label{ScalingH}.
+  h_0(t)&=&0.7 h_f^{-1/11}t^{8/22}\label{ScalingH}
 \end{eqnarray}
-where   the   numerical   pre-factor   have  been   matched   to   our
+where   the   numerical  pre-factors   have   been   matched  to   our
 simulations. The bell-shaped morphology of  the flow in this regime is
-very   close    to   the   dome-shaped   morphology    of   laccoliths
+very  close to  the  dome-shaped morphology  of solidified  laccoliths
 \citep{Michaut:2011kg}.
 
 \begin{figure}
@@ -362,14 +361,14 @@ very   close    to   the   dome-shaped   morphology    of   laccoliths
 
 In  contrast, when  the radius  R becomes  much larger  than $\Lambda$
 ($R>>\Lambda$), the weight of the  intrusion becomes dominant over the
-bending  terms.  The  pressure is  given by  the hydrostatic  pressure
-$P = h$  and the intrusion enters a classical  viscous gravity current
-regime where bending terms only affect the solution near the intrusion
-edge   \citep{Huppert:1982a,Michaut:2011kg,Lister:2013ia}.   In   this
-second regime,  while the  thickness tends to  a constant,  the radius
-evolves as $t^{1/2}$.  The flow  is therefore characterized by a small
-aspect-ratio  and a  disk-like morphology  close to  the one  shown by
-large mafic sills.
+bending terms.  The dimensionless pressure is given by the hydrostatic
+pressure $P = h$ and the  intrusion enters a classical viscous gravity
+current regime where  bending terms only affect the  solution near the
+intrusion edge \citep{Huppert:1982a,Michaut:2011kg,Lister:2013ia}.  In
+this  second regime,  while the  thickness  tends to  a constant,  the
+radius evolves as $t^{1/2}$.  The flow is therefore characterized by a
+small aspect-ratio and a constant thickness disk-like morphology close
+to the one shown by large mafic sills.
 
 In between the bending  and gravity regime, \citet{Lister:2013ia} also
 describe  a short  intermediate regime  where the  peeling by  bending
@@ -406,12 +405,12 @@ regime, the thickness is constant and the radius evolves as $t^{1/4}$
 across the  world.  In  particular, \citet{E:2015tl} provides  for the
 thickness and  the radius  of $168$ laccoliths  among which,  $40$ are
 also  given  with  an  estimation   of  the  intrusion  depth.   These
-laccoliths, who are felsic in composition, show thicknesses that range
-mainly from $100$ meters to $10$ km with radii in between $1$ and $10$
-km.   While  most  of  the  data  are  located  in  the  United  State
+laccoliths,  who are  mainly felsic  in composition,  show thicknesses
+that range from $100$ meters to $10$  km with radii in between $1$ and
+$10$  km.  While  most of  the data  are located  in the  United State
 ($\sim 90\%$),  the different laccoliths  are widely spread  among the
-territory and variation in the parameters between different laccoliths
-is most likely to be important.
+territory  and   variations  in   the  parameters   between  different
+laccoliths are most likely to be important.
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter2/} }
@@ -439,10 +438,10 @@ should be limited,  except for the overlying  elastic layer thickness,
 taken to be the intrusion depth, whose variation between laccoliths is
 given by  \citet{Rocchi:2002jy}.  The  dispersion is much  smaller for
 this dataset; the radius ranges from  $1$ to $10$ km and the thickness
-from $40$m to $1$ km.
+from $40$ m to $1$ km.
 
-Finally, we  also account for  $25$ large mafic sills  whose thickness
-and radius are given by \citet{Cruden:tg}. In order to account for the
+Finally, we also account for  $25$ large mafic sills whose thicknesses
+and radii are given by \citet{Cruden:tg}.  In order to account for the
 intrinsic scale of  different settings for each  intrusion and compare
 them to the model, the data  have first to be nondimensionalized using
 characteristic  values for  each intrusion  parameters and  also their
@@ -452,44 +451,45 @@ depth, when absent from the catalog.
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Data/} }
     \includegraphics[scale=0.45]{Data_All_Squared.eps}
-    \caption{a)  Thickness $h_0$  (m) versus  the radius  $R$ (m)  for
-      magmatic  intrusions from  different datasets  indicated on  the
-      plot. b) Dimensionless thickness  as a function of dimensionless
-      radius, characteristic thickness, and length are calculated from
-      (\ref{H1}) and (\ref{L1}).  Dashed  lines: predicted scaling law
-      from  the simulations  (black) and  best fit  for the  power law
-      $h_0=aR^b$ for each dataset  obtained from a linear least-square
-      regression  in  log-log space.   $r^2$  is  the squared  of  the
-      correlation coefficient, i.e. Pearson product-moment correlation
-      coefficient which  gives an  indication on  the goodness  of the
-      fit;  $1$   is  total  positive   correlation  and  $0$   is  no
-      correlation.  We use $\rho_m=2500$  kg m$^{-3}$, $Q_0 =2.5~10^3$
-      m$^3$ s$^{-1}$ and $\eta_h=10^6$ Pa  s for felsic laccoliths and
-      $\rho_m=2900$  kg   m$^{-3}$,  $Q_0  =.1$  m$^3$   s$^{-1}$  and
-      $\eta_h=10^2$  Pa s  for their  mafic counterparts.   Unless the
-      intrusion depth is given by the dataset, we use $d_c=1500$ m and
-      $g=9.81$  m  s$^{-2}$.  c)  and  d),  same  plots but  where  we
-      compared the  laccoliths from \citep{Rocchi:2002jy} to  a set of
-      low-slope domes given by \citet{Wohler:2009jj}.  Lunar domes are
-      nondimensionalized using  $g=1.62$ m s$^{-2}$,  $\rho_m=3000$ kg
-      m$^{-3}$, $Q_0  =1$ m$^3$ s$^{-1}$,  $\eta_h=1$ Pa s  and $d_c$,
-      which is  not given in  the dataset is  set to $1500$  m. Purple
-      dots  correspond  to  morphometry reevaluated  with  the  $LOLA$
-      instrument topography and  crosses to the original  data. In all
-      cases, the Poisson's ratio is $\nu^*=0.25$.}
+    \caption{a) Thickness  at the center  $h_0$ (m) versus  the radius
+      $R$  (m)   for  magmatic  intrusions  from   different  datasets
+      indicated on the plot. b)  Dimensionless thickness as a function
+      of  dimensionless radius,  characteristic thickness,  and length
+      are calculated  from (\ref{H1})  and (\ref{L1}).   Dashed lines:
+      predicted scaling law from the  simulations (black) and best fit
+      for the  power law $h_0=aR^b$  for each dataset obtained  from a
+      linear least-square  regression in log-log space.   $r^2$ is the
+      squared   of   the   correlation  coefficient,   i.e.    Pearson
+      product-moment correlation coefficient which gives an indication
+      on the  goodness of the  fit; $1$ is total  positive correlation
+      and $0$  is no correlation.   We use $\rho_m=2500$  kg m$^{-3}$,
+      $Q_0 =2.5~10^3$ m$^3$ s$^{-1}$ and $\eta_h=10^6$ Pa s for felsic
+      laccoliths  and  $\rho_m=2900$  kg m$^{-3}$,  $Q_0  =0.1$  m$^3$
+      s$^{-1}$ and  $\eta_h=10^2$ Pa  s for their  mafic counterparts.
+      Unless  the intrusion  depth is  given  by the  dataset, we  use
+      $d_c=1500$ m and $g=9.81$ m s$^{-2}$.  c) and d), same plots but
+      where we compared the laccoliths from \citet{Rocchi:2002jy} to a
+      set  of low-slope  lunar domes  given by  \citet{Wohler:2009jj}.
+      Lunar domes  are nondimensionalized  using $g=1.62$  m s$^{-2}$,
+      $\rho_m=3000$ kg  m$^{-3}$, $Q_0 =1$ m$^3$  s$^{-1}$, $\eta_h=1$
+      Pa s  and $d_c$, which  is not given in  the dataset, is  set to
+      $1500$ m. Purple dots correspond to morphometry reevaluated with
+      the  LOLA  instrument topography  and  crosses  to the  original
+      data. In all cases, the Poisson's ratio is $\nu^*=0.25$.}
     \label{Corry_Rocchie}
   \end{center}
 \end{figure}
 
 
 
-\vspace{.5cm} \textbf{Range of value for the parameters} \vspace{.5cm}
+\vspace{.5cm}   \textbf{Range   of    values   for   the   parameters}
+\vspace{.5cm}
 
 In terrestrial settings, magma density  $\rho_m$ depends mainly on its
 composition and varies between $ 2500$ kg m$^{-3}$ for felsic lavas to
-$3000$ kg m$^{-3}$ for a  more mafic lavas.  Reported intrusion depth,
-which is set to $1.5$ km otherwise,  varies from $180$ to $2200$ m for
-the laccoliths in \citet{E:2015tl} and from  $1.9$ to $3.7$ km for the
+$3000$ kg m$^{-3}$  for more mafic lavas.   Reported intrusion depths,
+which is set  to $1.5$ km otherwise,  vary from $180$ to  $2200$ m for
+laccoliths  in  \citet{E:2015tl}  and  from  $1.9$  to  $3.7$  km  for
 laccoliths at Elba Island.  Hence, for a Young's modulus value of $10$
 GPa, the characteristic length scale $\Lambda$ varies between $\sim 1$
 km and $\sim  7$ km for laccoliths.  The density  does not affect much
@@ -502,10 +502,10 @@ that  may have  differentiated from  primitive magma  in deep  crustal
 magma chambers,  located some $5$  to $15$  km below the  surface. The
 overpressures  driving magma  ascent are  typically $20$  to $50$  MPa
 \citep{Stasiuk:1993kg,Barmin:2002ea},    which   gives    overpressure
-gradients  of $\sim  10^3$ Pa  m$^{−1}$.  Lava  viscosity at  eruption
+gradients  of $\sim  10^3$ Pa  m$^{-1}$.  Lava  viscosity at  eruption
 temperature  $\eta_h$  depends mainly  on  its  composition and  water
 content; close to its liquidus  temperature, it can varies from $10^2$
-Pa  s   for  mafic   lavas  to   $10^{5}$  Pa   s  for   felsic  lavas
+Pa  s   for  mafic   lavas  to   $10^{6}$  Pa   s  for   felsic  lavas
 \citep{Anonymous:CZVBrBvv,Giordano:2008em,Whittington:2009fv,Chevrel:2013jn}.
 \citet{Wada:2007tv} show  that the dyke  width tends to  increase with
 viscosity  to the  power $1/4$  \citep{Kerr:1995tl}; mafic  lavas with
@@ -515,8 +515,8 @@ eruption temperature, tend  to form dykes $100$ m wide.   For the same
 overpressure   gradient,  plugin   in   these   parameters  in   $Q_0$
 (\ref{C2-eq11}) gives an injection rate  close to $0.1$ m$^3$ s$^{-1}$
 for mafic  lavas and $2.5~10^3$  m$^3$ s$^{-1}$ for felsic  lavas. The
-height scale $H$ is thus $\sim 25$ for felsic laccolith and $\sim 0.1$
-m for large mafic sills.
+height  scale  $H$  is  thus  $\sim  25$  for  felsic  laccoliths  and
+$\sim 0.1$ m for large mafic sills.
 
 \begin{table}[h!]
   \caption{Range of values for the model parameters}
@@ -554,7 +554,7 @@ tends to zero \citep{Lister:2013ia} and therefore, the thickness $h_f$
 might be  linked to some structural  length scale at the  front of the
 laccolith or  to the natural  imperfection of the flow  geometry.  For
 the purpose of the application, we  choose a film thickness of $1$ mm,
-i.e.  the  minimum length  scale with  physical signification  for the
+i.e.   the minimum  length scale  with physical  significance for  the
 spreading of laccoliths  which give a dimensionless  $h_f$ that varies
 between $10^{-2}$  and $10^{-4}$.  In  the following, we set  $h_f$ to
 $10^{-3}$.
@@ -565,7 +565,7 @@ $10^{-3}$.
 Each  magmatic   intrusion  unit  is  made   dimensionless  using  its
 characteristic  length   scale  $\Lambda$,  which  depends   upon  the
 intrusion depth, and its characteristic  height scale, which is either
-$H=25$  m for  felsic laccolith  or $H=0.1$  m for  large mafic  sills
+$H=25$ m  for felsic  laccoliths or  $H=0.1$ m  for large  mafic sills
 (Figure  \ref{Corry_Rocchie}).   First,  the dimensionless  radius  of
 laccoliths at  Elba Island and  $95\%$ of those  from \citet{E:2015tl}
 are  smaller than  $4$ consistent  with  their arrest  in the  bending
@@ -581,29 +581,29 @@ initially         by         \citet{McCaffrey:1997ea}         (Section
 \ref{sec:empl-dynam-des}).   To characterize  the mean  trend in  each
 population, we make use of a linear least-square regression in log-log
 space to obtain a value for the  coefficient $a$ and $b$ that best fit
-the observation.  We  found $h_0 = 21 R^{1.22}$ for  the laccoliths at
+the observations.  We found $h_0 =  21 R^{1.22}$ for the laccoliths at
 Elba island which  is very close to $R^{1.14}$ predicted  by the model
 (Figure  \ref{Corry_Rocchie}).    Actually,  the  geometry   of  these
 laccoliths is not well known  and probably not perfectly axisymmetric.
 \citet{Anonymous:QWXp_4JV}  found that  for  a  two dimensional  flow,
-$h_0\propto \delta^{1/7}L^{1.42}$ where $L$  is the half-length of the
-flow.  The best fit value for  the coefficient $a$ then nicely inserts
-between  the  expected values  for  the  two  geometries as  noted  by
-\citet{Michaut:2011kg}.    In  contrast,   the   prediction  for   the
-coefficient $b$  is much smaller  than the predicted value.   Even for
-$h_f=10^{-2}$, which would  be an upper bound for  this parameter, the
-model predict  $b=0.15$, which is  three orders of  magnitudes smaller
-than the observation (Figure  \ref{Corry_Rocchie}).  Matching the data
-to the  model will require  using a  viscosity $\eta_h$ for  the magma
-abnormally  high, i.e.   $\eta_h \sim  10^{12}$ Pa  s or  unreasonable
-injection rate, i.e. $Q_0\sim 1$ km$^3$ s$^{-1}$.
+$h_0\propto h_f^{-1/7}L^{10/7}$  where $L$  is the half-length  of the
+flow ($10/7\sim  1.43$).  The best  fit value for the  coefficient $a$
+then nicely inserts between the expected values for the two geometries
+as noted  by \citet{Michaut:2011kg}.  In contrast,  the prediction for
+the coefficient  $b$ is much  smaller than the predicted  value.  Even
+for $h_f=10^{-2}$, which  would be an upper bound  for this parameter,
+the  model  predict $b=0.15$,  which  is  three orders  of  magnitudes
+smaller than  the observation (Figure  \ref{Corry_Rocchie}).  Matching
+the data to the model will  require using a viscosity $\eta_h$ for the
+magma  abnormally   high,  i.e.   $\eta_h   \sim  10^{12}$  Pa   s  or
+unreasonable injection rate, i.e. $Q_0\sim 1$ km$^3$ s$^{-1}$.
 
 The  best  fit   power  law  relationship  for   the  laccoliths  from
 \citet{E:2015tl} is  $h_0 = 21 R^{0.62}$  (Figure \ref{Corry_Rocchie},
 $r^2 =0.54$). In  that case, the exponent $a$ is  smaller than one and
 does not agree  with the model.  This value for  $a$, slightly smaller
 than    the   value    calculated    directly   on    the   data    by
-\citet{McCaffrey:1997ea}, was interpreted as  reflecting the two stage
+\citet{McCaffrey:1997ea}, was interpreted  as reflecting the two-stage
 growth  process historically  invoked for  the formation  of laccolith
 (Section  \ref{sec:empl-dynam-des}). However,  the  dispersion in  the
 data   is    much   important    than   in   the    observation   from
@@ -624,37 +624,40 @@ For a gravity current in a  two dimensional geometry, the thickness is
 indeed  expected to  increase  with the  length of  the  sill, but  as
 $L^{1/4}$ \citet{Michaut:2011kg}  which is much weaker  than the found
 value for the  coefficient $a$ of $0.76$ for large  mafic sill (Figure
-\ref{Corry_Rocchie}).   Therefore,   the  model   prediction   toughly
-reconcile with the observation for large mafic sills.
+\ref{Corry_Rocchie}).   Therefore,   the  model   predictions  toughly
+reconcile with the observations for large mafic sills.
 
 \subsection{Origin of lunar low-slope domes}
 \label{sec:observ-vs-pred}
 
 \vspace{.5cm}\hspace{.5cm} \textbf{Dataset} \vspace{.5cm}
 
-On the  Moon, $13$ elongated  low-slope domes have been  identified as
-potentially      intrusive     domes      instead     of      effusive
+On the Moon, $13$ elongated  low-slope domes, located around the lunar
+maria, have  been recently  identified as potentially  intrusive domes
 \citep{Wohler:2007it,Wohler:2009jj}.   \citet{Wohler:2009jj}  used  an
 image-based $3D$ reconstruction approach which relies on a combination
 of photoclinometry and shape from  shading techniques to determine the
-morphometric  properties of  each of  these lunar  domes. This  method
-results in a $10\%$ error estimation on the intrusion thickness.
-
-
-
+morphometric properties of each of  these lunar domes which results in
+a $10\%$  error estimate on  the intrusion thickness. These  data have
+since  been updated  by Mélanie  Thiriet,  a graduate  student in  our
+laboratory, who  used the high  resolution of the  topography obtained
+from  the  $64$ ppd  ($\sim  450$  m/pixel \citep{Zuber:2009bq})  LOLA
+gridded  topography data  downloaded  from the  planetary data  system
+geosciences node to reevaluate the thickness and the radius of some of
+these potentially intrusive lunar domes.
 
 \vspace{.5cm} \textbf{Range of value for the parameters} \vspace{.5cm}
 
 Given the basalt composition of most lunar rocks from the mare brought
-back from  Appolo missions,  the lunar  magmas are  more likely  to be
+back from the Apollo missions, the  lunar magmas are more likely to be
 mafic in  composition and we use  $\rho_m = 2900$ kg  m$^{-3}$ for the
 lava density. Therefore, on the Moon,  the larger lava density and the
 smaller  gravity  leads  to  length  scale  $1.5$  times  larger  than
 terrestrial ones; for  instance, using $E=10$ GPa and $d_c  = 1.5$ km,
-the characteristic  length scale for  lunar intrusions is $\sim  5$ km
+the characteristic length  scale for a lunar intrusion is  $\sim 5$ km
 and $3.3$ km for a terrestrial laccolith.
 
-The source of  magma in the lunar interior are  poorly constrained and
+The source  of magma in the  lunar interior is poorly  constrained and
 more likely to  be deeper than on  Earth; most of the  mare basalt are
 thought to be a product of melting initiated deep in the lunar mantle,
 deeper than $400$ km \citep{Shearer:2006gg}.  Using the same value for
@@ -674,13 +677,15 @@ dimensionless radius smaller than $4$  consistent with their arrest in
 the bending  regime. In  addition, they  are almost  perfectly aligned
 with   the   terrestrial   laccolith    from   Elba   Island   (Figure
 \ref{Corry_Rocchie}) \citep{Michaut:2011kg}. Indeed,  the best fit for
-all  the  observations,  lunar  domes +  Elba  island  laccoliths,  is
+all  the  observations,  lunar  domes +  Elba  Island  laccoliths,  is
 $h_0   =    10R^{1.11}$   with   a   high    correlation   coefficient
 $r^2=0.94$. Given that  the same intrusion depth  has been arbitrarily
 chosen  for   all  intrusions,  the  fit   is  surprisingly  accurate.
-Therefore, the isoviscous elastic-plated gravity current model is able
-to explain the difference between  Earth laccolith and lunar intrusive
-domes \citep{Michaut:2011kg}.
+Therefore,  the   isoviscous  elastic-plated  gravity   current  model
+supports  the  intrusive  origin  of  the  lunar  domes  described  by
+\citet{Wohler:2009jj}  and their  arrest  in the  bending regime.   In
+addition,  it is  is  able  to explain  the  difference between  Earth
+laccolith and lunar intrusive domes \citep{Michaut:2011kg}.
 
 \subsection{Discussion}
 \label{sec:discussion-1}
@@ -689,8 +694,8 @@ Historical models  for intermediate scale magmatic  intrusion consider
 that  the main  phase  of  laccolith growth  and  spreading require  a
 two-stage process: horizontal spreading of a sill followed by vertical
 inflation  when the  sill has  grown horizontally  enough so  that the
-magma has  enough leverage on  the overlying  layers to begin  to bend
-them  upward  \citep{Johnson:1973ho,Koch:1981if}.  More  recent  model
+magma has enough leverage on the overlying layer to begin to bend them
+upward   \citep{Johnson:1973ho,Koch:1981if}.    More   recent   models
 proposed  instead   that  these  intrusions   form  as  a   series  of
 sub-horizontally            staked             magma            sheets
 \citep{Morgan:2008hj,Menand:2011ki}.   While both  model  are able  to
@@ -703,34 +708,33 @@ flow parameters (injection rate, volume) at the time of emplacement.
 \vspace{.5cm}
 
 \citet{Michaut:2011kg}  has   developed  a   new  approach   to  model
-intermediate-scale intrusion such as  sill, laccolith or bysmalith. In
-particular,  \citet{Michaut:2011kg} develop  a dynamic  elastic-plated
-gravity  current model  that consider  both  the bending  and the  own
-weight of the  magma as driving the flow.  This  model shows promising
-result  in  predicting the  variety  of  shape of  intermediate  scale
-magmatic intrusions; from the dome shape of laccolith to the disk-like
-morphology of  large mafic  sill.  It allows  to relate  the laccolith
-morphology  to the  crustal and  magma physical  properties, and  more
-importantly,  to the  injection rate.   The prediction  of the  model,
-especially  the scaling  law for  the thickness  versus length  in the
-bending regime,  also fits the  variability in the laccolith  units at
-Elba  Island,  hence providing  for  a  physical explanation  for  the
-observed relationship between laccolith length and thickness. Finally,
-the model show promising result  in explaining the discrepancy between
-terrestrial  laccolith  and low-slope  lunar  domes  on the  Moon  and
-therefore  can be  use to  assess  the intrusive  origin of  intrusive
-candidates on other planets.
+intermediate-scale intrusions such as  sills, laccoliths or bysmaliths
+through a  dynamic elastic-plated gravity current  model that consider
+both the bending and the own weight  of the magma as driving the flow.
+This model shows promising results  in predicting the variety of shape
+of  intermediate scale  magmatic intrusions;  from the  dome shape  of
+laccolith to the disk-like morphology  of large mafic sill.  It allows
+to relate the  laccolith morphology to the crustal  and magma physical
+properties,  and  more  importantly,   to  the  injection  rate.   The
+prediction of the model, especially  the scaling law for the thickness
+versus length in the bending regime,  also fits the variability in the
+laccolith  units  at  Elba  Island, hence  providing  for  a  physical
+explanation for the observed relationship between laccolith length and
+thickness. Finally,  the model  shows promising results  in explaining
+the  discrepancy between  terrestrial  laccolith  and low-slope  lunar
+domes on  the Moon and  therefore can be  use to assess  the intrusive
+origin of intrusive candidates on other terrestrial planets.
 
 However, there  are questions that  remain open. First, we  have shown
 that the  model hardly account for  the absolute final value  for both
-the   thickness  and   the  radius   of  these   laccolith  and   that
+the  thickness   and  the   radius  of   these  laccoliths   and  that
 reconciliating predictions  and observations requires  abnormally high
 magma viscosity.  Second,  the model was also not able  to account for
 the increase in  large mafic sill thickness with  their diameter. More
 importantly, the  model crucially  lack of  a stopping  criterion that
 could predict the  final morphology of a magmatic  intrusion given its
 input parameters. Fracturation is generally considered as the limiting
-mechanism to the expansion of magmatic intrusion.
+mechanism to the expansion of magmatic intrusions.
 
 \vspace{.5cm} \textbf{Criterion for fracturation} \vspace{.5cm}
 
@@ -754,12 +758,12 @@ the crack tip given by
   \label{moment}
 \end{equation}
 Once  $K_I$   reaches  the   fracture  toughness  limit   $K_c$,  i.e.
-$\sim 4-400$ MPa m$^{1/2}$ \citep{Olson:2003hc}, fracturing at the tip
-will limits the intrusion lateral extent.
+$\sim 4-400$  MPa m$^{1/2}$  \citep{Olson:2003hca}, fracturing  at the
+tip will limit the intrusion lateral extent.
 
 Injecting the  scaling for the  thickness $h_0$  as a function  of the
 radius $R$ (\ref{C2-Hr}) with dimension  into the predicted flow shape
-in the bending regime(\ref{IntrusionShape}) gives  the flow shape as a
+in the bending regime (\ref{IntrusionShape}) gives the flow shape as a
 function of the radius $R(t)$ of the laccolith
 \begin{equation}
   h(r,t) = 20 H \Lambda^{-8/7} R(t)^{8/7}\left(1-\frac{r^2}{R^2(t)}\right)^2.
@@ -770,7 +774,7 @@ dimensionless radius $R_{cr}$ for the laccolith is
 \begin{equation}
   R_{cr} \sim \frac{20 E^{7/6} H^{7/6} K_{m}^{7/6}}{K_{c}^{7/6} \Lambda^{7/3}} d^{7/4}
 \end{equation}
-which, in terms of the parameters, it reads
+which, in terms of the parameters, reads
 \begin{equation}
   R_{cr} \sim 142 E^{7/12}K_{m}^{7/6} Q_{0}^{7/24} \eta_h^{7/24} g^{7/24} \rho_m^{7/24}}K_{c}^{-7/6}
 \end{equation}

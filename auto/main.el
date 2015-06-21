@@ -13,6 +13,7 @@
     "traduction"
     "Chapter/Chapter1"
     "Chapter/Chapter2"
+    "Chapter/Chapter3"
     "ThesisStyle"
     "ThesisStyle12"
     "graphicx"
