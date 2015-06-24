@@ -2,8 +2,8 @@
  "Chapter3"
  (lambda ()
    (LaTeX-add-labels
-    "JFM"
-    "sec:theory"
+    "C3-JFM"
+    "C3-sec:theory"
     "sec:formulation"
     "Figure2-1"
     "rheology"
