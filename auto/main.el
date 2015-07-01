@@ -29,5 +29,7 @@
     "chngcntr"
     "etoolbox"
     "lipsum"
+    ""
+    "gensymb"
     "makeidx")))
 

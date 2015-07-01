@@ -379,7 +379,7 @@ describe  a short  intermediate regime  where the  peeling by  bending
 continues to control the propagation  but where, due to the increasing
 effect  of gravity,  the  flow shows  an  interior flat-topped  region
 (Figure   \ref{C2_ELAS_GRAV_Profil},    $t=38$).    This   flat-topped
-morphology     is     also     observed     in     many     laccoliths
+morphology     is     also     observed    for     many     laccoliths
 \citep{Koch:1981if,Bunger:2011cb}.
 
 \subsection{Lateral propagation}
@@ -405,7 +405,7 @@ In the following, we apply the model to observations.
 \subsection{Observations versus predictions on Earth}
 \label{C2-sec:observ-vs-pred}
 
-\vspace{.5cm} \textbf{Dataset} \vspace{.5cm}
+\subsubsection*{Observations}
 
 \citet{E:2015tl}  has made  an extensive  catalog of  $900$ laccoliths
 across the  world.  In  particular, \citet{E:2015tl} provides  for the
@@ -477,7 +477,7 @@ depth, when absent from the catalog.
       compared the  laccoliths from \citet{Rocchi:2002jy} to  a set of
       low-slope  lunar domes  given  by \citet{Wohler:2009jj}.   Lunar
       domes   are  nondimensionalized   using  $g=1.62$   m  s$^{-2}$,
-      $\rho_m=3000$ kg  m$^{-3}$, $Q_0 =10$ m$^3$  s$^{-1}$, $\eta_h=1$
+      $\rho_m=3000$ kg m$^{-3}$, $Q_0  =10$ m$^3$ s$^{-1}$, $\eta_h=1$
       Pa s  and $d_c$, which  is not given in  the dataset, is  set to
       $1500$ m. Purple dots correspond to morphometry reevaluated with
       the  LOLA  instrument topography  and  crosses  to the  original
@@ -486,10 +486,7 @@ depth, when absent from the catalog.
   \end{center}
 \end{figure}
 
-
-
-\vspace{.5cm}   \textbf{Range   of    values   for   the   parameters}
-\vspace{.5cm}
+\subsubsection*{Range   of    values   for   the   parameters}
 
 In terrestrial settings, magma density  $\rho_m$ mainly depends on its
 composition and varies  between $ 2500$ kg m$^{-3}$  for felsic magmas
@@ -512,18 +509,15 @@ gradients  of $\sim  10^3$ Pa  m$^{-1}$.  Lava  viscosity at  eruption
 temperature  $\eta_h$  mainly depends  on  its  composition and  water
 content; close to its liquidus  temperature, it can varies from $10^2$
 Pa  s   for  mafic   lavas  to   $10^{6}$  Pa   s  for   felsic  lavas
-\citep{Anonymous:CZVBrBvv,Giordano:2008em,Whittington:2009fv,Chevrel:2013jn}.
+\citep{Anonymous:CZVBrBvv,Giordano:2008em,Whittington:2009fv,Chevrel:2013jn}. However,
 \citet{Wada:2007tv} shows that  the dyke width tends  to increase with
-viscosity to the power  $1/4$ \citep{Kerr:1995tl}; felsic magmas
-tends to form larger dyke than mafic magmas.
-
-
-For the same
-overpressure   gradient,  plugin   in   these   parameters  in   $Q_0$
-(\ref{C2-eq11}) gives an injection rate  close to $0.1$ m$^3$ s$^{-1}$
-for mafic magmas and $2.5~10^3$  m$^3$ s$^{-1}$ for felsic magmas. The
-height  scale  $H$  is  thus  $\sim  25$  for  felsic  laccoliths  and
-$\sim 0.1$ m for large mafic sills.
+viscosity  to the  power  $1/4$ \citep{Kerr:1995tl}  and overall,  the
+injection  rate $Q_0$  should be  similar for  both dyke  composition.
+Based  on  common effusion  rate  for  lava  flow  on Earth,  we  take
+$Q_0\sim              1-100$               m$^3$              s$^{-1}$
+\citep{Pieri:1986bf,Harris:2000jd,Castro:2013jo,Tuffen:2013di}.    The
+height  scale  $H$ thus  varies  between  $1$  to  $10$ m  for  felsic
+laccoliths and $0.1$ and $1$ m for large mafic sills.
 
 \begin{table}[h!]
   \caption{Range of values for the model parameters}
@@ -532,24 +526,24 @@ $\sim 0.1$ m for large mafic sills.
     Parameters& Symbol & Earth & Moon&Unit\\
     \hline
               &&&&\\
-    Depth of intrusion & $d_c$ & $0.2-2.7$ &$1.5$ &km \\
+    Depth of intrusion & $d_c$ & $0.2-2.7$ &$0.5-1.5$ &km \\
     Young's Modulus & $E$ & $10$ &$10$ &GPa \\
     Poisson's ratio & $\nu^*$ & $0.25$ &$0.25$ &\\
-    Gravity & $g$ & $9.81$ &1.62&m s$^{-2}$ \\
+    Gravity & $g$ & $9.81$ &$1.62$&m s$^{-2}$ \\
     Magma density & $\rho_{m}$ & $2500-2900$ &$2900$&kg m$^{-3}$ \\
-    Magma viscosity & $\eta_h $ & $10^2-10^{6}$ &$1$&Pa s \\
+    Magma viscosity & $\eta_h $ & $10^2-10^{6}$ &$1-10$&Pa s \\
     Feeder dyke width & $a$ & $1-100$ &$10$&m \\
     Depth of the melt source & $Z_{c}$ & $ 1-10$&$ 500$& km \\ 
     Initial overpressure & $\Delta P$ & $20-50$ &$50$ &MPa \\
-    Injection rate & $Q_{0}$ &$0.1-10^3$ &$10^4$&m$^{3}$ s$^{-1}$ \\
+    Injection rate & $Q_{0}$ &$0.1-10^3$ &$1-10^4$&m$^{3}$ s$^{-1}$ \\
               &&&&\\
     \hline
     Characteristic scales & Symbol & Earth & Moon&Unit\\
     \hline
               &&&&\\
-    Height scale & $H$& $0.1-25$ &$2$ &m \\
-    Length scale & $\Lambda$ & $1-7$&$3.3$& km \\
-    Time scale & $\tau$ & $10^{-1}-10$&$10^{-2}$& years \\
+    Height scale & $H$& $0.1-10$ &$0.1-1$ &m \\
+    Length scale & $\Lambda$ & $1-7$&$2.2-12$& km \\
+    Time scale & $\tau$ & $10^{-3}-100$&$10^{-3}-10$& years \\
     \label{C2-tab2}
   \end{tabular} 
 \end{table}
@@ -566,19 +560,20 @@ spreading of laccoliths  which give a dimensionless  $h_f$ that varies
 between $10^{-2}$  and $10^{-4}$.  In  the following, we set  $h_f$ to
 $10^{-3}$.
 
-\vspace{.5cm}  \textbf{Dimensionless  data  and  comparison  with  the
-  model} \vspace{.5cm}
+\subsubsection*{Dimensionless  data  and  comparison  with  the
+  model}
+
 
 Each  magmatic   intrusion  unit  is  made   dimensionless  using  its
 characteristic  length   scale  $\Lambda$,  which  depends   upon  the
-intrusion depth, and its characteristic  height scale, which is either
-$H=25$ m  for felsic  laccoliths or  $H=0.1$ m  for large  mafic sills
-(Figure \ref{C2-Corry_Rocchie}).   First, the dimensionless  radius of
-laccoliths at  Elba Island and  $95\%$ of those  from \citet{E:2015tl}
-are  smaller than  $4$ consistent  with  their arrest  in the  bending
-regime. The prediction of the model for the evolution of the thickness
-$h_0$ of  the current as  a function of its  radius $R$ can  be easily
-derived    from    the    scaling   laws    (\ref{C2-ScalingH})    and
+intrusion depth, and  its characteristic height scale,  which is taken
+as either $H=6$  m for felsic laccoliths or $H=0.6$  m for large mafic
+sills  (Figure  \ref{C2-Corry_Rocchie}).    First,  the  dimensionless
+radius  of  laccoliths  at  Elba  Island  and  $95\%$  of  those  from
+\citet{E:2015tl} are smaller than $4$  consistent with their arrest in
+the bending regime.  The prediction of  the model for the evolution of
+the thickness $h_0$ of the current as a function of its radius $R$ can
+be  easily  derived  from  the scaling  laws  (\ref{C2-ScalingH})  and
 (\ref{C2-ScalingR}) and should follow
 \begin{equation}
   h_0 \sim 0.3h_f^{-1/7} R^{8/7}\label{C2-Hr}
@@ -588,7 +583,7 @@ proposed         by          \citet{McCaffrey:1997ea}         (Section
 \ref{C1-sec:empl-dynam-des}).  To characterize the  mean trend in each
 population, we use  a linear least-square regression  in log-log space
 to obtain a  value for the coefficient  $a$ and $b$ that  best fit the
-observations.  We found $h_0 = 21 R^{1.22}$ for the laccoliths at Elba
+observations.  We found $h_0 = 86 R^{1.22}$ for the laccoliths at Elba
 island  which is  very  close  to $R^{1.14}$  predicted  by the  model
 (Figure \ref{C2-Corry_Rocchie},  $r^2=0.96$).  Actually,  the geometry
 of  these laccoliths  is not  well  known and  probably not  perfectly
@@ -603,11 +598,11 @@ an upper bound  for this parameter, the model  predict $b=0.15$, which
 is three  orders of magnitudes  smaller than the  observations (Figure
 \ref{C2-Corry_Rocchie}).  Matching the data  to the model will require
 using  a  viscosity  $\eta_h$  for the  magma  abnormally  high,  i.e.
-$\eta_h   \sim  10^{12}$   Pa  s   or  unreasonable   injection  rate,
+$\eta_h   \sim  10^{15}$   Pa  s   or  unreasonable   injection  rate,
 i.e. $Q_0\sim 1$ km$^3$ s$^{-1}$.
 
 The  best  fit   power  law  relationship  for   the  laccoliths  from
-\citet{E:2015tl}     is     $h_0     =    21     R^{0.62}$     (Figure
+\citet{E:2015tl}     is     $h_0     =    85     R^{0.62}$     (Figure
 \ref{C2-Corry_Rocchie}, $r^2  =0.54$). In that case,  the exponent $a$
 is smaller than one and does not agree with the model.  This value for
 $a$, slightly smaller  than the value calculated directly  on the data
@@ -633,14 +628,15 @@ and increases  with the radius  $R$.  For a  gravity current in  a two
 dimensional  geometry, the  thickness is  indeed expected  to increase
 with the length  of the sill, but  as $L^{1/4}$ \citet{Michaut:2011kg}
 which is much  weaker than the found value for  the coefficient $a$ of
-$0.76$   for   large   mafic  sill   (Figure   \ref{C2-Corry_Rocchie},
+$0.76$   for  large   mafic   sills  (Figure   \ref{C2-Corry_Rocchie},
 $r^2=0.9$).  Therefore,  the model  predictions hardly  reconcile with
 the observations for large mafic sills.
+
 
 \subsection{Origin of lunar low-slope domes}
 \label{C2-sec:observ-vs-pred}
 
-\vspace{.5cm}\hspace{.5cm} \textbf{Dataset} \vspace{.5cm}
+\subsubsection*{Observations}
 
 On the Moon, $13$ elongated  low-slope domes, located around the lunar
 maria, have  been recently  identified as potentially  intrusive domes
@@ -652,11 +648,10 @@ a $10\%$  error estimate on  the intrusion thickness. These  data have
 since  been updated  by Mélanie  Thiriet,  a graduate  student in  our
 laboratory, who  used the high  resolution of the  topography obtained
 from  the  $64$ ppd  ($\sim  450$  m/pixel \citep{Zuber:2009bq})  LOLA
-gridded  topography data  downloaded  from the  planetary data  system
-geosciences node to reevaluate the thickness and the radius of some of
-these potentially intrusive lunar domes.
+gridded topography data to reevaluate  the thickness and the radius of
+some of these potentially intrusive lunar domes.
 
-\vspace{.5cm} \textbf{Range of value for the parameters} \vspace{.5cm}
+\subsubsection*{Range of values for the parameters}
 
 Given the basalt composition of most lunar rocks from the mare brought
 back from the Apollo missions, the  lunar magmas are more likely to be
@@ -674,82 +669,43 @@ deeper than $400$ km \citep{Shearer:2006gg}.  Using the same value for
 the initial driving pressure, $\Delta P = 50$ MPa, unless lunar magmas
 are  likely to  be  more  mafic and  contain  less volatiles  implying
 smaller driving pressure, and a depth of $500$ km for the magma source
-region, the overpressure  gradient is only of $100$  Pa m$^{-1}$. Mare
-basalts, which  have lower concentration in  alkalies than terrestrial
-basalts, should also have a lower  viscosity.  We take $\eta_h=1$ Pa s
-and  for a  dyke  $10$ m  thick, the  injection  rate is  $Q_0=10^{4}$
-m$^{3}$ s$^{-1}$ and the typical height scale $H\sim 2$ m .
+region,  the  overpressure gradient  is  only  of $100$  Pa  m$^{-1}$.
+However, reported  run out distance for  some lava flows in  the lunar
+maria are very  large and implies higher effusion rate  than on Earth,
+i.e.             $Q_0=10^3-10^8$             m$^3$            s$^{-1}$
+\citep{Crisp:1990gf,Zimbelman:1998ww}.  Mare basalts, which have lower
+concentration in alkalies than terrestrial basalts, should also have a
+lower viscosity \citep{Zimbelman:1998ww}.  We take $\eta_h=1$ Pa s and
+for  injection rate  between $Q_0=10^{1}-10^4$  m$^{3}$ s$^{-1}$,  the
+typical height scale for lunar domes varies between $0.5$ and $1.5$ m.
 
-\vspace{.5cm} \textbf{Predictions versus observations} \vspace{.5cm}
+\subsubsection*{Predictions versus observations}
 
 After   nondimensionalization,   the   lunar  low-slope   domes   show
 dimensionless radius smaller than $4$  consistent with their arrest in
-the bending  regime. In  addition, they  are almost  perfectly aligned
-with   the   terrestrial   laccolith    from   Elba   Island   (Figure
-\ref{C2-Corry_Rocchie}) \citep{Michaut:2011kg}.  Indeed,  the best fit
-for all  the observations,  lunar domes +  Elba Island  laccoliths, is
-$h_0   =    10R^{1.11}$   with   a   high    correlation   coefficient
-$r^2=0.94$. Given that  the same intrusion depth  has been arbitrarily
+the bending regime. In addition, if we use $Q_0=10$ m$^3$ s$^{-1}$ and
+the  values of  the parameters  listed above  to calculate  the height
+scale  $H$, they  are almost  perfectly aligned  with the  terrestrial
+laccolith   from    Elba   Island    (Figure   \ref{C2-Corry_Rocchie})
+\citep{Michaut:2011kg}.   Indeed,  the  best  fit for  the  power  law
+$h_0=bR^{8/7}$ for  all the  observations, lunar  domes +  Elba Island
+laccoliths, is $h_0 = 103R^{1.14}$ with a high correlation coefficient
+$r^2=0.9$. Given  that the same  intrusion depth has  been arbitrarily
 chosen  for   all  intrusions,  the  fit   is  surprisingly  accurate.
 Therefore,  the   isoviscous  elastic-plated  gravity   current  model
 supports  the  intrusive  origin  of  the  lunar  domes  described  by
 \citet{Wohler:2009jj}  and their  arrest  in the  bending regime.   In
-addition,  it is able  to explain  the  difference between  Earth
-laccolith and lunar intrusive domes \citep{Michaut:2011kg}.
+addition, it is able to explain the difference between Earth laccolith
+and lunar intrusive domes \citep{Michaut:2011kg}. 
 
-\subsection{Discussion}
-\label{C2-sec:discussion-1}
+\subsection{What cause the arrest of a magmatic intrusion?}
 
-Historical models  for intermediate scale magmatic  intrusion consider
-that  the main  phase  of  laccolith growth  and  spreading require  a
-two-stage process: horizontal spreading of a sill followed by vertical
-inflation  when the  sill has  grown horizontally  enough so  that the
-magma has enough leverage on the overlying layer to begin to bend them
-upward \citep{Johnson:1973ho,Koch:1981if}.  More recent models instead
-proposed that  these intrusions form  as a series  of sub-horizontally
-staked magma  sheets \citep{Morgan:2008hj,Menand:2011ki}.   While both
-model are  able to account  for several geological  observations, they
-both lack a physical description of the intrusion process and are then
-not  able  to explain  the  solidified  morphology of  these  magmatic
-intrusions in term of the  flow parameters (injection rate, volume) at
-the time of emplacement.
-
-\vspace{.5cm}   \textbf{Isoviscous  elastic-plated   gravity  current}
-\vspace{.5cm}
-
-\citet{Michaut:2011kg}  has   developed  a   new  approach   to  model
-intermediate-scale intrusions such as  sills, laccoliths or bysmaliths
-through a  dynamic elastic-plated gravity current  model that consider
-both the bending and the own weight  of the magma as driving the flow.
-This model shows promising results in predicting the variety of shapes
-of  intermediate scale  magmatic intrusions;  from the  dome shape  of
-laccolith to the disk-like morphology  of large mafic sill.  It allows
-to relate the  laccolith morphology to the crustal  and magma physical
-properties,  and  more  importantly,   to  the  injection  rate.   The
-prediction of the model, especially  the scaling law for the thickness
-versus length in the bending regime,  also fits the variability in the
-laccolith  units  at  Elba  Island, hence  providing  for  a  physical
-explanation for the observed relationship between laccolith length and
-thickness. In  particular, it shows  that the main phase  of laccolith
-growth and  spreading does  not require a  two-stage process  but that
-spreading and thickening  simultaneously occur \citep{Michaut:2011kg}.
-Finally,  the   model  shows  promising  results   in  explaining  the
-discrepancy between terrestrial laccolith and low-slope lunar domes on
-the Moon. Therefore,  it can be use to assess  the intrusive origin of
-intrusive candidates on other terrestrial planets.
-
-However, other questions  remain open.  First, we have  shown that the
-model  hardly accounts  for  the  absolute final  value  for both  the
-thickness and the  radius of these laccoliths  and that reconciliating
-predictions and observations requires abnormally high magma viscosity.
-Second, the  model was also  not able to  account for the  increase in
-large mafic sill thickness with  their diameter. More importantly, the
-model crucially  lack of a  stopping criterion that could  predict the
-final morphology of  a magmatic intrusion given  its input parameters.
-Fracturation is generally considered as  the limiting mechanism to the
-expansion of magmatic intrusions.
-
-\vspace{.5cm} \textbf{Criterion for fracturation} \vspace{.5cm}
+The  model   shows  promising  results  in   reproducing  the  overall
+morphology  of  terrestrial  laccoliths  but  lacks  of  a  predictive
+criteria for  their arrest.   Fracturation is generally  considered as
+the limiting mechanism for the spreading of magmatic intrusions and in
+the following,  we consider fracturation  as a possible  mechanism for
+the arrest of magmatic intrusions into the bending regime.
 
 As the flow length increases, the pressure in the intrusion eventually
 decreases to  the critical value  equal to the pressure  necessary for
@@ -791,7 +747,7 @@ which, in terms of the parameters, reads
 \begin{equation}
   R_{cr} \sim 142 E^{7/12}K_{m}^{7/6} Q_{0}^{7/24} \eta_h^{7/24} g^{7/24} \rho_m^{7/24}}K_{c}^{-7/6}
 \end{equation}
-and therefore depends mainly in the fracture toughness of the encasing
+and therefore mainly depends in the fracture toughness of the encasing
 rocks.  On can calculate that for typical crustal and magma parameters
 taken   in   Section  \ref{C2-sec:appl-earth-moon}   for   terrestrial
 laccoliths and the largest reported value for the parameter $K_c=4000$
@@ -801,6 +757,55 @@ the bending and gravity regime  $R= 4$.  Therefore, while fracturation
 might explain the  arrest of magmatic intrusion for  large mafic sill,
 it  does  not  provide  a  sufficient  mechanism  for  the  arrest  of
 laccolith.
+
+\subsection{Discussion}
+\label{C2-sec:discussion-1}
+
+Historical models  for intermediate scale magmatic  intrusion consider
+that  the main  phase  of  laccolith growth  and  spreading require  a
+two-stage process: horizontal spreading of a sill followed by vertical
+inflation  when the  sill has  grown horizontally  enough so  that the
+magma has enough leverage on the overlying layer to begin to bend them
+upward \citep{Johnson:1973ho,Koch:1981if}.  More recent models instead
+proposed that  these intrusions form  as a series  of sub-horizontally
+staked magma  sheets \citep{Morgan:2008hj,Menand:2011ki}.   While both
+model are  able to account  for several geological  observations, they
+both lack a physical description of the intrusion process and are then
+not  able  to explain  the  solidified  morphology of  these  magmatic
+intrusions in term of the  flow parameters (injection rate, volume) at
+the time of emplacement.
+
+\citet{Michaut:2011kg}  has   developed  a   new  approach   to  model
+intermediate-scale intrusions such as  sills, laccoliths or bysmaliths
+through a  dynamic elastic-plated gravity current  model that consider
+both the bending and the own weight  of the magma as driving the flow.
+This model shows promising results in predicting the variety of shapes
+of  intermediate scale  magmatic intrusions;  from the  dome shape  of
+laccolith to the disk-like morphology  of large mafic sill.  It allows
+to relate the  laccolith morphology to the crustal  and magma physical
+properties,  and  more  importantly,   to  the  injection  rate.   The
+prediction of the model, especially  the scaling law for the thickness
+versus length in the bending regime,  also fits the variability in the
+laccolith  units  at  Elba  Island, hence  providing  for  a  physical
+explanation for the observed relationship between laccolith length and
+thickness. In  particular, it shows  that the main phase  of laccolith
+growth and  spreading does  not require a  two-stage process  but that
+spreading and thickening  simultaneously occur \citep{Michaut:2011kg}.
+Finally,  the   model  shows  promising  results   in  explaining  the
+discrepancy between terrestrial laccolith and low-slope lunar domes on
+the Moon. Therefore,  it can be use to assess  the intrusive origin of
+intrusive candidates on other terrestrial planets.
+
+However, other questions  remain open.  First, we have  shown that the
+model  hardly accounts  for  the  absolute final  value  for both  the
+thickness and the  radius of these laccoliths  and that reconciliating
+predictions and observations requires abnormally high magma viscosity.
+In addition,  we show  that the  model does  not offer  a satisfactory
+explanation for the increase in  large mafic sill thickness with their
+diameter. Finally,  we also  show that  fracturation would  not likely
+stop  a magmatic  intrusion in  the bending  regime. Therefore,  other
+mechanisms not  taken into the model  of \citet{Michaut:2011kg}, might
+help understand the final morphology of these magmatic intrusions.
 
 \section{Toward   a  more   realistic  model   for  shallow   magmatic
   intrusions}
@@ -844,10 +849,11 @@ chapter  $6$  takes the  study  of  floor-fractured craters  one  step
 further   by  looking   at  the   gravitational  signature   of  lunar
 floor-fractured craters in the light of the model predictions.
 
-This  approach, evolving  each time  from a  theoretical model  to the
-observations, might  help shed  light both on  the limitations  of the
-model of \citet{Michaut:2011kg} exposed in this chapter and the origin
-of lunar-floor fractured craters.
+This approach, closely combining  theoretical models and observations,
+might  expand  and  generalize  the  model  of  \citet{Michaut:2011kg}
+exposed in  this chapter, and  shed light  on the final  morphology of
+shallow magmatic  intrusions on one  side and  on the origin  of lunar
+floor-fractured craters on the other side.
 
 \newpage
 \bibliographystyle{agufull08}
