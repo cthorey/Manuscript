@@ -1,3 +1,4 @@
+\addtocontents{toc}{\setcounter{tocdepth}{-1}}
 \chapter{Elastic-plated gravity current with temperature-dependent viscosity} 
 \label{C3-JFM} 
 \minitoc
@@ -1589,9 +1590,11 @@ The  final evolution  of an  elastic-plated gravity  current therefore
 depends on  the relative phase  change within  each regime and  on the
 transition  between the  bending and  the gravity  regime itself.   We
 provide a general phase diagram  that predicts the different evolution
-scenarios as a function of the dimensionless parameters.
+scenarios as a  function of the dimensionless  parameters.  This model
+for  the  cooling of  an  elastic-plated  gravity current  is  further
+refined and apply to the observation in the next chapter.
 
-\section*{Numerical approach}
+\section*{Appendix A: Numerical approach}
 \label{C3-sec:numerical-approach}
 
 \subsection*{General procedure}
@@ -1599,11 +1602,12 @@ scenarios as a function of the dimensionless parameters.
 
 The coupled nonlinear partial differential equations (\ref{C3-HF}) and
 (\ref{C3-TF}) are solved on a grid of size $M$ defined by the relation
-$r_i = (i-0.5)\Delta r$ for $i=1,..,M$. The grid is shifted at the center to avoid
-problem arising  from the axisymmetrical  geometry. We index  the grid
-point by the indice $i$ and denote the solution on this grid $h_i$ and
-$\xi_i$ and the secondary variables $\Theta_{b,i}$, $\Theta_{s,i}$ and
-$\delta_i$. Both equations can be expressed on the convenient form
+$r_i =  (i-0.5)\Delta r$ for  $i=1,..,M$. The  grid is shifted  at the
+center to avoid  problem arising from the  axisymmetrical geometry. We
+index the grid point by the indice $i$ and denote the solution on this
+grid  $h_i$ and  $\xi_i$ and  the secondary  variables $\Theta_{b,i}$,
+$\Theta_{s,i}$ and $\delta_i$. Both equations  can be expressed on the
+convenient form
 \begin{equation}
   \frac{\partial u}{\partial t} - f = 0
 \end{equation}
@@ -1612,7 +1616,7 @@ function  that depends  on $u$.   We  solve these  equations by  first
 discretizing all the spatial  derivatives using Finite Difference. The
 accuracy of the  scheme is determined by the  higher order derivatives
 since  their numerical  approximation requires  the largest  number of
-sample points. We then get  two systems of $M$ ordinary differential
+sample points.  We then get  two systems of $M$  ordinary differential
 equations with the form
 \begin{equation}
   \frac{\partial u_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M
@@ -1623,7 +1627,7 @@ Euler scheme to get
 \begin{equation}
   \frac{u_i^{n+1}-u_i^n}{\Delta t} - f_i(u_i^{n+1}) = 0 \hspace{1cm} i
   = 1,...,M
-\label{C3-Num-1}
+  \label{C3-Num-1}
 \end{equation}
 Since  $f_i(u_i^{n+1})$ is  not a  linear function,  the system  above
 cannot be re-arranged to solve $u_i^{n+1}$ in term of $u_i^{n}$ and an
@@ -1646,17 +1650,19 @@ $\delta_h^n$ which can be expressed as
 \begin{equation}
   (I-\Delta tJ^u_{f}(u^*))\delta u^n=u^n-u^*+\Delta t f(u^*)
 \end{equation}
-where $I$ is the identity matrix. Therefore,  each iteration solves  for $\delta u^n$  and we
-use $u_n+\delta u^n$  as a new guess $u^*$ in  each iteration. This is
-repeated  until $\delta  u^n$  becomes  sufficiently small.   Finally,
-since the equations are coupled, we use a fixed-point iteration method
-to  converge  toward  the  solution   $(h,\xi)$  at  each  time  step.
-Therefore, the algorithm is the following at each time step
+where $I$ is the identity matrix. Therefore, each iteration solves for
+$\delta u^n$ and we use $u_n+\delta u^n$  as a new guess $u^*$ in each
+iteration. This  is repeated  until $\delta u^n$  becomes sufficiently
+small.  Finally, since the equations are coupled, we use a fixed-point
+iteration method  to converge  toward the  solution $(h,\xi)$  at each
+time step.   Therefore, the  algorithm is the  following at  each time
+step
 \begin{itemize}
 \item Start with a guess for the values of all variables.
-\item Solve the thickness equation (\ref{C3-HF}) for $h^{n+1}$ using Newton-Rhapsod method.
-\item Solve the heat equation (\ref{C3-TF}) for $\xi^{n+1}$ using $h^{n+1}$ as a new guess for $h^*$
-  and Newton-Rhapsod method.
+\item Solve  the thickness equation (\ref{C3-HF})  for $h^{n+1}$ using
+  Newton-Rhapsod method.
+\item  Solve the  heat  equation (\ref{C3-TF})  for $\xi^{n+1}$  using
+  $h^{n+1}$ as a new guess for $h^*$ and Newton-Rhapsod method.
 \item Repeat  step one until  further iterations cease to  produce any
   significant changes in the values of both $h^{n+1}$ and $\xi^{n+1}$.
 \end{itemize}
@@ -1750,9 +1756,8 @@ conditions.
 
 \vspace{.5cm} \textbf{Boundary condition} \vspace{.5cm}
 
- We begin with
-$h_i=h_f$ for  $i=1,..,M$.  Since the  flow is symmetric in  $r=0$, we
-require that
+We begin with  $h_i=h_f$ for $i=1,..,M$.  Since the  flow is symmetric
+in $r=0$, we require that
 \begin{equation}
   \left.\frac{\partial h}{\partial r}\right|_{r=0} =\left.\frac{\partial P}{\partial r}\right|_{r=0} =0
 \end{equation}
@@ -1789,7 +1794,7 @@ The Newton-Rhapsod method reads
 \end{equation}
 where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
 diagonal  matrix and  $J_f^h(h^*)$  is a  $M  \times M$  nona-diagonal
-matrix.  This  system  of  linear  equations can  be  solved  using  a
+matrix.   This  system of  linear  equations  can  be solved  using  a
 nona-diagonal algorithm. At the first  iteration, we use $h^*_1 = h^n$
 as     a    first     guess    and     then    we     iterate    using
 $h^*_k  = h^n+\delta  h_{k-1}^n$ as  a new  guess for  each iterations
@@ -1798,7 +1803,7 @@ require that
 \begin{equation}
   \delta h^n_k/h^*_{k}<\epsilon
 \end{equation}
-with $\epsilon = 10^{-4}$. 
+with $\epsilon = 10^{-4}$.
 
 \subsection*{Heat equation}
 
@@ -1875,7 +1880,7 @@ The Newton-Rhapsod method reads
 where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
 diagonal  matrix and  $J_f^h(\xi^*)$ is  a $M  \times M$  tri-diagonal
 matrix.   This  system of  linear  equations  can  be solved  using  a
-tri-diagonal algorithm.  As for the  thickness equation, at  the first
+tri-diagonal algorithm.  As  for the thickness equation,  at the first
 iteration,  we use  $\xi^*_1 =  \xi^n$ as  a first  guess and  then we
 iterate using $\xi^*_k = \xi^n+\delta  \xi_{k-1}^n$ as a new guess for
 each iterations  until $\delta \xi^n_{k}$ becomes  sufficiently small.
@@ -1884,11 +1889,12 @@ In particular, we require that
   \delta \xi^n_k/\xi^*_{k}<\epsilon
 \end{equation}
 with $\epsilon = 10^{-4}$. In addition, at each iteration the quantity
-$\Theta^*_{s,k}$, $\Theta^*_{b,k}$ and $\delta^*_k$, that are needed to evaluate $\Gamma$ and
-$\Sigma$,  are  derived from  the value of  $\xi^*_{k}$  using
-(\ref{C3-TS}), (\ref{C3-TB}) and (\ref{C3-DELTA}) respectively.
+$\Theta^*_{s,k}$, $\Theta^*_{b,k}$  and $\delta^*_k$, that  are needed
+to  evaluate $\Gamma$  and $\Sigma$,  are  derived from  the value  of
+$\xi^*_{k}$  using (\ref{C3-TS}),  (\ref{C3-TB}) and  (\ref{C3-DELTA})
+respectively.
 
-\section*{Effect of the prewetting film thickness}
+\section*{Appendix B: Effect of the prewetting film thickness}
 \label{C3-FilmThickness}
 
 The divergence of the viscous stresses at the contact line imposes the
@@ -1928,29 +1934,29 @@ dimensionless thickness $h_f = 5 ~ 10^{-3}$.
 \end{figure}
 
 However,   the    different   scaling   laws   derived    in   Section
-\ref{C3-sec:evol-bend-regime}  depends on  the film  thickness $h_f$,  as
-confirmed   numerically  (Figure   \ref{C3-Scaling_HR_ELAS_APPENDIX}  and
-\ref{C3-R_Rc_ELAS_APPENDIX})  and   in  particular,  the   phase  diagram
-presented in section \ref{C3-sec:diff-evol-with-1} and its application to
-the spreading of laccolith thus depends on the chosen value for $h_f$.
-The meaning of the prewetting film thickness in the application to the
-spreading  of laccolith  is  unclear. However,  reasonable values  for
-$h_f$ are values with physical significance for this structural length
-scale  at  the  tip  of  a  laccolith and  should  range  from  a  few
-centimeters  to  no less  than  $0.1$  millimeter. Therefore,  as  the
-dependence with $h_f$ is weak, a  variation of $2$ orders of magnitude
-does     not    change     significantly    the     results    (Figure
-\ref{C3-PhaseDiagramJFM_Appendix}).
+\ref{C3-sec:evol-bend-regime} depends on the  film thickness $h_f$, as
+confirmed  numerically  (Figure \ref{C3-Scaling_HR_ELAS_APPENDIX}  and
+\ref{C3-R_Rc_ELAS_APPENDIX})  and  in  particular, the  phase  diagram
+presented in section \ref{C3-sec:diff-evol-with-1} and its application
+to the  spreading of laccolith  thus depends  on the chosen  value for
+$h_f$.   The  meaning   of  the  prewetting  film   thickness  in  the
+application  to  the  spreading  of  laccolith  is  unclear.  However,
+reasonable values for $h_f$ are  values with physical significance for
+this structural  length scale  at the  tip of  a laccolith  and should
+range   from   a    few   centimeters   to   no    less   than   $0.1$
+millimeter.  Therefore,  as  the  dependence with  $h_f$  is  weak,  a
+variation of $2$ orders of magnitude does not change significantly the
+results (Figure \ref{C3-PhaseDiagramJFM_Appendix}).
 
 The  same  result hold  when  we  look  at  the relation  between  the
-thickness and the radius of the laccolith (\ref{C3-Hr}). Indeed, the best
-fit for  the value of  the viscosity contrast scales  as $h_f^{-1/2}$,
-i.e.    $\nu_{\text{best}}=h_f^{-1/2}2.59~10^{-10}$   and   therefore,
-varying  $h_f$  by  two  orders of  magnitudes  change  the  viscosity
-contrast  by  one order  of  magnitude  which  is acceptable  for  our
-application.
+thickness and the  radius of the laccolith  (\ref{C3-Hr}). Indeed, the
+best  fit  for   the  value  of  the  viscosity   contrast  scales  as
+$h_f^{-1/2}$,  i.e.   $\nu_{\text{best}}=h_f^{-1/2}2.59~10^{-10}$  and
+therefore,  varying  $h_f$ by  two  orders  of magnitudes  change  the
+viscosity contrast by  one order of magnitude which  is acceptable for
+our application.
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.36]{PhaseDiagramJFM_Appendix2.eps}

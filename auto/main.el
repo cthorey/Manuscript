@@ -28,8 +28,5 @@
     "appendix"
     "chngcntr"
     "etoolbox"
-    "lipsum"
-    ""
-    "gensymb"
     "makeidx")))
 

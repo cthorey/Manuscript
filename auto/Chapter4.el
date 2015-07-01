@@ -3,7 +3,6 @@
  (lambda ()
    (LaTeX-add-labels
     "Heating"
-    "C4-sec:introduction"
     "C4-sec:theory-1"
     "C4-sec:formulation-1"
     "C4-Temperature"

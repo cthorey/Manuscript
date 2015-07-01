@@ -12,21 +12,16 @@
 \usepackage{appendix}
 \usepackage{chngcntr}
 \usepackage{etoolbox}
-\usepackage{lipsum}
-\usepackage{ gensymb }
 
 \AtBeginEnvironment{subappendices}{%
-\chapter*{Appendix}
-\addcontentsline{toc}{chapter}{Appendices}
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
-}
+  \chapter*{Appendix}
+  \addcontentsline{toc}{chapter}{Appendices}
+  \counterwithin{figure}{section} \counterwithin{table}{section} }
 
 \include{formatAndDefs}
 
 
-\usepackage{makeidx}
-\makeindex
+\usepackage{makeidx} \makeindex
 
 \begin{document}
 
