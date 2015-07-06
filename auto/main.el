@@ -4,7 +4,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ThesisStyle" "a4paper" "12pt" "twoside")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("chapterbib" "sectionbib") ("inputenc" "utf8") ("fontenc" "T1")))
+                     '(("inputenc" "utf8") ("fontenc" "T1")))
    (TeX-run-style-hooks
     "latex2e"
     "formatAndDefs"
@@ -15,6 +15,8 @@
     "Chapter/Chapter2"
     "Chapter/Chapter3"
     "Chapter/Chapter4"
+    "Appendix/Appendix1"
+    "Appendix/Appendix2"
     "ThesisStyle"
     "ThesisStyle12"
     "graphicx"
@@ -22,11 +24,9 @@
     "amsmath"
     "pdfpages"
     "natbib"
-    "chapterbib"
     "inputenc"
     "fontenc"
-    "appendix"
-    "chngcntr"
-    "etoolbox"
-    "makeidx")))
+    "makeidx")
+   (LaTeX-add-bibliographies
+    "/Users/thorey/Dropbox/Library")))
 

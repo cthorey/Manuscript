@@ -18,6 +18,11 @@
     "C4-tbar"
     "C4-Boundary-Condi"
     "C4-omega"
+    "C4-xi"
+    "C4-Ts"
+    "C4-D"
+    "C4-Tb"
+    "C4-xit"
     "C4-TS"
     "C4-TB"
     "C4-DELTA"
@@ -73,16 +78,5 @@
     "C4-ArrestMoon"
     "C4-dd"
     "sec:large-mafic-sill"
-    "sec:discussion"
-    "C4-Heat:AppendixA"
-    "C4-xi"
-    "C4-Ts"
-    "C4-D"
-    "C4-Tb"
-    "C4-xit"
-    "C4-Heat:AppendixB"
-    "C4-Heat:AppendixC"
-    "C4-Appendix_Phase2_N11_0_Pe100_0_nu0_001")
-   (LaTeX-add-bibliographies
-    "/Users/thorey/Dropbox/Library")))
+    "sec:discussion")))
 

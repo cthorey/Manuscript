@@ -4,60 +4,57 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: TitlePage.aux
 A level-1 auxiliary file: traduction.aux
 A level-1 auxiliary file: Chapter/Chapter1.aux
-The style file: agufull08.bst
 A level-1 auxiliary file: Chapter/Chapter2.aux
-Illegal, another \bibstyle command---line 381 of file main.aux
- : \bibstyle
- :          {agufull08}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 382 of file main.aux
- : \bibdata
- :         {/Users/thorey/Dropbox/Library}
-I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter/Chapter3.aux
+A level-1 auxiliary file: Chapter/Chapter4.aux
+A level-1 auxiliary file: Appendix/Appendix1.aux
+A level-1 auxiliary file: Appendix/Appendix2.aux
+The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Dixon:1987js
-Warning--empty journal in Garel:2014era
+Warning--empty journal in Harris:2000jd
 Warning--empty journal in Anonymous:QWXp_4JV
-You've used 45 entries,
+Warning--empty journal in Horsman:2009gea
+You've used 109 entries,
             3076 wiz_defined-function locations,
-            1374 strings with 16637 characters,
-and the built_in function-call counts, 38672 in all, are:
-= -- 4398
-> -- 1059
-< -- 32
-+ -- 527
-- -- 292
-* -- 2312
-:= -- 3637
-add.period$ -- 45
-call.type$ -- 45
-change.case$ -- 197
-chr.to.int$ -- 46
-cite$ -- 48
-duplicate$ -- 4313
-empty$ -- 2300
-format.name$ -- 436
-if$ -- 7714
+            1761 strings with 27845 characters,
+and the built_in function-call counts, 99435 in all, are:
+= -- 11276
+> -- 2965
+< -- 65
++ -- 1417
+- -- 820
+* -- 6038
+:= -- 9324
+add.period$ -- 109
+call.type$ -- 109
+change.case$ -- 473
+chr.to.int$ -- 110
+cite$ -- 113
+duplicate$ -- 11086
+empty$ -- 5764
+format.name$ -- 1172
+if$ -- 19815
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 400
-newline$ -- 142
-num.names$ -- 180
-pop$ -- 1528
+missing$ -- 1029
+newline$ -- 334
+num.names$ -- 436
+pop$ -- 3818
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 365
 quote$ -- 0
-skip$ -- 2386
+skip$ -- 6186
 stack$ -- 0
-substring$ -- 1696
-swap$ -- 3660
-text.length$ -- 1
+substring$ -- 4390
+swap$ -- 9485
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 402
-warning$ -- 3
-while$ -- 232
+type$ -- 978
+warning$ -- 4
+while$ -- 573
 width$ -- 0
-write$ -- 484
-(There were 2 error messages)
+write$ -- 1175
+(There were 4 warnings)

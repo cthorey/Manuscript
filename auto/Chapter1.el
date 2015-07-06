@@ -21,7 +21,5 @@
     "C1-sec:model-statique-de"
     "C1-sec:empl-dynam-des"
     "C1-Model"
-    "C1-sec:conclusion")
-   (LaTeX-add-bibliographies
-    "/Users/thorey/Dropbox/Library")))
+    "C1-sec:conclusion")))
 

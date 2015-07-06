@@ -24,9 +24,9 @@ class Figure_chapter_2(Plot):
     method:
     m_Scal_R : Realise une graph de R enfonction de t'''
 
-    def __init__(self, Dict_w):
+    def __init__(self, d_w):
         Plot.__init__(self)
-        self.Dict_w = Dict_w
+        self.d_w = d_w
         self.xlabel = ''
         self.ylabel = ''
         self.path_save = '/Users/thorey/Documents/These/Manuscript/Figure/Chapter2/'
@@ -57,37 +57,30 @@ class Figure_chapter_2(Plot):
         fig,ax = self.m_sub_figure(1,2)
         ax_left = ax[0][0]
         ax_right  = ax[1][0]
-        sigmas = np.sort(list(set([elt.split('_')[8][2:] for elt in self.Dict_w.keys()][::-1])))
 
-        for sigma in sigmas:
-            key = 'ga'+str(sigma)
-            run = [self.Dict_w[f] for f in self.Dict_w.keys()
-                   if (f.split('_')[8] == key) ][0]
+        for key,run in self.d_w.iteritems():
             ind =self.Indice_time(run,[1e-4])[0]
-            nu = float(run.Nsd.nu.max())
-            gam = float(run.Nsd.gam.max())
-            delta0 = float(run.Nsd.delta0.max())
             tm = run.tm[ind:]
             R = run.R[ind:]
             H = run.H[ind:]
             ax_left.loglog(tm,H,
                            label = self._m_label(run,'sigma'),
-                           color = self.m_Kwargs(nu,gam))
+                           color = self.m_Kwargs(run.nu,run.gam))
             ax_right.loglog(tm,R,
                             label = self._m_label(run,'sigma'),
-                            color = self.m_Kwargs(nu,gam))
+                            color = self.m_Kwargs(run.nu,run.gam))
 
         tm = np.arange(1e-4,1e3)
-        ax_left.loglog(tm,2.1*nu**(-1./4.)*tm/tm,
+        ax_left.loglog(tm,2.1*run.nu**(-1./4.)*tm/tm,
                        color = 'k',
                        linestyle = '--')
-        ax_right.loglog(tm,1.15*nu**(1./8.)*tm**(1./2.),
+        ax_right.loglog(tm,1.15*run.nu**(1./8.)*tm**(1./2.),
                         color = 'k',
                         linestyle = '--')
-        ax_left.loglog(tm,0.69*delta0**(-1./11.)*nu**(-2./11.)*tm**(4./11.),
+        ax_left.loglog(tm,0.69*run.delta0**(-1./11.)*run.nu**(-2./11.)*tm**(4./11.),
                        color = 'k',
                        linestyle = '--')
-        ax_right.loglog(tm,2.22*delta0**(1./22.)*nu**(1./11.)*tm**(7./22.),
+        ax_right.loglog(tm,2.22*run.delta0**(1./22.)*run.nu**(1./11.)*tm**(7./22.),
                         color = 'k',
                         linestyle = '--')
         ax_left.loglog(tm, tm/tm,color = 'k',linestyle = '--')

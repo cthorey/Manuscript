@@ -1,141 +1,395 @@
-\chapter{Gravity field calculation}
+\chapter{Numerical  scheme   for  a  cooling   elastic-plated  gravity
+  current}
 \label{chap:A1}
 
-\section{Gravity field}
+In this  appendix, we present the  numerical scheme used to  solve the
+coupled  nonlinear partial  differential  equations (\ref{C4-HF})  and
+(\ref{C4-TF}).    The  governing   equations   presented  in   Chapter
+\ref{C3-JFM}     are     just      a     particular     case     where
+$\Omega \rightarrow \infty$.
 
-%\subsection*{Solution to the Laplace equation}
+\section{General procedure}
+\label{C3-sec:general-procedure}
 
-The gravitational potential $U$ is derived from Newton's law of gravitation
-%
-\begin{equation} \label{A:pot} U(\mathbf{r}) = \int_V
-\frac{G\rho(\mathbf{r'})}{|\mathbf{r}-\mathbf{r'}|} dV', \end{equation} 
-%
-where $\mathbf{r}$ is the vector position, $G$ the gravitational constant, $\rho$ the density
-distribution and $V$ the volume. Exterior to a given mass distribution, the gravitational potential
-satisfies the Laplace equation
-%
-\begin{equation} \nabla^2 U(\mathbf{r}) = 0. \end{equation}
-%
-In spherical coordinates, the solution of this equation can be expressed in spherical
-harmonics as
-%
-\begin{equation} U(\mathbf{r}) = \frac{GM}{r} \sum_{l=0}^{\infty} \sum_{m=-l}^{l}
-\left(\frac{R_0}{r}\right)^{l} C_{lm} Y_{lm}(\theta,\phi), \label{potential.sh} \end{equation}
-%
-where $M$ is the mass of the Moon, $R_0$ the reference radius, $Y_{lm}$ the spherical harmonic
-functions of degree $l$ and order $m$, $C_{lm}$ the corresponding coefficients, and $\theta$ and
-$\phi$ are the colatitude and longitude, respectively. The spherical harmonics are normalized as
-follows
-%
-\begin{equation} \int_\Omega Y_{lm}(\Omega)Y_{l'm'}(\Omega)d\Omega = 4\pi
-\delta_{ll'}\delta_{mm'}, \end{equation}
-%
-where $d\Omega = \sin\theta d\theta d\phi$. For $r > R_0$, the two following identities hold
-%
-\begin{align} \label{A:id} &\frac{1}{|\mathbf{r}-\mathbf{r'}|} = \frac{1}{r}
-\sum_{l=0}^{\infty} \left( \frac{r'}{r} \right)^l P_l(cos \gamma), \\ &P_l(cos\gamma) =
-\frac{1}{2l+1} \sum_{m=-l}^l Y_{lm}(\theta,\phi)Y_{lm}(\theta',\phi'), \end{align} 
-%
-where $P_l$ is the Legendre polynomial of order $l$ and $\gamma$ the angle between $\mathbf{r}$ and
-$\mathbf{r'}$. Inserting Equation (\ref{A:id}) in Equation (\ref{A:pot}) leads to the definition
-%
-\begin{equation} \label{eq:clm} C_{lm} = \frac{1}{M(2l+1)} \int_{V}
-\left(\frac{r'}{R_0}\right)^{l} \rho(\mathbf{r'}) Y_{lm}(\Omega') dV'. \end{equation}
+The coupled nonlinear partial differential equations (\ref{C4-HF}) and
+(\ref{C4-TF}) are solved on a grid of size $M$ defined by the relation
+$r_i =  (i-0.5)\Delta r$ for  $i=1,..,M$. The  grid is shifted  at the
+center to avoid  problem arising from the  axisymmetrical geometry. We
+index the grid point by the indice $i$ and denote the solution on this
+grid  $h_i$ and  $\xi_i$ and  the secondary  variables $\Theta_{b,i}$,
+$\Theta_{s,i}$ and $\delta_i$. Both equations  can be expressed on the
+convenient form
+\begin{equation}
+  \frac{\partial u}{\partial t} - f = 0
+\end{equation}
+where $u$  is the function we  want to integrate and  $f$ a non-linear
+function  that depends  on $u$.   We  solve these  equations by  first
+discretizing all the spatial  derivatives using Finite Difference. The
+accuracy of the  scheme is determined by the  higher order derivatives
+since  their numerical  approximation requires  the largest  number of
+sample points.  We  then get two systems of  $M$ ordinary differential
+equations with the form
+\begin{equation}
+  \frac{\partial u_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M
+\end{equation}
+The time derivatives are first  order and, since explicit schemes tend
+to be  very sensitive and unstable,  we use a fully  implicit backward
+Euler scheme to get
+\begin{equation}
+  \frac{u_i^{n+1}-u_i^n}{\Delta t} - f_i(u_i^{n+1}) = 0 \hspace{1cm} i
+  = 1,...,M
+  \label{C4-Num-1}
+\end{equation}
+Since  $f_i(u_i^{n+1})$ is  not a  linear function,  the system  above
+cannot be re-arranged to solve $u_i^{n+1}$ in term of $u_i^{n}$ and an
+iterative method  has to  be employed  instead. Fixed  point iteration
+method have shown  poor results in converging toward  the solution and
+we finally apply  second order Newton's method to  obtain the solution
+at each time step.  In particular, we first linearize $u^{n+1}$ around
+a guess  of the solution  by assuming $u^{n+1}=u^*+\delta  u^n$, where
+$u^*$ is a guess and $\delta u^n$ is the error and we drop the $i$ for
+clarity.   Then, we  expressed the  non-linear part  using a  Taylor's
+expansion
+\begin{equation}
+  f^{n+1}=f(u^{n+1})=f(u^*+\delta
+  u^n)=f(u^*)+J^h_{f}(u^*)\delta u^n\nonumber
+\end{equation}
+where  $J^u_{f}(u^*)$ is  the  jacobian matrix  for  the function  $f$
+evaluated  in $h^*$.   Injecting the  expansion into  (\ref{C4-Num-1})
+finally gives a  system of M linear equations for  the correction term
+$\delta_h^n$ which can be expressed as
+\begin{equation}
+  (I-\Delta tJ^u_{f}(u^*))\delta u^n=u^n-u^*+\Delta t f(u^*)
+\end{equation}
+where $I$ is the identity matrix. Therefore, each iteration solves for
+$\delta u^n$ and we use $u_n+\delta u^n$  as a new guess $u^*$ in each
+iteration. This  is repeated  until $\delta u^n$  becomes sufficiently
+small.  Finally, since the equations are coupled, we use a fixed-point
+iteration method  to converge  toward the  solution $(h,\xi)$  at each
+time step.   Therefore, the  algorithm is the  following at  each time
+step
+\begin{itemize}
+\item Start with a guess for the values of all variables.
+\item Solve  the thickness equation (\ref{C4-HF})  for $h^{n+1}$ using
+  Newton-Rhapsod method.
+\item  Solve the  heat  equation (\ref{C4-TF})  for $\xi^{n+1}$  using
+  $h^{n+1}$ as a new guess for $h^*$ and Newton-Rhapsod method.
+\item Repeat  step one until  further iterations cease to  produce any
+  significant changes in the values of both $h^{n+1}$ and $\xi^{n+1}$.
+\end{itemize}
+The computational scheme is summarized in the following.
 
-In order to calculate the coefficients $C_{lm}$ numerically, we assume the Moon to be constituted of
-$N$ thin shells of constant thickness with prescribed lateral density variations. For a given shell,
-$C_{lm}(r)$ is given by 
-%
-\begin{equation} \label{eq:clm} C_{lm}(r) = \frac{4\pi r^2}{M(2l+1)} 
-\left(\frac{r}{R_0}\right)^{l} \rho_{lm}(r) \Delta R, \end{equation} 
-%
-where $\Delta R$ is the shell thickness and $\rho_{lm}(r)$ the spherical harmonics expansion of
-$\rho$ on that shell which can be computed as
-%
-\begin{equation} \label{A:rho} \rho_{lm}(r) = \frac{1}{4\pi} \int \rho(\theta,
-\phi, r) Y_{lm}(\theta,\phi) d\Omega. \end{equation} 
-%
-Finally,
-\begin{equation} \label{A:rho} C_{lm} = \sum_{n=1}^N C_{lm}(r_n). \end{equation}
-%
-The gravitational field is then calculated by taking the first derivative of (\ref{potential.sh})
-with respect to $r$
-%
-\begin{equation} g(r) = \frac{GM}{r^2} \sum_{l=0}^{\infty} \sum_{m=-l}^{l} \left(
-\frac{R_0}{r}\right)^l (l+1) C_{lm} Y_{lm}(\theta, \phi). \end{equation} 
-%
-where we use the convention that g is positiive when directed downward. This allows us to calculate
-the effect on gravity from changes in density within the mantle, either due to thermal expansion or
-compositional changes. However, induced surface topography plays a role as well that needs to be
-estimated. Two approaches can be considered, as described in Appendix B: either surface topography
-is maintained dynamically or statically. Regardless how we choose to compute this topography, its
-influence on the potential can be calculated according to Equation (A8):
-%
-\begin{equation} C_{lm}^{surf} = \frac{4\pi}{(2l+1)M} R_0^2 (\rho h)_{lm}.
-\end{equation} 
-%
-where the topography $h_{lm}$ is the spherical harmonics expansion of the topography $h$, referenced
-to radius $R_0$.
+\section{Thickness equation}
 
-The Laplacian operator being linear, the gravitational influence of these mass anomalies can be
-considered independently and directly added to the coefficients of Eq. (A10)
-%
- \begin{equation} C_{lm}^{tot} = C_{lm} + C_{lm}^{surf}. \end{equation}
+The thickness equation (\ref{C4-HF}) is written as
+\begin{eqnarray}
+  \frac{\partial h}{\partial t}-f(h,\xi)&=&0
+\end{eqnarray}
+with
+\begin{eqnarray}
+  f& =& \frac{1}{r}
+        \frac{\partial}{\partial      r}
+        \left(      r  \phi\left(     \frac{\partial      }{\partial
+        r}\left(h+P\right)\right)\right)+w_i\\
+  \phi &=& 12I_1(h)
+\end{eqnarray}
+and where $P$ is the dimensionless bending pressure $P = \nabla^4h$.
+
+\vspace{.5cm} \textbf{Spatial discretization of f} \vspace{.5cm}
+
+The  spatial discretization  is  obtained using  a central  difference
+scheme  over  a  sub-grid  shifted  by $0.5\Delta  r$  from  the  main
+grid. Therefore, we have
+\begin{eqnarray}
+  f_i&=&\frac{1}{r_i \Delta_r}\left(r_{i+1/2}\phi_{i+1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i+1/2}-r_{i-1/2}\phi_{i-1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i-1/2}\right)\nonumber\\
+     &=&A_i\phi_{i+1/2}\left(h_{i+1}-h_i\right)-B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
+     &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)-B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
+     &+&w_i\label{C4-Num-3}
+\end{eqnarray}
+where                $A_i=r_{i+1/2}/(r_i\Delta_r^2)$               and
+$B_i=r_{i-1/2}/(r_i\Delta_r^2)$.   The bending  pressure  term $P$  is
+very stiff and  needs a careful treatment.  In  particular, the fourth
+order derivative requires a fourth order central difference scheme and
+therefore, $P_i$ is  expressed over a seven point stencil  on the main
+grid such that
+\begin{equation}
+  P_{i}=   \alpha_{i}h_{i-3}  +   \beta_{i}h_{i-2}+\gamma_{i}  h_{i-1}
+  +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3}
+  \label{C4-Num-4}
+\end{equation}
+with
+\begin{eqnarray}
+  &\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4+3p_3\Delta_r \right)\nonumber \\
+  &\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber\\
+  &\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber\\
+  &\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224-60p_2\Delta r^{2}\right) \nonumber\\
+  &\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber\\
+  &\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber\\
+  &\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4-3p_3\Delta_r \right)\nonumber
+\end{eqnarray}
+and where $p_1=1/r_i^3$, $p_2=1/r_i^2$ and $p_3 = 2/r_i$. Finally, the
+term $\phi_{i-1/2}$  and $\phi_{i-1/2}$, which depend  on the variable
+$\Theta_b$, $\delta$ as well as  different power of $h$, are evaluated
+in $i-1/2$ and  $i+1/2$ respectively. Different choices  for the value
+of the variable at the mid-cell grid point do not show any significant
+difference  and a  simple  average  is taken  such  that the  variable
+$u_{i+1/2}$ is taken as $0.5(u_i+u_{i+1})$.
+
+\vspace{.5cm}    \textbf{Expression   of    the   jacobian    $J_f^h$}
+\vspace{.5cm}
+
+The discretized  function $f_i$ can be  break down in three  part, the
+gravitational part $f_i^{g}$  which is expressed in term  of the value
+of $h$ on three  grid points $\left\{{i-1,i,i+1}\right\}$, the bending
+part $f_i^{b}$ which is expressed in term  of the value of $h$ on nine
+grid points  $\left\{{i-4,i-3,...,i+3,i+4}\right\}$ and  the injection
+term which depends only on the grid point $i$ such that
+\begin{equation}
+  f_i = f_i^g+f_i^b+w_i
+\end{equation}
+Therefore, the jacobian is  nona-diagonal and its coefficient $J_{il}$
+are
+\begin{equation}
+  J_{il}=
+  \begin{cases}
+    \frac{\partial f^{b}_i}{\partial h_{l}} &
+    l = \left\{{i-4,i-3,i-2,i+2,i+3,i+4}\right\}\\
+    \frac{\partial       f^{g}_i}{\partial       h_{l}}+\frac{\partial
+      f^{b}_i}{\partial h_{l}} & l =
+    \left\{{i-1,i,i+1}\right\}\\
+    0 & \text{otherwise}
+  \end{cases}
+  \label{C4-C2-eq12}
+\end{equation}
+The different  terms can be  easily derived from  (\ref{C4-Num-3}) and
+(\ref{C4-Num-4}) with just slight  adjustment coming from the boundary
+conditions.
+
+\vspace{.5cm} \textbf{Boundary condition} \vspace{.5cm}
+
+We begin with  $h_i=h_f$ for $i=1,..,M$.  Since the  flow is symmetric
+in $r=0$, we require that
+\begin{equation}
+  \left.\frac{\partial h}{\partial r}\right|_{r=0} =\left.\frac{\partial P}{\partial r}\right|_{r=0} =0
+\end{equation}
+and therefore for $i=1$, we have
+\begin{eqnarray}
+  f_i     &=&A_1\phi_{i+1/2}\left(h_{i+1}-h_i\right)\nonumber\\
+          &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)\nonumber\\
+          &+&w_i\label{C4-Num-5}
+\end{eqnarray}
+The expression  of the  bending pressure, evaluated  over a  $7$ point
+stencils, is problematic close to the boundary and reflection formulae
+will  be  used  in  order   to  accommodate  the  boundary  conditions
+\citet{Patankar:1980vu}.   In   particular,  we  have  $h_0   =  h_1$,
+$h_{-1}=h_2$ and  $h_{-2}=h_3$.  Similarly, boundary condition  at the
+end of the mesh is accounted by using a grid much larger than the flow
+itself and requiring
+\begin{equation}
+  \left.\frac{\partial h}{\partial r}\right|_{r=r_M} =\left.\frac{\partial P}{\partial r}\right|_{r=r_M} =0
+\end{equation}
+which gives for $i=M$
+\begin{eqnarray}
+  f_i     &=&B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
+          &+&B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
+          &+&w_i\label{C4-Num-5}
+\end{eqnarray}
+with $h_{i>=M}=h_f$.
 
 
+\vspace{.5cm} \textbf{Newton-Rhapsod method} \vspace{.5cm}
 
-%\subsection*{Static approach}
+The Newton-Rhapsod method reads
+\begin{equation}
+  (I-\Delta tJ^h_{f}(h_k^*))\delta h_k^n=h^n-h_k^*+\Delta t f(h_k^*)
+\end{equation}
+where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
+diagonal  matrix and  $J_f^h(h^*)$  is a  $M  \times M$  nona-diagonal
+matrix.   This  system of  linear  equations  can  be solved  using  a
+nona-diagonal algorithm. At the first  iteration, we use $h^*_1 = h^n$
+as     a    first     guess    and     then    we     iterate    using
+$h^*_k  = h^n+\delta  h_{k-1}^n$ as  a new  guess for  each iterations
+until $\delta h^n_{k}$ becomes  sufficiently small.  In particular, we
+require that
+\begin{equation}
+  \delta h^n_k/h^*_{k}<\epsilon
+\end{equation}
+with $\epsilon = 10^{-4}$.
 
-\section{Calculation of static and dynamic topography}
+\section{Heat equation}
 
-Thermal expansion leads to a volume increase of the material. Because our thermochemical models are
-incompressible and have fixed boundaries, this effect is only taken into account within the
-Boussinesq approximation: the density decreases locally, but the volume stays constant. However, for
-gravity calculations, volume changes need to be considered. On the one hand, assuming a strengthless
-lithosphere and the direct transmission of stresses vertically, this increase in volume directly
-translates to a surface uplift. On the other hand, if one considers an infinite elastic lithosphere,
-the induced topography is zero. Our calculations should therefore be seen as an upper bound on the
-contribution. There are two ways to compute topography. The static approach assumes that once topography
-is emplaced, it stays in place whereas the dynamic topography is the topography that can be sustained
-by radial stresses at the surface.
+The heat equation (\ref{C4-TF}) is written as
+\begin{eqnarray}
+  \frac{\partial \xi}{\partial t}-g(h,\xi)&=&0
+\end{eqnarray}
+with
+\begin{eqnarray}
+  g& =& \frac{1}{r}\frac{\partial}{\partial                          r}
+        \left( r\Gamma\xi\right) +\frac{1}{r}\frac{\partial}{\partial                          r}
+        \left(r\Sigma\right)+2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}\\
+  \overline{\theta}&=&\frac{1}{3}\left(2\Theta_b+\Theta_s\right)\\
+  \Gamma&=&-\frac{12}{\delta}
+            \frac{\partial
+            P}{\partial
+            r}\left(\delta
+            I_0(\delta)-I_1(\delta)\right)\\
+  \Sigma &=& \frac{12}{\delta} \frac{\partial P}{\partial r}\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right).
+\end{eqnarray}
 
-\subsection*{Static topography}
+\vspace{.5cm} \textbf{Spatial discretization of g} \vspace{.5cm}
 
-Our numerical grid is regular, therefore the sum of the volume expansion of each cell $\delta V_N$
-along one vertical profile is equal to the volume increase at the surface $V_{uplift}$
-%
-\begin{equation} V_{uplift} = \sum_N \delta V_N, \end{equation} 
-%
-where $N$ is the number of shells of the model. Thermal expansion $\alpha$ dictates that
-%
-\begin{equation} \delta V_N = \alpha V_N \delta T_N, \end{equation}
-%
-where $\delta T_N$ is the local increase in temperature with respect to a constant reference.
-Writing $S_i$ the surface area of the cell at shell $i$, we can compute the surface uplift as
-%
-\begin{equation} h=\frac{1}{S_0} \sum_N \alpha V_N \delta T_N, \end{equation}
-%
-where $V_N = S_N \Delta R$, $\Delta R$ being the thickness of the shell.
+As for the thickness equation,  the spatial discretization is obtained
+using  a  central  difference  scheme   over  a  sub-grid  shifted  by
+$0.5\Delta r$ from the main grid. Therefore, we have
+\begin{eqnarray}
+  g_i &=& \left(C_i\Gamma_{i+1/2}\xi_{i+1/2}-D_i\Gamma_{i-1/2}\xi_{i-1/2}\right)\\
+      &+&\left(C_i\Sigma_{i+1/2}-D_i\Sigma_{i-1/2}\right)\\
+      &+&2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}
+\end{eqnarray}
+with         $C_i         =r_{i+1/2}/(r_i\Delta        r)$         and
+$D_i =r_{i-1/2}/(r_i\Delta r)$.   We use the average  between the grid
+point $i$ and $i-1$ (resp. $i+1$) to evaluate the quantity in $\Gamma$
+and  $\Sigma$ at  $i-1/2$ (resp.   $i+1/2$).   In addition,  we use  a
+classical upwind  scheme to handle $\xi$  at the mid grid  point which
+requires
+\begin{eqnarray}
+  \xi_{i+1/2} &=& \xi_i\\
+  \xi_{i-1/2} &=& \xi_{i-1}
+\end{eqnarray}
 
+\vspace{.5cm}  \textbf{Expression   of  the   Jacobian  $J_{g}^{\xi}$}
+\vspace{.5cm}
 
-\subsection*{Dynamic topography}
+The expression  of the Jacobian  is much straightforward in  that case
+and its coefficient $J_{il}$ are
+\begin{equation}
+  J_{il}=
+  \begin{cases}
+    -D_i\Gamma_{i-1/2}&
+    l = i-1\\
+    C_i\Gamma_{i+1/2} & l = i \\
+    0 & \text{otherwise}
+  \end{cases}
+  \label{C4-C2-eq12}
+\end{equation}
+with only slight adjustment coming from the boundary conditions.
 
-The other approach assumes that the current topography is sustained dynamically. Our models
-have fixed boundaries, but the radial stresses at these boundaries can be used \emph{a
-posteriori} to compute the induced dynamic topography that would be present with a free surface
-using
-%
-\begin{equation} h = \frac{\tau_{rr}}{\Delta \rho g_0}, \end{equation}
-%
-where $\Delta \rho$ is the density jump across the interface and $g_0$ the gravitational
-acceleration at this same boundary \citep{Peltier:1989ft}. The radial stress is defined by
-%
-\begin{equation} \tau_{rr} = P - 2\eta \frac{dv_r}{dr}, \end{equation}
-%
-with $P$ being the dynamic pressure, $\eta$ the viscosity and $v_r$ the radial viscosity at the
-interface \citep{Landau:1959vb}. The radial stresses are the direct result of the mantle dynamics
-and therefore includes the effect of thermal expansion. We found that in our case, the assumption of
-either static of dynamic topgraphy give similar results. Therefore the static approach is used here
-for simplicity.
+\vspace{.5cm} \textbf{Boundary conditions} \vspace{.5cm}
 
+We  consider $\Theta_b  =1$  and $\delta  = 10^{-4}$  in  the film  at
+$t=0$. In this way, we ensure  that the average temperature across the
+film at $t=0$ is close to $1$. By construction, $D_1=0$ and therefore,
+for $i=1$ we have
+\begin{eqnarray}
+  g_i &=& C_i\Gamma_{i+1/2}\xi_{i}+ C_i\Sigma_{i+1/2} +2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}
+\end{eqnarray}
+For   $i=M$,   we    consider   that   $\Gamma_{i+1/2}=\Gamma_i$   and
+$\Sigma_{i=1/2}=\Sigma_i$.   However,  the  choice  for  the  boundary
+condition at the border of the grid $i=M$ is not important as we solve
+the problem over a grid much larger than the flow itself.
 
+\vspace{.5cm} \textbf{Newton-Rhapsod method} \vspace{.5cm}
+
+The Newton-Rhapsod method reads
+\begin{equation}
+  (I-\Delta tJ^{\xi}_{g}(\xi_k^*))\delta \xi_k^n=\xi^n-\xi_k^*+\Delta t f(\xi_k^*)
+\end{equation}
+where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
+diagonal  matrix and  $J_f^h(\xi^*)$ is  a $M  \times M$  tri-diagonal
+matrix.   This  system of  linear  equations  can  be solved  using  a
+tri-diagonal algorithm.  As  for the thickness equation,  at the first
+iteration,  we use  $\xi^*_1 =  \xi^n$ as  a first  guess and  then we
+iterate using $\xi^*_k = \xi^n+\delta  \xi_{k-1}^n$ as a new guess for
+each iterations  until $\delta \xi^n_{k}$ becomes  sufficiently small.
+In particular, we require that
+\begin{equation}
+  \delta \xi^n_k/\xi^*_{k}<\epsilon
+\end{equation}
+with  $\epsilon  = 10^{-4}$.   In  addition,  at each  iteration,  the
+quantity $\Theta^*_{s,k}$, $\Theta^*_{b,k}$ and $\delta^*_k$, that are
+needed to evaluate  $\Gamma$ and $\Sigma$, are derived  from the value
+of $\xi^*_{k}$ using (\ref{C4-TS}), (\ref{C4-TB}) and (\ref{C4-DELTA})
+
+\section{Integral expressions}
+\label{sec:integral-expressions}
+
+The model  developed in  Section \ref{C4-sec:theory-1} depends  on the
+integrals
+\begin{eqnarray}
+  I_0(z)&=&\int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)
+            dy \\
+  I_1(z) &=& \int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)y dy\\
+  I_2(z)&=&\int_0^y                         \frac{1}{\eta(y)}
+            \left(y-\frac{h}{2}\right)G(y)dy
+\end{eqnarray}
+where $G(z)$  is a  primitive of $\theta(z)$  where $z<\delta$  and is
+given by
+\begin{equation}
+  G(z) = \frac{z \left(3 \delta ^2 \Theta_s+3 \delta z (\Theta_b-\Theta_s)+z^2 (\Theta_s-\Theta_b)\right)}{3 \delta ^2}.
+\end{equation}
+In  particular, the  model requires  the expression  of $I_0(\delta)$,
+$I_1(\delta)$, $I_1(h)$ and $I_2(\delta)$.
+
+\vspace{.5cm}   \textbf{Rheology   1:   $\eta(\theta)=\eta_1(\theta)$}
+\vspace{.5cm}
+
+In that case, the four integrals can be easily derived and read
+\begin{eqnarray}
+  I_0(\delta)&=&\frac{\delta}{12} \left(6 \delta \nu + (1-\nu) \left(- \alpha_1 \delta + 2 \alpha_1 h + 6 \Theta_{b} \delta - 6 \Theta_{b} h\right) - 6 h \nu\right)\nonumber\\
+  I_1(\delta)&=&\frac{\delta^{2}}{120} \left(40 \delta \nu + (1-\nu) \left(- 4 \alpha_1 \delta + 5 \alpha_1 h + 40 \Theta_{b} \delta - 30 \Theta_{b} h\right) - 30 h \nu\right)\nonumber\\
+  I_1(h)&=&\frac{1}{60} \left((1-\nu) \left(- 4 \alpha_1 \delta^{3} + 10 \alpha_1 \delta^{2} h - 10 \alpha_1 \delta h^{2} + 5 \Theta_{b} h^{3}\right) + 5 h^{3} \nu\right)\nonumber\\
+  I_2(\delta)&=&- \frac{\delta^{2}}{2520} \left(378  \alpha_1 \delta \nu -
+                 315  \alpha_1 h  \nu -  840 \Theta_{b}  \delta \nu  + 630
+                 \Theta_{b} h \nu \right)\nonumber\\
+             &&-\frac{\delta^{2}}{2520}(1-\nu)  \left(- 50  \alpha_1^{2} \delta  + 70
+                \alpha_1^{2}  h  +  462  \alpha_1   \Theta_{b}  \delta  -  420  \alpha_1
+                \Theta_{b}  h -  840  \Theta_{b}^{2} \delta  + 630  \Theta_{b}^{2}
+                h\right)\nonumber
+\end{eqnarray}
+where $\alpha_1=\Theta_b-\Theta_s$ has been introduced for clarity.
+
+\vspace{.5cm}   \textbf{Rheology   2:   $\eta(\theta)=\eta_2(\theta)$}
+\vspace{.5cm}
+
+For cases where $\nu<1$, we have
+\begin{eqnarray}
+  I_0(\delta)&=&-\frac{\delta  \nu ^{1-\Theta_b} \left(\sqrt{\pi } \sqrt{\alpha_1} (2 \delta -h) \sqrt{-\alpha_2}
+                 \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right)+2 \delta  \left(\nu ^{\alpha_1}-1\right)\right)}{4 \alpha_1 \alpha_2}\nonumber\\
+  I_1(\delta)&=&\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\pi } \erf\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) (\alpha_1 (h-2
+                 \delta ) \alpha_2+\delta )\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber\\
+             &&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\alpha_1} \sqrt{-\alpha_2} \left(2 \delta  \left(\nu ^{\alpha_1}-2\right)-h \nu
+                ^{\alpha_1}+h\right)\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber\\
+  I_1(h)&=&\frac{\nu ^{1-\Theta_b} \left(\sqrt{\alpha_1} \sqrt{-\alpha_2} \left(12 \delta ^2 \left(\delta  \left(\nu
+            ^{\alpha_1}-2\right)-h \nu ^{\alpha_1}+h\right)+\alpha_1  (2 \delta -h)^3
+            \log    (\nu    )\right)\rihgt)}{12   \alpha_1^{3/2}    (-\alpha_2)^{3/2}}\nonumber\\
+             &&-\frac{\nu ^{1-\Theta_b} \left(3 \sqrt{\pi } \delta 
+                \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) \left(\alpha_1 (h-2 \delta )^2 \alpha_2-2 \delta
+                ^2\right)\right)}{12 \alpha_1^{3/2} (-\alpha_2)^{3/2}}\nonumber
+\end{eqnarray}
+\begin{eqnarray}
+  I_2(\delta)&=&\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\pi } \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) \left(-2
+                 \alpha_1 (2  \delta -h)  (\alpha_1-3 \Theta_b)  \alpha_2^2-6 \delta
+                 \Theta_b  \alpha_2-3   \delta  \right)\right)}{24
+                 \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber\\
+             &&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(2
+                \sqrt{\alpha_1} \nu ^{\alpha_1} \sqrt{-\alpha_2} \left(\nu ^{-\alpha_1} (\alpha_2 (-2 \delta  (\alpha_1-6
+                \Theta_b)-3 h \Theta_b)+2 \delta -h)\right)\right)}{24
+                \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber\\
+             &&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(2
+                \sqrt{\alpha_1} \nu ^{\alpha_1} \sqrt{-\alpha_2} \left(2 \delta  \alpha_1 \alpha_2-6 \delta  \Theta_b \alpha_2+\delta
+                -\alpha_1 h \alpha_2+3 h \Theta_b \alpha_2+h\right)\right)}{24 \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber
+\end{eqnarray}
+where    in   addition    to    $\alpha_1$,    we   also    introduced
+$\alpha_2=\log(\nu)$  for clarity.   In  the case  where $\nu=1$,  the
+expression above simplify and read
+\begin{eqnarray}
+  I_0(\delta)&=&\frac{1}{2} \delta  (\delta -h)\nonumber\\
+  I_1(\delta)&=&\frac{1}{12} \delta ^2 (4 \delta -3 h)\nonumber\\
+  I_1(h)&=&\frac{h^3}{12}\nonumber\\
+  I_2(\delta)&=&-\frac{1}{120} \delta ^2 (18 \delta  \alpha_1-40 \delta  \Theta_b-15 \alpha_1 h+30 h \Theta_b)\nonumber
+\end{eqnarray}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

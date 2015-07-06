@@ -111,18 +111,5 @@
     "C3-tab:TimeTransition"
     "C3-Scaling_HR_ELASGRAV_h2"
     "C3-Phase_Diagram_ELASGRAV"
-    "C3-sec:conclusion"
-    "C3-sec:numerical-approach"
-    "C3-sec:general-procedure"
-    "C3-Num-1"
-    "C3-Num-3"
-    "C3-Num-4"
-    "C3-C2-eq12"
-    "C3-Num-5"
-    "C3-FilmThickness"
-    "C3-Scaling_HR_ELAS_APPENDIX"
-    "C3-R_Rc_ELAS_APPENDIX"
-    "C3-PhaseDiagramJFM_Appendix")
-   (LaTeX-add-bibliographies
-    "/Users/thorey/Dropbox/Library")))
+    "C3-sec:conclusion")))
 

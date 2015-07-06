@@ -5,18 +5,10 @@
 \usepackage{amsmath} 
 \usepackage{pdfpages}
 \usepackage{natbib}
-\usepackage[sectionbib]{chapterbib}
+% \usepackage[sectionbib]{chapterbib}
 \DeclareMathOperator\erf{erf}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{appendix}
-\usepackage{chngcntr}
-\usepackage{etoolbox}
-
-\AtBeginEnvironment{subappendices}{%
-  \chapter*{Appendix}
-  \addcontentsline{toc}{chapter}{Appendices}
-  \counterwithin{figure}{section} \counterwithin{table}{section} }
 
 \include{formatAndDefs}
 
@@ -67,20 +59,20 @@
 % \include{Chapter/Chapter6}
 
 \part{Summary and perspectives}
-% \include{Chapter8}
+% \include{Chapter/Chapter7}
 
 
-% \part{Appendices and bibliography}
-% \appendix
-
-% \include{Appendix1}
+\part{Appendices and bibliography}
+\appendix
+\include{Appendix/Appendix1}
+\include{Appendix/Appendix2}
 % \include{Appendix3}
 
 % \include{Notations}
 % \printnomenclature
 
-% \bibliographystyle{agufull08}
-% \bibliography{/Users/thorey/Dropbox/Library}
+\bibliographystyle{agufull08}
+\bibliography{/Users/thorey/Dropbox/Library}
 
 
 \end{document}
