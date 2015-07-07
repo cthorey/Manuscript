@@ -1,4 +1,4 @@
-\begin{thebibliography}{109}
+\begin{thebibliography}{108}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -378,11 +378,6 @@ Morgan, S., A.~Stanik, E.~Horsman, B.~Tikoff, M.~de~Saint-Blanquat, and
   G.~Habert (2008), {Emplacement of multiple magma sheets and wall rock
   deformation: Trachyte Mesa intrusion, Henry Mountains, Utah}, \textit{Journal
   of Structural Geology}, \textit{30}(4), 491--512.
-
-\bibitem[{\textit{Olson}(2003)}]{Olson:2003hca}
-Olson, J.~E. (2003), {Sublinear scaling of fracture aperture versus length: An
-  exception or the rule?}, \textit{J. Geophys. Res.}, \textit{108}(B9),
-  2413--12.
 
 \bibitem[{\textit{Patankar}(1980)}]{Patankar:1980vu}
 Patankar, S. (1980), {Numerical heat transfer and fluid flow}.

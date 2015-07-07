@@ -60,8 +60,8 @@
     "C4-Rc"
     "C4-Visco_GRAV_Heating"
     "C4-tg3"
-    "C4-sec:evol-with-bend"
     "tab:TimeTransition"
+    "C4-sec:evol-with-bend"
     "C4-Phase_Diagram_Heating"
     "C4-sec:appl-spre-shall"
     "C4-sec:appl-arrest-terr"
@@ -78,5 +78,6 @@
     "C4-ArrestMoon"
     "C4-dd"
     "sec:large-mafic-sill"
+    "sec:thermal-aureol"
     "sec:discussion")))
 

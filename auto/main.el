@@ -17,6 +17,7 @@
     "Chapter/Chapter4"
     "Appendix/Appendix1"
     "Appendix/Appendix2"
+    "Appendix/Appendix3"
     "ThesisStyle"
     "ThesisStyle12"
     "graphicx"

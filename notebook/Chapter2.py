@@ -73,19 +73,19 @@ class Figure_chapter_2(Plot):
         tm = np.arange(1e-4,1e3)
         ax_left.loglog(tm,2.1*run.nu**(-1./4.)*tm/tm,
                        color = 'k',
-                       linestyle = '--')
+                       linestyle = ':')
         ax_right.loglog(tm,1.15*run.nu**(1./8.)*tm**(1./2.),
                         color = 'k',
-                        linestyle = '--')
+                        linestyle = ':')
         ax_left.loglog(tm,0.69*run.delta0**(-1./11.)*run.nu**(-2./11.)*tm**(4./11.),
                        color = 'k',
                        linestyle = '--')
         ax_right.loglog(tm,2.22*run.delta0**(1./22.)*run.nu**(1./11.)*tm**(7./22.),
                         color = 'k',
                         linestyle = '--')
-        ax_left.loglog(tm, tm/tm,color = 'k',linestyle = '--')
+        ax_left.loglog(tm, tm/tm,color = 'k',linestyle = '-.')
         ax_right.loglog(tm, (tm/(4*np.pi))**(1./4.),color = 'k',
-                        linestyle = '--')
+                        linestyle = '-.')
         
         self.x_label = r'Dimensionless time $t$' 
         self.y_label = r'Dimensionless thickness $h_0$'
