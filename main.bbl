@@ -1,4 +1,4 @@
-\begin{thebibliography}{108}
+\begin{thebibliography}{114}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -30,7 +30,7 @@ Bercovici, D., and J.~Lin (1996), {A gravity current model of cooling mantle
 
 \bibitem[{\textit{Bertozzi}(1998)}]{Bertozzi:1998wz}
 Bertozzi, A.~L. (1998), {The mathematics of moving contact lines in thin liquid
-  films}, \textit{Notices AMS}.
+  films}, pp. 1--9.
 
 \bibitem[{\textit{Blatt et~al.}(2006)\textit{Blatt, Tracy, and
   Owens}}]{Blatt:2ViMWPc0}
@@ -138,6 +138,18 @@ Flitton, J.~C., and J.~R. King (2004), {Moving-boundary and fixed-domain
   problems for a sixth-order thin-film equation}, \textit{European Journal of
   Applied Mathematics}, \textit{15}(06), 713--754.
 
+\bibitem[{\textit{Galushkin}(1997)}]{Galushkin:1997dy}
+Galushkin, Y.~I. (1997), {Thermal effects of igneous intrusions on maturity of
+  organic matter: a possible mechanism of intrusion}, \textit{Organic
+  Geochemistry}, \textit{26}(11-12), 645--658.
+
+\bibitem[{\textit{Ganino et~al.}(2008)\textit{Ganino, Arndt, Zhou, Gaillard,
+  and Chauvel}}]{Ganino:2008ft}
+Ganino, C., N.~T. Arndt, M.-F. Zhou, F.~Gaillard, and C.~Chauvel (2008),
+  {Interaction of magma with sedimentary wall rock and magnetite ore genesis in
+  the Panzhihua mafic intrusion, SW China}, \textit{Miner Deposita},
+  \textit{43}(6), 677--694.
+
 \bibitem[{\textit{Garel et~al.}(2012)\textit{Garel, Kaminski, Tait, and
   Limare}}]{Garel:2012bh}
 Garel, F., E.~Kaminski, S.~Tait, and A.~Limare (2012), {An experimental study
@@ -242,6 +254,10 @@ Huppert, H.~E. (1982{\natexlab{a}}), {The propagation of two-dimensional and
 \bibitem[{\textit{Huppert}(1982{\natexlab{b}})}]{Huppert:1982wr}
 Huppert, H.~E. (1982{\natexlab{b}}), {Flow and instability of a viscous current
   down a slope}, \textit{Nature}.
+
+\bibitem[{\textit{Jaeger}(1959)}]{Jaeger:1959du}
+Jaeger, J.~C. (1959), {Temperatures outside a cooling intrusive sheet},
+  \textit{257}(1), 44--54.
 
 \bibitem[{\textit{Johnson and Pollard}(1973)}]{Johnson:1973ho}
 Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
@@ -407,11 +423,10 @@ Pinel, V., and C.~Jaupart (2004), {Magma storage and horizontal dyke injection
   beneath a volcanic edifice}, \textit{Earth and Planetary Science Letters},
   \textit{221}(1-4), 245--262.
 
-\bibitem[{\textit{Pinkerton and Stevenson}(1992)}]{Pinkerton:1992fw}
+\bibitem[{\textit{Pinkerton and Stevenson}(1992)}]{Pinkerton:1992fwa}
 Pinkerton, H., and R.~J. Stevenson (1992), {Methods of determining the
   rheological properties of magmas at sub-liquidus temperatures},
-  \textit{Journal of Volcanology and Geothermal Research}, \textit{53}(1-4),
-  47--66.
+  \textit{53}(1-4), 47--66.
 
 \bibitem[{\textit{Platz et~al.}(2015)\textit{Platz, Byrne, Massironi, and
   Hiesinger}}]{Platz:2015ex}
@@ -458,6 +473,12 @@ Schultz, R.~A., R.~Soliva, H.~Fossen, C.~H. Okubo, and D.~M. Reeves (2008),
   fractures and deformation bands on the volumetric changes across them},
   \textit{Journal of Structural Geology}, \textit{30}(11), 1405--1411.
 
+\bibitem[{\textit{Senger et~al.}(2014)\textit{Senger, Planke, Polteau, and
+  Ogata}}]{Senger:2014tt}
+Senger, K., S.~Planke, S.~Polteau, and K.~Ogata (2014), {Sill emplacement and
+  contact metamorphism in a siliciclastic reservoir on Svalbard, Arctic
+  Norway}.
+
 \bibitem[{\textit{Shaw}(1972)}]{Anonymous:CZVBrBvv}
 Shaw, H.~R. (1972), {Viscosities of magmatic silicate liquids; an empirical
   method of prediction}, \textit{Am J Sci}, \textit{272}(9), 870--893.
@@ -465,6 +486,12 @@ Shaw, H.~R. (1972), {Viscosities of magmatic silicate liquids; an empirical
 \bibitem[{\textit{Shearer}(2006)}]{Shearer:2006gg}
 Shearer, C.~K. (2006), {Thermal and Magmatic Evolution of the Moon},
   \textit{Reviews in Mineralogy and Geochemistry}, \textit{60}(1), 365--518.
+
+\bibitem[{\textit{Sillitoe and Thompson}(1998)}]{SILLITOE:1998bs}
+Sillitoe, R.~H., and J.~F.~H. Thompson (1998), {Intrusion{\textendash}Related
+  Vein Gold Deposits: Types, Tectono-Magmatic Settings and Difficulties of
+  Distinction from Orogenic Gold Deposits}, \textit{Resource Geology},
+  \textit{48}(4), 237--250.
 
 \bibitem[{\textit{Snoeijer and Andreotti}(2013)}]{Snoeijer:2013cm}
 Snoeijer, J.~H., and B.~Andreotti (2013), {Moving Contact Lines: Scales,
@@ -565,6 +592,12 @@ W{\"o}hler, C., R.~Lena, and J.~Phillips (2007), {Formation of lunar mare domes
 W{\"o}hler, C., R.~Lena, and {Geologic Lunar Research Group} (2009), {Lunar
   intrusive domes: Morphometric analysis and laccolith modelling},
   \textit{Icarus}, \textit{204}(2), 381--398.
+
+\bibitem[{\textit{Zhou et~al.}(2008)\textit{Zhou, Arndt, Malpas, Wang, and
+  Kennedy}}]{Zhou:2008hc}
+Zhou, M.-F., N.~T. Arndt, J.~Malpas, C.~Y. Wang, and A.~K. Kennedy (2008), {Two
+  magma series and associated ore deposit types in the Permian Emeishan large
+  igneous province, SW China}, \textit{Lithos}, \textit{103}(3-4), 352--368.
 
 \bibitem[{\textit{Zimbelman}(1998)}]{Zimbelman:1998ww}
 Zimbelman, J.~R. (1998), {Emplacement of long lava flows on planetary

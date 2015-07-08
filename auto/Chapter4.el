@@ -3,6 +3,8 @@
  (lambda ()
    (LaTeX-add-labels
     "Heating"
+    "sec:introduction"
+    "Treasure"
     "C4-sec:theory-1"
     "C4-sec:formulation-1"
     "C4-Temperature"
@@ -79,5 +81,10 @@
     "C4-dd"
     "sec:large-mafic-sill"
     "sec:thermal-aureol"
+    "Contact_Areuol2"
+    "Aureol"
+    "Aureol2"
+    "Aureol3"
+    "PhaseHeating"
     "sec:discussion")))
 

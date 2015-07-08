@@ -5,13 +5,58 @@
 
 \minitoc
 
-The previous chapter was a first step toward the understanding of the
+The previous  chapter was first  step toward the understanding  of the
 coupling between  the cooling and  the spreading of  an elastic-plated
-gravity current. Hereafter, we first investigate the changes triggered
-by both  the heating  of the  surrounding layer  and a  more realistic
-rheology for magmatic intrusions. We then compare the model predictions with the observations
-presented in chapter \ref{chap2}.
+gravity current.  Hereafter,  we first investigate the  changes in the
+dynamics  caused by  both the  heating of  the wall  rocks and  a more
+realistic  rheology  for   the  magma.  We  then   compare  the  model
+predictions with the observations presented in Chapter \ref{chap2}.
 
+
+\section{Motivation}
+\label{sec:introduction}
+
+Numerous geological explorations  demonstrate that magmatic intrusions
+affect  the  host  rock  by  developing  contact-metamorphic  aureoles
+\citep{Jaeger:1959du,Galushkin:1997dy,Senger:2014tt}.   For  instance,
+the  Leadville Limestone  in Colorado,  famous for  preserving fossils
+dating back to the Carboniferous  period, was locally transformed into
+marble  following  the intrusion  of  the  Treasure Mountain  Dome  in
+Colorado, USA (Figure \ref{Treasure}).  The increase in the geothermal
+gradient in  sedimentary basins also  tends to accelerate  the thermal
+maturation  of  organic  matter  in  the  surrounding,  promoting  the
+hydrocarbon  generation  \citep{Senger:2014tt}.    Release  of  $CO_2$
+during the metamorphism processes have  also been proposed to help the
+formation  of ore  deposits  in the  vicinity  of magmatic  intrusions
+\citep{SILLITOE:1998bs,Ganino:2008ft,Zhou:2008hc}.
+
+The size  of the contact aureole  depends on the regional  context and
+can reach reach  more than $100\%$ of the intrusion  thickness in many
+region \citep{Galushkin:1997dy}.  This  contact aureole, by decreasing
+the heat loss in  the central region of the flow,  may also affect the
+dynamics of the magmatic intrusion itself.  In the following, we relax
+the  isothermal boundary  condition  used in  Chapter \ref{C3-JFM}  to
+investigate its influence of the dynamics.
+
+\begin{figure}[h!]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter4/} }
+    \includegraphics[scale=0.9]{Treasure.eps}
+    \caption{a)  Sketch of  the granitic  Treasure Mountain  Laccolith
+      intruded  roughly  $\sim  20$  Ma years  ago  in  the  Colorado,
+      USA. The Leadville Limestone  (white layer) was metamorphosed by
+      the heat  from the intrusion,  and was transformed  into marble.
+      During the  last $10$  Ma years,  the area  was eroded,  and the
+      marble is today exposed to the surface.  b) Cross section of the
+      strata from  the West  flank of the  Treasure Mountain  dome. c)
+      Marble  vein  visible  from  the  West  flank  of  the  Treasure
+      Mountain.   In  this area,  it  extends  over  $1.6$ km  with  a
+      thickness of  $52$ to $73$  m.  The  quality of this  Marble was
+      selected  to clad  the exterior  of the  Lincoln Memorial  and a
+      variety of building throughout the United States.}
+    \label{Treasure}
+  \end{center}
+\end{figure}
 \section{Theory}
 \label{C4-sec:theory-1}
 
@@ -247,8 +292,8 @@ where   $\nu$  is   the  viscosity   contrast  described   in  Section
 \ref{C3-sec:theory} and represents the ratio between the hot viscosity
 $\eta_h$  and   the  cold  viscosity  $\eta_c$.    The  expression  of
 $I_0(\delta)$, $I_1(\delta)$, $I_1(h)$ and $I_2(\delta)$, necessary to
-close  the model,  are given  in Appendix  \ref{chap:A1} for
-both rheologies.
+close  the  model,  are  given  in  Appendix  \ref{chap:A1}  for  both
+rheologies.
 
 \subsection{Comparison with the isothermal model}
 \label{C4-sec:some-limits}
@@ -338,12 +383,12 @@ phases.   The current  first behaves  as an  isoviscous flow  with hot
 viscosity, it then slows down and  thickens to finally behave again as
 an    isoviscous    flow    but   with    cold    viscosity    (Figure
 \ref{C4-Scaling_HR_ELAS_Omega}).  As the current tip remains hot for a
-longer  period of  time,  the  transition to  the  second and  third
-bending   regime  are   however   delayed  relatively   to  the   case
-$\Omega= 10^5$ (Figure \ref{C4-Scaling_HR_ELAS_Omega}).  For instance,
-for $\nu=10^{-3}$  and $Pe=1.0$, while  the transition to  the second
-bending phase  already begins at $t\sim  10^{-6}$ for $\Omega=10^{5}$,
-it  occurs  only  after  $t\sim 10^{-5}$  for  $\Omega=  1.0$  (Figure
+longer period of time, the transition  to the second and third bending
+regime  are however  delayed  relatively to  the  case $\Omega=  10^5$
+(Figure    \ref{C4-Scaling_HR_ELAS_Omega}).     For   instance,    for
+$\nu=10^{-3}$ and $Pe=1.0$, while the transition to the second bending
+phase already begins at $t\sim 10^{-6}$ for $\Omega=10^{5}$, it occurs
+only    after   $t\sim    10^{-5}$   for    $\Omega=   1.0$    (Figure
 \ref{C4-Scaling_HR_ELAS_Omega}).
 
 \begin{figure}[h!]
@@ -356,13 +401,13 @@ it  occurs  only  after  $t\sim 10^{-5}$  for  $\Omega=  1.0$  (Figure
       $h_0=   0.7h_f^{-1/11}\nu^{-2/11}t^{8/22}$    for   $\nu=0.001$.
       Right: Dimensionless  radius $R$  versus dimensionless  time $t$
       for  the  same  sets $(\Omega,Pe)$.   Dotted-line:  scaling  law
-      $R= 2.2h_f^{1/22}\nu^{1/11}t^{7/22}$ for $\nu  = 0.001$. In  all
+      $R= 2.2h_f^{1/22}\nu^{1/11}t^{7/22}$ for $\nu  = 0.001$.  In all
       simulations, $\nu=0.001$ and $\eta(\theta)=\eta_1$.}
     \label{C4-Scaling_HR_ELAS_Omega}
   \end{center}
 \end{figure}
 
-In addition, the second phase  of thickening shows two different stages
+In addition, the second phase of thickening shows two different stages
 for $\Omega =  1.0$ and $Pe=100.0$, a first stage  where the thickness
 drastically increases and a second stage where it continues increasing
 but   much  slower   (Figure  \ref{C4-Scaling_HR_ELAS_Omega}).    This
@@ -390,8 +435,8 @@ $\eta_1(\theta)$ (Figure \ref{C4-Rheology}).
       $h_0=  0.7h_f^{-1/11}\nu^{-2/11}t^{8/22}$  for  $\nu  =  0.001$.
       Right: Dimensionless  radius $R$  versus dimensionless  time $t$
       for  the  same  sets   $(\eta,Pe)$.   Dotted-line:  scaling  law
-      $R=  2.2h_f^{1/22}\nu^{1/11}t^{7/22}$  for $\nu=0.001$.  In  all
-      simulations, $\nu=0.001$ and  $\Omega=1.0$.}
+      $R=  2.2h_f^{1/22}\nu^{1/11}t^{7/22}$ for  $\nu=0.001$.  In  all
+      simulations, $\nu=0.001$ and $\Omega=1.0$.}
     \label{C4-Scaling_HR_ELAS_Rheology}
   \end{center}
 \end{figure}
@@ -569,19 +614,6 @@ now larger and equal to
   \label{C4-tb3}
 \end{equation}
 
-\subsection{Size of the thermal aureole}
-\label{C4-sec:char-therm-anom}
-
-The size  of the  thermal aureole, the  heated region  surrounding the
-current,  scales as  $(\kappa_r  \tau)^{1/2}$,  i.e.  $Pe^{-1/2}$  and
-hence is  much larger  for small  values of  $Pe$.  Indeed,  for large
-values of $Pe$, advection dominates  on the emplacement time scale and
-the thermal aureole  is restricted to a small zone  around the current
-(Figure \ref{C4-Grid_PeOmega_Heating}). For instance, the thickness of
-the thermal aureole at the center  for $Pe=1.0$ is almost equal to the
-current thickness $h_0$ whereas it is  only a few percent of $h_0$ for
-$Pe=100.0$ (Figure \ref{C4-Grid_PeOmega_Heating}).
-
 \section{Evolution in the gravity regime}
 \label{C4-sec:evol-grav-regime}
 
@@ -593,10 +625,10 @@ $P=h$. We follow the same framework as in the previous section.
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
-    \includegraphics[scale=0.55]{Grid_PeOmega_GRAV_Berco_1.eps}
+    \includegraphics[scale=0.55]{Grid_PeOmega_GRAV_Berco_100.eps}
     \caption{Snapshots of  the flow thermal  structure $\theta(r,z,t)$
       for  different  sets  ($Pe$,$\Omega$)  with  $Pe=  1.0$  ,$10.0$
-      ,$100.0$   and   $\Omega=10^5$   and  $1.0$   at   $t=200$   for
+      ,$100.0$   and   $\Omega=10^5$   and  $1.0$   at   $t=100$   for
       $\nu=0.01$. The thermal structure above  the current is given by
       (\ref{C4-eq11})    and   reads    in   a    dimensionless   form
       $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\frac{\kappa_m}{\kappa_r}\frac{(z-h)}{2\sqrt{t}}\right)}$
@@ -975,7 +1007,7 @@ $10^{-4}$ to $10^{-10}$.
 
 It  is generally  assumed  that  the magma  stops  spreading when  its
 crystal   content  becomes   close  to   its  maximum   packing,  i.e.
-$\phi \sim 60\%$ \citep{Pinkerton:1992fw}.  Beyond this point, crystal
+$\phi \sim 60\%$ \citep{Pinkerton:1992fwa}.  Beyond this point, crystal
 collisions  dominate and  the viscosity  jumps to  much higher  values
 \citep{Lejeune:1995fc,Giordano:2008em}.   We   assume  that   this  is
 equivalent to  $\eta_e$ tending to  $\eta_c$ in our model.   With this
@@ -1029,8 +1061,8 @@ viscosity    contrast   close    to    $8$    orders   of    magnitude
 with  the  felsic composition  of  these  laccoliths, and  $h_f=0.001$
 (Figure \ref{C4-Data} a) \citep{Marsh:1981dc,Diniega:2013eh}.  Varying
 $h_f$ has only minor effect on  the best fit viscosity contrast and is
-discussed in Appendix \ref{chap:A2}.  Therefore, introducing
-the  cooling in  the elastic-plated  gravity current  model allows  to
+discussed  in  Appendix  \ref{chap:A2}.   Therefore,  introducing  the
+cooling  in  the  elastic-plated   gravity  current  model  allows  to
 reconciliate the model predictions and the observations in the case of
 laccoliths  (Chapter \ref{chap2}).   In particular,  the shape  of the
 laccolith at  Elba Island  is now entirely  consistent with  the model
@@ -1155,9 +1187,9 @@ different intrusion depths,  is not enough to  explain the variability
 in  the  size  of   terrestrial  laccoliths.   An  additional  cooling
 mechanism, amplifying the effect of  $Pe$, is thus required to explain
 the exact extent  of laccoliths, which could be extraction  of heat by
-circulation of fluid on Earth. To test this hypothesis, we look at the
-low-slope domes on  the Moon where conduction is most  likely the only
-source of cooling.
+circulation  of fluid  on Earth  \citep{Senger:2014tt}.  To  test this
+hypothesis,  we  look  at  the  low-slope  domes  on  the  Moon  where
+conduction is most likely the only source of cooling.
 
 \subsection{Low-slope lunar domes}
 \label{sec:appl-arrest-terr-1}
@@ -1312,9 +1344,98 @@ information about the intrusion depth and the relationship between the
 different sill units, which are  not given by \citet{Cruden:tg}, would
 be required to precisely test this hypothesis.
 
-\subsection{Thermal aureole}
+\subsection{Contact aureole}
 \label{sec:thermal-aureol}
 
+Contact  metamorphism  often  occurs   in  the  vicinity  of  magmatic
+intrusion
+\citep{Jaeger:1959du,SILLITOE:1998bs,Senger:2014tt}. Metamorphism is a
+complex process and in the following, we discuss only the dimension of
+the thermal aureole in the  viscinity of laccoliths which have stopped
+in the third bending regime.
+
+
+\begin{figure}[h!]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.42]{Contact_Aureole_Pe1.eps}
+    \caption{a)  Snapshot  of  the  flow thermal  structure  with  its
+      surrounding  thermal   aureole  at   $t=10$  for   $Pe=1.0$  and
+      $\nu=10^{-3}$.  Isotherms  are indicated  on the plot.   b) Same
+      plot but for $Pe=10.0$.}
+    \label{Contact_Areuol2}
+  \end{center}
+\end{figure}
+
+We define  the thickness of  the thermal  aureole by the  region where
+$\Theta_r>0.1$  above the  center of  the flow.   Therefore, inverting
+(\ref{C4-eq11}) gives  $L_h(t)$, the maximum thickness  of the thermal
+aureole above the intrusion
+\begin{equation}
+  L_h(t)                                                           =
+  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t)}\right)2Pe^{-1/2}t^{1/2}
+  \label{Aureol}
+\end{equation}
+
+$L_h$ scales as  $Pe^{-1/2}$ and hence, is larger for  small values of
+$Pe$ (Figure \ref{Contact_Areuol2}). Indeed, for large $Pe$, advection
+dominates on  the emplacement  time scale and  the thermal  aureole is
+restricted   to   a   small    zone   around   the   current   (Figure
+\ref{Contact_Areuol2}).  For  instance, the  thickness of  the contact
+aureole $L_h(t)$  at $t=10$ is  almost equal to the  current thickness
+$h_0$  for $Pe=1$  whereas  it is  only  a few  percent  of $h_0$  for
+$Pe=10.0$ (Figure \ref{C4-Grid_PeOmega_Heating}).
+
+The dimension of  the thermal aureole also depends  on the emplacement
+time $t$; the longer the injection, the more heated the wall rocks and
+the larger  the thermal  aureole. We have  shown that  laccoliths have
+most likely  stopped in the third  bending phase and a  lower estimate
+for the emplacement time  as a function of $Pe$ and  $\nu$ is given by
+$t_{b3}$ (\ref{C4-tb3}).  Injecting (\ref{C4-tb3}) into (\ref{Aureol})
+gives
+\begin{equation}
+  L_m                                                           =1.6
+  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t_{b3})}\right)h_f^{-2/17}\nu^{-4/17}Pe^{-3/17}St_m^{-11/34}
+  \label{Aureol2}
+\end{equation}
+and therefore
+\begin{equation}
+  L_m/h_0                                                           =2.5
+  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t_{b3})}\right)h_f^{1/17}\nu^{2/17}Pe^{-7/17}St_m^{-3/34}
+  \label{Aureol3}
+\end{equation}
+While the  absolute size of  the thermal aureole $L_m$  increases with
+decreasing  $Pe$ and  $\nu$  (\ref{Aureol2}), the  ratio $L_m/h_0$  is
+smaller for larger viscosity contrasts (Figure \ref{PhaseHeating}).
+
+
+For   the   felsic   laccoliths   at   Elba   Island,   we   estimated
+$\nu \sim 10^{-9}$ and  $Pe\sim 10^{-3}$ (Figure \ref{C4-PhaseDiag} b)
+and thus,  the thermal aureole  should reach $300\%$ of  the intrusion
+thickness at the center of  the flow. Important temperature variations
+however, i.e. $\Theta_r>0.8$, should be  restricted to the vicinity of
+the  current, i.e.   $\sim 50\%$  of the  intrusion thickness  (Figure
+\ref{C4-PhaseDiag} a).  Theses estimates  represent upper bound as the
+temperature at the surface $\Theta_s(r=0,t)$  is most likely not equal
+to $1$  for such small  number $Pe$.   In addition, the  model neither
+accounts  for horizontal  thermal conduction,  nor for  circulation of
+fluid in the wall rocks, both effects that which should also limit the
+size of the thermal aureole.
+
+\begin{figure}[h!]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.35]{ThermalAureol_50Point_2figure.eps}
+    \caption{a) Size of the thermal  aureole above the intrusion $L_c$
+      normalized by the intrusion thickness at the center $h_0$ ($\%$)
+      (\ref{Aureol3}) when  it reaches  the third  bending phase  as a
+      function of the  number $Pe$ and $\nu$.  b) Same  plot but where
+      the thermal  aureole is  defined with $\Theta_r=0.8$  instead of
+      $0.1$  (\ref{Aureol3}).   In  both  plot,  we  set  $h_f=0.001$,
+      $St_m=0.1$ and $\Theta_s(r=0,t_{b3})=1$.}
+    \label{PhaseHeating}
+  \end{center}
+\end{figure}
 
 
 \section{Summary and discussion}
@@ -1323,47 +1444,45 @@ be required to precisely test this hypothesis.
 In this chapter, we discuss a more realistic model for the emplacement
 of magmatic intrusions in the shallow crust of terrestrial planets. In
 particular, we  describe the dynamics  of a magma characterized  by an
-Arrhenius rheology  and heating the  surrounding layer as  it spreads.
-We show  that relaxing  the thermal  boundary condition  decreases the
-heat loss in the surrounding rocks and therefore, allows the intrusion
-to stay hot  for a longer period of time.   In particular, the thermal
-anomaly detaches  slower from the  tip of  the intrusion and  does not
-reach a steady  state anymore in the gravity regime  as the heating of
-the  surrounding medium  constantly  decreases the  heat  loss in  the
-central   region.   Nevertheless,   the  Arrhenius   rheology  largely
-compensates for the delay in the  transition induced by the heating of
-the surrounding medium. Therefore, except  for the third phase in both
-regimes which is reached slightly later, the dynamics shows only small
-variations in comparison to the one described in chapter \ref{C3-JFM}.
+Arrhenius rheology and heating the wall  rocks as it spreads.  We show
+that relaxing the  thermal boundary condition retains  the heat within
+the flow and therefore, allows the  intrusion to stay hot for a longer
+period of  time.  In particular,  the thermal anomaly  detaches slower
+from the tip of the intrusion.  It  also does not reach a steady state
+anymore in the gravity regime as the heating of the surrounding medium
+constantly   decreases  the   heat   loss  in   the  central   region.
+Nevertheless, the Arrhenius rheology largely compensates for the delay
+in the transitions  induced by the heating of  the surrounding medium.
+At  the end,  except for  the  third phase  in both  regimes which  is
+reached slightly  later, the dynamics  shows only small  variations in
+comparison to the one described in chapter \ref{C3-JFM}.
 
 Application of this  model to the christmas-tree  laccolith complex at
-Elba  Island  shows  that  the  cooling  allows  to  reconciliate  the
-elastic-plated  gravity  current  model  with  the  observations.   In
-particular,  we  show  that  the  size  of  these  laccoliths  is  now
-consistent with  their arrest in  the third bending phase.   The model
-predicts an injection rate close  $0.1$ m$^3$ s$^{-1}$ and a viscosity
-contrast close to  $8$ orders of magnitude consistent  with the felsic
-composition of these laccoliths.   Nevertheless, the dependence of the
-number $Pe$, resulting from different  intrusion depths, is not enough
-to  explain the  variability  in  the size  of  these laccoliths.   An
-additional cooling mechanism,  amplifying the effect of  $Pe$, is thus
-required to explain the exact  extent of these laccoliths, which could
-be  extraction of  heat  by circulation  of  fluid.  However,  further
-applications to low-slope lunar domes, where conduction is more likely
-to  be  the  only  cooling  mechanism, do  not  show  better  results.
-Therefore, further mechanisms than cooling might be invoked to explain
-the arrest of magmatic intrusion in the laccolith regime.
+Elba   Island  shows   that   cooling  allows   to  reconciliate   the
+elastic-plated gravity  current model  with the  observations. Indeed,
+their   size    is   consistent   with   their    felsic   composition
+($\nu  \sim   10^{-8}$)  and  their   arrest  in  the   third  bending
+phase. However, the model does  not capture the second order variation
+in the laccolith dimensions. Indeed, while  the mean trend in the data
+is consistent with the model, conduction  alone is not able to explain
+the variability  around this trend.  Further  application to low-slope
+lunar domes,  where conduction is more  likely to be the  only cooling
+mechanism, leads  to the  same conclusions.   The model  thus suggests
+that other mechanism are responsible for the arrest of laccoliths.
 
-Lager and more detailed observations could provide further insights in
-the emplacement of these  laccoliths. In addition, precise information
+In the end, while some progress  has been made in the understanding of
+the  emplacement  of these  shallow  magmatic  intrusions, a  complete
+picture of  the solution, in regard  to the evolution of  the size and
+thickness of  the intrusion  as a  function of  the parameters  of the
+problem (elasticity and  toughness of the host rock,  viscosity of the
+magma, injection rate  of the feeder dyke, and  depth of emplacement),
+has not  yet been obtained.   In general, more  detailed observations,
+especially  at  the tip  of  these  shallow magmatic  intrusions,  may
+provide further insights in the arrest mechanism.  Precise information
 on the extent of the thermal  aureole, which has not yet been reported
-in the  literature, could  provide precious  constrain for  the model.
-While  some research  has  been  conducted in  this  area, a  complete
-picture of  the solution has not  yet been obtained, in  regard to the
-evolution of the size and thickness  of the intrusion as a function of
-the parameters  of the problem  (elasticity and toughness of  the host
-rock, viscosity of  the magma, injection rate of the  feeder dyke, and
-depth of emplacement).
+in  the literature,  could  also provide  precious  constrain for  the
+model.
+
 
 %%% Local Variables:
 %%% mode: latex

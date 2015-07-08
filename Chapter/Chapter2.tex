@@ -112,38 +112,22 @@ these boundary conditions and the horizontal velocity is
 \vspace{.5cm} \textbf{Injection rate} \vspace{.5cm}
 
 Assuming a Poiseuille flow within the cylindrical feeding conduit, the
-vertical injection velocity $w_i(r,t)$ within the conduit reads
+vertical  injection velocity  $w_i(r,t)$ and  constant injection  rate
+$Q_0$ are given by
 \begin{equation}
-  w_i=
+  w_i(r,t)=
   \begin{cases}
     \frac{ \Delta P}{4 \eta_h Z_{c}} (\frac{a^{2}}{4}-r^{2})& r \le \frac{a}{2}\\
     0 & r > \frac{a}{2}
   \end{cases}
   \label{C2-eq12}
 \end{equation}
-and depends on the effective  overpressure $\Delta P^*(t)$ driving the
-flow.   The  effective  overpressure  $\Delta  P^*(t)$  and  then  the
-injection  rate  $Q(t)$  decrease  as  the  weight  of  the  intrusion
-increases at the center and read
-\begin{eqnarray}
-  \Delta P^*(t) &=& \Delta P -\rho_m g h_0(t) \label{C2-Q0}\\
-  Q(t) &=& Q_0(1-\frac{\rho_m g h_0(t)}{\Delta P}) \label{C2-eq11}
-\end{eqnarray}
-where $\Delta  P$ is the  initial overpressure or the  overpressure at
-the       base       of       the      dyke       ($z=-Z_c$)       and
-$Q_0=\left(\pi \Delta P a^{4}\right)/\left(128 \eta_h Z_c\right)$.  In
-(\ref{C2-Q0}), the  bending pressure  at the  center, which  scales as
-D$h_0(t)/R(t)^4$  where  $R(t)$  is   the  current  radius,  has  been
-neglected.  Although  it tends  to infinity at  the initiation  of the
-flow, it rapidly  vanishes as the current spreads  and the hydrostatic
-pressure $\rho_m g h_0$ becomes  the main contribution to the pressure
-at the  center.  In addition, the  model assumes a large  aspect ratio
-for the flow and does not consider the initiation of the flow itself.
-
-Later in this thesis, we will  also consider a constant flux injection
-where  $\Delta  P^*=\Delta P$  and  the  injection rate  is  constant,
-i.e.     $Q(t)=Q_0$.    Implicitely,     it    thus     assumes    that
-$\Delta P \gg \rho_m g h_0$.
+\begin{equation}
+  Q_{0}=\frac{\pi \Delta P a^{4}}{128 \eta_h Z_c}
+  \label{C2-eq11}
+\end{equation}
+where  $\Delta P$  is  the  initial overpressure  within  the melt  at
+$z=Z_{c}$.
 
 \vspace{.5cm} \textbf{Mass conservation} \vspace{.5cm}
 
@@ -182,7 +166,7 @@ $\Lambda$, a vertical scale $H$ and a time scale $\tau$ given by
   \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{C2-T1}
 \end{eqnarray}
 in which scales are chosen such  that $Q_0 = \pi\Lambda^2 H/\tau$. The
-length scale $\Lambda$ represents the  flexural wavelength of the upper
+length scale $\Lambda$ represents the flexural wavelength of the upper
 elastic layer,  i.e. the  length scale at  which bending  stresses and
 gravity  equally contribute  to flow.   The  height scale  $H$ is  the
 thickness of  a typical gravity current  and the time scale  $\tau$ is
@@ -200,21 +184,13 @@ The dimensionless equation is
                                     \frac{\partial}{\partial
                                     r}\nabla_r^4h\right)\nonumber\\
                                &+&
-                                   \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\left(1-\frac{h_0}{\sigma}\right)
+                                   \mathcal{H}(\frac{\gamma}{2}-r)\frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)
                                    \label{C2-mainEq}
 \end{eqnarray}
-where the last term is replaced by zero for $r>\gamma/2$. $\gamma$ and
-$\sigma$ are two dimensionless numbers controlling the dynamics of the
-flow
-\begin{eqnarray}
-  \gamma &=& \frac{a}{\Lambda}\\
-  \sigma &=& \frac{\Delta P}{\rho_m g H}.
-\end{eqnarray}
-$\gamma$  is the  dimensionless radius  of  the conduit,  it does  not
-significantly influence the flow and is set to $0.02$ in the following
-\citep{Michaut:2009jx,Michaut:2011kg}.   $\sigma$  is  the  normalized
-pressure  head,  i.e.,  the  ratio between  the  initial  overpressure
-driving the flow and the weight of the magma at the center.
+where $\mathcal{H}$ is the  Heaviside function and $\gamma=a/\Lambda$.
+$\gamma$  is the  dimensionless radius  of  the conduit  and does  not
+significantly influence the flow; it is set to $0.02$ in the following
+\citep{Michaut:2009jx,Michaut:2011kg}.
 	 
 \subsection{Need for regularization}
 \label{C2-sec:need-regularization}
@@ -353,20 +329,17 @@ to  the  dome-shaped  morphology   of  solidified  laccoliths  (Figure
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter2/} }
-    \includegraphics[scale=0.4]{C2_ELAS_GRAV_Sigma.eps}
+    \includegraphics[scale=0.38]{C2_ELAS_GRAV_Sigma.eps}
     \caption{Left: Dimensionless thickness at  the center $h_0$ versus
       dimensionless  time  $t$  for  different  dimensionless  numbers
       $\sigma$ indicated on the  plot.  The dashed-line represents the
       scaling       law       in        the       bending       regime
-      $h_0(t)=0.7 h_f^{-1/11}t^{8/22}$, the dotted line in the gravity
-      regime $h_0(t) = 2.1$ and  the dashed-dotted line in the lateral
-      propagation  regime $h_0=\sigma$.   Right: Dimensionless  radius
-      $R$  versus dimensionless  time $t$  for the  same dimensionless
-      number $\sigma$.  The dashed-line  represents the scaling law in
-      the bending  regime $R(t)  = 2.2h_f^{1/22}t^{7/22}$,  the dotted
-      line  in  the  gravity  regime   $R(t)  =  1.2t^{1/2}$  and  the
-      dashed-dotted   line   in   the   lateral   propagation   regime
-      $R(t)=\left(\sigma^3 t/(4\pi)\right)^{1/4}$.}
+      $h_0(t)=0.7  h_f^{-1/11}t^{8/22}$ and  the  dotted  line in  the
+      gravity regime $h_0(t) =  1.6$.  Right: Dimensionless radius $R$
+      versus dimensionless time $t$  for the same dimensionless number
+      $\sigma$.   The dashed-line  represents the  scaling law  in the
+      bending  regime $R(t)  = 2.2h_f^{1/22}t^{7/22}$  and the  dotted
+      line in the gravity regime $R(t) = 1.2t^{1/2}$.}
     \label{C2_ELAS_GRAV_Sigma}
   \end{center}
 \end{figure}
@@ -395,29 +368,11 @@ effect  of gravity,  the  flow shows  an  interior flat-topped  region
 morphology     is     also     observed    for     many     laccoliths
 \citep{Koch:1981if,Bunger:2011cb}.
 
-\subsection{Lateral propagation}
-\label{C2-sec:lateral-propagation}
-
-Once $h_0\rightarrow \sigma$,  the flow is thick  enough to compensate
-for  the initial  overpressure. The  thickness at  the center  remains
-constant and  the flow enters  a regime of lateral  propagation, where
-only  its radius  $R(t)$  increases  \citep{Michaut:2011kg}.  In  this
-regime, except at the center  where it redistributes the pressure over
-a length scale $\Lambda$, the bending term becomes negligible compared
-to the gravitational  term as lateral propagation in  enhanced and $R$
-reaches    $\sim   4\Lambda$    more   quickly.     In   that    case,
-\citet{Michaut:2011kg} has  shown that the thickness  remains constant
-and the radius evolves as $t^{1/4}$
-\begin{eqnarray}
-  R(t) &=& \left(\frac{\sigma^3 t}{4\pi}\right)^{1/4}\label{C2-Scaling-R-Propa}\\
-  h_0 &=& \sigma\label{C2-Scaling-H-Propa}
-\end{eqnarray} 
-The intrusion shows a disk-like  shape, similar to the gravity-current
-morphology. Therefore, the  model is able to reproduce  the variety of
-shapes of intermediate scale magmatic  intrusions: from the dome shape
-and flat topped morphology of laccolith to the disk-like morphology of
-large mafic  sills.  In the  following, we quantitatively  compare the
-model predictions to some observations on terrestrial planets.
+Therefore, the  model is able  to reproduce  the variety of  shapes of
+intermediate scale magmatic  intrusions: from the dome  shape and flat
+topped morphology  of laccolith to  the disk-like morphology  of large
+mafic sills.   In the following,  we quantitatively compare  the model
+predictions to some observations on terrestrial planets.
 
 
 \section{Application to the spreading of shallow magmatic intrusions}
@@ -771,21 +726,21 @@ Injecting this expression into (\ref{C2-moment}) and (\ref{C2-KC}) and
 inverting  for  the radius,  one  can  then  found that  the  critical
 dimensionless radius $R_{cr}$ for the laccolith is
 \begin{equation}
-  R_{cr} \sim \frac{0.5 E^{7/6} H^{4/3} K_{m}^{7/6}}{K_{c}^{7/6} \Lambda^{4/3}} d^{7/4}
+  R_{cr} \sim \frac{0.4 E^{7/6} H^{4/3} K_{m}^{7/6}}{K_{c}^{7/6} \Lambda^{7/3}} d^{7/4}
 \end{equation}
 which, in terms of the parameters, reads
 \begin{equation}
-  R_{cr} \sim 3 E^{7/12}K_{m}^{7/6} Q_{0}^{1/3} \eta_h^{1/3} g^{1/4} \rho_m^{1/4}}K_{c}^{-7/6}
+  R_{cr} \sim 2.2 E^{7/12}K_{m}^{7/6} Q_{0}^{1/3} \eta_h^{1/3} g^{1/4} \rho_m^{1/4}}K_{c}^{-7/6}
 \end{equation}
 and therefore mainly depends in the fracture toughness of the encasing
 rocks.  On can calculate that for typical crustal and magma parameters
 for terrestrial laccoliths  (Section \ref{C2-sec:appl-earth-moon}) and
 the largest reported  value for the parameter  $K_c=10$ MPa m$^{1/2}$,
-the critical radius is equal  to $\sim 80\Lambda$ and therefore, still
-much larger than the transition radius between the bending and gravity
-regime $R= 4\Lambda$.  Therefore, while fracturation might explain the
-arrest  for  large mafic  sills,  it  does  not provide  a  sufficient
-mechanism for the arrest of laccoliths.
+the dimensionless critical radius is equal to $\sim 60$ and therefore,
+still much larger than the dimensionless transition radius between the
+bending  and gravity  regime  $R= 4$.   Therefore, while  fracturation
+might explain the arrest for large  mafic sills, it does not provide a
+sufficient mechanism for the arrest of laccoliths.
 
 \subsection{Discussion}
 \label{C2-sec:discussion-1}

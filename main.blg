@@ -13,49 +13,53 @@ A level-1 auxiliary file: Appendix/Appendix3.aux
 The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in Bertozzi:1998wz
 Warning--empty journal in Dixon:1987js
 Warning--empty journal in Harris:2000jd
 Warning--empty journal in Anonymous:QWXp_4JV
 Warning--empty journal in Horsman:2009gea
-You've used 108 entries,
+Warning--empty journal in Jaeger:1959du
+Warning--empty journal in Pinkerton:1992fwa
+Warning--empty journal in Senger:2014tt
+You've used 114 entries,
             3076 wiz_defined-function locations,
-            1755 strings with 27733 characters,
-and the built_in function-call counts, 98487 in all, are:
-= -- 11153
-> -- 2954
-< -- 64
-+ -- 1407
-- -- 817
-* -- 5994
-:= -- 9246
-add.period$ -- 108
-call.type$ -- 108
-change.case$ -- 469
-chr.to.int$ -- 109
-cite$ -- 112
-duplicate$ -- 10972
-empty$ -- 5708
-format.name$ -- 1168
-if$ -- 19624
+            1794 strings with 28938 characters,
+and the built_in function-call counts, 104460 in all, are:
+= -- 11850
+> -- 3120
+< -- 68
++ -- 1489
+- -- 863
+* -- 6340
+:= -- 9786
+add.period$ -- 114
+call.type$ -- 114
+change.case$ -- 494
+chr.to.int$ -- 115
+cite$ -- 122
+duplicate$ -- 11648
+empty$ -- 6044
+format.name$ -- 1230
+if$ -- 20817
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1021
-newline$ -- 331
-num.names$ -- 432
-pop$ -- 3793
+missing$ -- 1080
+newline$ -- 349
+num.names$ -- 456
+pop$ -- 4051
 preamble$ -- 1
-purify$ -- 362
+purify$ -- 381
 quote$ -- 0
-skip$ -- 6106
+skip$ -- 6476
 stack$ -- 0
-substring$ -- 4338
-swap$ -- 9381
-text.length$ -- 2
+substring$ -- 4617
+swap$ -- 9968
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 969
-warning$ -- 4
-while$ -- 567
+type$ -- 1023
+warning$ -- 8
+while$ -- 604
 width$ -- 0
-write$ -- 1164
-(There were 4 warnings)
+write$ -- 1226
+(There were 8 warnings)

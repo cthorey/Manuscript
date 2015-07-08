@@ -60,9 +60,10 @@ class Figure_chapter_2(Plot):
 
         for key,run in self.d_w.iteritems():
             ind =self.Indice_time(run,[1e-4])[0]
-            tm = run.tm[ind:]
-            R = run.R[ind:]
-            H = run.H[ind:]
+            ind2 =self.Indice_time(run,[6e2])[0]
+            tm = run.tm[ind:ind2]
+            R = run.R[ind:ind2]
+            H = run.H[ind:ind2]
             ax_left.loglog(tm,H,
                            label = self._m_label(run,'sigma'),
                            color = self.m_Kwargs(run.nu,run.gam))
@@ -71,7 +72,7 @@ class Figure_chapter_2(Plot):
                             color = self.m_Kwargs(run.nu,run.gam))
 
         tm = np.arange(1e-4,1e3)
-        ax_left.loglog(tm,2.1*run.nu**(-1./4.)*tm/tm,
+        ax_left.loglog(tm,1.6*run.nu**(-1./4.)*tm/tm,
                        color = 'k',
                        linestyle = ':')
         ax_right.loglog(tm,1.15*run.nu**(1./8.)*tm**(1./2.),
@@ -83,18 +84,18 @@ class Figure_chapter_2(Plot):
         ax_right.loglog(tm,2.22*run.delta0**(1./22.)*run.nu**(1./11.)*tm**(7./22.),
                         color = 'k',
                         linestyle = '--')
-        ax_left.loglog(tm, tm/tm,color = 'k',linestyle = '-.')
-        ax_right.loglog(tm, (tm/(4*np.pi))**(1./4.),color = 'k',
-                        linestyle = '-.')
+        # ax_left.loglog(tm, tm/tm,color = 'k',linestyle = '-.')
+        # ax_right.loglog(tm, (tm/(4*np.pi))**(1./4.),color = 'k',
+        #                 linestyle = '-.')
         
         self.x_label = r'Dimensionless time $t$' 
         self.y_label = r'Dimensionless thickness $h_0$'
         self.y_lim = 1e-2,10
-        self.m_axes(ax_left)
+        self.m_axes_Ss_L(ax_left)
         self.x_label = r'Dimensionless time $t$' 
         self.y_label = r'Dimensionless radius $R$'
         self.y_lim = 1e-2,1e2
-        self.m_axes(ax_right) 
+        self.m_axes_Ss_L(ax_right) 
         self.m_save_fig(fig)
         
     def C2_ELAS_GRAV_Profil(self):
