@@ -85,6 +85,6 @@
     "Aureol"
     "Aureol2"
     "Aureol3"
-    "PhaseHeating"
+    "PhaseHeatingContact"
     "sec:discussion")))
 

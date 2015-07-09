@@ -15,6 +15,7 @@
     "Chapter/Chapter2"
     "Chapter/Chapter3"
     "Chapter/Chapter4"
+    "Chapter/Chapter7"
     "Appendix/Appendix1"
     "Appendix/Appendix2"
     "Appendix/Appendix3"
