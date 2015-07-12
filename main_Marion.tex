@@ -1,0 +1,526 @@
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 1.43 (17/5/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original authors:
+% Steven Gunn 
+% http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/
+% and
+% Sunil Patel
+% http://www.sunilpatel.co.uk/thesis-template/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Note:
+% Make sure to edit document variables in the Thesis.cls file
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, twoside]{Thesis} % The default font size and one-sided printing (no margin offsets)
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines the thesis title - don't touch this
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{colorrlstd}{rgb}{1,0,0}
+\definecolor{colorrlnorm}{rgb}{0.7529,0.3098,0.0902}
+\definecolor{colorbay}{rgb}{0,0,1}
+\definecolor{prettyblue}{rgb}{0.8,0.7,0.9}
+\definecolor{color_valinfo}{rgb}{0.7,0.7,1}
+\definecolor{colordist}{rgb}{0,0.5961,0}
+\definecolor{colormixed}{rgb}{0.7020,0.3098,0.5843}
+\definecolor{colormixedmanip1}{rgb}{0.6,0.2784,0.6078}
+\definecolor{coloronlinebay}{rgb}{0.,0.7098,0.7451}
+\usepackage{array}
+
+
+% packages for drawings of generative model
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{probsoln}
+\usepackage{tikz}
+\usepackage{empheq}
+\usetikzlibrary{arrows}
+
+%\usepackage{apalike}
+%\usepackage{natbib}
+%\usepackage[sorting=nyt,backref=true,backrefstyle=two,bibstyle=authoryear,citestyle=authoryear,backend=bibtex8]{biblatex}
+%\addbibresource{LibraryThesis}
+
+\begin{document}
+
+% lines for generative model drawing
+\tikzstyle{state}=[shape=circle,draw=black!100,minimum size=.8cm,inner sep=0pt]
+\tikzstyle{observation}=[shape=circle,draw=black!100,fill=cyan!20, minimum size=.8cm,inner sep=0pt]
+\tikzstyle{proposedrew}=[shape=circle,draw=white!100,fill=white!100, minimum size=.8cm,inner sep=0pt]
+\tikzstyle{hparameter}=[shape=rectangle,draw=black!100, minimum size=.8cm,inner sep=0pt]
+\tikzstyle{lightedge}=[<-,dashed]
+\tikzstyle{mainstate}=[state,thick]
+\tikzstyle{mainedge}=[<-,thick]
+\tikzstyle{fake}=[shape=circle, draw=white!100]
+
+
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.3} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+
+
+%----------------------------------------------------------------------------------------
+%	title page
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+\noindent {\large \textbf{Ecole Normale SupÃ©rieure}} \\
+\vspace*{0.3cm}
+\noindent {\LARGE \textbf{Ecole doctorale Cerveau, Cognition, Comportement}} \\
+\vspace*{0.5cm}
+\noindent \Huge \textbf{ThÃ¨se de Doctorat} \\
+\vspace*{0.3cm}
+\noindent \large {to obtain the grade of} \\
+\vspace*{0.3cm}
+\noindent \LARGE \textbf{Docteur en Science} \\
+\vspace*{0.3cm}
+\noindent \Large de l'Ecole Normale SupÃ©rieure de Paris \\
+\noindent \Large \textbf{Speciality : \textsc{Neurosciences}}\\
+\vspace*{0.4cm}
+\noindent \large {Submitted by\\}
+\noindent \LARGE Marion \textsc{Rouault} \\
+\vspace*{0.8cm}
+\noindent {\Huge \textbf{Integration of beliefs and affective values in human decision-making}} \\
+\vspace*{0.8cm}
+\noindent \Large \textsc{Laboratoire de Neurosciences Cognitives},\\
+%\noindent \Large \'Equipe \textsc{Plan\'etologie et Sciences Spatiales},\\
+\vspace*{0.2cm}
+\noindent \large Defended on September 22, 2015. \\
+\vspace*{0.5cm}
+\end{center}
+\noindent \large \textbf{Evaluation committee:} \\
+\begin{center}
+\noindent \large 
+\begin{tabular}{llcl}
+      \textit{Thesis advisor}  &  Etienne  \textsc{Koechlin}  \\
+      \textit{Rapporteur}        & Timothy \textsc{Behrens}    \\
+      \textit{Rapporteur}	& Emmanuel \textsc{Procyk}  \\
+      \textit{Examinateur}	& Boris \textsc{Burle}  \\
+      \textit{Examinateur}	& Christian \textsc{Lorenzi}	\\
+      \textit{Examinateur}	& Mathias \textsc{Pessiglione}
+\end{tabular} 
+
+ %\textit{Examinateur}	& Mathias \textsc{Pessiglione}	& - & ICM (Paris)
+ 
+ 
+% \vfill
+% \includegraphics[height=2.5cm]{images/logos/ED.png}
+% \hspace{0.4cm}
+% \includegraphics[height=2.5cm]{images/logos/ipgp.png}
+% \hspace{0.4cm}
+% \includegraphics[height=2.5cm]{images/logos/IDF.png}
+% \hspace{0.4cm}
+% \includegraphics[height=2.5cm]{images/logos/DLR.jpeg}
+% \hspace{0.4cm}
+% \includegraphics[height=2.5cm]{images/logos/pres.png}
+
+\end{center}
+\end{titlepage}
+
+%\begin{titlepage}
+%\begin{center}
+%
+%\textsc{\large \univname}\\[1.5cm] % university name
+%\textsc{\large doctoral thesis}\\[0.5cm] % thesis type
+%
+%\hrule\\[0.4cm] % horizontal line
+%
+%
+%{\huge \bfseries \ttitle}\\[0.7cm] % thesis title
+%
+%
+%
+%\hrule \\[1.5cm] % horizontal line
+% 
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushleft} \large
+%\emph{author:}\\
+%\href{http://marionrouault.weebly.com}{\authornames} % author name - remove the \href bracket to remove the link
+%\end{flushleft}
+%\end{minipage}
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushright} \large
+%\emph{supervisor:} \\
+%\href{http://iec-lnc.ens.fr/frontal-lobe-functions-group/?lang=en}{\supname} % supervisor name - remove the \href bracket to remove the link  
+%\end{flushright}
+%\end{minipage}\\[3cm]
+% 
+%\large \textit{a thesis submitted in fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % university requirement text
+%\textit{in the}\\[0.4cm]
+%\groupname\\\deptname\\[2cm] % research group name and department name
+% 
+%{\large \today}\\[4cm] % date
+%%\includegraphics{logo} % university/department logo - uncomment to place it
+% 
+%\vfill
+%\end{center}
+%
+%\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	declaration page
+%	your institution may give you a different text to place here
+%----------------------------------------------------------------------------------------
+
+\declaration{
+\addtocontents{toc}{\vspace{1em}} % add a gap in the contents, for aesthetics
+
+i, \authornames, declare that this thesis titled, '\ttitle' and the work presented in it are my own. i confirm that:
+
+\begin{itemize} 
+\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this university.
+\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this university or any other institution, this has been clearly stated.
+\item[\tiny{$\blacksquare$}] Where i have consulted the published work of others, this is always clearly attributed.
+\item[\tiny{$\blacksquare$}] Where i have quoted from the work of others, the source is always given. with the exception of such quotations, this thesis is entirely my own work.
+\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
+\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, i have made clear exactly what was done by others and what i have contributed myself.\\
+\end{itemize}
+ 
+signed:\\
+\rule[1em]{25em}{0.5pt} % this prints a line for the signature
+ 
+date:\\
+\rule[1em]{25em}{0.5pt} % this prints a line to write the date
+}
+
+\clearpage % start a new page
+
+%----------------------------------------------------------------------------------------
+%	quotation page
+%----------------------------------------------------------------------------------------
+
+\pagestyle{empty} % no headers or footers for the following pages
+
+\null\vfill % add some space to move the quote down the page a bit
+
+\textit{``Il est certains esprits dont les sombres pens\'ees \\
+Sont d'un nuage \'epais toujours embarrass\'ees ; \\
+Le jour de la raison ne le saurait percer. \\
+Avant donc que d'\'ecrire, apprenez \`a penser. \\
+Selon que notre id\'ee est plus ou moins obscure, \\
+L'expression la suit, ou moins nette, ou plus pure. \\
+Ce que l'on con\c coit bien s'\'enonce clairement, \\
+Et les mots pour le dire arrivent ais\'ement."}
+
+\begin{flushright}
+Nicolas BOILEAU (1636-1711)
+\end{flushright}
+
+\vfill\vfill\vfill\vfill\vfill\vfill\null % add some space at the bottom to position the quote just right
+
+\clearpage % start a new page
+
+%----------------------------------------------------------------------------------------
+%	abstract page
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{\vspace{0.5em}} % Add a gap in the Contents, for aesthetics
+
+Executive control relates to the human ability to monitor and flexibly adapt behavior in relation to internal mental states. 
+Specifically, executive control relies on evaluating action outcomes for adjusting subsequent action. 
+
+Actions can be reinforced or devaluated given affective value of outcomes, notably in basal ganglia and medial prefrontal cortex. Additionally, outcomes convey information to adapt behavior in relation to internal beliefs, involving prefrontal cortex. Accordingly, action outcomes convey two major types of value signals: (1) Affective values, representing the valuation of action outcomes given subjective preferences and stemming from reinforcement learning; (2) Belief values about how actions map onto outcome contingencies and relating to Bayesian inference. 
+However, how these two signals contribute to decision remains unclear, and previous experimental paradigms confounded them. In this PhD thesis, we investigated whether their dissociation is behaviorally and neurally relevant.
+
+We present several behavioral experiments dissociating these two signals, in the form of probabilistic reversal-learning tasks involving stochastic and changing reward structures. We built a model establishing the functional and computational foundations of such dissociation. It combined two parallel systems: reinforcement learning, modulating affective values, and Bayesian inference, monitoring beliefs. The model accounted for behavior better than many other alternative models. 
+
+We then investigated whether beliefs and affective values have distinct neural bases using fMRI. BOLD signal was regressed against choice-dependent and choice-independent beliefs and affective values. VMPFC (ventromedial prefrontal cortex) and ACC (anterior cingulate cortex) activity correlated with both choice-dependent variables. However, we found a double-dissociation regarding choice-independent variables, with VMPFC encoding choice-independent beliefs, whereas ACC encoded choice-independent affective values. Additionally, activity in lateral prefrontal cortex (LPFC) increased when decision values (i.e. mixture of beliefs and affective values) got closer to each other and action selection became more difficult.
+
+These results suggest that before decision, VMPFC and ACC separately encode beliefs and affective values respectively. LPFC combines both signals to decide, then feeds back choice information to these medial regions, presumably for updating these value signals according to action outcomes. These results provide new insight into the neural mechanisms of decision-making in prefrontal cortex.
+
+\clearpage % Start a new page
+
+
+%----------------------------------------------------------------------------------------
+%	abstract page
+%----------------------------------------------------------------------------------------
+
+\addtotoc{French Abstract} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{\vspace{0.5em}} % Add a gap in the Contents, for aesthetics
+
+Le contr\^ole ex\'ecutif de l'action fait r\'ef\'erence \`a la capacit\'e de l'Homme \`a contr\^oler et adapter son comportement de mani\`ere flexible, en lien avec ses \'etats mentaux internes.
+Il repose sur l'\'evaluation des cons\'equences des actions pour ajuster les choix futurs.
+
+Les actions peuvent \^etre renforc\'ees ou d\'evalu\'ees en fonction de la valeur affective des cons\'equences, impliquant notamment les ganglions de la base et le cortex pr\'efrontal m\'edian.
+En outre, les cons\'equences des actions portent une information, qui permet d'ajuster le comportement en relation avec des croyances internes, impliquant le cortex pr\'efrontal.
+Ainsi, les cons\'equences des actions portent deux types de signaux :
+(1) Une valeur affective, qui repr\'esente l'\'evaluation de la cons\'equence de l'action selon les pr\'ef\'erences subjectives, issue de l'apprentissage par renforcement ;
+(2) Une valeur de croyance, mesurant comment les actions correspondent aux contingences externes, en lien avec l'inf\'erence bay\'esienne.
+Cependant, la contribution de ces deux signaux \`a la prise de d\'ecision reste m\'econnue.
+Dans cette th\`ese, nous avons \'etudi\'e la pertinence de cette dissociation aux niveaux comportemental et c\'er\'ebral.
+
+Nous pr\'esentons plusieurs exp\'eriences comportementales permettant de dissocier ces deux signaux de valeur, sous la forme de t\^aches d'apprentissage probabiliste avec des structures de r\'ecompense stochastiques et changeantes.
+Nous avons construit un mod\`ele \'etablissant les fondations fonctionnelles et computationnelles de la dissociation.
+Il combine deux syst\`emes en parall\`ele : un syst\`eme d'apprentissage par renforcement modulant les valeurs affectives, et un syst\`eme d'inf\'erence bay\'esienne modulant les croyances.
+Le mod\`ele explique mieux le comportement que de nombreux mod\`eles alternatifs.
+
+Nous avons ensuite \'etudi\'e, en IRM fonctionnelle, si les repr\'esentations d\'ependantes et ind\'ependantes du choix des croyances et des valeurs affectives avaient des bases neurales distinctes. 
+L'activit\'e du cortex pr\'efrontal ventrom\'edian (VMPFC) et du cortex cingulaire ant\'erieur (ACC) corr\`ele avec les deux variables d\'ependantes du choix.
+Cependant, une double-dissociation a \'et\'e identifi\'ee concernant les repr\'esentations ind\'ependantes du choix, le VMPFC \'etant sp\'ecifique des croyances alors que l'ACC est sp\'ecifique des valeurs affectives. 
+En outre, l'activit\'e du cortex pr\'efrontal lat\'eral augmente lorsque les deux valeurs de d\'ecision sont proches et que le choix devient difficile.
+
+Ces r\'esultats sugg\`erent qu'avant la d\'ecision, le cortex pr\'efrontal ventrom\'edian (VMPFC) et le cortex cingulaire ant\'erieur (ACC) encodent s\'epar\'ement les croyances et les valeurs affectives respectivement.
+Le cortex pr\'efrontal lat\'eral (LPFC) combine les deux signaux pour prendre une d\'ecision, puis renvoie l'information du choix aux r\'egions m\'edianes, probablement pour actualiser les deux signaux de valeur en fonction des cons\'equences du choix.
+Ces r\'esultats contribuent \`a \'elucider les m\'ecanismes c\'er\'ebraux de la prise de d\'ecision dans le cortex pr\'efrontal.
+
+\clearpage % Start a new page
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.3} % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+\remerciements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+Ces ann\'ees de th\`ese sont loin d'avoir \'et\'e un travail de recherche solitaire et isol\'e, aussi suis-je ravie d'avoir de nombreux remerciements \`a exprimer. J'esp\`ere n'oublier personne!
+
+Je souhaite remercier infiniment Etienne Koechlin d'avoir accept\'e d'encadrer ce travail de th\`ese. Je lui suis tr\`es reconnaissante de la confiance et de l'ind\'ependance qu'il m'a accord\'ees, ainsi que de sa patience. Sa passion pour les neurosciences aura \'et\'e contagieuse! Je lui exprime ma gratitude pour tout ce qu'il m'a transmis de sa conception du travail de recherche, et j'esp\`ere avoir h\'erit\'e de son exigence intellectuelle. J'ai appr\'eci\'e nos nombreuses discussions scientifiques et extra-scientifiques, qui j'esp\`ere se poursuivront bien au-del\`a de cette th\`ese.
+
+Je remercie les membres de mon jury d'avoir accept\'e d'\'evaluer ce travail, en particulier car j'imagine qu'il existe lectures plus agr\'eables en plein \'et\'e : Timothy Behrens, Boris Burle, Christian Lorenzi, Mathias Pessiglione et Emmanuel Procyk.
+
+Je remercie les nombreux volontaires qui ont accept\'e de participer \`a mes exp\'eriences, ainsi que les membres du CENIR et Alice, qui ont pass\'e de longues heures \`a m'aider \`a enregistrer les donn\'ees d'IRM.
+
+Je souhaite remercier toutes les personnes de l'\'equipe ``Frontal Lobe Functions", qui tour \`a tour ont aliment\'e une atmosph\`ere amicale. Gr\^ace \`a eux, ces quatre ann\'ees auront \'et\'e tr\`es stimulantes scientifiquement et intellectuellement : Muriel, Sven, Stefano, Valentin, Jan, H\'elo\"ise, Charles, Philippe, Gabriel et Ma\"el. Je remercie \'egalement Laura et Marine pour leur sympathie et leur efficacit\'e. 
+Un merci tr\`es chaleureux \`a Anne-Do et \`a Val\'erian pour leur bienveillance et leurs nombreux conseils.
+
+Je remercie Florence, H\'elo\"ise, Flora et Etienne qui ont pris le temps de relire des fragments de ce manuscript.
+
+Enfin, je remercie profond\'ement toutes les personnes qui ont fait du labo un environnement joyeux et amical : Guillaume, Marwa, Emma, Thibaud, Mariana, Muriel, Flora, H\'elo\"ise.##
+
+Je termine en exprimant ma gratitude aux personnes qui m'ont entour\'ees pendant ces ann\'ees de th\`ese et dont l'amiti\'e m'est pr\'ecieuse : , Ma\"ilys, Adrien et Lucie, Pauline, Am\'elie, Julie et Fran\c{c}ois, Laura ##
+es colocs, Fabian, Quentin et Aur\'elien, Florence
+
+Je tiens \`a remercier infiniment mes parents pour leur amour inconditionnel et leur soutien constant. Ils sous-estiment le fait que c'est aussi gr\^ace \`a eux que j'ai pu arriver aujourd'hui l\`a o\`u je voulais arriver. Je remercie aussi mes deux petites soeurs qui sont maintenant grandes : Pauline et Alice, qui ont parfois support\'e mes humeurs mais sont toujours pr\'esentes. Promis, quelque soit la distance g\'eographique, nous resterons proches!
+J'ai la chance d'tre entouree d une famille geniale 
+
+ajouter:
+Je remercie l'ENS de Lyon de m'avoir permis de faire de longues Žtudes et de m'avoir financŽe pendant mon doctorat. Promis, votre argent aura ŽtŽ bien utilise
+
+guillaume barbalat pour m avoir fait dŽcouvrir les neurosciences et pousse dans la bonne direction trs tot
+marie helene
+
+Enfin, je remercie Cl\'ement, pour tout!
+
+\begin{flushright}
+Paris, le 9 juillet 2015
+\end{flushright}
+
+
+}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+{
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+\textbf{ACC} & \textbf{A}nterior \textbf{C}ingulate \textbf{C}ortex \\
+\textbf{AIC} & \textbf{A}kaike \textbf{I}information \textbf{C}riterion \\
+\textbf{BIC} & \textbf{B}ayesian \textbf{I}information \textbf{C}riterion \\
+\textbf{BA} & \textbf{B}rodmann \textbf{A}rea \\
+\textbf{dmPFC} & \textbf{d}orso \textbf{m}edial \textbf{P}re \textbf{F}rontal \textbf{C}ortex \\
+\textbf{ERN} & \textbf{E}rror \textbf{R}elated \textbf{N}egativity\\
+\textbf{fMRI} & \textbf{f}unctional \textbf{M}agnetic \textbf{R}esonance \textbf{I}maging\\
+\textbf{FPC} & \textbf{F}ronto \textbf{P}olar \textbf{C}ortex\\
+\textbf{GLM} & \textbf{G}eneral \textbf{L}inear \textbf{M}odel \\
+\textbf{LPFC} & \textbf{L}ateral \textbf{P}re \textbf{F}rontal \textbf{C}ortex \\
+\textbf{LFP} & \textbf{L}ocal \textbf{F}ield \textbf{P}otential \\
+\textbf{LLH} & \textbf{L}og-\textbf{L}ikely\textbf{H}ood \\
+\textbf{OCD} & \textbf{O}bsessive \textbf{C}ompulsive \textbf{D}isorder \\
+\textbf{OFC} & \textbf{O}rbito \textbf{F}rontal \textbf{C}ortex \\
+\textbf{PFC} & \textbf{P}re \textbf{F}rontal \textbf{C}ortex \\
+\textbf{RL} & \textbf{R}einforcement \textbf{L}earning \\
+\textbf{ROI} & \textbf{R}egion \textbf{O}f \textbf{I}nterest \\
+\textbf{SMA} & \textbf{S}upplementary \textbf{M}otor \textbf{A}rea \\
+\textbf{tDCS} & \textbf{t}ranscranial \textbf{D}irect \textbf{C}urrent \textbf{S}timulation \\
+\textbf{TMS} & \textbf{T}ranscranial \textbf{M}agnetic \textbf{S}timulation \\
+\textbf{vmPFC} & \textbf{v}entro \textbf{m}edial \textbf{P}re \textbf{F}rontal \textbf{C}ortex \\
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\setstretch{1.3} % Set the line spacing to 1.3
+
+\lhead{\emph{Foreword}} % Set the left side page header to "Symbols"
+\listofnomenclature{lll} % Include a list of Symbols (a three column table)
+%\listnomenclature{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+%\chapter{Foreword}
+
+Decision-making is a critical feature for survival, in a permanently evolving environment. In humans, decisions are considered to be the ultimate expression of free will and voluntary behavior. Human behavior is characterized by an important flexibility and adaptability, two elements which allow humans to realize their internal goals through the decisions they make. This flexible adaptability is crucial especially given that everyday decisions take place in ever-changing environments. Accurately evaluating the value of choice options at stake is therefore critical. In this PhD work, we investigated the outcome evaluation mechanisms underlying free choice in sequential decisions, two features that are close to real-life choices.
+
+For centuries, philosophers, psychologists and economists have tempted to access our internal world through the means of introspection and the study of behavior. In the past decades, functional magnetic resonance imaging has revolutionized the study of human brain mechanisms. Despite providing only correlational evidence, it is a non invasive method allowing to investigate the neural bases of certain cognitive processes or variables. One of the key feature of this PhD work lies in the complementary contributions of experimental and computational approaches to the study of choice cerebral mechanisms.
+
+Decisions manifest themselves through actions but can be dissociated from them. Decisions owe their existence to mental processes hidden within the brain foldings. It seems now established that human medial prefrontal cortex is a key hub in the decision-making network. However, a structural and functional refinement remains to be elaborated. Combining modern approaches such as behavioral psychophysics, computational modeling and neuroimaging, it is now possible to investigate the neural mechanisms underlying decision-making, in order to determine the hidden variables that link perceived outcomes to actions. These hidden variables, which govern subjects' decisions, constitute the interface between the real world and its mental representation.
+
+
+
+%{
+%$a$ & distance & m \\
+%$P$ & power & W (Js$^{-1}$) \\
+%% Symbol & Name & Unit \\
+%
+%& & \\ % Gap to separate the Roman symbols from the Greek
+%
+%$\omega$ & angular frequency & rads$^{-1}$ \\
+%% Symbol & Name & Unit \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+%
+%\setstretch{1.3} % Return the line spacing back to 1.3
+%
+%\pagestyle{empty} % Page style needs to be empty for this page
+%
+%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+%
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/ChapterIntroPrefrontal}
+\input{Chapters/ChapterIntroRL}
+\input{Chapters/ChapterIntroBAY}
+\input{Chapters/ChapterIntroQuestionThese}
+\input{Chapters/ChapterProtocol1Methods}
+\input{Chapters/ChapterProtocol1Results}
+\input{Chapters/ChapterProtocol2Methods}
+\input{Chapters/ChapterProtocol2Results}
+\input{Chapters/ChapterDiscussion} 
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{Appendices/AppendixDebriefingProtocol1}
+\input{Appendices/AppendixInstructionsProtocol2}
+\input{Appendices/AppendixDebriefingProtocol2}
+\input{Appendices/AppendixModel}
+%\input{Appendices/AppendixE}
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+
+\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+
+%\bibliographystyle{apalike-fr}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+%\bibliographystyle{abbrv} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{/Users/marion/Dropbox/LibraryThesis} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+%\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+
+%----------------------------------------------------------------------------------------
+%	Liste figure table
+%----------------------------------------------------------------------------------------
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+\end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

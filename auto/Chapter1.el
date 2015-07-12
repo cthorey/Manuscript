@@ -16,6 +16,7 @@
     "C1-Horsmann"
     "C1-sec:moon"
     "C1-MO"
+    "Maria"
     "C1-Moon-magma"
     "C1-sec:orign-theor-fram"
     "C1-sec:model-statique-de"

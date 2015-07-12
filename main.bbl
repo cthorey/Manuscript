@@ -1,4 +1,4 @@
-\begin{thebibliography}{114}
+\begin{thebibliography}{116}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -213,6 +213,13 @@ Head, J.~W., and L.~Wilson (1992), {Lunar mare volcanism: Stratigraphy,
   eruption conditions, and the evolution of secondary crusts},
   \textit{Geochimica et Cosmochimica Acta}, \textit{56}(6), 2155--2175.
 
+\bibitem[{\textit{Head et~al.}(2010)\textit{Head, Fassett, Kadish, Smith,
+  Zuber, Neumann, and Mazarico}}]{Head:2010fy}
+Head, J.~W., C.~I. Fassett, S.~J. Kadish, D.~E. Smith, M.~T. Zuber, G.~A.
+  Neumann, and E.~Mazarico (2010), {Global distribution of large lunar craters:
+  implications for resurfacing and impactor populations}, \textit{Science},
+  \textit{329}(5998), 1504--1507.
+
 \bibitem[{\textit{Hewitt et~al.}(2014)\textit{Hewitt, Balmforth, and
   De~Bruyn}}]{Anonymous:QWXp_4JV}
 Hewitt, I.~J., N.~J. Balmforth, and J.~R. De~Bruyn (2014), {Elastic-plated
@@ -271,6 +278,12 @@ Jozwiak, L.~M., J.~W. Head, M.~T. Zuber, D.~E. Smith, and G.~A. Neumann (2012),
   {Lunar floor-fractured craters: Classification, distribution, origin and
   implications for magmatism and shallow crustal structure}, \textit{J.
   Geophys. Res.}, \textit{117}(E11), E11,005.
+
+\bibitem[{\textit{Kalynn et~al.}(2013)\textit{Kalynn, Johnson, Osinski, and
+  Barnouin}}]{Kalynn:2013fg}
+Kalynn, J., C.~L. Johnson, G.~R. Osinski, and O.~Barnouin (2013), {Topographic
+  characterization of lunar complex craters}, \textit{Geophys. Res. Lett.},
+  \textit{40}(1), 38--42.
 
 \bibitem[{\textit{Kavanagh and Sparks}(2011)}]{Kavanagh:2011kf}
 Kavanagh, J.~L., and R.~S.~J. Sparks (2011), {Insights of dyke emplacement

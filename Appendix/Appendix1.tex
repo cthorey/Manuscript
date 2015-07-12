@@ -1,15 +1,18 @@
-\chapter{Numerical  scheme   for  a  cooling   elastic-plated  gravity
-  current}
+\chapter{Numerical  schemes}
 \label{chap:A1}
 
-In this  appendix, we present the  numerical scheme used to  solve the
+\section{  Numerical  scheme  for  a  cooling  elastic-plated  gravity
+  current}
+\label{sec:cool-elast-plat}
+
+In this  section, we present  the numerical  scheme used to  solve the
 coupled  nonlinear partial  differential  equations (\ref{C4-HF})  and
 (\ref{C4-TF}).    The  governing   equations   presented  in   Chapter
 \ref{C3-JFM}     are     just      a     particular     case     where
 $\Omega \rightarrow \infty$ and can  be solved using $\Omega=10^5$ for
 instance.
 
-\section{General procedure}
+\subsection{General procedure}
 \label{C3-sec:general-procedure}
 
 The coupled nonlinear partial differential equations (\ref{C4-HF}) and
@@ -80,7 +83,7 @@ step
 \end{itemize}
 The computational scheme is summarized in the following.
 
-\section{Thickness equation}
+\subsection{Thickness equation}
 
 The thickness equation (\ref{C4-HF}) is written as
 \begin{eqnarray}
@@ -217,7 +220,7 @@ require that
 \end{equation}
 with $\epsilon = 10^{-4}$.
 
-\section{Heat equation}
+\subsection{Heat equation}
 
 The heat equation (\ref{C4-TF}) is written as
 \begin{eqnarray}
@@ -311,7 +314,7 @@ quantity $\Theta^*_{s,k}$, $\Theta^*_{b,k}$ and $\delta^*_k$, that are
 needed to evaluate  $\Gamma$ and $\Sigma$, are derived  from the value
 of $\xi^*_{k}$ using (\ref{C4-TS}), (\ref{C4-TB}) and (\ref{C4-DELTA})
 
-\section{Integral expressions}
+\subsection{Integral expressions}
 \label{sec:integral-expressions}
 
 The model  developed in  Section \ref{C4-sec:theory-1} depends  on the
@@ -389,6 +392,139 @@ expression above simplify and read
   I_1(h)&=&\frac{h^3}{12}\nonumber\\
   I_2(\delta)&=&-\frac{1}{120} \delta ^2 (18 \delta  \alpha_1-40 \delta  \Theta_b-15 \alpha_1 h+30 h \Theta_b)\nonumber
 \end{eqnarray}
+
+\section{Numerical scheme for crater-centered intrusion}
+\label{sec:numer-scheme-crat}
+\section{Numerical scheme}
+\label{C5-AppendixA}
+
+We use a fully implicit finite-volume method to solve (\ref{C5-eq21}). The discretization is obtained by integrating over a finite number of non overlapping control volumes, each control volume surrounding one grid point \citep{Patankar:1980vu}. The grid is defined by the relation $r_{i}=(i-0.5)\Delta r$ in order to avoid problems at the center. The point $b$ and $a$ define the face of the control volume surrounding $i$ such that $r_{a}=r_{i}+\Delta r/2$ and $r_{b}=r_{i}-\Delta r/2$. Because we are using an axisymmetric geometry, the control volume is an annulus of interior radius $r_b$ and exterior radius $r_a$ and its surface is $S=\pi(r_{a}^{2}-r_{b}^{2})$. Integration of (\ref{C5-eq21}) over the control volume surrounding $i$ during a time $\Delta t$ gives:
+	\begin{equation}
+	\int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{\partial h^{*}}{\partial t} 2\pi r dr dt=\int_{t}^{t+\Delta t} \int_{b}^{a} \Phi(r,t) 2\pi r dr dt
+	\label{C5-eq27}
+	 \end{equation}
+ 
+ where $\Phi(r,t)$ stands for the right hand side of (\ref{C5-eq21}). The classical second-order $\left (\propto \Delta r^2 \right)$ approximations is taken to derive the successive space derivatives (i.e. $\frac{\partial \Phi(r)}{\partial r}\mid_{r_a}=\frac{\Phi(i+1)-\Phi(i)}{\Delta r}$). In this way, we ensure that our final scheme is of second-order. Moreover, for more precision, the elastic pressure is calculated using a fourth-order scheme (see \ref{C5-Fourth}.3) . In the following, we derive each term of the right hand side of (\ref{C5-eq21}) separately, $h$ refers to the value of the thickness at  a time $t+\Delta t$ and $h^{n}$ to the value at a time $ t$.
+ \subsection{Discretization}
+ \label{C5-Fourth}
+ \begin{enumerate}
+ \item \textbf{Time derivative}
+To discretize the time derivative, we shall consider that the value of the grid point $h_{i}$ prevails throughout the control volume such that:
+ \begin{equation}
+ \label{C5-num1}
+ \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{\partial h^{*}}{\partial t} 2\pi r dr dt=(h_{i}-h^{n}_{i})S
+ \end{equation}
+ \item \textbf{Gravitational term}
+ \begin{eqnarray}
+ \label{C5-num2}
+ \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*} h^{3} \frac{\partial h}{\partial r^{*}} \right) 2\pi r dr dt\\
+ =A^{g}_{i}h_{i+1}+B^{g}_{i}h_{i-1} -(A^{g}_{i}+B^{g}_{i})h_{i} \nonumber
+ \end{eqnarray}
+with $A^{g}_{i}= A=(2\pi \Delta t r_{a}h_{a}^{3})/\Delta r$ and $B^{g}_{i}=B=(2\pi \Delta t r_{b}h_{b}^{3})/\Delta r$ where the value of $h_{a}^{3}$ (resp. $h_{b}^{3}$) is approximated by $(h_{i+1}^{3}+h_{i}^{3})/2$ (resp. $(h_{i}^{3}+h_{i-1}^{3})/2$). 
+ \item \textbf{Elastic term}
+ 	\begin{eqnarray} 
+	 \label{C5-num3}
+	 \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \Theta \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*} h^{3} \frac{\partial P_{e}}{\partial r^{*}} \right) 2\pi r dr dt \\
+	 =A^{e}_{i}P_{e,i+1} +B^{e}_{i}P_{e,i-1 } -(A^{e}_{i}+B^{e}_{i})P_{e,i} \nonumber
+	 \end{eqnarray}
+	where $A^{e}_{i}= \Theta A$, $B^{e}_{i}=\Theta B$ and $P_{e}=\nabla^{2}_{r}\left( \Pi(r)\nabla^{2}_{r}h(r) \right)$, with $\Pi(r)=(1+\Psi\xi(r))^3$, is the dimensionless elastic pressure which is discretized using a fourth order finite difference scheme:}
+
+	\begin{equation}
+	 \label{C5-num6}
+	 P_{e,i}= \alpha_{i}h_{i-3} + \beta_{i}h_{i-2}+\gamma_{i} h_{i-1} +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3}
+	\end{equation}
+	with
+\begin{eqnarray}
+	&\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4p_4+3p_3\Delta_r \right)\nonumber \\
+	&\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48p_4-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber\\
+	&\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156p_4+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber\\
+	&\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224p_4-60p_2\Delta r^{2}\right) \nonumber\\
+	&\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156p_4-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber\\
+	&\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48p_4+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber\\
+	&\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4p_4-3p_3\Delta_r \right)\nonumber
+\end{eqnarray}
+where
+	\begin{eqnarray}
+	p_1&=&\frac{ \Pi^{\prime\prime}_{i}}{r_i}-\frac{\Pi^{\prime}_{i}}{r_i^2} +\frac{\Pi}{r_i^3}\nonumber\\
+	p_2&=&\Pi^{\prime\prime}_{i}+\frac{3\Pi^{\prime}_{i}}{r_i} +\frac{\Pi}{r_i^2}\nonumber\\
+	p_3&=&2\Pi^{\prime}_{i}+\frac{2\Pi_i}{r_i}\nonumber\\
+	p_4&=&\Pi_i\nonumber
+	\end{eqnarray}
+and where $ \Pi_{i}=(1+\Psi\xi_i)^{3}$ and $\Pi^{\prime}_{i}$ and $ \Pi^{\prime\prime}_{i}$ are its first and second derivatives with respect to the radial coordinate.
+\item \textbf{Hydrostatic term}
+ \begin{eqnarray}
+ \label{C5-num4}
+ S^{h}_{i}= \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \Xi \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*}h^{3}\frac{\partial \xi}{\partial r}\right )2\pi r dr\\
+=U^{h}\left ( r_{a}h_{a}^{3} \left. \frac{\partial \xi}{\partial r}\right|_{a}-r_{b}h_{b}^{3}\left. \frac{\partial \xi}{\partial r}\right|_{b} \right )\nonumber
+ \end{eqnarray}
+ where $U^{h}= 2 \pi \Xi \Delta t$.
+\item \textbf{Injection term}
+ \begin{eqnarray}
+  \label{C5-num5}
+ S^{i}_{i}&=&\int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{32}{\gamma^{2}} (\frac{1}{4}-\frac{r^{2}}{\gamma^{2}})  2 \pi r dr dt \\
+ &=&U^{i}(\gamma^{2}-2(r_{a}^{2}+r_{b}^{2}))\nonumber
+ \end{eqnarray}
+ where $U^{i}=\frac{8 S \Delta t}{\gamma^{4}}$. 
+ 
+ 
+ \item \textbf{Implicit scheme}
+ 
+Substituting (\ref{C5-num1}), (\ref{C5-num2}), (\ref{C5-num3}), (\ref{C5-num4}) and (\ref{C5-num5}) in (\ref{C5-eq27}) and injecting (\ref{C5-num6}), we get the final scheme given by the following equation:
+
+\begin{equation}
+a_ih_{i-4}+b_ih_{i-3}+c_ih_{i-2}+d_ih_{i-1}+e_ih_i+f_ih_{i+1}+g_ih_{i+2}+k_ih_{i+3}+l_ih_{i+4}=J_i
+\label{C5-eqd3}
+\end{equation}
+where the different coefficients are defined by:
+\begin{eqnarray}
+a_i&=&-B_i^{e}\alpha_{i-1} \\
+b_i&=&(B_i^{e}+A_i^{e})\alpha_{i}-B_i^{e}\beta_{i-1} \\
+c_i&=&(B_i^{e}+A_i^{e})\beta_{i}-B_i^{e}\gamma_{i-1}-A_i^{e}\alpha_{i+1} \\
+d_i&=&(B_i^{e}+A_i^{e})\gamma_{i}-B_i^{e}\lambda_{i-1}-A_i^{e}\beta_{i+1} -B^{g}\\
+e_i&=&S+(B_i^{e}+A_i^{e})\lambda_{i}-B_i^{e}\kappa_{i-1}-A_i^{e}\gamma_{i+1} +B^{g}+A^{g}\\
+f_i&=&(B_i^{e}+A_i^{e})\kappa_{i}-B_i^{e}\delta_{i-1}-A_i^{e}\lambda_{i+1} - A^{g}\\
+g_i&=&(B_i^{e}+A_i^{e})\delta_{i}-B_i^{e}\epsilon_{i-1}-A_i^{e}\kappa_{i+1} \\
+k_i&=&(B_i^{e}+A_i^{e})\epsilon_{i}-A_i^{e}\delta_{i+1} \\
+l_i&=&-A_i^{e}\epsilon_{i+1} \\
+J_i&=&(Sh_i^n+ S^{i}_{i}+S^{h}_{i})
+\end{eqnarray}	
+\subsection{Boundary conditions}
+	
+Since the flow is symmetric in $r=0$, we require that:
+\begin{eqnarray}
+  \left.\frac{\partial h}{\partial r}\right|_{r=0}=0\\
+  \left.\frac{\partial P_{e}}{\partial r}\right|_{r=0}=0
+\end{eqnarray}
+Boundary conditions at the front of the intrusion are accounted for by
+using a  grid much larger  than the  intrusion where $h=0$  beyond the
+flow.
+
+ \subsection{Algorithm}
+ The fully implicit discretization (\ref{C5-eqd3}) can be rewritten as
+ a linear  system $\Omega(h^{3})\bar{h}=\bar{J}$ where $\bar{h}$  is a
+ vector  containing the  value of  $h$  a $t+\Delta  t$ and  $\bar{J}$
+ containing  the  right  hand  side  of  (\ref{C5-eqd3}).  The  matrix
+ $\Omega(h^{3})$ is  a septadiagonal matrix  and is solved by  using a
+ septadiagonal  algorithm. However,  due to  the non-linearity  of the
+ problem  (i.e. the  coefficients $A_{e},  B_{e}, A_{g}$,  $B_{g}$ and
+ $S^{h}$ within the matrix $\Omega(h_{i}^{3})$ and $\bar{J}$ depend on
+ $h_{i}^{3}$), we first have to assume values for $h_{i}$ at each grid
+ point  to  inverse  for the  matrix  and  get  the  value of  $h$  at
+ $t+\Delta t$. We use the following iterative scheme:
+ \begin{enumerate}
+ \item Start with a guess at all grid-point for $h_{i}=h_i^n$.
+ \item Calculate  tentative values  for the different  coefficients of
+   the system (non linear terms).
+ \item   Apply   the   septadiagonal   matrix   algorithm   to   solve
+   (\ref{C5-eqd3}) and get a new value of $h_{i}$.
+ \item With  this new $h_{i}$, we  return to step $2$  and repeat step
+   $2$  to  $4$  until  further   repetitions  cease  to  produce  any
+   significant         change         in         $h_{i}$         (i.e.
+   $\mid h^{new}_{i}-h_{i}\mid < \epsilon$ where $\epsilon=10^{-4}$).
+ \end{enumerate}
+ The  final unchanging  state is  considered as  the solution  for the
+ thickness of the flow at $t+\Delta t$.
+
 
 %%% Local Variables:
 %%% mode: latex

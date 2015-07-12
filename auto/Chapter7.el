@@ -2,6 +2,7 @@
  "Chapter7"
  (lambda ()
    (LaTeX-add-labels
-    "sec:conclusion"
-    "sec:laccoliths-")))
+    "sec:summary"
+    "sec:perspectives"
+    "C7-Sketch")))
 

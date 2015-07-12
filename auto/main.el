@@ -19,6 +19,8 @@
     "Appendix/Appendix1"
     "Appendix/Appendix2"
     "Appendix/Appendix3"
+    "Appendix/Appendix4"
+    "Appendix/Appendix5"
     "ThesisStyle"
     "ThesisStyle12"
     "graphicx"
