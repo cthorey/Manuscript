@@ -7,6 +7,8 @@ A level-1 auxiliary file: Chapter/Chapter1.aux
 A level-1 auxiliary file: Chapter/Chapter2.aux
 A level-1 auxiliary file: Chapter/Chapter3.aux
 A level-1 auxiliary file: Chapter/Chapter4.aux
+A level-1 auxiliary file: Chapter/Chapter5.aux
+A level-1 auxiliary file: Chapter/Chapter6.aux
 A level-1 auxiliary file: Chapter/Chapter7.aux
 A level-1 auxiliary file: Appendix/Appendix1.aux
 A level-1 auxiliary file: Appendix/Appendix2.aux
@@ -17,52 +19,54 @@ The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in Bertozzi:1998wz
+Warning--empty journal in Buttner:1998hy
 Warning--empty journal in Dixon:1987js
 Warning--empty journal in Harris:2000jd
 Warning--empty journal in Anonymous:QWXp_4JV
 Warning--empty journal in Horsman:2009gea
 Warning--empty journal in Jaeger:1959du
+Warning--empty journal in Melosh:1989jl
 Warning--empty journal in Pinkerton:1992fwa
 Warning--empty journal in Senger:2014tt
-You've used 116 entries,
+You've used 176 entries,
             3076 wiz_defined-function locations,
-            1810 strings with 29418 characters,
-and the built_in function-call counts, 106808 in all, are:
-= -- 12110
-> -- 3213
-< -- 68
-+ -- 1529
-- -- 889
-* -- 6490
-:= -- 10006
-add.period$ -- 116
-call.type$ -- 116
-change.case$ -- 502
-chr.to.int$ -- 117
-cite$ -- 124
-duplicate$ -- 11909
-empty$ -- 6167
-format.name$ -- 1262
-if$ -- 21282
-int.to.chr$ -- 2
+            2153 strings with 40436 characters,
+and the built_in function-call counts, 167583 in all, are:
+= -- 18985
+> -- 5212
+< -- 101
++ -- 2461
+- -- 1444
+* -- 10176
+:= -- 15652
+add.period$ -- 176
+call.type$ -- 176
+change.case$ -- 758
+chr.to.int$ -- 177
+cite$ -- 186
+duplicate$ -- 18708
+empty$ -- 9547
+format.name$ -- 1999
+if$ -- 33387
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1105
-newline$ -- 355
-num.names$ -- 464
-pop$ -- 4130
+missing$ -- 1734
+newline$ -- 535
+num.names$ -- 704
+pop$ -- 6418
 preamble$ -- 1
-purify$ -- 387
+purify$ -- 583
 quote$ -- 0
-skip$ -- 6628
+skip$ -- 10424
 stack$ -- 0
-substring$ -- 4721
-swap$ -- 10198
-text.length$ -- 3
+substring$ -- 7475
+swap$ -- 16114
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1041
-warning$ -- 8
-while$ -- 616
+type$ -- 1581
+warning$ -- 10
+while$ -- 949
 width$ -- 0
-write$ -- 1248
-(There were 8 warnings)
+write$ -- 1900
+(There were 10 warnings)

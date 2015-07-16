@@ -1,4 +1,4 @@
-\begin{thebibliography}{116}
+\begin{thebibliography}{176}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -9,9 +9,33 @@
 Anderson, E.~M. (1951), {The dynamics of faulting and dyke formation with
   applications to Britain}.
 
+\bibitem[{\textit{Andrews-Hanna et~al.}(2013)\textit{Andrews-Hanna, Asmar,
+  Head, Kiefer, Konopliv, Lemoine, Matsuyama, Mazarico, McGovern, Melosh,
+  Neumann, Nimmo, Phillips, Smith, Solomon, Taylor, Wieczorek, Williams, and
+  Zuber}}]{AndrewsHanna:2013ft}
+Andrews-Hanna, J.~C., S.~W. Asmar, J.~W. Head, W.~S. Kiefer, A.~S. Konopliv,
+  F.~G. Lemoine, I.~Matsuyama, E.~Mazarico, P.~J. McGovern, H.~J. Melosh, G.~A.
+  Neumann, F.~Nimmo, R.~J. Phillips, D.~E. Smith, S.~C. Solomon, G.~J. Taylor,
+  M.~A. Wieczorek, J.~G. Williams, and M.~T. Zuber (2013), {Ancient igneous
+  intrusions and early expansion of the Moon revealed by GRAIL gravity
+  gradiometry}, \textit{Science}, \textit{339}(6120), 675--678.
+
+\bibitem[{\textit{Baker et~al.}(2011)\textit{Baker, Head, Fassett, Kadish,
+  Smith, Zuber, and Neumann}}]{Baker:2011kh}
+Baker, D. M.~H., J.~W. Head, C.~I. Fassett, S.~J. Kadish, D.~E. Smith, M.~T.
+  Zuber, and G.~A. Neumann (2011), {The transition from complex crater to
+  peak-ring basin on the Moon: New observations from the Lunar Orbiter Laser
+  Altimeter (LOLA) instrument}, \textit{Icarus}, \textit{214}(2), 377--393.
+
 \bibitem[{\textit{Balmforth and Craster}(2004)}]{BALMFORTH:1999ey}
 Balmforth, N.~J., and R.~V. Craster (2004), {Dynamics of cooling viscoplastic
   domes}, \textit{J. Fluid Mech.}
+
+\bibitem[{\textit{Bamberg et~al.}(2014)\textit{Bamberg, Jaumann, Asche,
+  Kneissl, and Michael}}]{Bamberg:2014hb}
+Bamberg, M., R.~Jaumann, H.~Asche, T.~Kneissl, and G.~G. Michael (2014),
+  {Floor-Fractured Craters on Mars {\textendash} Observations and Origin},
+  \textit{Planetary and Space Science}, \textit{98}(C), 146--162.
 
 \bibitem[{\textit{Barmin et~al.}(2002)\textit{Barmin, Melnik, and
   Sparks}}]{Barmin:2002ea}
@@ -32,23 +56,71 @@ Bercovici, D., and J.~Lin (1996), {A gravity current model of cooling mantle
 Bertozzi, A.~L. (1998), {The mathematics of moving contact lines in thin liquid
   films}, pp. 1--9.
 
+\bibitem[{\textit{Besserer et~al.}(2014)\textit{Besserer, Nimmo, Wieczorek,
+  Weber, Kiefer, McGovern, Andrews-Hanna, Smith, and Zuber}}]{Besserer:2014jr}
+Besserer, J., F.~Nimmo, M.~A. Wieczorek, R.~C. Weber, W.~S. Kiefer, P.~J.
+  McGovern, J.~C. Andrews-Hanna, D.~E. Smith, and M.~T. Zuber (2014), {GRAIL
+  gravity constraints on the vertical and lateral density structure of the
+  lunar crust}, \textit{Geophys. Res. Lett.}, \textit{41}.
+
 \bibitem[{\textit{Blatt et~al.}(2006)\textit{Blatt, Tracy, and
   Owens}}]{Blatt:2ViMWPc0}
 Blatt, H., R.~J. Tracy, and B.~Owens (2006), {Petrology: igneous, sedimentary,
   and metamorphic}.
+
+\bibitem[{\textit{Bonaccorso}(2001)}]{Bonaccorso:2001iw}
+Bonaccorso, A. (2001), {Mt Etna volcano: modelling of ground deformation
+  patterns of recent eruptions and considerations on the associated
+  precursors}, \textit{Journal of Volcanology and Geothermal Research},
+  \textit{109}(1-3), 99--108.
+
+\bibitem[{\textit{Bray et~al.}(2008)\textit{Bray, Collins, Morgan, and
+  Schenk}}]{Bray:2008fu}
+Bray, V.~J., G.~S. Collins, J.~V. Morgan, and P.~M. Schenk (2008), {The effect
+  of target properties on crater morphology: Comparison of central peak craters
+  on the Moon and Ganymede}, \textit{Meteoritics}, \textit{43}(12), 1979--1992.
+
+\bibitem[{\textit{Bunger}(2008)}]{Bunger:2008cl}
+Bunger, A.~P. (2008), {A rigorous tool for evaluating the importance of viscous
+  dissipation in sill formation: it's in the tip}, \textit{Geological Society,
+  London, Special Publications}, \textit{304}(1), 71--81.
 
 \bibitem[{\textit{Bunger and Cruden}(2011)}]{Bunger:2011cb}
 Bunger, A.~P., and A.~R. Cruden (2011), {Modeling the growth of laccoliths and
   large mafic sills: Role of magma body forces}, \textit{J. Geophys. Res.},
   \textit{116}(B2), B02,203.
 
+\bibitem[{\textit{Bunger and Detournay}(2007)}]{Bunger:2007vs}
+Bunger, A.~P., and E.~Detournay (2007), {Scaling Relationships for Deep and
+  Shallow Magma-Driven Intrusions}, \textit{AGU Fall Meeting Abstracts},
+  \textit{-1}, 0369.
+
 \bibitem[{\textit{Bunger and Emmanuel}(2005)}]{Bunger:2005ee}
 Bunger, A.~P., and D.~Emmanuel (2005), {Near-surface hydraulic fracture},
   \textit{Engineering Fracture Mechanics}, \textit{72}(16), 2468--2486.
 
+\bibitem[{\textit{Bunger et~al.}(2005)\textit{Bunger, Detournay, and
+  Jeffrey}}]{Bunger:2005em}
+Bunger, A.~P., E.~Detournay, and R.~G. Jeffrey (2005), {Crack tip behavior in
+  near-surface fluid-driven fracture experiments}, \textit{Comptes Rendus
+  M{\'e}canique}, \textit{333}(4), 299--304.
+
+\bibitem[{\textit{B{\"u}ttner et~al.}(1998)\textit{B{\"u}ttner, Zimanowski,
+  Blumm, and Hagemann}}]{Buttner:1998hy}
+B{\"u}ttner, R., B.~Zimanowski, J.~Blumm, and L.~Hagemann (1998), {Thermal
+  conductivity of a volcanic rock material (olivine-melilitite) in the
+  temperature range between 288 and 1470 K}, \textit{80}(3-4), 293--302.
+
 \bibitem[{\textit{Cameron and Benz}(1991)}]{Cameron:1991vu}
 Cameron, A., and W.~Benz (1991), {The origin of the Moon and the single impact
   hypothesis IV}, \textit{Icarus}, \textit{92}, 204--216.
+
+\bibitem[{\textit{Cannav{\`o} et~al.}(2015)\textit{Cannav{\`o}, Camacho,
+  Gonz{\'a}lez, Mattia, Puglisi, and Fern{\'a}ndez}}]{Cannavo:2015fk}
+Cannav{\`o}, F., A.~G. Camacho, P.~J. Gonz{\'a}lez, M.~Mattia, G.~Puglisi, and
+  J.~Fern{\'a}ndez (2015), {Real Time Tracking of Magmatic Intrusions by means
+  of Ground Deformation Modeling during Volcanic Crises}, \textit{Nature
+  Publishing Group}, pp. 1--10.
 
 \bibitem[{\textit{Canup}(2012)}]{Canup:2012cd}
 Canup, R.~M. (2012), {Forming a Moon with an Earth-like composition via a giant
@@ -68,6 +140,18 @@ Castro, J.~M., C.~I. Schipper, S.~P. Mueller, A.~S. Militzer, A.~Amigo, C.~S.
   Parejas, and D.~Jacob (2013), {Storage and eruption of near-liquidus rhyolite
   magma at Cord{\'o}n Caulle, Chile}, \textit{Bull Volcanol}, \textit{75}(4),
   1--17.
+
+\bibitem[{\textit{Cayol et~al.}(2014)\textit{Cayol, Catry, Michon, and
+  Chaput}}]{Cayol:2014vo}
+Cayol, V., T.~Catry, L.~Michon, and M.~Chaput (2014), {Sheared sheet intrusions
+  as mechanism for lateral flank displacement on basaltic volcanoes:
+  Applications to R{\'e}union Island volcanoes}, \textit{Journal of {\ldots}}.
+
+\bibitem[{\textit{Chadwick~Jr. and Dieterich}(1995)}]{ChadwickJr:1995cz}
+Chadwick~Jr., W.~W., and J.~H. Dieterich (1995), {Mechanical modeling of
+  circumferential and radial dike intrusion on Galapagos volcanoes},
+  \textit{Journal of Volcanology and Geothermal Research}, \textit{66}(1-4),
+  37--52.
 
 \bibitem[{\textit{Chevrel et~al.}(2013)\textit{Chevrel, Platz, Hauber,
   Baratoux, Lavall{\'e}e, and Dingwell}}]{Chevrel:2013jn}
@@ -103,12 +187,22 @@ Cruden, A., A.~Bunger, and S.~Morgan (2012), {Emplacement dynamics of
   laccoliths, sills and dykes from dimensional scaling and mechanical models},
   in \textit{LASI 1}.
 
+\bibitem[{\textit{Dahm}(2000)}]{Dahm:2000jb}
+Dahm, T. (2000), {On the shape and velocity of fluid-filled fractures in the
+  Earth}, \textit{Geophysical Journal International}, \textit{142}(1),
+  181--192.
+
 \bibitem[{\textit{Das et~al.}(2008)\textit{Das, Joughin, Behn, Howat, King,
   Lizarralde, and Bhatia}}]{Das:2008in}
 Das, S.~B., I.~Joughin, M.~D. Behn, I.~M. Howat, M.~A. King, D.~Lizarralde, and
   M.~P. Bhatia (2008), {Fracture Propagation to the Base of the Greenland Ice
   Sheet During Supraglacial Lake Drainage}, \textit{Science},
   \textit{320}(5877), 778--781.
+
+\bibitem[{\textit{Detournay and Peirce}(2014)}]{Detournay:2014fk}
+Detournay, E., and A.~Peirce (2014), {On the moving boundary conditions for a
+  hydraulic fracture}, \textit{INTERNATION JOURNAL OF ENGINEERING SCIENCE},
+  \textit{84}(C), 147--155.
 
 \bibitem[{\textit{Diniega et~al.}(2013)\textit{Diniega, Smrekar, Anderson, and
   Stofan}}]{Diniega:2013eh}
@@ -120,11 +214,20 @@ Diniega, S., S.~E. Smrekar, S.~Anderson, and E.~R. Stofan (2013), {The
 Dixon, J.~M., and D.~G. Simpson (1987), {Centrifuge modelling of laccolith
   intrusion}, \textit{9}(1), 87--103.
 
+\bibitem[{\textit{Dombard and Gillis}(2001)}]{Dombard:2001gs}
+Dombard, A.~J., and J.~J. Gillis (2001), {Testing the viability of topographic
+  relaxation as a mechanism for the formation of lunar floor-fractured
+  craters}, \textit{J. Geophys. Res.}, \textit{106}(E11), 27,901--27,909.
+
 \bibitem[{\textit{Dyskin et~al.}(2000)\textit{Dyskin, Germanovich, and
   Ustinov}}]{Dyskin:2000iz}
 Dyskin, A.~V., L.~N. Germanovich, and K.~B. Ustinov (2000), {Asymptotic
   analysis of crack interaction with free boundary}, \textit{International
   journal of solids {\ldots}}, \textit{37}(6), 857--886.
+
+\bibitem[{\textit{El-Baz}(1970)}]{ElBaz:1970kc}
+El-Baz, F. (1970), {Lunar Igneous Intrusions}, \textit{Science},
+  \textit{167}(3914), 49--50.
 
 \bibitem[{\textit{Elkins-Tanton et~al.}(2011)\textit{Elkins-Tanton, Burgess,
   and Yin}}]{ElkinsTanton:2011ce}
@@ -164,6 +267,10 @@ Garel, F., E.~Kaminski, S.~Tait, and A.~Limare (2014), {An analogue study of
   of lava flows}, \textit{Earth and Planetary Science Letters},
   \textit{396}(C), 46--55.
 
+\bibitem[{\textit{Garrick-Bethell and Zuber}(2009)}]{GarrickBethell:2009dx}
+Garrick-Bethell, I., and M.~T. Zuber (2009), {Elliptical structure of the lunar
+  South Pole-Aitken basin}, \textit{Icarus}, \textit{204}(2), 399--408.
+
 \bibitem[{\textit{Gilbert}(1877)}]{Gilbert:1877uk}
 Gilbert, G.~K. (1877), {Report on the Geology of the Henry Mountains },
   Government Printing Office, Washington, DC.
@@ -180,6 +287,14 @@ Glazner, A.~F., J.~M. Bartley, D.~S. Coleman, W.~Gray, and R.~Z. Taylor (2004),
   {Are plutons assembled over millions of years by amalgamation from small
   magma chambers?}, \textit{GSA Today}, \textit{14}(4), 4--8.
 
+\bibitem[{\textit{Glotch et~al.}(2010)\textit{Glotch, Lucey, Bandfield,
+  Greenhagen, Thomas, Elphic, Bowles, Wyatt, Allen, Hanna, and
+  Paige}}]{Glotch:2010ih}
+Glotch, T.~D., P.~G. Lucey, J.~L. Bandfield, B.~T. Greenhagen, I.~R. Thomas,
+  R.~C. Elphic, N.~Bowles, M.~B. Wyatt, C.~C. Allen, K.~D. Hanna, and D.~A.
+  Paige (2010), {Highly Silicic Compositions on the Moon}, \textit{Science},
+  \textit{329}(5998), 1510--1513.
+
 \bibitem[{\textit{Goodman}(1958)}]{Goodman:1958ue}
 Goodman, T.~R. (1958), \textit{{The heat-balance integral and its application
   to problems involving a change of phase}}, Trans. ASME.
@@ -187,12 +302,17 @@ Goodman, T.~R. (1958), \textit{{The heat-balance integral and its application
 \bibitem[{\textit{Gregg and Fink}(1996)}]{TracyKPGregg:1996wp}
 Gregg, T. K.~P., and J.~H. Fink (1996), {Quantification of extraterrestrial
   lava flow effusion rates through laboratory simulations}, \textit{Journal of
-  Geophysical Research: Planets (1991{\textendash}2012)}, \textit{101}(E7),
-  16,891--16,900.
+  Geophysical Research}, \textit{101}(E7), 16,891--16,900.
 
 \bibitem[{\textit{Habert and De~Saint-Blanquat}(2004)}]{Habert:2004wg}
 Habert, G., and M.~De~Saint-Blanquat (2004), {Rate of construction of the Black
   Mesa bysmalith, Henry Mountains, Utah}, \textit{Geological Society}.
+
+\bibitem[{\textit{Hall et~al.}(1981)\textit{Hall, Solomon, and
+  Head}}]{Hall:1981kl}
+Hall, J.~L., S.~C. Solomon, and J.~W. Head (1981), {Lunar floor-fractured
+  craters: Evidence for viscous relaxation of crater topography}, \textit{J.
+  Geophys. Res. Planets}, \textit{86}(B10), 9537--9552.
 
 \bibitem[{\textit{Han et~al.}(2014)\textit{Han, Schmerr, Neumann, and
   Holmes}}]{Han:2014ic}
@@ -213,6 +333,14 @@ Head, J.~W., and L.~Wilson (1992), {Lunar mare volcanism: Stratigraphy,
   eruption conditions, and the evolution of secondary crusts},
   \textit{Geochimica et Cosmochimica Acta}, \textit{56}(6), 2155--2175.
 
+\bibitem[{\textit{Head et~al.}(2008)\textit{Head, Murchie, Prockter, Robinson,
+  Solomon, Strom, Chapman, Watters, McClintock, Blewett, and
+  Gillis-Davis}}]{Head:2008cm}
+Head, J.~W., S.~L. Murchie, L.~M. Prockter, M.~S. Robinson, S.~C. Solomon,
+  R.~G. Strom, C.~R. Chapman, T.~R. Watters, W.~E. McClintock, D.~T. Blewett,
+  and J.~J. Gillis-Davis (2008), {Volcanism on Mercury: Evidence from the First
+  MESSENGER Flyby}, \textit{Science}, \textit{321}(5885), 69--72.
+
 \bibitem[{\textit{Head et~al.}(2010)\textit{Head, Fassett, Kadish, Smith,
   Zuber, Neumann, and Mazarico}}]{Head:2010fy}
 Head, J.~W., C.~I. Fassett, S.~J. Kadish, D.~E. Smith, M.~T. Zuber, G.~A.
@@ -224,6 +352,11 @@ Head, J.~W., C.~I. Fassett, S.~J. Kadish, D.~E. Smith, M.~T. Zuber, G.~A.
   De~Bruyn}}]{Anonymous:QWXp_4JV}
 Hewitt, I.~J., N.~J. Balmforth, and J.~R. De~Bruyn (2014), {Elastic-plated
   gravity currents}, pp. 1--29.
+
+\bibitem[{\textit{Hiesinger}(2006)}]{Hiesinger:2006cb}
+Hiesinger, H. (2006), {New Views of Lunar Geoscience: An Introduction and
+  Overview}, \textit{Reviews in Mineralogy and Geochemistry}, \textit{60}(1),
+  1--81.
 
 \bibitem[{\textit{Horsman et~al.}(2005)\textit{Horsman, Tikoff, and
   Morgan}}]{Horsman:2005ct}
@@ -272,6 +405,15 @@ Johnson, A.~M., and D.~D. Pollard (1973), {Mechanics of growth of some
   Gilbert's model, physical properties and flow of the magma},
   \textit{Tectonophysics}.
 
+\bibitem[{\textit{Jolliff et~al.}(2000)\textit{Jolliff, Gaddis, Ryder, Neal,
+  Shearer, Elphic, Johnson, Keller, Kerotev, Lawrence, Lucey, Papike, Pieters,
+  Spudis, and Taylor}}]{Jolliff:2000vf}
+Jolliff, B.~L., L.~R. Gaddis, G.~Ryder, C.~R. Neal, C.~K. Shearer, R.~C.
+  Elphic, R.~J. Johnson, P.~J. Keller, R.~L. Kerotev, D.~J. Lawrence, P.~G.
+  Lucey, J.~J. Papike, C.~M. Pieters, P.~D. Spudis, and L.~A. Taylor (2000),
+  {New views of the Moon: Improved understanding through data integration},
+  \textit{Eos}, \textit{81}(31), 349--360.
+
 \bibitem[{\textit{Jozwiak et~al.}(2012)\textit{Jozwiak, Head, Zuber, Smith, and
   Neumann}}]{Jozwiak:2012dq}
 Jozwiak, L.~M., J.~W. Head, M.~T. Zuber, D.~E. Smith, and G.~A. Neumann (2012),
@@ -306,6 +448,11 @@ Kerr, R.~C., and J.~R. Lister (1995), {Comment on {\textquotedblleft}On the
   relationship between dike width and magma viscosity{\textquotedblright} by
   Yutaka Wada}, \textit{Journal of Geophysical Research: Solid {\ldots}}.
 
+\bibitem[{\textit{Kiefer}(2013)}]{Kiefer:2013hr}
+Kiefer, W.~S. (2013), {Gravity constraints on the subsurface structure of the
+  Marius Hills: The magmatic plumbing of the largest lunar volcanic dome
+  complex}, \textit{J. Geophys. Res. Planets}, \textit{118}(4), 733--745.
+
 \bibitem[{\textit{Kiefer et~al.}(2012)\textit{Kiefer, Macke, Britt, Irving, and
   Consolmagno}}]{Kiefer:2012kp}
 Kiefer, W.~S., R.~J. Macke, D.~T. Britt, A.~J. Irving, and G.~J. Consolmagno
@@ -318,6 +465,12 @@ Koch, F.~G., A.~M. Johnson, and D.~D. Pollard (1981), {Monoclinal bending of
   strata over laccolithic intrusions}, \textit{Tectonophysics},
   \textit{74}(3-4), T21--T31.
 
+\bibitem[{\textit{Konopliv et~al.}(2014)\textit{Konopliv, Park, and
+  Yuan}}]{Konopliv:2014gm}
+Konopliv, A.~S., R.~S. Park, and D.~N. Yuan (2014), {High-resolution lunar
+  gravity fields from the GRAIL Primary and Extended Missions},
+  \textit{Geophys. Res. Lett.}, \textit{41}, 1452--1458.
+
 \bibitem[{\textit{Krumbholz et~al.}(2014)\textit{Krumbholz, Hieronymus,
   Burchardt, Troll, Tanner, and Friese}}]{Krumbholz:2014dj}
 Krumbholz, M., C.~F. Hieronymus, S.~Burchardt, V.~R. Troll, D.~C. Tanner, and
@@ -325,11 +478,16 @@ Krumbholz, M., C.~F. Hieronymus, S.~Burchardt, V.~R. Troll, D.~C. Tanner, and
   character of host-rock strength}, \textit{Nature Communications}, \textit{5},
   1--7.
 
+\bibitem[{\textit{Laneuville et~al.}(2013)\textit{Laneuville, Wieczorek,
+  Breuer, and Tosi}}]{Laneuville:2013gp}
+Laneuville, M., M.~A. Wieczorek, D.~Breuer, and N.~Tosi (2013), {Asymmetric
+  thermal evolution of the Moon}, \textit{J. Geophys. Res. Planets},
+  \textit{118}(7), 1435--1452.
+
 \bibitem[{\textit{Lejeune and Richet}(1995)}]{Lejeune:1995fc}
 Lejeune, A.~M., and P.~Richet (1995), {Rheology of crystal-bearing silicate
   melts: An experimental study at high viscosities}, \textit{Journal of
-  Geophysical Research: Planets (1991{\textendash}2012)}, \textit{100}(B3),
-  4215--4229.
+  Geophysical Research}, \textit{100}(B3), 4215--4229.
 
 \bibitem[{\textit{Lister and Kerr}(1991)}]{Lister:1991ut}
 Lister, J.~R., and R.~C. Kerr (1991), {Fluid-mechanical models of crack
@@ -343,11 +501,24 @@ Lister, J.~R., G.~G. Peng, and J.~A. Neufeld (2013), {Viscous Control of
   Peeling an Elastic Sheet by Bending and Pulling}, \textit{Phys. Rev. Lett.},
   \textit{111}(15), 154,501.
 
+\bibitem[{\textit{Maccaferri et~al.}(2011)\textit{Maccaferri, Bonafede, and
+  Rivalta}}]{Maccaferri:2011bd}
+Maccaferri, F., M.~Bonafede, and E.~Rivalta (2011), {A quantitative study of
+  the mechanisms governing dike propagation, dike arrest and sill formation},
+  \textit{Journal of Volcanology and Geothermal Research}, \textit{208}(1-2),
+  39--50.
+
 \bibitem[{\textit{Maccaferri et~al.}(2014)\textit{Maccaferri, Rivalta, Keir,
   and Acocella}}]{Maccaferri:2014ft}
 Maccaferri, F., E.~Rivalta, D.~Keir, and V.~Acocella (2014), {Off-rift
   volcanism in rift zones determined by crustal unloading}, \textit{Nature
   Geosci}, \textit{7}(4), 297--300.
+
+\bibitem[{\textit{Macedonio et~al.}(2014)\textit{Macedonio, Giudicepietro,
+  D'Auria, and Martini}}]{Macedonio:2014et}
+Macedonio, G., F.~Giudicepietro, L.~D'Auria, and M.~Martini (2014), {Sill
+  intrusion as a source mechanism of unrest at volcanic calderas}, \textit{J.
+  Geophys. Res. Solid Earth}, \textit{119}(5), 3986--4000.
 
 \bibitem[{\textit{Marsh}(1981)}]{Marsh:1981dc}
 Marsh, B.~D. (1981), {On the crystallinity, probability of occurrence, and
@@ -366,6 +537,17 @@ McKenzie, D. (1984), {The Generation and Compaction of Partially Molten Rock},
 \bibitem[{\textit{McKenzie}(1985)}]{McKenzie:1985jq}
 McKenzie, D. (1985), {The extraction of magma from the crust and mantle},
   \textit{Earth and Planetary Science Letters}, \textit{74}(1), 81--91.
+
+\bibitem[{\textit{Melosh}(1989)}]{Melosh:1989jl}
+Melosh, H.~J. (1989), {Impact cratering: A geologic process}, \textit{11}, 253.
+
+\bibitem[{\textit{Melosh et~al.}(2013)\textit{Melosh, Freed, Johnson, Blair,
+  Andrews-Hanna, Neumann, Phillips, Smith, Solomon, Wieczorek, and
+  Zuber}}]{Melosh:2013cz}
+Melosh, H.~J., A.~M. Freed, B.~C. Johnson, D.~M. Blair, J.~C. Andrews-Hanna,
+  G.~A. Neumann, R.~J. Phillips, D.~E. Smith, S.~C. Solomon, M.~A. Wieczorek,
+  and M.~T. Zuber (2013), {The origin of lunar mascon basins},
+  \textit{Science}, \textit{340}(6140), 1552--1555.
 
 \bibitem[{\textit{Menand}(2011)}]{Menand:2011ki}
 Menand, T. (2011), {Physical controls and depth of emplacement of igneous
@@ -392,6 +574,16 @@ Michaut, C., and C.~Jaupart (2006), {Ultra-rapid formation of large volumes of
   evolved magma}, \textit{Earth and Planetary Science Letters},
   \textit{250}(1-2), 38--52.
 
+\bibitem[{\textit{Michaut and Jaupart}(2011)}]{Michaut:2011dt}
+Michaut, C., and C.~Jaupart (2011), {Two models for the formation of magma
+  reservoirs by small increments}, \textit{Tectonophysics}.
+
+\bibitem[{\textit{Michaut et~al.}(2013)\textit{Michaut, Baratoux, and
+  Thorey}}]{Michaut:2013dr}
+Michaut, C., D.~Baratoux, and C.~Thorey (2013), {Magmatic intrusions and
+  deglaciation at mid-latitude in the northern plains of Mars},
+  \textit{Icarus}, \textit{225}(1), 602--613.
+
 \bibitem[{\textit{Miller and Paterson}(1999)}]{Miller:1999km}
 Miller, R.~B., and S.~R. Paterson (1999), {In defense of magmatic diapirs},
   \textit{Journal of Structural Geology}, \textit{21}(8-9), 1161--1173.
@@ -408,8 +600,25 @@ Morgan, S., A.~Stanik, E.~Horsman, B.~Tikoff, M.~de~Saint-Blanquat, and
   deformation: Trachyte Mesa intrusion, Henry Mountains, Utah}, \textit{Journal
   of Structural Geology}, \textit{30}(4), 491--512.
 
+\bibitem[{\textit{O'Keefe and Ahrens}(1999)}]{OKeefe:1999uj}
+O'Keefe, J.~D., and T.~J. Ahrens (1999), {Complex craters: Relationship of
+  stratigraphy and rings to impact conditions}, \textit{J. Geophys. Res.},
+  \textit{104}(11), 27,091--27,104.
+
+\bibitem[{\textit{Patan{\`e} et~al.}(2006)\textit{Patan{\`e}, Barberi, Cocina,
+  De~Gori, and Chiarabba}}]{Patane:2006hn}
+Patan{\`e}, D., G.~Barberi, O.~Cocina, P.~De~Gori, and C.~Chiarabba (2006),
+  {Time-Resolved Seismic Tomography Detects Magma Intrusions at Mount Etna},
+  \textit{Science}, \textit{313}(5788), 821--823.
+
 \bibitem[{\textit{Patankar}(1980)}]{Patankar:1980vu}
 Patankar, S. (1980), {Numerical heat transfer and fluid flow}.
+
+\bibitem[{\textit{Pedersen and Sigmundsson}(2004)}]{Pedersen:2004kp}
+Pedersen, R., and F.~Sigmundsson (2004), {InSAR based sill model links
+  spatially offset areas of deformation and seismicity for the 1994 unrest
+  episode at Eyjafjallaj{\"o}kull volcano, Iceland}, \textit{Geophys. Res.
+  Lett.}, \textit{31}(14), L14,610.
 
 \bibitem[{\textit{Petford et~al.}(1993)\textit{Petford, Kerr, and
   Lister}}]{Petford:1993bk}
@@ -426,6 +635,18 @@ Petford, N., A.~R. Cruden, K.~McCaffrey, and J.~L. Vigneresse (2000), {Granite
 Pieri, D.~C., and S.~M. Baloga (1986), {Eruption rate, area, and length
   relationships for some Hawaiian lava flows}, \textit{Journal of Volcanology
   and Geothermal Research}, \textit{30}(1-2), 29--45.
+
+\bibitem[{\textit{Pike}(1974)}]{Pike:1974ux}
+Pike, R.~J. (1974), {Depth/diameter relations of fresh lunar craters: Revision
+  from spacecraft data}, \textit{Geophys. Res. Lett.}, \textit{1}(7), 291--294.
+
+\bibitem[{\textit{Pike}(1976)}]{Pike:1976ei}
+Pike, R.~J. (1976), {Crater dimensions from apollo data and supplemental
+  sources}, \textit{The Moon}, \textit{15}(3-4), 463--477.
+
+\bibitem[{\textit{Pike}(1980)}]{Pike:1980eh}
+Pike, R.~J. (1980), {Formation of complex impact craters: Evidence from Mars
+  and other planets}, \textit{Icarus}, \textit{43}(1), 1--19.
 
 \bibitem[{\textit{Pinel and Jaupart}(2000)}]{Pinel:2000wa}
 Pinel, V., and C.~Jaupart (2000), {The effect of edifice load on magma ascent
@@ -453,6 +674,17 @@ Pollard, D.~D., and A.~M. Johnson (1973), {Mechanics of growth of some
   of overburden layers and sill formation}, \textit{Tectonophysics},
   \textit{18}(3-4), 311--354.
 
+\bibitem[{\textit{Rivalta}(2010)}]{Rivalta:2010em}
+Rivalta, E. (2010), {Evidence that coupling to magma chambers controls the
+  volume history and velocity of laterally propagating intrusions}, \textit{J.
+  Geophys. Res.}, \textit{115}(B7), B07,203.
+
+\bibitem[{\textit{Rivalta et~al.}(2005)\textit{Rivalta, B{\"o}ttinger, and
+  Dahm}}]{Rivalta:2005kd}
+Rivalta, E., M.~B{\"o}ttinger, and T.~Dahm (2005), {Buoyancy-driven fracture
+  ascent: Experiments in layered gelatine}, \textit{Journal of Volcanology and
+  Geothermal Research}, \textit{144}(1-4), 273--285.
+
 \bibitem[{\textit{Rocchi et~al.}(2002)\textit{Rocchi, Westerman, Dini,
   Innocenti, and Tonarini}}]{Rocchi:2002jy}
 Rocchi, S., D.~S. Westerman, A.~Dini, F.~Innocenti, and S.~Tonarini (2002),
@@ -475,9 +707,49 @@ Roni, E., D.~S. Westerman, and A.~Dini (2014), {Feeding and growth of a
 Rubin, A.~M. (1995), {Propagation of magma-filled cracks}, \textit{Annual
   Review of Earth and Planetary Sciences}.
 
-\bibitem[{\textit{Schultz}(1976)}]{Schultz:1976kt}
-Schultz, P.~H. (1976), {Floor-fractured lunar craters}, \textit{The Moon},
-  \textit{15}(3-4), 241--273.
+\bibitem[{\textit{Sato et~al.}(2010)\textit{Sato, Kurita, and
+  Baratoux}}]{Sato:2010ex}
+Sato, H., K.~Kurita, and D.~Baratoux (2010), {The formation of floor-fractured
+  craters in Xanthe Terra}, \textit{Icarus}, \textit{207}(1), 248--264.
+
+\bibitem[{\textit{Savitski and Detournay}(2002)}]{Savitski:2002gy}
+Savitski, A.~A., and E.~Detournay (2002), {Propagation of a penny-shaped
+  fluid-driven fracture in an impermeable rock: asymptotic solutions},
+  \textit{International Journal of Solids and Structures}, \textit{39},
+  6311--6337.
+
+\bibitem[{\textit{Schultz}(1976{\natexlab{a}})}]{Schultz:1976kt}
+Schultz, P.~H. (1976{\natexlab{a}}), {Floor-fractured lunar craters},
+  \textit{The Moon}, \textit{15}(3-4), 241--273.
+
+\bibitem[{\textit{Schultz}(1976{\natexlab{b}})}]{Schultz:1976vl}
+Schultz, P.~H. (1976{\natexlab{b}}), {Moon morphology: Interpretations based on
+  Lunar Orbiter photography}, \textit{Austin, University of Texas Press, 1976.
+  641 p.}, \textit{-1}.
+
+\bibitem[{\textit{Schultz}(1977)}]{Schultz:1977ec}
+Schultz, P.~H. (1977), {Endogenic modification of impact craters on Mercury},
+  \textit{Physics of the Earth and Planetary Interiors}, \textit{15}(2-3),
+  202--219.
+
+\bibitem[{\textit{Schultz}(1978)}]{Schultz:1978tw}
+Schultz, P.~H. (1978), {Martian intrusions: Possible sites and implications},
+  \textit{Geophys. Res. Lett.}
+
+\bibitem[{\textit{Schultz}(1988)}]{Schultz:1988wb}
+Schultz, P.~H. (1988), {Cratering on Mercury: A relook}, \textit{Mercury}, pp.
+  274--335.
+
+\bibitem[{\textit{Schultz and Glicken}(1979)}]{Schultz:1979iw}
+Schultz, P.~H., and H.~Glicken (1979), {Impact crater and basin control of
+  igneous processes on Mars}, \textit{J. Geophys. Res.}, \textit{84}(B14),
+  8033.
+
+\bibitem[{\textit{Schultz et~al.}(1994)\textit{Schultz, Koeberl, Bunch, Grant,
+  and Collins}}]{Schultz:1994cv}
+Schultz, P.~H., C.~Koeberl, T.~Bunch, J.~Grant, and W.~Collins (1994), {Ground
+  truth for oblique impact processes: New insight from the Rio Cuarto,
+  Argentina, crater field}, \textit{Geology}, \textit{22}(10), 889--892.
 
 \bibitem[{\textit{Schultz et~al.}(2008)\textit{Schultz, Soliva, Fossen, Okubo,
   and Reeves}}]{Schultz:2008ih}
@@ -506,6 +778,17 @@ Sillitoe, R.~H., and J.~F.~H. Thompson (1998), {Intrusion{\textendash}Related
   Distinction from Orogenic Gold Deposits}, \textit{Resource Geology},
   \textit{48}(4), 237--250.
 
+\bibitem[{\textit{Sjogren et~al.}(1972)\textit{Sjogren, Muller, and
+  Wollenhaupt}}]{Sjogren:1972kk}
+Sjogren, W.~L., P.~M. Muller, and W.~R. Wollenhaupt (1972), {Apollo 15 gravity
+  analysis from the S-band transponder experiment}, \textit{The Moon},
+  \textit{4}(3-4), 411--418.
+
+\bibitem[{\textit{Sjogren et~al.}(1974)\textit{Sjogren, Wimberly, and
+  Wollenhaupt}}]{Sjogren:1974ij}
+Sjogren, W.~L., R.~N. Wimberly, and W.~R. Wollenhaupt (1974), {Lunar gravity:
+  Apollo 16}, \textit{The Moon}, \textit{11}(1-2), 35--40.
+
 \bibitem[{\textit{Snoeijer and Andreotti}(2013)}]{Snoeijer:2013cm}
 Snoeijer, J.~H., and B.~Andreotti (2013), {Moving Contact Lines: Scales,
   Regimes, and Dynamical Transitions}, \textit{Annu. Rev. Fluid Mech.},
@@ -515,6 +798,10 @@ Snoeijer, J.~H., and B.~Andreotti (2013), {Moving Contact Lines: Scales,
   Sparks}}]{Stasiuk:1993kg}
 Stasiuk, M.~V., C.~Jaupart, R.~Stephen, and J.~Sparks (1993), {Influence of
   cooling on lava-flow dynamics}, \textit{Geology}, \textit{21}(4), 335--338.
+
+\bibitem[{\textit{Taisne and Jaupart}(2009)}]{Taisne:2009va}
+Taisne, B., and C.~Jaupart (2009), {Dike propagation through layered rocks},
+  \textit{Journal of Geophysical Research: Solid {\ldots}}.
 
 \bibitem[{\textit{Taisne and Tait}(2009)}]{Taisne:2009kj}
 Taisne, B., and S.~Tait (2009), {Eruption versus intrusion? Arrest of
@@ -526,10 +813,21 @@ Taisne, B., and S.~Tait (2009), {Eruption versus intrusion? Arrest of
 Taisne, B., S.~Tait, and C.~Jaupart (2011), {Conditions for the arrest of a
   vertical propagating dyke}, \textit{Bull Volcanol}, \textit{73}(2), 191--204.
 
+\bibitem[{\textit{Thomson et~al.}(2009)\textit{Thomson, Grosfils, Bussey, and
+  Spudis}}]{Thomson:2009eo}
+Thomson, B.~J., E.~B. Grosfils, D.~B.~J. Bussey, and P.~D. Spudis (2009), {A
+  new technique for estimating the thickness of mare basalts in Imbrium Basin},
+  \textit{Geophys. Res. Lett.}, \textit{36}(12), L12,201--5.
+
 \bibitem[{\textit{Thorey and Michaut}(2014)}]{Thorey:2014cv}
 Thorey, C., and C.~Michaut (2014), {A model for the dynamics of crater-centered
   intrusion: Application to lunar floor-fractured craters}, \textit{J. Geophys.
   Res.}
+
+\bibitem[{\textit{Thorey et~al.}(2015)\textit{Thorey, Michaut, and
+  Wieczorek}}]{Thorey:2015hw}
+Thorey, C., C.~Michaut, and M.~Wieczorek (2015), {Gravitational signatures of
+  lunar floor-fractured craters}, \textit{Earth and Planetary Science Letters}.
 
 \bibitem[{\textit{Tsai and Rice}(2010)}]{Tsai:2010ev}
 Tsai, V.~C., and J.~R. Rice (2010), {A model for turbulent hydraulic fracture
@@ -574,10 +872,31 @@ Whittington, A.~G., B.~M. Hellwig, H.~Behrens, B.~Joachim, A.~Stechern, and
   the rheology of evolving silicic magmas}, \textit{Bull Volcanol},
   \textit{71}(2), 185--199.
 
+\bibitem[{\textit{Wichman and Schultz}(1993)}]{Wichman:1993hk}
+Wichman, R.~W., and P.~H. Schultz (1993), {Floor-fractured crater models of the
+  Sudbury Structure, Canada: Implications for initial crater size and crater
+  modification}, \textit{Meteoritics}, \textit{28}(2), 222--231.
+
+\bibitem[{\textit{Wichman and Schultz}(1995{\natexlab{a}})}]{Wichman:1995ju}
+Wichman, R.~W., and P.~H. Schultz (1995{\natexlab{a}}), {Floor-fractured impact
+  craters on Venus: Implications for igneous crater modification and local
+  magmatism}, \textit{J. Geophys. Res.}, \textit{100}(E2), 3233--3244.
+
+\bibitem[{\textit{Wichman and Schultz}(1995{\natexlab{b}})}]{Wichman:1995ic}
+Wichman, R.~W., and P.~H. Schultz (1995{\natexlab{b}}), {Floor-fractured
+  craters in Mare Smythii and west of Oceanus Procellarum: Implications of
+  crater modification by viscous relaxation and igneous intrusion models},
+  \textit{J. Geophys. Res.}, \textit{100}(E10), 21,201--21,218.
+
 \bibitem[{\textit{Wichman and Schultz}(1996)}]{Wichman:1996bj}
 Wichman, R.~W., and P.~H. Schultz (1996), {Crater-centered laccoliths on the
   Moon: Modeling intrusion depth and magmatic pressure at the crater
   Taruntius}, \textit{Icarus}, \textit{122}(1), 193--199.
+
+\bibitem[{\textit{Wieczorek and Phillips}(1998)}]{wieczorek:1998th}
+Wieczorek, M.~A., and R.~J. Phillips (1998), {Potential anomalies on a sphere:
+  Applications to the thickness of the lunar crust}, \textit{J. Geophys. Res.},
+  \textit{103}(E1), 1715--1724.
 
 \bibitem[{\textit{Wieczorek et~al.}(2001)\textit{Wieczorek, Zuber, and
   Phillips}}]{Wieczorek:2001jt}
@@ -593,6 +912,16 @@ Wieczorek, M.~A., G.~A. Neumann, F.~Nimmo, W.~S. Kiefer, G.~J. Taylor, H.~J.
   A.~S. Konopliv, F.~G. Lemoine, D.~E. Smith, M.~M. Watkins, J.~G. Williams,
   and M.~T. Zuber (2013), {The crust of the Moon as seen by GRAIL},
   \textit{Science}, \textit{339}(6120), 671--675.
+
+\bibitem[{\textit{Wilhelms et~al.}(1987)\textit{Wilhelms, McCauley, and
+  Trask}}]{Wilhelms:1987vb}
+Wilhelms, D.~E., J.~F. McCauley, and N.~J. Trask (1987), {The geologic history
+  of the Moon}, \textit{U. S. Geological Survey Professional Paper}.
+
+\bibitem[{\textit{Wilson and Head~III}(1981)}]{Wilson:1981fm}
+Wilson, L., and J.~W. Head~III (1981), {Ascent and eruption of basaltic magma
+  on the Earth and Moon}, \textit{J. Geophys. Res.}, \textit{86}(B4),
+  2971--3001.
 
 \bibitem[{\textit{W{\"o}hler et~al.}(2007)\textit{W{\"o}hler, Lena, and
   Phillips}}]{Wohler:2007it}
@@ -624,5 +953,15 @@ Zuber, M.~T., D.~E. Smith, R.~S. Zellar, G.~A. Neumann, X.~Sun, R.~B. Katz,
   D.~D. Rowlands, M.~H. Torrence, and T.~W. Zagwodzki (2009), {The lunar
   reconnaissance orbiter laser ranging Investigation}, \textit{Space Sci Rev},
   \textit{150}(1-4), 63--80.
+
+\bibitem[{\textit{Zuber et~al.}(2013)\textit{Zuber, Smith, Watkins, Asmar,
+  Konopliv, Lemoine, Melosh, Neumann, Phillips, Solomon, Wieczorek, Williams,
+  Goossens, Kruizinga, Mazarico, Park, and Yuan}}]{Zuber:2013cp}
+Zuber, M.~T., D.~E. Smith, M.~M. Watkins, S.~W. Asmar, A.~S. Konopliv, F.~G.
+  Lemoine, H.~J. Melosh, G.~A. Neumann, R.~J. Phillips, S.~C. Solomon, M.~A.
+  Wieczorek, J.~G. Williams, S.~J. Goossens, G.~Kruizinga, E.~Mazarico, R.~S.
+  Park, and D.~N. Yuan (2013), {Gravity field of the Moon from the gravity
+  recovery and interior laboratory (GRAIL) mission}, \textit{Science},
+  \textit{339}(6120), 668--671.
 
 \end{thebibliography}

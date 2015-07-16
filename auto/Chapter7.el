@@ -4,5 +4,11 @@
    (LaTeX-add-labels
     "sec:summary"
     "sec:perspectives"
-    "C7-Sketch")))
+    "sec:caref-descr-tip"
+    "C7-Sketch"
+    "sec:topo"
+    "sec:summary-1"
+    "sec:perspectives-2"
+    "sec:crust-magm-intr"
+    "C7-FFCOther")))
 

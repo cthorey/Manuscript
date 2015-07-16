@@ -5,18 +5,18 @@
 
 \minitoc
 
-The previous  chapter was first  step toward the understanding  of the
+The previous chapter was a first  step toward the understanding of the
 coupling between  the cooling and  the spreading of  an elastic-plated
-gravity current.  Hereafter,  we first investigate the  changes in the
+gravity  current.   Hereafter,  we  investigate  the  changes  in  the
 dynamics  caused by  both the  heating of  the wall  rocks and  a more
-realistic  rheology  for   the  magma.  We  then   compare  the  model
+realistic  rheology  for  the  magma.    We  then  compare  the  model
 predictions with the observations presented in Chapter \ref{chap2}.
 
 
 \section{Motivation}
 \label{sec:introduction}
 
-Numerous geological explorations  demonstrate that magmatic intrusions
+Numerous  geological  studies  demonstrate  that  magmatic  intrusions
 affect  the  host  rock  by  developing  contact-metamorphic  aureoles
 \citep{Jaeger:1959du,Galushkin:1997dy,Senger:2014tt}.   For  instance,
 the  Leadville  Limestone  in  Colorado, USA,  famous  for  preserving
@@ -24,31 +24,30 @@ fossils  dating   back  to  the  Carboniferous   period,  was  locally
 transformed  into  marble  following  the intrusion  of  the  Treasure
 Mountain Dome (Figure \ref{Treasure}).  The increase in the geothermal
 gradient in  sedimentary basins also  tends to accelerate  the thermal
-maturation  of  organic  matter  in  the  surrounding,  promoting  the
-hydrocarbon generation \citep{Senger:2014tt}. Release of $CO_2$ during
-the  metamorphism  processes  have  also been  proposed  to  help  the
-formation  of ore  deposits  in the  vicinity  of magmatic  intrusions
+maturation of organic matter in the surrounding, promoting hydrocarbon
+generation   \citep{Senger:2014tt}.    Release    of   $CO_2$   during
+metamorphic processes has also been  proposed to help the formation of
+ore    deposits   in    the    vicinity    of   magmatic    intrusions
 \citep{SILLITOE:1998bs,Ganino:2008ft,Zhou:2008hc}.
 
-The size  of the contact aureole  depends on the regional  context and
-can reach reach  more than $100\%$ of the intrusion  thickness in many
-region \citep{Galushkin:1997dy}.   This contact aureole,  by retaining
-the heat within the flow, may also affect the dynamics of the magmatic
-intrusion itself.  In the following,  we relax the isothermal boundary
-condition used in Chapter \ref{C3-JFM} to investigate its influence of
-the dynamics.
+The size of  the contact aureole depends on the  context and can reach
+more  than  $100\%$  of  the   intrusion  thickness  in  many  regions
+\citep{Galushkin:1997dy}.   This contact  aureole,  by insulating  the
+flow, may also  affect the dynamics of the  magmatic intrusion itself.
+In the following,  we relax the isothermal boundary  condition used in
+Chapter \ref{C3-JFM} to investigate its influence of the dynamics.
 
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter4/} }
     \includegraphics[scale=0.9]{Treasure.eps}
     \caption{a)  Sketch of  the granitic  Treasure Mountain  Laccolith
-      intruded  roughly  $\sim  20$  Ma years  ago  in  the  Colorado,
-      USA. The Leadville Limestone  (white layer) was metamorphosed by
-      the heat  from the intrusion,  and was transformed  into marble.
-      During the  last $10$  Ma years,  the area  was eroded,  and the
-      marble is today exposed to the surface.  b) Cross section of the
-      strata from  the West  flank of the  Treasure Mountain  dome. c)
+      intruded roughly  $\sim 20$ Ma  years ago in Colorado,  USA. The
+      Leadville Limestone (white layer)  was metamorphosed by the heat
+      from the intrusion, and was transformed into marble.  During the
+      last $10$ Ma, the area was eroded, and the marble as well as the
+      laccolith are today exposed at the surface.  b) Cross section of
+      the strata from the West flank of the Treasure Mountain dome. c)
       Marble  vein  visible  from  the  West  flank  of  the  Treasure
       Mountain. The  quality of this  Marble was selected to  clad the
       exterior  of the  Lincoln  Memorial and  a  variety of  building
@@ -63,17 +62,16 @@ the dynamics.
 We  consider   the  model  of  elastic-plated   gravity  current  with
 temperature-dependent      viscosity     described      in     Section
 \ref{C3-sec:theory}  in   which  we  relax  the   isothermal  boundary
-condition. In the following, we specify only the changes in the theory
-that come  with the new  thermal boundary  condition and we  refer the
+condition. In  the following,  we specify only  the changes  in theory
+that come  from the new  thermal boundary  condition and we  refer the
 reader  to  Section \ref{C3-sec:theory}  for  more  details about  the
 derivation.
 
 \subsection{Thermal boundary condition}
 \label{C4-sec:formulation-1}
 
-We now  consider the heating of  the surrounding medium by  the magma.
-The  continuity of  the temperature  imposes to  rewrite the  vertical
-temperature profile as
+We now consider  the heating of the surrounding medium  by the flowing
+magma.  The vertical temperature profile respecting continuity writes
 \begin{equation}
   T=
   \begin{cases}
@@ -85,8 +83,8 @@ temperature profile as
 \end{equation}
 where  $\delta(r,t)$   is  the   thermal  boundary   layer  thickness,
 $T(r,z,t)$  is  the  temperature  of  the  fluid,  $T_b(r,t)$  is  the
-temperature  at  the center  of  the  profile  and $T_s(r,t)$  is  the
-temperature  of the  surface, i.e.   $T(r,z=0,t)=T(r,z=h,t)=T_s(r,t)$.
+temperature at  the center of  the profile  and $T_s(r,t)$ is  now the
+temperature  at the  surface, i.e.   $T(r,z=0,t)=T(r,z=h,t)=T_s(r,t)$.
 As in Section \ref{C3-sec:theory}, this profile assures the continuity
 of  the temperature  and  heat  flux within  the  flow.  In  addition,
 continuity of the heat flux across the flow boundaries reads
@@ -133,9 +131,9 @@ Therefore, the  two thermal  boundary conditions  (\ref{C4-Flux1}) and
 \label{C4-sec:dimens-equat-1}
 
 Except  for   the  conduction  term,   which  now  accounts   for  the
-dimensionless  surface temperature  $\Theta_s$, the  coupled equations
-governing the  cooling the current  are very similar  to (\ref{C3-HF})
-and (\ref{C3-TF}) and read
+dimensionless    surface   temperature    $\Theta_s$,   the    coupled
+dimensionless equations  governing the  cooling of  the flow  are very
+similar to (\ref{C3-HF}) and (\ref{C3-TF}) and read
 \begin{eqnarray}
   \frac{\partial h}{\partial t}-\frac{12}{r}
   \frac{\partial}{\partial      r}
@@ -164,24 +162,45 @@ is discussed  in the  next section.   The thermal  boundary conditions
 (\ref{C4-2Flux_1})  and (\ref{C4-2Flux_2})  reduce in  a dimensionless
 form to
 \begin{equation}
-  2\frac{\Theta_b-\Theta_s}{\delta}               =               \Omega
-  Pe^{1/2}\frac{\Theta_s}{\sqrt{\pi t}}.
+  2\frac{\Theta_b-\Theta_s}{\delta}               =   \beta(t)\Theta_s
   \label{C4-Boundary-Condi}
 \end{equation}
-where $\Omega$ is a new dimensionless number; it is equal to
+where
 \begin{equation}
-  \Omega=\frac{k_r}{k_m}\left(\frac{\kappa_m}{\kappa_r}\right)^{1/2}\label{C4-omega}
+  \beta(t) = \frac{\Omega_1\Omega_2^{-1/2} Pe^{1/2}}{\sqrt{\pi t}}.\label{C4_beta}
 \end{equation}
-and represents the  ratio between heat conduction at  the contact with
-the encasing rocks and heat diffusion within the fluid.
+$\Omega_1$ and $\Omega_2$ are two new dimensionless numbers and read
+\begin{eqnarray}
+  \Omega_1&=&\frac{\kappa_r}{\kappa_m}\label{C4-Omega1}\\
+  \Omega_2&=&\frac{k_r}{k_m}\label{C4-Omega2}
+\end{eqnarray}
+They represent  the ratio of  wall rocks to magma  thermal diffusivity
+(\ref{C4-Omega1})    and   thermal    conductivity   (\ref{C4-Omega2})
+respectively.   While the  former should  be close  to $1$,  the later
+could show small variations depending on the nature of the surrounding
+rocks  as   well  as  its  porosity   content  \citep{Buttner:1998hy}.
+However, variations of both dimensionless numbers will only affect the
+size of the  thermal aureole. In this Chapter, we  focus mainly on the
+dynamics of  the flow itself and  for a sake of  simplicity, we rather
+consider only the combination of both which we call $\Omega$ and reads
+\begin{eqnarray}
+  \Omega &=& \Omega_1\Omega_2^{-1/2}\\
+         &=& \frac{\kappa_r}{\kappa_m}\left(\frac{k_m}{k_r}\right)^{1/2}\label{C4-Omega}
+\end{eqnarray}
+It represents  the ratio between  heat conduction at the  contact with
+the encasing  rocks and heat  diffusion within the fluid  and quantify
+how much heat is transferred to the wall rocks.
 
-The variable $\xi$ is the sufficient variable to solve for in the heat
-transport equation (\ref{C4-TF}). Indeed,
+As in the precedent chapter, the heat transport equation (\ref{C4-TF})
+is  written  in   terms  of  $\xi$  which   represents  our  ``thermal
+variable''.  In that case, $\xi$ writes
 \begin{equation}
   \xi&=&\frac{\delta}{3} \left(- 2 \Theta_{b} - \Theta_{s} + 3\right)\label{C4-xi}
 \end{equation}
-where   we    have   used   (\ref{C4-tbar}).    In    addition,   from
-(\ref{C4-Boundary-Condi}), we can rewrite
+where  we have  used (\ref{C4-tbar})  in (\ref{C4-xi}).   In addition,
+from  (\ref{C4-Boundary-Condi}),  we  can  derive  an  expression  for
+$\Theta_s$,  $\delta$  and  $\Theta_b$  as a  function  of  the  other
+variables
 \begin{eqnarray}
   \Theta_s &=& \frac{2 \Theta_{b}}{\beta \delta + 2}\label{C4-Ts},\\
   \delta  &=&   \frac{1}{\Theta_{s}  \beta}   \left(2  \Theta_{b}   -  2
@@ -194,20 +213,20 @@ $\delta = h/2$ and injecting (\ref{C4-Ts}) into (\ref{C4-xi}) gives
   \xi_t(t)=\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
     + 24}.\label{C4-xit}
 \end{equation}
-Therefore,  when  $\xi<\xi_t$,  the  thermal boundary  layer  are  not
+Therefore,  when  $\xi<\xi_t$, the  thermal  boundary  layers are  not
 merged, $\Theta_b=1$ and injecting (\ref{C4-D}) into (\ref{C4-xi}) and
 solving for $\Theta_s$ gives
 \begin{equation}
   \Theta_s = \frac{3 \beta}{4} \xi - \frac{\sqrt{3}}{4} \sqrt{\beta \xi \left(3 \beta \xi + 8\right)} + 1.
 \end{equation}
-In contrast, when $\xi>\xi_t$, the thermal boundary layer have merged,
-$\delta=h/2$  and  injecting   (\ref{C4-Tb})  into  (\ref{C4-xi})  and
-solving for $\Theta_s$ gives
+In  contrast,  when  $\xi>\xi_t$,  the thermal  boundary  layers  have
+merged,  $\delta=h/2$ and  injecting (\ref{C4-Tb})  into (\ref{C4-xi})
+and solving for $\Theta_s$ gives
 \begin{equation}
   \Theta_s = \frac{- 12 \xi + 6 h}{\left(\beta h + 6\right) h}.
 \end{equation}
 
-At the end, we then have
+In the end, we then have
 \begin{equation}
   \Theta_s(r,t)=
   \begin{cases}
@@ -239,8 +258,7 @@ and
 with
 \begin{eqnarray}
   \xi_t(t)&=&\frac{\beta(t) h^{2}{\left (r,t \right )}}{6 \beta(t) h{\left (r,t \right )}
-              + 24}\\
-  \beta(t) &=& \Omega Pe^{1/2}\frac{1}{\sqrt{\pi t}}
+              + 24}
 \end{eqnarray}
 
 \subsection{Rheology}
@@ -250,7 +268,7 @@ The model derived in  Section \ref{C4-sec:dimens-equat-1} does not yet
 assume a specific  relation between viscosity and  temperature and the
 choice of the rheology $\eta(T)$,  which is contained in the integrals
 $I_0(z)$, $I_1(z)$  and $I_2(z)$, remains  to be defined.   In Section
-\ref{C3-sec:theory}, we assume a  viscosity inversely dependent on the
+\ref{C3-sec:theory}, we assumed a viscosity inversely dependent on the
 temperature which reads in a dimensional form
 \begin{equation}
   \eta(T)=\frac{\eta_h
@@ -258,13 +276,24 @@ temperature which reads in a dimensional form
 \end{equation}
 where $\eta_h$  and $\eta_c$  are the viscosities  of the  hottest and
 coldest  fluid  at  the   temperature  $T_i$  and  $T_0$  respectively
-\citep{Bercovici:2007vc}.   While  this   model  possesses  some  nice
-simplification properties, it  restricts the change in  viscosity to a
-very narrow  range of  temperature close  to $T=T_0$,  i.e. $\theta=0$
-(Figure   \ref{C4-Rheology}).   In   contrast,  the   Arrhenius  model
+\citep{Bercovici:2007vc}.
+\begin{figure}[h!]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.8]{Rheology.eps}
+    \caption{Dimensionless viscosity  versus dimensionless temperature
+      for  both  rheologies  $\eta_1$ (\ref{C4-rheo-1})  and  $\eta_2$
+      (\ref{C4-rheo-2}) using $\nu=0.001$.}
+    \label{C4-Rheology}
+  \end{center}
+\end{figure}
+While  this model  possesses some  nice simplification  properties, it
+restricts  the  change  in  viscosity   to  a  very  narrow  range  of
+temperatures    close   to    $T=T_0$,   i.e.     $\theta=0$   (Figure
+\ref{C4-Rheology}).     In     contrast,    the     Arrhenius    model
 ($\eta \sim  \exp(-k/T)$), which is  a more realistic model  to relate
-temperature and viscosity of lavas \citep{Blatt:2ViMWPc0}, describes a
-viscosity  that increases  over  a much  larger  range of  temperature
+temperature and viscosity  for lavas \citep{Blatt:2ViMWPc0}, describes
+a viscosity  that increases over  a much larger range  of temperatures
 (Figure \ref{C4-Rheology}).  To get some insights into the effect of a
 more  realistic temperature-dependent  viscosity, we  thus also  use a
 first-order approximation of the Arrhenius  model as a second rheology
@@ -273,22 +302,12 @@ $\eta_2(T)$ \citep{Diniega:2013eh}
   \eta_2(T)                          =                          \eta_h
   \exp\left(-\log\left(\frac{\eta_h}{\eta_c}\right)\left(1-\frac{T-T_0}{T_i-T_0}\right)\right)
 \end{eqnarray}
-\begin{figure}[htbp]
-  \begin{center}
-    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
-    \includegraphics[scale=0.8]{Rheology.eps}
-    \caption{Dimensionless viscosity  versus dimensionless temperature
-      for  both  rheology   $\eta_1$  (\ref{C4-rheo-1})  and  $\eta_2$
-      (\ref{C4-rheo-2}) and $\nu=0.001$.}
-    \label{C4-Rheology}
-  \end{center}
-\end{figure}
 In a dimensionless form, they read
 \begin{eqnarray}
   \eta_1(\theta)/\eta_h&=&\frac{1}{\nu+(1-\nu)\theta} \label{C4-rheo-1}\\
   \eta_2(\theta)/\eta_h&=&\exp\left(-\log(\nu)\left(1-\theta\right)\right)  \label{C4-rheo-2}
 \end{eqnarray}
-where   $\nu$  is   the  viscosity   contrast  described   in  Section
+where  $\nu$ is  the  viscosity contrast  which  described in  Section
 \ref{C3-sec:theory} and represents the ratio between the hot viscosity
 $\eta_h$  and   the  cold  viscosity  $\eta_c$.    The  expression  of
 $I_0(\delta)$, $I_1(\delta)$, $I_1(h)$ and $I_2(\delta)$, necessary to
@@ -304,24 +323,24 @@ transferred    to   the    surrounding    rocks.     In   the    limit
 $\Omega \rightarrow \infty$, the model should thus reduce to the model
 described    in    Section    \ref{C3-sec:theory}.     Indeed,    when
 $\Omega\rightarrow \infty$, the  coefficient $\beta\rightarrow \infty$
-and then  $\xi_t\rightarrow h/6$ (Section  \ref{C3-sec:theory}).  When
-$\xi<\xi_t$,  injecting  the  corresponding expression  of  $\Theta_s$
+and then $\xi_t\rightarrow  h/6$ (Section \ref{C3-sec:heat-equation}).
+When $\xi<\xi_t$, injecting the corresponding expression of $\Theta_s$
 (\ref{C4-TS})   in   the    corresponding   expression   of   $\delta$
 (\ref{C4-DELTA}) gives
 \begin{equation}
   \delta =\frac{3 \beta \xi +\sqrt{3} \sqrt{\beta \xi (3 \beta \xi +8)}+8}{2 \beta }
 \end{equation}
-which  tends   to  $3\xi$  when  $\beta   \rightarrow  \infty$.   When
-$\xi>\xi_t$,  injecting  the  corresponding expression  of  $\Theta_s$
-(\ref{C4-TS})   in   the   corresponding  expression   of   $\Theta_b$
-(\ref{C4-TB}) gives
+which indeed  tends to  $3\xi$ when $\beta  \rightarrow \infty$  as in
+Section \ref{C3-sec:heat-equation}.   When $\xi>\xi_t$,  injecting the
+corresponding   expression   of   $\Theta_s$  (\ref{C4-TS})   in   the
+corresponding expression of $\Theta_b$ (\ref{C4-TB}) gives
 \begin{equation}
   \Theta_b = \frac{3 (\beta  h+4) (h-2 \xi )}{2 h (\beta  h+6)}
 \end{equation}
-which tends  to $3/2-3\xi/h$ when $\beta  \rightarrow \infty$ (Section
-\ref{C3-sec:theory}). Finally, taking the limit of $\Theta_s$ for both
-$\xi>\xi_t$ and $\xi<\xi_t$ show that  $\Theta_s$ indeed tends to zero
-when $\Omega\rightarrow \infty$.
+which  indeed tends  to $3/2-3\xi/h$  when $\beta  \rightarrow \infty$
+(Section  \ref{C3-sec:heat-equation}). Finally,  taking  the limit  of
+$\Theta_s$ for  both $\xi>\xi_t$ and $\xi<\xi_t$  show that $\Theta_s$
+indeed tends to zero when $\Omega\rightarrow \infty$.
 
 For magmatic intrusions,  the thermal parameters of the  magma and the
 encasing rocks are  close and the dimensionless  number $\Omega$ would
@@ -331,65 +350,52 @@ $\Omega=10^5$ and  $\Omega = 1$  in both regimes separately.   We also
 investigate  the effect  of  a  more realistic  rheology  on the  flow
 dynamics.
 
-\section{Evolution in the bending regime}
-\label{C4-sec:evol-bend-regime-1}
-
-We  follow the  same approach  as in  the previous  Chapter and  first
-concentrate  on the  case in  which  only bending  contributes to  the
-pressure.   The   governing  equations  are  thus   (\ref{C4-HF})  and
-(\ref{C4-TF})  where  $P  =  \nabla_r^4h$.   For  isothermal  boundary
-condition, we show that the dynamics  in the bending regime depends on
-the average  viscosity of a small  region at the front  of the current
-and can be divided into three phases. Hereafter, we first describe how
-the thermal  boundary condition  influences the  timing for  the phase
-transition  by looking  at  two values  for  the dimensionless  number
-$\Omega$,     i.e.       $\Omega=1$     and      $\Omega=10^5$     and
-$\eta(\theta)=\eta_1(\theta)$.   We  thus  investigate the  effect  of
-changing the rheology.
-
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.55]{Grid_PeOmega_ELAS_Berco_3.eps}
     \caption{Snapshots of  the flow thermal  structure $\theta(r,z,t)$
       for  different  sets  ($Pe$,$\Omega$)  with  $Pe=  1.0$  ,$10.0$
-      ,$100.0$   and   $\Omega=10^5$   and   $1.0$   at   $t=10$   for
-      $\nu=0.001$. The thermal structure  above the intrusion is given
-      by   (\ref{C4-eq11})  and   reads   in   a  dimensionless   form
-      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\frac{\kappa_m}{\kappa_r}\frac{(z-h)}{2\sqrt{t}}\right)}$
-      where the ratio  $\kappa_m/\kappa_r$ is set to  $1$. The thermal
-      structure  below the  intrusions is  similar and  not shown  for
-      clarity.}
+      ,$100.0$, $\Omega=10^5$ and $1.0$ at $t=10$ for $\nu=0.001$. The
+      thermal   structure   above   the    intrusion   is   given   by
+      (\ref{C4-eq11})    and   reads    in   a    dimensionless   form
+      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\Omega_1\frac{(z-h)}{2\sqrt{t}}\right)}$
+      where $\Omega_1$ is set to  $1$. The thermal structure below the
+      intrusion is similar and not shown for clarity.}
     \label{C4-Grid_PeOmega_Heating}
   \end{center}
 \end{figure}
+
+
+\section{Evolution in the bending regime}
+\label{C4-sec:evol-bend-regime-1}
+
+We  follow the  same approach  as in  the previous  Chapter and  first
+concentrate  on the  case in  which  only bending  contributes to  the
+dynamic pressure.  The governing  equations are thus (\ref{C4-HF}) and
+(\ref{C4-TF})  where  $P  =  \nabla_r^4h$.   For  isothermal  boundary
+conditions, we show that the dynamics in the bending regime depends on
+the average  viscosity of a small  region at the front  of the current
+and can be divided into three phases. Hereafter, we first describe how
+the thermal  boundary condition  influences the  timing for  the phase
+transition  by looking  at  two values  for  the dimensionless  number
+$\Omega$,     i.e.       $\Omega=1$     and      $\Omega=10^5$     and
+$\eta(\theta)=\eta_1(\theta)$.   We  then  investigate the  effect  of
+changing the rheology.
 
 \subsection{Relaxing  the   thermal  boundary  condition,   effect  of
   $\Omega$}
 \label{C4-sec:infl-therm-bound-el}
 
-The heating  of the surrounding  medium limits  heat loss in  the flow
-central region and  the thermal anomaly extends further  into the flow
-(Figure \ref{C4-Grid_PeOmega_Heating}). For  instance, for $\nu=0.001$
-and $Pe=1.0$,  while the  thermal anomaly extends  over $50\%$  of the
-current  for $\Omega  = 10^5$  at $t=10$,  it extends  over more  than
-$75\%$      of      the      flow     for      $\Omega=1$      (Figure
-\ref{C4-Grid_PeOmega_Heating}). Nevertheless,  the tip of  the current
-is still  rapidly cooling and  the thermal anomaly also  detaches from
-the front when relaxing the thermal boundary condition.
-
-Hence, the dynamics for $\Omega=1$ also passes through three different
-phases.   The current  first behaves  as an  isoviscous flow  with hot
-viscosity, it then slows down and  thickens to finally behave again as
-an    isoviscous    flow    but   with    cold    viscosity    (Figure
-\ref{C4-Scaling_HR_ELAS_Omega}).  As the current tip remains hot for a
-longer period of time, the transition  to the second and third bending
-regime  are however  delayed  relatively to  the  case $\Omega=  10^5$
-(Figure    \ref{C4-Scaling_HR_ELAS_Omega}).     For   instance,    for
-$\nu=10^{-3}$ and $Pe=1.0$, while the transition to the second bending
-phase already begins at $t\sim 10^{-6}$ for $\Omega=10^{5}$, it occurs
-only    after   $t\sim    10^{-5}$   for    $\Omega=   1.0$    (Figure
-\ref{C4-Scaling_HR_ELAS_Omega}).
+Heating of the surrounding medium acts  to limit heat loss in the flow
+central   region   and  the   thermal   anomaly   is  larger   (Figure
+\ref{C4-Grid_PeOmega_Heating}).   For  instance, for  $\nu=0.001$  and
+$Pe=1.0$, while the thermal anomaly extends over $50\%$ of the current
+for $\Omega  = 10^5$ at  $t=10$, it makes up  more than $75\%$  of the
+flow    for    $\Omega=1$   (Figure    \ref{C4-Grid_PeOmega_Heating}).
+Nevertheless, the thin tip of the current is still rapidly cooling and
+the radius  of the flow  still grows  faster than the  thermal anomaly
+extent when relaxing the thermal boundary condition.
 
 \begin{figure}[h!]
   \begin{center}
@@ -402,18 +408,33 @@ only    after   $t\sim    10^{-5}$   for    $\Omega=   1.0$    (Figure
       Right: Dimensionless  radius $R$  versus dimensionless  time $t$
       for  the  same  sets $(\Omega,Pe)$.   Dotted-line:  scaling  law
       $R= 2.2h_f^{1/22}\nu^{1/11}t^{7/22}$ for $\nu  = 0.001$.  In all
-      simulations, $\nu=0.001$ and $\eta(\theta)=\eta_1$.}
+      simulations, $\nu=0.001$ and $\eta(\theta)=\eta_1(\theta)$.}
     \label{C4-Scaling_HR_ELAS_Omega}
   \end{center}
 \end{figure}
 
+
+Hence, the dynamics for $\Omega=1$ also passes through three different
+phases.   The current  first behaves  as an  isoviscous flow  with hot
+viscosity, it then slows down and  thickens to finally behave again as
+an   isoviscous    flow   but   with   a    cold   viscosity   (Figure
+\ref{C4-Scaling_HR_ELAS_Omega}).  As the current tip remains hot for a
+longer period of time, the transitions to the second and third bending
+regime are however delayed relatively to the case where $\Omega= 10^5$
+(Figure    \ref{C4-Scaling_HR_ELAS_Omega}).     For   instance,    for
+$\nu=10^{-3}$ and $Pe=1.0$, while the transition to the second bending
+phase already begins at $t\sim 10^{-6}$ for $\Omega=10^{5}$, it occurs
+only    after   $t\sim    10^{-5}$   for    $\Omega=   1.0$    (Figure
+\ref{C4-Scaling_HR_ELAS_Omega}).
+
 In addition, the second phase of thickening shows two different stages
 for $\Omega =  1.0$ and $Pe=100.0$, a first stage  where the thickness
-drastically increases and a second stage where it continues increasing
-but   much  slower   (Figure  \ref{C4-Scaling_HR_ELAS_Omega}).    This
-transition, enhanced  by the new thermal  boundary condition, reflects
-the detachment of the thermal anomaly  in the second bending phase and
-is discussed in Appendix \ref{C4-Heat:AppendixC}.
+drastically  increases  and  a  second stage  where  it  continues  to
+increase     but     at     a     much     slower     rate     (Figure
+\ref{C4-Scaling_HR_ELAS_Omega}).  This transition, enhanced by the new
+thermal  boundary condition,  reflects the  detachment of  the thermal
+anomaly  in the  second bending  phase  and is  discussed in  Appendix
+\ref{C4-Heat:AppendixC}.
 
 \subsection{Considering   a  more   realistic   rheology,  effect   of
   $\eta(\theta)$}
@@ -451,11 +472,10 @@ $t\sim   10^{-6}$   for    the   rheology   $\eta_2(\theta)$   (Figure
 \ref{C4-Scaling_HR_ELAS_Rheology}).   In  particular,  the  change  in
 rheology almost compensates for the delay caused by the heating of the
 surrounding medium. For  instance, the transition time  for the second
-bending phase  for the current characterized  by $\eta=\eta_1(\theta)$
-and  $\Omega=10^5$   is  almost   the  same   than  for   the  current
-characterized   by   $\eta=\eta_2(\theta)$  and   $\Omega=1$   (Figure
-\ref{C4-Scaling_HR_ELAS_Rheology}                                  and
-\ref{C4-ELAS_RRc_Rheol_Boundary}).
+bending phase  for a  flow characterized by  $\eta=\eta_1(\theta)$ and
+$\Omega=10^5$  is almost  the same  than for  a flow  characterized by
+$\eta=\eta_2(\theta)$          and         $\Omega=1$          (Figure
+\ref{C4-Scaling_HR_ELAS_Omega} and \ref{C4-Scaling_HR_ELAS_Rheology}).
 
 \subsection{Characterization of the thermal anomaly}
 \label{C4-sec:char-therm-anom}
@@ -474,7 +494,7 @@ $\Omega=10^5$   (Figure  \ref{C4-ELAS_RRc_Rheol_Boundary}).    In  the
 following, we characterize  the thermal anomaly evolution  in the more
 realistic case where $\Omega=1$ and $\eta(\theta)=\eta_2(\theta)$.
 
-\begin{figure}[htpb]
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.4]{ELAS_RRc_Rheol_Boundary.eps}
@@ -486,8 +506,9 @@ realistic case where $\Omega=1$ and $\eta(\theta)=\eta_2(\theta)$.
   \end{center}
 \end{figure}
 
-The size of the thermal anomaly  $R_c(t)$ is given by the radius where
-advection of heat is equal to heat loss
+As in Section \ref{C3-sec:char-therm-anom-e},  the size of the thermal
+anomaly $R_c(t)$  is given by  the radius  where advection of  heat is
+equal to heat loss
 \begin{equation}
   \frac{d}{d    t}\left(\theta(r=   R_c,t)\right)    \approx   Pe^{-1}
   \frac{\partial^2}{\partial z^2}\left(\theta(r=R_c,t)\right)
@@ -522,7 +543,7 @@ i.e.   $R_c/R\sim  1$,  and  neglecting  the  higher  order  terms  in
 (\ref{C4-bill}) ($\propto  \alpha^2$), we obtain the  same scaling law
 for the size of the normalized cold front region $\alpha$ than the one
 found in Section  \ref{C3-sec:char-therm-anom-e}.  However, it clearly
-not    matches    the    prediction    when    $\Omega=1.0$    (Figure
+does   not   match   the    prediction   when   $\Omega=1.0$   (Figure
 \ref{C4-ELAS_RRc_RArrhenius_1-0})   and   the  new   thermal   anomaly
 evolution must be linked to a  change in the heat advection rate, i.e.
 the left  hand side term  in the balance  (\ref{C4-bill}).  Neglecting
@@ -551,40 +572,50 @@ which is equivalent to
 where the numerical prefactor, which  depends on the definition of the
 thermal anomaly, has been chosen to fit the simulations.
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.4]{ELAS_RRc_RArrhenius_1-0.eps}
     \caption{a) Extent of the cold fluid region $R(t)-R_c(t)$ rescaled
       by $Pe^{-1/3}\nu^{7/33}$ versus  time for different combinations
       ($\nu$,$Pe$) indicated  on the  plot.  Dotted-line:  scaling law
-      $(R(t)-R_c(t))Pe^{1/3}\nu^{-7/33}=  2.1  h_f^{7/66}t^{9/22}$  b)
-      Same plot  but where  we rescale  the extent  of the  cold fluid
-      region  by  $Pe^{-1/4}\nu^{2/11}$.    Dotted-line:  scaling  law
+      (\ref{C3-ScalingRRc})
+      $(R(t)-R_c(t))Pe^{1/3}\nu^{-7/33}=    2.1    h_f^{7/66}t^{9/22}$
+      derived in Section \ref{C3-sec:effect-visc-blist-e} b) Same plot
+      but where  we rescale  the extent  of the  cold fluid  region by
+      $Pe^{-1/4}\nu^{2/11}$.       Dotted-line:       scaling      law
       $(R(t)-R_c(t))Pe^{1/4}\nu^{-2/11}= 0.7  h_f^{1/11}t^{17/44}$. In
-      all simulations, $\Omega=1.0$ and $\eta(\theta)=\eta_2$.}
+      all           simulations,            $\Omega=1.0$           and
+      $\eta(\theta)=\eta_2(\theta)$.}
     \label{C4-ELAS_RRc_RArrhenius_1-0}
   \end{center}
 \end{figure}
 
-The new predicted  scaling law for the evolution of  the extent of the
-cold fluid  region (\ref{C4-ScalingRRc-Heating})  shows a  much better
-fit  with  the  simulations  (Figure  \ref{C4-ELAS_RRc_RArrhenius_1-0}
-b). Therefore, the evolution of the thermal anomaly is governed by the
-inflation rate at the intrusion tip when relaxing the thermal boundary
-condition.   The  cold  fluid   region  grows  slightly  slower,  from
-$t^{9/22}$ to  $t^{17/44}$ ($9/22\sim 0.40$  , $17/44 \sim  0.38$) and
-the dependence in the Peclet number  $Pe$ is weaker, i.e. from a power
-$1/3$ to  $1/4$.  Indeed,  for small $Pe$,  the vertical  diffusion is
-efficient  on the  emplacement time  scale  and rapidly  heats up  the
-surrounding medium. The heat loss in  the interior are smaller and the
-thermal anomaly larger in comparison to the case where $\Omega= 10^5$.
-In contrast, for large values of $Pe$, the advection dominates and the
-saving of  heat due to the  heating of the surrounding  medium is less
+This new scaling law for the evolution of the extent of the cold fluid
+region (\ref{C4-ScalingRRc-Heating}) shows a  much better fit with the
+simulations  (Figure \ref{C4-ELAS_RRc_RArrhenius_1-0}  b). Indeed,  in
+that case, the  constant heating of the surrounding  medium limits the
+expansion of  the cold  fluid region in  comparison to  the isothermal
+case. In  particular, the  thermal anomaly  reaches the  third bending
+phase much  later and  therefore, the scaling  law corresponds  to the
+evolution of the thermal anomaly in  the second bending phase; a phase
+dominated  by  inflation.  Therefore,  the  evolution  of the  thermal
+anomaly is  governed by the inflation  rate at the intrusion  tip when
+relaxing the thermal boundary condition.
+
+The cold fluid  region grows effectively slightly slower,  with a time
+exponent  equal  to $17/44$  instead  of  $9/22$ ($17/44  \sim  0.38$,
+$9/22\sim  0.40$) and  the dependence  in  the Peclet  number $Pe$  is
+weaker, i.e.   it changes from  a power  $1/3$ to $1/4$.   Indeed, for
+small $Pe$,  vertical diffusion is  efficient on the  emplacement time
+scale and  rapidly heats up the  surrounding medium. The heat  loss in
+the interior is  smaller and the thermal anomaly  larger in comparison
+to the  case where $\Omega= 10^5$.   In contrast, for large  values of
+$Pe$, advection dominates and the saving of heat by insulation is less
 important decreasing  the overall  difference between small  and large
 values of $Pe$.
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.4]{Visco_ELAS_Heating.eps}
@@ -597,18 +628,19 @@ values of $Pe$.
   \end{center}
 \end{figure}
 
-As  we  show  in section  \ref{C4-sec:infl-therm-bound-el},  the  time
+As  we  show  in Section  \ref{C4-sec:infl-therm-bound-el},  the  time
 $t_{b2}$ for  the current to enter  the second bending phase  does not
 change much  as the delay  induced by  the heating of  the surrounding
 medium is offset  by the change in rheology.  Accordingly,  we use the
 time      $t_{b2}$     (\ref{C3-tb2})      defined     in      section
-\ref{C3-sec:effect-visc-blist-e}  to  characterize the  first  bending
-transition  (Figure \ref{C4-Visco_ELAS_Heating}  a). In  contrast, the
-time $t_{b3}$  for the current to  enter the third phase  of the flow,
-which is  defined as  the time  for the  effective viscosity  to reach
-$90\%$ of its  maximum value $\eta_c$ and depends on  the evolution of
-the cold  fluid region (Section  \ref{C3-sec:effect-visc-blist-e}), is
-now larger and equal to
+\ref{C3-sec:effect-visc-blist-e}  as   the  time  to  cool   the  thin
+prewetting film  to characterize the first  bending transition (Figure
+\ref{C4-Visco_ELAS_Heating} a). In contrast, the time $t_{b3}$ for the
+current to enter the third phase of the flow is now larger. Processing
+as    in    Section   \ref{C3-sec:effect-visc-blist-e}    but    using
+(\ref{C4-ScalingRRc-Heating})  for the  evolution  of  the cold  fluid
+region $R(t)-R_c(t)$  instead of  (\ref{C3-ScalingRRc}), we  find that
+$t_{b3}$ is given by
 \begin{equation}
   t_{b3}=0.4h_f^{-4/17}\nu^{-8/17}Pe^{11/17}St_m^{-11/17}
   \label{C4-tb3}
@@ -629,10 +661,11 @@ $P=h$. We follow the same framework as in the previous section.
     \caption{Snapshots of  the flow thermal  structure $\theta(r,z,t)$
       for  different  sets  ($Pe$,$\Omega$)  with  $Pe=  1.0$  ,$10.0$
       ,$100.0$   and   $\Omega=10^5$   and  $1.0$   at   $t=100$   for
-      $\nu=0.01$. The thermal structure above  the current is given by
-      (\ref{C4-eq11})    and   reads    in   a    dimensionless   form
-      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\frac{\kappa_m}{\kappa_r}\frac{(z-h)}{2\sqrt{t}}\right)}$
-      where the ratio $\kappa_m/\kappa_r$ is set to $1$.}
+      $\nu=0.01$. The  thermal structure above the  intrusion is given
+      by   (\ref{C4-eq11})  and   reads   in   a  dimensionless   form
+      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\Omega_1\frac{(z-h)}{2\sqrt{t}}\right)}$
+      where $\Omega_1$ is set to  $1$. The thermal structure below the
+      intrusion is similar and not shown for clarity.}
     \label{C4-Grid_PeOmega_Heating_GRAV}
   \end{center}
 \end{figure}
@@ -642,17 +675,16 @@ $P=h$. We follow the same framework as in the previous section.
 \label{C4-sec:infl-therm-bound}
 
 As in the  bending regime, for a small value  of $\Omega$, the heating
-of the  surrounding medium limits heat  loss in the central  region of
-the current and the thermal anomaly extends further into the flow. For
-instance, for $Pe=1$ and $\nu=0.01$  at $t=200$, while $R_c\sim 1$ for
-$\Omega=10^5$,  $R_c$ is  larger than  $5$  for $\Omega  =1 $  (Figure
-\ref{C4-Grid_PeOmega_Heating_GRAV}).  In  addition, after  it detaches
-from  the  current   tip,  the  thermal  anomaly  does   not  reach  a
-steady-state  profile  but keeps  growing  with  time instead  (Figure
-\ref{C4-Grid_TIME_GRAV}).   Indeed,  in  contrast  to  the  isothermal
-boundary  case,  the  constant  increase of  the  surface  temperature
-continuously  decreases the  heat loss  in the  central region  of the
-current which allows the expansion of the thermal anomaly.
+of  the  surrounding medium  insulates  the  current and  the  thermal
+anomaly is larger. For instance, for $Pe=1$ and $\nu=0.01$ at $t=100$,
+while  $R_c\sim 1$  for $\Omega=10^5$,  $R_c$ is  larger than  $5$ for
+$\Omega   =1   $  (Figure   \ref{C4-Grid_PeOmega_Heating_GRAV}).    In
+addition, after it detaches from  the current tip, the thermal anomaly
+does  not reach  a steady-state  profile but  keeps growing  with time
+instead (Figure \ref{C4-Grid_TIME_GRAV}).  Indeed,  in contrast to the
+isothermal  boundary  case,  the  constant  increase  of  the  surface
+temperature continuously decreases the heat loss in the central region
+of the current which allows an expansion of the thermal anomaly.
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
@@ -661,39 +693,25 @@ current which allows the expansion of the thermal anomaly.
       at  different  times  indicated   on  the  plot.   Dashed  lines
       represent  the thermal  boundary  layers. Solid  grey lines  are
       isotherms for  $\theta =  0.2$, $0.4$,  $0.6$ and  $0.8$.  Here,
-      $\nu=0.01$, $Pe  =1.0$ and  $St_m =  1$.  The  thermal structure
+      $\nu=0.01$,  $Pe =1.0$  and $St_m  = 1$.  The thermal  structure
       above the intrusion  is given by (\ref{C4-eq11}) and  reads in a
       dimensionless                                               form
-      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\frac{\kappa_m}{\kappa_r}\frac{(z-h)}{2\sqrt{t}}\right)}$
-      where the ratio $\kappa_m/\kappa_r$ is set to $1$.}
+      $\Theta_r(r,z,t)=\Theta_s(r,t)\operatorname{erfc}{\left(Pe^{1/2}\Omega_1\frac{(z-h)}{2\sqrt{t}}\right)}$
+      where $\Omega_1$ is set to  $1$. The thermal structure below the
+      intrusion is similar and not shown for clarity.}
     \label{C4-Grid_TIME_GRAV}
   \end{center}
 \end{figure}
 
-For small values of $Pe$, the  efficient heat conduction results in an
-almost    vertical    isothermal    current   at    $t=200$    (Figure
-\ref{C4-Grid_PeOmega_Heating_GRAV}). In contrast,  for large values of
-$Pe$, the  vertical diffusion of  heat is less efficient,  the thermal
-aureole  is restricted  to a  small region  around the  intrusion, the
-thermal anomaly is larger and the temperature gradient within the flow
-are stronger (Figure \ref{C4-Grid_PeOmega_Heating_GRAV}).
-
-While three phases also  characterized the dynamics when $\Omega=1.0$,
-their extent  and duration  are modified by  the new  thermal boundary
-condition (Figure \ref{C4-Scaling_HR_GRAV_Omega}).  In particular, the
-current remains hot  for a longer period of time  and the second phase
-is  delayed in  comparison  to  the case  where  $\Omega =10^5$.   For
-instance, for  $\nu=0.01$ and  $Pe=1.0$, while this  transition occurs
-around  $t=0.1$ for  $\Omega=10^5$, it  happens only  after $t=1$  for
-$\Omega=1$  (Figure \ref{C4-Scaling_HR_GRAV_Omega}).   As the  thermal
-anomaly does not  reach a steady state for $\Omega=1$,  the cooling of
-the  current in  the  second gravity  phase is  also  slower than  for
-$\Omega=10^5$ and the current reaches  the third phase also much later
-for $\Omega=1$  (Figure \ref{C4-Scaling_HR_GRAV_Omega}).  In  the next
-section, we consider  the effect of the first  order Arhenius rheology
-on the dynamics for $\Omega=1.0$.
-
-\begin{figure}[htpb]
+For small  values of $Pe$,  the important heating of  the surroundings
+medium results in an flow that is almost vertically isothermal (Figure
+\ref{C4-Grid_PeOmega_Heating_GRAV}  and \ref{C4-Grid_TIME_GRAV}).   In
+contrast, for large values of $Pe$,  the vertical diffusion of heat is
+less efficient,  the thermal aureole  is restricted to a  small region
+around  the  intrusion,   the  thermal  anomaly  is   larger  and  the
+temperature   gradient   within   the  flow   are   stronger   (Figure
+\ref{C4-Grid_PeOmega_Heating_GRAV}).
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.45]{Scaling_HR_GRAV_Omega.eps}
@@ -709,22 +727,25 @@ on the dynamics for $\Omega=1.0$.
   \end{center}
 \end{figure}
 
+While three  phases also characterize the  dynamics when $\Omega=1.0$,
+their durations  are modified  by the  new thermal  boundary condition
+(Figure \ref{C4-Scaling_HR_GRAV_Omega}).   In particular,  the current
+remains  hot for  a longer  period  of time  and the  second phase  is
+delayed in comparison to the case where $\Omega =10^5$.  For instance,
+for  $\nu=0.01$ and  $Pe=1.0$, while  the first  transition occurs  at
+$t \approx 0.1$ for $\Omega=10^5$,  it happens only after $t\approx 1$
+for  $\Omega=1$   (Figure  \ref{C4-Scaling_HR_GRAV_Omega}).    As  the
+thermal  anomaly does  not reach  a steady  state for  $\Omega=1$, the
+cooling of the current in the second gravity phase is also slower than
+for $\Omega=10^5$  and the current  reaches the third phase  also much
+later for $\Omega=1$  (Figure \ref{C4-Scaling_HR_GRAV_Omega}).  In the
+next  section, we  consider the  effect  of the  first order  Arhenius
+rheology on the dynamics for $\Omega=1.0$.
+
 \subsection{Considering   a  more   realistic   rheology,  effect   of
   $\eta(\theta)$}
 \label{C4-sec:cons-more-real-1}
  
-As  in the  bending regime,  the chosen  rheology $\eta(\theta)$  also
-affects the timing for the phase transition, and, in particular, these
-transitions  occur  sooner  for  the first  order  Arrhenius  rheology
-$\eta_2(\theta)$ than  for $\eta=\eta_1(\theta)$.  In  particular, the
-delay  induced  in  the  phase  transitions  by  the  heating  of  the
-surrounding  medium is  almost  offset by  the  first order  Arrhenius
-rheology.  For  instance, the transition  to the second  gravity phase
-occurs  around   the  same  time   for  a  current   characterized  by
-$\eta(\theta)   =\eta_1$  and   $\Omega=10^5$  than   for  a   current
-characterized  by  $\eta(\theta)  =\eta_2$  and  $\Omega=1.0$  (Figure
-\ref{C4-Scaling_HR_GRAV_Omega} and \ref{C4-HR_GRAV_Rheology}).
-
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
@@ -741,6 +762,18 @@ characterized  by  $\eta(\theta)  =\eta_2$  and  $\Omega=1.0$  (Figure
   \end{center}
 \end{figure}
 
+As  in the  bending regime,  the chosen  rheology $\eta(\theta)$  also
+affects the timing for the phase transition, and, in particular, these
+transitions  occur  sooner  for  the first  order  Arrhenius  rheology
+$\eta_2(\theta)$ than  for $\eta=\eta_1(\theta)$.  In  particular, the
+delay  induced  in  the  phase  transitions  by  the  heating  of  the
+surrounding  medium is  almost  offset by  the  first order  Arrhenius
+rheology.  For  instance, the transition  to the second  gravity phase
+occurs  around   the  same  time   for  a  current   characterized  by
+$\eta(\theta)   =\eta_1$   and   $\Omega=10^5$  as   for   a   current
+characterized  by  $\eta(\theta)  =\eta_2$ and  $\Omega=1.0$  (Compare
+Figure \ref{C4-Scaling_HR_GRAV_Omega} and \ref{C4-HR_GRAV_Rheology}).
+
 \subsection{Characterization of the thermal anomaly}
 \label{C4-sec:char-therm-anom-2}
 
@@ -750,19 +783,21 @@ $Pe$ as well  as $\nu$, the thermal anomaly detaches  from the tip and
 follows  its own  evolution. However,  in contrast  to the  isoviscous
 case, the  thermal anomaly does not  reach a steady state  and $R_c/R$
 does     not     evolve      as     $t^{-1/2}$     anymore     (Figure
-\ref{C4-GRAV_RRc_RArrhenius_1-0}  a).   We  develop a  simple  thermal
-budget  that accounts  for the  heating of  the surrounding  medium to
-quantify the new evolution of the thermal anomaly.
+\ref{C4-GRAV_RRc_RArrhenius_1-0} a).  We modify  the thermal budget of
+Section \ref{C3-sec:char-therm-anom-g}  to account for the  heating of
+the surrounding medium.
+
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.4]{GRAV_RRc_1-0.eps}
     \caption{a) Normalized thermal anomaly radius $R_c(t)/R(t)$ versus
       time for  different combinations  ($\nu$,$Pe$) indicated  on the
-      plot.  Dotted-line:  $R_c(t)/R(t)\sim t^{1/2}$ b) Same  plot but
-      where   we   rescale   the   normalized   thermal   anomaly   by
-      $Pe^{1/4}\nu^{-1/8}$.        Dotted-line:      scaling       law
-      $(R_c(t)/R(t))Pe^{-1/4}\nu^{1/8}=    1.8t^{-1/4}$.     In    all
+      plot.     Dotted-line:   Scaling    law    found   in    Section
+      \ref{C3-sec:char-therm-anom-g}  $R_c(t)/R(t)\sim  t^{-1/2}$  for
+      comparison.  b)  Same plot but  where we rescale  the normalized
+      thermal anomaly  by $Pe^{1/4}\nu^{-1/8}$.   Dotted-line: scaling
+      law  $(R_c(t)/R(t))Pe^{-1/4}\nu^{1/8}=   1.8t^{-1/4}$.   In  all
       simulations, $\Omega=1.0$ and $\eta(\theta)=\eta_1$.}
     \label{C4-GRAV_RRc_RArrhenius_1-0}
   \end{center}
@@ -776,10 +811,9 @@ in a dimensional form reads
   \label{C4-bilan}
 \end{equation}
 where $\Delta  T$ is the  mean temperature contrast between  the fluid
-and the  surrounding and  $U_0$ is  taken as  a redistribution  of the
-injection rate at $r=R_c$, i.e. $U_0=Q_0/(2\pi R_c h_0)$. In addition,
-the continuity  of the  heat flux  at the  boundary (\ref{C4-2Flux_1})
-imposes
+and the  surroundings and $U_0$  is a redistribution of  the injection
+rate at  $r=R_c$, i.e.   $U_0=Q_0/(2\pi R_c  h_0)$.  In  addition, the
+continuity of the heat flux at the boundary (\ref{C4-2Flux_1}) imposes
 \begin{equation}
   k_m\frac{\Delta   T}{h_0}\approx   k_s   \frac{\Delta   T}{\sqrt{\pi
       \kappa_r t}}.
@@ -827,10 +861,10 @@ surrounding medium is offset by  the change in rheology.  Accordingly,
 we  use the  time $t_{g2}$  (\ref{C3-tg2}) to  characterize the  first
 gravity   transition  (Figure   \ref{C4-Visco_GRAV_Heating}  a).    In
 contrast, the time  $t_{g3}$ for the current to enter  the third phase
-of the flow, which is defined  as the time for the effective viscosity
-to  reach $90\%$  of its  maximum value  $\eta_c$ and  depends on  the
-evolution       of       the      thermal       anomaly       (Section
-\ref{C3-sec:effect-visc-blist-g}), is now larger and equal to
+of   the   flow   is   now   larger.    Processing   as   in   Section
+\ref{C3-sec:effect-visc-blist-g}  but  using   (\ref{C4-Rc})  for  the
+evolution  of  normalized  thermal anomaly  $R_c(t)/R(t)$  instead  of
+(\ref{C3-Scaling-Rc-Gravy}), we find that $t_{g3}$ is given by
 \begin{equation}
   t_{g3}= 80 \Omega^{-8}\nu^{-1/2}Pe St_m^{-1}
   \label{C4-tg3}
@@ -838,12 +872,13 @@ evolution       of       the      thermal       anomaly       (Section
 
 \begin{table}[h!]
   \begin{center}
-    \begin{tabular}{ccccc}
+    \begin{tabular}{c|cc|cc}
       Name&From&To&Expression\\
+      \hline
       $t_t$&Bending&Gravity&$6.5(\eta_e/\eta_h)^{2/7}h_f^{-1/7}$\\
       $t_t^h$&Bending&Gravity&$6.5h_f^{-1/7}$\\
       $t_t^c$&Bending&Gravity&$6.5\nu^{-2/7}h_f^{-1/7}$\\
-      Bending regime&\multicolumn{3}{c}{} \\
+      Bending regime&\multicolumn{2}{c}{}& \\
       $t_{b2}$&Phase 1& Phase 2&$0.1 Pe St_m^{-1} h_f^2$\\
       $t_{b3}$&Phase 2& Phase 3 &$0.4 h_f^{-4/17} St_m^{-11/17}Pe^{11/17}\nu^{-8/17}$\\
       Gravity regime&\multicolumn{3}{c}{} \\
@@ -904,19 +939,19 @@ following,  we   look  at   the  observations  discussed   in  chapter
 \label{C4-sec:appl-arrest-terr}
 
 The isoviscous elastic-plated  gravity current model has  been used in
-Chapter   \ref{chap2}  to   study  the   laccoliths  of   Elba  Island
-\citep{Michaut:2011kg}. It shows that, while their final morphology is
-consistent with  their arrest in  the bending regime,  their dimension
-requires  unreasonable magma  viscosity to  agree with  the isoviscous
-model  (Chapter   \ref{chap2}).   In  addition,  given   the  fracture
-toughness  of rocks,  their radius  seems  too small  to be  fractured
-controlled and their arrest might be better explained by their cooling
-\citep{Michaut:2011kg}.  In  the following,  we compare the  new model
-predictions   to   the   size    of   the   laccoliths   provided   by
+Chapter   \ref{chap2}  to   study  the   laccoliths  at   Elba  Island
+\citep{Michaut:2011kg}. It shows that,  while their final morphologies
+are  consistent  with  their  arrest  in  the  bending  regime,  their
+dimensions  require unreasonable  magma  viscosity to  agree with  the
+isoviscous  model  (Chapter  \ref{chap2}).   In  addition,  given  the
+fracture  toughness  of  rocks,  their  radii seem  too  small  to  be
+fractured controlled  and their  arrest might  be better  explained by
+their cooling  \citep{Michaut:2011kg}.  In  the following,  we compare
+the  new model  predictions  to  the size  of  laccoliths provided  by
 \citet{Rocchi:2002jy}.  In order to account for the intrinsic scale of
 different settings for  each intrusion and compare them  to the model,
 the  data have  first  to be  nondimensionalized using  characteristic
-values for each intrusion parameters.
+values for the model parameters.
 
 \begin{table}[h!]
   \caption{Range of values for the model parameters}
@@ -984,12 +1019,12 @@ values for each intrusion parameters.
 \label{C4-sec:range-valu-dimens}
  
 The  different parameters  along  with a  discussion  on the  possible
-values for  $h_f$ have  been provided in  chapter \ref{chap2}  and are
-summarized  in table  \ref{C4-tab}.  We  refer the  reader to  Section
-\ref{C2-sec:observ-vs-pred-Earth} for  more details about  their derivation.
-In the following, we quantify  the values of the dimensionless numbers
-introduced by the cooling of the current in the setting of Elba Island
-laccoliths.
+values for  $h_f$ have  been provided in  Chapter \ref{chap2}  and are
+summarized  in Table  \ref{C4-tab}.  We  refer the  reader to  Section
+\ref{C2-sec:observ-vs-pred-Earth}   for  more   details  about   their
+derivation.   In the  following, we  quantify  the values  of the  new
+dimensionless numbers related to the cooling  of the flow for the case
+of the Elba Island laccoliths.
 
 For a latent heat of crystallization $L = 4.18\times10^5$ J kg$^{-1}$,
 a   difference  between   solidus  temperature   $T_S$  and   liquidus
@@ -998,18 +1033,18 @@ varies from $0.1$  to $0.5$.  For a thermal diffusivity  for the magma
 equal  to $\kappa_m=  10^{-6}$  m s$^{-2}$,  an  injection rate  $Q_0$
 between $0.1$ and $100$ m$^3$  s$^{-1}$ and an intrusion depth between
 $0.2$ and $2.7$  km, the Peclet number varies from  $10^{-3}$ to $100$
-and  therefore, $Pe_m$  varies from  $0.01$ to  $1000$.  Finally,  the
-increase in  viscosity upon cooling varies  from $4$ to $6$  for mafic
-magmas and  can be up  to $10$ orders  of magnitude for  felsic magmas
+and therefore,  $Pe_m$ varies from  $0.01$ to $1000$. The  increase in
+viscosity upon cooling varies from $4$ to $6$ for mafic magmas and can
+be   up   to   $10$   orders    of   magnitude   for   felsic   magmas
 \citep{Anonymous:CZVBrBvv,Lejeune:1995fc,Giordano:2008em,Diniega:2013eh}.
 We  thus  consider  that  the viscosity  contrast  $\nu$  ranges  from
 $10^{-4}$ to $10^{-10}$.
 
 It  is generally  assumed  that  the magma  stops  spreading when  its
 crystal   content  becomes   close  to   its  maximum   packing,  i.e.
-$\phi \sim 60\%$ \citep{Pinkerton:1992fwa}.  Beyond this point, crystal
-collisions  dominate and  the viscosity  jumps to  much higher  values
-\citep{Lejeune:1995fc,Giordano:2008em}.   We   assume  that   this  is
+$\phi  \sim  60\%$   \citep{Pinkerton:1992fwa}.   Beyond  this  point,
+crystal collisions  dominate and  the viscosity  jumps to  much higher
+values \citep{Lejeune:1995fc,Giordano:2008em}.  We assume that this is
 equivalent to  $\eta_e$ tending to  $\eta_c$ in our model.   With this
 assumption, the  model thus predicts  that a magmatic  intrusion would
 solidify as a laccolith upon reaching the third bending phase.
@@ -1017,13 +1052,35 @@ solidify as a laccolith upon reaching the third bending phase.
 \subsubsection*{Do laccoliths stop in the bending regime ?}
 \label{C4-sec:range-valu-dimens}
 
-The thickness $h_0$ as a function of its radius $R$ for a current that
-solidifies in  the third phase  of the  bending regime can  be derived
-from     the     scaling    laws     (\ref{C3-ScalingH-Visco})     and
-(\ref{C3-ScalingR-Visco}) and should follow
+The dimensionless thickness  $h_0$ as a function  of its dimensionless
+radius $R$  for a current  that solidifies in  the third phase  of the
+bending   regime    can   be    derived   from   the    scaling   laws
+(\ref{C3-ScalingH-Visco})  and  (\ref{C3-ScalingR-Visco})  and  should
+follow
 \begin{equation}
   h_0 = 0.3 h_f^{-1/7}\nu^{-2/7}R^{8/7}\label{C4-Hr}
 \end{equation}
+Using the parameters listed in Figure \ref{C4-Data}, the dimensionless
+observations show a very good agreement with the model for a viscosity
+contrast      close      to      $8$     orders      of      magnitude
+($\nu =  6.9\pm 2.3 \times  10^{-8}$, $r^2=0.9$), which  is consistent
+with  the  felsic composition  of  these  laccoliths, and  $h_f=0.001$
+(Figure \ref{C4-Data} a) \citep{Marsh:1981dc,Diniega:2013eh}.  Varying
+$h_f$ has only minor effect on  the best fit viscosity contrast and is
+discussed  in Appendix  \ref{chap:A2}.  This  value for  the viscosity
+contrast also  depends on the  chosen value  for the height  scale $H$
+whose main uncertainty  is on the liquidus viscosity  $\eta_h$ and the
+injection rate  $Q_0$.  Indeed,  the larger  this two  parameters, the
+larger the height scale, the smaller the dimensionless thicknesses and
+therefore, the smaller the best fit viscosity contrast.  Nevertheless,
+introducing the  cooling in  the elastic-plated gravity  current model
+allows to reconciliate  the model predictions and  the observations in
+the  case  of laccoliths  (Chapter  \ref{chap2}).   The shape  and  in
+particular, the  large thickness of  the laccoliths at Elba  Island is
+now entirely consistent with the  model predictions and therefore with
+their arrest in the bending regime. In the following, we use the phase
+diagram  proposed  in  Section \ref{C4-sec:evol-with-bend}  to  better
+constrain the viscosity contrast along with $\eta_h$ and $Q_0$.
 
 \begin{figure}[h!]
   \begin{center}
@@ -1034,17 +1091,17 @@ from     the     scaling    laws     (\ref{C3-ScalingH-Visco})     and
       domes.  Parameters  for calculating $\Lambda$  (\ref{C3-L1}) and
       $H$    (\ref{C3-H1})    are    $E=10^9$    GPa,    $\nu^*=0.25$,
       $\rho_m = 2500$ kg m$^{-3}$, $g=9.81$ m s$^{-2}$, $\eta_h =10^6$
-      Pa s and $Q_0 = 10$  m$^3$ s$^{-1}$ on Earth and everything else
+      Pa s and $Q_0 = 10$ m$^3$ s$^{-1}$ on Earth and, everything else
       being equal, $g=1.62$ m s$^{-2}$, $\eta_h  =1$ Pa s on the Moon.
       Dotted  lines:   best  fit   scaling  laws   (\ref{C4-Hr})  with
-      $h_f = 0.001$  for both laccoliths at Elba  Island and low-slope
-      lunar domes.  $\nu = 6.9\pm  2.3 \cdot 10^{-8}$ ($r^2=0.92$) and
-      $\nu  = 1.8\pm  0.4  \cdot 10^{-8}$  ($r^2=0.88$) represent  the
-      linear least square best fit for  the data on Earth and the Moon
-      respectively.   b)  Dimensionless thickness  $\hat{h_0}$  versus
-      $\hat{R}$  where   $\hat{h_0}$  and   $\hat{R}$  are   given  by
-      (\ref{C4-Scaling2})  with  $h_f=0.001$  for laccoliths  at  Elba
-      Island.   Substituting  (\ref{C3-T1})   into  (\ref{C3-Pe}),  we
+      $h_f = 0.001$ for laccoliths  at Elba Island (red) and low-slope
+      lunar  domes  (purple).   $\nu   =  6.9\pm  2.3  \cdot  10^{-8}$
+      ($r^2=0.92$) and  $\nu = 1.8\pm 0.4  \cdot 10^{-8}$ ($r^2=0.88$)
+      represent the linear least square best fit for the data on Earth
+      and   the  Moon   respectively.    b)  Dimensionless   thickness
+      $\hat{h_0}$ versus $\hat{R}$ where $\hat{h_0}$ and $\hat{R}$ are
+      given by (\ref{C4-Scaling2}) with  $h_f=0.001$ for laccoliths at
+      Elba Island.  Substituting  (\ref{C3-T1}) into (\ref{C3-Pe}), we
       obtain $Pe = Q_0 H  /(\pi \kappa \Lambda^2)$; the parameters for
       calculating $Pe$ for each laccolith are the same than those used
       for the  nondimensionalization, $\kappa=10^{-6}$ m  s$^{-2}$ and
@@ -1055,27 +1112,14 @@ from     the     scaling    laws     (\ref{C3-ScalingH-Visco})     and
   \end{center}
 \end{figure}
 
-The  observations show  a very  good agreement  with the  model for  a
-viscosity    contrast   close    to    $8$    orders   of    magnitude
-($\nu =  6.9\pm 2.3 \times  10^{-8}$, $r^2=0.9$), which  is consistent
-with  the  felsic composition  of  these  laccoliths, and  $h_f=0.001$
-(Figure \ref{C4-Data} a) \citep{Marsh:1981dc,Diniega:2013eh}.  Varying
-$h_f$ has only minor effect on  the best fit viscosity contrast and is
-discussed  in  Appendix  \ref{chap:A2}.   Therefore,  introducing  the
-cooling  in  the  elastic-plated   gravity  current  model  allows  to
-reconciliate the model predictions and the observations in the case of
-laccoliths  (Chapter \ref{chap2}).   In particular,  the shape  of the
-laccolith at  Elba Island  is now entirely  consistent with  the model
-predictions and therefore with their arrest in the bending regime.
-
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.5]{PhaseDiagreRocchie.eps}
     \caption{Subset  of   the  phase   diagram  proposed   in  section
       \ref{C4-sec:evol-with-bend}   relevant   for    the   study   of
-      terrestrial  laccoliths. Red  and  purples  crosses represent  a
-      range of value for $\nu$ and $Pe$ for Elba Island laccoliths and
+      terrestrial laccoliths. Red and purple crosses represent a range
+      of  value for  $\nu$ and  $Pe$  for Elba  Island laccoliths  and
       low-slope lunar domes  respectively. The width of  each cross is
       defined by  the minimum and  the maximum value obtained  for the
       Peclet number given the range  of variation of parameters listed
@@ -1104,34 +1148,41 @@ than their  mafic counterparts.  In  the framework of our  model, they
 then stay hot for a longer period of time and therefore, can reach the
 gravity  regime more  easily.  Given  the felsic  composition of  Elba
 island laccoliths,  this phase diagram  can then be used  to constrain
-the physical parameters  of the magma.  In the following,  we use this
-approach to better constrain the injection rate of these laccoliths at
-the time of emplacement.
+their Peclet  number, and  therefore $Q_0$ and  $\eta_h$, for  them to
+fall in the  laccolith region. In the following, we  use this approach
+to constrain the injection rate $Q_0$ for these laccoliths.
 
 We first compute  a value for the Peclet number  for each laccolith at
-Elba  Island  using  its  corresponding depth  of  intrusion  and  the
-parameters  listed in  Figure  \ref{C4-Data}.   Indeed, injecting  the
-scales   (\ref{C3-L1}),  (\ref{C3-H1})   and   (\ref{C3-T1})  in   the
-expression  of  $Pe$  (\ref{C3-Pe}),  we  find that  in  term  of  the
-injection rate and the depth of intrusion $d_c$, $Pe$ reads
+Elba  Island. Injecting  the scales  (\ref{C3-L1}), (\ref{C3-H1})  and
+(\ref{C3-T1}) in the expression of $Pe$ (\ref{C3-Pe}) gives
 \begin{equation}
-  Pe \sim 10^3 d_c^{-3/2} Q^{5/4}.
+  Pe \approx 4.8 Q_{0}^{5/4}\eta_{h}^{1/4}\rho_m^{1/4}g^{1/4}E^{-1/2} d_c^{-3/2} \kappa_m^{-1}
+\end{equation}
+where we  set the  Poisson's ratio to  $\nu^*=0.25$. Except  for $Q_0$
+,that we want  to constrain, and $d_c$, which is  given and depends on
+the  laccolith,  we  take  the   parameter  values  listed  in  Figure
+\ref{C4-Data}.  Therefore, $Pe$ reads
+\begin{equation}
+  Pe \approx 6\times10^4 d_c^{-3/2} Q_0^{5/4}
+  \label{PeExpre}
 \end{equation}
 For $St_m  =0.1$, the intrusion depths  given by \citet{Rocchi:2002jy}
 and  $Q_0 =10$  m$^{3}$ s$^{-1}$,  the modified  Peclet number  $Pe_m$
 ranges from  $1$ to  $6$.  As  the best  fit range  of values  for the
-viscosity   contrast,   discussed   in  the   previous   section,   is
-$\nu =  6.9\pm 2.3  \times 10^{-8}$, the  phase diagram  thus predicts
-that  these  laccoliths  should  have   stop  in  the  gravity  regime
-indicating that we might have overestimated the injection rate (Figure
-\ref{C4-PhaseDiag}).  Indeed, taking a smaller value for the injection
-rate  of $Q_0=0.1$  m$^{3}$  s$^{-1}$, reasonable  for viscous  felsic
-magmas \citep{Harris:2000jd},  the model  predicts a  larger viscosity
-contrast  $\nu=1.2\pm0.4\times  10^{-9}$,  still consistent  with  the
-range  of  expected  values  for  felsic  magmas,  and  weaker  Peclet
-numbers. Therefore, the range of  values for the dimensionless numbers
-now  falls within  the laccolith  regions and  is consistent  with the
-observations (Figure \ref{C4-PhaseDiag}).
+viscosity  contrast  associated  with  $Q_0=10$  m$^{3}$  s$^{-1}$  is
+$\nu  = 6.9\pm  2.3  \times  10^{-8}$, as  discussed  in the  previous
+Section, the phase diagram thus  predicts that these laccoliths should
+have stop in the gravity regime (Figure \ref{C4-PhaseDiag}). Hence, we
+might have overestimate the injection  rate.  Indeed, taking a smaller
+value for the injection rate of $Q_0=0.1$ m$^{3}$ s$^{-1}$, reasonable
+for viscous felsic magmas  \citep{Harris:2000jd}, the height scale $H$
+is smaller  and the dimensionless  thicknesses are larger.   The model
+thus       predicts       a      larger       viscosity       contrast
+$\nu=1.2\pm0.4\times  10^{-9}$, still  consistent  with  the range  of
+expected values for felsic magmas,  and weaker Peclet numbers.  In the
+end,  the range  of values  for  the dimensionless  numbers now  falls
+within the laccolith  regions and is consistent  with the observations
+(Figure \ref{C4-PhaseDiag}).
 
 \subsubsection*{Is   conduction   cooling   enough   to   solifidy   a
   laccolith ?}
@@ -1141,10 +1192,9 @@ phase of the  bending regime, the variance in thickness  and radius in
 between  the   different  intrusions  should  also   be  explained  by
 variations  in the  Peclet number,  most likely  due to  variations in
 intrusion  depths  in  this   example.   Indeed,  the  time  $t_{b3}$,
-necessary  to  reach  the  third  phase of  the  bending  regime,  the
-thickness and the radius of the current at this time all depend on the
-combination      ($\nu$,$Pe_m$)      considered      (see      Section
-\ref{C4-sec:evol-with-bend}).
+necessary  to reach  the third  bending phase,  the thickness  and the
+radius  of the  current at  this time  all depend  on the  combination
+($\nu$,$Pe_m$) considered (see Section \ref{C4-sec:evol-with-bend}).
 
 \begin{figure}[h!]
   \begin{center}
@@ -1166,90 +1216,105 @@ combination      ($\nu$,$Pe_m$)      considered      (see      Section
 \end{figure}
 
 
-To  test this  hypothesis, we  rescale  the variables  using the  time
+To test  this hypothesis,  we first  rescale the  time using  the time
 $t_{b3}$ (\ref{C4-tb3}) as follow
 \begin{equation}
-  \hat{t}=   h_f^{4/17}  Pe_m^{-11/17}\nu^{8/17}t      \hspace{.5cm}     \hat{R}=
-  h_f^{1/34}Pe_m^{-7/34}\nu^{1/17}R\hspace{.5cm}                        \hat{h_0}=
-  h_f^{3/17}Pe_m^{-4/17}\nu^{6/17}h_0
-  \label{C4-Scaling2}
+  \hat{t}= h_f^{4/17} Pe_m^{-11/17}\nu^{8/17}t
+  \label{C4-tRescale}
 \end{equation}
-where  the viscosity  contrast and  the prewetting  film thickess  are
-constant,  i.e. $\nu  =  8.2\cdot 10^{-9}$  and  $h_f=0.001$, and  the
-Peclet number varies  between each laccolith.  In  term of $\hat{h_0}$
-and    $\hat{R}$,    the    scaling   law    (\ref{C4-Hr})    rewrites
-$  \hat{h_0}  \sim  0.3\hat{R}^{8/7}$  and  does  not  depend  on  the
-dimensionless            numbers            anymore            (Figure
-\ref{C4-Visco_PE_Heating}). However,  the different laccoliths  do not
-collapse on the same dot after rescaling (Figure \ref{C4-Data} b).  In
-particular,  the dependence  of $Pe$  of our  scaling, resulting  from
-different intrusion depths,  is not enough to  explain the variability
-in  the  size  of   terrestrial  laccoliths.   An  additional  cooling
-mechanism, amplifying the effect of  $Pe$, is thus required to explain
-the exact extent  of laccoliths, which could be extraction  of heat by
-circulation  of fluid  on Earth  \citep{Senger:2014tt}.  To  test this
-hypothesis,  we  look  at  the  low-slope  domes  on  the  Moon  where
-conduction is most likely the only source of cooling.
+where  $\hat{t}$ is  the new  variable. Injecting  (\ref{C4-tRescale})
+into (\ref{C3-ScalingH-Visco}) and  (\ref{C3-ScalingR-Visco}), we find
+the corresponding thickness $\hat{h_0}$ and radius $\hat{R}$ read
+\begin{eqnarray}
+  \hat{R}&=& h_f^{1/34}Pe_m^{-7/34}\nu^{1/17}R\label{HatR}\\
+  \hat{h_0}&=& h_f^{3/17}Pe_m^{-4/17}\nu^{6/17}h_0\label{Hath0}
+\end{eqnarray}
+In terms of  $\hat{h_0}$ and $\hat{R}$, the  scaling law (\ref{C4-Hr})
+rewrites $ \hat{h_0} \sim 0.3\hat{R}^{8/7}$ and does not depend on the
+dimensionless numbers anymore  (Figure \ref{C4-Visco_PE_Heating}). For
+laccoliths at Elba Island, we  use a constant viscosity contrast equal
+to  $\nu =  8.2\cdot 10^{-9}$,  $h_f=0.001$  and we  compute a  Peclet
+number for  each laccolith according to  (\ref{PeExpre}) with $Q_0=10$
+m$^3$ $s^{-1}$. However,  the different laccoliths do  not collapse on
+the same dot after rescaling (Figure \ref{C4-Data} b).  In particular,
+the  dependence  in $Pe$  of  our  scaling, resulting  from  different
+intrusion depths, is not enough to explain the variability in the size
+of   terrestrial  laccoliths.    An   additional  cooling   mechanism,
+amplifying the effect  of $Pe$, is thus required to  explain the exact
+extent of laccoliths. This could  be extraction of heat by circulation
+of fluid \citep{Senger:2014tt}.  To test this hypothesis, we look at
+the low-slope  domes on the Moon  where conduction is most  likely the
+only source of cooling.
 
 \subsection{Low-slope lunar domes}
 \label{sec:appl-arrest-terr-1}
 
-Circulation of  fluid in the lunar  crust is more likely  to be absent
-and  the model  developed  in  this chapter  is  also appropriate  for
-studying the  cooling of low-slope  lunar domes.  In this  section, we
-restrict  our analysis  to some  specific domes  whose characteristics
-have been precisely  revisited by Mélanie Thiriet  (Purple dots Figure
-\ref{C2-Corry_Rocchie}}).   Their  shapes   and  characteristics  have
-already been discussed  in chapter \ref{chap2} and  hereafter, we look
-at their dimension in the  light of the cooling elastic-plated gravity
-current model.
+Because the Moon is supposed  to be depleted of volatiles, circulation
+of fluid in the lunar crust is likely to be very limited and the model
+developed  in this  chapter  should be  appropriate  for studying  the
+cooling of  low-slope lunar domes.   In this section, we  restrict our
+analysis  to  some  specific  domes whose  characteristics  have  been
+precisely   revisited  by   Mélanie   Thiriet   (Purple  dots   Figure
+\ref{C2-Corry_Rocchie},   see  Section   \ref{C2-sec:observ-vs-pred}).
+Their  shapes  and  characteristics  have already  been  discussed  in
+Chapter \ref{chap2} and  hereafter, we look at their  dimension in the
+light of the cooling elastic-plated gravity current model.
 
 \subsubsection*{Range of values for the dimensionless numbers}
 \label{C4-sec:range-valu-dimens}
 
-Parameters  for the  magma in  lunar  setting have  been discussed  in
-chapter  \ref{chap2} and  are  summarized in  table \ref{C4-tab}.   In
-particular, for a  same injection rate, the  smaller gravity, together
-with the  higher density  and the smaller  viscosity of  lunar magmas,
-leads to smaller Peclet numbers.  For instance, for an intrusion $1.5$
-km deep, using $g=1.62$ m  s$^{-2}$, $\eta_h=1$ Pa s and $\rho_m=2900$
-kg m$^{-3}$  instead of  $g=9.81$ m s$^{-2}$,  $\eta_h=10^6$ Pa  s and
-$\rho_m=2500$  kg m$^{-3}$  leads to  a  Peclet number  two orders  of
+Parameters  for  a  lunar  setting  have  been  discussed  in  Chapter
+\ref{chap2} and are summarized  in Table \ref{C4-tab}.  In particular,
+for the  same injection rate,  the smaller gravity, together  with the
+higher  density and  the smaller  viscosity of  lunar magmas,  lead to
+smaller Peclet numbers.  For instance, for an intrusion $1.5$ km deep,
+using  $g=1.62$  m s$^{-2}$,  $\eta_h=1$  Pa  s and  $\rho_m=2900$  kg
+m$^{-3}$  instead  of $g=9.81$  m  s$^{-2}$,  $\eta_h=10^6$ Pa  s  and
+$\rho_m=2500$  kg m$^{-3}$  lead  to  a Peclet  number  two orders  of
 magnitude  smaller on  the Moon  than  on Earth,  i.e.  $Pe=0.04$  and
-$Pe=1.8$ respectively.  However, injection rates  on the Moon are also
-more likely to be  larger than on Earth. For an  injection rate one to
+$Pe=1.8$ respectively.  However, injection rates  on the Moon might be
+larger  than   on  Earth   \citep{Crisp:1990gf,Zimbelman:1998ww}  (See
+Section \ref{C2-sec:observ-vs-pred}).   For an  injection rate  one to
 two orders of magnitude larger and $d$ between $0.5$ and $1.5$ km, the
-range of Peclet number are in  fact very similar, i.e.  from $10^{-3}$
+range of Peclet  number is in fact very similar,  i.e.  from $10^{-3}$
 to $10^4$.  Therefore,  taking $St_m=0.1$, we have  $Pe_m$ that varies
 between $0.01$ and  $10^5$ for low-slope lunar  domes.  Finally, lunar
-basalt  are mafic  in  composition and  the  viscosity contrast  $\nu$
+basalts  are mafic  in composition  and the  viscosity contrast  $\nu$
 should vary between $10^{-3}$ and $10^{-5}$ \citep{Diniega:2013eh}.
 
 \subsubsection*{Constraining the magma physical properties}
 \label{sec:visc-contr-lunar}
 
-For an injection rate of  $Q_0=10$ m$^{3}$ s$^{-1}$ and the parameters
-listed in Table \ref{C4-tab}, the  low-slope lunar dome dimensions are
-also consistent with  a viscosity contrast of $8$  order of magnitudes
-(best    fit:   $\nu=1.8    \pm   0.4    \times   10^{-8}$)    (Figure
-\ref{C4-Data}). Assuming that the intrusion  depth ranges from $500$ m
-to $5$ km, the Peclet number ranges from $0.1$ to $1$ and the range of
-values for the dimensionless number  falls at the boundary between the
-two domains in  the phase diagram (Figure  \ref{C4-PhaseDiag}).  It is
-consistent with the radius of these  lunar domes being close to $R=4$,
-i.e.  close to  the transition radius with the  gravity regime (Figure
+For  an  injection  rate  of $Q_0=10$  m$^{3}$  s$^{-1}$,  a  liquidus
+viscosity of  $\eta_h= 1$  Pa s  and the  parameters listed  in Figure
+\ref{C4-Data},  the dimensionless  thickness of  these domes  are also
+consistent with  a viscosity  contrast close  to $10^{-8}$  (best fit:
+$\nu=1.8  \pm 0.4  \times  10^{-8}$) (Figure  \ref{C4-Data}).  On  the
+Moon, (\ref{PeExpre}) becomes
+\begin{equation}
+  Pe \approx 125 d_c^{-3/2} Q_0^{5/4}\eta_h^{1/4}
+  \label{PeExpreMoon}
+\end{equation}
+and assuming that  the intrusion depth ranges from $500$  m to $5$ km,
+the Peclet number ranges from $0.1$ to $1$ and the range of values for
+the dimensionless number falls at the boundary between the two domains
+in the  phase diagram  (Figure \ref{C4-PhaseDiag}).  It  is consistent
+with the radius of these lunar domes being close to $R=4$, i.e.  close
+to   the   transition  radius   with   the   gravity  regime   (Figure
 \ref{C4-Data}).  However,  the estimate for the  viscosity contrast is
-much larger  than the value  expected for  mafic magmas. For  the same
-injection rate and  a viscosity for the magma  at liquidus temperature
-of $\eta_h=10^3$ Pa s instead of $\eta_h=1$ Pa s, the model predicts a
-viscosity    contrast   close    to   $5$    orders   of    magnitudes
-($\nu = 6.9 \pm 1.8 \times10^{-6}$), much closer to the expected value
-(Figure  \ref{C4-PhaseDiag}).   A  similar  value  for  the  viscosity
-contrast  can be  obtained for  $\eta_h=1$ Pa  s and  $Q_0=1500$ m$^3$
-s$^{-1}$. However,  in that case,  the Peclet numbers are  much larger
-and the range of values for  the dimensionless numbers fall within the
-sill region  (Figure \ref{C4-PhaseDiag}). Therefore, it  suggests that
-the injection  rates for these lunar  domes were most likely  close to
+much larger than the value  expected for their mafic composition.  For
+the same  injection rate  and a  liquidus viscosity  for the  magma of
+$\eta_h=10^3$ Pa s instead of $\eta_h=1$ Pa s, the height scale $H$ is
+larger and the dimensionless thickness smaller. The best fit viscosity
+contrast        is        now         close        to        $10^{-5}$
+($\nu  = 6.9  \pm 1.8  \times10^{-6}$),  much closer  to the  expected
+value,   and   the  Peclet   number   are   slightly  larger   (Figure
+\ref{C4-PhaseDiag}).  A  similar value for the  viscosity contrast can
+be  obtained  for  $\eta_h=1$  Pa s  and  $Q_0=1500$  m$^3$  s$^{-1}$.
+However, in  that case,  the Peclet  numbers are  much larger  and the
+range of  values for  the dimensionless numbers  fall within  the sill
+region (Figure \ref{C4-PhaseDiag}).  In the end, it  suggests that the
+injection  rates for  these  lunar  domes were  most  likely close  to
 $Q_0\sim 10$ m$^{3}$ s$^{-1}$, hence a few orders of magnitude smaller
 than the  effusion rates estimated  from the runout distances  of some
 lava  flows in  the lunar  maria  i.e.  $Q_0\ge  10^6$ m$^3$  s$^{-1}$
@@ -1260,11 +1325,10 @@ lava  flows in  the lunar  maria  i.e.  $Q_0\ge  10^6$ m$^3$  s$^{-1}$
 \label{sec:visc-contr-lunar}
 
 On the  Moon, the dimensionless sizes  of the domes vary  by less than
-one order  of magnitude and  might be  explain only by  the conductive
-cooling of the magmatic intrusion (Figure \ref{C4-Data}). However, the
-depth   of  these   intrusions   have  not   yet   been  reported   by
-\citet{Wohler:2009jj} and hence, we can not proceed as for Elba Island
-laccoliths to test this hypothesis.
+one order of  magnitude and might be explained only  by the conductive
+cooling  of the  magmatic intrusion  (Figure \ref{C4-Data}).   Because
+intrusion depths are not known for  these domes, we can not process as
+for Elba Island laccoliths to test this hypothesis.
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
@@ -1284,36 +1348,42 @@ laccoliths to test this hypothesis.
   \end{center}
 \end{figure}
 Instead, we estimate  a range of intrusion depth that  would produce a
-collapse of  the rescaled size  of the  domes, i.e.  $\hat{h_0}$  as a
-function  of $\hat{R}$.   Indeed,  assuming that  the different  lunar
-domes  differ  only  by  their  intrusion  depth,  $\hat{R}=\hat{R}^r$
-implies that
+collapse of  the rescaled size of  the domes on a  reference dome size
+given by $\hat{R^{\text{ref}}}$ and $\hat{h_0^{\text{ref}}}$.  Indeed,
+using (\ref{HatR}), $\hat{R}=\hat{R}^{\text{ref}}$ implies that
 \begin{equation}
-  d_c = \left(R/R^r\right)^{34/15}d_c^r
+  \Lambda^{-1}h_f^{1/34}Pe_m^{-7/34}\nu^{1/17}R =   \left(\Lambda^{\text{ref}}\right)^{-1}\left(h_f^{\text{ref}}\right)^{1/34}\left(Pe_m^{\text{ref}}\right)^{-7/34}\left(\nu^{\text{ref}}\right)^{1/17}R^{\text{ref}}\label{RefDome1}
+\end{equation}
+where the topscript ref denotes a reference dome and the radii $R$ and
+$R^{\text{ref}}$ are with dimension. Assuming that the different lunar
+domes  differ   only  by   their  intrusion   depth,  (\ref{RefDome1})
+simplifies and reads
+\begin{equation}
+  d_c = \left(R/R^{\text{ref}}\right)^{34/15}d_c^{\text{ref}}
   \label{C4-dd}
 \end{equation}
-where the  radii are with  dimension and  the topscript $r$  denotes a
-reference dome. We take the largest dome as a reference and we set its
-depth to  the largest  reasonable value, i.e.   $d_c=5$ km,  mainly to
-ensure  that  the dimensionless  radius  of  the other  domes  remains
-smaller than $4$.  Injecting the dome radii in (\ref{C4-dd}) then give
-intrusion  depths between  $0.5$  km  and $5$  km  and Peclet  numbers
-between   $10^{-2}$   and   $0.5$,  consistent   with   the   expected
-values. However, while  this new parameters result in  the collapse of
-$\hat{R}$ for the different domes,  the variation in Peclet number can
-not  account  for  the  dispersion in  the  dome  thicknesses  (Figure
-\ref{C4-ArrestMoon}).  In  addition, the dimensionless thickness  as a
-function of the  dimensionless radius does not follow  the scaling law
-(\ref{C4-Hr})   anymore   (Figure  \ref{C4-ArrestMoon}).    The   same
-observations  are  obtained  using  different reference  domes  or  by
-setting the constrain on the rescaled thickness instead of the radius,
-i.e.   $\hat{h}=\hat{h}_r$.  Therefore,  conductive  cooling does  not
-appear to be responsible for the arrest of terrestrial laccoliths.
+We take the  largest dome as a  reference and we set its  depth to the
+largest reasonable value, i.e.  $d_c=5$  km, mainly to ensure that the
+dimensionless  radius of  the other  domes remains  smaller than  $4$.
+Injecting the dome  radii in (\ref{C4-dd}) then  give intrusion depths
+between $0.5$ km  and $5$ km and Peclet numbers  between $10^{-2}$ and
+$0.5$, consistent with  the expected values.  However,  while this new
+parameters  result in  the  collapse of  $\hat{R}$  for the  different
+domes,  the  variation  in  Peclet  number can  not  account  for  the
+dispersion in  the dome thicknesses (Figure  \ref{C4-ArrestMoon}).  In
+addition,   the  dimensionless   thickness  as   a  function   of  the
+dimensionless  radius does  not follow  the scaling  law (\ref{C4-Hr})
+anymore  (Figure  \ref{C4-ArrestMoon}).   The  same  observations  are
+obtained using different  reference domes or by  setting the constrain
+on   the   rescaled   thickness    instead   of   the   radius,   i.e.
+$\hat{h_0}=\hat{h_0^{\text{ref}}}$.   Therefore,   conductive  cooling
+does  not appear  to  be  responsible for  the  arrest of  terrestrial
+laccoliths.
 
 \subsection{Large mafic sills}
 \label{sec:large-mafic-sill}
 
-As we discussed in chapter \ref{chap2},  the size of large mafic sills
+As we discussed in Chapter \ref{chap2},  the size of large mafic sills
 reported  by  \citet{Cruden:tg}  show  an  increasing  thickness  with
 diameter  apparently  in  contradiction with  the  constant  thickness
 predicted  by   the  elastic-plated  gravity  current   model  (Figure
@@ -1322,27 +1392,28 @@ sills  are  characterized  by  different  injection  rates,  i.e.   by
 different  height scales.   Forcing the  dimensionless thicknesses  of
 different sills to be constant imposes that
 \begin{equation}
-  Q_0 = (h_0/h_0^r)^4Q_r
+  Q_0 = (h_0/h_0^{\text{ref}})^4Q_0^{\text{ref}}
 \end{equation}
 where $h_0$ is the sill  thickness with dimension, $Q_0$ its injection
-rate and $h_0^r$ and $Q_0^r$ are reference values for this parameters.
-Taking the  thickest sill  as a  reference with  $Q_0^r =  10^4$ m$^3$
-s$^{-1}$, we find that in order to collapse all the data on a constant
-thickness, the injection  rate have to vary by at  least $7$ orders of
-magnitudes,   i.e.   from   $Q_0=10^{-3}$  to   $Q_0=  10^{4}$   m$^3$
-s$^{-1}$. It is much larger than  the expected range of variations for
-this parameter and hence, these mafic  sills do not appear to have all
-stop in the third gravity regime. Another possible explanation is that
-fracturation at the tip, instead of cooling, have triggered the arrest
-of these  magmatic intrusions  in the  second gravity  phase.  Indeed,
-while fracturation is  not sufficient to stop a  magmatic intrusion in
-the bending  regime, it might be  responsible for the arrest  of large
-mafic  sills \citep{Michaut:2011kg}.   The  increasing thickness  with
-diameter would thus be consistent  with the thickness increase induced
-by the cooling of the sill in the second gravity phase.  However, more
-information about the intrusion depth and the relationship between the
-different sill units, which are  not given by \citet{Cruden:tg}, would
-be required to precisely test this hypothesis.
+rate  and  $h_0^{\text{ref}}$  and  $Q_0^{\text{ref}}$  are  reference
+values for this  parameters.  Taking the thickest sill  as a reference
+with $Q_0^{\text{ref}} =  10^4$ m$^3$ s$^{-1}$, we find  that in order
+to collapse all  the data on a constant thickness,  the injection rate
+have  to  vary by  at  least  $7$  orders  of magnitudes,  i.e.   from
+$Q_0=10^{-3}$ to $Q_0= 10^{4}$ m$^3$  s$^{-1}$. It is much larger than
+the expected range  of variations for this parameter  and hence, these
+mafic  sills do  not appear  to  have all  stop in  the third  gravity
+regime. Another possible explanation is  that fracturation at the tip,
+instead  of  cooling, have  triggered  the  arrest of  these  magmatic
+intrusions in the second gravity phase.  Indeed, while fracturation is
+not sufficient to stop a magmatic  intrusion in the bending regime, it
+might   be  responsible   for  the   arrest  of   large  mafic   sills
+\citep{Michaut:2011kg}.  The increasing  thickness with diameter would
+thus be consistent with the  thickness increase induced by the cooling
+of the  sill in the  second gravity phase.  However,  more information
+about the intrusion  depth and the relationship  between the different
+sill  units,  which  are  not given  by  \citet{Cruden:tg},  would  be
+required to precisely test this hypothesis.
 
 \subsection{Contact aureole}
 \label{sec:thermal-aureol}
@@ -1351,9 +1422,8 @@ Contact  metamorphism  often  occurs   in  the  vicinity  of  magmatic
 intrusion
 \citep{Jaeger:1959du,SILLITOE:1998bs,Senger:2014tt}. Metamorphism is a
 complex process and in the following, we discuss only the dimension of
-the thermal aureole in the  viscinity of laccoliths which have stopped
+the thermal aureole  in the vicinity of laccoliths  which have stopped
 in the third bending regime.
-
 
 \begin{figure}[h!]
   \begin{center}
@@ -1370,13 +1440,12 @@ in the third bending regime.
 We define  the thickness of  the thermal  aureole by the  region where
 $\Theta_r>0.1$  above the  center of  the flow.   Therefore, inverting
 (\ref{C4-eq11}) gives  $L_h(t)$, the maximum thickness  of the thermal
-aureole above the intrusion
+aureole above the intrusion at $r=0$
 \begin{equation}
   L_h(t)                                                           =
   \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t)}\right)2Pe^{-1/2}t^{1/2}
   \label{Aureol}
 \end{equation}
-
 $L_h$ scales as  $Pe^{-1/2}$ and hence, is larger for  small values of
 $Pe$ (Figure \ref{Contact_Areuol2}). Indeed, for large $Pe$, advection
 dominates on  the emplacement  time scale and  the thermal  aureole is
@@ -1387,56 +1456,55 @@ $h_0$  for $Pe=1$  whereas  it is  only  a few  percent  of $h_0$  for
 $Pe=10.0$ (Figure \ref{C4-Grid_PeOmega_Heating}).
 
 The dimension of  the thermal aureole also depends  on the emplacement
-time $t$; the longer the injection, the more heated the wall rocks and
-the larger  the thermal  aureole. We have  shown that  laccoliths have
-most likely  stopped in the third  bending phase and a  lower estimate
-for the emplacement time  as a function of $Pe$ and  $\nu$ is given by
-$t_{b3}$ (\ref{C4-tb3}).  Injecting (\ref{C4-tb3}) into (\ref{Aureol})
+time $t$;  the longer the  injection, the  longer the heating  and the
+larger the thermal aureole. An upper limit for the emplacement time is
+given by the time $t_t$ for the intrusion to transition in the gravity
+regime   while   it   is   in   the   third   bending   regime,   i.e.
+$t_t=6.5(\eta_e/\eta_h)^{2/7}h_f^{-1/7}$          (See         Section
+\ref{C3-sec:diff-evol-with-1}).   Injecting $t_t$  into (\ref{Aureol})
 gives
 \begin{equation}
-  L_m                                                           =1.6
-  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t_{b3})}\right)h_f^{-2/17}\nu^{-4/17}Pe^{-3/17}St_m^{-11/34}
+  L_h^{\text{max}}                                                           =5.0  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t_{t})}\right)h_f^{-1/14}\nu^{-1/7}Pe^{-1/2}
   \label{Aureol2}
 \end{equation}
-and therefore
+and therefore, using (\ref{C3-ScalingH-Visco}), we get
 \begin{equation}
-  L_m/h_0                                                           =2.5
-  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t_{b3})}\right)h_f^{1/17}\nu^{2/17}Pe^{-7/17}St_m^{-3/34}
+  L_h^{\text{max}}/h_0(t_t)                                                           =3.7
+  \erf^{-1}\left(\frac{0.1}{\Theta_s(r=0,t_{t})}\right)h_f^{1/14}\nu^{1/7}Pe^{-1/2}
   \label{Aureol3}
 \end{equation}
-While the  absolute size of  the thermal aureole $L_m$  increases with
-decreasing  $Pe$ and  $\nu$  (\ref{Aureol2}), the  ratio $L_m/h_0$  is
-smaller      for      larger     viscosity      contrasts      (Figure
-\ref{PhaseHeatingContact}).
-
-
-For   the   felsic   laccoliths   at   Elba   Island,   we   estimated
-$\nu     \sim     10^{-9}$     and    $Pe\sim     10^{-3}$     (Figure
-\ref{PhaseHeatingContact}  a) and  thus,  the  thermal aureole  should
-reach  $300\%$  of  the  intrusion  thickness at  the  center  of  the
-flow. Important  temperature variations however,  i.e. $\Theta_r>0.8$,
-should be restricted to the vicinity of the current, i.e.  $\sim 50\%$
-of  the  intrusion  thickness  (Figure  \ref{PhaseHeatingContact}  b).
-Theses  estimates represent  upper  bound as  the  temperature at  the
-surface  $\Theta_s(r=0,t)$  is  most   likely  smaller  than  $1$  for
-$Pe<0.1$.   In addition,  the  model neither  accounts for  horizontal
-thermal conduction,  nor for circulation  of fluid in the  wall rocks,
-both effects that should also limit the size of the thermal aureole.
+While  the  absolute  size  of the  thermal  aureole  $L^{\text{max}}$
+increases with  decreasing $Pe$  and $\nu$ (\ref{Aureol2}),  the ratio
+$L_h^{\text{max}}/h_0$  is  smaller  for  larger  viscosity  contrasts
+(Figure \ref{PhaseHeatingContact}).
 
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
-    \includegraphics[scale=0.35]{ThermalAureol_50Point_2figure.eps}
-    \caption{a) Size of the thermal  aureole above the intrusion $L_c$
-      normalized by the intrusion thickness at the center $h_0$ ($\%$)
-      (\ref{Aureol3}) when  it reaches  the third  bending phase  as a
+    \includegraphics[scale=0.35]{ThermalAureol_50Point_2figure_R4.eps}
+    \caption{a)  Maximum  Size  of   the  thermal  aureole  above  the
+      intrusion   $L_h^{\text{max}}$  normalized   by  the   intrusion
+      thickness  at  the  center  $h_0$ ($\%$)  (\ref{Aureol3})  as  a
       function of the  number $Pe$ and $\nu$.  b) Same  plot but where
       the thermal  aureole is  defined with $\Theta_r=0.8$  instead of
-      $0.1$  (\ref{Aureol3}).   In  both  plot,  we  set  $h_f=0.001$,
-      $St_m=0.1$ and $\Theta_s(r=0,t_{b3})=1$.}
+      $0.1$ in (\ref{Aureol3}).  In both plot, we set $h_f=0.001$ and
+      $\Theta_s(r=0,t_{t})=1$.}
     \label{PhaseHeatingContact}
   \end{center}
 \end{figure}
+
+For   the   felsic   laccoliths   at   Elba   Island,   we   estimated
+$\nu     \sim     10^{-9}$     and    $Pe\sim     10^{-3}$     (Figure
+\ref{PhaseHeatingContact}  a) and  thus,  the  thermal aureole  should
+reach  $400\%$  of  the  intrusion  thickness at  the  center  of  the
+flow. Important  temperature variations however,  i.e. $\Theta_r>0.8$,
+should be restricted to the vicinity of the current, i.e.  $\sim 60\%$
+of  the  intrusion  thickness  (Figure  \ref{PhaseHeatingContact}  b).
+Theses  estimates represent  upper  bound as  the  temperature at  the
+surface $\Theta_s(r=0,t)$ might be smaller  than $1$ for $Pe<0.1$.  In
+addition,   the  model   neither  accounts   for  horizontal   thermal
+conduction,  nor for  circulation of  fluid  in the  wall rocks,  both
+effects that should also limit the size of the thermal aureole.
 
 
 \section{Summary and discussion}
@@ -1446,23 +1514,23 @@ In this chapter, we discuss a more realistic model for the emplacement
 of magmatic intrusions in the shallow crust of terrestrial planets. In
 particular, we  describe the dynamics  of a magma characterized  by an
 Arrhenius rheology and heating the wall  rocks as it spreads.  We show
-that relaxing the  thermal boundary condition retains  the heat within
-the flow and therefore, allows the  intrusion to stay hot for a longer
-period of  time.  In particular,  the thermal anomaly  detaches slower
-from the tip of the intrusion.  It  also does not reach a steady state
-anymore in the gravity regime as the heating of the surrounding medium
-constantly   decreases  the   heat   loss  in   the  central   region.
-Nevertheless, the Arrhenius rheology largely compensates for the delay
-in the transitions  induced by the heating of  the surrounding medium.
-At  the end,  except for  the  third phase  in both  regimes which  is
-reached slightly  later, the dynamics  shows only small  variations in
-comparison to the one described in chapter \ref{C3-JFM}.
+that relaxing  the thermal boundary  condition insulates the  flow and
+therefore, allows  the intrusion to  stay hot  for a longer  period of
+time.  In particular, the thermal anomaly detaches slower from the tip
+of the  intrusion.  It also does  not reach a steady  state anymore in
+the gravity regime as the heating of the surrounding medium constantly
+decreases  the heat  loss in  the central  region.  Nevertheless,  the
+Arrhenius  rheology   largely  compensates   for  the  delay   in  the
+transitions induced by the heating  of the surrounding medium.  In the
+end,  except for  the third  phase in  both regimes  which is  reached
+slightly later, the dynamics shows only small variations in comparison
+to the one described in chapter \ref{C3-JFM}.
 
 Application of this  model to the christmas-tree  laccolith complex at
 Elba   Island  shows   that   cooling  allows   to  reconciliate   the
 elastic-plated gravity  current model  with the  observations. Indeed,
 their   size    is   consistent   with   their    felsic   composition
-($\nu  \sim   10^{-8}$)  and  their   arrest  in  the   third  bending
+($\nu  \approx  10^{-8}$)  and  their  arrest  in  the  third  bending
 phase. However, the model does  not capture the second order variation
 in the laccolith dimensions. Indeed, while  the mean trend in the data
 is consistent with the model, conduction  alone is not able to explain
@@ -1474,16 +1542,17 @@ laccoliths.
 
 In the end, while some progress  has been made in the understanding of
 the  emplacement  of these  shallow  magmatic  intrusions, a  complete
-picture of  the solution, in regard  to the evolution of  the size and
-thickness of  the intrusion  as a  function of  the parameters  of the
-problem (elasticity and  toughness of the host rock,  viscosity of the
-magma, injection rate  of the feeder dyke, and  depth of emplacement),
-has not  yet been obtained.   In general, more  detailed observations,
-especially  at  the tip  of  these  shallow magmatic  intrusions,  may
-provide further insights in the arrest mechanism.  Precise information
-on the extent of the thermal  aureole, which has not yet been reported
-in  the literature,  could  also provide  precious  constrain for  the
-model.
+picture of the solution, in regard  to the final size and thickness of
+the  intrusion  as  a  function  of  the  parameters  of  the  problem
+(elasticity and  toughness of the  host rock, viscosity of  the magma,
+injection rate of the feeder dyke,  and depth of emplacement), has not
+yet been obtained.  In general, more detailed observations, especially
+at the tip  of these shallow magmatic intrusions,  may provide further
+insights in the  arrest mechanism.  Precise information  on the extent
+of  the thermal  aureole,  which  has not  yet  been  reported in  the
+literature, could  also provide precious  constrain for the  model. We
+discuss some possible extensions of this work in the last part of this
+manuscript.
 
 
 %%% Local Variables:
