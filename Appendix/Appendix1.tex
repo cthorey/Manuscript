@@ -3,7 +3,7 @@
 
 \section{  Numerical  scheme  for  a  cooling  elastic-plated  gravity
   current}
-\label{sec:cool-elast-plat}
+\label{A1-sec:-cool-elast-plat}
 
 In this  section, we present  the numerical  scheme used to  solve the
 coupled  nonlinear partial  differential  equations (\ref{C4-HF})  and
@@ -24,7 +24,7 @@ grid  $h_i$ and  $\xi_i$ and  the secondary  variables $\Theta_{b,i}$,
 $\Theta_{s,i}$ and $\delta_i$. Both equations  can be expressed on the
 convenient form
 \begin{equation}
-  \frac{\partial u}{\partial t} - f = 0
+  \frac{\partial u}{\partial t} - f = 0,
 \end{equation}
 where $u$  is the function we  want to integrate and  $f$ a non-linear
 function  that depends  on $u$.   We  solve these  equations by  first
@@ -34,14 +34,14 @@ since  their numerical  approximation requires  the largest  number of
 sample points.  We  then get two systems of  $M$ ordinary differential
 equations with the form
 \begin{equation}
-  \frac{\partial u_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M
+  \frac{\partial u_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M.
 \end{equation}
 The time derivatives are first  order and, since explicit schemes tend
 to be  very sensitive and unstable,  we use a fully  implicit backward
 Euler scheme to get
 \begin{equation}
   \frac{u_i^{n+1}-u_i^n}{\Delta t} - f_i(u_i^{n+1}) = 0 \hspace{1cm} i
-  = 1,...,M
+  = 1,...,M.
   \label{C4-Num-1}
 \end{equation}
 Since  $f_i(u_i^{n+1})$ is  not a  linear function,  the system  above
@@ -51,27 +51,28 @@ method have shown  poor results in converging toward  the solution and
 we finally apply  second order Newton's method to  obtain the solution
 at each time step.  In particular, we first linearize $u^{n+1}$ around
 a guess  of the solution  by assuming $u^{n+1}=u^*+\delta  u^n$, where
-$u^*$ is a guess and $\delta u^n$ is the error and we drop the $i$ for
+$u^*$ is a  guess, $\delta u^n$ is  the error and we drop  the $i$ for
 clarity.   Then, we  expressed the  non-linear part  using a  Taylor's
 expansion
 \begin{equation}
   f^{n+1}=f(u^{n+1})=f(u^*+\delta
-  u^n)=f(u^*)+J^h_{f}(u^*)\delta u^n\nonumber
+  u^n)=f(u^*)+J^u_{f}(u^*)\delta u^n,
+  \label{C4-Fn1}
 \end{equation}
-where  $J^u_{f}(u^*)$ is  the  jacobian matrix  for  the function  $f$
-evaluated  in $h^*$.   Injecting the  expansion into  (\ref{C4-Num-1})
+where  $J^u_{f}(u^*)$ is  the  Jacobian matrix  for  the function  $f$
+evaluated  in $u^*$.   Injecting (\ref{C4-Fn1})  into (\ref{C4-Num-1})
 finally gives a  system of M linear equations for  the correction term
-$\delta_h^n$ which can be expressed as
+$\delta u^n$ which can be expressed as
 \begin{equation}
-  (I-\Delta tJ^u_{f}(u^*))\delta u^n=u^n-u^*+\Delta t f(u^*)
+  (I-\Delta tJ^u_{f}(u^*))\delta u^n=u^n-u^*+\Delta t f(u^*),
 \end{equation}
 where $I$ is the identity matrix. Therefore, each iteration solves for
 $\delta u^n$ and we use $u_n+\delta u^n$  as a new guess $u^*$ in each
 iteration. This  is repeated  until $\delta u^n$  becomes sufficiently
-small.  Finally, since the equations are coupled, we use a fixed-point
-iteration method  to converge  toward the  solution $(h,\xi)$  at each
-time step.   Therefore, the  algorithm is the  following at  each time
-step
+small.  Finally,  since the equations (\ref{C4-HF})  and (\ref{C4-TF})
+are coupled, we use a  fixed-point iteration method to converge toward
+the solution $(h,\xi)$  at each time step.  In the  end, the algorithm
+is the following at each time step
 \begin{itemize}
 \item Start with a guess for the values of all variables.
 \item Solve  the thickness equation (\ref{C4-HF})  for $h^{n+1}$ using
@@ -87,15 +88,15 @@ The computational scheme is summarized in the following.
 
 The thickness equation (\ref{C4-HF}) is written as
 \begin{eqnarray}
-  \frac{\partial h}{\partial t}-f(h,\xi)&=&0
+  \frac{\partial h}{\partial t}-f(h,\xi)&=&0,
 \end{eqnarray}
 with
 \begin{eqnarray}
   f& =& \frac{1}{r}
         \frac{\partial}{\partial      r}
         \left(      r  \phi\left(     \frac{\partial      }{\partial
-        r}\left(h+P\right)\right)\right)+w_i\\
-  \phi &=& 12I_1(h)
+        r}\left(h+P\right)\right)\right)+w_i,\\
+  \phi &=& 12I_1(h),
 \end{eqnarray}
 and where $P$ is the dimensionless bending pressure $P = \nabla^4h$.
 
@@ -108,7 +109,7 @@ grid. Therefore, we have
   f_i&=&\frac{1}{r_i \Delta_r}\left(r_{i+1/2}\phi_{i+1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i+1/2}-r_{i-1/2}\phi_{i-1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i-1/2}\right)\nonumber\\
      &=&A_i\phi_{i+1/2}\left(h_{i+1}-h_i\right)-B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
      &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)-B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
-     &+&w_i\label{C4-Num-3}
+     &+&w_i,\label{C4-Num-3}
 \end{eqnarray}
 where                $A_i=r_{i+1/2}/(r_i\Delta_r^2)$               and
 $B_i=r_{i-1/2}/(r_i\Delta_r^2)$.   The bending  pressure  term $P$  is
@@ -118,28 +119,28 @@ therefore, $P_i$ is  expressed over a seven point stencil  on the main
 grid such that
 \begin{equation}
   P_{i}=   \alpha_{i}h_{i-3}  +   \beta_{i}h_{i-2}+\gamma_{i}  h_{i-1}
-  +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3}
+  +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3},
   \label{C4-Num-4}
 \end{equation}
 with
 \begin{eqnarray}
-  &\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4+3p_3\Delta_r \right)\nonumber \\
-  &\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber\\
-  &\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber\\
-  &\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224-60p_2\Delta r^{2}\right) \nonumber\\
-  &\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber\\
-  &\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber\\
-  &\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4-3p_3\Delta_r \right)\nonumber
+  &\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4+3p_3\Delta_r \right)\nonumber ,\\
+  &\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber,\\
+  &\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber,\\
+  &\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224-60p_2\Delta r^{2}\right) \nonumber,\\
+  &\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber,\\
+  &\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber,\\
+  &\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4-3p_3\Delta_r \right),\nonumber
 \end{eqnarray}
 and where $p_1=1/r_i^3$, $p_2=1/r_i^2$ and $p_3 = 2/r_i$. Finally, the
-term $\phi_{i-1/2}$  and $\phi_{i-1/2}$, which depend  on the variable
-$\Theta_b$, $\delta$ as well as  different power of $h$, are evaluated
+term $\phi_{i-1/2}$ and $\phi_{i-1/2}$,  which depend on the variables
+$\Theta_b$, $\delta$ as well as different powers of $h$, are evaluated
 in $i-1/2$ and  $i+1/2$ respectively. Different choices  for the value
-of the variable at the mid-cell grid point do not show any significant
-difference  and a  simple  average  is taken  such  that the  variable
-$u_{i+1/2}$ is taken as $0.5(u_i+u_{i+1})$.
+of  the  variables  at  the  mid-cell  grid  point  do  not  show  any
+significant differences  and a simple  average is taken such  that the
+variable $x_{i+1/2}$ is taken as $0.5(x_i+x_{i+1})$.
 
-\vspace{.5cm}    \textbf{Expression   of    the   jacobian    $J_f^h$}
+\vspace{.5cm}    \textbf{Expression   of    the   Jacobian    $J_f^h$}
 \vspace{.5cm}
 
 The discretized  function $f_i$ can be  break down in three  part, the
@@ -149,9 +150,9 @@ part $f_i^{b}$ which is expressed in term  of the value of $h$ on nine
 grid points  $\left\{{i-4,i-3,...,i+3,i+4}\right\}$ and  the injection
 term which depends only on the grid point $i$ such that
 \begin{equation}
-  f_i = f_i^g+f_i^b+w_i
+  f_i = f_i^g+f_i^b+w_i.
 \end{equation}
-Therefore, the jacobian is  nona-diagonal and its coefficient $J_{il}$
+Therefore, the Jacobian is  nona-diagonal and its coefficient $J_{il}$
 are
 \begin{equation}
   J_{il}=
@@ -162,7 +163,7 @@ are
       f^{b}_i}{\partial h_{l}} & l =
     \left\{{i-1,i,i+1}\right\}\\
     0 & \text{otherwise}
-  \end{cases}
+  \end{cases}.
   \label{C4-C2-eq12}
 \end{equation}
 The different  terms can be  easily derived from  (\ref{C4-Num-3}) and
@@ -174,29 +175,29 @@ conditions.
 We begin with  $h_i=h_f$ for $i=1,..,M$.  Since the  flow is symmetric
 in $r=0$, we require that
 \begin{equation}
-  \left.\frac{\partial h}{\partial r}\right|_{r=0} =\left.\frac{\partial P}{\partial r}\right|_{r=0} =0
+  \left.\frac{\partial h}{\partial r}\right|_{r=0} =\left.\frac{\partial P}{\partial r}\right|_{r=0} =0,
 \end{equation}
 and therefore for $i=1$, we have
 \begin{eqnarray}
   f_i     &=&A_1\phi_{i+1/2}\left(h_{i+1}-h_i\right)\nonumber\\
           &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)\nonumber\\
-          &+&w_i\label{C4-Num-5}
+          &+&w_i\label{C4-Num-5}.
 \end{eqnarray}
 The expression  of the  bending pressure, evaluated  over a  $7$ point
-stencils, is problematic close to the boundary and reflection formulae
+stencils, is problematic close to  the boundary and reflection formula
 will  be  used  in  order   to  accommodate  the  boundary  conditions
 \citet{Patankar:1980vu}.   In   particular,  we  have  $h_0   =  h_1$,
 $h_{-1}=h_2$ and  $h_{-2}=h_3$.  Similarly, boundary condition  at the
 end of the mesh is accounted by using a grid much larger than the flow
 itself and requiring
 \begin{equation}
-  \left.\frac{\partial h}{\partial r}\right|_{r=r_M} =\left.\frac{\partial P}{\partial r}\right|_{r=r_M} =0
+  \left.\frac{\partial h}{\partial r}\right|_{r=r_M} =\left.\frac{\partial P}{\partial r}\right|_{r=r_M} =0,
 \end{equation}
 which gives for $i=M$
 \begin{eqnarray}
   f_i     &=&B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
           &+&B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
-          &+&w_i\label{C4-Num-5}
+          &+&w_i\label{C4-Num-5},
 \end{eqnarray}
 with $h_{i>=M}=h_f$.
 
@@ -205,7 +206,7 @@ with $h_{i>=M}=h_f$.
 
 The Newton-Rhapsod method reads
 \begin{equation}
-  (I-\Delta tJ^h_{f}(h_k^*))\delta h_k^n=h^n-h_k^*+\Delta t f(h_k^*)
+  (I-\Delta tJ^h_{f}(h_k^*))\delta h_k^n=h^n-h_k^*+\Delta t f(h_k^*),
 \end{equation}
 where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
 diagonal  matrix and  $J_f^h(h^*)$  is a  $M  \times M$  nona-diagonal
@@ -216,7 +217,7 @@ $h^*_k  = h^n+\delta  h_{k-1}^n$ as  a new  guess for  each iterations
 until $\delta h^n_{k}$ becomes  sufficiently small.  In particular, we
 require that
 \begin{equation}
-  \delta h^n_k/h^*_{k}<\epsilon
+  \delta h^n_k/h^*_{k}<\epsilon,
 \end{equation}
 with $\epsilon = 10^{-4}$.
 
@@ -224,19 +225,19 @@ with $\epsilon = 10^{-4}$.
 
 The heat equation (\ref{C4-TF}) is written as
 \begin{eqnarray}
-  \frac{\partial \xi}{\partial t}-g(h,\xi)&=&0
+  \frac{\partial \xi}{\partial t}-g(h,\xi)&=&0,
 \end{eqnarray}
 with
 \begin{eqnarray}
   g& =& \frac{1}{r}\frac{\partial}{\partial                          r}
         \left( r\Gamma\xi\right) +\frac{1}{r}\frac{\partial}{\partial                          r}
-        \left(r\Sigma\right)+2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta}\\
-  \overline{\theta}&=&\frac{1}{3}\left(2\Theta_b+\Theta_s\right)\\
+        \left(r\Sigma\right)+2Pe^{-1}St_m\frac{\left(\Theta_b-\Theta_s\right)}{\delta},\\
+  \overline{\theta}&=&\frac{1}{3}\left(2\Theta_b+\Theta_s\right),\\
   \Gamma&=&-\frac{12}{\delta}
             \frac{\partial
             P}{\partial
             r}\left(\delta
-            I_0(\delta)-I_1(\delta)\right)\\
+            I_0(\delta)-I_1(\delta)\right),\\
   \Sigma &=& \frac{12}{\delta} \frac{\partial P}{\partial r}\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right).
 \end{eqnarray}
 
@@ -248,7 +249,7 @@ $0.5\Delta r$ from the main grid. Therefore, we have
 \begin{eqnarray}
   g_i &=& \left(C_i\Gamma_{i+1/2}\xi_{i+1/2}-D_i\Gamma_{i-1/2}\xi_{i-1/2}\right)\\
       &+&\left(C_i\Sigma_{i+1/2}-D_i\Sigma_{i-1/2}\right)\\
-      &+&2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}
+      &+&2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i},
 \end{eqnarray}
 with         $C_i         =r_{i+1/2}/(r_i\Delta        r)$         and
 $D_i =r_{i-1/2}/(r_i\Delta r)$.   We use the average  between the grid
@@ -257,15 +258,15 @@ and  $\Sigma$ at  $i-1/2$ (resp.   $i+1/2$).   In addition,  we use  a
 classical upwind  scheme to handle $\xi$  at the mid grid  point which
 requires
 \begin{eqnarray}
-  \xi_{i+1/2} &=& \xi_i\\
-  \xi_{i-1/2} &=& \xi_{i-1}
+  \xi_{i+1/2} &=& \xi_i,\\
+  \xi_{i-1/2} &=& \xi_{i-1}.
 \end{eqnarray}
 
 \vspace{.5cm}  \textbf{Expression   of  the   Jacobian  $J_{g}^{\xi}$}
 \vspace{.5cm}
 
-The expression  of the Jacobian  is much straightforward in  that case
-and its coefficient $J_{il}$ are
+The expression of the Jacobian is straightforward in that case and its
+coefficient $J_{il}$ are
 \begin{equation}
   J_{il}=
   \begin{cases}
@@ -273,22 +274,22 @@ and its coefficient $J_{il}$ are
     l = i-1\\
     C_i\Gamma_{i+1/2} & l = i \\
     0 & \text{otherwise}
-  \end{cases}
+  \end{cases},
   \label{C4-C2-eq12}
 \end{equation}
 with only slight adjustment coming from the boundary conditions.
 
 \vspace{.5cm} \textbf{Boundary conditions} \vspace{.5cm}
 
-We  consider $\Theta_b  =1$  and $\delta  = 10^{-4}$  in  the film  at
-$t=0$. In this way, we ensure  that the average temperature across the
-film at $t=0$ is close to $1$. By construction, $D_1=0$ and therefore,
-for $i=1$ we have
+We consider $\Theta_b =1$, $\Theta_s=0$  and $\delta = 10^{-4}$ in the
+film at  $t=0$. In this  way, we  ensure that the  average temperature
+across the film at $t=0$ is close to $1$. By construction, $D_1=0$ and
+therefore, for $i=1$ we have
 \begin{eqnarray}
-  g_i &=& C_i\Gamma_{i+1/2}\xi_{i}+ C_i\Sigma_{i+1/2} +2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}
+  g_i &=& C_i\Gamma_{i+1/2}\xi_{i}+ C_i\Sigma_{i+1/2} +2Pe^{-1}St_m\frac{\Theta_{b,i}-\Theta_{s,i}}{\delta_i}.
 \end{eqnarray}
 For   $i=M$,   we    consider   that   $\Gamma_{i+1/2}=\Gamma_i$   and
-$\Sigma_{i=1/2}=\Sigma_i$.   However,  the  choice  for  the  boundary
+$\Sigma_{i+1/2}=\Sigma_i$.   However,  the  choice  for  the  boundary
 condition at the border of the grid $i=M$ is not important as we solve
 the problem over a grid much larger than the flow itself.
 
@@ -296,7 +297,7 @@ the problem over a grid much larger than the flow itself.
 
 The Newton-Rhapsod method reads
 \begin{equation}
-  (I-\Delta tJ^{\xi}_{g}(\xi_k^*))\delta \xi_k^n=\xi^n-\xi_k^*+\Delta t f(\xi_k^*)
+  (I-\Delta tJ^{\xi}_{g}(\xi_k^*))\delta \xi_k^n=\xi^n-\xi_k^*+\Delta t f(\xi_k^*),
 \end{equation}
 where the  $k$ refers  to the $k$  iterations, $I$ is  a $M  \times M$
 diagonal  matrix and  $J_f^h(\xi^*)$ is  a $M  \times M$  tri-diagonal
@@ -307,12 +308,12 @@ iterate using $\xi^*_k = \xi^n+\delta  \xi_{k-1}^n$ as a new guess for
 each iterations  until $\delta \xi^n_{k}$ becomes  sufficiently small.
 In particular, we require that
 \begin{equation}
-  \delta \xi^n_k/\xi^*_{k}<\epsilon
+  \delta \xi^n_k/\xi^*_{k}<\epsilon,
 \end{equation}
 with  $\epsilon  = 10^{-4}$.   In  addition,  at each  iteration,  the
 quantity $\Theta^*_{s,k}$, $\Theta^*_{b,k}$ and $\delta^*_k$, that are
 needed to evaluate  $\Gamma$ and $\Sigma$, are derived  from the value
-of $\xi^*_{k}$ using (\ref{C4-TS}), (\ref{C4-TB}) and (\ref{C4-DELTA})
+of $\xi^*_{k}$ using (\ref{C4-TS}), (\ref{C4-TB}) and (\ref{C4-DELTA}).
 
 \subsection{Integral expressions}
 \label{sec:integral-expressions}
@@ -321,10 +322,10 @@ The model  developed in  Section \ref{C4-sec:theory-1} depends  on the
 integrals
 \begin{eqnarray}
   I_0(z)&=&\int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)
-            dy \\
-  I_1(z) &=& \int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)y dy\\
+            dy, \\
+  I_1(z) &=& \int_0^z\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)y dy,\\
   I_2(z)&=&\int_0^y                         \frac{1}{\eta(y)}
-            \left(y-\frac{h}{2}\right)G(y)dy
+            \left(y-\frac{h}{2}\right)G(y)dy,
 \end{eqnarray}
 where $G(z)$  is a  primitive of $\theta(z)$  where $z<\delta$  and is
 given by
@@ -339,16 +340,19 @@ $I_1(\delta)$, $I_1(h)$ and $I_2(\delta)$.
 
 In that case, the four integrals can be easily derived and read
 \begin{eqnarray}
-  I_0(\delta)&=&\frac{\delta}{12} \left(6 \delta \nu + (1-\nu) \left(- \alpha_1 \delta + 2 \alpha_1 h + 6 \Theta_{b} \delta - 6 \Theta_{b} h\right) - 6 h \nu\right)\nonumber\\
-  I_1(\delta)&=&\frac{\delta^{2}}{120} \left(40 \delta \nu + (1-\nu) \left(- 4 \alpha_1 \delta + 5 \alpha_1 h + 40 \Theta_{b} \delta - 30 \Theta_{b} h\right) - 30 h \nu\right)\nonumber\\
-  I_1(h)&=&\frac{1}{60} \left((1-\nu) \left(- 4 \alpha_1 \delta^{3} + 10 \alpha_1 \delta^{2} h - 10 \alpha_1 \delta h^{2} + 5 \Theta_{b} h^{3}\right) + 5 h^{3} \nu\right)\nonumber\\
-  I_2(\delta)&=&- \frac{\delta^{2}}{2520} \left(378  \alpha_1 \delta \nu -
-                 315  \alpha_1 h  \nu -  840 \Theta_{b}  \delta \nu  + 630
-                 \Theta_{b} h \nu \right)\nonumber\\
-             &&-\frac{\delta^{2}}{2520}(1-\nu)  \left(- 50  \alpha_1^{2} \delta  + 70
-                \alpha_1^{2}  h  +  462  \alpha_1   \Theta_{b}  \delta  -  420  \alpha_1
-                \Theta_{b}  h -  840  \Theta_{b}^{2} \delta  + 630  \Theta_{b}^{2}
-                h\right)\nonumber
+  I_0(\delta)&=&\frac{\delta}{12} \left(\left(6 \delta-6h\right) \nu +
+                 (1-\nu) \left(\alpha_1\left(-  \delta + 2  h\right) +
+                 \Theta_{b}\left(         6\delta          -         6
+                 h\right))\right)\right),\nonumber\\
+  I_1(h)&=&\frac{1}{60} \left(5 h^{3} \nu +(1-\nu) \left(\alpha_1\left(- 4  \delta^{3} + 10 \delta^{2} h - 10 \delta h^{2}\right) + 5 \Theta_{b} h^{3}\right) \right)\nonumber,\\
+  I_1(\delta)&=&\frac{\delta^{2}}{120} \left(\left(40 \delta-30h\right) \nu + (1-\nu) \left(\alpha_1\left(- 4  \delta + 5 h\right) + \Theta_{b}\left(40  \delta - 30  h\right)\right) \right)\nonumber,\\
+  I_2(\delta)&=&- \frac{\delta^{2}}{2520} \nu\left(\alpha_1\left(378   \delta  -
+                 315 h\right) + \Theta_{b}\left(-  840  \delta  + 630
+                 h\right) \right)\nonumber\\
+             &&-\frac{\delta^{2}}{2520}(1-\nu)  \left(\alpha_1^{2}\left(- 50   \delta  + 70
+                h\right)  +   \alpha_1\Theta_{b}\left(462      \delta  -  420 
+                h\right) -  \Theta_{b}^{2}\left(840   \delta  + 630  
+                h\right)\right),\nonumber
 \end{eqnarray}
 where $\alpha_1=\Theta_b-\Theta_s$ has been introduced for clarity.
 
@@ -358,17 +362,17 @@ where $\alpha_1=\Theta_b-\Theta_s$ has been introduced for clarity.
 For cases where $\nu<1$, we have
 \begin{eqnarray}
   I_0(\delta)&=&-\frac{\delta  \nu ^{1-\Theta_b} \left(\sqrt{\pi } \sqrt{\alpha_1} (2 \delta -h) \sqrt{-\alpha_2}
-                 \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right)+2 \delta  \left(\nu ^{\alpha_1}-1\right)\right)}{4 \alpha_1 \alpha_2}\nonumber\\
+                 \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right)+2 \delta  \left(\nu ^{\alpha_1}-1\right)\right)}{4 \alpha_1 \alpha_2}\nonumber,\\
   I_1(\delta)&=&\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\pi } \erf\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) (\alpha_1 (h-2
                  \delta ) \alpha_2+\delta )\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber\\
              &&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\alpha_1} \sqrt{-\alpha_2} \left(2 \delta  \left(\nu ^{\alpha_1}-2\right)-h \nu
-                ^{\alpha_1}+h\right)\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber\\
+                ^{\alpha_1}+h\right)\right)}{4           \alpha_1^{3/2}          (-\alpha_2)^{3/2}}\nonumber,\\
   I_1(h)&=&\frac{\nu ^{1-\Theta_b} \left(\sqrt{\alpha_1} \sqrt{-\alpha_2} \left(12 \delta ^2 \left(\delta  \left(\nu
             ^{\alpha_1}-2\right)-h \nu ^{\alpha_1}+h\right)+\alpha_1  (2 \delta -h)^3
             \log    (\nu    )\right)\rihgt)}{12   \alpha_1^{3/2}    (-\alpha_2)^{3/2}}\nonumber\\
              &&-\frac{\nu ^{1-\Theta_b} \left(3 \sqrt{\pi } \delta 
                 \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) \left(\alpha_1 (h-2 \delta )^2 \alpha_2-2 \delta
-                ^2\right)\right)}{12 \alpha_1^{3/2} (-\alpha_2)^{3/2}}\nonumber
+                ^2\right)\right)}{12 \alpha_1^{3/2} (-\alpha_2)^{3/2}},\nonumber
 \end{eqnarray}
 \begin{eqnarray}
   I_2(\delta)&=&\frac{\delta ^2 \nu ^{1-\Theta_b} \left(\sqrt{\pi } \text{erf}\left(\sqrt{\alpha_1} \sqrt{-\alpha_2}\right) \left(-2
@@ -381,149 +385,181 @@ For cases where $\nu<1$, we have
                 \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber\\
              &&+\frac{\delta ^2 \nu ^{1-\Theta_b} \left(2
                 \sqrt{\alpha_1} \nu ^{\alpha_1} \sqrt{-\alpha_2} \left(2 \delta  \alpha_1 \alpha_2-6 \delta  \Theta_b \alpha_2+\delta
-                -\alpha_1 h \alpha_2+3 h \Theta_b \alpha_2+h\right)\right)}{24 \alpha_1^{3/2} (-\alpha_2)^{5/2}}\nonumber
+                -\alpha_1 h \alpha_2+3 h \Theta_b \alpha_2+h\right)\right)}{24 \alpha_1^{3/2} (-\alpha_2)^{5/2}},\nonumber
 \end{eqnarray}
-where    in   addition    to    $\alpha_1$,    we   also    introduced
+where    in    addition    to   $\alpha_1$,    we    also    introduce
 $\alpha_2=\log(\nu)$  for clarity.   In  the case  where $\nu=1$,  the
 expression above simplify and read
 \begin{eqnarray}
-  I_0(\delta)&=&\frac{1}{2} \delta  (\delta -h)\nonumber\\
-  I_1(\delta)&=&\frac{1}{12} \delta ^2 (4 \delta -3 h)\nonumber\\
-  I_1(h)&=&\frac{h^3}{12}\nonumber\\
-  I_2(\delta)&=&-\frac{1}{120} \delta ^2 (18 \delta  \alpha_1-40 \delta  \Theta_b-15 \alpha_1 h+30 h \Theta_b)\nonumber
+  I_0(\delta)&=&\frac{1}{2} \delta (\delta -h),\nonumber\\
+  I_1(\delta)&=&\frac{1}{12} \delta ^2 (4 \delta -3 h),\nonumber\\
+  I_1(h)&=&\frac{h^3}{12},\nonumber\\
+  I_2(\delta)&=&-\frac{1}{120} \delta ^2 (18 \delta  \alpha_1-40 \delta  \Theta_b-15 \alpha_1 h+30 h \Theta_b)\nonumber.
 \end{eqnarray}
 
-\section{Numerical scheme for crater-centered intrusion}
-\label{sec:numer-scheme-crat}
-\section{Numerical scheme}
-\label{C5-AppendixA}
+\section{Numerical scheme for a crater-centered intrusion}
+\label{A1-sec:numer-scheme-crat}
 
-We use a fully implicit finite-volume method to solve (\ref{C5-eq21}). The discretization is obtained by integrating over a finite number of non overlapping control volumes, each control volume surrounding one grid point \citep{Patankar:1980vu}. The grid is defined by the relation $r_{i}=(i-0.5)\Delta r$ in order to avoid problems at the center. The point $b$ and $a$ define the face of the control volume surrounding $i$ such that $r_{a}=r_{i}+\Delta r/2$ and $r_{b}=r_{i}-\Delta r/2$. Because we are using an axisymmetric geometry, the control volume is an annulus of interior radius $r_b$ and exterior radius $r_a$ and its surface is $S=\pi(r_{a}^{2}-r_{b}^{2})$. Integration of (\ref{C5-eq21}) over the control volume surrounding $i$ during a time $\Delta t$ gives:
-	\begin{equation}
-	\int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{\partial h^{*}}{\partial t} 2\pi r dr dt=\int_{t}^{t+\Delta t} \int_{b}^{a} \Phi(r,t) 2\pi r dr dt
-	\label{C5-eq27}
-	 \end{equation}
- 
- where $\Phi(r,t)$ stands for the right hand side of (\ref{C5-eq21}). The classical second-order $\left (\propto \Delta r^2 \right)$ approximations is taken to derive the successive space derivatives (i.e. $\frac{\partial \Phi(r)}{\partial r}\mid_{r_a}=\frac{\Phi(i+1)-\Phi(i)}{\Delta r}$). In this way, we ensure that our final scheme is of second-order. Moreover, for more precision, the elastic pressure is calculated using a fourth-order scheme (see \ref{C5-Fourth}.3) . In the following, we derive each term of the right hand side of (\ref{C5-eq21}) separately, $h$ refers to the value of the thickness at  a time $t+\Delta t$ and $h^{n}$ to the value at a time $ t$.
- \subsection{Discretization}
- \label{C5-Fourth}
- \begin{enumerate}
- \item \textbf{Time derivative}
-To discretize the time derivative, we shall consider that the value of the grid point $h_{i}$ prevails throughout the control volume such that:
- \begin{equation}
- \label{C5-num1}
- \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{\partial h^{*}}{\partial t} 2\pi r dr dt=(h_{i}-h^{n}_{i})S
- \end{equation}
- \item \textbf{Gravitational term}
- \begin{eqnarray}
- \label{C5-num2}
- \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*} h^{3} \frac{\partial h}{\partial r^{*}} \right) 2\pi r dr dt\\
- =A^{g}_{i}h_{i+1}+B^{g}_{i}h_{i-1} -(A^{g}_{i}+B^{g}_{i})h_{i} \nonumber
- \end{eqnarray}
-with $A^{g}_{i}= A=(2\pi \Delta t r_{a}h_{a}^{3})/\Delta r$ and $B^{g}_{i}=B=(2\pi \Delta t r_{b}h_{b}^{3})/\Delta r$ where the value of $h_{a}^{3}$ (resp. $h_{b}^{3}$) is approximated by $(h_{i+1}^{3}+h_{i}^{3})/2$ (resp. $(h_{i}^{3}+h_{i-1}^{3})/2$). 
- \item \textbf{Elastic term}
- 	\begin{eqnarray} 
-	 \label{C5-num3}
-	 \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \Theta \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*} h^{3} \frac{\partial P_{e}}{\partial r^{*}} \right) 2\pi r dr dt \\
-	 =A^{e}_{i}P_{e,i+1} +B^{e}_{i}P_{e,i-1 } -(A^{e}_{i}+B^{e}_{i})P_{e,i} \nonumber
-	 \end{eqnarray}
-	where $A^{e}_{i}= \Theta A$, $B^{e}_{i}=\Theta B$ and $P_{e}=\nabla^{2}_{r}\left( \Pi(r)\nabla^{2}_{r}h(r) \right)$, with $\Pi(r)=(1+\Psi\xi(r))^3$, is the dimensionless elastic pressure which is discretized using a fourth order finite difference scheme:}
-
-	\begin{equation}
-	 \label{C5-num6}
-	 P_{e,i}= \alpha_{i}h_{i-3} + \beta_{i}h_{i-2}+\gamma_{i} h_{i-1} +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3}
-	\end{equation}
-	with
-\begin{eqnarray}
-	&\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4p_4+3p_3\Delta_r \right)\nonumber \\
-	&\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48p_4-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber\\
-	&\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156p_4+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber\\
-	&\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224p_4-60p_2\Delta r^{2}\right) \nonumber\\
-	&\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156p_4-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber\\
-	&\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48p_4+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber\\
-	&\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4p_4-3p_3\Delta_r \right)\nonumber
-\end{eqnarray}
-where
-	\begin{eqnarray}
-	p_1&=&\frac{ \Pi^{\prime\prime}_{i}}{r_i}-\frac{\Pi^{\prime}_{i}}{r_i^2} +\frac{\Pi}{r_i^3}\nonumber\\
-	p_2&=&\Pi^{\prime\prime}_{i}+\frac{3\Pi^{\prime}_{i}}{r_i} +\frac{\Pi}{r_i^2}\nonumber\\
-	p_3&=&2\Pi^{\prime}_{i}+\frac{2\Pi_i}{r_i}\nonumber\\
-	p_4&=&\Pi_i\nonumber
-	\end{eqnarray}
-and where $ \Pi_{i}=(1+\Psi\xi_i)^{3}$ and $\Pi^{\prime}_{i}$ and $ \Pi^{\prime\prime}_{i}$ are its first and second derivatives with respect to the radial coordinate.
-\item \textbf{Hydrostatic term}
- \begin{eqnarray}
- \label{C5-num4}
- S^{h}_{i}= \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \Xi \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*}h^{3}\frac{\partial \xi}{\partial r}\right )2\pi r dr\\
-=U^{h}\left ( r_{a}h_{a}^{3} \left. \frac{\partial \xi}{\partial r}\right|_{a}-r_{b}h_{b}^{3}\left. \frac{\partial \xi}{\partial r}\right|_{b} \right )\nonumber
- \end{eqnarray}
- where $U^{h}= 2 \pi \Xi \Delta t$.
-\item \textbf{Injection term}
- \begin{eqnarray}
-  \label{C5-num5}
- S^{i}_{i}&=&\int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{32}{\gamma^{2}} (\frac{1}{4}-\frac{r^{2}}{\gamma^{2}})  2 \pi r dr dt \\
- &=&U^{i}(\gamma^{2}-2(r_{a}^{2}+r_{b}^{2}))\nonumber
- \end{eqnarray}
- where $U^{i}=\frac{8 S \Delta t}{\gamma^{4}}$. 
- 
- 
- \item \textbf{Implicit scheme}
- 
-Substituting (\ref{C5-num1}), (\ref{C5-num2}), (\ref{C5-num3}), (\ref{C5-num4}) and (\ref{C5-num5}) in (\ref{C5-eq27}) and injecting (\ref{C5-num6}), we get the final scheme given by the following equation:
-
+We   use   a   fully    implicit   finite-volume   method   to   solve
+(\ref{C5-eq21}). The discretization is  obtained by integrating over a
+finite number of non overlapping  control volumes, each control volume
+surrounding  one  grid  point \citep{Patankar:1980vu}.   The  grid  is
+defined  by the  relation $r_{i}=(i-0.5)\Delta  r$ in  order to  avoid
+problems at the center.  The point $b$  and $a$ define the face of the
+control volume surrounding $i$  such that $r_{a}=r_{i}+\Delta r/2$ and
+$r_{b}=r_{i}-\Delta  r/2$.  Because  we  are  using an  axisymmetrical
+geometry, the  control volume is  an annulus of interior  radius $r_b$
+and     exterior    radius     $r_a$     and     its    surface     is
+$S=\pi(r_{a}^{2}-r_{b}^{2})$. Integration of  (\ref{C5-eq21}) over the
+control volume surrounding $i$ during a time $\Delta t$ gives
 \begin{equation}
-a_ih_{i-4}+b_ih_{i-3}+c_ih_{i-2}+d_ih_{i-1}+e_ih_i+f_ih_{i+1}+g_ih_{i+2}+k_ih_{i+3}+l_ih_{i+4}=J_i
-\label{C5-eqd3}
+  \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{\partial h^{*}}{\partial t} 2\pi r dr dt=\int_{t}^{t+\Delta t} \int_{b}^{a} \Phi(r,t) 2\pi r, dr dt
+  \label{C5-eq27}
 \end{equation}
-where the different coefficients are defined by:
-\begin{eqnarray}
-a_i&=&-B_i^{e}\alpha_{i-1} \\
-b_i&=&(B_i^{e}+A_i^{e})\alpha_{i}-B_i^{e}\beta_{i-1} \\
-c_i&=&(B_i^{e}+A_i^{e})\beta_{i}-B_i^{e}\gamma_{i-1}-A_i^{e}\alpha_{i+1} \\
-d_i&=&(B_i^{e}+A_i^{e})\gamma_{i}-B_i^{e}\lambda_{i-1}-A_i^{e}\beta_{i+1} -B^{g}\\
-e_i&=&S+(B_i^{e}+A_i^{e})\lambda_{i}-B_i^{e}\kappa_{i-1}-A_i^{e}\gamma_{i+1} +B^{g}+A^{g}\\
-f_i&=&(B_i^{e}+A_i^{e})\kappa_{i}-B_i^{e}\delta_{i-1}-A_i^{e}\lambda_{i+1} - A^{g}\\
-g_i&=&(B_i^{e}+A_i^{e})\delta_{i}-B_i^{e}\epsilon_{i-1}-A_i^{e}\kappa_{i+1} \\
-k_i&=&(B_i^{e}+A_i^{e})\epsilon_{i}-A_i^{e}\delta_{i+1} \\
-l_i&=&-A_i^{e}\epsilon_{i+1} \\
-J_i&=&(Sh_i^n+ S^{i}_{i}+S^{h}_{i})
-\end{eqnarray}	
-\subsection{Boundary conditions}
-	
-Since the flow is symmetric in $r=0$, we require that:
-\begin{eqnarray}
-  \left.\frac{\partial h}{\partial r}\right|_{r=0}=0\\
-  \left.\frac{\partial P_{e}}{\partial r}\right|_{r=0}=0
-\end{eqnarray}
-Boundary conditions at the front of the intrusion are accounted for by
-using a  grid much larger  than the  intrusion where $h=0$  beyond the
-flow.
+where $\Phi(r,t)$ stands for the right hand side of (\ref{C5-eq21}).
 
- \subsection{Algorithm}
- The fully implicit discretization (\ref{C5-eqd3}) can be rewritten as
- a linear  system $\Omega(h^{3})\bar{h}=\bar{J}$ where $\bar{h}$  is a
- vector  containing the  value of  $h$  a $t+\Delta  t$ and  $\bar{J}$
- containing  the  right  hand  side  of  (\ref{C5-eqd3}).  The  matrix
- $\Omega(h^{3})$ is  a septadiagonal matrix  and is solved by  using a
- septadiagonal  algorithm. However,  due to  the non-linearity  of the
- problem  (i.e. the  coefficients $A_{e},  B_{e}, A_{g}$,  $B_{g}$ and
- $S^{h}$ within the matrix $\Omega(h_{i}^{3})$ and $\bar{J}$ depend on
- $h_{i}^{3}$), we first have to assume values for $h_{i}$ at each grid
- point  to  inverse  for the  matrix  and  get  the  value of  $h$  at
- $t+\Delta t$. We use the following iterative scheme:
- \begin{enumerate}
- \item Start with a guess at all grid-point for $h_{i}=h_i^n$.
- \item Calculate  tentative values  for the different  coefficients of
-   the system (non linear terms).
- \item   Apply   the   septadiagonal   matrix   algorithm   to   solve
-   (\ref{C5-eqd3}) and get a new value of $h_{i}$.
- \item With  this new $h_{i}$, we  return to step $2$  and repeat step
-   $2$  to  $4$  until  further   repetitions  cease  to  produce  any
-   significant         change         in         $h_{i}$         (i.e.
-   $\mid h^{new}_{i}-h_{i}\mid < \epsilon$ where $\epsilon=10^{-4}$).
- \end{enumerate}
- The  final unchanging  state is  considered as  the solution  for the
- thickness of the flow at $t+\Delta t$.
+The  classical  second-order  $\left   (\propto  \Delta  r^2  \right)$
+approximations  is taken  to derive  the successive  space derivatives
+(i.e.
+$\frac{\partial                                      \Phi(r)}{\partial
+  r}\mid_{r_a}=\frac{\Phi(i+1)-\Phi(i)}{\Delta                   r}$).
+In   this   way,   we   ensure   that   our   final   scheme   is   of
+second-order. Moreover,  for more  precision, the elastic  pressure is
+calculated using  a fourth-order  scheme (see \ref{C5-Fourth}.3)  . In
+the  following,  we  derive  each  term of  the  right  hand  side  of
+(\ref{C5-eq21}) separately, $h$  refers to the value  of the thickness
+at a time $t+\Delta t$ and $h^{n}$ to the value at a time $ t$.
+\subsection{Discretization}
+\label{C5-Fourth}
+\begin{enumerate}
+\item \textbf{Time  derivative} To discretize the  time derivative, we
+  shall consider  that the  value of the  grid point  $h_{i}$ prevails
+  throughout the control volume such that
+  \begin{equation}
+    \label{C5-num1}
+    \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{\partial h^{*}}{\partial t} 2\pi r dr dt=(h_{i}-h^{n}_{i})S.
+  \end{equation}
+\item \textbf{Gravitational term}
+  \begin{eqnarray}
+    \label{C5-num2}
+    \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*} h^{3} \frac{\partial h}{\partial r^{*}} \right) 2\pi r dr dt\\
+    =A^{g}_{i}h_{i+1}+B^{g}_{i}h_{i-1} -(A^{g}_{i}+B^{g}_{i})h_{i} \nonumber,
+  \end{eqnarray}
+  with  $A^{g}_{i}= A=(2\pi  \Delta  t  r_{a}h_{a}^{3})/\Delta r$  and
+  $B^{g}_{i}=B=(2\pi  \Delta  t  r_{b}h_{b}^{3})/\Delta r$  where  the
+  value  of  $h_{a}^{3}$  (resp.    $h_{b}^{3}$)  is  approximated  by
+  $(h_{i+1}^{3}+h_{i}^{3})/2$ (resp. $(h_{i}^{3}+h_{i-1}^{3})/2$).
+\item \textbf{Elastic term}
+  \begin{eqnarray}
+    \label{C5-num3}
+    \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \Theta \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*} h^{3} \frac{\partial P_{e}}{\partial r^{*}} \right) 2\pi r dr dt \\
+    =A^{e}_{i}P_{e,i+1} +B^{e}_{i}P_{e,i-1 } -(A^{e}_{i}+B^{e}_{i})P_{e,i} \nonumber,
+  \end{eqnarray}
+  where    $A^{e}_{i}=   \Theta    A$,   $B^{e}_{i}=\Theta    B$   and
+  $P_{e}=\nabla^{2}_{r}\left( \Pi(r)\nabla^{2}_{r}h(r)  \right)$, with
+  $\Pi(r)=(1+\Psi\xi(r))^3$,  is  the dimensionless  elastic  pressure
+  which is discretized using a fourth order finite difference scheme
+  \begin{equation}
+    \label{C5-num6}
+    P_{e,i}= \alpha_{i}h_{i-3} + \beta_{i}h_{i-2}+\gamma_{i} h_{i-1} +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3},
+  \end{equation}
+  with
+  \begin{eqnarray}
+    &\alpha_{i}&=\frac{1}{24\Delta r^{4}}\left(-4p_4+3p_3\Delta_r \right)\nonumber ,\\
+    &\beta_{i}&=\frac{1}{24\Delta r^{4}}\left(48p_4-24p_3\Delta_r-2p_2\Delta_r^2+2p_1\Delta_r^3\right) \nonumber,\\
+    &\gamma_{i}&=\frac{1}{24\Delta r^{4}}\left(-156p_4+39p_3\Delta_r+32p_2\Delta_r^2-16p_1\Delta_r^3\right)\nonumber,\\
+    &\lambda_{i}&=\frac{1}{24\Delta r^{4}}\left(224p_4-60p_2\Delta r^{2}\right) \nonumber,\\
+    &\kappa_{i}&=\frac{1}{24\Delta r^{4}}\left( -156p_4-39p_3\Delta_r+32p_2\Delta_r^2+16p_1\Delta_r^3\right)\nonumber,\\
+    &\delta_{i}&=\frac{1}{24\Delta r^{4}}\left( 48p_4+24p_3\Delta_r-2p_2\Delta_r^2-2p_1\Delta_r^3\right) \nonumber,\\
+    &\epsilon_{i}&=\frac{1}{24\Delta r^{4}}\left(-4p_4-3p_3\Delta_r \right)\nonumber,
+  \end{eqnarray}
+  where
+  \begin{eqnarray}
+    p_1&=&\frac{ \Pi^{\prime\prime}_{i}}{r_i}-\frac{\Pi^{\prime}_{i}}{r_i^2} +\frac{\Pi}{r_i^3}\nonumber,\\
+    p_2&=&\Pi^{\prime\prime}_{i}+\frac{3\Pi^{\prime}_{i}}{r_i} +\frac{\Pi}{r_i^2}\nonumber,\\
+    p_3&=&2\Pi^{\prime}_{i}+\frac{2\Pi_i}{r_i}\nonumber,\\
+    p_4&=&\Pi_i\nonumber,
+  \end{eqnarray}
+  and  where $  \Pi_{i}=(1+\Psi\xi_i)^{3}$ and  $\Pi^{\prime}_{i}$ and
+  $ \Pi^{\prime\prime}_{i}$ are its  first and second derivatives with
+  respect to the radial coordinate.
+\item \textbf{Hydrostatic term}
+  \begin{eqnarray}
+    \label{C5-num4}
+    S^{h}_{i}= \int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \Xi \frac{1}{r^{*}} \frac{\partial}{\partial r^{*}}\left (r^{*}h^{3}\frac{\partial \xi}{\partial r}\right )2\pi r dr\\
+    =U^{h}\left ( r_{a}h_{a}^{3} \left. \frac{\partial \xi}{\partial r}\right|_{a}-r_{b}h_{b}^{3}\left. \frac{\partial \xi}{\partial r}\right|_{b} \right )\nonumber,
+  \end{eqnarray}
+  where $U^{h}= 2 \pi \Xi \Delta t$.
+\item \textbf{Injection term}
+  \begin{eqnarray}
+    \label{C5-num5}
+    S^{i}_{i}&=&\int_{t}^{t+\Delta t} \int_{r_b}^{r_a} \frac{32}{\gamma^{2}} (\frac{1}{4}-\frac{r^{2}}{\gamma^{2}})  2 \pi r dr dt \\
+             &=&U^{i}(\gamma^{2}-2(r_{a}^{2}+r_{b}^{2}))\nonumber,
+  \end{eqnarray}
+  where $U^{i}=\frac{8 S \Delta t}{\gamma^{4}}$.
+ 
+ 
+\item \textbf{Implicit scheme}
+ 
+  Substituting   (\ref{C5-num1}),  (\ref{C5-num2}),   (\ref{C5-num3}),
+  (\ref{C5-num4}) and (\ref{C5-num5}) in (\ref{C5-eq27}) and injecting
+  (\ref{C5-num6}),  we get  the final  scheme given  by the  following
+  equation
+  \begin{equation}
+    a_ih_{i-4}+b_ih_{i-3}+c_ih_{i-2}+d_ih_{i-1}+e_ih_i+f_ih_{i+1}+g_ih_{i+2}+k_ih_{i+3}+l_ih_{i+4}=J_i,
+    \label{C5-eqd3}
+  \end{equation}
+  where the different coefficients are defined by
+  \begin{eqnarray}
+    a_i&=&-B_i^{e}\alpha_{i-1} ,\\
+    b_i&=&(B_i^{e}+A_i^{e})\alpha_{i}-B_i^{e}\beta_{i-1} ,\\
+    c_i&=&(B_i^{e}+A_i^{e})\beta_{i}-B_i^{e}\gamma_{i-1}-A_i^{e}\alpha_{i+1} ,\\
+    d_i&=&(B_i^{e}+A_i^{e})\gamma_{i}-B_i^{e}\lambda_{i-1}-A_i^{e}\beta_{i+1} -B^{g},\\
+    e_i&=&S+(B_i^{e}+A_i^{e})\lambda_{i}-B_i^{e}\kappa_{i-1}-A_i^{e}\gamma_{i+1} +B^{g}+A^{g},\\
+    f_i&=&(B_i^{e}+A_i^{e})\kappa_{i}-B_i^{e}\delta_{i-1}-A_i^{e}\lambda_{i+1} - A^{g},\\
+    g_i&=&(B_i^{e}+A_i^{e})\delta_{i}-B_i^{e}\epsilon_{i-1}-A_i^{e}\kappa_{i+1} ,\\
+    k_i&=&(B_i^{e}+A_i^{e})\epsilon_{i}-A_i^{e}\delta_{i+1} ,\\
+    l_i&=&-A_i^{e}\epsilon_{i+1} ,\\
+    J_i&=&(Sh_i^n+ S^{i}_{i}+S^{h}_{i}).
+  \end{eqnarray}	
+  \subsection{Boundary conditions}
+	
+  Since the flow is symmetric in $r=0$, we require that
+  \begin{eqnarray}
+    \left.\frac{\partial h}{\partial r}\right|_{r=0}=0,
+    \left.\frac{\partial P_{e}}{\partial r}\right|_{r=0}=0.
+  \end{eqnarray}
+  Boundary conditions at the front  of the intrusion are accounted for
+  by using  a grid much larger  than the intrusion where  $h=0$ beyond
+  the flow.
+
+  \subsection{Algorithm}
+  The fully  implicit discretization (\ref{C5-eqd3}) can  be rewritten
+  as a linear system $\Omega(h^{3})\bar{h}=\bar{J}$ where $\bar{h}$ is
+  a vector  containing the value of  $h$ a $t+\Delta t$  and $\bar{J}$
+  containing  the  right hand  side  of  (\ref{C5-eqd3}).  The  matrix
+  $\Omega(h^{3})$ is a  septadiagonal matrix and is solved  by using a
+  septadiagonal algorithm.   However, due to the  non-linearity of the
+  problem (i.e.   the coefficients $A_{e}, B_{e},  A_{g}$, $B_{g}$ and
+  $S^{h}$ within  the matrix $\Omega(h_{i}^{3})$ and  $\bar{J}$ depend
+  on $h_{i}^{3}$), we first have to  assume values for $h_{i}$ at each
+  grid point  to inverse for  the matrix and get  the value of  $h$ at
+  $t+\Delta t$.
+
+  We use the following iterative scheme
+  \begin{enumerate}
+  \item Start with a guess at all grid-point for $h_{i}=h_i^n$.
+  \item Calculate  tentative values for the  different coefficients of
+    the system (non linear terms).
+  \item   Apply   the   septadiagonal  matrix   algorithm   to   solve
+    (\ref{C5-eqd3}) and get a new value of $h_{i}$.
+  \item With this  new $h_{i}$, we return to step  $2$ and repeat step
+    $2$  to  $4$  until  further  repetitions  cease  to  produce  any
+    significant         change         in        $h_{i}$         (i.e.
+    $\mid h^{new}_{i}-h_{i}\mid < \epsilon$ where $\epsilon=10^{-4}$).
+  \end{enumerate}
+  The final  unchanging state  is considered as  the solution  for the
+  thickness of the flow at $t+\Delta t$.
 
 
 %%% Local Variables:

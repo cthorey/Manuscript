@@ -4,9 +4,18 @@
 To  mitigate the  problem at  the contact  line, we  introduce a  thin
 prewetting     film,     with     thickness    $h_f$     such     that
 $h(r,t)\rightarrow    h_f$   as    $r\rightarrow   \infty$    (Section
-\ref{C2-sec:need-regularization}).  In  this appendix, we  discuss the
-effect  of changing  the prewetting  thickness $h_f$  on some  results
-presented in Chapter \ref{C3-JFM} and \ref{Heating}.
+\ref{C2-sec:need-regularization}).  The  meaning of a  thin prewetting
+film in  the application  to the spreading  of magmatic  intrusions is
+unclear.  In  particular, the  model shows  no convergence  when $h_f$
+tends to zero \citep{Lister:2013ia} and therefore, the thickness $h_f$
+might be  linked to some structural  length scale at the  front of the
+laccolith  or  to  the  natural imperfection  of  the  flow  geometry.
+Reasonable values for $h_f$ are  values with physical significance for
+this structural  length scale at the  tip and should range  from a few
+centimeters    to    no    less   than    $0.1$    millimeter,    i.e.
+$10^{-4}\le h_f \le 10^{-2}$ . In this appendix, we discuss the effect
+of changing the prewetting film  thickness $h_f$ over this interval on
+some results presented in Chapter \ref{C3-JFM} and \ref{Heating}.
 
 \section{Scaling laws for the thickness and the radius}
 
@@ -56,6 +65,37 @@ thickness $h_f$ which is, in general, rather weak.
     \label{R_Rc_ELAS_APPENDIX}
   \end{center}
 \end{figure}
+
+\section{Phase diagram}
+
+The phase diagram presented in section \ref{C4-sec:evol-with-bend} and
+its application  to the  spreading of laccoliths  also depends  on the
+chosen value for $h_f$. However, as the dependence with $h_f$ is weak,
+a variation of  $2$ orders of magnitude does  not change significantly
+the results (Figure \ref{C3-PhaseDiagramJFM_Appendix}).
+
+\begin{figure}[h!]
+  \begin{center}
+    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
+    \includegraphics[scale=0.36]{PhaseDiagreRocchie_APPENDIX.eps}
+    \caption{Phase diagram for the  evolution with bending and gravity
+      for different  combinations ($\nu$,$Pe_m$) and  different values
+      for the film thickness $h_f = 10^{-2}$ and $10^{-4}$.}
+    \label{C3-PhaseDiagramJFM_Appendix}
+  \end{center}
+\end{figure}
+
+The  same  result hold  when  we  look  at  the relation  between  the
+thickness and the  radius of the laccolith  (\ref{C4-Hr}). Indeed, the
+best fit value  for the viscosity contrast scales  as $h_f^{-1/2}$ and
+therefore,  varying  $h_f$ by  two  orders  of magnitudes  change  the
+viscosity contrast by  one order of magnitude which  is acceptable for
+our application.   For instance, for  the parameters listed  in Figure
+\ref{C4-Data}, the best fit value for the viscosity contrast scales is
+$\nu_{\text{best}}\approx        h_f^{-1/2}2.59~10^{-10}$,        i.e.
+$\nu_{\text{best}}\approx  2.6\times   10^{-9}$  for   $h_f=0.01$  and
+$\nu_{\text{best}}\approx 2.6\times 10^{-8}$ for $h_f=10^{-4}$.
+
 
 \section{Two stage growth in the second bending phase}
 \label{C4-Heat:AppendixC}
@@ -116,38 +156,6 @@ transition  should be  present for  all the  simulations, the  smaller
 spatial resolution used in this Chapter \ref{C3-JFM} and \ref{Heating}
 does not allow to resolve this  transition for all the combinations of
 the dimensionless numbers.
-
-\section{Phase diagram}
-
-The phase diagram presented in section \ref{C4-sec:evol-with-bend} and
-its application to  the spreading of laccoliths depends  on the chosen
-value for $h_f$.  The meaning of  the prewetting film thickness in the
-application  to  the  spreading  of laccolith  is  unclear.   However,
-reasonable values for $h_f$ are  values with physical significance for
-this structural  length scale  at the  tip of  a laccolith  and should
-range  from  a few  centimeters  to  no  less than  $0.1$  millimeter.
-Therefore, as  the dependence with $h_f$  is weak, a variation  of $2$
-orders of magnitude does not  change significantly the results (Figure
-\ref{C3-PhaseDiagramJFM_Appendix}).
-
-\begin{figure}[h!]
-  \begin{center}
-    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
-    \includegraphics[scale=0.36]{PhaseDiagreRocchie_APPENDIX.eps}
-    \caption{Phase diagram for the  evolution with bending and gravity
-      for different  combinations ($\nu$,$Pe_m$) and  different values
-      for the film thickness $h_f = 10^{-2}$ and $10^{-4}$.}
-    \label{C3-PhaseDiagramJFM_Appendix}
-  \end{center}
-\end{figure}
-
-The  same  result hold  when  we  look  at  the relation  between  the
-thickness and the  radius of the laccolith  (\ref{C4-Hr}). Indeed, the
-best  fit  for   the  value  of  the  viscosity   contrast  scales  as
-$h_f^{-1/2}$,  i.e.   $\nu_{\text{best}}=h_f^{-1/2}2.59~10^{-10}$  and
-therefore,  varying  $h_f$ by  two  orders  of magnitudes  change  the
-viscosity contrast by  one order of magnitude which  is acceptable for
-our application.
 
 
 

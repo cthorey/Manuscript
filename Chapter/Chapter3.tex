@@ -1,8 +1,8 @@
-\chapter{Elastic-plated  gravity  current  with  temperature-dependent
+\chapter[Cooling elastic-plated gravity current]{Elastic-plated gravity current with temperature-dependent
   viscosity}
 \label{C3-JFM}
 
-\textit{This chapter is part of a paper submitted for publication to Journal of Fluid
+\textit{This Chapter is part of a paper submitted for publication to Journal of Fluid
   Mechanics  (JFM)  untitled: \textbf{Elastic-plated  gravity  current
     with temperature-dependent viscosity}.}
 
@@ -93,7 +93,7 @@ $\eta(T)$.   This  gives rise  to  a  set  of two  coupled  non-linear
 equations  that  we solve  numerically.   We  study the  flow  thermal
 structure and its effect on the  dynamics through the rheology in each
 regime separately.  In both regimes, we identify different ``thermal''
-phases of propagation that we characterize by different scaling laws.x
+phases of propagation that we characterize by different scaling laws.
 
 \section{Theory}
 \label{C3-sec:theory}
@@ -107,7 +107,7 @@ constant thickness $d_c$ and above a semi infinite rigid layer (Figure
 $h(r,t)$ tends to zero at the  contact line leads to divergent viscous
 stresses   and  to   the   theoretical  immobility   of  the   current
 \citep{Flitton:1999iv}.   To avoid  problem  at the  contact line,  we
-consider    a   thin    pre-wetting    film    of   thickness    $h_f$
+consider    a    thin    prewetting   film    of    thickness    $h_f$
 \citep{Lister:2013ia} (Figure \ref{C3-Figure2-1}).
 
 The  fluid is  injected continuously  at the  base and  center of  the
@@ -119,7 +119,7 @@ fixed temperature at the flow boundary, we essentially assume that the
 fluid is bounded by a medium with infinite thermal conductivity.
 
 %% FIGURE 2-1
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.28]{ModelGeometry.eps}
@@ -133,7 +133,7 @@ As  it  cools,  the  viscosity  of the  fluid  increases  following  a
 prescribed temperature-dependent rheology $\eta(T)$ given by
 \begin{equation}
   \eta(T)=\frac{\eta_h
-    \eta_c(T_i-T_0)}{\eta_h(T_i-T_0)+(\eta_c-\eta_h)(T-T_0)}
+    \eta_c(T_i-T_0)}{\eta_h(T_i-T_0)+(\eta_c-\eta_h)(T-T_0)},
   \label{C3-rheology}
 \end{equation}
 where $\eta_h$  and $\eta_c$  are the viscosities  of the  hottest and
@@ -149,25 +149,25 @@ coldest
 \label{C3-sec:Pressure}
 
 The  intrusion develops  over a  length scale  $\Lambda$ that  is much
-larger than its thickness $H$ ($\Lambda >> H$).  In the laminar regime
+larger than its thickness $H$ ($H \ll \Lambda$).  In the laminar regime
 and  in   axisymmetrical  coordinates  ($r$,$z$),   the  Navier-Stokes
 equations within the lubrication approximaton are
 \begin{eqnarray}
-  -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta(T) \frac{\partial u}{\partial z}\right) &=&0\label{C3-V1} \\
-  -\frac{\partial P}{\partial z}  - \rho_{m}g&  =&0\label{C3-Npressure}
+  -\frac{\partial P}{\partial r}  +  \frac{\partial}{\partial z}\left(\eta(T) \frac{\partial u}{\partial z}\right) &=&0,\label{C3-V1} \\
+  -\frac{\partial P}{\partial z}  - \rho_{m}g&  =&0,\label{C3-Npressure}
 \end{eqnarray}
 where $u(r,z,t)$ is  the radial velocity, $\rho_m$  the fluid density,
 $g$  the  standard acceleration  due  to  gravity and  $P(r,z,t)$  the
 pressure within the fluid.   Integration of (\ref{C3-Npressure}) gives
 the  total pressure  $P(r,z,t)$ within  the flow.   When the  vertical
 deflection $h(r,t)$  of the upper  elastic layer is small  compared to
-its thickness  $d_c$, i.e $h<<d_c$,  we can neglect stretching  of the
+its thickness  $d_c$, i.e $h\lld_c$,  we can neglect stretching  of the
 upper layer and only consider  bending stresses.  Therefore, the total
 pressure $P(r,z,t)$ at a level $z$ in  the current is the sum of three
 contributions: the weight of the magma  and of the upper layer and the
 bending pressure
 \begin{equation}
-  P = \rho_m g (h-z)+\rho_rgd_c+D\nabla_r^4h
+  P = \rho_m g (h-z)+\rho_rgd_c+D\nabla_r^4h,
 \end{equation}
 where  $h(r,t)$ is  the flow  thickness, $\rho_r$  the density  of the
 surrounding rocks and $D$ is the flexural rigidity of the thin elastic
@@ -185,25 +185,25 @@ given by
   \begin{cases}
     \frac{ \Delta P}{4 \eta_h Z_{c}} (\frac{a^{2}}{4}-r^{2})& r \le \frac{a}{2}\\
     0 & r > \frac{a}{2}
-  \end{cases}
+  \end{cases},
   \label{C3-eq12}
 \end{equation}
 \begin{equation}
-  Q_{0}=\frac{\pi \Delta P a^{4}}{128 \eta_h Z_c}
+  Q_{0}=\frac{\pi \Delta P a^{4}}{128 \eta_h Z_c},
   \label{C3-eq11}
 \end{equation}
 where  $\Delta P$  is  the  initial overpressure  within  the melt  at
 $z=Z_{c}$.
 
 \subsection{Heat transport equation}
-\subsubsection{Local energy conservation}
+\subsubsection*{Local energy conservation}
 
 In the laminar regime and in axisymmetrical coordinates ($r$,$z$), the
 local energy  conservation equation within the  lubrication assumption
 is
 \begin{eqnarray}
   \frac{D}{D t}\left(\rho_m C_{p,m} T+\rho_mL(1-\phi)\right)&=& k_m  \frac{\partial^2
-                                                                T}{\partial               z^2}\label{C3-EnergyCons}
+                                                                T}{\partial               z^2},\label{C3-EnergyCons}
 \end{eqnarray}
 where  $T(r,z,t)$ is  the fluid  temperature and  $\rho_m$, $k_m$  and
 $C_{p,m}$ are the  density, thermal conductivity and  specific heat of
@@ -219,7 +219,7 @@ are not modified by the presence of crystals.
 Following a common approximation, we  assume that the crystal fraction
 is a linear function of temperature over the melting interval
 \begin{equation}
-  \phi = \frac{T_L-T}{T_L-T_s}
+  \phi = \frac{T_L-T}{T_L-T_s},
   \label{C3-meltfraction}
 \end{equation}
 where $T_S$ and $T_L$ are the solidus and liquidus temperatures of the
@@ -231,7 +231,7 @@ the local energy equation (\ref{C3-EnergyCons}) resumes to
 \begin{eqnarray}
   \frac{\partial T}{\partial t}+ u\frac{\partial T}{\partial r}
   + w\frac{\partial T}{\partial z}  &=& \frac{ St}{St+1}\kappa_m  \frac{\partial^2
-                                        T}{\partial               z^2}
+                                        T}{\partial               z^2},
                                         \label{C3-EnergyCons2}
 \end{eqnarray}
 where  $u(r,z,t)$ and  $w(r,z,t)$ are  the radial  and vertical  fluid
@@ -244,7 +244,7 @@ of  \citet{Goodman:1958ue}, in  which  the vertical  structure of  the
 temperature field  is represented  by a known  function of  depth that
 approximates the expected solution.
 
-\subsubsection{Integral   balance   solution   for   the   temperature
+\subsubsection*{Integral   balance   solution   for   the   temperature
   $T(r,z,t)$}
 
 Following \citet{BALMFORTH:1999ey},  we model the cooling  of the flow
@@ -261,7 +261,7 @@ $T(r,z,t)$
     T_b - (T_b-T_0)(1-\frac{z}{\delta})^2 & 0 \le z\le \delta \\
     T_b & \delta \le z\le h-\delta \\
     T_b - (T_b-T_0)(1-\frac{h-z}{\delta})^2 & h-\delta \le z\le h\\
-  \end{cases}
+  \end{cases},
   \label{C3-Temperature}
 \end{equation}
 where $T_b(r,t)$  is the temperature at  the center of the  flow.  The
@@ -277,7 +277,7 @@ This profile assures  the continuity of the temperature  and heat flux
 within the flow.
 
 
-\subsubsection{Integral balance equation}
+\subsubsection*{Integral balance equation}
 \label{C3-sec:integr-balance-equat}
 
 We  begin  by  integrating  the  local  energy  conservation  equation
@@ -286,7 +286,7 @@ layers.  The integration over the  bottom thermal layer, i.e. from the
 base, $z=0$ to a level $z = \delta$ gives
 \begin{eqnarray}
   &&\frac{\partial}{\partial t}\left( \delta( \bar{T}-T_b)\right)+\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{uT}-\bar{u}T_b)\right) + \delta\left( \frac{\partial T_b}{\partial t}+ \overline{u}\frac{\partial T_b}{\partial r}\right)\nonumber\\
-  &=&-\frac{\kappa_m}{1+St}\left. \frac{\partial T}{\partial z}\right|_{z=0}+w_{i}(T_{i}-T_b)
+  &=&-\frac{\kappa_m}{1+St}\left. \frac{\partial T}{\partial z}\right|_{z=0}+w_{i}(T_{i}-T_b),
       \label{C3-Local1}
 \end{eqnarray}
 where the bars  indicate the vertical average over  the bottom thermal
@@ -306,7 +306,7 @@ The  integration over  the top  thermal layer,  i.e., from  the level,
 $z=h-\delta$ to the top $z=h$ gives
 \begin{eqnarray}
   &&\frac{\partial}{\partial t}\left( \delta( \bar{T}-T_b)\right)+\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{uT}-\bar{u}T_b)\right) + \delta\left(\frac{\partial T_b}{\partial t}+ \overline{u}\frac{\partial T_b}{\partial r}\right)\nonumber\\
-  &=&\frac{\kappa_m}{1+St^{-1}}\left. \frac{\partial T}{\partial z}\right|_{z=h}
+  &=&\frac{\kappa_m}{1+St^{-1}}\left. \frac{\partial T}{\partial z}\right|_{z=h},
       \label{C3-Local2}
 \end{eqnarray}
 where,    in    addition    to    the    local    mass    conservation
@@ -363,9 +363,9 @@ as
 Finally,  injecting (\ref{C3-deriv})  into  (\ref{C3-Mass}) gives  the
 equation for the flow thickness evolution in axisymmetric coordinates
 \begin{eqnarray}
-  \frac{\partial h}{\partial t} = \frac{1}{r}
-  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla_r^4h\right)\right)\left(\int_0^h\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)ydy\right)\right)
-  + w_i.
+  \frac{\partial h}{\partial t} &=& \frac{1}{r}
+  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla_r^4h\right)\right)\left(\int_0^h\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)ydy\right)\right)\nonumber\\
+  &&+ w_i.
   \label{C3-Mass-2}
 \end{eqnarray}
 In  addition,  integration  of   (\ref{C3-deriv})  using  the  no-slip
@@ -379,7 +379,7 @@ where
 \begin{equation}
   \frac{1}{\eta(y)} = \frac{1}{\eta_c}+\frac{\eta_c-\eta_h}{\eta_h\eta_c}\frac{T(y)-T_0}{T_i-T_0}.
 \end{equation}
-$T(y)$    being   a    polynom,   integrals    in   (\ref{C3-Mass-2}),
+$T(y)$    being   a    polynomial,   integrals    in   (\ref{C3-Mass-2}),
 (\ref{C3-udimensione})   as   well    as   the   averaged   quantities
 $\overline{u}$ and $\overline{uT}$ over  the thermal boundary layer in
 (\ref{C3-LocalHeat3}) can easily be calculated.
@@ -397,7 +397,7 @@ approximation (\ref{C3-Temperature}) becomes
     \Theta_b & \delta \le z\le h-\delta \\
     \Theta_b\left(1-(1-\frac{h-z}{\delta})^2\right)  &   h-\delta  \le
     z\le h
-  \end{cases}
+  \end{cases},
   \label{C3-Temperature2}
 \end{equation}
 where   $\theta(r,z,t)$   is   the   dimensionless   temperature   and
@@ -406,10 +406,10 @@ $\Theta_b=\frac{T_b-T_0}{T_{i}-T_0}$.         Finally,       equations
 using a  horizontal scale $\Lambda$, a  vertical scale $H$ and  a time
 scale $\tau$ given by
 \begin{eqnarray}
-  \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{C3-L1}\\
+  \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{C3-L1},\\
   H&=&\left       (\frac{12\eta_h      Q_{0}}{\rho_{m}g       \pi}\right      )
-       ^{1/4} \label{C3-H1}\\
-  \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{C3-T1}
+       ^{1/4} \label{C3-H1},\\
+  \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{C3-T1},
 \end{eqnarray}
 where  $\Lambda$  represents  the  flexural wavelength  of  the  upper
 elastic layer \citep{Michaut:2011kg}, $H$ the characteristic thickness
@@ -424,35 +424,34 @@ The dimensionless equations are
 \begin{eqnarray}
   \frac{\partial h}{\partial t}& =& \frac{12}{r}
                                     \frac{\partial}{\partial r} \left( r\left( \frac{\partial h}{\partial      r}+\frac{\partial}{\partial      r}\left(\nabla_r^4h\right)\right)I_1(h)\right)
-                                    + w_i\label{C3-EqFinal1}\\
+                                    + w_i\label{C3-EqFinal1},\\
   \frac{\partial}{\partial
   t}\left( \delta( \bar{\theta}-\Theta_b)\right)&=&-\frac{1}{r}\frac{\partial}{\partial
                                                     r}  \left(   r\delta(\overline{u\theta}-\bar{u}\Theta_b)\right)  -
                                                     \delta\left(      \frac{\partial       \Theta_b}{\partial      t}+
                                                     \overline{u}\frac{\partial     \Theta_b}{\partial    r}\right)\nonumber\\
                                &-&
-                                   2Pe^{-1}St_m\frac{\Theta_b}{\delta}+\frac{w_{i}}{2}(1-\Theta_b)\label{C3-HeatDimensionLess}\\
-  w_{i}&=&
-           \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\hspace{.2cm}
-           \text{if} \hspace{.2cm} r < \gamma/2,\hspace{.2cm} w_i=0 \hspace{.2cm}
-           \text{if} \hspace{.2cm} r \ge \gamma/2\\
+                                   2Pe^{-1}St_m\frac{\Theta_b}{\delta}+\frac{w_{i}}{2}(1-\Theta_b)\label{C3-HeatDimensionLess},\\
+  w_{i}&=&\mathcal{H}(\frac{\gamma}{2}-r)
+           \frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right),\\
   u(r,z,t)&   =&   12\left(   \frac{\partial   h}{\partial
                  r}+\frac{\partial}{\partial
-                 r}\left(\nabla_r^4h\right)\right)I_0(z)\label{C3-Veloc}
+                 r}\left(\nabla_r^4h\right)\right)I_0(z)\label{C3-Veloc},
 \end{eqnarray}
 with
 \begin{eqnarray}
   I_0(z)&=&\int_0^z \left(\nu+(1-\nu)\theta(y)\right)\left(y-\frac{h}{2}\right)
-            dy \label{C3-I_1}\\
-  I_1(z) &=& \int_0^z \left(\nu+(1-\nu)\theta(y)\right)\left(y-\frac{h}{2}\right)y dy\label{C3-I_2}
+            dy \label{C3-I_1},\\
+  I_1(z) &=& \int_0^z \left(\nu+(1-\nu)\theta(y)\right)\left(y-\frac{h}{2}\right)y dy\label{C3-I_2}.
 \end{eqnarray}
-and where $\gamma$, $Pe$, $St_m$  and $\nu$ are the four dimensionless
-numbers that control the dynamics of the flow
+$\mathcal{H}$ is the Heaviside function and $\gamma$, $Pe$, $St_m$ and
+$\nu$ are the four dimensionless  numbers that control the dynamics of
+the flow
 \begin{eqnarray}
-  \gamma&=&\frac{a}{\Lambda} \label{C3-gamma}\\
-  Pe&=&            \frac{H^2}{\kappa_m            \tau}\label{C3-Pe}\\
-  St_m &=& \frac{C_{p,m}\left(T_i-T_0\right)}{C_{p,m}\left(T_i-T_0\right)+L} \label{C3-St}\\
-  \nu&=& \frac{\eta_h}{\eta_c}\label{C3-nu}
+  \gamma&=&\frac{a}{\Lambda} \label{C3-gamma},\\
+  Pe&=&            \frac{H^2}{\kappa_m            \tau}\label{C3-Pe},\\
+  St_m &=& \frac{C_{p,m}\left(T_i-T_0\right)}{C_{p,m}\left(T_i-T_0\right)+L} \label{C3-St},\\
+  \nu&=& \frac{\eta_h}{\eta_c}\label{C3-nu}.
 \end{eqnarray}
 $\gamma$  is the  dimensionless radius  of  the conduit,  it does  not
 significantly influence  the flow and is  set to $0.02$ in  this study
@@ -476,7 +475,7 @@ reduce to
   \frac{\partial}{\partial
   t}\left( \delta( \bar{\theta}-1)\right)+\frac{1}{r}\frac{\partial}{\partial
   r}
-  \left( r\delta(\overline{u\theta}-\bar{u})\right)&=&- 2Pe^{-1}St_m\frac{\Theta_b}{\delta} 
+  \left( r\delta(\overline{u\theta}-\bar{u})\right)&=&- 2Pe^{-1}St_m\frac{\Theta_b}{\delta}.
                                                        \label{C3-HeatD_a}
 \end{eqnarray}
 Indeed, if  the thermal boundary layers  exist, $\Theta_b=1$, $\delta$
@@ -488,7 +487,9 @@ reduces to
 \begin{eqnarray}
   \frac{\partial h\bar{\theta}}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
   r} \left( rh\overline{u\theta}\right)-\Theta_b\left(\frac{\partial h}{\partial t}+\frac{1}{r}\frac{\partial}{\partial
-  r} \left( rh\bar{u}\right)\right)&=& - 8St_mPe^{-1}\frac{\Theta_b}{h}+w_{i}(1-\Theta_b)
+  r}           \left(           rh\bar{u}\right)\right)&=&           -
+                                       8St_mPe^{-1}\frac{\Theta_b}{h}\nonumber\\
+&&+w_{i}(1-\Theta_b),
 \end{eqnarray}
 which, by using (\ref{C3-C3}), rewrites
 \begin{equation}
@@ -503,7 +504,7 @@ $\delta=h/2$.
 Following  \citet{BALMFORTH:1999ey},   we  rewrite  (\ref{C3-HeatD_a})
 using a new variable $\xi = \delta(1-\overline{\theta})$
 \begin{equation}
-  \frac{\partial \xi}{\partial t}+\frac{1}{r}\frac{\partial}{\partial r} \left( r\bar{u}\xi\right)-\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{u\theta}-\bar{u}\bar{\theta})\right)&=&2Pe^{-1}St_m\frac{\Theta_b}{\delta}.
+  \frac{\partial \xi}{\partial t}+\frac{1}{r}\frac{\partial}{\partial r} \left( r\bar{u}\xi\right)-\frac{1}{r}\frac{\partial}{\partial r} \left( r\delta(\overline{u\theta}-\bar{u}\bar{\theta})\right)&=&2Pe^{-1}St_m\frac{\Theta_b}{\delta},
   \label{C3-EqFinal2}
 \end{equation}
 where our  unknown $\Theta_b$ or  $\delta$ can be  calculated directly
@@ -517,7 +518,7 @@ respectively
     \begin{cases}
       1 &\text{if } \hspace{.5cm} \xi\leq \xi_t \nonumber\\
       \frac{3}{2}-\frac{3\xi}{h} & \text{if} \hspace{.5cm} \xi > \xi_t\nonumber
-    \end{cases}
+    \end{cases},
   \end{equation}
                                    }
 &
@@ -527,11 +528,10 @@ respectively
     \begin{cases}
       3\xi &\text{if } \hspace{.5cm} \xi\leq \xi_t \nonumber\\
       h(r,t)/2 & \text{if} \hspace{.5cm} \xi > \xi_t\nonumber\\
-    \end{cases}
+    \end{cases},
   \end{equation}
   }
 \end{tabular}
-
 with $\xi_t = h/6$.
 
 The second term on the  left hand side of (\ref{C3-EqFinal2}) contains
@@ -544,7 +544,7 @@ conduction in the surrounding medium.
 The  average velocity  over  a thermal  boundary layer  $\overline{u}$
 reads
 \begin{eqnarray}
-  \overline{u}        =\frac{1}{\delta}\int_0^{\delta}udz        &=&
+  \overline{u}        =\frac{1}{\delta}\int_0^{\delta}AD's        &=&
                                                                      u(r,\delta,t) - \frac{1}{\delta}\int_0^{\delta}\frac{\partial
                                                                      u}{\partial
                                                                      z}
@@ -553,7 +553,7 @@ reads
                                                                      \frac{\partial
                                                                      P}{\partial
                                                                      r}\left(\delta
-                                                                     I_0(\delta)-I_1(\delta)\right)
+                                                                     I_0(\delta)-I_1(\delta)\right),
 \end{eqnarray}
 where $P(r,z,t) = h+\nabla_r^4h$ is the dimensionless dynamic pressure
 and we have used  (\ref{C3-deriv}) in (\ref{C3-eqHello}).  The average
@@ -565,7 +565,7 @@ layer reads
                                                                    u}{\partial
                                                                    z}
                                                                    dz\right)\nonumber\\
-                                                               &=&\frac{12}{\delta} \frac{\partial P}{\partial r}\left(G(\delta)I_0(\delta)-I_2(\delta)\right)
+                                                               &=&\frac{12}{\delta} \frac{\partial P}{\partial r}\left(G(\delta)I_0(\delta)-I_2(\delta)\right),
 \end{eqnarray}
 where
 \begin{equation}
@@ -579,10 +579,10 @@ is a primitive of $\theta$ when $z<\delta$ and
 \end{equation}
 Therefore, we have
 \begin{equation}
-  \overline{u\theta}-\overline{u}\overline{\theta}= \frac{12}{\delta} \frac{\partial P}{\partial r}\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right)
+  \overline{u\theta}-\overline{u}\overline{\theta}= \frac{12}{\delta} \frac{\partial P}{\partial r}\left(I_0(\delta)\left(G(\delta)-\delta\overline{\theta}\right)+\overline{\theta}I_1(\delta)-I_2(\delta)\right),
 \end{equation} 
 where  the  average  temperature  over a  thermal  boundary  layer  is
-$ \overline{\theta} = 2\Theta_{b}/3$
+$ \overline{\theta} = 2\Theta_{b}/3$.
 
 \subsection{Summary of the equations}
 \label{C3-sec:summary-equations}
@@ -593,12 +593,12 @@ elastic-plated gravity current are
   \frac{\partial h}{\partial t}-\frac{12}{r}
   \frac{\partial}{\partial      r}
   \left( r I_1(h) \frac{\partial P}{\partial
-  r}\right)
+  r}\right),
   \label{C3-HF}
   & =& \mathcal{H}(\frac{\gamma}{2}-r)\frac{32}{\gamma^{2}}\left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)\\
   \frac{\partial                                       \xi}{\partial
-  t}+\frac{1}{r}\frac{\partial}{\partial                          r}
-  \left( r\left(\bar{u}\xi-\Sigma\right)\right)&=&2Pe^{-1}St_m\frac{\Theta_b}{\delta}\label{C3-TF}
+  t}+\frac{1}{r}\frac{\partial}{\partial                          r},
+  \left( r\left(\bar{u}\xi-\Sigma\right)\right)&=&2Pe^{-1}St_m\frac{\Theta_b}{\delta},\label{C3-TF}
 \end{eqnarray}
 with
 
@@ -609,7 +609,7 @@ with
     \begin{cases}
       1 &\text{if } \hspace{.5cm} \xi\leq \xi_t \nonumber\\
       \frac{3}{2}-\frac{3\xi}{h} & \text{if} \hspace{.5cm} \xi > \xi_t\nonumber
-    \end{cases}
+    \end{cases},
   \end{equation}
                                    }
 &
@@ -619,15 +619,15 @@ with
     \begin{cases}
       3\xi &\text{if } \hspace{.5cm} \xi\leq \xi_t\\
       h(r,t)/2 & \text{if} \hspace{.5cm} \xi > \xi_t\nonumber\\
-    \end{cases}
+    \end{cases},
   \end{equation}
   }
 \end{tabular}
 \begin{eqnarray}
   \overline{u}&=& \frac{12}{\delta}\frac{\partial P}{\partial r}\left(\delta
-                  I_0(\delta)-I_1(\delta)\right) \label{C3-ubarF}\\
+                  I_0(\delta)-I_1(\delta)\right) \label{C3-ubarF},\\
   \Sigma     &=& \frac{\partial     P}{\partial
-                 r}\left(8I_1(\delta)\Theta_b-12I_2(\delta)\right)\label{C3-SigmaF}
+                 r}\left(8I_1(\delta)\Theta_b-12I_2(\delta)\right),\label{C3-SigmaF}
 \end{eqnarray}
 where  $P   =  h+\nabla_r^4h$   is  the  dimensionless   pressure  and
 $\mathcal{H}$   the    Heaviside   function.    The    expression   of
@@ -638,11 +638,11 @@ the  numerical  scheme  used  to  solve  equations  (\ref{C3-HF})  and
 \subsection{Preliminary results for an isothermal flow}
 \label{C3-sec:prel-results-isoth}
 
-For a  constant injection  rate, a  small pre-wetting  film thickness,
-i.e.   $h_f<<1$ and  a viscosity  contrast $\nu$  set to  1, numerical
+For a constant injection rate, a small prewetting film thickness, i.e.
+$h_f\ll1$  and  a  viscosity  contrast   $\nu$  set  to  1,  numerical
 resolution  of (\ref{C3-HF})  shows two  asymptotic spreading  regimes
 \citep{Michaut:2011kg,Lister:2013ia}.
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_ELASGRAV_Simple.eps}
@@ -657,13 +657,13 @@ resolution  of (\ref{C3-HF})  shows two  asymptotic spreading  regimes
   \end{center}
 \end{figure}
 
-At  early times,  when  $R<<\Lambda$, gravity  is  negligible and  the
+At  early times,  when $R\ll\Lambda$,  gravity is  negligible and  the
 spreading dynamics is governed by the bending of the upper layer.  The
 spreading  is  very  slow  and   the  interior  has  uniform  pressure
 $P =\nabla_r^4h$.  The flow is  bell-shaped and its thickness is given
 by
 \begin{equation}
-  h(r,t) = h_0(t)\left(1-\frac{r^2}{R^2(t)}\right)^2
+  h(r,t) = h_0(t)\left(1-\frac{r^2}{R^2(t)}\right)^2,
   \label{C3-IntrusionShape}
 \end{equation}
 with   $h_0(t)$  the   thickness  of   the  current   at  the   center
@@ -673,7 +673,7 @@ the propagation  of a peeling by  bending wave at the  flow front with
 dimensionless velocity $c$
 \begin{equation}
   c=    \frac{d             R}{d            t}             =h_f^{1/2}
-  \left(\frac{\kappa}{1.35}\right)^{5/2}
+  \left(\frac{\kappa}{1.35}\right)^{5/2},
   \label{C3-WaveVelocity}
 \end{equation}
 where  $\kappa  =  \partial^2  h/\partial r^2$  is  the  dimensionless
@@ -682,8 +682,8 @@ curvature  of  the  interior  solution.   Using  the  propagation  law
 (\ref{C3-IntrusionShape}),  \citet{Lister:2013ia}  predicted that,  in
 this regime, the flow radius and height evolve following
 \begin{eqnarray}
-  h_0(t)&=& 0.7 h_f^{-1/11}t^{8/22}\label{C3-ScalingH}\\
-  R(t) &=& 2.2h_f^{1/22}t^{7/22}\label{C3-ScalingR}
+  h_0(t)&=& 0.7 h_f^{-1/11}t^{8/22}\label{C3-ScalingH},\\
+  R(t) &=& 2.2h_f^{1/22}t^{7/22}\label{C3-ScalingR},
 \end{eqnarray}
 where the numerical pre-factor obtained in our simulations match those
 of \citet{Lister:2013ia} (Figure \ref{C3-Scaling_HR_ELASGRAV_Simple}).
@@ -703,8 +703,8 @@ structure  for an  isoviscous flow,  i.e. $\nu=1$  and then  study the
 effect  of the  temperature-dependent viscosity  on the  flow dynamics
 without  crystallization,  i.e  $St_m   =1$.   Finally,  we  introduce
 crystallization by  setting $St_m<1$.  For simplicity,  we present the
-results for a given  film thickness ($h_f=5\cdot10^{-3}$); results for
-different film thicknesses are shown in Appendix \ref{chap:A3}.
+results for  a given  film thickness ($h_f=5\times  10^{-3}$); results
+for different film thicknesses are shown in Appendix \ref{chap:A3}.
 
 \section{Evolution in the bending regime}
 \label{C3-sec:evol-bend-regime}
@@ -736,7 +736,7 @@ $t=10$, while the cold region extends over about $20\%$ of the current
 for  $Pe=100$, it  extends over  more than  $70\%$ for  $Pe=1$ (Figure
 \ref{C3-Grid_PeNu_ELAS}).
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.35]{Grid_Time_ELAS_Pe1_Nu1.eps}
@@ -749,7 +749,7 @@ for  $Pe=100$, it  extends over  more than  $70\%$ for  $Pe=1$ (Figure
   \end{center}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.48]{Grid_PeNu_ELAS_Final_2.eps}
@@ -763,7 +763,7 @@ for  $Pe=100$, it  extends over  more than  $70\%$ for  $Pe=1$ (Figure
   \end{center}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.4]{Thickness_Temperature_Profile_ELAS.eps}
@@ -838,10 +838,10 @@ laws are obtained from  (\ref{C3-ScalingH}) and (\ref{C3-ScalingR}) by
 rescaling  the characteristic  thickness and  time by  $\nu^{1/4}$ and
 read
 \begin{eqnarray}
-  h_{0} & = &0.7 \nu^{-2/11} h_f^{-1/11}t^{8/22}\label{C3-ScalingH-Visco}\\
+  h_{0} & = &0.7 \nu^{-2/11} h_f^{-1/11}t^{8/22}\label{C3-ScalingH-Visco},\\
   R& = & 2.2 \nu^{1/11}h_f^{1/22} t^{7/22}\label{C3-ScalingR-Visco}.
 \end{eqnarray}
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_ELAS.eps}
@@ -901,10 +901,10 @@ Using     the     thickness     profile     (\ref{C3-IntrusionShape}),
   t}+h_0\frac{d \Theta_b}{d
   t}\right)+\frac{4h_0R_c^2\Theta_b}{R^3}\frac{d
   R}{d
-  t}\alpha\left(1+\frac{R_c}{R}\right) \approx \frac{Pe^{-1}\Theta_b}{\alpha^2\left(1+\frac{R_c}{R}\right)^2h_0}\nonumber
+  t}\alpha\left(1+\frac{R_c}{R}\right) \approx \frac{Pe^{-1}\Theta_b}{\alpha^2\left(1+\frac{R_c}{R}\right)^2h_0},\nonumber
 \end{eqnarray}
 where  $\alpha (t)=  \left(R(t)-R_c(t)\right)/R(t)$ is  the normalized
-region   beyond   $r=R_c(t)$.    In  the   limit   $\alpha<<1$,   i.e.
+region   beyond   $r=R_c(t)$.    In  the   limit   $\alpha\ll1$,   i.e.
 $R_c/R\sim  1$,  the  time  derivative is  locally  dominated  by  its
 advective part ($\propto \alpha$) and we finally get
 \begin{equation}
@@ -914,17 +914,17 @@ Substituting  $h_0(t)$ and  $R(t)$  by their  respective scaling  laws
 (\ref{C3-ScalingH-Visco})  and   (\ref{C3-ScalingR-Visco}),  the  size
 evolution of the normalized cold front region $\alpha$ reads
 \begin{equation}
-  \alpha(t)&\approx& Pe^{-1/3}\nu^{4/33} h_f^{2/33}t^{1/11}.
+  \alpha(t)&\approx& Pe^{-1/3}\nu^{4/33} h_f^{2/33}t^{1/11},
   \label{C3-ScalingXi}
 \end{equation}
 which is equivalent to
 \begin{equation}
-  R(t)-R_c(t) = 2.1 Pe^{-1/3}\nu^{7/33} h_f^{7/66}t^{9/22}
+  R(t)-R_c(t) = 2.1 Pe^{-1/3}\nu^{7/33} h_f^{7/66}t^{9/22},
   \label{C3-ScalingRRc}
 \end{equation}
 where the numerical prefactor, which  depends on the definition of the
 thermal anomaly, has been chosen to fit the simulations.
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{R_Rc_ELAS.eps}
@@ -941,7 +941,7 @@ thermal anomaly, has been chosen to fit the simulations.
 The predicted scaling  law for the evolution of the  cold fluid region
 (\ref{C3-ScalingRRc})  indeed closely  fits the  numerical simulations
 for    $\nu<1$   and    for   different    Peclet   numbers    (Figure
-\ref{C3-R_Rc_ELAS}). For $\nu=1$ and  $Pe=1$, the condition $R-R_c<<R$
+\ref{C3-R_Rc_ELAS}). For $\nu=1$ and  $Pe=1$, the condition $R-R_c\llR$
 is no more respected for $t>0.1$,  the thermal anomaly is much smaller
 than  the flow  itself  and the  evolution of  the  cold fluid  region
 diverges from (\ref{C3-ScalingRRc}).
@@ -954,10 +954,10 @@ We  use  the   predicted  scaling  law  for   the  thickness  $h_0(t)$
 viscosity  $\eta_e(t)$. Substituting  $\nu$  by $\eta_h/\eta_e(t)$  in
 (\ref{C3-ScalingH-Visco}) and inverting for $\eta_e(t)/\eta_h$, we get
 \begin{eqnarray}
-  \eta_e(t)/\eta_h&=& \left(\frac{h_0(t)t^{-8/22}}{0.7 h_f^{-1/11}}\right)^{11/2}\label{C3-eff-visco}
+  \eta_e(t)/\eta_h&=& \left(\frac{h_0(t)t^{-8/22}}{0.7 h_f^{-1/11}}\right)^{11/2}\label{C3-eff-visco},
 \end{eqnarray}
 where $h_0(t)$ is given by the simulation.
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Visco_ELAS_Version_2.eps}
@@ -979,7 +979,7 @@ where $h_0(t)$ is given by the simulation.
   \end{center}
 \end{figure}
 
-As      suggested       by      the      results       of      section
+As      suggested       by      the      results       of      Section
 \ref{C3-sec:evol-thickn-radi-e},  the  effective  viscosity  is  first
 close  to the  hot viscosity  $\eta_h$, i.e.   $\eta_e/\eta_h \sim  1$
 (Figure \ref{C3-Visco_ELAS_Version_2} a).  It rapidly increases in the
@@ -995,7 +995,7 @@ front region of size $L$ in between $R(t)-L$ and $R(t)$
 \begin{eqnarray}
   \eta_f/\eta_h =
   \frac{1}{V_f}\int_{R-L}^{R}\int_0^{h}  r  \eta(\theta)
-  dr dz \label{C3-front-visco}
+  dr dz, \label{C3-front-visco}
 \end{eqnarray}
 where $V_f(t)$ is the volume of this region.  The numerical evaluation
 of $\eta_f(t)$ for  a constant size $L \sim 0.1$  fits relatively well
@@ -1033,7 +1033,7 @@ Here, we  examine the effect  of crystallization on the  flow dynamics
 and  use   a  value   of  $St_m=0.17  <   1$,  relevant   for  magmas.
 Crystallization  induces  a  release  of latent  heat  in  the  fluid,
 increasing the amount of available energy at a given time.
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_ELAS_Stm.eps}
@@ -1065,10 +1065,10 @@ described  by  the   scaling  law  (\ref{C3-ScalingRRcFinal})  (Figure
 for the current  to enter the second  and third phase of  the flow are
 delayed when accounting for crystallization and respectively read
 \begin{eqnarray}
-  t_{b2}&\sim&0.1Pe St_m^{-1} h_f^2\label{C3-tb2}\\
-  t_{b3}&\sim& 0.03 St_m^{-22/27}Pe^{22/27}\nu^{-14/27}h_f^{-7/27}\label{C3-tb3}
+  t_{b2}&\sim&0.1Pe St_m^{-1} h_f^2,\label{C3-tb2}\\
+  t_{b3}&\sim& 0.03 St_m^{-22/27}Pe^{22/27}\nu^{-14/27}h_f^{-7/27}.\label{C3-tb3}
 \end{eqnarray}
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.43]{R_Rc_ELAS_Stm.eps}
@@ -1104,7 +1104,7 @@ medium rapidly balances  the input of heat at the  center and when the
 thermal  anomaly detaches  from the  tip  of the  current, its  extent
 reaches a steady state (Figure \ref{C3-Grid_Time_GRAV}).
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.35]{Grid_Time_GRAV_Pe1_Nu1.eps}
@@ -1122,7 +1122,7 @@ while the thermal  anomaly $R_c$ is less than $1$  in the steady state
 regime  for   $Pe=1$,  it   is  about   $12$  for   $Pe=10^3$  (Figure
 \ref{C3-Grid_PeNu_GRAV}, $\nu=1$).
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Grid_PeNu_GRAV_Final_2.eps}
@@ -1183,7 +1183,7 @@ Finally, the thickness  and radius follow the  isoviscous scaling laws
 but for a cold viscosity flow.
 
 These dimensionless scaling laws read, as a function of $\nu$
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_GRAV.eps}
@@ -1199,8 +1199,8 @@ These dimensionless scaling laws read, as a function of $\nu$
 \end{figure}
 
 \begin{eqnarray}
-  h_0 &=& 2.1\nu^{-1/4}\label{C3-scaling-H-gravi-2}\\
-  R(t) &=& 1.1\nu^{1/8} t^{1/2}\label{C3-scaling-R-gravi-2}
+  h_0 &=& 2.1\nu^{-1/4}\label{C3-scaling-H-gravi-2},\\
+  R(t) &=& 1.1\nu^{1/8} t^{1/2}\label{C3-scaling-R-gravi-2}.
 \end{eqnarray}
 They    perfectly   match    our    numerical   simulations    (Figure
 \ref{C3-Scaling_HR_GRAV}).    Therefore,   the   effective   viscosity
@@ -1225,7 +1225,7 @@ current itself, i.e.  $R_c(t)/R(t)  \sim 1$ (Figure \ref{C3-R_Rc_GRAV}
 left).   After a  time that  depends on  $Pe$ and  $\nu$, the  thermal
 anomaly detaches  from the  front and  reaches a  steady-state profile
 (Figure \ref{C3-Grid_PeNu_GRAV} and \ref{C3-R_Rc_GRAV}).
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{R_Rc_GRAV.eps}
@@ -1243,7 +1243,7 @@ thermal  anomaly in  the  steady-state regime.   At  the steady  state
 radius $R_c$ of the thermal  anomaly, a balance between heat advection
 and diffusion in the surrounding medium in a dimensional form gives
 \begin{equation}
-  \rho C_p U_0 \frac{\Delta T}{R_c} \approx \frac{8 k \Delta T}{h_0^2}
+  \rho C_p U_0 \frac{\Delta T}{R_c} \approx \frac{8 k \Delta T}{h_0^2},
 \end{equation}
 where $\Delta T$ is a mean  temperature contrast between the fluid and
 the surroundings  and $U_0$ is  a mean  velocity of advection.   For a
@@ -1251,18 +1251,18 @@ gravity  current,  and  by  opposition  to  the  bending  regime,  the
 thickness  $h_0$ reaches  a  constant. Taking  $U_0$  as a  horizontal
 redistribution of the injection rate at $r=R_c$, we write
 \begin{equation}
-  U_0=Q_0/(2\pi R_c h_0)
+  U_0=Q_0/(2\pi R_c h_0),
 \end{equation}
 which gives
 \begin{equation}
-  R_c\approx\frac{1}{4}\sqrt{\frac{h_0 Q_0}{\pi \kappa}}
+  R_c\approx\frac{1}{4}\sqrt{\frac{h_0 Q_0}{\pi \kappa}}.
   \label{C3-RcDimensionn}
 \end{equation}
 By   non-dimensionalizing  (\ref{C3-RcDimensionn}),   we  obtain   the
 evolution of the steady-state  radius $R_c \approx Pe^{1/2}\nu^{-1/8}$
 and hence
 \begin{equation}
-  \frac{R_c}{R(t)} = 0.7Pe^{1/2}\nu^{-1/4}t^{-1/2}
+  \frac{R_c}{R(t)} = 0.7Pe^{1/2}\nu^{-1/4}t^{-1/2},
   \label{C3-Scaling-Rc-Gravy}
 \end{equation}
 where  we have  used  (\ref{C3-scaling-R-gravi-2})  and the  numerical
@@ -1282,15 +1282,15 @@ $Pe^{1/2}\nu^{-1/4}$    in   the    steady   state    regime   (Figure
 \subsection{Effective viscosity of the current}
 \label{C3-sec:effect-visc-blist-g}
 
-Repeating      the      same      exercise     as      in      section
+Repeating      the      same      exercise     as      in      Section
 (\ref{C3-sec:effect-visc-blist-e}), we  use the predicted  scaling law
 for  the  radius  $R(t)$  (\ref{C3-scaling-R-gravi-2})  to  infer  the
 effective viscosity $\eta_e(t)$ of the current
 \begin{eqnarray}
-  \eta_e(t)/\eta_h&=& \left(\frac{R(t)t^{-1/2}}{1.1}\right)^{-8}\label{C3-eff-visco-grav}
+  \eta_e(t)/\eta_h&=& \left(\frac{R(t)t^{-1/2}}{1.1}\right)^{-8},\label{C3-eff-visco-grav}
 \end{eqnarray}
 where $R(t)$ is given by the simulation.
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Visco_GRAV_2.eps}
@@ -1338,7 +1338,7 @@ different combinations $(\nu,Pe)$ enter the third phase simultaneously
 
 As in the bending regime,  crystallization induces a release of latent
 heat, increasing the amount of available energy at a given time.
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_GRAV_Stm.eps}
@@ -1352,12 +1352,12 @@ heat, increasing the amount of available energy at a given time.
 \end{figure}
 As a  result, when $St_m<1$, the  current is hotter on  average and it
 transitions to the second phase later  than in the case where $St_m=1$
-(Figure     \ref{C3-Scaling_HR_GRAV_Stm}).       As     in     section
+(Figure     \ref{C3-Scaling_HR_GRAV_Stm}).       As     in     Section
 (\ref{C3-sec:note-effect-cryst-1}),    one    can    easily    rewrite
 (\ref{C3-Scaling-Rc-Gravy})   to    account   for   the    effect   of
 crystallization on the thermal anomaly evolution
 \begin{equation}
-  \frac{R_c}{R(t)} = 0.7 St_m^{-1/2}Pe^{1/2}\nu^{-1/4}t^{-1/2}
+  \frac{R_c}{R(t)} = 0.7 St_m^{-1/2}Pe^{1/2}\nu^{-1/4}t^{-1/2}.
   \label{C3-Scaling-Rc-Gravy_Stm}
 \end{equation}
 Indeed, the  dependence with the  dimensionless number $St_m$  is well
@@ -1366,11 +1366,11 @@ described by  the scaling law  (\ref{C3-Scaling-Rc-Gravy_Stm}) (Figure
 for the current  to enter the second  and third phase of  the flow are
 both delayed and respectively read
 \begin{eqnarray}
-  t_{g2}&\sim&10^{-2}PeSt_m^{-1}\label{C3-tg2}\\
-  t_{g3}&\sim& 5.2Pe St_m^{-1}\nu^{-1/2}\label{C3-tg3}
+  t_{g2}&\sim&10^{-2}PeSt_m^{-1}\label{C3-tg2},\\
+  t_{g3}&\sim& 5.2Pe St_m^{-1}\nu^{-1/2}\label{C3-tg3}.
 \end{eqnarray}
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{R_Rc_GRAV_Stm.eps}
@@ -1386,7 +1386,7 @@ both delayed and respectively read
 \section{Different evolutions with bending and gravity}
 \label{C3-sec:diff-evol-with-1}
 
-For an  isoviscous flow with $h_f<<  h<< d_c$, in between  the bending
+For an isoviscous flow with $h_f\ll h \ll d_c$, in between the bending
 and  gravity  regime,  \citet{Lister:2013ia}  also  describe  a  short
 intermediate regime where the peeling  by bending continues to control
 the  propagation but  where  the flow  shows  an interior  flat-topped
@@ -1410,16 +1410,16 @@ thermal phase  of the bending  regime. It  is then characterized  by a
 cold viscosity  $\eta_c=100$ and a  large aspect ratio.   In contrast,
 for a  larger value  of $Pe$,  i.e.  $Pe=  10^5$, the  current remains
 longer in  the first phase of  the bending regime and  it spreads with
-hot viscosity $\eta_h$ for a longer period of time.  As a consequence,
-it  reaches  $R \sim  4$  and  enters  the  gravity regime  sooner  at
-$t\sim 30$ while  in the second phase of the  bending regime and hence
+hot  viscosity $\eta_h$  for a  longer period.   As a  consequence, it
+reaches $R \sim 4$ and enters  the gravity regime sooner at $t\sim 30$
+while  in   the  second  phase   of  the  bending  regime   and  hence
 characterized by a smaller thickness  $h_0\sim 5$ and a smaller aspect
 ratio.   For  even  larger  Peclet  number  $Pe$,  the  current  would
 transition while in  the first thermal phase of the  bending regime at
 $t \sim  10$ and  with $h_0 \sim  2$, as in  the isoviscous  case with
 viscosity $\eta_h$.
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_ELASGRAV_h.eps}
@@ -1452,8 +1452,11 @@ transition to the  gravity regime, collapse on the  same curve (Figure
 
 \begin{table}
   \begin{center}
-    \begin{tabular}{ccccc}
+    \begin{tabular}{c|cc|cc}
       Name&From&To&Expression\\
+      \hline
+          &&&\\
+
       $t_t$&Bending&Gravity&$6.5(\eta_e/\eta_h)^{2/7}h_f^{-1/7}$\\
       $t_t^h$&Bending&Gravity&$6.5h_f^{-1/7}$\\
       $t_t^c$&Bending&Gravity&$6.5\nu^{-2/7}h_f^{-1/7}$\\
@@ -1490,13 +1493,14 @@ thermal phase of  the bending regime can transition into  the first or
 second thermal phase of the  gravity current regime. However, the case
 where  a current  in the  third thermal  phase of  the bending  regime
 transitions to  the first thermal phase  of the gravity regime  is not
-possible since the thermal anomaly  has already detached from the tip.
-In the following,  we detail the five remaining scenarios  in order to
+possible since the  thermal anomaly has already detached  from the tip
+(see Appendix \ref{chap:A2} for a more formal discussion).  In
+the  following, we  detail the  five remaining  scenarios in  order to
 build a phase diagram as a function of the combination ($\nu$, $Pe_m$)
 considered.
 
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.45]{Scaling_HR_ELASGRAV_h2.eps}
@@ -1546,8 +1550,7 @@ the    first   gravity    thermal    phase    ($B_2G_1$   on    Figure
 \ref{C3-Phase_Diagram_ELASGRAV}).  Similarly,  if $t_t^h>t_{g2}$, i.e.
 $Pe_m<650h_f^{-1/7}$, the  current transitions  to the  second gravity
 current phase ($B_2G_2$ on Figure \ref{C3-Phase_Diagram_ELASGRAV}).
-
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
     \includegraphics[scale=0.7]{PhaseDiagramJFM_V9.eps}
@@ -1602,9 +1605,16 @@ The  final evolution  of an  elastic-plated gravity  current therefore
 depends on  the relative phase  change within  each regime and  on the
 transition  between the  bending and  the gravity  regime itself.   We
 provide a general phase diagram  that predicts the different evolution
-scenarios as a  function of the dimensionless  parameters.  This model
-for  the  cooling of  an  elastic-plated  gravity current  is  further
-refined and apply to the observation in the next chapter.
+scenarios as a function of the dimensionless parameters.
+
+In the end, this cooling elastic-plated gravity current model provides
+a   general   basis    to   study   the   cooling    of   a   magmatic
+intrusion. Nevertheless,  before analysing the  observations discussed
+in Chapter \ref{chap2} in the light  of this new model, we first relax
+the  isothermal  boundary condition  and  introduce  a more  realistic
+rheology   to  be   more  consistent   with  the   magmatic  intrusion
+application.   The more  realistic model  and its  application to  the
+observations are discussed in the next Chapter.
 
 %%% Local Variables:
 %%% mode: latex

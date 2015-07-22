@@ -34,6 +34,8 @@
     "fontenc"
     ""
     "textcomp"
+    "amssymb"
+    "lscape"
     "makeidx")
    (LaTeX-add-bibliographies
     "/Users/thorey/Dropbox/Library")))

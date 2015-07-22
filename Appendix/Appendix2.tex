@@ -1,41 +1,64 @@
 \chapter{Details on the phase diagram}
 \label{chap:A2}
 
-
 A current in the $i$th thermal phase can transition in the $j$th phase
-of the gravity regime where $i \ge j$. Indeed, the effective viscosity
-being that of a small region at  the tip in the bending regime and the
-average  flow viscosity  in  the gravity  regime,  it cannot  increase
-during  the transition.   Hence, $B_1G_2$,  $B_1G_3$ and  $B_2G_3$ are
-unfeasible     (Table    \ref{tab:ParameterAnalysis}     and    Figure
-\ref{PD_ALLpossible} a).   In addition, the transition  from the third
-thermal phase of the bending regime  to the first thermal phase of the
-gravity regime  implies that $t_t^c<t_{b2}$ and  $t_t^c>t_{g3}$, which
-is   not  possible   (Table  \ref{tab:ParameterAnalysis}   and  Figure
-\ref{PD_ALLpossible} a).  Therefore, the  five possible sequences that
-remain are $B_1G_1$, $B_2G_1$,  $B_2G_2$, $B_3G_2$ and $B_3G_3$ (Table
-\ref{tab:ParameterAnalysis} and Figure \ref{PD_ALLpossible} a).
-
+of the gravity regime where $i  \ge j$. An informal indication of this
+result is that the effective viscosity being that of a small region at
+the tip  in the bending regime  and the average flow  viscosity in the
+gravity regime, it cannot increase during the transition.
 \begin{figure}[h!]
   \begin{center}
     \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/Figure_Heating/} }
     \includegraphics[scale=0.4]{PhaseDiagramJFM_Appendix_Heating_2.eps}
     \caption{a)     Phase     transitions    reported     in     Table
       \ref{tab:ParameterAnalysis} for  the model described  in Chapter
-      \ref{C3-JFM}.   Same  plot  but  for the  more  realistic  model
-      described in Chapter \ref{Heating}.}
+      \ref{C3-JFM}. Each scenario $B_iG_j$ is  defined by two or three
+      conditions, each of the transition defining a specific region in
+      the phase  diagram.  The  intersection of the  different regions
+      have  to be  non-zero  in the  range  of proposed  dimensionless
+      number for a scenario to exist.  For instance, $B_1G_2$ does not
+      exist                                                    because
+      $\{(Pe_m,\nu):       Pe_m>\alpha_1      h_f^{-15/7}\}       \cap
+      \{(Pe_m,\nu):Pe_m<\alpha_2           h_f^{-1/7}\}           \cap
+      \{(Pe_m,\nu):\nu<\alpha_3     Pe_m^2h_f^{2/7}\}     =     \{\}$.
+      Same plot but for the  more realistic model described in Chapter
+      \ref{Heating}.}
     \label{PD_ALLpossible}
   \end{center}
 \end{figure}
+More  formally, each  evolution $B_iG_j$  is defined  by two  or three
+conditions, each of  the transition defining a specific  region in the
+phase   diagram   (Table    \ref{tab:ParameterAnalysis}   and   Figure
+\ref{PD_ALLpossible}).  The intersection of  the different regions has
+to be non-empty  in the range of dimensionless numbers  for a scenario
+to exist. In particular, we have
+\begin{itemize}
+\item
+  $B_1G_2          =         \{(Pe_m,\nu):t_t^h<t_{b2}\}          \cap
+  \{(Pe_m,\nu):t_t^h>t_{g2}\} \cap \{(Pe_m,\nu):t_t^h<t_{g3}\}=\{\}$
+\item
+  $B_1G_3          =         \{(Pe_m,\nu):t_t^h<t_{b2}\}          \cap
+  \{(Pe_m,\nu):t_t^h>t_{g3}\} =\{\}$
+\item
+  $B_2G_3          =         \{(Pe_m,\nu):t_t^h>t_{b2}\}          \cap
+  \{(Pe_m,\nu):t_t^c<t_{b3}\} \cap \{(Pe_m,\nu):t_t^h>t_{g3}\}=\{\}$
+\end{itemize}
+Hence,  $B_1G_2$,   $B_1G_3$  and   $B_2G_3$  are   unfeasible  (Table
+\ref{tab:ParameterAnalysis}  and Figure  \ref{PD_ALLpossible} a).   In
+addition, the  transition from  the third bending  phase to  the first
+gravity phase implies that $t_t^c>t_{b3}$ and $t_t^c<t_{g2}$, which is
+not   possible    (Table   \ref{tab:ParameterAnalysis}    and   Figure
+\ref{PD_ALLpossible} a).  Therefore, the  five possible sequences that
+remain are $B_1G_1$, $B_2G_1$,  $B_2G_2$, $B_3G_2$ and $B_3G_3$ (Table
+\ref{tab:ParameterAnalysis} and Figure \ref{PD_ALLpossible} a).
 
 In the  more realistic model  described in Chapter  \ref{Heating}, the
-time  to enter  the  third  flow phase  is  slightly  delayed in  both
-regimes. In  particular, for  the current that  has reached  the third
-bending        phase,         $t_t^c>t_{b3}$        now        implies
-$\nu>2.8\cdot10^{-7}  Pe^{7/2}hf^{-1/2}$ (Figure  \ref{PD_ALLpossible}
-b).    In  addition,   comparing  $t_t^c$   and  $t_{g3}$   now  reads
-$\nu<1.2\cdot 10^5  Pe_m^{14/3}h_f^{2/3}$ (Figure \ref{PD_ALLpossible}
-b).
+time to  enter the  third flow  phase is delayed  in both  regimes. In
+particular, for the current that  has reached the third bending phase,
+$t_t^c>t_{b3}$  now  implies  $\nu>2.8\cdot10^{-7}  Pe^{7/2}hf^{-1/2}$
+(Figure \ref{PD_ALLpossible}  b).  In addition, comparing  $t_t^c$ and
+$t_{g3}$  now reads  $\nu<4.6\cdot 10^9  Pe_m^{14/3}h_f^{2/3}$ (Figure
+\ref{PD_ALLpossible} b).
 
 \begin{table}[h!]
   \begin{center}
@@ -73,11 +96,11 @@ b).
         \multicolumn{5}{c}{Transition  in  the   third  bending  thermal
         phase $B3$} \\
         $t_t=t_t^c$ & $t_t^c>t_{b3}$ & $t_t^c<t_{g2}$ &-&$B_3G_1$\\
-                   &$\nu> \alpha Pe_m^{7/2}h_f^{-1/2}$&$\nu>\alpha_5 Pe_m^{-7/2}h_f^{-1/2}$&-&Unfeasible\\
+                   &$\nu> \alpha_4 Pe_m^{7/2}h_f^{-1/2}$&$\nu>\alpha_5 Pe_m^{-7/2}h_f^{-1/2}$&-&Unfeasible\\
         $t_t=t_t^c$ & $t_t^c<t_{b2}$ & $t_t^c>t_{g2}$ &$t_t^c<t_{g3}$& $B_3G_2$\\
-                   &$\nu> \alpha Pe_m^{7/2}h_f^{-1/2}$&$\nu<\alpha_5 Pe_m^{-7/2}h_f^{-1/2}$&$\nu<\alpha_6Pe_m^{14/3}h_f^{2/3}$& Feasible\\
+                   &$\nu> \alpha_4 Pe_m^{7/2}h_f^{-1/2}$&$\nu<\alpha_5 Pe_m^{-7/2}h_f^{-1/2}$&$\nu<\alpha_6Pe_m^{14/3}h_f^{2/3}$& Feasible\\
         $t_t=t_t^c$ & $t_t^c<t_{b2}$ & $t_t^c>t_{g3}$ &-&$B_3G_3$ \\
-                   &$\nu>\alpha Pe_m^{7/2}h_f^{-1/2}$&$\nu>\alpha_6Pe_m^{14/3}h_f^{2/3}$&-& Feasible
+                   &$\nu>\alpha_4 Pe_m^{7/2}h_f^{-1/2}$&$\nu>\alpha_6Pe_m^{14/3}h_f^{2/3}$&-& Feasible
       \end{tabular}}
     \caption{Parameter  space analysis.   All  conditions  have to  be
       respected for a scenario to be possible. For the model described
@@ -85,9 +108,9 @@ b).
       $\alpha_2=650$,   $\alpha_3=151$,   $\alpha_4=8.3\cdot10^{-13}$,
       $\alpha_5=7.0  \cdot  10^{9}$,  $\alpha_6=0.3$.   For  the  more
       realistic   model   derived   in  Chapter   \ref{Heating},   the
-      coefficients are: $\alpha_1=65$, $\alpha_2=650$, $\alpha_3=0.6$,
-      $\alpha_4=   2.8\cdot10^{-7}$,   $\alpha_5=7.0  \cdot   10^{9}$,
-      $\alpha_6=1.2 \cdot 10^5$.}
+      coefficients      are:       $\alpha_1=65$,      $\alpha_2=650$,
+      $\alpha_3=40000$,          $\alpha_4=          2.8\cdot10^{-7}$,
+      $\alpha_5=7.0 \cdot 10^{9}$, $\alpha_6=4.6 \cdot 10^9$.}
     \label{tab:ParameterAnalysis}
   \end{center}
 \end{table}
