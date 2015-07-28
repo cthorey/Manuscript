@@ -1,0 +1,9 @@
+PWD /Users/thorey/Documents/These/Manuscript
+INPUT /usr/local/texlive/2013/texmf.cnf
+INPUT /usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT abstract_en.tex
+OUTPUT abstract_en.log
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
