@@ -43,7 +43,7 @@ transformed  into  marble  following  the intrusion  of  the  Treasure
 Mountain Dome (Figure \ref{Treasure}).  The increase in the geothermal
 gradient in  sedimentary basins also  tends to accelerate  the thermal
 maturation of organic matter in the surrounding, promoting hydrocarbon
-generation   \citep{Senger:2014tt}.    Release    of   $CO_2$   during
+generation   \citep{Senger:2014tt}.    Release    of   CO$_2$   during
 metamorphic processes has also been  proposed to help the formation of
 ore    deposits   in    the    vicinity    of   magmatic    intrusions
 \citep{SILLITOE:1998bs,Ganino:2008ft,Zhou:2008hc}.
@@ -106,7 +106,7 @@ a first order by
   \label{C4-eq22}
 \end{equation}
 The  thickness of  the upper  layer is  equal to  the intrusion  depth
-$d_c$. However,  we assume that the  depth $d_c$ is large  compared to
+$d_0$. However,  we assume that the  depth $d_0$ is large  compared to
 the characteristic  length scale for  conduction $L_c$ and we  use the
 same approximation to derive $T_r$ above the intrusion
 \begin{equation}
@@ -807,7 +807,7 @@ When  the thermal  anomaly has  detached from  the intrusion  front, a
 balance between heat advection and diffusion in the surrounding medium
 in a dimensional form reads
 \begin{equation}
-  \rho C_p U_0 \frac{\Delta T}{R_c} \approx k_m \frac{\Delta T}{h_0^2},
+  \rho C_{p,m} U_0 \frac{\Delta T}{R_c} \approx k_m \frac{\Delta T}{h_0^2},
   \label{C4-bilan}
 \end{equation}
 where $\Delta  T$ is the  mean temperature contrast between  the fluid
@@ -815,14 +815,14 @@ and the  surroundings and $U_0$  is a redistribution of  the injection
 rate at  $r=R_c$, i.e.   $U_0=Q_0/(2\pi R_c  h_0)$.  In  addition, the
 continuity of the heat flux at the boundary (\ref{C4-2Flux_1}) imposes
 \begin{equation}
-  k_m\frac{\Delta   T}{h_0}\approx   k_s   \frac{\Delta   T}{\sqrt{\pi
+  k_m\frac{\Delta   T}{h_0}\approx   k_r   \frac{\Delta   T}{\sqrt{\pi
       \kappa_r t}}.
   \label{C4-FluxEstimate}
 \end{equation}
 Injecting (\ref{C4-FluxEstimate}) and the  expression for the velocity
 into (\ref{C4-bilan}) gives
 \begin{equation}
-  R_c \approx  \left(\frac{Q_0\kappa_r^{1/2}}{\kappa_m k_s}\right)^{1/2}
+  R_c \approx  \left(\frac{Q_0\kappa_r^{1/2}}{\kappa_m k_r}\right)^{1/2}
   t^{1/4}.
   \label{C4-Bilan2}
 \end{equation}
@@ -961,7 +961,7 @@ values for the model parameters.
         Parameters& Symbol & Earth & Moon&Unit\\
         \hline
                   &&&&\\
-        Depth of intrusion & $d_c$ & $0.2-2.7$ &$0.5-5$ &km \\
+        Depth of intrusion & $d_0$ & $0.2-2.7$ &$0.5-5$ &km \\
         Young's Modulus & $E$ & $10$ &$10$ &GPa \\
         Poisson's ratio & $\nu^*$ & $0.25$ &$0.25$ &\\
         Gravity & $g$ & $9.81$ &1.62&m s$^{-2}$ \\
@@ -1062,7 +1062,7 @@ follow
       $\rho_m = 2500$ kg m$^{-3}$, $g=9.81$ m s$^{-2}$, $\eta_h =10^6$
       Pa s and $Q_0 = 10$ m$^3$ s$^{-1}$ on Earth and, everything else
       being  equal, $g=1.62$  m  s$^{-2}$,  $\eta_h =1$  Pa  s on  the
-      Moon. $d_c$  is set  to $1.5$  km for  all lunar  domes.  Dotted
+      Moon. $d_0$  is set  to $1.5$  km for  all lunar  domes.  Dotted
       lines: best  fit scaling laws  (\ref{C4-Hr}) with $h_f  = 0.005$
       for laccoliths  at Elba Island  (red) and low-slope  lunar domes
       (purple).   $\nu =  3.1\pm 1.0  \cdot 10^{-8}$  ($r^2=0.92$) and
@@ -1156,14 +1156,14 @@ We first compute  a value for the Peclet number  for each laccolith at
 Elba  Island. Injecting  the scales  (\ref{C3-L1}), (\ref{C3-H1})  and
 (\ref{C3-T1}) in the expression of $Pe$ (\ref{C3-Pe}) gives
 \begin{equation}
-  Pe \approx 1.5 Q_{0}^{5/4}\eta_{h}^{1/4}\rho_m^{1/4}g^{1/4}E^{-1/2} d_c^{-3/2} \kappa_m^{-1}
+  Pe \approx 1.5 Q_{0}^{5/4}\eta_{h}^{1/4}\rho_m^{1/4}g^{1/4}E^{-1/2} d_0^{-3/2} \kappa_m^{-1}
 \end{equation}
 where we  set the  Poisson's ratio to  $\nu^*=0.25$. Except  for $Q_0$
-,that we want  to constrain, and $d_c$, which is  given and depends on
+,that we want  to constrain, and $d_0$, which is  given and depends on
 the  laccolith,  we  take  the   parameter  values  listed  in  Figure
 \ref{C4-Data}.  Therefore, $Pe$ reads
 \begin{equation}
-  Pe \approx 5.9\times10^4 d_c^{-3/2} Q_0^{5/4}
+  Pe \approx 5.9\times10^4 d_0^{-3/2} Q_0^{5/4}
   \label{PeExpre}
 \end{equation}
 For $St_m  =0.5$, the intrusion depths  given by \citet{Rocchi:2002jy}
@@ -1293,7 +1293,7 @@ consistent with  a viscosity  contrast close  to $10^{-8}$  (best fit:
 $\nu=7.9  \pm 1.8  \times  10^{-9}$) (Figure  \ref{C4-Data}).  On  the
 Moon, (\ref{PeExpre}) becomes
 \begin{equation}
-  Pe \approx 125 d_c^{-3/2} Q_0^{5/4}\eta_h^{1/4},
+  Pe \approx 125 d_0^{-3/2} Q_0^{5/4}\eta_h^{1/4},
   \label{PeExpreMoon}
 \end{equation}
 and assuming that  the intrusion depth ranges from $500$  m to $5$ km,
@@ -1343,11 +1343,11 @@ $R^{\text{ref}}$ are with dimension. Assuming that the different lunar
 domes  differ   only  by   their  intrusion   depth,  (\ref{RefDome1})
 simplifies and reads
 \begin{equation}
-  d_c = \left(R/R^{\text{ref}}\right)^{34/15}d_c^{\text{ref}}.
+  d_0 = \left(R/R^{\text{ref}}\right)^{34/15}d_0^{\text{ref}}.
   \label{C4-dd}
 \end{equation}
 We take the  largest dome as a  reference and we set its  depth to the
-largest reasonable value, i.e.  $d_c=5$  km, mainly to ensure that the
+largest reasonable value, i.e.  $d_0=5$  km, mainly to ensure that the
 dimensionless  radius of  the other  domes remains  smaller than  $4$.
 Injecting the dome radii in  (\ref{C4-dd}) then gives intrusion depths
 between $0.5$ km  and $5$ km and Peclet numbers  between $10^{-2}$ and
@@ -1364,7 +1364,7 @@ $0.5$, consistent with the expected values.
       scale  $\Lambda$ (\ref{C3-L1})  and thickness  $H$ (\ref{C3-H1})
       are calculated  the same way  as in Figure  \ref{C4-Data} except
       for  the   intrusion  depth,   taken  from   (\ref{C4-dd})  with
-      $R^r  =  36.6$ km  and  $d_c^r=5$  km.  b)  Dimension  thickness
+      $R^r  =  36.6$ km  and  $d_0^r=5$  km.  b)  Dimension  thickness
       $\hat{h_0}$  versus  dimensionless  radius  $\hat{R}$.   Colored
       polygons refers to the colors in a).}
     \label{C4-ArrestMoon}
@@ -1380,15 +1380,14 @@ conclusion is obtained  using different reference domes  or by setting
 the constraint on  the rescaled thickness instead of  the radius, i.e.
 $\hat{h_0}=\hat{h_0^{\text{ref}}}$.
 
-\subsection{If  not cooling,  what  causes the  arrest of  terrestrial
-  laccoliths?}
+\subsection{What causes the arrest of terrestrial laccoliths?}
 \label{sec:large-mafic-sill}
 
 Together,  Elba Island  laccoliths and  low-slope lunar  domes suggest
 that the highly  viscous region, which composed the tip  region at the
 beginning  of  the third  bending  phase,  does not  stop  terrestrial
-laccoliths as  suggested initially.  Instead, the  data supports their
-later arrest  in the  third bending  phase. Alternatively,  we propose
+laccoliths  as suggested  initially.  Indeed,  the data  support their
+later arrest during the third bending phase. Alternatively, we propose
 that the injection  rate is responsible for the  arrest of terrestrial
 laccoliths.
 
@@ -1396,29 +1395,30 @@ Indeed,  in reality,  one  may expect  that the  flow  rate, which  is
 considered constant in this model, wanes as the deep magma source gets
 exhausted \citep{Taisne:2009va,Rivalta:2010em}.  In  this case, only a
 fixed volume of  magma is available, which may control  the final size
-of the magmatic intrusion.  Even for  small volume of magma, the small
-Peclet number  of shallow  magmatic intrusion  should ensure  that the
-intrusion reaches the third bending regime before solidification.
+of the magmatic intrusion.
 
 \citet{Michaut:2011kg} also suggests  that the weight of  the magma at
 the center might compensate the  initial overpressure $\Delta P$; when
 $\Delta P/(\rho_m  g H)=h_0$ the  flow is thick enough  to accommodate
 the  overpressure below  and enters  a regime  of lateral  propagation
-\citep{Michaut:2011kg}. The associate pressure  drop combined with the
-cooling could be enough to  prevent lateral spreading.  For the larger
-overpressure $\Delta  P$ and  the typical  parameters listed  in Table
-\ref{C4-tab},  this would  happen  when $h_0\sim  200$,  which can  be
-reached for $\nu<10^{-6}$ in the third bending regime.
+\citep{Michaut:2011kg}. The associated pressure drop combined with the
+cooling could be enough to  prevent lateral spreading and solidify the
+laccolith.  For  the smaller overpressure  $\Delta P$ and  the typical
+parameters  listed  in  Table  \ref{C4-tab}, this  would  happen  when
+$h_0\sim 200$,  which can  be reached for  $\nu<10^{-6}$ in  the third
+bending regime.
 
-Meanwhile,  the  intrusion  could   be  fed  by  multiples  injections
-separated by sufficiently  short rest periods such that  a melted zone
-still  exists at  the  center of  the flow  as  suggested by  numerous
-shallow    intermediate    scale    intrusion    geological    studies
-\citep{Habert:2004wg,Horsman:2005ct,Morgan:2008hj,Roni:2014gt}.     In
-that  case, the  tip of  the intrusion  would likely  be ``cold''  for
+Alternatively, the intrusion could also  grow by the mean of multiple,
+yet  quickly  coalescing  pulses,  i.e. several  bursts  separated  by
+sufficiently short rest periods such that a melted cored is maintained
+at the  center of  the flow.   This is  suggested by  numerous shallow
+intermediate       scale       intrusion      geological       studies
+\citep{Habert:2004wg,Horsman:2005ct,Morgan:2008hj,Leuthold:2012gja,Roni:2014gt}.
+In that  case, the tip of  the intrusion would likely  be ``cold'' for
 subsequent injections.   Hence, the final laccolith  morphology, while
-following the ``cold'' viscosity scaling law, would exhibit a somewhat
-random position on this scaling law depending on its feeding history.
+following  the ``cold''  viscosity  scaling  law (\ref{C4-Hr}),  would
+exhibit a  somewhat random position  on this scaling law  depending on
+its feeding history.
 
 
 \subsection{Large mafic sills}
@@ -1437,24 +1437,39 @@ different sills to be constant imposes that
 \end{equation}
 where $h_0$ is the sill  thickness with dimension, $Q_0$ its injection
 rate  and  $h_0^{\text{ref}}$  and  $Q_0^{\text{ref}}$  are  reference
-values for these  parameters.  Taking the thickest sill  as a reference
+values for these parameters.  Taking  the thickest sill as a reference
 with $Q_0^{\text{ref}} =  10^4$ m$^3$ s$^{-1}$, we find  that in order
 to collapse all  the data on a constant thickness,  the injection rate
 have  to  vary by  at  least  $7$  orders  of magnitudes,  i.e.   from
 $Q_0=10^{-3}$ to $Q_0= 10^{4}$ m$^3$  s$^{-1}$. It is much larger than
 the expected range  of variations for this parameter  and hence, these
 mafic  sills do  not appear  to  have all  stop in  the third  gravity
-regime. Another possible explanation is  that fracturation at the tip,
-instead  of  cooling, have  triggered  the  arrest of  these  magmatic
-intrusions in the second gravity phase.  Indeed, while fracturation is
-not sufficient to stop a magmatic  intrusion in the bending regime, it
+regime.
+
+Another possible explanation is that  fracturation at the tip, instead
+of cooling, have triggered the  arrest of these magmatic intrusions in
+the  second   gravity  phase.   Indeed,  while   fracturation  is  not
+sufficient  to stop  a magmatic  intrusion in  the bending  regime, it
 might   be  responsible   for  the   arrest  of   large  mafic   sills
 \citep{Michaut:2011kg}.  The increasing  thickness with diameter would
 thus be consistent with the  thickness increase induced by the cooling
-of the  sill in the  second gravity phase.  However,  more information
-about the intrusion  depth and the relationship  between the different
-sill  units,  which  are  not given  by  \citet{Cruden:tg},  would  be
-required to precisely test this hypothesis.
+of the sill in the second gravity phase.
+
+Alternatively, the  solidification of the  sill in the  second gravity
+regime could follow  the decline of the injection rate  before it gets
+to the third gravity regime.  Indeed, maintaining a constant injection
+over the  period required to reach  the third gravity phase,  which is
+enhanced by the insulation of the wall rock, might be unrealistic. For
+instance,  even  for constant  injection  rate  of $Q_0\sim  1$  m$^3$
+s$^{-1}$ and  typical parameters for a  mafic sill, the time  to reach
+the third gravity regime $t_{g3}$ is close to $10$ k.y.
+
+In both  cases, the slope  of $h_0(R)$ exhibits  by the data  could be
+linked to  the slope shown  by the  simulations in the  second gravity
+regime. However,  more information about  the intrusion depth  and the
+relationship between the different sill  units, which are not given by
+\citet{Cruden:tg},   would  be   required  to   precisely  test   this
+hypothesis.
 
 \subsection{Contact aureole}
 \label{sec:thermal-aureol}
@@ -1574,8 +1589,12 @@ the flow effective  viscosity rapidly increases to  stabilize when the
 front  becomes entirely  ``cold''.  Nevertheless,  the formation  of a
 highly viscous  region at  the front of  the intrusion,  and therefore
 cooling, is  probably not  responsible for  the arrest  of terrestrial
-laccoliths.  Alternatively, we propose that  the injection rate is the
-limiting  factor in  the growth  of these  magmatic intrusions  in the
+laccoliths. Instead of  a rigid plug arresting the  intrusion, the tip
+region might better  represent a crystal mushy  region controlling the
+expansion of the flow.  The viscosity $\eta_c$ in the model would thus
+represent the effective  viscosity of the mushy layer at  the front of
+the intrusion.  Alternatively,  we propose that the  injection rate is
+the limiting factor in the growth  of these magmatic intrusions in the
 third bending phase.
 
 Available data for large mafic sills on Earth show less agreement with
@@ -1586,16 +1605,10 @@ thickness should tend  to a constant.  The increase  in thickness with
 diameter recorded  in the  data might thus  suggest that  they instead
 stop in the second gravity phase.
 
-
-However, the  model lacking of a  stopping criterion for the  flow, we
-were not able to test this hypothesis.
-
-should gather more  More detailed observations, especially  at the tip
-of these shallow magmatic intrusions,  may provide further insights in
-the  arrest  mechanism.  Precise  information  on  the extent  of  the
-thermal aureole,  which has not  yet been reported in  the literature,
-could also provide precious constrain  for the model.  We discuss some
-possible extensions of this work in the last part of this manuscript.
+In the  end, while the  cooling appears  as an important  mechanism to
+understand the morphology of shallow  magmatic intrusion, it might not
+be responsible for their arrest.   We discuss some possible extensions
+of this work in the last part of this manuscript.
 
 
 %%% Local Variables:

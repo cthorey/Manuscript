@@ -11,5 +11,8 @@
     "sec:summary-1"
     "sec:perspectives-2"
     "sec:crust-magm-intr"
-    "C7-FFCOther")))
+    "C7-FFCOther"
+    "sec:cool-shall-intr"
+    "sec:floor-fract-crat"
+    "sec:deep-larg-intr")))
 

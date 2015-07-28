@@ -24,51 +24,51 @@ grid  $h_i$ and  $\xi_i$ and  the secondary  variables $\Theta_{b,i}$,
 $\Theta_{s,i}$ and $\delta_i$. Both equations  can be expressed on the
 convenient form
 \begin{equation}
-  \frac{\partial u}{\partial t} - f = 0,
+  \frac{\partial \psi}{\partial t} - f = 0,
 \end{equation}
-where $u$  is the function we  want to integrate and  $f$ a non-linear
-function  that depends  on $u$.   We  solve these  equations by  first
+where $\psi$  is the function we  want to integrate and  $f$ a non-linear
+function  that depends  on $\psi$.   We  solve these  equations by  first
 discretizing all the spatial  derivatives using Finite Difference. The
 accuracy of the  scheme is determined by the  higher order derivatives
 since  their numerical  approximation requires  the largest  number of
 sample points.  We  then get two systems of  $M$ ordinary differential
 equations with the form
 \begin{equation}
-  \frac{\partial u_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M.
+  \frac{\partial \psi_i}{\partial t} - f_i = 0 \hspace{1cm} i = 1,...,M.
 \end{equation}
 The time derivatives are first  order and, since explicit schemes tend
 to be  very sensitive and unstable,  we use a fully  implicit backward
 Euler scheme to get
 \begin{equation}
-  \frac{u_i^{n+1}-u_i^n}{\Delta t} - f_i(u_i^{n+1}) = 0 \hspace{1cm} i
+  \frac{\psi_i^{n+1}-\psi_i^n}{\Delta t} - f_i(\psi_i^{n+1}) = 0 \hspace{1cm} i
   = 1,...,M.
   \label{C4-Num-1}
 \end{equation}
-Since  $f_i(u_i^{n+1})$ is  not a  linear function,  the system  above
-cannot be re-arranged to solve $u_i^{n+1}$ in term of $u_i^{n}$ and an
+Since  $f_i(\psi_i^{n+1})$ is  not a  linear function,  the system  above
+cannot be re-arranged to solve $\psi_i^{n+1}$ in term of $\psi_i^{n}$ and an
 iterative method  has to  be employed  instead. Fixed  point iteration
 method have shown  poor results in converging toward  the solution and
 we finally apply  second order Newton's method to  obtain the solution
-at each time step.  In particular, we first linearize $u^{n+1}$ around
-a guess  of the solution  by assuming $u^{n+1}=u^*+\delta  u^n$, where
-$u^*$ is a  guess, $\delta u^n$ is  the error and we drop  the $i$ for
+at each time step.  In particular, we first linearize $\psi^{n+1}$ around
+a guess  of the solution  by assuming $\psi^{n+1}=\psi^*+\delta  \psi^n$, where
+$\psi^*$ is a  guess, $\delta \psi^n$ is  the error and we drop  the $i$ for
 clarity.   Then, we  expressed the  non-linear part  using a  Taylor's
 expansion
 \begin{equation}
-  f^{n+1}=f(u^{n+1})=f(u^*+\delta
-  u^n)=f(u^*)+J^u_{f}(u^*)\delta u^n,
+  f^{n+1}=f(\psi^{n+1})=f(\psi^*+\delta
+  \psi^n)=f(\psi^*)+J^\psi_{f}(\psi^*)\delta \psi^n,
   \label{C4-Fn1}
 \end{equation}
-where  $J^u_{f}(u^*)$ is  the  Jacobian matrix  for  the function  $f$
-evaluated  in $u^*$.   Injecting (\ref{C4-Fn1})  into (\ref{C4-Num-1})
+where  $J^\psi_{f}(\psi^*)$ is  the  Jacobian matrix  for  the function  $f$
+evaluated  in $\psi^*$.   Injecting (\ref{C4-Fn1})  into (\ref{C4-Num-1})
 finally gives a  system of M linear equations for  the correction term
-$\delta u^n$ which can be expressed as
+$\delta \psi^n$ which can be expressed as
 \begin{equation}
-  (I-\Delta tJ^u_{f}(u^*))\delta u^n=u^n-u^*+\Delta t f(u^*),
+  (I-\Delta tJ^\psi_{f}(\psi^*))\delta \psi^n=\psi^n-\psi^*+\Delta t f(\psi^*),
 \end{equation}
 where $I$ is the identity matrix. Therefore, each iteration solves for
-$\delta u^n$ and we use $u_n+\delta u^n$  as a new guess $u^*$ in each
-iteration. This  is repeated  until $\delta u^n$  becomes sufficiently
+$\delta \psi^n$ and we use $\psi_n+\delta \psi^n$  as a new guess $\psi^*$ in each
+iteration. This  is repeated  until $\delta \psi^n$  becomes sufficiently
 small.  Finally,  since the equations (\ref{C4-HF})  and (\ref{C4-TF})
 are coupled, we use a  fixed-point iteration method to converge toward
 the solution $(h,\xi)$  at each time step.  In the  end, the algorithm
@@ -82,7 +82,11 @@ is the following at each time step
 \item Repeat  step one until  further iterations cease to  produce any
   significant changes in the values of both $h^{n+1}$ and $\xi^{n+1}$.
 \end{itemize}
-The computational scheme is summarized in the following.
+Unless otherwise  specified, we use  $D_r= 0.01$ and  $D_t=10^{-6}$ in
+the  simulations.  The  time  step  could appear  very  small but  the
+stiffness of  the equations required  such low value at  the beginning
+when  $\nu  < 1$.   The  computational  scheme  is summarized  in  the
+following.
 
 \subsection{Thickness equation}
 
@@ -95,7 +99,7 @@ with
   f& =& \frac{1}{r}
         \frac{\partial}{\partial      r}
         \left(      r  \phi\left(     \frac{\partial      }{\partial
-        r}\left(h+P\right)\right)\right)+w_i,\\
+        r}\left(h+P_e\right)\right)\right)+w_i,\\
   \phi &=& 12I_1(h),
 \end{eqnarray}
 and where $P$ is the dimensionless bending pressure $P = \nabla^4h$.

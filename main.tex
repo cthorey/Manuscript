@@ -1,17 +1,22 @@
 \documentclass[a4paper,12pt,twoside]{ThesisStyle}
 
-\usepackage{graphicx}      \usepackage{array}     \usepackage{amsmath}
-\usepackage{pdfpages} \usepackage{natbib}
-% \usepackage[sectionbib]{chapterbib}
-\DeclareMathOperator\erf{erf}              \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc} \usepackage{ textcomp }
+\usepackage{graphicx} 
+\usepackage{array} 
+\usepackage{amsmath}
+\usepackage{pdfpages} 
+\usepackage{natbib}
+\DeclareMathOperator\erf{erf} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{ textcomp }
 \usepackage{ amssymb }
 \usepackage{lscape}
+\usepackage{ gensymb }
 
 \include{formatAndDefs}
 
-
-\usepackage{makeidx} \makeindex
+\usepackage{makeidx} 
+\makeindex
 
 \begin{document}
 
@@ -20,23 +25,19 @@
 \dominitoc
 \setcounter{tocdepth}{2}
 
-\pagenumbering{roman}
-
 \cleardoublepage
 
 \input{Remerciement}
 
 \cleardoublepage
 
+
+\include{abstract_en}
+\include{abstract_fr}
+
 \tableofcontents
 
 \mainmatter
-
-\setcounter{chapter}{-1}
-\addtocontents{minitoc}{\setcounter{tocdepth}{-1}}
-\pagestyle{empty}
-\include{traduction}
-
 \part{Dynamique des magmas à faible profondeur}
 
 \pagestyle{fancy}
@@ -46,17 +47,16 @@
 
 \part{Evolution   thermique  des   intrusions  magmatiques   à  faible
   profondeur}
-
+\include{Part2_Intro}
 \include{Chapter/Chapter3}
 \include{Chapter/Chapter4}
 
 \part{Cratères à sol fracturé: Témoins du magmatisme intrusif lunaire}
-
+\include{Part3_Intro}
 \include{Chapter/Chapter5}
 \include{Chapter/Chapter6}
 
-
-\part{Summary and perspectives}
+\part{Summary and outlook of the thesis}
 \include{Chapter/Chapter7}
 
 
@@ -68,12 +68,11 @@
 \include{Appendix/Appendix4}
 \include{Appendix/Appendix5}
 
-% \include{Notations}
-% \printnomenclature
+\include{Notations}
+\printnomenclature
 
 \bibliographystyle{agufull08}
 \bibliography{/Users/thorey/Dropbox/Library}
-
 
 \end{document}
 

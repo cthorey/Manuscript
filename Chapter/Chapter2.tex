@@ -30,7 +30,7 @@ the manuscript.
 
 The model considers an isoviscous elastic-plated gravity current, i.e.
 an  isoviscous  fluid  of  viscosity  $\eta_h$  and  density  $\rho_m$
-spreading beneath a thin elastic sheet  of thickness $d_c$ and above a
+spreading beneath a thin elastic sheet  of thickness $d_0$ and above a
 semi infinite rigid layer \citep{Michaut:2011kg,Bunger:2011cb} (Figure
 \ref{C2-Sketch}).  The fluid is injected  continuously at the base and
 center of the current at a rate $Q_0$ through a cylindrical conduit of
@@ -63,13 +63,13 @@ acceleration due to gravity and  $P(r,z,t)$ is the pressure within the
 fluid.   Integration  of  (\ref{C2-Npressure}) thus  gives  the  total
 pressure  $P(r,z,t)$ within  the flow.   When the  vertical deflection
 $h(r,t)$ of the upper elastic layer is small compared to its thickness
-$d_c$, i.e $h\lld_c$, we can neglect stretching of the upper layer and
+$d_0$, i.e $h\lld_0$, we can neglect stretching of the upper layer and
 only  consider  bending  stresses.    Therefore,  the  total  pressure
 $P(r,z,t)$  at  a level  $z$  in  the intrusion  is  the  sum of  four
 contributions: the  weight of the  magma and  of the upper  layer, the
-bending pressure $P_b$ and the atmospheric pressure $P_0$
+bending pressure $P_e$ and the atmospheric pressure $P_0$
 \begin{equation}
-  P = \rho_m g (h-z)+\rho_rgd_c+P_b+P_0,
+  P = \rho_m g (h-z)+\rho_rg d_0+P_e+P_0,
   \label{C2-pression}
 \end{equation}
 where $h(r,t)$ is the intrusion  thickness and $\rho_r$ the density of
@@ -77,12 +77,12 @@ the surrounding rocks. The bending pressure  is given by the force per
 unit area  that is necessary  for a  vertical displacement $h$  of the
 thin elastic plate \citep{Turcotte:1982ca}
 \begin{equation}
-  P_d = D\nabla_r^4h,
+  P_e = D_r\nabla_r^4h,
 \end{equation}
-where $D$  is the flexural  rigidity of  the thin elastic  layer, that
+where $D_r$  is the flexural  rigidity of  the thin elastic  layer, that
 depends on the Young's modulus $E$, Poisson's ratio $\nu^*$ and on the
-elastic           layer          thickness           $d_c$          as
-$D = Ed_c^3/\left(12(1-\nu^*^2)\right)$.
+elastic           layer          thickness           $d_0$          as
+$D_r = Ed_0^3/\left(12(1-\nu^*^2)\right)$.
 
 \vspace{.5cm} \textbf{Velocity field} \vspace{.5cm}
 
@@ -144,7 +144,7 @@ equation for the evolution of the thickness in time and space reads
 \begin{equation}
   \frac{\partial h}{\partial t} =\frac{\rho_mg}{12 \eta_h r}
   \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
-      r}\right)+\frac{D}{12\eta_h r} \left( rh^3 \frac{\partial}{\partial r}\nabla_r^4h\right)+
+      r}\right)+\frac{D_r}{12\eta_h r} \left( rh^3 \frac{\partial}{\partial r}\nabla_r^4h\right)+
   w_i .\label{C2-Heq}
 \end{equation}
 It is  composed of three different  terms on the right  hand side. The
@@ -160,7 +160,7 @@ positive.
 Equation (\ref{C2-Heq}) is nondimensionalized using a horizontal scale
 $\Lambda$, a vertical scale $H$ and a time scale $\tau$ given by
 \begin{eqnarray}
-  \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4},\label{C2-L1}\\
+  \Lambda &=& \left(\frac{D_r}{\rho_m g}\right)^{1/4},\label{C2-L1}\\
   H&=&\left       (\frac{12\eta_h      Q_{0}}{\rho_{m}g       \pi}\right      )
        ^{\frac{1}{4}} ,\label{C2-H1}\\
   \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}},\label{C2-T1}
@@ -450,13 +450,13 @@ depth, when absent from the catalog.
       $Q_0  =10$ m$^3$  s$^{-1}$  and $\eta_h=10^6$  Pa  s for  felsic
       laccoliths  and  $\rho_m=2900$  kg  m$^{-3}$,  $Q_0  =10$  m$^3$
       s$^{-1}$ and $\eta_h=10^2$  Pa s for large  mafic sills.  Unless
-      the intrusion depth  is given by the dataset,  we use $d_c=1500$
+      the intrusion depth is given by the dataset, we use $d_0=1500$
       m.  $g=9.81$  m s$^{-2}$.  c)  and d),  same plots but  where we
       compared the  laccoliths from \citet{Rocchi:2002jy} to  a set of
       low-slope  lunar domes  given  by \citet{Wohler:2009jj}.   Lunar
       domes   are  nondimensionalized   using  $g=1.62$   m  s$^{-2}$,
       $\rho_m=2900$ kg m$^{-3}$, $Q_0  =10$ m$^3$ s$^{-1}$, $\eta_h=1$
-      Pa s  and $d_c$, which  is not given in  the dataset, is  set to
+      Pa s  and $d_0$, which  is not given in  the dataset, is  set to
       $1500$ m. Purple dots  correspond to morphology reevaluated with
       the  LOLA  instrument topography  and  crosses  to the  original
       data. In all cases, the Poisson's ratio is $\nu^*=0.25$.}
@@ -505,7 +505,7 @@ laccoliths and $\sim0.1$ and $1$ m for large mafic sills.
     Parameters& Symbol & Earth & Moon&Unit\\
     \hline
               &&&&\\
-    Depth of intrusion & $d_c$ & $0.2-2.7$ &$0.5-1.5$ &km \\
+    Depth of intrusion & $d_0$ & $0.2-2.7$ &$0.5-1.5$ &km \\
     Young's Modulus & $E$ & $10$ &$10$ &GPa \\
     Poisson's ratio & $\nu^*$ & $0.25$ &$0.25$ &\\
     Gravity & $g$ & $9.81$ &$1.62$&m s$^{-2}$ \\
@@ -547,7 +547,7 @@ characteristic  length   scale  $\Lambda$,  which  depends   upon  the
 intrusion depth, and  its characteristic height scale,  which is taken
 as either $H=6$  m for felsic laccoliths or $H=0.6$  m for large mafic
 sills (Figure \ref{C2-Corry_Rocchie}). When the intrusion depth is not
-provided, we  use $d_c=1.5$  km.  First,  the dimensionless  radius of
+provided, we  use $d_0=1.5$  km.  First,  the dimensionless  radius of
 laccoliths at Elba Island and  most of those from \citet{E:2015tl} are
 smaller than $4$  consistent with their arrest in  the bending regime.
 The prediction of  the model for the evolution of  the thickness $h_0$
@@ -603,7 +603,7 @@ Half of the  large mafic sills show dimensionless  radius smaller than
 $R=4$, not consistent with their  arrest in the gravity current regime
 (Figure \ref{C2-Corry_Rocchie}).   It might  suggest that  these mafic
 sills  have  intruded shallower  into  the  crust; for  instance,  for
-$d_c=250$ m,  the characteristic  length scale for  the mafic  sill is
+$d_0=250$ m,  the characteristic  length scale for  the mafic  sill is
 smaller   $\Lambda=800$  m   and   $95\%$  of   the  population   show
 dimensionless   radius   larger   than   $4$.    Nevertheless,   their
 dimensionless  thickness, which  should tend  to a  constant of  order
@@ -643,10 +643,10 @@ lunar maria by  the Apollo missions, the lunar magmas  are more likely
 to be mafic in composition and we  use $\rho_m = 2900$ kg m$^{-3}$ for
 the  lava  density.    Intrusion  depths,  which  are   not  given  by
 \citet{Wohler:2009jj}, should vary  between $500$ m and $5$  km and in
-the following, we set $d_c=1.5$ km for all the lunar domes. Therefore,
+the following, we set $d_0=1.5$ km for all the lunar domes. Therefore,
 on the Moon, the larger lava  density and the smaller gravity leads to
 length scale $1.5$ times larger  than terrestrial ones.  For instance,
-using $E=10$ GPa  and $d_c = 1.5$ km, the  characteristic length scale
+using $E=10$ GPa  and $d_0 = 1.5$ km, the  characteristic length scale
 for a lunar  intrusion is $\sim 5$  km and $3.3$ km  for a terrestrial
 laccolith.
 
@@ -703,7 +703,7 @@ The  stress intensity  factor  $K_I$ for  a mode  $I$  fracture and  a
 uniformly loaded  crack situated close  to a boundary  (i.e., $d\llR$)
 can be approximated by \citep{Dyskin:2000iz,Bunger:2005ee}
 \begin{equation}
-  K_I = K_M M_0 d_c^{-3/2},
+  K_I = K_M M_0 d_0^{-3/2},
   \label{C2-KC}
 \end{equation}
 where $K_M = 1.932$  is a constant and $M_0$ is  the bending moment at
@@ -780,7 +780,7 @@ explanation for  the observed laccolith morphology.   In addition, the
 model is also  consistent with a two-stage growth  process; first, the
 lateral  growth   of  a  sill   and  then,  when  the   conditions  of
 applicability   for   the   model   are   met,   i.e.    $R>h_0$   and
-$R  \gtrsim  d_c$,  spreading   and  thickening  occur  simultaneously
+$R  \gtrsim  d_0$,  spreading   and  thickening  occur  simultaneously
 \citep{Michaut:2011kg}. Finally, the model  shows promising results in
 explaining the discrepancy between terrestrial laccolith and low-slope
 lunar domes  on the  Moon.  Therefore,  it can be  used to  assess the
@@ -806,7 +806,7 @@ In this  manuscript, we  propose to  explore two  important mechanisms
 that have  been neglected until  now and will certainly  influence the
 emplacement of shallow magmatic intrusions in the crust of terrestrial
 planets: the effect a temperature-dependent rheology for the magma and
-the effect of an overburden characterized by a non-constant tehickness.
+the effect of an overburden characterized by a non-constant thickness.
 
 The former has already shown important implications for the cooling of
 lava                                                             domes

@@ -7,26 +7,26 @@ The  stress conditions  within the  crater floor  can be  approximated
 using the small displacement theory.  In an axisymmetric geometry, the
 small strain-displacement equations at the surface are
 \begin{eqnarray}
-  \epsilon_{rr}&=&\frac{\partial u_{r}}{\partial r}=-\frac{T_{e}(r)}{2}\frac{\partial^{2} h}{\partial r^{2}},\\
-  \epsilon_{\theta\theta}&=&\frac{u_{r}}{r}=-\frac{T_{e}(r)}{2r}\frac{\partial h}{\partial r} .
+  \epsilon_{rr}&=&\frac{\partial u_{r}}{\partial r}=-\frac{d(r)}{2}\frac{\partial^{2} h}{\partial r^{2}},\\
+  \epsilon_{\theta\theta}&=&\frac{u_{r}}{r}=-\frac{d(r)}{2r}\frac{\partial h}{\partial r} .
 \end{eqnarray}
 Hence, the stress conditions at the  surface are given by Hooke's laws
 for a material under plane stress
 \begin{eqnarray}
-  \sigma_{rr}&=&-\frac{E T_{e}(r)}{2(1-\nu^2)}\left (\frac{\partial^{2} h}{\partial r^{2}} +\frac{\nu}{r}\frac{\partial h}{\partial r} \right),\\
-  \sigma_{\theta\theta}&=&-\frac{E T_{e}(r)}{2(1-\nu^2)}\left (\frac{1}{r}\frac{\partial h}{\partial r}+\nu \frac{\partial^{2}h}{\partial r^2}\right).
+  \sigma_{rr}&=&-\frac{E d(r)}{2(1-\nu^*^2)}\left (\frac{\partial^{2} h}{\partial r^{2}} +\frac{\nu^*}{r}\frac{\partial h}{\partial r} \right),\\
+  \sigma_{\theta\theta}&=&-\frac{E d(r)}{2(1-\nu^*^2)}\left (\frac{1}{r}\frac{\partial h}{\partial r}+\nu^* \frac{\partial^{2}h}{\partial r^2}\right).
 \end{eqnarray}
 These equations  are made dimensionless  using the scaling  of Section
 3.5 where the pressure scale is $\rho_m g H$. Dimensionless radial and
 tangential stresses become
 \begin{eqnarray}
-  \sigma_{rr}&=&- \Theta \Phi \left(1+\Psi \xi(r)\right) \left ( \frac{\partial^{2} h}{\partial r^{2}} +\frac{\nu}{r}\frac{\partial h}{\partial r} \right) ,\\
-  \sigma_{\theta\theta}&=&- \Theta \Phi \left(1+\Psi \xi(r)\right) \left (\frac{1}{r}\frac{\partial h}{\partial r}+\nu \frac{\partial^{2}h}{\partial r^2}\right),
+  \sigma_{rr}&=&- \Theta \Phi \left(1+\Psi \xi(r)\right) \left ( \frac{\partial^{2} h}{\partial r^{2}} +\frac{\nu^*}{r}\frac{\partial h}{\partial r} \right) ,\\
+  \sigma_{\theta\theta}&=&- \Theta \Phi \left(1+\Psi \xi(r)\right) \left (\frac{1}{r}\frac{\partial h}{\partial r}+\nu^* \frac{\partial^{2}h}{\partial r^2}\right),
 \end{eqnarray}
 where  $\xi(r)$  is   given  by  (\ref{C5-eqqqq})  and   $\Phi$  is  a
 dimensionless number given by
 \begin{equation}
-  \Phi= \frac{6 }{(1-\nu^2)}\left( \frac{C}{T_{e}^0} \right)^{2}.
+  \Phi= \frac{6 }{(1-\nu^*^2)}\left( \frac{C}{d_0} \right)^{2}.
 \end{equation}
 The locations  of the  maximum stresses, where  the fractures  are the
 most  likely  to  initiate,  depend on  the  number  $\Theta$  (Figure
@@ -75,7 +75,7 @@ central peak height is one third of  the crater depth and its width is
 one  fourth  of the  crater  size  by  introducing an  extra  gaussian
 function into the elastic thickness expression:
 \begin{equation}
-  T_e(r)=T_e^0(1+\Psi(\xi(r)+C_p(r))),
+  d(r)=d_0(1+\Psi(\xi(r)+C_p(r))),
 \end{equation}
 with
 \begin{equation}
@@ -124,9 +124,9 @@ with   the   convex  floor   during   crater   floor  uplift   (Figure
       i.e. $\Theta=0$ and $\zeta=0.13$. For each time, a corresponding
       3D  graph, showing  the  dimensionless  crater floor  appearance
       given        by         $T_p(r)+h(r)$        where,        here,
-      $T_p(r)=\Xi  \Omega(\xi(r)+C_p(r))$,  is represented.  For  each
+      $T_p(r)=\Xi  N(\xi(r)+C_p(r))$,  is represented.  For  each
       plot,      the       initial      topography       given      by
-      $T_p(r)=\Xi  \Omega(\xi(r)+C_p(r))$   is  superimposed   in  low
+      $T_p(r)=\Xi  N(\xi(r)+C_p(r))$   is  superimposed   in  low
       opacity.  \textbf{b)} Same  plot  but for  an overlying  elastic
       layer such that $\Theta=10^{-5}$.  \textbf{c)} Same plot but for
       an elastic  overlying layer such that  $\Theta=10^{-2}$. Here we

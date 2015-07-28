@@ -102,7 +102,7 @@ phases of propagation that we characterize by different scaling laws.
 \label{C3-sec:formulation}
 
 We model  the axisymmetric  flow of  fluid below  an elastic  layer of
-constant thickness $d_c$ and above a semi infinite rigid layer (Figure
+constant thickness $d_0$ and above a semi infinite rigid layer (Figure
 \ref{C3-Figure2-1}).  The  assumption that the thickness  of the fluid
 $h(r,t)$ tends to zero at the  contact line leads to divergent viscous
 stresses   and  to   the   theoretical  immobility   of  the   current
@@ -121,7 +121,7 @@ fluid is bounded by a medium with infinite thermal conductivity.
 %% FIGURE 2-1
 \begin{figure}[h!]
   \begin{center}
-    \graphicspath{ {/Users/thorey/Documents/These/Projet/Refroidissement/Skin_Model/Figure/JFM_V13/} }
+    \graphicspath{ {/Users/thorey/Documents/These/Manuscript/Figure/Chapter3/} }
     \includegraphics[scale=0.28]{ModelGeometry.eps}
     \caption{Model  geometry and  parameters.  The  vertical scale  is
       exaggerated.}
@@ -161,19 +161,19 @@ $g$  the  standard acceleration  due  to  gravity and  $P(r,z,t)$  the
 pressure within the fluid.   Integration of (\ref{C3-Npressure}) gives
 the  total pressure  $P(r,z,t)$ within  the flow.   When the  vertical
 deflection $h(r,t)$  of the upper  elastic layer is small  compared to
-its thickness  $d_c$, i.e $h\lld_c$,  we can neglect stretching  of the
+its thickness  $d_0$, i.e $h\lld_0$,  we can neglect stretching  of the
 upper layer and only consider  bending stresses.  Therefore, the total
 pressure $P(r,z,t)$ at a level $z$ in  the current is the sum of three
 contributions: the weight of the magma  and of the upper layer and the
 bending pressure
 \begin{equation}
-  P = \rho_m g (h-z)+\rho_rgd_c+D\nabla_r^4h,
+  P = \rho_m g (h-z)+\rho_rgd_0+D_r\nabla_r^4h,
 \end{equation}
 where  $h(r,t)$ is  the flow  thickness, $\rho_r$  the density  of the
-surrounding rocks and $D$ is the flexural rigidity of the thin elastic
+surrounding rocks and $D_r$ is the flexural rigidity of the thin elastic
 layer, that  depends on Young's  modulus $E$, Poisson's  ratio $\nu^*$
-and     on     the     elastic    layer     thickness     $d_c$     as
-$D = Ed_c^3/\left(12(1-\nu^*)\right)$.
+and     on     the     elastic    layer     thickness     $d_0$     as
+$D_r = Ed_0^3/\left(12(1-\nu^*)\right)$.
 
 \subsection{Injection rate}
 
@@ -364,7 +364,7 @@ Finally,  injecting (\ref{C3-deriv})  into  (\ref{C3-Mass}) gives  the
 equation for the flow thickness evolution in axisymmetric coordinates
 \begin{eqnarray}
   \frac{\partial h}{\partial t} &=& \frac{1}{r}
-  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D\frac{\partial}{\partial      r}\left(\nabla_r^4h\right)\right)\left(\int_0^h\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)ydy\right)\right)\nonumber\\
+  \frac{\partial}{\partial r} \left( r\left(\rho_m g \frac{\partial h}{\partial      r}+D_r\frac{\partial}{\partial      r}\left(\nabla_r^4h\right)\right)\left(\int_0^h\frac{1}{\eta(y)}\left(y-\frac{h}{2}\right)ydy\right)\right)\nonumber\\
   &&+ w_i.
   \label{C3-Mass-2}
 \end{eqnarray}
@@ -391,7 +391,7 @@ We use the characteristic temperature interval $\Delta T = T_i-T_0$ to
 nondimensionalize  temperatures.  The  dimensionless integral  balance
 approximation (\ref{C3-Temperature}) becomes
 \begin{equation}
-  \theta(z)=
+  \theta=
   \begin{cases}
     \Theta_b\left(1 -(1-\frac{z}{\delta})^2\right)& 0 \le z\le \delta \\
     \Theta_b & \delta \le z\le h-\delta \\
@@ -406,7 +406,7 @@ $\Theta_b=\frac{T_b-T_0}{T_{i}-T_0}$.         Finally,       equations
 using a  horizontal scale $\Lambda$, a  vertical scale $H$ and  a time
 scale $\tau$ given by
 \begin{eqnarray}
-  \Lambda &=& \left(\frac{D}{\rho_m g}\right)^{1/4}\label{C3-L1},\\
+  \Lambda &=& \left(\frac{D_r}{\rho_m g}\right)^{1/4}\label{C3-L1},\\
   H&=&\left       (\frac{12\eta_h      Q_{0}}{\rho_{m}g       \pi}\right      )
        ^{1/4} \label{C3-H1},\\
   \tau&=&\frac{\pi \Lambda^{2} H}{Q_{0}}\label{C3-T1},
@@ -544,7 +544,7 @@ conduction in the surrounding medium.
 The  average velocity  over  a thermal  boundary layer  $\overline{u}$
 reads
 \begin{eqnarray}
-  \overline{u}        =\frac{1}{\delta}\int_0^{\delta}AD's        &=&
+  \overline{u}        =\frac{1}{\delta}\int_0^{\delta}u dz        &=&
                                                                      u(r,\delta,t) - \frac{1}{\delta}\int_0^{\delta}\frac{\partial
                                                                      u}{\partial
                                                                      z}
@@ -1243,7 +1243,7 @@ thermal  anomaly in  the  steady-state regime.   At  the steady  state
 radius $R_c$ of the thermal  anomaly, a balance between heat advection
 and diffusion in the surrounding medium in a dimensional form gives
 \begin{equation}
-  \rho C_p U_0 \frac{\Delta T}{R_c} \approx \frac{8 k \Delta T}{h_0^2},
+  \rho_m C_{p,m} U_0 \frac{\Delta T}{R_c} \approx \frac{8 k_m \Delta T}{h_0^2},
 \end{equation}
 where $\Delta T$ is a mean  temperature contrast between the fluid and
 the surroundings  and $U_0$ is  a mean  velocity of advection.   For a
@@ -1255,7 +1255,7 @@ redistribution of the injection rate at $r=R_c$, we write
 \end{equation}
 which gives
 \begin{equation}
-  R_c\approx\frac{1}{4}\sqrt{\frac{h_0 Q_0}{\pi \kappa}}.
+  R_c\approx\frac{1}{4}\sqrt{\frac{h_0 Q_0}{\pi \kappa_m}}.
   \label{C3-RcDimensionn}
 \end{equation}
 By   non-dimensionalizing  (\ref{C3-RcDimensionn}),   we  obtain   the
@@ -1386,7 +1386,7 @@ both delayed and respectively read
 \section{Different evolutions with bending and gravity}
 \label{C3-sec:diff-evol-with-1}
 
-For an isoviscous flow with $h_f\ll h \ll d_c$, in between the bending
+For an isoviscous flow with $h_f\ll h \ll d_0$, in between the bending
 and  gravity  regime,  \citet{Lister:2013ia}  also  describe  a  short
 intermediate regime where the peeling  by bending continues to control
 the  propagation but  where  the flow  shows  an interior  flat-topped

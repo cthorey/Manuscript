@@ -347,12 +347,11 @@
      \normalfont
      \Huge \bfseries #1\par}%
     \@endpart}
-\def\@endpart{\vfil\newpage
+\def\@endpart{\vfil
               \if@twoside
                \if@openright
                 \null
                 \thispagestyle{empty}%
-                \newpage
                \fi
               \fi
               \if@tempswa

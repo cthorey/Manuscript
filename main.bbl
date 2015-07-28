@@ -1,4 +1,4 @@
-\begin{thebibliography}{177}
+\begin{thebibliography}{188}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -36,6 +36,12 @@ Baker, D. M.~H., J.~W. Head, C.~I. Fassett, S.~J. Kadish, D.~E. Smith, M.~T.
 Balmforth, N.~J., and R.~V. Craster (2004), {Dynamics of cooling viscoplastic
   domes}, \textit{J. Fluid Mech.}
 
+\bibitem[{\textit{Bamberg et~al.}(2014)\textit{Bamberg, Jaumann, Asche,
+  Kneissl, and Michael}}]{Bamberg:2014hb}
+Bamberg, M., R.~Jaumann, H.~Asche, T.~Kneissl, and G.~G. Michael (2014),
+  {Floor-Fractured Craters on Mars {\textendash} Observations and Origin},
+  \textit{Planetary and Space Science}, \textit{98}(C), 146--162.
+
 \bibitem[{\textit{Barmin et~al.}(2002)\textit{Barmin, Melnik, and
   Sparks}}]{Barmin:2002ea}
 Barmin, A., O.~Melnik, and R.~Sparks (2002), {Periodic behavior in lava dome
@@ -66,6 +72,12 @@ Besserer, J., F.~Nimmo, M.~A. Wieczorek, R.~C. Weber, W.~S. Kiefer, P.~J.
   Owens}}]{Blatt:2ViMWPc0}
 Blatt, H., R.~J. Tracy, and B.~Owens (2006), {Petrology: igneous, sedimentary,
   and metamorphic}.
+
+\bibitem[{\textit{Bonaccorso}(2001)}]{Bonaccorso:2001iw}
+Bonaccorso, A. (2001), {Mt Etna volcano: modelling of ground deformation
+  patterns of recent eruptions and considerations on the associated
+  precursors}, \textit{Journal of Volcanology and Geothermal Research},
+  \textit{109}(1-3), 99--108.
 
 \bibitem[{\textit{Bray et~al.}(2008)\textit{Bray, Collins, Morgan, and
   Schenk}}]{Bray:2008fu}
@@ -108,6 +120,13 @@ B{\"u}ttner, R., B.~Zimanowski, J.~Blumm, and L.~Hagemann (1998), {Thermal
 Cameron, A., and W.~Benz (1991), {The origin of the Moon and the single impact
   hypothesis IV}, \textit{Icarus}, \textit{92}, 204--216.
 
+\bibitem[{\textit{Cannav{\`o} et~al.}(2015)\textit{Cannav{\`o}, Camacho,
+  Gonz{\'a}lez, Mattia, Puglisi, and Fern{\'a}ndez}}]{Cannavo:2015fk}
+Cannav{\`o}, F., A.~G. Camacho, P.~J. Gonz{\'a}lez, M.~Mattia, G.~Puglisi, and
+  J.~Fern{\'a}ndez (2015), {Real Time Tracking of Magmatic Intrusions by means
+  of Ground Deformation Modeling during Volcanic Crises}, \textit{Nature
+  Publishing Group}, pp. 1--10.
+
 \bibitem[{\textit{Canup}(2012)}]{Canup:2012cd}
 Canup, R.~M. (2012), {Forming a Moon with an Earth-like composition via a giant
   impact}, \textit{Science}, \textit{338}, 1052--1055.
@@ -126,6 +145,18 @@ Castro, J.~M., C.~I. Schipper, S.~P. Mueller, A.~S. Militzer, A.~Amigo, C.~S.
   Parejas, and D.~Jacob (2013), {Storage and eruption of near-liquidus rhyolite
   magma at Cord{\'o}n Caulle, Chile}, \textit{Bull Volcanol}, \textit{75}(4),
   1--17.
+
+\bibitem[{\textit{Cayol et~al.}(2014)\textit{Cayol, Catry, Michon, and
+  Chaput}}]{Cayol:2014vo}
+Cayol, V., T.~Catry, L.~Michon, and M.~Chaput (2014), {Sheared sheet intrusions
+  as mechanism for lateral flank displacement on basaltic volcanoes:
+  Applications to R{\'e}union Island volcanoes}, \textit{Journal of {\ldots}}.
+
+\bibitem[{\textit{Chadwick~Jr. and Dieterich}(1995)}]{ChadwickJr:1995cz}
+Chadwick~Jr., W.~W., and J.~H. Dieterich (1995), {Mechanical modeling of
+  circumferential and radial dike intrusion on Galapagos volcanoes},
+  \textit{Journal of Volcanology and Geothermal Research}, \textit{66}(1-4),
+  37--52.
 
 \bibitem[{\textit{Chevrel et~al.}(2013)\textit{Chevrel, Platz, Hauber,
   Baratoux, Lavall{\'e}e, and Dingwell}}]{Chevrel:2013jn}
@@ -509,6 +540,12 @@ Lejeune, A.~M., and P.~Richet (1995), {Rheology of crystal-bearing silicate
   melts: An experimental study at high viscosities}, \textit{Journal of
   Geophysical Research}, \textit{100}(B3), 4215--4229.
 
+\bibitem[{\textit{Leuthold et~al.}(2012)\textit{Leuthold, M{\"u}ntener,
+  Baumgartner, Putlitz, Ovtcharova, and Schaltegger}}]{Leuthold:2012gja}
+Leuthold, J., O.~M{\"u}ntener, L.~P. Baumgartner, B.~Putlitz, M.~Ovtcharova,
+  and U.~Schaltegger (2012), {Time resolved construction of a bimodal laccolith
+  (Torres del Paine, Patagonia)}, \textit{325-326}(C), 85--92.
+
 \bibitem[{\textit{Lister and Kerr}(1991)}]{Lister:1991ut}
 Lister, J.~R., and R.~C. Kerr (1991), {Fluid-mechanical models of crack
   propagation and their application to magma transport in dykes},
@@ -533,6 +570,12 @@ Maccaferri, F., M.~Bonafede, and E.~Rivalta (2011), {A quantitative study of
 Maccaferri, F., E.~Rivalta, D.~Keir, and V.~Acocella (2014), {Off-rift
   volcanism in rift zones determined by crustal unloading}, \textit{Nature
   Geosci}, \textit{7}(4), 297--300.
+
+\bibitem[{\textit{Macedonio et~al.}(2014)\textit{Macedonio, Giudicepietro,
+  D'Auria, and Martini}}]{Macedonio:2014et}
+Macedonio, G., F.~Giudicepietro, L.~D'Auria, and M.~Martini (2014), {Sill
+  intrusion as a source mechanism of unrest at volcanic calderas}, \textit{J.
+  Geophys. Res. Solid Earth}, \textit{119}(5), 3986--4000.
 
 \bibitem[{\textit{Marsh}(1981)}]{Marsh:1981dc}
 Marsh, B.~D. (1981), {On the crystallinity, probability of occurrence, and
@@ -619,8 +662,20 @@ O'Keefe, J.~D., and T.~J. Ahrens (1999), {Complex craters: Relationship of
   stratigraphy and rings to impact conditions}, \textit{J. Geophys. Res.},
   \textit{104}(11), 27,091--27,104.
 
+\bibitem[{\textit{Patan{\`e} et~al.}(2006)\textit{Patan{\`e}, Barberi, Cocina,
+  De~Gori, and Chiarabba}}]{Patane:2006hn}
+Patan{\`e}, D., G.~Barberi, O.~Cocina, P.~De~Gori, and C.~Chiarabba (2006),
+  {Time-Resolved Seismic Tomography Detects Magma Intrusions at Mount Etna},
+  \textit{Science}, \textit{313}(5788), 821--823.
+
 \bibitem[{\textit{Patankar}(1980)}]{Patankar:1980vu}
 Patankar, S. (1980), {Numerical heat transfer and fluid flow}.
+
+\bibitem[{\textit{Pedersen and Sigmundsson}(2004)}]{Pedersen:2004kp}
+Pedersen, R., and F.~Sigmundsson (2004), {InSAR based sill model links
+  spatially offset areas of deformation and seismicity for the 1994 unrest
+  episode at Eyjafjallaj{\"o}kull volcano, Iceland}, \textit{Geophys. Res.
+  Lett.}, \textit{31}(14), L14,610.
 
 \bibitem[{\textit{Petford et~al.}(1993)\textit{Petford, Kerr, and
   Lister}}]{Petford:1993bk}
@@ -729,6 +784,11 @@ Schultz, P.~H. (1976{\natexlab{b}}), {Moon morphology: Interpretations based on
   Lunar Orbiter photography}, \textit{Austin, University of Texas Press, 1976.
   641 p.}, \textit{-1}.
 
+\bibitem[{\textit{Schultz}(1977)}]{Schultz:1977ec}
+Schultz, P.~H. (1977), {Endogenic modification of impact craters on Mercury},
+  \textit{Physics of the Earth and Planetary Interiors}, \textit{15}(2-3),
+  202--219.
+
 \bibitem[{\textit{Schultz}(1978)}]{Schultz:1978tw}
 Schultz, P.~H. (1978), {Martian intrusions: Possible sites and implications},
   \textit{Geophys. Res. Lett.}
@@ -819,6 +879,12 @@ Taisne, B., S.~Tait, and C.~Jaupart (2011), {Conditions for the arrest of a
 Taylor, S.~R. (1982), {Lunar and terrestrial crusts: a constrast in origin and
   evolution}, \textit{Physics of the Earth and Planetary Interiors},
   \textit{29}(3-4), 233--241.
+
+\bibitem[{\textit{Thomson et~al.}(2009)\textit{Thomson, Grosfils, Bussey, and
+  Spudis}}]{Thomson:2009eo}
+Thomson, B.~J., E.~B. Grosfils, D.~B.~J. Bussey, and P.~D. Spudis (2009), {A
+  new technique for estimating the thickness of mare basalts in Imbrium Basin},
+  \textit{Geophys. Res. Lett.}, \textit{36}(12), L12,201--5.
 
 \bibitem[{\textit{Thorey and Michaut}(2014)}]{Thorey:2014cv}
 Thorey, C., and C.~Michaut (2014), {A model for the dynamics of crater-centered

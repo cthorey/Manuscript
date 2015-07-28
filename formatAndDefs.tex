@@ -26,20 +26,28 @@
 {%
     \ifthenelse{\equal{#1}{A}}
     {\vspace{2em}\item[]\hspace*{-\leftmargin}%
-    \hfill \textbf{Text abbreviations} \hfill \hbox{}}
+    \hfill \textbf{Text abbreviations} \hfill \hbox{}\vspace{1em}}
 {%
     \ifthenelse{\equal{#1}{B}}
     {\vspace{2em}\item[]\hspace*{-\leftmargin}%
-    \hfill \textbf{Part I - Variables and parameters} \hfill \hbox{}}
+    \hfill   \textbf{Elastic-plated   gravity   current:   Parameters,
+      variables and dimensionless numbers} \hfill \hbox{}\vspace{1em}}
 {%
     \ifthenelse{\equal{#1}{C}}
     {\vspace{2em}\item[]\hspace*{-\leftmargin}%
-    \hfill \textbf{Part II - Variables and parameters} \hfill \hbox{}}
-}
-}
-}
+    \hfill  \textbf{Crater   depression:  Parameters,   variables  and
+      dimensionless numbers} \hfill \hbox{}\vspace{1em}}
+{%
+    \ifthenelse{\equal{#1}{D}}
+    {\vspace{2em}\item[]\hspace*{-\leftmargin}%
+    \hfill \textbf{Gravitational signature: Parameters and variables } \hfill \hbox{}\vspace{1em}}
 
+}
+}
+}
+}
 \makenomenclature
+
 
 % My pdf code
 
@@ -217,3 +225,8 @@ urlcolor=linkcol %couleur des liens pour les url
 {\newpage\vspace*{\fill}\thispagestyle{empty}\renewcommand{\headrulewidth}{0pt}}
 {\vspace*{\fill}}
 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

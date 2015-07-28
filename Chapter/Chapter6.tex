@@ -4,7 +4,8 @@
 \textit{This chapter is a reproduction of the paper published in Earth
   and Planetary Science Letters (EPSL) untitled: \textbf{Gravitational
     signatures      of      lunar      floor-fractured      craters}}
-\citep{Thorey:2015hw}.
+\citep{Thorey:2015hw}.\textit{Only slight adjustments in the notation
+  have been made for the coherence in the whole manuscript}
 
 \minitoc
 
@@ -44,7 +45,7 @@
 \end{abstract}
 
 \section{Introduction}
-\label{sec:introduction}
+\label{C6-sec:introduction}
   
 There are a class of impact craters on the Moon that are distinguished
 by  having  uplifted  floors and  radially/concentric  floor-fractured
@@ -89,31 +90,31 @@ gravity anomalies for objects smaller  than about $100$ km in diameter
 \citep{Schultz:1976kt,Sjogren:1974ij}, which includes  about $88\%$ of
 the floor-fractured crater population.
 
-Data from  the NASA Gravity  Recovery and Interior  Laboratory (GRAIL)
-NASA mission  have provided a global  map of the Moon's  gravity field
-with  an  unprecedented resolution.   These  data  have been  used  to
-construct a  model of the  gravity field to spherical  harmonic degree
-and order  900, which corresponds  to a half-wavelength  resolution of
-$\sim 6$ km at the lunar surface \citep{Zuber:2013cp,Konopliv:2014gm}.
-These data,  used in  combination with  the topographic  data obtained
-from  the Lunar  Orbiter Laser  Altimeter (LOLA)  instrument allow  investigating mass anomalies located in the lunar crust.  In particular,
-these  data allow  resolving  small-scale density  variations in  the
-shallow crust \citep{Besserer:2014jr,Wieczorek:2013ipa}  and they have
-been     used     to     detect     ancient     igneous     intrusions
-\citep{AndrewsHanna:2013ft}.
+Data from the NASA's Gravity  Recovery and Interior Laboratory (GRAIL)
+mission have provided a global map of the Moon's gravity field with an
+unprecedented resolution.   These data have  been used to  construct a
+model of the gravity field to spherical harmonic degree and order 900,
+which corresponds  to a half-wavelength  resolution of $\sim 6$  km at
+the lunar  surface \citep{Zuber:2013cp,Konopliv:2014gm}.   These data,
+used in combination with the  topographic data obtained from the Lunar
+Orbiter  Laser Altimeter  (LOLA) instrument  allow investigating  mass
+anomalies located in the lunar crust.  In particular, these data allow
+resolving  small-scale   density  variations  in  the   shallow  crust
+\citep{Besserer:2014jr,Wieczorek:2013ipa} and  they have been  used to
+detect ancient igneous intrusions \citep{AndrewsHanna:2013ft}.
 
 In this paper,  after some theoretical considerations  on the expected
 gravitational   signal   at   floor-fractured   craters   in   section
-\ref{sec:theor-cons}, we use  GRAIL gravity to detect  the presence of
+\ref{C6-sec:theor-cons}, we use  GRAIL gravity to detect  the presence of
 magmatic  intrusions  at  floor-fractured   crater  sites  in  section
-\ref{sec:grav-sign-lunar}.  Then,  we develop  a method to  derive the
+\ref{C6-sec:grav-sign-lunar}.  Then,  we develop  a method to  derive the
 density   contrast   between   the   magma  and   crust   in   section
-\ref{sec:magm-intr-char}.  We  discuss its geological  implications in
-section     \ref{sec:discussion}    and     conclude    in     section
-\ref{sec:conclusion}.
+\ref{C6-sec:magm-intr-char}.  We  discuss its geological  implications in
+section     \ref{C6-sec:discussion}    and     conclude    in     section
+\ref{C6-sec:conclusion}.
 
 \section{Theoretical considerations}
-\label{sec:theor-cons}
+\label{C6-sec:theor-cons}
 
 The Bouguer  anomaly associated  with a  magmatic intrusion  beneath a
 crater depends upon the  intrusion characteristics, namely its density
@@ -125,91 +126,90 @@ we here  calculate and  discuss the  expected gravitational  signal at
 floor-fractured crater sites.
 
 \subsection{Constitutive equations}
-\label{sec:const-equat-1}
+\label{C6-sec:const-equat-1}
 
 In  our model,  the intrusion  is  fed at  a constant  rate through  a
 cylindrical conduit  located below  the center of  a crater  floor and
 spreads   horizontally   along   a    thin   bedding   plane   (Figure
-\ref{Figure2-1}).
+\ref{C6-Figure2-1}).
 %% FIGURE 1
 \begin{figure}[h!]
   \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
   \begin{center}
     \includegraphics[scale=0.60]{Figure_2-1.pdf}
     \caption{Model geometry and parameters.}
-    \label{Figure2-1}
+    \label{C6-Figure2-1}
   \end{center}
 \end{figure}
-The  magma makes  rooms for  itself by  lifting the  overlying assumed
+The  magma makes  room for  itself by  lifting the  overlying assumed
 elastic  layer, which  is characterized  by a  Young's modulus  $E$, a
-Poisson's ratio $\nu$ and an elastic thickness $T_e(r)$ given by
+Poisson's ratio $\nu^*$ and an elastic thickness $d(r)$ given by
 \begin{equation}
-  T_e(r)=T_e^0+d_c\xi(r)\hspace{.2cm}\text{, with }\hspace{.2cm} \xi(r)=\frac{1}{1+e^{-\frac{2\alpha(2r-D)}{D}}}-\frac{1}{1+e^{2\alpha}}\label{topo}\\
+  d(r)=d_0+d_c\xi(r)\hspace{.2cm}\text{, with }\hspace{.2cm} \xi(r)=\frac{1}{1+e^{-\frac{2\alpha(2r-D)}{d_c}}}-\frac{1}{1+e^{\frac{2\alpha D}{d_c}}}\label{C6-topo}\\
 \end{equation}
-where $T_e^0$ is  the overlying layer thickness at  the crater center,
+where $d_0$ is  the overlying layer thickness at  the crater center,
 $d_c$  the crater  depth with  respect to  the pre-impact  surface and
 $\xi(r)$  a normalized  sigmoid  function which  reproduces a  typical
 complex crater depression in terms of the crater diameter $D$ and wall
-slope $\alpha$ (Figure \ref{Figure2-1}, top).
+slope $\alpha$ (Figure \ref{C6-Figure2-1}, top).
 
 The thickness  evolution equation  in cylindrical coordinates  for the
 flow of a newtonian fluid is given by \citep{Thorey:2014cv}
 \begin{eqnarray}
   \frac{\partial         h}{\partial        t}
-  &=&\frac{\rho_{m}g}{12  \mu} \frac{1}{r}  \frac{\partial}{\partial
+  &=&\frac{\rho_{m}g}{12  \eta_h} \frac{1}{r}  \frac{\partial}{\partial
       r}\left   (r  h^{3}   \frac{\partial  h}{\partial   r}  \right)+
-      \frac{\rho_{c}g\Psi       T_{e}^0}{12       \mu}       \frac{1}{r}
+      \frac{\rho_{c}g\Psi       d_0}{12       \eta_h}       \frac{1}{r}
       \frac{\partial}{\partial r}\left ( r
       h^{3}  \frac{\partial  \xi(r)}{\partial  r}\right )  \nonumber  \\
-  &&+ \frac{E T_{e}^{0^{3}}}{144\mu
-     (1-\nu^{2})}\frac{1}{r}\frac{\partial}{\partial  r}\left  (  r
+  &&+ \frac{E d_0^{3}}{144\eta_h
+     (1-\nu^*^{2})}\frac{1}{r}\frac{\partial}{\partial  r}\left  (  r
      h^{3}    \frac{\partial}{\partial   r}    \left(\nabla^{2}_{r}
      ((1+\Psi \xi(r))^{3}\nabla^{2}_{r}h )\right)\right )\nonumber\\
-  && + w(r,t)
-     \label{eq16}\\
-  w(r,t)&=&
-            \begin{cases} \frac{ \Delta P}{4 \mu Z_{c}} (\frac{a^{2}}{4}-r^{2})&
+  && + w_i(r,t) \label{C6-eq16}\\
+  w_i(r,t)&=&
+            \begin{cases} \frac{ \Delta P}{4 \eta_h Z_{c}} (\frac{a^{2}}{4}-r^{2})&
               r \le \frac{a}{2}\\ 0 & r > \frac{a}{2}
             \end{cases}
-                                      \label{eq12}
+                                      \label{C6-eq12}
 \end{eqnarray}
 where  $h(r,t)$  is  the  intrusion   thickness,  $r$  is  the  radial
 coordinate, $t$ is time, $\rho_m$ and $\rho_c$ are the magma and crust
-density, $\mu$ is the viscosity,  $\Psi = d_c/T_e^0$ is the thickening
+density, $\eta_h$ is the viscosity,  $\Psi = d_c/d_0$ is the thickening
 of the overlying layer at the wall, $w(r,t)$ is the injection velocity
 and $\Delta P/Z_c$  is the overpressure gradient  driving magma ascent
 in the feeder dyke.
 
-The terms  on the right  side of (\ref{eq16})  respectively represent,
+The terms  on the right  side of (\ref{C6-eq16})  respectively represent,
 from left  to right,  spreading due to  magma weight,  the lithostatic
 barrier the  magma has to  face at the  crater wall, squeezing  of the
 flow in  response to  elastic deformation of  the overlying  layer and
-injection  rate.  Equation  (\ref{eq16}) is  non-dimensionalized using
+injection  rate.  Equation  (\ref{C6-eq16}) is  non-dimensionalized using
 the crater radius $D/2$ as a  horizontal scale, a height scale $H$ and
 a time scale $\tau$ given by
 \begin{equation}
-  \label{eq18} H= \left (\frac{12\mu Q_{0}}{\rho_{m}g \pi}\right )
+  \label{C6-eq18} H= \left (\frac{12\eta_h Q_{0}}{\rho_{m}g \pi}\right )
   ^{\frac{1}{4}}
 \end{equation}
 \begin{equation}
-  \tau=\frac{\pi     D^{2}      H}{4Q_{0}}\label{eq19}
+  \tau=\frac{\pi     D^{2}      H}{4Q_{0}}\label{C6-eq19}
 \end{equation}
 where  $H$ is  the characteristic  height scale  of a  gravity current
 \citep{Huppert:1982a} and $\tau$ is the characteristic time to fill up
 the crater depression for a constant injection rate
-\begin{equation} Q_{0}=\frac{\pi \Delta P a^{4}}{128 \mu Z_c} .
-  \label{eq11}
+\begin{equation} Q_{0}=\frac{\pi \Delta P a^{4}}{128 \eta_h Z_c} .
+  \label{C6-eq11}
 \end{equation}
 Another useful lengthscale  in the problem is  the flexural wavelength
 $\Lambda$ \citep{Michaut:2011kg}
 \begin{equation}
   \Lambda &=& \left( \frac{E
-      T_{e}^{0^{3}}}{12                        (1-\nu^{2})\rho_{m}g}
+      d_0^{3}}{12                        (1-\nu^*^{2})\rho_{m}g}
   \right )^{\frac{1}{4}}
 \end{equation}
 which represents the wavelength of deformation of the elastic layer.
 
-Equation (\ref{eq16}) made dimensionless becomes
+Equation (\ref{C6-eq16}) made dimensionless becomes
 \begin{eqnarray}    \frac{\partial     h}{\partial    t}&=&\frac{1}{r}
   \frac{\partial}{\partial r}\left  (rh^{3} \frac{\partial h}{\partial
       r} \right)+ \Xi \frac{1}{r} \frac{\partial}{\partial r}\left
@@ -226,21 +226,21 @@ Equation (\ref{eq16}) made dimensionless becomes
                                                             \right )\right)+
                                                             \frac{32}{\gamma^{2}}
                                                             \left(\frac{1}{4}-\frac{r^{2}}{\gamma^{2}}\right)
-                                                            \label{eq21}
+                                                            \label{C6-eq21}
 \end{eqnarray}
 where $\xi(r)$ is also made dimensionless
 \begin{equation}
-  \xi(r)=\frac{1}{1+e^{-\frac{(r-1)}{\zeta}}}-\frac{1}{1+e^{\frac{1}{\zeta}}}\label{eqqqq}
+  \xi(r)=\frac{1}{1+e^{-\frac{(r-1)}{\zeta}}}-\frac{1}{1+e^{\frac{1}{\zeta}}}\label{C6-eqqqq}
 \end{equation}
 and where
 \begin{eqnarray}
-  \label{Dimensionless1} 
-  \gamma&=&\frac{2a}{D}= 0.02\label{n1}\\
+  \label{C6-Dimensionless1} 
+  \gamma&=&\frac{2a}{D}= 0.02\label{C6-n1}\\
   \zeta&=&\frac{d_c}{2\alpha D}=0.13
-           \label{n2}\\ \Xi&=&
+           \label{C6-n2}\\ \Xi&=&
                                \left(\frac{\rho_{c}gd_{c}}{\rho_{m}gH}\right )
-                               = 20 \label{n3}\\
-  \Psi&=&\frac{d_{c}}{T_{e}^0} = 1\label{n4}. 
+                               = 20 \label{C6-n3}\\
+  \Psi&=&\frac{d_{c}}{d_0} = 1\label{C6-n4}. 
 \end{eqnarray}
 $\gamma$ is the dimensionless source  width, $\zeta$ is four times the
 normalized crater  wall width  and characterizes the  crater geometry,
@@ -253,7 +253,7 @@ increase at the crater wall.   These are dimensionless parameters that
 do not  significantly affect our  results and are considered  fixed in
 our analysis \citep{Thorey:2014cv}.  The dimensionless number $\Theta$
 \begin{equation}
-  \Theta=\left ( \frac{2\Lambda}{D} \right )^{4}\label{n5}
+  \Theta=\left ( \frac{2\Lambda}{D} \right )^{4}\label{C6-n5}
 \end{equation}
 is the dimensionless flexural wavelength  of the upper layer raised to
 the power $4$ that quantifies the  length scale over which the elastic
@@ -262,10 +262,10 @@ between  $10^{-5}$ and  $10^{-1}$ and  has a  strong influence  on the
 intrusion shape and final floor appearance.
 
 \subsection{End-member modes of deformation}
-\label{sec:end-member-modes-1}
+\label{C6-sec:end-member-modes-1}
 
 For a constant injection rate and no crater depression, i.e a constant
-upper  elastic  layer ($\xi(r)  =  0  $  and  $T_e(r) =  T_e^0$),  the
+upper  elastic  layer ($\xi(r)  =  0  $  and  $d(r) =  d_0$),  the
 numerical  resolution of  the  equations shows  two spreading  regimes
 \citep{Michaut:2011kg,Michaut:2013dr}.   The flow  is first  driven by
 the bending of the upper  elastic layer.  The intrusion is bell-shaped
@@ -273,11 +273,11 @@ and both the radius and the  thickness evolve close to $t^{1/3}$. When
 the radius becomes larger than $4\Lambda$, the weight of the intrusion
 becomes dominant  over the  bending terms and  the intrusion  enters a
 gravity current regime.  In this  second regime, the intrusion shows a
-flat  top with  bent edges,  the radius  evolve as  $t^{1/2}$ and  the
+flat  top with  bent edges,  the radius  evolves as  $t^{1/2}$ and  the
 thickness tends to a constant \citep{Huppert:1982a,Michaut:2011kg}.
  
 For a  constant injection  rate and a  crater-like topography  for the
-upper  layer,  i.e.  $T_e(r)$  given  by  (\ref{topo}), the  spreading
+upper  layer,  i.e.  $d(r)$  given  by  (\ref{C6-topo}), the  spreading
 regimes are perturbed by the presence of the crater wall.  The central
 flat floor of the crater first  acts as a constant elastic upper layer
 and the intrusion spreads as described above. However, when it reaches
@@ -289,41 +289,41 @@ estimated from the amount of uplift of the crater floor at the center.
 
 %% FIGURE 2
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
 
     \includegraphics[scale=0.80]{Figure_2-2.pdf}
     \caption{Two  end-member   intrusion  shapes  producing   the  two
       end-member  floor deformations  observed  at  FFC sites:  convex
       floor (left) and plate-like floor (right).}
-    \label{Figure2-2}
+    \label{C6-Figure2-2}
   \end{center}
 \end{figure}
 
 The final morphology  of the crater floor depends mainly  on the ratio
 between the  flexural wavelength and  the crater radius, i.e.   on the
-dimensionless  number  $\Theta$  (\ref{n5}).   For a  large  value  of
+dimensionless  number  $\Theta$  (\ref{C6-n5}).   For a  large  value  of
 $\Theta$, i.e. a  deep intrusion and/or a small  crater, the intrusion
 reaches the wall  in the bending regime. The  intrusion is bell-shaped
 and the uplift  of the crater floor leads to  a shallowed convex floor
-(Figure \ref{Figure2-2},  left).  In  contrast, for  a small  value of
+(Figure \ref{C6-Figure2-2},  left).  In  contrast, for  a small  value of
 $\Theta$,  i.e.   a  shallow  intrusion and/or  a  large  crater,  the
 intrusion is  in a gravity current  regime when it reaches  the crater
 wall.   The  thickening of  the  cylinder-like  intrusion leads  to  a
 piston-like uplift of the crater floor and to a shallowed central flat
-floor for the crater (Figure \ref{Figure2-2}, right).
+floor for the crater (Figure \ref{C6-Figure2-2}, right).
 
 Accordingly, this model results into two main types of floor-fractured
 craters:  craters  with  convex floors  corresponding  to  bell-shaped
-intrusions (Figure \ref{Figure2-2}, left)  and craters with plate-like
+intrusions (Figure \ref{C6-Figure2-2}, left)  and craters with plate-like
 floors   corresponding    to   cylinder-shaped    intrusions   (Figure
-\ref{Figure2-2},  right).  In  the following,  we consider  craters of
+\ref{C6-Figure2-2},  right).  In  the following,  we consider  craters of
 classes   $2$  and   $4$   of   \citet{Schultz:1976kt}  to   represent
 manifestations of bell-shaped intrusions,  and craters of classes $1$,
 $3$, $5$ and $6$ to be manifestations of cylinder-shaped intrusions.
  
 \subsection{Gravitational signature of FFCs: two case studies}
-\label{sec:grav-sign-ffcs-1}
+\label{C6-sec:grav-sign-ffcs-1}
 
 The Bouguer gravity  is the gravity anomaly that  remains after taking
 into account the gravitational signature of surface topography.  Thus,
@@ -339,18 +339,18 @@ function of the  intrusion shape, diameter and  depth.  In particular,
 for the bell and cylinder shaped intrusion, we study the signal for an
 intrusion diameter  that varies between  $20$ and $180$ km,  i.e.  the
 minimum and  maximum diameter  of floor-fractured craters  observed by
-\citet{Schultz:1976kt} and  two intrusion depths, i.e.   $T^0_e =0$ km
-and a reasonable upper bound  of $5$ km \citep{Thorey:2014cv}.  We set
-the  intrusion thickness  $H_0$ to  a value  of $2$  km, which  is the
-maximum  uplift observed  by  \citet{Schultz:1976kt}  and the  density
-contrast   between  the   magma  and   the   crust  to   a  value   of
-$\Delta \rho = 600$ kg  m$^{-3}$, the maximum density contrast between
-mafic  and   crustal  lunar   rocks  using   the  bulk   densities  of
-\citet{Kiefer:2012kp}.
+\citet{Schultz:1976kt} and two intrusion elevations $R_m$: at the mean
+lunar radius $R_0$  and at a reasonable maximum depth  of $5$ km below
+$R_0$ \citep{Thorey:2014cv}.  We set  the intrusion thickness $H_0$ to
+a  value  of  $2$  km,  which   is  the  maximum  uplift  observed  by
+\citet{Schultz:1976kt} and the density  contrast between the magma and
+the crust to a  value of $\Delta \rho = 600$  kg m$^{-3}$, the maximum
+density contrast between mafic and  crustal lunar rocks using the bulk
+densities of \citet{Kiefer:2012kp}.
  
 The two end-member intrusion profiles are obtained by solving equation
-(\ref{eq21})  for two  different  values of  the dimensionless  number
-$\Theta$ (\ref{n5}),  $\Theta= 10^{-2}$ for the  bell-shaped intrusion
+(\ref{C6-eq21})  for two  different  values of  the dimensionless  number
+$\Theta$ (\ref{C6-n5}),  $\Theta= 10^{-2}$ for the  bell-shaped intrusion
 and    $\Theta=    10^{-5}$    for   the    cylinder-like    intrusion
 \citep{Thorey:2014cv} .   We stop the  simulations when the  uplift at
 the center $h_0$ is significant and  such that the pressure due to the
@@ -371,57 +371,59 @@ profile using the spherical harmonics expansion
 where $r,\theta$ and $\phi$ are the coordinates of observation, $G$ is
 the  gravitational constant,  $M$  the  mass of  the  Moon, $R_i$  the
 reference radius of  the spherical harmonic coefficients  taken as the
-mean     radius     at     the     site     of     intrusion,     i.e.
-$R_i =  R_0-T_e^0+\overline{h}$ where $R_0$  is the mean  lunar radius
-and  $\overline{h}$  the  mean   intrusion  thickness,  $C_{lm}$,  and
+mean radius at  the site of intrusion, i.e.   $R_i = R_m+\overline{h}$
+where $\overline{h}$  is the  mean intrusion thickness,  $C_{lm}$, and
 $Y_{lm}$ the spherical harmonic functions  of degree $l$ and order $m$
 \citep{wieczorek:1998th}.  Gravitational  accelerations are considered
-positive when  directed downward  (see Appendix \ref{chap:A5}  for the
+positive when directed downward (see Appendix \ref{C6-chap:A5} for the
 expression of the spherical  harmonic coefficients associated with the
 intrusion thickness profile and the calculation details).
 
 %% FIGURE 3
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
     \includegraphics[scale=0.4]{Figure_2-3.eps}
-    \caption{Top  left: Calculated  synthetic  gravity  anomaly for  a
-      bell-shaped  intrusion  at  the  surface for  $T_e^0  =  0$  km,
-      $H_0 = 2$ km, $D = 180$  km and $\Delta \rho = 600$ kg m$^{-3}$.
-      Dotted  red line  represents the  crater rim.   Top right:  Mean
-      synthetic gravity anomaly  as a function of  the crater diameter
-      $D$  for  a  bell-shaped  intrusion   with  $H_0  =  2$  km  and
-      $\Delta \rho = 600$ kg  m$^{-3}$.  Red solid line: the intrusion
-      is  at  the  surface,  $T_e^0  =0$ km.   Blue  solid  line:  the
-      intrusion is $5$ km below the  surface, $T_e^0 = 5$ km.  Bottom:
-      Same as above, but for a cylinder-shaped intrusion.}
-    \label{Figure2-3}
+    \caption{Top left:  Calculated synthetic gravity anomaly  at $r=R_0$
+      for  a  bell-shaped  intrusion   located  at  the  same  elevation
+      $R_m=R_0$ with $H_0 = 2$ km, $D  = 180$ km and $\Delta \rho = 600$
+      kg m$^{-3}$. Dotted red line represents the crater rim. Top right:
+      Mean  synthetic  gravity  anomaly  as a  function  of  the  crater
+      diameter $D$  for a bell-shaped  intrusion with  $H_0 = 2$  km and
+      $\Delta \rho = 600$ kg m$^{-3}$.  Red solid line: the intrusion is
+      at the mean  radius $R_m=R_0$. Blue dashed line:  the intrusion is
+      $5$ km below  $R_0$, $R_m = R_0-5$ km. Bottom:  Same as above, but
+      for a cylinder-shaped intrusion.}
+    \label{C6-Figure2-3}
   \end{center}
+
+
+
 \end{figure}
 
 The two  different intrusion shapes  result in two different  types of
-anomaly (Figure \ref{Figure2-3}, left).   For a bell-shaped intrusion,
-with a convex  crater floor, the gravity anomaly  is also bell-shaped.
-It  decreases gradually  from the  center to  the crater  wall (Figure
-\ref{Figure2-3}, top left).   For an intrusion placed  at the surface,
-$T_e^0 =0$,  the signal  barely depends on  the crater  diameter.  The
+anomaly   (Figure  \ref{C6-Figure2-3},   left).   For   a  bell-shaped
+intrusion, with  a convex  crater floor, the  gravity anomaly  is also
+bell-shaped.  It  decreases gradually  from the  center to  the crater
+wall (Figure  \ref{C6-Figure2-3}, top left).  For  an intrusion placed
+at $R_m=R_0$, the  signal barely depends on the  crater diameter.  The
 mean gravity  anomaly measured interior  to the crater wall  is almost
-constant  and about  $15$  mGal (Figure  \ref{Figure2-3}, top  right).
+constant and  about $15$ mGal (Figure  \ref{C6-Figure2-3}, top right).
 Although an increased intrusion depth  decreases the mean value of the
 anomaly by  a factor that  is less than  two for craters  smaller than
 $50$ km, it barely affects the anomaly for craters larger than $50$ km
-(Figure \ref{Figure2-3}; top right).
+(Figure \ref{C6-Figure2-3}; top right).
 
 For  a cylinder-like  intrusion  and a  plate-like  crater floor,  the
 gravity anomaly  is relatively  uniform and  sharply decreases  at the
-crater  wall  (Figure  \ref{Figure2-3}, bottom  left).   Consequently,
+crater  wall  (Figure  \ref{C6-Figure2-3}, bottom  left).   Consequently,
 although the  maximum amplitude of the  anomaly is similar to  the one
 produced  by  a  bell-shaped  intrusion,  the  mean  gravity  anomaly,
 measured interior to  the crater wall, is twice larger  and about $30$
 mGal. Similar  to bell-shaped intrusion, an  increased intrusion depth
 decreases the mean value of the anomaly  by a factor that is less than
 two for  craters smaller than $50$  km but barely affects  the anomaly
-for  craters  larger  than  $50$ km  (Figure  \ref{Figure2-3},  bottom
+for  craters  larger  than  $50$ km  (Figure  \ref{C6-Figure2-3},  bottom
 right).
   
 One important observation of our modeling  is that even for an extreme
@@ -431,7 +433,7 @@ expected signal is only of a few tens of mGal. Though GRAIL can easily
 detect such small  amplitude anomalies, this gravity  signals could be
 masked  by  both  large-scale regional  signals  and  short-wavelength
 signals  that  are   unrelated  to  our  idealized   model  of  Figure
-\ref{Figure2-1}.   Therefore,  we  need  to  filter  out  these  other
+\ref{C6-Figure2-1}.   Therefore,  we  need  to  filter  out  these  other
 contributions to be able to  detect the potential presence of magmatic
 intrusions at  floor-fractured craters.  In the  following, we present
 the  gravity model  that we  use and  consider the  remaining expected
@@ -439,7 +441,7 @@ signal  after  filtering the  synthetics  the  same way  the  observed
 gravity are filtered.
 
 \subsection{Filtered GRAIL gravity}
-\label{sec:grails-gravity-model-1}
+\label{C6-sec:grails-gravity-model-1}
 
 The  observed  gravity field  on  the  Moon  is  a result  of  several
 contributions,   including  surface   topography,  relief   along  the
@@ -464,7 +466,7 @@ Bouguer anomaly to invert for the gravitational signal of relief along
 the crust-mantle interface, as described in \citet{Wieczorek:2013ipa}.
 
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
     \includegraphics[scale=1]{Figure_2-4.pdf}
     \caption{Power spectra  for various  gravity models.   Black solid
@@ -474,7 +476,7 @@ the crust-mantle interface, as described in \citet{Wieczorek:2013ipa}.
       line:  Crustal  gravity  anomaly  of our  model  CrustAnom  with
       $\lambda=80$  and which  removes  long-wavelength variations  in
       crustal density as predicted by remote sensing data.}
-    \label{Figure2-4}
+    \label{C6-Figure2-4}
   \end{center}
 \end{figure}
 
@@ -491,24 +493,25 @@ shortest  wavelengths.   In \citet{Wieczorek:2013ipa},  $\lambda$  was
 chosen to  have a  value of  $80$.  Here, we  test several  values for
 $\lambda$ and find that $\lambda=80$  is also a good trade-off between
 the removal of  regional trends and the removal of  signals due to the
-magmatic  intrusion itself  (see Appendix  \ref{chap:A5} Figure  1 for
+magmatic  intrusion itself  (see Appendix  \ref{C6-chap:A5} Figure  1 for
 details on the effects of $\lambda$).
 
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
     \includegraphics[scale=0.4]{Figure_2-5.eps}
-    \caption{Top left:  Calculated synthetic gravity  anomaly filtered
-      the same way as the  model CrustAnom for a bell-shaped intrusion
-      at the surface with  $T_e^0 = 0$ km, $H_0 = 2$ km,  $D = 180$ km
-      and $\Delta \rho = 600$ kg m$^{-3}$.  Dotted red line represents
-      the  crater  rim. Top  right:  Mean  filtered synthetic  gravity
-      anomaly  as  a  function  of  the  crater  diameter  $D$  for  a
-      bell-shaped intrusion with $H_0 = 2$  km and $\Delta \rho = 600$
-      kg m$^{-3}$.  Red  solid line: $T_e^0 =0$ km.   Blue solid line:
-      $T_e^0   =  5$   km.   Bottom:   Same  as   above,  but   for  a
-      cylinder-shaped intrusion.}
-    \label{Figure2-5}
+    \caption{Top left: Calculated synthetic gravity anomaly at $r=R_0$
+      filtered the same  way as the model CrustAnom  for a bell-shaped
+      intrusion at the  same elevation $R_m = R_0$ with  $H_0 = 2$ km,
+      $D =  180$ km and $\Delta  \rho = 600$ kg  m$^{-3}$.  Dotted red
+      line  represents  the  crater  rim.  Top  right:  Mean  filtered
+      synthetic gravity anomaly  as a function of  the crater diameter
+      $D$  for  a  bell-shaped  intrusion   with  $H_0  =  2$  km  and
+      $\Delta \rho = 600$ kg  m$^{-3}$.  Red solid line: the intrusion
+      is at  the mean lunar  radius $R_m=R_0$. Blues dashed  line: the
+      intrusion is  $5$ km below  $R_0$, i.e. $R_m=R_0-5$  km. Bottom:
+      Same as above, but for a cylinder-shaped intrusion.}
+    \label{C6-Figure2-5}
   \end{center}
 \end{figure}
 
@@ -521,21 +524,21 @@ between degree $550$ and $650$. It  is from this map, here referred to
 as CrustAnom,  that we  search for gravitational  anomalies associated
 with  floor-fractured   craters.   Our  model  CrustAnom   is  roughly
 equivalent to a  band-passed Bouguer anomaly, where  both the shortest
-and longest wavelength signals are removed (Figure \ref{Figure2-4}).
+and longest wavelength signals are removed (Figure \ref{C6-Figure2-4}).
 
 Upon applying the  same filtering to synthetic  gravity anomalies, the
 expected signal at floor-fractured craters  is reduced with respect to
-those  considered  in   section  (\ref{sec:grav-sign-ffcs-1})  (Figure
-\ref{Figure2-5}).  The filtering, which  affects mostly large craters,
+those  considered  in   section  (\ref{C6-sec:grav-sign-ffcs-1})  (Figure
+\ref{C6-Figure2-5}).  The filtering, which  affects mostly large craters,
 leads to a  drop in the amplitude  of the gravity anomaly  by a factor
 larger than two for craters larger than about $80$ km.  As an example,
 the mean anomaly for  the extreme case of a $2$ km  thick and $180$ km
 large intrusion  should only be of  a few mGal in  the model CrustAnom
-(Figure \ref{Figure2-5}).
+(Figure \ref{C6-Figure2-5}).
 
 
 \section{Gravitational signature of lunar craters}
-\label{sec:grav-sign-lunar}
+\label{C6-sec:grav-sign-lunar}
 
 The  gravitational  signal  associated  with  magmatic  intrusions  at
 floor-fractured craters will be superimposed on the signal of a normal
@@ -544,7 +547,7 @@ gravity signal at normal impact craters and then compare to the signal
 at found floor-fractured craters.
  
 \subsection{Normal and floor-fractured crater populations}
-\label{sec:unmod-floor-fract}
+\label{C6-sec:unmod-floor-fract}
  
 We use the  dataset of \citet{Head:2010fy} as a  reference catalog for
 normal  craters  and  the   dataset  of  \citet{Jozwiak:2012dq}  as  a
@@ -559,7 +562,7 @@ $116$  floor-fractured and  $5101$ normal  craters covering  the whole
 lunar surface.
 	
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
 
     \includegraphics[scale=0.3]{Figure_3-1.pdf}
@@ -570,7 +573,7 @@ lunar surface.
       circles). \textbf{Middle row)} Same plots but for craters in the
       maria.  \textbf{Bottom row)} Same plots but for craters in South
       Pole Aikten basin (SPA).}
-    \label{Figure3-1}
+    \label{C6-Figure3-1}
   \end{center}
 \end{figure}
 
@@ -588,25 +591,25 @@ of  both the  maria  and South  Pole-Aitken basin.   We  use the  USGS
 geological  maps to  define  the mare  borders and  the  SPA basin  is
 defined      using     the      best-fit     outer      ellipse     of
 \citet{GarrickBethell:2009dx}.   In  the  highlands,  there  are  $80$
-floor-fractured and $4054$ normal craters (Figure \ref{Figure3-1}, top
+floor-fractured and $4054$ normal craters (Figure \ref{C6-Figure3-1}, top
 left).  The second  sub-population is constituted by  craters that lie
 within  the maria  and outside  of  SPA basin  of which  there are  22
-floor-fractured and 306 normal craters (Figure \ref{Figure3-1}, middle
+floor-fractured and 306 normal craters (Figure \ref{C6-Figure3-1}, middle
 left).  The last  sub-population is constituted by  craters within the
 SPA  of which  there are  14  floor-fractured and  603 normal  craters
-(Figure \ref{Figure3-1}, bottom left).
+(Figure \ref{C6-Figure3-1}, bottom left).
 	 
 In   each  region   defined   above,  the   spatial  distribution   of
 floor-fractured    and   normal    craters   is    different   (Figure
-\ref{Figure3-1}, left).  To minimize any biases that might result from
+\ref{C6-Figure3-1}, left).  To minimize any biases that might result from
 different regional characteristics, we also consider, for each region,
 a second sub-population of normal craters that shares the same spatial
-distribution as  the floor-fractured craters  (Figure \ref{Figure3-1},
+distribution as floor-fractured craters  (Figure \ref{C6-Figure3-1},
 right).  In this  sub-population, we consider all  normal craters that
-are less than $150$ km away from a floor fractured crater.
+are less than $150$ km away from a floor-fractured crater.
 
 \subsection{Crater gravitational signatures}
-\label{sec:crat-grav-sign}
+\label{C6-sec:crat-grav-sign}
   
 In analyzing the  gravitational signature of lunar  impact craters, we
 make  use of  a single  number, the  crater gravity  anomaly, that  is
@@ -617,15 +620,15 @@ crater rim, i.e.  within a circular region defined by its radius $D/2$
 where $D$ is  the crater diameter reported  by \citet{Head:2010fy} and
 \citet{Jozwiak:2012dq}.  We then subtract  from this value the average
 value of the gravity field in an annulus extending from the crater rim
-to a radius of one crater diameter $D$ (Appendix \ref{chap:A5}, Figure
+to a radius of one crater diameter $D$ (Appendix \ref{C6-chap:A5}, Figure
 2).   Both  gravitational  anomalies  are calculated  at  the  average
 elevation of the crater.
 
 \subsubsection{Highlands}
-\label{sec:highlands-1}
+\label{C6-sec:highlands-1}
   
 The magnitude of the gravity anomalies at normal crater sites shows an
-important  variability  (Figure  \ref{Figure3-2}).   On  average,  the
+important  variability  (Figure  \ref{C6-Figure3-2}).   On  average,  the
 anomaly is  positive at  the smallest  craters, slowly  decreases with
 increasing diameters, and approaches a  constant negative value near a
 diameter  of about  100 km.   For crater  diameters between  $100$ and
@@ -637,36 +640,36 @@ large number of  craters.  In particular, the uncertainty  in the mean
 (the standard  error, which is  the standard deviation divided  by the
 square root of  the number of observations) is equal  to $ 0.12$ mGal.
 The population that shares the spatial distribution of floor-fractured
-craters   shows   similar    trends   (Figure   \ref{Figure3-2}).    A
+craters   shows   similar    trends   (Figure   \ref{C6-Figure3-2}).    A
 Kolmogorov-Smirnov (KS) test was  conducted to compare this population
 to the whole  population of normal craters.  The test  reports a value
 of $p$,  which is the  probability that  the two population  are drawn
 from the same distribution, larger than $10\%$, which confirms that no
 significant differences  exist between  the two  populations (Appendix
-\ref{chap:A5}, Table 1).
+\ref{C6-chap:A5}, Table 1).
   
 %% FIGURE 8
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
 
     \includegraphics[scale=0.3]{Figure_3-2.eps}
     \caption{Magnitude  of  the   gravity  anomaly  $\delta_g$  versus
-      diameter $D$ for  the normal crater population  (blue dots), the
-      normal   crater  population   that   shares   the  FFC   spatial
-      distribution (light  blue dots)  and the  floor-fractured crater
-      population (red triangles) in the highlands. Solid line: Mean of
-      the  gravity anomalies  binned  in $15$  km diameter  intervals.
-      Error bars correspond to the standard error for each bin.  Right
-      plot:  Corresponding gravity  anomaly  density distribution  for
-      each population in frequency ($\%$).}
-    \label{Figure3-2}
+      diameter $D$ for the normal crater population (light blue dots),
+      the  normal  crater  population  that  shares  the  FFC  spatial
+      distribution   (blue  dots)   and  the   floor-fractured  crater
+      population (red dots) in the  highlands. Solid line: Mean of the
+      gravity anomalies  binned in $15$ km  diameter intervals.  Error
+      bars correspond to the standard error for each bin.  Right plot:
+      Corresponding  gravity  anomaly  density distribution  for  each
+      population in frequency ($\%$).}
+    \label{C6-Figure3-2}
   \end{center}
 \end{figure}
 
 The  magnitude of  the  gravity anomalies  at floor-fractured  craters
 shows  a different  dependence with  diameter than  at normal  craters
-(Figure  \ref{Figure3-2}).  Although  the  variance of  the data  with
+(Figure  \ref{C6-Figure3-2}).  Although  the  variance of  the data  with
 respect to the average is of  the same order, the gravity anomalies at
 floor-fractured craters  are larger.  In  particular, the mean  of the
 floor-fractured crater gravity anomalies is positive and approximately
@@ -677,52 +680,52 @@ two  populations.    This  test  quantifies  the   significance  of  a
 difference  between the  means  of two  populations  assuming the  two
 populations have the same variance.  We found that there was only less
 than  a $5\%$  chance  that the  difference  in the  mean  of the  two
-populations  could have  occurred by  chance (Appendix  \ref{chap:A5},
+populations  could have  occurred by  chance (Appendix  \ref{C6-chap:A5},
 Table 1).   The same result holds  for the comparison with  the normal
 crater   population   that   shares  the   spatial   distribution   of
-floor-fractured craters (Appendix \ref{chap:A5}, Table 1).
+floor-fractured craters (Appendix \ref{C6-chap:A5}, Table 1).
 
 \subsubsection{Lunar maria and SPA}
-\label{sec:lunar-maria-spa}
+\label{C6-sec:lunar-maria-spa}
   
 The magnitude of the gravity anomalies at the sites of complex craters
 in the lunar  maria shows a variability that is  similar to craters in
-the  highlands (Figure  \ref{Figure3-3},  top).   The gravity  anomaly
+the  highlands (Figure  \ref{C6-Figure3-3},  top).   The gravity  anomaly
 remains close  to $0$ mGal and  is independent of the  crater diameter
-(Figure  \ref{Figure3-3},  top).  The  mean  of  the whole  population
+(Figure  \ref{C6-Figure3-3},  top).  The  mean  of  the whole  population
 $\mu_{\delta_g}$ is positive and equal to  $1.51 \pm 0.68$ mGal.  A KS
 test shows that there is  no significant difference between the entire
 normal  crater  population  and  the   one  that  shares  the  spatial
-distribution of floor-fractured  craters (Figure \ref{Figure3-3}, top,
-Appendix \ref{chap:A5}, Table 1).
+distribution of floor-fractured  craters (Figure \ref{C6-Figure3-3}, top,
+Appendix \ref{C6-chap:A5}, Table 1).
 %% FIGURE 9
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
     \includegraphics[scale=0.3]{Figure_3-3.eps}
     \caption{\textbf{Top}: Magnitude of the gravity anomaly $\delta_g$
-      versus  diameter  $D$ for  the  normal  crater population  (blue
+      versus diameter $D$ for the normal crater population (light blue
       dots), the normal crater population  that shares the FFC spatial
-      distribution (light  blue dots)  and the  floor-fractured crater
-      population (red triangles) in the maria. Solid line: Mean of the
+      distribution (blue dots)  and the  floor-fractured crater
+      population (red dots) in the maria. Solid line: Mean of the
       gravity anomalies  binned in $15$ km  diameter intervals.  Error
       bars correspond to the standard error for each bin.  Right plot:
       Corresponding  gravity  anomaly  density distribution  for  each
       population in frequency ($\%$).  \textbf{Bottom}: Same plots but
       in South Pole-Aikten basin.}
-    \label{Figure3-3}
+    \label{C6-Figure3-3}
   \end{center}
 \end{figure}
 
 The  normal  craters in  the  South  Pole  Aikten basin  show  gravity
 anomalies  that  are somewhat  more  negative  than in  the  highlands
-(Figure \ref{Figure3-3},  bottom).  On  average, the  signal decreases
+(Figure \ref{C6-Figure3-3},  bottom).  On  average, the  signal decreases
 with  increasing   diameter  up  to   $D  \sim  100-120$   km  (Figure
-\ref{Figure3-3},  bottom)  and  increases somewhat  again  for  crater
-diameters between $120$ and $180$ km (Figure \ref{Figure3-3}, bottom).
+\ref{C6-Figure3-3},  bottom)  and  increases somewhat  again  for  crater
+diameters between $120$ and $180$ km (Figure \ref{C6-Figure3-3}, bottom).
 A KS  test shows that there  is no significant difference  between the
-two  populations of  normal craters  (Figure \ref{Figure3-3},  bottom,
-Appendix \ref{chap:A5}, Table 1).
+two  populations of  normal craters  (Figure \ref{C6-Figure3-3},  bottom,
+Appendix \ref{C6-chap:A5}, Table 1).
 
 Although the mean  magnitude of the gravity anomalies at  FFC sites is
 about $3$ mGal  larger than the mean value observed  at normal craters
@@ -732,14 +735,14 @@ gravity anomalies of  normal and floor-fractured craters  in those two
 different regions.  Indeed, a t-test, realized for both regions, shows
 that there was more than a $10\%$ chance that these differences in the
 mean of  the two populations  could have occurred by  chance (Appendix
-\ref{chap:A5}, Table  1).  Nevertheless, the  small number of  FFCs in
+\ref{C6-chap:A5}, Table  1).  Nevertheless, the  small number of  FFCs in
 the  maria and  in the  SPA makes  difficult to  obtain a  significant
 statistic due to the low accuracy in measuring the FFC population mean
 ($\mu_{\delta_g}   =4.43  \pm   3.52   $  mGal   in   the  maria   and
 $\mu_{\delta_g} =-0.25\pm 2.52 $ mGal in SPA).
 
 \section{Magmatic intrusion characteristics}
-\label{sec:magm-intr-char}
+\label{C6-sec:magm-intr-char}
   
 Our  results  show that,  on  average,  crustal gravity  anomalies  at
 floor-fractured craters  are larger than  at normal craters,  but also
@@ -749,7 +752,7 @@ intrusions at depth below floor-fractured crater floors.  In addition,
 the  amplitudes of  the  gravitational  signatures at  floor-fractured
 craters are only of a few mGal, comparable to the predictions based on
 the    theoretical    model     of    \citet{Thorey:2014cv}    (Figure
-\ref{Figure2-5}).  In  the following, we compare  the observed gravity
+\ref{C6-Figure2-5}).  In  the following, we compare  the observed gravity
 signals at each floor-fractured crater  to a synthetic gravity anomaly
 constructed based on the theoretical model of \citet{Thorey:2014cv} in
 order to  derive the mean  density contrast between the  intrusion and
@@ -758,7 +761,7 @@ intrusion is needed and we use  LOLA topographic data to estimate this
 quantity for each floor-fractured crater.
 
 \subsection{Intrusion thickness}
-\label{sec:intrusion-thickness}
+\label{C6-sec:intrusion-thickness}
 
 The intrusion thickness $H_0$ at the  center of the crater is taken as
 the  amount of  shallowing of  the crater  floor with  respect to  the
@@ -775,10 +778,10 @@ this  population.  In  the  absence  of information  on  the state  of
 degradation of lunar craters in the dataset of \citet{Head:2010fy}, we
 thus  use the  characteristics of  the normal  craters that  share the
 spatial distribution  of floor-fractured craters described  in section
-\ref{sec:unmod-floor-fract} as a reference.
+\ref{C6-sec:unmod-floor-fract} as a reference.
 
 \begin{figure}[h!]
-  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/SOUMISSION_2_EPSL/} }
+  \graphicspath{ {/Users/thorey/Documents/These/Projet/FFC/Gravi_GRAIL/Article/Papier/Proof/} }
   \begin{center}
 
     \includegraphics[scale=0.4]{Figure_4-1.pdf}
@@ -794,8 +797,8 @@ spatial distribution  of floor-fractured craters described  in section
       the normal  crater (blue) populations in  log-log space.  Values
       of the  coefficient A, B  as well  as the dispersion  around the
       best   fit   line   $\sigma_{fit}$   are   given   in   Appendix
-      \ref{chap:A5}, Table 2.}
-    \label{Figure4-1}
+      \ref{C6-chap:A5}, Table 2.}
+    \label{C6-Figure4-1}
   \end{center}
 \end{figure}
 
@@ -805,25 +808,25 @@ using  the 64  ppd ($\sim450$  m/pixel) LOLA  gridded topography  data
 \citep{Zuber:2009bq}   obtained  from   the   planetary  data   system
 geosciences   node.     We   followed   the   method    described   by
 \citet{Kalynn:2013fg}  to  derive  the  crater  depth  $d_c$  and  its
-uncertainty  $\sigma_{d}$ (see  Appendix  \ref{chap:A5} for  details).
+uncertainty  $\sigma_{d}$ (see  Appendix  \ref{C6-chap:A5} for  details).
 Our  $d_c$-$D$  results  for  normal  craters  show  trends  that  are
 consistent with previous  works in the highlands, the  lunar maria and
-the SPA (Figure \ref{Figure4-1}).  Indeed,  the crater depth of normal
+the SPA (Figure \ref{C6-Figure4-1}).  Indeed,  the crater depth of normal
 craters increases  with increasing diameter  and craters in  the maria
 are  on  average  shallower  than  in the  highlands  or  SPA  (Figure
-\ref{Figure4-1})        \citep{Pike:1974ux,Pike:1980eh,Kalynn:2013fg}.
+\ref{C6-Figure4-1})        \citep{Pike:1974ux,Pike:1980eh,Kalynn:2013fg}.
 Nevertheless, the variability in the  degradation state of each crater
 results in  an important  variance in the  crater depth  with diameter
 with respect to the mean trend.
 
 The same  variability holds for the  floor-fractured crater population
-depth   (Figure   \ref{Figure4-1}).    This  variability   makes   the
+depth   (Figure   \ref{C6-Figure4-1}).    This  variability   makes   the
 identification   of   the    uplift   difficult   at   floor-fractured
 craters. Although the mean crater  depth of floor-fractured craters in
 the highlands and SPA is slightly  smaller than the mean of the normal
 crater  population,  the   means  of  the  two   populations  are  not
 significantly  different  in  the  three regions  (t-test:  $p>  0.5$,
-Appendix \ref{chap:A5}, Table 2).  A detailed geological study at each
+Appendix \ref{C6-chap:A5}, Table 2).  A detailed geological study at each
 crater   would  be   necessary  to   precisely  identify   the  crater
 morphological  structures and  decrease the  uncertainty in  the depth
 estimation, but such a study is out  of the scope of this article.  We
@@ -838,7 +841,7 @@ We  use  the  same  method  to characterize  the  mean  dependence  of
 floor-fractured  crater depth  with crater  diameter.  In  addition of
 determining  the  constant  $A$  and   $B$,  we  also  calculated  the
 root-mean-squared dispersion $\sigma_{\text{fit}}$ around the best fit
-(Appendix  \ref{chap:A5},  Table 2).   Subtracting  the  two best  fit
+(Appendix  \ref{C6-chap:A5},  Table 2).   Subtracting  the  two best  fit
 lines,  we finally  obtain a  first-order estimate  for the  intrusion
 thickness at the center $H_0$ for each floor-fractured crater of given
 diameter     $D$      to     which     we     assign      an     error
@@ -846,7 +849,7 @@ $\sigma_{H_0}
 =(\sigma_{\text{fit-FFC}}^2+\sigma_{\text{fit-Unmod. Crater}}^2)^{1/2}$.
 
 \subsection{Density contrast $\Delta \rho$ of the intrusion}
-\label{sec:intr-dens-contr}
+\label{C6-sec:intr-dens-contr}
 
 We  consider   two  different   shapes  for  the   intrusions  beneath
 floor-fractured craters: a bell-shaped intrusion for craters that show
@@ -854,15 +857,15 @@ a   convex  floor   (class  2   and   4  in   the  classification   of
 \citet{Schultz:1976kt}) and a cylindrical-shaped intrusion for craters
 that  show  a   plate-like  floor  (class  1,  3,  5   and  6  in  the
 classification  of  \citet{Schultz:1976kt}).   The  two  dimensionless
-profiles  are described  in  section \ref{sec:end-member-modes-1}  and
+profiles  are described  in  section \ref{C6-sec:end-member-modes-1}  and
 each profile is redimensionalized using the thickness of the intrusion
 $H_0$      and      its       radius      $D/2$      (see      section
-\ref{sec:intrusion-thickness}).   The   method  used  to   derive  the
+\ref{C6-sec:intrusion-thickness}).   The   method  used  to   derive  the
 synthetic  gravity anomaly  from  the intrusion  thickness profile  is
-detailed is section \ref{sec:grav-sign-ffcs-1}.  We use a unit density
+detailed is section \ref{C6-sec:grav-sign-ffcs-1}.  We use a unit density
 contrast, i.e.   $\Delta \rho  = 1$  kg m$^{-3}$  and then  filter the
 predicted gravity  anomaly in exactly  the same way than  the observed
-gravity is  filtered (section  \ref{sec:grails-gravity-model-1}).  The
+gravity is  filtered (section  \ref{C6-sec:grails-gravity-model-1}).  The
 synthetic   gravity   anomaly   $\delta_g^s$  associated   with   each
 floor-fractured crater is defined as the mean of the synthetic gravity
 anomaly measured interior to the crater rim.
@@ -882,10 +885,10 @@ We   find   that  the   corrected   gravity   anomalies  observed   at
 floor-fractured crater  sites in the  highlands are consistent  with a
 mean   density  contrast   between  the   magma  and   the  crust   of
 $\mu_{\Delta   \rho}  =   913  \pm   269  $   kg  m$^{-3}$   (Appendix
-\ref{chap:A5},  Table  4).   In   the  maria,  the  corrected  gravity
+\ref{C6-chap:A5},  Table  4).   In   the  maria,  the  corrected  gravity
 anomalies observed in the  $22$ floor-fractured craters are consistent
 with       a      mean       density      contrast       equal      to
-$\mu_{\Delta \rho} = 484 \pm 669$ kg m$^{-3}$ (Appendix \ref{chap:A5},
+$\mu_{\Delta \rho} = 484 \pm 669$ kg m$^{-3}$ (Appendix \ref{C6-chap:A5},
 Table 4).  However,  the difference between the  mean density contrast
 in the  highlands and the maria  is not significant (a  t-test gives a
 probability  greater than  $10\%$  that this  could  occur by  chance,
@@ -893,17 +896,17 @@ $p >  0.1$).  In the  South Pole  Aikten basin, the  corrected gravity
 anomalies observed in the  $14$ floor-fractured craters are consistent
 with       a      mean       density      contrast       equal      to
 $\mu_{\Delta   \rho}  =   974  \pm   846  $   kg  m$^{-3}$   (Appendix
-\ref{chap:A5}, Table 4).  But, the difference between the mean density
+\ref{C6-chap:A5}, Table 4).  But, the difference between the mean density
 contrast in  the highlands and SPA  is also not significant  (a t test
 gives  a probability  greater than  $50\%$  that this  could occur  by
 chance, $p > 0.5$).
 
 \section{Discussion}
-\label{sec:discussion}
+\label{C6-sec:discussion}
 
 In  this study,  we  used  the gravity  field  obtained  by the  GRAIL
-mission, in combination with the topographic data obtained by the LOLA
-instrument, to  resolve mass anomalies below  floor-fractured craters.
+mission in combination with the topographic data obtained by the LOLA
+instrument to  resolve mass anomalies below  floor-fractured craters.
 We  studied separately  the craters  in the  farside highlands,  South
 Pole-Aikten basin  and maria to  prevent potential bias  from regional
 effects.
@@ -948,7 +951,7 @@ densities, this would  give rise to a density contrast  of about $510$
 kg m$^{-3}$,  which is  smaller than  the observed  $1$-$\sigma$ lower
 bound, and thus is probably too small to account for the observations.
 Second,  the density  contrast  could  be the  result  of a  fractured
-intrusions and  a surrounding fractured  highland crust.  If  each had
+intrusion and  a surrounding fractured  highland crust.  If  each had
 the same  level of porosity, this  would give rise to  an even smaller
 density contrast.  Lastly, if the  intrusion were unfractured, but the
 surrounding  highland  crust  had  a porosity  of  $12\%$,  a  density
@@ -984,7 +987,7 @@ contrast  would be  only  about  $403$ kg  m$^{-3}$,  which is  nearly
 identical to the mean value found from our analysis.
 
 \section{Conclusion}
-\label{sec:conclusion}
+\label{C6-sec:conclusion}
 
 The gravitational signature of  the floor-fractured crater population,
 first observed by \citet{Schultz:1976kt},  has been investigated using
@@ -1006,7 +1009,7 @@ due to magmatic intrusions from the background.  In general, two major
 questions   need  to   be  addressed   before  carrying   out  further
 investigations at floor-fractured crater sites:  1) What is the origin
 of the  large variability in the  magnitude of the gravity  anomaly at
-normal  crater? And  2),  how  can we  better  quantify the  intrusion
+normal  craters? And  2),  how  can we  better  quantify the  intrusion
 thickness at floor-fractured craters?
 
 Indeed,  our results  suggest that  the impact  itself, combined  with

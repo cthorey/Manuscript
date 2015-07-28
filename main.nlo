@@ -1,0 +1,101 @@
+\nomenclatureentry{AFFC@[{FFC}]\begingroup Floor-fractured crater\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{ASPA@[{SPA}]\begingroup South Pole - Aitken basin\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{AGRAIL@[{GRAIL}]\begingroup Gravity Recovery and Interior Laboratory\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{ALOLA@[{LOLA}]\begingroup Lunar Orbiter Laser Altimeter\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{ALRO@[{LRO}]\begingroup Lunar  Reconnaissance Orbiter\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$g$@[{$g$}]\begingroup Gravity \nomunit{m s$^{-2}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\rho_m$@[{$\rho_m$}]\begingroup Magma density\nomunit{kg m$^{-3}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\eta_h$@[{$\eta_h$}]\begingroup Liquidus magma viscosity \nomunit{Pa s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\eta_c$@[{$\eta_c$}]\begingroup Solidus magma viscosity \nomunit{Pa s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$a$@[{$a$}]\begingroup Feeder dyke width \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$Z_c$@[{$Z_c$}]\begingroup Depth of the melt source \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Delta P$@[{$\Delta P$}]\begingroup Initial overpressure \nomunit{Pa}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$Q_0$@[{$Q_0$}]\begingroup Injection rate \nomunit{m$^{3}$ s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$k_m$@[{$k_m$}]\begingroup Magma thermal conductivity\nomunit{ W K$^{-1}$     m$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\kappa_m$@[{$\kappa_m$}]\begingroup Magma         thermal         diffusivity   \nomunit{m$^{2}$s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$C_{p,m}$@[{$C_{p,m}$}]\begingroup Magma heat capacity\nomunit{ J kg$^{-1}$ K$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$L$@[{$L$}]\begingroup Latent   heat   of  crystallization   \nomunit{J   kg$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$h_f$@[{$h_f$}]\begingroup Prewetting film thickness \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T_i$@[{$T_i$}]\begingroup Injection temperature \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T_0$@[{$T_0$}]\begingroup Ambient rock temperature \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T_L$@[{$T_L$}]\begingroup Liquidus temperature \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T_S$@[{$T_S$}]\begingroup Solidus temperature \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Delta \rho$@[{$\Delta \rho$}]\begingroup Density contrast \nomunit{kg m$^{-3}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$r$@[{$r$}]\begingroup Axial coordinate \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$z$@[{$z$}]\begingroup Vertical coordinate \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$t$@[{$t$}]\begingroup Time \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\vec{u}$@[{$\vec{u}$}]\begingroup Velocity vector \nomunit{m s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$u$@[{$u$}]\begingroup Horizontal velocity \nomunit{m s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$w$@[{$w$}]\begingroup Vertical velocity \nomunit{m s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$w_i$@[{$w_i$}]\begingroup Injection velocity \nomunit{m s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$P$@[{$P$}]\begingroup Total pressure in the flow \nomunit{Pa}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$P_e$@[{$P_e$}]\begingroup Bending pressure \nomunit{Pa}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$h$@[{$h$}]\begingroup Flow thickness\nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\delta$@[{$\delta$}]\begingroup Thickness thermal boundary layer \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$h_0$@[{$h_0$}]\begingroup Flow thickness at the center \nomunit{Pa}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$R$@[{$R$}]\begingroup Radius of the intrusion \nomunit{Pa}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T$@[{$T$}]\begingroup Temperature in the intrusion \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T_s$@[{$T_s$}]\begingroup Surface temperature\nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$T_b$@[{$T_b$}]\begingroup Temperature at the center of the flow \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\phi$@[{$\phi$}]\begingroup Crustal fraction \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\theta$@[{$\theta$}]\begingroup Dimensionless temperature \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Theta_b$@[{$\Theta_b$}]\begingroup Dimensionless temperature at the center \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Theta_s$@[{$\Theta_s$}]\begingroup Dimensionless surface temperature \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\eta_e$@[{$\eta_e$}]\begingroup Effective flow viscosity \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$d_0$@[{$d_0$}]\begingroup Depth of intrusion \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$E$@[{$E$}]\begingroup Young's modulus \nomunit{Pa}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\nu^*$@[{$\nu^*$}]\begingroup Poisson's ratio \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$k_r$@[{$k_r$}]\begingroup Crust thermal conductivity\nomunit{ W K$^{-1}$     m$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\kappa_r$@[{$\kappa_r$}]\begingroup Rock  thermal  diffusivity \nomunit{m$^{2}$s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\rho_r$@[{$\rho_r$}]\begingroup Crust density \nomunit{kg m$^{-3}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$D_r$@[{$D_r$}]\begingroup Flexural rigidity \nomunit{Pa m$^{3}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\kappa$@[{$\kappa$}]\begingroup Curvature \nomunit{m$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$K_I$@[{$K_I$}]\begingroup Stress intencity factor \nomunit{Pa m$^{1/2}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$K_C$@[{$K_C$}]\begingroup Rock fracture toughness \nomunit{Pa m$^{1/2}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$M_0$@[{$M_0$}]\begingroup Bending moment in $r=R$ \nomunit{N m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\gamma$@[{$\gamma$}]\begingroup Dimensionless source width\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$Pe$@[{$Pe$}]\begingroup Peclet number\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$Pe_m$@[{$Pe_m$}]\begingroup Modified Peclet number\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$St_m$@[{$St_m$}]\begingroup Modified Stefan number\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\nu$@[{$\nu$}]\begingroup Viscosity contrast\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Omega_1$@[{$\Omega_1$}]\begingroup Thermal diffusivity ratio\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Omega_2$@[{$\Omega_2$}]\begingroup Thermal conductivity ratio\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Omega$@[{$\Omega$}]\begingroup Efficiency of the heat transfert\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Lambda$@[{$\Lambda$}]\begingroup Flexural wavelength \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$H$@[{$H$}]\begingroup Height scale \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\tau$@[{$\tau$}]\begingroup Time scale \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\xi$@[{$\xi$}]\begingroup Heat transport variable \nomunit{m K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$U_0$@[{$U_0$}]\begingroup Mean advection velocity \nomunit{m s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$U$@[{$U$}]\begingroup Velocity scale \nomunit{m s$^{-1}$}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\Delta T$@[{$\Delta T$}]\begingroup Mean temperature difference  \nomunit{K}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$t_{b2}$@[{$t_{b2}$}]\begingroup Time to enter the second bending phase \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$t_{b3}$@[{$t_{b3}$}]\begingroup Time to enter the third bending phase \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$t_{g2}$@[{$t_{g2}$}]\begingroup Time to enter the second gravity phase \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$t_{g3}$@[{$t_{g3}$}]\begingroup Time to enter the second gravity phase \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$t_t$@[{$t_t$}]\begingroup Transition time between bending and gravity \nomunit{s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{B$\eta$@[{$\eta$}]\begingroup Rheology \nomunit{Pa s}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$d_c$@[{$d_c$}]\begingroup Crater depth \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$C$@[{$C$}]\begingroup Crater radius \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$D$@[{$D$}]\begingroup Crater diameter \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$T_p$@[{$T_p$}]\begingroup Crater topography\nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$\xi$@[{$\xi$}]\begingroup Sigmoid function\nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$\zeta$@[{$\zeta$}]\begingroup Normalized wall width\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$\Xi$@[{$\Xi$}]\begingroup Lithostatic barrier importance\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$\Psi$@[{$\Psi$}]\begingroup Thickening of the upper elastic layer\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{C$\Theta$@[{$\Theta$}]\begingroup Dimensionless flexural wavelength\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\theta$@[{$\theta$}]\begingroup Latitude\nomunit{rad}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\phi$@[{$\phi$}]\begingroup Longitude\nomunit{rad}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$R_0$@[{$R_0$}]\begingroup Mean lunar radius \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$R_m$@[{$R_m$}]\begingroup Intrusion elevation \nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$R_i$@[{$R_i$}]\begingroup Reference    lunar    radius    for    gravity calculations\nomunit{m}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$l$@[{$l$}]\begingroup Spherical   harmonics degree\nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$m$@[{$m$}]\begingroup Spherical      harmonics order\nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$M$@[{$M$}]\begingroup Mass of the Moon \nomunit{kg}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$C_{lm}$@[{$C_{lm}$}]\begingroup Gravity             coefficient\nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$Y_{lm}$@[{$Y_{lm}$}]\begingroup Spherical   harmonic   function\nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$^nh_{lm}$@[{$^nh_{lm}$}]\begingroup Spherical   harmonic  coefficent   for  the powers      of      the       thickness      profile      \nomunit{-}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\delta_g$@[{$\delta_g$}]\begingroup Gravity      anomaly      \nomunit{mGal}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\delta_g^c$@[{$\delta_g^c$}]\begingroup Corrected        gravity        anomaly \nomunit{mGal}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\delta_g^s$@[{$\delta_g^s$}]\begingroup Synthetic radial gravity anomaly \nomunit{mGal}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\mu_{\deta_g}$@[{$\mu_{\deta_g}$}]\begingroup Mean gravity anomaly \nomunit{mGal}\nomeqref {E.2}|nompageref}{228}
+\nomenclatureentry{D$\lambda$@[{$\lambda$}]\begingroup Downward continuation filter parameter \nomunit{-}\nomeqref {E.2}|nompageref}{228}
