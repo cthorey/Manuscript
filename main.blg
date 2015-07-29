@@ -21,58 +21,52 @@ A level-1 auxiliary file: Appendix/Appendix5.aux
 A level-1 auxiliary file: Notations.aux
 The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
-Warning--I didn't find a database entry for "Michel:2008gn"
+Warning--I didn't find a database entry for "Patankar:1980VI"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty journal in Bertozzi:1998wz
 Warning--empty journal in Buttner:1998hy
 Warning--empty journal in Dixon:1987js
 Warning--empty journal in Harris:2000jd
-Warning--empty journal in Anonymous:QWXp_4JV
 Warning--empty journal in Horsman:2009gea
-Warning--empty journal in Jaeger:1959du
-Warning--empty journal in Leuthold:2012gja
-Warning--empty journal in Melosh:1989jl
 Warning--empty journal in Pinkerton:1992fwa
-Warning--empty journal in Senger:2014tt
-You've used 188 entries,
+You've used 191 entries,
             3076 wiz_defined-function locations,
-            2224 strings with 42578 characters,
-and the built_in function-call counts, 178672 in all, are:
-= -- 20245
-> -- 5556
-< -- 106
-+ -- 2619
-- -- 1539
-* -- 10867
-:= -- 16695
-add.period$ -- 188
-call.type$ -- 188
-change.case$ -- 810
-chr.to.int$ -- 189
-cite$ -- 199
-duplicate$ -- 19938
-empty$ -- 10181
-format.name$ -- 2136
-if$ -- 35593
+            2256 strings with 43394 characters,
+and the built_in function-call counts, 187549 in all, are:
+= -- 21517
+> -- 5716
+< -- 105
++ -- 2735
+- -- 1584
+* -- 11303
+:= -- 17285
+add.period$ -- 191
+call.type$ -- 191
+change.case$ -- 823
+chr.to.int$ -- 192
+cite$ -- 196
+duplicate$ -- 21032
+empty$ -- 10556
+format.name$ -- 2190
+if$ -- 37363
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1848
-newline$ -- 571
-num.names$ -- 752
-pop$ -- 6817
+missing$ -- 1909
+newline$ -- 580
+num.names$ -- 764
+pop$ -- 7118
 preamble$ -- 1
-purify$ -- 623
+purify$ -- 633
 quote$ -- 0
-skip$ -- 11143
+skip$ -- 11829
 stack$ -- 0
-substring$ -- 7958
-swap$ -- 17159
-text.length$ -- 5
+substring$ -- 8555
+swap$ -- 18324
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1689
-warning$ -- 11
-while$ -- 1013
+type$ -- 1716
+warning$ -- 5
+while$ -- 1052
 width$ -- 0
-write$ -- 2028
-(There were 12 warnings)
+write$ -- 2077
+(There were 6 warnings)

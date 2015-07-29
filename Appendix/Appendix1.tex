@@ -102,7 +102,7 @@ with
         r}\left(h+P_e\right)\right)\right)+w_i,\\
   \phi &=& 12I_1(h),
 \end{eqnarray}
-and where $P$ is the dimensionless bending pressure $P = \nabla^4h$.
+and where $P_e$ is the dimensionless bending pressure $P_e = \nabla^4h$.
 
 \vspace{.5cm} \textbf{Spatial discretization of f} \vspace{.5cm}
 
@@ -110,19 +110,19 @@ The  spatial discretization  is  obtained using  a central  difference
 scheme  over  a  sub-grid  shifted  by $0.5\Delta  r$  from  the  main
 grid. Therefore, we have
 \begin{eqnarray}
-  f_i&=&\frac{1}{r_i \Delta_r}\left(r_{i+1/2}\phi_{i+1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i+1/2}-r_{i-1/2}\phi_{i-1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P}{\partial r}\right)\right|_{i-1/2}\right)\nonumber\\
+  f_i&=&\frac{1}{r_i \Delta_r}\left(r_{i+1/2}\phi_{i+1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P_e}{\partial r}\right)\right|_{i+1/2}-r_{i-1/2}\phi_{i-1/2}\left.\left(\frac{\partial h}{\partial r}+\frac{\partial P_e}{\partial r}\right)\right|_{i-1/2}\right)\nonumber\\
      &=&A_i\phi_{i+1/2}\left(h_{i+1}-h_i\right)-B_i\phi_{i-1/2}\left(h_{i}-h_{i-1}\right)\nonumber\\
-     &+&A_i\phi_{i+1/2}\left(P_{i+1}-P_i\right)-B_i\phi_{i-1/2}\left(P_{i}-P_{i-1}\right)\nonumber\\
+     &+&A_i\phi_{i+1/2}\left(P_{e,i+1}-P_{e,i}\right)-B_i\phi_{i-1/2}\left(P_{e,i}-P_{e,i-1}\right)\nonumber\\
      &+&w_i,\label{C4-Num-3}
 \end{eqnarray}
 where                $A_i=r_{i+1/2}/(r_i\Delta_r^2)$               and
-$B_i=r_{i-1/2}/(r_i\Delta_r^2)$.   The bending  pressure  term $P$  is
+$B_i=r_{i-1/2}/(r_i\Delta_r^2)$.   The bending  pressure  term $P_e$  is
 very stiff and  needs a careful treatment.  In  particular, the fourth
 order derivative requires a fourth order central difference scheme and
-therefore, $P_i$ is  expressed over a seven point stencil  on the main
+therefore, $P_{e,i}$ is  expressed over a seven point stencil  on the main
 grid such that
 \begin{equation}
-  P_{i}=   \alpha_{i}h_{i-3}  +   \beta_{i}h_{i-2}+\gamma_{i}  h_{i-1}
+  P_{e,i}=   \alpha_{i}h_{i-3}  +   \beta_{i}h_{i-2}+\gamma_{i}  h_{i-1}
   +\lambda_{i}h_{i}+\kappa_{i}h_{i+1}+\delta_ih_{i+2}+\epsilon_ih_{i+3},
   \label{C4-Num-4}
 \end{equation}
@@ -138,7 +138,7 @@ with
 \end{eqnarray}
 and where $p_1=1/r_i^3$, $p_2=1/r_i^2$ and $p_3 = 2/r_i$. Finally, the
 term $\phi_{i-1/2}$ and $\phi_{i-1/2}$,  which depend on the variables
-$\Theta_b$, $\delta$ as well as different powers of $h$, are evaluated
+$\Theta_s$, $\Theta_b$, $\delta$ as well as different powers of $h$, are evaluated
 in $i-1/2$ and  $i+1/2$ respectively. Different choices  for the value
 of  the  variables  at  the  mid-cell  grid  point  do  not  show  any
 significant differences  and a simple  average is taken such  that the
@@ -147,7 +147,7 @@ variable $x_{i+1/2}$ is taken as $0.5(x_i+x_{i+1})$.
 \vspace{.5cm}    \textbf{Expression   of    the   Jacobian    $J_f^h$}
 \vspace{.5cm}
 
-The discretized  function $f_i$ can be  break down in three  part, the
+The discretized  function $f_i$ can be broken down in three parts, the
 gravitational part $f_i^{g}$  which is expressed in term  of the value
 of $h$ on three  grid points $\left\{{i-1,i,i+1}\right\}$, the bending
 part $f_i^{b}$ which is expressed in term  of the value of $h$ on nine
@@ -190,7 +190,7 @@ and therefore for $i=1$, we have
 The expression  of the  bending pressure, evaluated  over a  $7$ point
 stencils, is problematic close to  the boundary and reflection formula
 will  be  used  in  order   to  accommodate  the  boundary  conditions
-\citet{Patankar:1980vu}.   In   particular,  we  have  $h_0   =  h_1$,
+\citep{Patankar:1980VI}.   In   particular,  we  have  $h_0   =  h_1$,
 $h_{-1}=h_2$ and  $h_{-2}=h_3$.  Similarly, boundary condition  at the
 end of the mesh is accounted by using a grid much larger than the flow
 itself and requiring
@@ -526,7 +526,7 @@ at a time $t+\Delta t$ and $h^{n}$ to the value at a time $ t$.
     l_i&=&-A_i^{e}\epsilon_{i+1} ,\\
     J_i&=&(Sh_i^n+ S^{i}_{i}+S^{h}_{i}).
   \end{eqnarray}	
-  \subsection{Boundary conditions}
+\subsection{Boundary conditions}
 	
   Since the flow is symmetric in $r=0$, we require that
   \begin{eqnarray}
@@ -537,13 +537,13 @@ at a time $t+\Delta t$ and $h^{n}$ to the value at a time $ t$.
   by using  a grid much larger  than the intrusion where  $h=0$ beyond
   the flow.
 
-  \subsection{Algorithm}
+\subsection{Algorithm}
   The fully  implicit discretization (\ref{C5-eqd3}) can  be rewritten
   as a linear system $\Omega(h^{3})\bar{h}=\bar{J}$ where $\bar{h}$ is
   a vector  containing the value of  $h$ a $t+\Delta t$  and $\bar{J}$
   containing  the  right hand  side  of  (\ref{C5-eqd3}).  The  matrix
-  $\Omega(h^{3})$ is a  septadiagonal matrix and is solved  by using a
-  septadiagonal algorithm.   However, due to the  non-linearity of the
+  $\Omega(h^{3})$ is a  nonadiagonal matrix and is solved  by using a
+  nonadiagonal algorithm.   However, due to the  non-linearity of the
   problem (i.e.   the coefficients $A_{e}, B_{e},  A_{g}$, $B_{g}$ and
   $S^{h}$ within  the matrix $\Omega(h_{i}^{3})$ and  $\bar{J}$ depend
   on $h_{i}^{3}$), we first have to  assume values for $h_{i}$ at each
