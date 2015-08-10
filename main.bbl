@@ -1,9 +1,15 @@
-\begin{thebibliography}{191}
+\begin{thebibliography}{183}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Amelung et~al.}(2000)\textit{Amelung, J{\'o}nsson, Zebker,
+  and Segall}}]{Amelung:2000ko}
+Amelung, F., S.~J{\'o}nsson, H.~Zebker, and P.~Segall (2000), {Widespread
+  uplift and 'trapdoor'faulting on Galapagos volcanoes observed with radar
+  interferometry}, \textit{Nature}, \textit{407}(6807), 993--996.
 
 \bibitem[{\textit{Anderson}(1951)}]{Anderson:L5JA3dNN}
 Anderson, E.~M. (1951), {The dynamics of faulting and dyke formation with
@@ -73,12 +79,6 @@ Besserer, J., F.~Nimmo, M.~A. Wieczorek, R.~C. Weber, W.~S. Kiefer, P.~J.
 Blatt, H., R.~J. Tracy, and B.~Owens (2006), {Petrology: igneous, sedimentary,
   and metamorphic}.
 
-\bibitem[{\textit{Bonaccorso}(2001)}]{Bonaccorso:2001iw}
-Bonaccorso, A. (2001), {Mt Etna volcano: modelling of ground deformation
-  patterns of recent eruptions and considerations on the associated
-  precursors}, \textit{Journal of Volcanology and Geothermal Research},
-  \textit{109}(1-3), 99--108.
-
 \bibitem[{\textit{Bray et~al.}(2008)\textit{Bray, Collins, Morgan, and
   Schenk}}]{Bray:2008fu}
 Bray, V.~J., G.~S. Collins, J.~V. Morgan, and P.~M. Schenk (2008), {The effect
@@ -120,13 +120,6 @@ B{\"u}ttner, R., B.~Zimanowski, J.~Blumm, and L.~Hagemann (1998), {Thermal
 Cameron, A., and W.~Benz (1991), {The origin of the Moon and the single impact
   hypothesis IV}, \textit{Icarus}, \textit{92}, 204--216.
 
-\bibitem[{\textit{Cannav{\`o} et~al.}(2015)\textit{Cannav{\`o}, Camacho,
-  Gonz{\'a}lez, Mattia, Puglisi, and Fenandez}}]{Cannavo:2015fk}
-Cannav{\`o}, F., A.~G. Camacho, P.~J. Gonz{\'a}lez, M.~Mattia, G.~Puglisi, and
-  J.~Fenandez (2015), {Real Time Tracking of Magmatic Intrusions by means of
-  Ground Deformation Modeling during Volcanic Crises}, \textit{Scientific
-  reports}, \textit{5}(10970).
-
 \bibitem[{\textit{Canup}(2012)}]{Canup:2012cd}
 Canup, R.~M. (2012), {Forming a Moon with an Earth-like composition via a giant
   impact}, \textit{Science}, \textit{338}, 1052--1055.
@@ -145,20 +138,6 @@ Castro, J.~M., C.~I. Schipper, S.~P. Mueller, A.~S. Militzer, A.~Amigo, C.~S.
   Parejas, and D.~Jacob (2013), {Storage and eruption of near-liquidus rhyolite
   magma at Cord{\'o}n Caulle, Chile}, \textit{Bull Volcanol}, \textit{75}(4),
   1--17.
-
-\bibitem[{\textit{Cayol et~al.}(2014)\textit{Cayol, Catry, Michon, Chaput,
-  Famin, Bodart, Froger, and Romagnoli}}]{Cayol:2014vo}
-Cayol, V., T.~Catry, L.~Michon, M.~Chaput, V.~Famin, O.~Bodart, J.~L. Froger,
-  and C.~Romagnoli (2014), {Sheared sheet intrusions as mechanism for lateral
-  flank displacement on basaltic volcanoes: Applications to R{\'e}union Island
-  volcanoes}, \textit{J. Geophys. Res. Solid Earth}, \textit{119}(10),
-  7607--7635.
-
-\bibitem[{\textit{Chadwick~Jr. and Dieterich}(1995)}]{ChadwickJr:1995cz}
-Chadwick~Jr., W.~W., and J.~H. Dieterich (1995), {Mechanical modeling of
-  circumferential and radial dike intrusion on Galapagos volcanoes},
-  \textit{Journal of Volcanology and Geothermal Research}, \textit{66}(1-4),
-  37--52.
 
 \bibitem[{\textit{Chevrel et~al.}(2013)\textit{Chevrel, Platz, Hauber,
   Baratoux, Lavall{\'e}e, and Dingwell}}]{Chevrel:2013jn}
@@ -262,17 +241,6 @@ Elkins-Tanton, L.~T., S.~Burgess, and Q.-Z. Yin (2011), {The lunar magma ocean:
 Flitton, J.~C., and J.~R. King (2004), {Moving-boundary and fixed-domain
   problems for a sixth-order thin-film equation}, \textit{European Journal of
   Applied Mathematics}, \textit{15}(06), 713--754.
-
-\bibitem[{\textit{Galland}(2012)}]{Galland:2012hi}
-Galland, O. (2012), {Experimental modelling of ground deformation associated
-  with shallow magma intrusions}, \textit{Earth and Planetary Science Letters},
-  \textit{317-318}(C), 145--156.
-
-\bibitem[{\textit{Galland and Scheibert}(2013)}]{Galland:2013dp}
-Galland, O., and J.~Scheibert (2013), {Analytical model of surface uplift above
-  axisymmetric flat-lying magma intrusions: Implications for sill emplacement
-  and geodesy}, \textit{Journal of Volcanology and Geothermal Research},
-  \textit{253}(C), 114--130.
 
 \bibitem[{\textit{Galushkin}(1997)}]{Galushkin:1997dy}
 Galushkin, Y.~I. (1997), {Thermal effects of igneous intrusions on maturity of
@@ -589,12 +557,6 @@ Maccaferri, F., E.~Rivalta, D.~Keir, and V.~Acocella (2014), {Off-rift
   volcanism in rift zones determined by crustal unloading}, \textit{Nature
   Geosci}, \textit{7}(4), 297--300.
 
-\bibitem[{\textit{Macedonio et~al.}(2014)\textit{Macedonio, Giudicepietro,
-  D'Auria, and Martini}}]{Macedonio:2014et}
-Macedonio, G., F.~Giudicepietro, L.~D'Auria, and M.~Martini (2014), {Sill
-  intrusion as a source mechanism of unrest at volcanic calderas}, \textit{J.
-  Geophys. Res. Solid Earth}, \textit{119}(5), 3986--4000.
-
 \bibitem[{\textit{Marsh}(1981)}]{Marsh:1981dc}
 Marsh, B.~D. (1981), {On the crystallinity, probability of occurrence, and
   rheology of lava and magma}, \textit{Contr. Mineral. and Petrol.},
@@ -688,20 +650,8 @@ O'Keefe, J.~D., and T.~J. Ahrens (1999), {Complex craters: Relationship of
   stratigraphy and rings to impact conditions}, \textit{J. Geophys. Res.},
   \textit{104}(11), 27,091--27,104.
 
-\bibitem[{\textit{Patan{\`e} et~al.}(2006)\textit{Patan{\`e}, Barberi, Cocina,
-  De~Gori, and Chiarabba}}]{Patane:2006hn}
-Patan{\`e}, D., G.~Barberi, O.~Cocina, P.~De~Gori, and C.~Chiarabba (2006),
-  {Time-Resolved Seismic Tomography Detects Magma Intrusions at Mount Etna},
-  \textit{Science}, \textit{313}(5788), 821--823.
-
 \bibitem[{\textit{Patankar}(1980)}]{Patankar:1980vu}
 Patankar, S. (1980), {Numerical heat transfer and fluid flow}.
-
-\bibitem[{\textit{Pedersen and Sigmundsson}(2004)}]{Pedersen:2004kp}
-Pedersen, R., and F.~Sigmundsson (2004), {InSAR based sill model links
-  spatially offset areas of deformation and seismicity for the 1994 unrest
-  episode at Eyjafjallaj{\"o}kull volcano, Iceland}, \textit{Geophys. Res.
-  Lett.}, \textit{31}(14), L14,610.
 
 \bibitem[{\textit{Petford et~al.}(1993)\textit{Petford, Kerr, and
   Lister}}]{Petford:1993bk}
