@@ -11,9 +11,12 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
    (LaTeX-add-labels
     "C6-chap:A5"
+    "sec:synth-grav-anom-1"
+    "sec:effect-downw-cont"
     "Figure_Supp_1"
     "Figure_Supp_2"
     "Table3-1"
+    "sec:crater-depth"
     "Table4-1"
     "Table4-2"
     "Table4-3")))

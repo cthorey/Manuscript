@@ -365,7 +365,7 @@ to be equal to the intrusion depth and is given by
   d(r)=d_0(1+\Psi \xi(r)),
   \label{C5-3-2}
 \end{equation}	
-where $\Psi=D_{c}/d_0$ is the ratio of the crater depth $D_{c}$ to
+where $\Psi=d_{c}/d_0$ is the ratio of the crater depth $d_{c}$ to
 the  intrusion depth  at the  center $d_0$  and characterizes  the
 thickening of the  upper elastic layer at the crater  wall zone.  As a
 result of  this assumption, the  intrusion depth is  underestimated in
@@ -384,7 +384,7 @@ on  the  impact  angle  \citep{Schultz:1994cv,Bray:2008fu}.   However,
 their width can reach  one fourth of the crater floor  and they can be
 as high  as half  of the  crater depth; hence  such a  structure could
 influence the intrusion dynamics.  The effect of a central peak on the
-spreading  of  an intrusion  is  examined  in Appendix  \ref{chap:A4}.
+spreading of an intrusion  is examined in Appendix \ref{C5-AppendixC}.
 Moreover, a raised  rim, uplifted relative to  the pre-impact surface,
 is  usually  present   at  the  exterior  of  the   crater  wall  zone
 \citep{Pike:1976ei,Pike:1980eh}. Although,  for simplicity, we  do not
@@ -405,7 +405,7 @@ oriented upward (Figure \ref{C5-fig3-2}).
   \begin{center}
     \includegraphics[width=0.9\columnwidth]{fig3-2.eps}
     \caption{Sketch of the intrusion  spreading below an impact crater
-      topography.  $D_{c}$  (resp.  $C$) represents the  initial depth
+      topography.  $d_c$  (resp.  $C$) represents the  initial depth
       (resp. radius) of the impact crater. The intrusion spreads above
       a rigid  homogeneous and horizontal bedrock  at depth $d(r)$
       below the  crater floor. At  the center, the intrusion  depth is
@@ -452,7 +452,7 @@ $h$ of the thin elastic plate \citep{Turcotte:1982ca}
 \end{equation}
 where
 \begin{equation}
-  D_e(r)=\frac{Ed(r)^{3}}{12(1-\nu^*^2)},
+  D_e(r)=\frac{Ed^{3}(r)}{12(1-\nu^*^2)},
   \label{C5-eq8a}
 \end{equation}
 is the  flexural rigidity of  the plate  which depends on  the elastic
@@ -508,7 +508,7 @@ $d(r)$  by (\ref{C5-3-2})  gives  the evolution  equation for  the
 intrusion thickness $h$:
 \begin{eqnarray}
   \frac{\partial h}{\partial t} &=&\frac{\rho_{m}g}{12 \eta_h} \frac{1}{r} \frac{\partial}{\partial r}\left (r h^{3} \frac{\partial h}{\partial r} \right)+ \frac{\rho_rg\Psi d_0}{12 \eta_h} \frac{1}{r} \frac{\partial}{\partial r}\left ( r h^{3} \frac{\partial \xi(r)}{\partial r}\right ) \nonumber \\
-                                &+&\frac{E       d^{0^{3}}}{144\eta_h
+                                &+&\frac{E       d_0^{3}}{144\eta_h
                                     (1-\nu^*^{2})}\frac{1}{r}\frac{\partial}{\partial
                                     r}\left       (      r       h^{3}
                                     \frac{\partial}{\partial        r}
@@ -717,13 +717,13 @@ the numbers $\Xi$, $\Theta$ and $\Psi$.
 \section{Results}
 	
 Equation (\ref{C5-eq21}) is solved  numerically using a fully implicit
-finite-volume  method  detailed  in Appendix  \ref{chap:A4}.   In  all
-solutions, we compute the mass conservation as a test for the accuracy
-of the convergence. We first examine  the case of an intrusion below a
-strengthless  overlying layer  and  a thickness  that varies  radially
-according to (\ref{C5-3-2}). We then consider the case of an intrusion
-that lies  beneath an elastic layer  whose thickness is also  given by
-(\ref{C5-3-2}).
+finite-volume        method         detailed        in        Appendix
+\ref{A1-sec:numer-scheme-crat}.  In all solutions, we compute the mass
+conservation as a  test for the accuracy of the  convergence. We first
+examine the case of an  intrusion below a strengthless overlying layer
+and a thickness  that varies radially according  to (\ref{C5-3-2}). We
+then consider  the case of an  intrusion that lies beneath  an elastic
+layer whose thickness is also given by (\ref{C5-3-2}).
 	
 \subsection{Intrusion below a brecciated zone with no elastic strength
   (effect of $\Xi$)}
@@ -887,12 +887,12 @@ magma weight. In the magma, the pressure is constant below the elastic
 layer, except  at the tip  \citep{Bunger:2011cb,Michaut:2011kg}, which
 explains   the   bell-shaped   profile  of   the   intrusion   (Figure
 \ref{C5-fig4-1}  c). Indeed,  for  a constant  pressure  $P_d$ in  the
-magma, $P_e(r)=D\nabla_r^4h=P_d$ implies
+magma, $P_e(r)=D_e\nabla_r^4h=P_d$ implies
 \begin{equation}
-  h(r)=\frac{P_{d} R^{4}}{64D}\left(1-\left(\frac{r}{R}\right)^2\right)^2.
+  h(r)=\frac{P_{d} R^{4}}{64D_e}\left(1-\left(\frac{r}{R}\right)^2\right)^2.
   \label{C5-eq4-1}
 \end{equation}
-$D$ is the flexural rigidity of  the upper layer of constant thickness
+$D_e$ is the flexural rigidity of  the upper layer of constant thickness
 as defined  by (\ref{C5-eq8a}).  Results  show that the  thickness and
 radius evolve with time with an  exponent close to $1/3$, as predicted
 by \citet{Michaut:2011kg} when neglecting the gravity current term and
