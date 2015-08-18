@@ -1,9 +1,9 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.1} Numerical scheme for a cooling elastic-plated gravity current}{\reset@font\mtcSfont 197}{section.A.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.1}General procedure}{\reset@font\mtcSSfont 197}{subsection.A.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.2}Thickness equation}{\reset@font\mtcSSfont 198}{subsection.A.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.3}Heat equation}{\reset@font\mtcSSfont 201}{subsection.A.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.4}Integral expressions}{\reset@font\mtcSSfont 203}{subsection.A.1.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.2}Numerical scheme for a crater-centered intrusion}{\reset@font\mtcSfont 205}{section.A.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.2.1}Discretization}{\reset@font\mtcSSfont 205}{subsection.A.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.2.2}Boundary conditions}{\reset@font\mtcSSfont 208}{subsection.A.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.2.3}Algorithm}{\reset@font\mtcSSfont 208}{subsection.A.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.1} Numerical scheme for a cooling elastic-plated gravity current}{\reset@font\mtcSfont 203}{section.A.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.1}General procedure}{\reset@font\mtcSSfont 203}{subsection.A.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.2}Thickness equation}{\reset@font\mtcSSfont 204}{subsection.A.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.3}Heat equation}{\reset@font\mtcSSfont 207}{subsection.A.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.1.4}Integral expressions}{\reset@font\mtcSSfont 209}{subsection.A.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.2}Numerical scheme for a crater-centered intrusion}{\reset@font\mtcSfont 211}{section.A.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.2.1}Discretization}{\reset@font\mtcSSfont 211}{subsection.A.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.2.2}Boundary conditions}{\reset@font\mtcSSfont 214}{subsection.A.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {A.2.3}Algorithm}{\reset@font\mtcSSfont 214}{subsection.A.2.3}}

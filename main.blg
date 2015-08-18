@@ -1,74 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2014/MacPorts 2014_9)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: TitlePage.aux
+A level-1 auxiliary file: TitlePage_Final.aux
 A level-1 auxiliary file: abstract_en.aux
 A level-1 auxiliary file: abstract_fr.aux
-A level-1 auxiliary file: Chapter/Chapter1.aux
-A level-1 auxiliary file: Chapter/Chapter2.aux
-A level-1 auxiliary file: Part2_Intro.aux
-A level-1 auxiliary file: Chapter/Chapter3.aux
-A level-1 auxiliary file: Chapter/Chapter4.aux
-A level-1 auxiliary file: Part3_Intro.aux
-A level-1 auxiliary file: Chapter/Chapter5.aux
-A level-1 auxiliary file: Chapter/Chapter6.aux
 A level-1 auxiliary file: Chapter/Chapter7.aux
-A level-1 auxiliary file: Chapter/Chapter8.aux
-A level-1 auxiliary file: conclusion_en.aux
-A level-1 auxiliary file: conclusion_fr.aux
-A level-1 auxiliary file: Appendix/Appendix1.aux
-A level-1 auxiliary file: Appendix/Appendix2.aux
-A level-1 auxiliary file: Appendix/Appendix3.aux
-A level-1 auxiliary file: Appendix/Appendix4.aux
-A level-1 auxiliary file: Appendix/Appendix5.aux
 A level-1 auxiliary file: Notations.aux
 The style file: agufull08.bst
 Database file #1: /Users/thorey/Dropbox/Library.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty journal in Buttner:1998hy
-Warning--empty journal in Dixon:1987js
-Warning--empty journal in Harris:2000jd
-Warning--empty journal in Horsman:2009gea
-Warning--empty journal in Pinkerton:1992fwa
-You've used 183 entries,
+You've used 16 entries,
             3076 wiz_defined-function locations,
-            2211 strings with 41773 characters,
-and the built_in function-call counts, 179545 in all, are:
-= -- 20601
-> -- 5471
-< -- 100
-+ -- 2617
-- -- 1516
-* -- 10820
-:= -- 16552
-add.period$ -- 183
-call.type$ -- 183
-change.case$ -- 788
-chr.to.int$ -- 184
-cite$ -- 188
-duplicate$ -- 20131
-empty$ -- 10105
-format.name$ -- 2096
-if$ -- 35768
-int.to.chr$ -- 4
+            1184 strings with 12051 characters,
+and the built_in function-call counts, 13089 in all, are:
+= -- 1457
+> -- 375
+< -- 10
++ -- 177
+- -- 104
+* -- 815
+:= -- 1268
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 71
+chr.to.int$ -- 17
+cite$ -- 16
+duplicate$ -- 1441
+empty$ -- 792
+format.name$ -- 159
+if$ -- 2603
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1827
-newline$ -- 556
-num.names$ -- 732
-pop$ -- 6847
+missing$ -- 140
+newline$ -- 55
+num.names$ -- 64
+pop$ -- 483
 preamble$ -- 1
-purify$ -- 606
+purify$ -- 55
 quote$ -- 0
-skip$ -- 11299
+skip$ -- 813
 stack$ -- 0
-substring$ -- 8190
-swap$ -- 17531
-text.length$ -- 2
+substring$ -- 542
+swap$ -- 1196
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1644
-warning$ -- 5
-while$ -- 1008
+type$ -- 144
+warning$ -- 0
+while$ -- 80
 width$ -- 0
-write$ -- 1989
-(There were 5 warnings)
+write$ -- 177
