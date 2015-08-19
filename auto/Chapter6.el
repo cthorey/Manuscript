@@ -10,7 +10,7 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (LaTeX-add-labels
-    "chap7"
+    "chap6"
     "C6-sec:introduction"
     "C6-sec:theor-cons"
     "C6-sec:const-equat-1"

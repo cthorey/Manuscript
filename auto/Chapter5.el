@@ -64,6 +64,7 @@
     "C5-fig4-5"
     "C5-SimpleCrater"
     "C5-fig4-6"
+    "C5-Injection_Rate_Effect"
     "C5-5.3"
     "C5-eq5.4"
     "C5-eq5.4.5"
