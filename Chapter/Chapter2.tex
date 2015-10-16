@@ -144,7 +144,7 @@ equation for the evolution of the thickness in time and space reads
 \begin{equation}
   \frac{\partial h}{\partial t} =\frac{\rho_mg}{12 \eta_h r}
   \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
-      r}\right)+\frac{D_e}{12\eta_h r} \left( rh^3 \frac{\partial}{\partial r}\nabla_r^4h\right)+
+      r}\right)+\frac{D_e}{12\eta_h r}\frac{\partial}{\partial r} \left( rh^3 \frac{\partial}{\partial r}\nabla_r^4h\right)+
   w_i .\label{C2-Heq}
 \end{equation}
 It is  composed of three different  terms on the right  hand side. The
@@ -180,7 +180,7 @@ The dimensionless equation is
 \begin{eqnarray}
   \frac{\partial h}{\partial t}& =&\frac{1}{ r}
                                     \frac{\partial}{\partial r}  \left( rh^3  \frac{\partial h}{\partial
-                                    r}\right)+\frac{1}{ r} \left( rh^3
+                                    r}\right)+\frac{1}{ r} \frac{\partial}{\partial r}\left( rh^3
                                     \frac{\partial}{\partial
                                     r}\nabla_r^4h\right)\nonumber\\
                                &+&
